@@ -1,0 +1,1113 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "f6a8c81d-b0e8-42f3-8a9d-e97951940ecf",
+	"spells": [
+		{
+			"type": "spell_container",
+			"version": 1,
+			"name": "Magical Face Man",
+			"reference": "PY115:13",
+			"notes": "Choose 1 of 3",
+			"open": true,
+			"children": [
+				{
+					"type": "spell_container",
+					"version": 1,
+					"name": "Option 1",
+					"open": false,
+					"children": [
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Borrow Language",
+							"reference": "M46",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "1",
+							"casting_time": "3 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "lend language"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Illusion Disguise",
+							"reference": "M96",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Until illusion ends",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Imitate Voice",
+							"reference": "M172",
+							"difficulty": "IQ/H",
+							"college": "Sound",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "1",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "voices"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Sound"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Lend Language",
+							"reference": "M46",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "1",
+							"casting_time": "3 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "college",
+										"qualifier": {
+											"compare": "contains",
+											"qualifier": "Communication & Empathy"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 3
+										}
+									},
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "beast speech"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Persuasion",
+							"reference": "M45",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "Varies",
+							"maintenance_cost": "Same",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "sense emotion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Sense Emotion",
+							"reference": "M45",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "sense foes"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Sense Foes",
+							"reference": "M44",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Info/Area",
+							"casting_cost": "1/area, min 2",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Simple Illusion",
+							"reference": "M95",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "1",
+							"maintenance_cost": "Half",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "blind"
+										}
+									},
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"which": "iq",
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 11
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Sound",
+							"reference": "M171",
+							"difficulty": "IQ/H",
+							"college": "Sound",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "Varies",
+							"maintenance_cost": "1/ min",
+							"casting_time": "1 sec",
+							"duration": "Varies",
+							"categories": [
+								"Sound"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Voices",
+							"reference": "M172",
+							"difficulty": "IQ/H",
+							"college": "Sound",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "2",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "sound"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Sound"
+							]
+						}
+					]
+				},
+				{
+					"type": "spell_container",
+					"version": 1,
+					"name": "Option 2",
+					"open": false,
+					"children": [
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Colors",
+							"reference": "M110",
+							"difficulty": "IQ/H",
+							"college": "Light & Darkness",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "1",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "light"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Light"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Copy",
+							"reference": "M116",
+							"difficulty": "IQ/H",
+							"college": "Making & Breaking",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "Varies",
+							"maintenance_cost": "-",
+							"casting_time": "5 sec",
+							"duration": "Permanent",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language:"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (native)"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language:"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (accented)"
+												}
+											}
+										]
+									},
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "dye"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Making & Breaking"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Dye",
+							"reference": "M116",
+							"difficulty": "IQ/H",
+							"college": "Making & Breaking",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "Varies",
+							"maintenance_cost": "-",
+							"casting_time": "3 sec",
+							"duration": "2d days",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "restore"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									},
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "colors"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Making & Breaking"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Illusion Shell",
+							"reference": "M96",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "1 or 2",
+							"maintenance_cost": "Half",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Independence",
+							"reference": "M96",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "2",
+							"maintenance_cost": "-",
+							"casting_time": "Varies",
+							"duration": "Varies",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Inscribe",
+							"reference": "M97",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation/Making & Breaking",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "1/min 2",
+							"maintenance_cost": "Same",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									},
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "copy"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation",
+								"Making & Breaking"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Know Illusion",
+							"reference": "M97",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Info",
+							"casting_cost": "2",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Light",
+							"reference": "M110",
+							"difficulty": "IQ/H",
+							"college": "Light & Darkness",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "1",
+							"maintenance_cost": "1",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"categories": [
+								"Light"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Restore",
+							"reference": "M116",
+							"difficulty": "IQ/H",
+							"college": "Making & Breaking",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "1",
+							"casting_time": "3 sec",
+							"duration": "10 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "find weakness"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									},
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "simple illusion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Making & Breaking"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Simple Illusion",
+							"reference": "M95",
+							"difficulty": "IQ/H",
+							"college": "Illusion & Creation",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "1",
+							"maintenance_cost": "Half",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "blind"
+										}
+									},
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"which": "iq",
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 11
+										}
+									}
+								]
+							},
+							"categories": [
+								"Illusion & Creation"
+							]
+						}
+					]
+				},
+				{
+					"type": "spell_container",
+					"version": 1,
+					"name": "Option 3",
+					"open": false,
+					"children": [
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Daze",
+							"reference": "M134",
+							"difficulty": "IQ/H",
+							"college": "Mind Control",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "3",
+							"maintenance_cost": "2",
+							"casting_time": "2 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "foolishness"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Mind Control"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Fascinate",
+							"reference": "M135",
+							"difficulty": "IQ/H",
+							"college": "Mind Control",
+							"power_source": "Arcane",
+							"spell_class": "Regular/Blocking",
+							"casting_cost": "4",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Indefinite",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "daze"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Mind Control"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Foolishness",
+							"reference": "M134",
+							"difficulty": "IQ/H",
+							"college": "Mind Control",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "1-5",
+							"maintenance_cost": "Half",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"which": "iq",
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 12
+										}
+									}
+								]
+							},
+							"categories": [
+								"Mind Control"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "No-Smell",
+							"reference": "M24",
+							"difficulty": "IQ/H",
+							"college": "Air",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "2",
+							"casting_time": "1 sec",
+							"duration": "1 hr",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "purify air"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Air"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Odor",
+							"reference": "M24",
+							"difficulty": "IQ/H",
+							"college": "Air",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "1",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "1 hr",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "no-smell"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Air"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Perfume",
+							"reference": "M35",
+							"difficulty": "IQ/H",
+							"college": "Body Control",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "1",
+							"casting_time": "1 sec",
+							"duration": "10 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "odor"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Body Control"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Persuasion",
+							"reference": "M45",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "Varies",
+							"maintenance_cost": "Same",
+							"casting_time": "1 sec",
+							"duration": "1 min",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "sense emotion"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Purify Air",
+							"reference": "M23",
+							"difficulty": "IQ/H",
+							"college": "Air",
+							"power_source": "Arcane",
+							"spell_class": "Area",
+							"casting_cost": "1",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"categories": [
+								"Air"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Sense Emotion",
+							"reference": "M45",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Regular",
+							"casting_cost": "2",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "spell_prereq",
+										"has": true,
+										"sub_type": "name",
+										"qualifier": {
+											"compare": "is",
+											"qualifier": "sense foes"
+										},
+										"quantity": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							},
+							"categories": [
+								"Communication"
+							]
+						},
+						{
+							"type": "spell",
+							"version": 1,
+							"name": "Sense Foes",
+							"reference": "M44",
+							"difficulty": "IQ/H",
+							"college": "Communication & Empathy",
+							"power_source": "Arcane",
+							"spell_class": "Info/Area",
+							"casting_cost": "1/area, min 2",
+							"maintenance_cost": "-",
+							"casting_time": "1 sec",
+							"duration": "Instant",
+							"categories": [
+								"Communication"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

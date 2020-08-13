@@ -1,0 +1,128 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "928e6166-de12-4eb8-91c4-270d905a8a11",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Psy-Ops",
+			"reference": "ACT4:20",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased Will",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B16",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "will"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Psy-Ops",
+			"reference": "ACT4:20",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Brainwashing",
+					"reference": "B182",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 8,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "psychology"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Military",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Propaganda",
+					"reference": "B216",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Merchant",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Psychology",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Business",
+						"Military",
+						"Social",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Psychology",
+					"reference": "B216",
+					"difficulty": "IQ/H",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Sociology",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Social Sciences/Humanities"
+					]
+				}
+			]
+		}
+	]
+}

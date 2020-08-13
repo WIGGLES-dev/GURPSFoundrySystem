@@ -1,0 +1,1850 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "9c4614de-c3ad-47b0-a55f-2f7a12fa166a",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Advantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "20 Points in:",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Direction",
+							"mental": true,
+							"physical": true,
+							"base_points": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Requires signal",
+									"reference": "B34",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "3D Spatial Sense",
+									"reference": "B34",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "aerobatics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "free fall"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "hyperspace"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "space"
+											}
+										}
+									]
+								}
+							],
+							"reference": "B34",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "body sense"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "air"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "land"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "sea"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Direction",
+							"mental": true,
+							"physical": true,
+							"base_points": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Requires signal",
+									"reference": "B34",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "3D Spatial Sense",
+									"reference": "B34",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "aerobatics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "free fall"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "hyperspace"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "space"
+											}
+										}
+									]
+								}
+							],
+							"reference": "B34",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "body sense"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "air"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "land"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "sea"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Danger Sense",
+							"mental": true,
+							"base_points": 15,
+							"reference": "B47",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Flexibility",
+							"physical": true,
+							"base_points": 5,
+							"reference": "B56",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "climbing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "escape"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "erotic art"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "High Pain Threshold",
+							"physical": true,
+							"base_points": 10,
+							"reference": "B59",
+							"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Disadvantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Duty (New Delhi AI)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 6",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 9",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 12",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "FR: 15",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Extremely Hazardous",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Involuntary",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Nonhazardous",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B133",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Gullibility",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "B137",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "detect lies"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "merchant"
+							}
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Wealth",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Dead Broke",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": -25,
+							"affects": "total",
+							"notes": "Starting wealth is $0"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Poor",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total",
+							"notes": "Starting wealth is 1/5 average"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Struggling",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total",
+							"notes": "Starting wealth is 1/2 average"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Average",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Comfortable",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total",
+							"notes": "Starting wealth is 2x average"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Wealthy",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": 20,
+							"affects": "total",
+							"notes": "Starting wealth is 5x average"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Very Wealthy",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total",
+							"notes": "Starting wealth is 20x average"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Filthy Rich",
+							"reference": "B25",
+							"cost_type": "points",
+							"cost": 50,
+							"affects": "total",
+							"notes": "Starting wealth is 100x average"
+						}
+					],
+					"reference": "B25",
+					"categories": [
+						"Advantage",
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Free Fall",
+			"reference": "B197",
+			"difficulty": "DX/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -5
+				},
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Spacer",
+			"reference": "B185",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Vacc Suit",
+			"reference": "B192",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Diving Suit",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "NBC Suit",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Battlesuit",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "8 Points in:",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electrician",
+					"reference": "B189",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electrical",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Communications",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Communications",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Media",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Media",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Arts/Entertainment",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Medical",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Medical",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Medical",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Scientific",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Scientific",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Security",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Security",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Sensors",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Sensors",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Sonar",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Sonar",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Surveillance",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Surveillance",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Police",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Communications",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Communications",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Computer",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Computer Operation",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Media",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Media",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Medical",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Medical",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Scientific",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Scientific",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Security",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Security",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Sensors",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Sensors",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Sonar",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Sonar",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Surveillance",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Surveillance",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Machinist",
+					"reference": "B206",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Aerospace",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Aerospace",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Automobile",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Automobile",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Construction Equipment",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Construction Equipment",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Diesel Engine",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Diesel Engine",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Fission Reactor",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Fission Reactor",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Flight Pack",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Flight Pack",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Fuel Cell",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Fuel Cell",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Fusion Reactor",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Fusion Reactor",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Gasoline Engine",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Gasoline Engine",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Heavy Wheeled",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Heavy Wheeled",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "High-Performance Spacecraft",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "High-Performance Spacecraft",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Low-Performance Spacecraft",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Low-Performance Spacecraft",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Motorcycle",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Motorcycle",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Robotics",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Robotics",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Rockets",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Rockets",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic"
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,3429 @@
+{
+	"type": "equipment_list",
+	"version": 1,
+	"id": "07f02ab0-d74c-472d-94a0-63b748cbf93d",
+	"rows": [
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "@Stringed@",
+			"value": "150",
+			"weight": "5 lb",
+			"reference": "DF1:24",
+			"notes": "Two-handed.",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "@Woodwind@",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"notes": "Two-handed. Speech impossible.",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Acid",
+			"value": "10",
+			"weight": "1 lb",
+			"reference": "DF1:28",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cor",
+						"base": "1d-3"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "3d min to eat through a mundane lock.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Agility Potion",
+			"value": "700",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +1d DX. 1 hr",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Alchemical Antidote",
+			"value": "400",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. Negates all Potions.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Alchemist's Fire",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:28",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "burn/sec (30 sec)",
+						"base": "1d-3",
+						"armor_divisor": 5
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "2 yd radius 1d-1 burn on ground.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Alchemist's Matches",
+			"value": "15",
+			"weight": "0.25 lb",
+			"reference": "DF1:25",
+			"notes": "Tin of 50. Set fire to pack if dropped, 1 on 1d.",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Alkahest",
+			"value": "1650",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cor",
+						"base": "1d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Bypass DR. Dissolve any metal lock in 1d min.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Anti-Garrote Collar",
+			"value": "35",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"notes": "+4 DR vs Strangling damage only",
+			"categories": [
+				"Adventure-Wear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Anti-Toxin (@Poison@)",
+			"value": "20",
+			"weight": "0.5 lb",
+			"reference": "DF1:28",
+			"notes": "Herbal remedy. 1d min to take effect.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Natural Preparations"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Backpack Alchemy Lab",
+			"value": "1000",
+			"weight": "10 lb",
+			"reference": "DF1:26",
+			"notes": "Basic EQ to identify, -2 to brew.",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Backpack, Frame",
+			"tech_level": "1",
+			"value": "100",
+			"weight": "10 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "100 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 100 lbs of gear",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 40 lbs of gear",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Balance and Weights",
+			"value": "35",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"notes": "Up to 2 lb",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Balm of Regeneration",
+			"value": "900",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Salve. Heal 2 HP for 1 FP every second until Full HP or 0 FP.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Bandages",
+			"value": "1.67",
+			"weight": "0.167 lb",
+			"reference": "DF1:24",
+			"notes": "Basic EQ for First Aid",
+			"categories": [
+				"Medical Gear"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Bandoleer",
+			"value": "60",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "6 lb"
+						}
+					}
+				]
+			},
+			"notes": "6 lb thrown weapons; Wearer can reach with Ready or Fast-Draw",
+			"categories": [
+				"Combat Accessories"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Barrel",
+			"value": "65",
+			"weight": "20 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "5 gal liquid, DR 1, HP 11",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Bit and Brace",
+			"value": "120",
+			"weight": "5 lb",
+			"reference": "DF1:25",
+			"notes": "sw-2(2) pi++ each turn to wood.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Bladeblack",
+			"value": "1000",
+			"weight": "0.5 lb",
+			"reference": "DF1:28",
+			"notes": "Utility. Immediate roll HT-5 or take 6d injury.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Poisons"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Blanket",
+			"tech_level": "1",
+			"value": "20",
+			"weight": "4 lb",
+			"reference": "DF1:23",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Boots of Balance",
+			"value": "15080",
+			"weight": "3 lb",
+			"reference": "DF1:30",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "feet"
+				}
+			],
+			"notes": "Grant Perfect Balance (B74) (Balance)",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Bottle",
+			"value": "3",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "2 lb"
+						}
+					}
+				]
+			},
+			"notes": "1 qt liquid, DR 1, HP 4",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Bottle, Small",
+			"value": "2",
+			"weight": "0.5 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "1 lb"
+						}
+					}
+				]
+			},
+			"notes": "1 pt liquid, DR 1, HP 2",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Bottomless Purse",
+			"value": "12010",
+			"weight": "0.2 lb",
+			"reference": "DF1:30",
+			"notes": "9 lb. 6 lb don't count as encumbrance. (Hideaway)",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Bucket",
+			"value": "15",
+			"weight": "4 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "8 lb"
+						}
+					}
+				]
+			},
+			"notes": "1 gal liquid, DR 1, HP 6",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Bull's Eye Lantern",
+			"value": "100",
+			"weight": "2 lb",
+			"reference": "DF1:26",
+			"notes": "6 hours on 1 pt of oil. 10 yd beam. Requires a hand.",
+			"categories": [
+				"Light Sources",
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Burning Glass",
+			"value": "40",
+			"weight": "0.25 lb",
+			"reference": "DF1:26",
+			"notes": "Sets fires with sunlight",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Caltrops, 1 hex",
+			"value": "5",
+			"weight": "0.5 lb",
+			"reference": "DF1:25",
+			"notes": "Ready to deploy. Vision-2 to avoid, MoF hits. thr-3 imp (victim ST). Penetrating hits continue until removed (2 Ready)",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Candle, Beeswax",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"notes": "Sufficient to read by. 24 hr.",
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Candle, Tallow",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"notes": "Sufficient to read by. 12 hr. May attract monsters.",
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Canteen",
+			"value": "10",
+			"weight": "3 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "2 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 1 qt of liquid",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Chest, Wooden",
+			"value": "200",
+			"weight": "40 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "400 lb"
+						}
+					}
+				]
+			},
+			"notes": "400 lb, 5 ft², brackets for 2 poles, DR 2, HP 14",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Climbing Spikes",
+			"value": "400",
+			"weight": "4 lb",
+			"reference": "DF1:25",
+			"notes": "Strap on for feet and hands; eliminate penalty for scaling.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Compass",
+			"value": "50",
+			"weight": "5 lb",
+			"reference": "DF1:25",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "navigation"
+					}
+				}
+			],
+			"notes": "Basic EQ for Navigation",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Cord, 3/16\", 10 yd",
+			"value": "1",
+			"weight": "0.5 lb",
+			"reference": "DF1:24",
+			"notes": "Supports 90 lb",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Cornucopia Quiver",
+			"value": "110",
+			"weight": "0.5 lb",
+			"reference": "DF1:30",
+			"notes": "Unlimited ordinary arrows. One at a time. (Conucopia)",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Corrective Spectacles",
+			"value": "150",
+			"weight": "0.5 lb",
+			"reference": "DF1:26",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "eyes"
+				}
+			],
+			"notes": "Mitigator: Bad Sight.  Break if penetrated.",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Crossbow Rest",
+			"value": "40",
+			"weight": "2 lb",
+			"reference": "DF1:25",
+			"notes": "Brace while standing, 1 Ready to set up",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Crossbow Sight",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"notes": "+1 Acc",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Crossbow Sling",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"notes": "1 turn to ready, Free action to sling. ",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Crowbar",
+			"tech_level": "2",
+			"value": "20",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "+2"
+					},
+					"strength": "10",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0U",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Axe/Mace",
+							"modifier": -1
+						},
+						{
+							"type": "Skill",
+							"name": "Flail",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "+2"
+					},
+					"strength": "10",
+					"usage": "Thrown",
+					"accuracy": "1",
+					"range": "x1/x1.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-3",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Axe/Mace"
+						}
+					]
+				}
+			],
+			"notes": "Treat as Mace, -1 to Skill",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Death Potion",
+			"value": "1000",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "inj, 2d on HT roll",
+						"base": "4d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. 2 yd radius. Respiratory Agent.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals",
+				"Concoctions:Poisons"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Delver's Webbing",
+			"value": "160",
+			"weight": "3 lb",
+			"reference": "DF1:25",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "20 lb"
+						}
+					}
+				]
+			},
+			"notes": "20 lb small items. Ready/Fast-Draw. +1 to Fast-Draw.",
+			"categories": [
+				"Adventure-Wear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Demon's Brew",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:28",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "inj, 1d on HT roll",
+						"base": "2d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. 2 yd radius. Respiratory Agent.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Poisons"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Disguise Kit",
+			"value": "800",
+			"weight": "10 lb",
+			"reference": "DF1:25",
+			"notes": "+1 to Disguise",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Drum",
+			"value": "40",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"notes": "Audible for miles. Two-handed.",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Dwarven Rations",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "navigation"
+					}
+				}
+			],
+			"notes": "Steady diet gives Resistant to Poison (+3)",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Dwarven Whetstone",
+			"value": "500",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"notes": "+1 damage for first blow after sharpening.",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Elven Rations",
+			"value": "15",
+			"weight": "0.5 lb",
+			"reference": "DF1:25",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "navigation"
+					}
+				}
+			],
+			"notes": "Essential Food. 3 meals each.",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "File",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"notes": "(DR+HP) min to cut through item",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Fire Resistance Potion",
+			"value": "500",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. Immunity to fire damage. 1d hours",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "First Aid Kit",
+			"value": "50",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"notes": "+1 to First Aid",
+			"categories": [
+				"Medical Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Fishhooks & Line",
+			"tech_level": "1",
+			"value": "50",
+			"weight": "0.01 lb",
+			"reference": "DF1:23",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Flight Potion",
+			"value": "3000",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. Flight. Move 10. 1 hour.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Garlic",
+			"value": "5",
+			"weight": "0.25 lb",
+			"reference": "DF1:28",
+			"notes": "Bundle. Repels vampires.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Natural Preparations"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Giant Spider Silk Cord, 10 yd",
+			"value": "100",
+			"weight": "0.5 lb",
+			"reference": "DF1:25",
+			"notes": "supports 360 lbs",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Glow Vial",
+			"value": "30",
+			"weight": "0.5 lb",
+			"reference": "DF1:28",
+			"notes": "Drop in pill. 12 hour. 2yd.  Neck lanyard.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Grapnel",
+			"value": "80",
+			"weight": "2 lb",
+			"reference": "DF1:25",
+			"notes": "Throw to ST×2 yd. 300 lb.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Great Healing Potion",
+			"value": "1000",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. 4d HP.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Group Basics",
+			"tech_level": "1",
+			"value": "50",
+			"weight": "20 lb",
+			"reference": "DF1:23",
+			"notes": "Basic EQ for Cooking/Survival for 3-8 people",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Hand Mirror",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Harp",
+			"value": "250",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"notes": "Not audible through door. Two-handed.",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Hatchet",
+			"tech_level": "0",
+			"value": "40",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw"
+					},
+					"strength": "8",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Axe/Mace"
+						},
+						{
+							"type": "Skill",
+							"name": "Flail",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw"
+					},
+					"strength": "8",
+					"usage": "Thrown",
+					"accuracy": "1",
+					"range": "x1.5/x2.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Axe/Mace"
+						}
+					]
+				}
+			],
+			"notes": "-1 to Skill to attack",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Healer's Kit (@Specialty@)",
+			"value": "200",
+			"weight": "10 lb",
+			"reference": "DF1:26",
+			"notes": "Basic EQ for Esoteric Medicine (@Specialty@). +1 to First Aid.",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Helmet Lamp",
+			"value": "100",
+			"weight": "2 lb",
+			"reference": "DF1:25",
+			"notes": "Uses 1 pt of oil per 12 hours, 5 yd.",
+			"categories": [
+				"Adventure-Wear",
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Hip Quiver",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "2 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 20 arrows/bolts",
+			"categories": [
+				"Combat Accessories"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Hip Quiver, Large",
+			"value": "30",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "5 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 50 arrows/bolts, 2 Compartments",
+			"categories": [
+				"Combat Accessories"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Holy Symbol",
+			"value": "50",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Holy Symbol, Blessed",
+			"value": "250",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"notes": "+1 to Exorcism, True Faith, etc (Not spells)",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Holy Symbol, High",
+			"value": "1000",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"notes": "+2 to Exorcism, True Faith, etc (Not spells)",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Holy Water",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"notes": "\"Grenade\" bottle. 1 pt",
+			"categories": [
+				"Esoteric Supplies"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Hooded Cape",
+			"tech_level": "1",
+			"value": "22",
+			"weight": "2.2 lb",
+			"reference": "DF8:17",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "Block",
+							"name": "Cloak"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "Special"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"accuracy": "+1",
+					"range": "2",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-4",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Cloak"
+						},
+						{
+							"type": "Skill",
+							"name": "Net",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "block"
+				}
+			],
+			"categories": [
+				"Clothing"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Horn",
+			"value": "100",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"notes": "Audible for miles. Two-handed. Speech impossible.",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Invisibility Potion",
+			"value": "2250",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. 1d×10 hours.  Attack or casting breaks it.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Invulnerability Potion",
+			"value": "2100",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +3 DR. 1d+1 hours.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Iron Spike",
+			"value": "1",
+			"weight": "0.5 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Ironskin Amulet",
+			"value": "28720",
+			"weight": "0.25 lb",
+			"reference": "DF1:30",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "torso"
+				}
+			],
+			"notes": "Alchemical.",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Ladder, 10'",
+			"value": "25",
+			"weight": "15 lb",
+			"reference": "DF1:24",
+			"notes": "Wooden",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lantern",
+			"tech_level": "2",
+			"value": "20",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"notes": "Uses 1 pint of oil per 24 hours,  2 yd",
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lanyard, Chain",
+			"value": "15",
+			"weight": "0.5 lb",
+			"reference": "DF1:24",
+			"notes": "SM-6, DR 4, HP 6",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lanyard, Leather",
+			"value": "1",
+			"weight": "0.1 lb",
+			"reference": "DF1:24",
+			"notes": "SM-6, DR 2, HP 2",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Liquid Ice",
+			"value": "250",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "burn (cold)",
+						"base": "2d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Armor provides 1/5 DR.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Litter",
+			"value": "50",
+			"weight": "25 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "200 lb"
+						}
+					}
+				]
+			},
+			"notes": "200 lb, 2 people to carry",
+			"categories": [
+				"Medical Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lockpicks",
+			"value": "50",
+			"weight": "0.1 lb",
+			"reference": "DF1:25",
+			"notes": "Basic EQ for Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lockpicks, Fine",
+			"value": "1000",
+			"weight": "2 lb",
+			"reference": "DF1:25",
+			"notes": "+2 to Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Lockpicks, Good",
+			"value": "250",
+			"weight": "0.5 lb",
+			"reference": "DF1:25",
+			"notes": "+1 to Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Magebane",
+			"value": "1400",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "burn (cold)",
+						"base": "2d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Respiratory. 2 yd radius. Wizards can't cast.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Magic Resistance Potion",
+			"value": "1600",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. Magic Resistance +5. -5 to wizard spells.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Major Healing Potion",
+			"value": "350",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. 2d HP.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Mallet",
+			"tech_level": "2",
+			"value": "15",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "+2"
+					},
+					"strength": "10",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0U",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Axe/Mace",
+							"modifier": -1
+						},
+						{
+							"type": "Skill",
+							"name": "Flail",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "+2"
+					},
+					"strength": "10",
+					"usage": "Thrown",
+					"accuracy": "1",
+					"range": "x1/x1.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-3",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Axe/Mace"
+						}
+					]
+				}
+			],
+			"notes": "-1 to Skill to attack",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Man Trap",
+			"value": "180",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Leg-Hold. 1d+1 cr, ST 12",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Manual (@Average Information Skill@)",
+			"value": "100",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-5",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Manual (@Easy Information Skill@)",
+			"value": "100",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-4",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Manual (@Hard Information Skill@)",
+			"value": "100",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-6",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Manual (@Very Hard Information Skill@)",
+			"value": "100",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-7",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Map (@Area@)",
+			"value": "100",
+			"weight": "0.1 lb",
+			"reference": "DF1:26",
+			"notes": "Reliable",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Mini-trap",
+			"value": "80",
+			"weight": "2.5 lb",
+			"reference": "DF1:26",
+			"notes": "Leg-Hold. 1d-1 cr, ST 8",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Minor Healing Potion",
+			"value": "120",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. 1d HP.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Mirror, Hand",
+			"value": "15",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Mirror, Tall",
+			"value": "125",
+			"weight": "10 lb",
+			"reference": "DF1:26",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Moly Amulet",
+			"value": "23600",
+			"weight": "0.25 lb",
+			"reference": "DF1:30",
+			"notes": "Alchemical. +5 Magic resistance. -5 to Wizard spells.",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Monster Drool",
+			"value": "20",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Utility. Immediate roll HT or take 2 injury.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Poisons"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Monster Trap",
+			"value": "320",
+			"weight": "11 lb",
+			"reference": "DF1:26",
+			"notes": "Leg-Hold. 1d+3 cr, ST 16",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Nageteppo, Flash",
+			"value": "40",
+			"weight": "0.2 lb",
+			"reference": "DF1:25",
+			"notes": "HT aff, 10 yd radius, vision based. Blindness, HT each turn to recover.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Nageteppo, Smoke",
+			"value": "40",
+			"weight": "0.2 lb",
+			"reference": "DF1:25",
+			"notes": "Obscure (Vision) 10, 2 yd radius.  5 sec.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Necklace of Fireballs",
+			"value": "7200",
+			"weight": "0.25 lb",
+			"reference": "DF1:30",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "burn ex",
+						"base": "3d"
+					},
+					"usage": "Ready/Throw",
+					"accuracy": "0",
+					"range": "25/50",
+					"shots": "10",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Innate Attack",
+							"specialization": "Projectile"
+						},
+						{
+							"type": "DX",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "(Explosive Fireball, Spell Stone)",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Necromantic Preservative",
+			"value": "110",
+			"weight": "1 lb",
+			"reference": "DF8:24"
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Oil, Lantern, 1 Pint",
+			"tech_level": "2",
+			"value": "2",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Oozing Doom",
+			"value": "100",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "inj, 1d on HT roll",
+						"base": "2d"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Contact Agent. DR sec to penetrate.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Poisons"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Padlock",
+			"value": "20",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"notes": "DR 3, HP 4, +5 to Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Padlock, Fine",
+			"value": "8000",
+			"weight": "2 lb",
+			"reference": "DF1:26",
+			"notes": "DR 12, HP 5, -5 to Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Padlock, Good",
+			"value": "400",
+			"weight": "2 lb",
+			"reference": "DF1:26",
+			"notes": "DR 6, HP 5, +0 to Lockpicking",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Paper, Heavy",
+			"value": "1",
+			"weight": "0.05 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Writing Equipment"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Paut",
+			"value": "135",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. 4 FP (Magic).",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Perception Potion",
+			"value": "700",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +6 to sense rolls.  3d×5 min.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Personal Basics",
+			"tech_level": "1",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:23",
+			"notes": "Basic EQ for individual Survival",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Pickaxe",
+			"tech_level": "3",
+			"value": "70",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "sw",
+						"base": "+1"
+					},
+					"strength": "10",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0U",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Axe/Mace"
+						},
+						{
+							"type": "Skill",
+							"name": "Flail",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -3
+						}
+					]
+				}
+			],
+			"notes": "May get stuck. Improves digging speed; -1 to Skill to attack",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Pole, 6'",
+			"value": "5",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Pole, 10'",
+			"value": "8",
+			"weight": "5 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Portable Ladder, 30'",
+			"value": "200",
+			"weight": "10 lb",
+			"reference": "DF1:26",
+			"notes": "Wooden slats on hooked ropes.  No climbing role required. Fits in pack.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Portable Ram",
+			"value": "150",
+			"weight": "35 lb",
+			"reference": "DF1:26",
+			"notes": "sw+3d+1 every 3 sec. 2-4 users. Max ST + 1/5 others.",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Potion Belt",
+			"value": "60",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "8 lb"
+						}
+					}
+				]
+			},
+			"notes": "4 bottles/8 vials. Ready/Fast-Draw. +2 DR for contents.",
+			"categories": [
+				"Adventure-Wear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Pouch",
+			"tech_level": "1",
+			"value": "10",
+			"weight": "0.2 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "3 lb"
+						}
+					}
+				]
+			},
+			"notes": "3 lb small items",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Quick-Release Backpack",
+			"value": "300",
+			"weight": "3 lb",
+			"reference": "DF1:25",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "40 lb. Drop as Free Action. Fragile items break on 1 on 1d.",
+			"categories": [
+				"Adventure-Wear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Rations",
+			"tech_level": "0",
+			"value": "2",
+			"weight": "0.5 lb",
+			"reference": "DF1:23",
+			"notes": "One meal",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Rope, 3/4\", 10 yd",
+			"value": "25",
+			"weight": "5 lb",
+			"reference": "DF1:24",
+			"notes": "Supports 1,100 lb",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Rope, 3/8\", 10 yd",
+			"value": "5",
+			"weight": "1.5 lb",
+			"reference": "DF1:24",
+			"notes": "Supports 300 lb",
+			"categories": [
+				"Miscellaneous Hardware"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Sack",
+			"value": "30",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "40 lb, DR 1, HP 5",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Salamander Amulet",
+			"value": "4920",
+			"weight": "0.25 lb",
+			"reference": "DF1:30",
+			"notes": "Alchemical. Immunity to mundane fire or fire spells.",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Salt",
+			"value": "15",
+			"weight": "0.0625 lb",
+			"reference": "DF8:11"
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Saw",
+			"value": "150",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Scribe's Kit",
+			"value": "50",
+			"weight": "2 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Writing Equipment"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Serpent's Amulet",
+			"value": "4920",
+			"weight": "0.25 lb",
+			"reference": "DF1:30",
+			"notes": "Alchemical. Immunity to Poison.",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Shackles",
+			"value": "200",
+			"weight": "2 lb",
+			"reference": "DF1:26",
+			"notes": "DR 4, HP 10",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Shoulder Quiver",
+			"value": "10",
+			"weight": "0.5 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "1.2 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 12 arrows/bolts",
+			"categories": [
+				"Combat Accessories"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Siege Stone",
+			"value": "550",
+			"reference": "DF1:30",
+			"notes": "Adds 5d to blow against an inanimate object. (Rive, Spell Stone)",
+			"categories": [
+				"Magic Items"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Sleep Potion",
+			"value": "500",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "HT-4 aff (Sleep 16-HT hr)"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Respiratory. 2 yd radius.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Sleeping Fur",
+			"tech_level": "1",
+			"value": "50",
+			"weight": "8 lb",
+			"reference": "DF1:23",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Snorkel, 6'",
+			"value": "30",
+			"weight": "1 lb",
+			"reference": "DF1:26",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Speed Potion",
+			"value": "550",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +1 BS and Move per dose, max 3. 3d×4 min.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Spy's Horn",
+			"value": "100",
+			"weight": "2 lb",
+			"reference": "DF1:26",
+			"notes": "Listen through doors etc at penalty of (DR+HP)/5",
+			"categories": [
+				"Covert Ops and Security Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Strength Potion",
+			"value": "250",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +1d ST (No HP).  1 hour.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Strongbox, Iron",
+			"value": "250",
+			"weight": "15 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 40 lbs of coins or other small items; DR12, HP10",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Sundial, Miniature",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "DF1:23",
+			"notes": "allows Navigation at only -1 for equipment, only in sunlight",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Surgical Instruments",
+			"value": "300",
+			"weight": "15 lb",
+			"reference": "DF1:24",
+			"notes": "Basic EQ for Surgery",
+			"categories": [
+				"Medical Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tent, 1-Man",
+			"tech_level": "0",
+			"value": "50",
+			"weight": "5 lb",
+			"reference": "DF1:23",
+			"notes": "Includes ropes; no poles needed",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tent, 2-Man",
+			"tech_level": "0",
+			"value": "80",
+			"weight": "12 lb",
+			"reference": "DF1:23",
+			"notes": "Includes ropes; requires one 6' pole",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tent, 4-Man",
+			"tech_level": "0",
+			"value": "150",
+			"weight": "30 lb",
+			"reference": "DF1:23",
+			"notes": "Includes ropes; requires two 6' poles",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tent, 20-Man",
+			"tech_level": "1",
+			"value": "300",
+			"weight": "100 lb",
+			"reference": "DF1:23",
+			"notes": "Includes ropes; requires 12 6' poles, 4 10' poles",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Thieves' Oil",
+			"value": "700",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Ointment. +5 to escape bond, squeeze through openings, etc. 1d hours.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Timed Candle",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:25",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "navigation"
+					}
+				}
+			],
+			"notes": "12 hours. Accurate to minutes.",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tinted Goggles",
+			"value": "150",
+			"weight": "0.5 lb",
+			"reference": "DF1:26",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "eyes"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": -5,
+					"attribute": "vision"
+				}
+			],
+			"notes": "Protected Vision. Break if penetrated.",
+			"categories": [
+				"Optics"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tome (@Average Information Skill@)",
+			"value": "500",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-5 or +1",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tome (@Easy Information Skill@)",
+			"value": "500",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-4 or +1",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tome (@Hard Information Skill@)",
+			"value": "500",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-6 or +1",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tome (@Very Hard Information Skill@)",
+			"value": "500",
+			"weight": "6 lb",
+			"reference": "DF1:26",
+			"notes": "Grants default of IQ-7 or +1",
+			"categories": [
+				"Information"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Tool Kit, Backpack (@Skill: Armoury, Smith, etc@)",
+			"value": "600",
+			"weight": "20 lb",
+			"reference": "DF1:24",
+			"notes": "Basic equipment for @Skill: Armoury, Smith, etc@. -2 for other skills",
+			"categories": [
+				"Tools"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Torch",
+			"value": "3",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"notes": "Burns for 1 hour, 2 yd.",
+			"categories": [
+				"Light Sources"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "True Water",
+			"value": "750",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Purifies 100 gal.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Vial, Crystal",
+			"value": "5",
+			"weight": "0.25 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "0.5 lb"
+						}
+					}
+				]
+			},
+			"notes": "½ pt, DR 1, HP 1, resists corrosion",
+			"categories": [
+				"Containers"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Weakness Potion",
+			"value": "800",
+			"weight": "1 lb",
+			"reference": "DF1:29",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "ST/dose (-12 max) 1d min",
+						"base": "-3"
+					},
+					"usage": "Grenade",
+					"accuracy": "0",
+					"range": "×2",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						},
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"notes": "Grenade. Respiratory. 2 yd radius.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Chemicals"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Wheelbarrow",
+			"value": "60",
+			"weight": "18 lb",
+			"reference": "DF1:24",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "350 lb"
+						}
+					}
+				]
+			},
+			"notes": "350 lb, divide load by 5",
+			"categories": [
+				"Tools"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Whetstone",
+			"value": "5",
+			"weight": "1 lb",
+			"reference": "DF1:24",
+			"categories": [
+				"Combat Accessories"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Whistle",
+			"value": "5",
+			"weight": "0.1 lb",
+			"reference": "DF1:24",
+			"notes": "For signaling",
+			"categories": [
+				"Musical Instruments"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Wineskin",
+			"tech_level": "0",
+			"value": "10",
+			"weight": "0.25 lb",
+			"reference": "DF1:23",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "8 lb"
+						}
+					}
+				]
+			},
+			"notes": "1 gal liquid",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Wisdom Potion",
+			"value": "1500",
+			"weight": "0.5 lb",
+			"reference": "DF1:29",
+			"notes": "Potion. +1 IQ.  1 hour.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Potions"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Wizard's Staff",
+			"value": "40",
+			"weight": "4 lb",
+			"reference": "LTC1:30",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "+2"
+					},
+					"strength": "7†",
+					"usage": "Swung",
+					"reach": "1,2",
+					"parry": "+2",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Staff"
+						},
+						{
+							"type": "Skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "+2"
+					},
+					"strength": "7†",
+					"usage": "Thrust",
+					"reach": "1,2",
+					"parry": "+2",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Staff"
+						},
+						{
+							"type": "Skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"notes": "(Staff)",
+			"categories": [
+				"Melee Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Wizard's Wand",
+			"value": "50",
+			"weight": "1 lb",
+			"reference": "LTC1:30",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw"
+					},
+					"strength": "6",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword"
+						},
+						{
+							"type": "Skill",
+							"name": "Broadsword",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Jitte/Sai",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Knife",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Smallsword",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Tonfa",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "1",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword"
+						},
+						{
+							"type": "Skill",
+							"name": "Broadsword",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Jitte/Sai",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Knife",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Smallsword",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Tonfa",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				}
+			],
+			"notes": "(Staff)",
+			"categories": [
+				"Melee Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Wolfsbane",
+			"value": "5",
+			"weight": "0.25 lb",
+			"reference": "DF1:28",
+			"notes": "Bundle. Repels lycanthropes.",
+			"categories": [
+				"Concoctions",
+				"Concoctions:Natural Preparations"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"quantity": 1,
+			"description": "Zither",
+			"value": "250",
+			"weight": "3 lb",
+			"reference": "DF1:24",
+			"notes": "Not audible through door. Two-handed.",
+			"categories": [
+				"Musical Instruments"
+			]
+		}
+	]
+}

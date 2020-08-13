@@ -1,0 +1,150 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "f0db0ef3-93d2-4993-88e5-a60da8b21dd2",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Meta-Trait: Intact Undead",
+			"reference": "H27",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Doesn't Breathe",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"reference": "B49"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "High Pain Threshold",
+					"physical": true,
+					"base_points": 10,
+					"reference": "B59",
+					"notes": "Never suffer shock penalties when injured; +3 on all HT\n\t\t\t\trolls to avoid knockdown and stunning; +3 to resist torture",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Injury Tolerance (No Blood)",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B61",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Injury Tolerance (Unliving)",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"reference": "B61",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Resistant",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Immunity to Metabolic Hazards",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Supernatural Features (No Body Heat)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -5,
+					"reference": "B157",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Supernatural Features (No Pulse)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -5,
+					"reference": "H26",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Supernatural Features (Pallor)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -10,
+					"reference": "B157",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Temperature Tolerance",
+					"physical": true,
+					"levels": "10",
+					"points_per_level": 1,
+					"reference": "B93",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Unaging",
+					"physical": true,
+					"exotic": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Age Control",
+							"reference": "B95",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B95",
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		}
+	]
+}

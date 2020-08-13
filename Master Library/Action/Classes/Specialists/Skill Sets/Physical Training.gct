@@ -1,0 +1,459 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "6b50bf3b-dab4-49b0-9346-98b8dfa9c798",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Physical Training",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Extra Fatigue Points",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 3,
+					"reference": "B16",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "fp"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose:",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Strength",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Size",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost_type": "percentage",
+									"cost": 300,
+									"affects": "total"
+								}
+							],
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Or take",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Health",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "ht"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Strength",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Size",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"levels": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Super-Effort",
+											"reference": "SU24",
+											"cost_type": "percentage",
+											"cost": 300,
+											"affects": "total"
+										}
+									],
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Physical Training",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Total of 2 points chosen from",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Bicycling",
+							"reference": "B180",
+							"difficulty": "DX/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Driving",
+									"specialization": "Motorcycle",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Jumping",
+							"reference": "B203",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Boxing",
+							"reference": "B182",
+							"difficulty": "DX/A",
+							"points": 1,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Boxing"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 1
+									}
+								},
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Boxing"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 2
+									}
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Climbing",
+							"reference": "B183",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Criminal/Street",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Wrestling",
+							"reference": "B228",
+							"difficulty": "DX/A",
+							"points": 1,
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Acrobatics",
+							"reference": "B174",
+							"difficulty": "DX/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Aerobatics",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Aquabatics",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Judo",
+							"reference": "B203",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/H",
+							"points": 1,
+							"notes": "Allows parrying two different attacks per turn, one with each hand.",
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Karate",
+							"reference": "B203",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/H",
+							"points": 1,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Karate"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 0
+									}
+								},
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Karate"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 1
+									}
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Swimming",
+							"reference": "B224",
+							"encumbrance_penalty_multiplier": 2,
+							"difficulty": "HT/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Lifting",
+							"reference": "B205",
+							"difficulty": "HT/A",
+							"points": 1,
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Running",
+							"reference": "B218",
+							"difficulty": "HT/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Skiing",
+							"reference": "B221",
+							"difficulty": "HT/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Outdoor/Exploration"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

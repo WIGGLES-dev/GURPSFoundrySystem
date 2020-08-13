@@ -1,0 +1,1942 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "bb7e3a1e-f38c-43a6-8346-b47897eabaaf",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Advantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Legal Enforcement Powers",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Local cop@",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@KGB@",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "WASP",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						}
+					],
+					"reference": "B65",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Rank",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Replaces Status",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Courtesy",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": -4,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B29",
+					"notes": "Military: ",
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Disadvantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "-20 Points in:",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Alcoholism",
+							"physical": true,
+							"base_points": -15,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Illegal",
+									"reference": "B122",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								}
+							],
+							"reference": "B122",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Dependant (Family members)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Point total",
+									"reference": "B131",
+									"cost_type": "points",
+									"cost": -1,
+									"affects": "total",
+									"notes": "100% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Point total",
+									"reference": "B131",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total",
+									"notes": "75% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Point total",
+									"reference": "B131",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total",
+									"notes": "50% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Point total",
+									"reference": "B131",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total",
+									"notes": "25% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Point total",
+									"reference": "B131",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total",
+									"notes": "0 or fewer points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears almost all the time",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 3,
+									"notes": "15-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears quite often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 2,
+									"notes": "12-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears fairly often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 1,
+									"notes": "9-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears quite rarely",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 0.5,
+									"notes": "6-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Group",
+									"reference": "B131",
+									"cost_type": "multiplier",
+									"cost": 2
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Acquaintance",
+									"reference": "B131",
+									"cost_type": "multiplier",
+									"cost": 0.5
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Friend",
+									"reference": "B131",
+									"cost_type": "multiplier",
+									"cost": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Loved one",
+									"reference": "B131",
+									"cost_type": "multiplier",
+									"cost": 2
+								}
+							],
+							"reference": "B131",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Honesty",
+							"mental": true,
+							"base_points": -10,
+							"cr": 12,
+							"reference": "B138",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Impulsiveness",
+							"mental": true,
+							"base_points": -10,
+							"cr": 12,
+							"reference": "B139",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Intolerance (Criminals)",
+							"mental": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Scope: Common",
+									"reference": "B140",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Scope: Occasional",
+									"reference": "B140",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Scope: Rare",
+									"reference": "B140",
+									"cost_type": "points",
+									"cost": -1,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Scope: Anyone unlike you",
+									"reference": "B140",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								}
+							],
+							"reference": "B140",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Lecherousness",
+							"mental": true,
+							"base_points": -15,
+							"cr": 12,
+							"reference": "B142",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Overconfidence",
+							"mental": true,
+							"base_points": -5,
+							"cr": 12,
+							"reference": "B148",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Sense of Duty",
+							"mental": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total"
+								}
+							],
+							"reference": "B153",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Sense of Duty",
+							"mental": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Nation",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total"
+								}
+							],
+							"reference": "B153",
+							"categories": [
+								"Disadvantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Duty (WASP)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 6",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 9",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "FR: 12",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "FR: 15",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Extremely Hazardous",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Involuntary",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Nonhazardous",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B133",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Computer Operation",
+			"reference": "B184",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Electronics Operation",
+			"reference": "B189",
+			"specialization": "Communications",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Electronics Operation",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Electronics Repair",
+					"specialization": "Communications",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Shortsword",
+			"reference": "B209",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Broadsword",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Force Sword",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Jitte/Sai",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Knife",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Saber",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Smallsword",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Tonfa",
+					"modifier": -3
+				},
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Tactics",
+			"reference": "B224",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "Strategy",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Military",
+				"Police"
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Choose One from:",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Light Anti-Armor Weapon",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Light Machine Gun",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Pistol",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Beam Weapons",
+							"specialization": "Pistol",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Rifle",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Beam Weapons",
+							"specialization": "Rifle",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Shotgun",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Submachine Gun",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "12 Points in:",
+			"open": true
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Battlesuits",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Battlesuits",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Body Armor",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Body Armor",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Heavy Weapons",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Heavy Weapons",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Small Arms",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Small Arms",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Battlesuit",
+			"reference": "B192",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Diving Suit",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Vacc Suit",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "NBC Suit",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Military",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Carousing",
+			"reference": "B183",
+			"difficulty": "HT/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Driving",
+			"reference": "B188",
+			"specialization": "Automobile",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Heavy Wheeled",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Driving",
+			"reference": "B188",
+			"specialization": "Heavy Wheeled",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Automobile",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Driving",
+			"reference": "B188",
+			"specialization": "Motorcycle",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Bicycling",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Electronics Operation",
+			"reference": "B189",
+			"specialization": "Sensors",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Electronics Repair",
+					"specialization": "Sensors",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Electronics Operation",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Leadership",
+			"reference": "B204",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Military",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Automobile",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Automobile",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Diesel Engine",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Diesel Engine",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Fission Reactor",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Fission Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Flight Pack",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Flight Pack",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Fuel Cell",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Fuel Cell",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Fusion Reactor",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Fusion Reactor",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Gas Turbine",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Gas Turbine",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Gasoline Engine",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Gasoline Engine",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Heavy Wheeled",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Heavy Wheeled",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Helicopter",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Helicopter",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Motorcycle",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Motorcycle",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Robotics",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Robotics",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Rockets",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Rockets",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic"
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Wheeled Drive",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Wheeled Drive",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Piloting",
+			"reference": "B214",
+			"specialization": "Helicopter",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "Piloting",
+					"specialization": "Autogyro",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Piloting",
+					"specialization": "Vertol",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Piloting",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		}
+	]
+}

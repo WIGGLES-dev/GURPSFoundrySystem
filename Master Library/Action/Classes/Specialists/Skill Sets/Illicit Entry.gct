@@ -1,0 +1,171 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "5895ae8b-de00-43af-91e3-3680868e0c56",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Illicit Entry",
+			"reference": "ACT4:17",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Equipment Bond (@any item from Burglar's Tools@)",
+					"physical": true,
+					"base_points": 1,
+					"reference": "MH1:25",
+					"categories": [
+						"Perk"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Illicit Entry",
+			"reference": "ACT4:17",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Climbing",
+					"reference": "B183",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Criminal/Street",
+						"Outdoor/Exploration"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Security",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Security",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Escape",
+					"reference": "B192",
+					"difficulty": "DX/H",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Criminal/Street"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Forced Entry",
+					"reference": "B196",
+					"difficulty": "DX/E",
+					"points": 4,
+					"categories": [
+						"Criminal/Street",
+						"Police",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Lockpicking",
+					"reference": "B206",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Police",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Stealth",
+					"reference": "B222",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Police",
+						"Spy"
+					]
+				}
+			]
+		}
+	]
+}

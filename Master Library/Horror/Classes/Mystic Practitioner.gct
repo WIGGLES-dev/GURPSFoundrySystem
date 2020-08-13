@@ -1,0 +1,4796 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "9bc34349-3676-4512-a664-5edadd46f4a3",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Mystic (Practitioner)",
+			"reference": "H39",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Health",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": -10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Perception",
+							"mental": true,
+							"physical": true,
+							"levels": "2",
+							"points_per_level": -5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "perception"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Will",
+							"mental": true,
+							"levels": "2",
+							"points_per_level": -5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "will"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "4",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "15 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Animal Empathy",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "All aquatic animals"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "All land animals"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@One class: Mammals, Birds, etc.@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "@One family: Felines, Parrots, etc.@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total",
+											"notes": "@One species: House Cats, Macaws, etc.@"
+										}
+									],
+									"reference": "B40",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Autotrance",
+									"mental": true,
+									"base_points": 1,
+									"reference": "B101",
+									"categories": [
+										"Perk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Charisma",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B41",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											}
+										}
+									],
+									"notes": "+1/level to Influence rolls",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Talent (Cunning Folk)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Local peasantry, clients, and acolytes."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternative Benefit",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "levels_only",
+											"notes": "A roll at IQ-4, +1/level of Cunning Folk, to notice anything odd – curses, blights, faeries in the basement, etc. – that happens to animals, crops, or people in an area where you’ve lived for at least (6 - Cunning Folk level) months."
+										}
+									],
+									"reference": "PU3:9",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Animal Handling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Fortune-Telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Herb Lore"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Naturalist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Occultism"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Poisons"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Veterinary"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Weather Sense"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Danger Sense",
+									"mental": true,
+									"base_points": 15,
+									"reference": "B47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "ESP Talent",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "PSI19",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divination Talent"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Remote Senses Talent"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Common Sense"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Danger Sense"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Illuminated"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Oracle"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Psidar"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Psychic Hunches"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Racial Memory"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Seekersense"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Spirit Communication"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "True Sight (ESP)"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Combat Sense"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Divination"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Prognostication"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Psi Sense"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Retrocognition"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Visions"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Awareness"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Clairvoyance"
+											}
+										}
+									],
+									"categories": [
+										"Divination",
+										"ESP",
+										"Power",
+										"Psionics",
+										"Remote Senses"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Intuition",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Inspired",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B63",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Luck",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Active",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Aspected",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "@Aspect@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Defensive",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P59",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B66",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Luck"
+												}
+											}
+										]
+									},
+									"notes": "Usable once per hour of play",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Magery",
+									"mental": true,
+									"supernatural": true,
+									"levels": "0",
+									"base_points": 5,
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dance",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dark-Aspected",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Day-Aspected",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Musical",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Night-Aspected",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "One College",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only",
+											"notes": "@College@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Solitary",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Song",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "levels_only"
+										}
+									],
+									"reference": "B66",
+									"features": [
+										{
+											"type": "spell_bonus",
+											"amount": 1,
+											"per_level": true,
+											"match": "all_colleges"
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "thaumatology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Plant Empathy",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "P77",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "All terrestrial plants"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "P77",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "All aquatic plants"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "P77",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@Large Subset: Herbs, Trees@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "P77",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "@Small Subset: Evergreens, Medicinals@"
+										}
+									],
+									"reference": "B75",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Reawakened",
+									"mental": true,
+									"supernatural": true,
+									"base_points": 10,
+									"reference": "B80",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "See Invisible",
+									"physical": true,
+									"exotic": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "True Sight",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B83",
+									"notes": "@Type@",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Empathy",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "detect lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Empathy (Sensitive)",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "detect lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Serendipity",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "For others only"
+										}
+									],
+									"reference": "B83",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Spirit Empathy",
+									"mental": true,
+									"supernatural": true,
+									"base_points": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Specialized",
+											"reference": "B87",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@Type: Angels, Demons, Elementals, Faerie, Ghosts, etc.@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B88",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "True Faith",
+									"mental": true,
+									"supernatural": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Chosen",
+											"reference": "P84",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "@Deity@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Turning",
+											"reference": "P84",
+											"cost_type": "percentage",
+											"cost": 65,
+											"affects": "total"
+										}
+									],
+									"reference": "B94",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Voice",
+									"physical": true,
+									"base_points": 10,
+									"reference": "B97",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "mimicry"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "performance"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "politics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "singing"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Practitioner Packages",
+							"notes": "Choose same package as primary skill",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Chosen",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Higher Purpose (Serve Dionysus's Will)",
+											"mental": true,
+											"exotic": true,
+											"base_points": 5,
+											"reference": "B59",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Power Investiture (Dionysus)",
+											"mental": true,
+											"supernatural": true,
+											"levels": "1",
+											"points_per_level": 10,
+											"reference": "B77",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Fortune-Teller",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Precognition",
+											"mental": true,
+											"supernatural": true,
+											"base_points": 25,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Can't See Own Death",
+													"reference": "B77",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "One Event",
+													"reference": "B77",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total",
+													"notes": "@Event Type@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Directed",
+													"reference": "P68",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Active Only",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Passive Only",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Reduced Fatigue Cost",
+													"cost_type": "percentage",
+													"cost": 20,
+													"affects": "total",
+													"levels": 1
+												}
+											],
+											"reference": "B77",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Medium",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Autotrance",
+											"mental": true,
+											"base_points": 1,
+											"reference": "B101",
+											"categories": [
+												"Perk"
+											]
+										},
+										{
+											"type": "advantage_container",
+											"version": 1,
+											"name": "Choose one",
+											"open": false,
+											"children": [
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "Channeling",
+													"mental": true,
+													"supernatural": true,
+													"base_points": 10,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Aware",
+															"reference": "P43",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Specialized",
+															"reference": "P44",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total",
+															"notes": "@Type@"
+														}
+													],
+													"reference": "B41",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "Medium",
+													"mental": true,
+													"supernatural": true,
+													"base_points": 10,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Manifestation",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Universal",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Visual",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Specialized",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total",
+															"notes": "@Class of Spirits@"
+														}
+													],
+													"reference": "B68",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "Medium",
+													"mental": true,
+													"supernatural": true,
+													"base_points": 10,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Manifestation",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Universal",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Visual",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Specialized",
+															"reference": "P60",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total",
+															"notes": "@Class of Spirits@"
+														}
+													],
+													"reference": "B68",
+													"categories": [
+														"Advantage"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Oracle",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Oracle",
+											"mental": true,
+											"supernatural": true,
+											"base_points": 15,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Inspired",
+													"reference": "P65",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												}
+											],
+											"reference": "B72",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Psychic Consultant",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Psychometry",
+											"mental": true,
+											"supernatural": true,
+											"base_points": 20,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Directed",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": 50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Immersive",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sensitive",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": 30,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Active Only",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Hypersensory",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Mundane",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -30,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Passive Only",
+													"reference": "P69",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total"
+												}
+											],
+											"reference": "B78",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Reincarnated Egyptian Sorcerer",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Cultural Familiarity (Ancient Egypt)",
+											"mental": true,
+											"base_points": 1,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Alien",
+													"cost_type": "points",
+													"cost": 1,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Native",
+													"cost_type": "points",
+													"cost": -1,
+													"affects": "total"
+												}
+											],
+											"reference": "B23",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Language: Ancient Egyptian",
+											"mental": true,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Native",
+													"reference": "B23",
+													"cost_type": "points",
+													"cost": -6,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Spoken",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 0,
+													"affects": "total",
+													"notes": "None"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Spoken",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 1,
+													"affects": "total",
+													"notes": "Broken"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Spoken",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 2,
+													"affects": "total",
+													"notes": "Accented"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Spoken",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 3,
+													"affects": "total",
+													"notes": "Native"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Written",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 0,
+													"affects": "total",
+													"notes": "None"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Written",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 1,
+													"affects": "total",
+													"notes": "Broken"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Written",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 2,
+													"affects": "total",
+													"notes": "Accented"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Written",
+													"reference": "B24",
+													"cost_type": "points",
+													"cost": 3,
+													"affects": "total",
+													"notes": "Native"
+												}
+											],
+											"reference": "B24",
+											"categories": [
+												"Advantage",
+												"Language"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Reawakened",
+											"mental": true,
+											"supernatural": true,
+											"base_points": 10,
+											"reference": "B80",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Sensitive",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Autotrance",
+											"mental": true,
+											"base_points": 1,
+											"reference": "B101",
+											"categories": [
+												"Perk"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Detect",
+											"mental": true,
+											"physical": true,
+											"exotic": true,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "@Rare Substance/Condition@",
+													"reference": "B48",
+													"cost_type": "points",
+													"cost": 5,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Spirits",
+													"reference": "B48",
+													"cost_type": "points",
+													"cost": 10,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "@Common Substance/Condition@",
+													"reference": "B48",
+													"cost_type": "points",
+													"cost": 20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "@Very Common Substance/Condition@",
+													"reference": "B48",
+													"cost_type": "points",
+													"cost": 30,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Precise",
+													"reference": "B48",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Signal Detection",
+													"reference": "B48",
+													"cost_type": "percentage",
+													"cost": 0,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Vague",
+													"reference": "B48",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Analyzing",
+													"reference": "P47",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												}
+											],
+											"reference": "B48",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Spirit Empathy",
+											"mental": true,
+											"supernatural": true,
+											"base_points": 10,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total",
+													"notes": "@Type: Angels, Demons, Elementals, Faerie, Ghosts, etc.@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Remote",
+													"reference": "P48",
+													"cost_type": "percentage",
+													"cost": 50,
+													"affects": "total"
+												}
+											],
+											"reference": "B88",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Touched",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Distractible",
+											"mental": true,
+											"base_points": -1,
+											"reference": "B164",
+											"categories": [
+												"Quirk"
+											]
+										},
+										{
+											"type": "advantage_container",
+											"version": 1,
+											"name": "Second Sight",
+											"reference": "H18",
+											"open": false,
+											"children": [
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "See Invisible (Faerie)",
+													"physical": true,
+													"exotic": true,
+													"base_points": 15,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "True Sight",
+															"reference": "P73",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Link",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Magical",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Unconscious Only",
+															"cost_type": "percentage",
+															"cost": -20,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Uncontrollable",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														}
+													],
+													"reference": "B83",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "See Invisible (Ghosts)",
+													"physical": true,
+													"exotic": true,
+													"base_points": 15,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "True Sight",
+															"reference": "P73",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Link",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Magical",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Unconscious Only",
+															"cost_type": "percentage",
+															"cost": -20,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Uncontrollable",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														}
+													],
+													"reference": "B83",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"name": "Precognition",
+													"mental": true,
+													"supernatural": true,
+													"base_points": 25,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Active Only",
+															"reference": "P69",
+															"cost_type": "percentage",
+															"cost": -60,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Can't See Own Death",
+															"reference": "B77",
+															"cost_type": "percentage",
+															"cost": -60,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "Directed",
+															"reference": "P68",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Link",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Magical",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "No Danger Sense",
+															"cost_type": "percentage",
+															"cost": -60,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"disabled": true,
+															"name": "One Event",
+															"reference": "B77",
+															"cost_type": "percentage",
+															"cost": -40,
+															"affects": "total",
+															"notes": "@Event Type@"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"name": "Passive Only",
+															"reference": "P69",
+															"cost_type": "percentage",
+															"cost": -20,
+															"affects": "total"
+														}
+													],
+													"reference": "B77",
+													"categories": [
+														"Advantage"
+													]
+												}
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Habit (Stares off into nothing)",
+											"physical": true,
+											"base_points": -1
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Weird Lady Who Talks to Cats",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Ally (Cats)",
+											"social": true,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Point total",
+													"reference": "B37",
+													"cost_type": "points",
+													"cost": 1,
+													"affects": "total",
+													"notes": "25% of your starting points"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Point total",
+													"reference": "B37",
+													"cost_type": "points",
+													"cost": 2,
+													"affects": "total",
+													"notes": "50% of your starting points"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Point total",
+													"reference": "B37",
+													"cost_type": "points",
+													"cost": 3,
+													"affects": "total",
+													"notes": "75% of your starting points"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Point total",
+													"reference": "B37",
+													"cost_type": "points",
+													"cost": 5,
+													"affects": "total",
+													"notes": "100% of your starting points"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Point total",
+													"reference": "B37",
+													"cost_type": "points",
+													"cost": 10,
+													"affects": "total",
+													"notes": "150% of your starting points"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Appears constantly",
+													"reference": "B36",
+													"cost_type": "multiplier",
+													"cost": 4,
+													"notes": "No roll required"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Appears almost all the time",
+													"reference": "B36",
+													"cost_type": "multiplier",
+													"cost": 3,
+													"notes": "15-"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Appears quite often",
+													"reference": "B36",
+													"cost_type": "multiplier",
+													"cost": 2,
+													"notes": "12-"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Appears fairly often",
+													"reference": "B36",
+													"cost_type": "multiplier",
+													"cost": 1,
+													"notes": "9-"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Appears quite rarely",
+													"reference": "B36",
+													"cost_type": "multiplier",
+													"cost": 0.5,
+													"notes": "6-"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Group of 6-10",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 6
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 11-20",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 8
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 21-50",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 10
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 51-100",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 12
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 101-1000",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 18
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 1001-10000",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 24
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 10001-100000",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 30
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Group of 100001-1000000",
+													"reference": "B37",
+													"cost_type": "multiplier",
+													"cost": 36
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Minion",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": 50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Minion",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": 0,
+													"affects": "total",
+													"notes": "IQ 0 or Slave Mentality"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Special Abilities",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": 50,
+													"affects": "total",
+													"notes": "@Abilities@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Summonable",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sympathy",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": -25,
+													"affects": "total",
+													"notes": "Death of one party reduces the other to 0 HP"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sympathy",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": -5,
+													"affects": "total",
+													"notes": "Death of one party reduces the other to 0 HP and wounds affect ally but not you"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sympathy",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total",
+													"notes": "Death of one party kills the other"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sympathy",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": -10,
+													"affects": "total",
+													"notes": "Death of one party kills the other and wounds affect ally but not you"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Unwilling",
+													"reference": "B38",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Favor",
+													"reference": "B55",
+													"cost_type": "multiplier",
+													"cost": 0.2
+												}
+											],
+											"reference": "B36",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Animal Empathy",
+											"mental": true,
+											"base_points": 5,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Remote",
+													"reference": "P48",
+													"cost_type": "percentage",
+													"cost": 50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total",
+													"notes": "All aquatic animals"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total",
+													"notes": "All land animals"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total",
+													"notes": "@One class: Mammals, Birds, etc.@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total",
+													"notes": "Felines"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -80,
+													"affects": "total",
+													"notes": "@One species: House Cats, Macaws, etc.@"
+												}
+											],
+											"reference": "B40",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Speak With Animals",
+											"mental": true,
+											"exotic": true,
+											"base_points": 25,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total",
+													"notes": "All aquatic animals"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total",
+													"notes": "All land animals"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total",
+													"notes": "@One class: Mammals, Birds, etc.@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total",
+													"notes": "Felines"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Specialized",
+													"reference": "B87",
+													"cost_type": "percentage",
+													"cost": -80,
+													"affects": "total",
+													"notes": "@One species: House Cats, Macaws, etc.@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Sapience",
+													"reference": "P77",
+													"cost_type": "percentage",
+													"cost": 40,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Universal",
+													"reference": "P77",
+													"cost_type": "percentage",
+													"cost": 20,
+													"affects": "total"
+												}
+											],
+											"reference": "B87",
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"name": "Witch",
+									"open": false,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"name": "Magery",
+											"mental": true,
+											"supernatural": true,
+											"levels": "1",
+											"base_points": 5,
+											"points_per_level": 10,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Dance",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Dark-Aspected",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Day-Aspected",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Musical",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Night-Aspected",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "One College",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only",
+													"notes": "@College@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Solitary",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"disabled": true,
+													"name": "Song",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "levels_only"
+												}
+											],
+											"reference": "B66",
+											"features": [
+												{
+													"type": "spell_bonus",
+													"amount": 1,
+													"per_level": true,
+													"match": "all_colleges"
+												},
+												{
+													"type": "skill_bonus",
+													"amount": 1,
+													"per_level": true,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "thaumatology"
+													}
+												}
+											],
+											"categories": [
+												"Advantage"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-20 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Alcoholism",
+									"physical": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Illegal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										}
+									],
+									"reference": "B122",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Chronic Pain (Migraines)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "1 Hour",
+											"reference": "B126",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "2 Hours",
+											"reference": "B126",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "4 Hours",
+											"reference": "B126",
+											"cost_type": "multiplier",
+											"cost": 1.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "8 Hours",
+											"reference": "B126",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "FR: 6",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 9",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 12",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 15",
+											"cost_type": "multiplier",
+											"cost": 3
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Mild",
+											"reference": "B126",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total",
+											"notes": "-2 to DX, IQ, and self-control rolls"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Severe",
+											"reference": "B126",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "-4 to DX, IQ, and self-control rolls"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Agonizing",
+											"reference": "B126",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "-6 to DX, IQ, and self-control rolls"
+										}
+									],
+									"reference": "B126",
+									"notes": "-2 to DX, IQ and self-control rolls",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Delusion (@Belief@)",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Severe",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B130",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Destiny (@Disadvantage@)",
+									"mental": true,
+									"supernatural": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B132",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B132",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Great",
+											"reference": "B132",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B132",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fearfulness",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": -2,
+									"reference": "B136",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "fearlessness"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Flashbacks (Crippling, 3D minutes)",
+									"physical": true,
+									"base_points": -20,
+									"reference": "B136",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Flashbacks (Mild, -2, 2D seconds)",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B136",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Flashbacks (Severe, -5, 1D minutes)",
+									"physical": true,
+									"base_points": -10,
+									"reference": "B136",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Guilt Complex",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B137",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Insomniac (Mild)",
+									"physical": true,
+									"base_points": -10,
+									"reference": "B140",
+									"notes": "GM secretly rolls 3d for the number of days between episodes",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Insomniac (Severe)",
+									"physical": true,
+									"base_points": -15,
+									"reference": "B140",
+									"notes": "GM secretly rolls 2d-1 for the number of days between episodes",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Light Sleeper",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B142",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Nightmares",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B144",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Obsession",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Short term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Long term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B146",
+									"notes": "Prevent visions from coming true",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Phantom Voices",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Annoying",
+											"reference": "B148",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Disturbing",
+											"reference": "B148",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Diabolical",
+											"reference": "B148",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"round_down": true,
+									"name": "Reputation",
+									"social": true,
+									"levels": "1",
+									"points_per_level": -5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "Almost everyone"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.67,
+											"notes": "Almost everyone except @large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "@Large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "@Small class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "10-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "7-"
+										}
+									],
+									"reference": "B26",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Shyness",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Mild",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Severe",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Crippling",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										}
+									],
+									"reference": "B154",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unluckiness",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B160",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Mystic (Practitioner)",
+			"reference": "H39",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Primary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one of the 25-point practitioner packages",
+							"notes": "Choose same package as advantages",
+							"open": false,
+							"children": [
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Chosen",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Religious Ritual",
+											"reference": "B217",
+											"specialization": "Dionysian",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Ritual Magic",
+													"specialization": "Dionysian",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Theology",
+													"specialization": "Dionysian",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Theology",
+											"reference": "B226",
+											"specialization": "Dionysian",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Religious Ritual",
+													"specialization": "Dionysian",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Two spells at 1 point each",
+											"open": true
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Fortune-Teller",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Fortune-Telling",
+											"reference": "B196",
+											"specialization": "@Any@",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												},
+												{
+													"type": "Skill",
+													"name": "Fast-Talk",
+													"modifier": -3
+												},
+												{
+													"type": "Skill",
+													"name": "Occultism",
+													"modifier": -3
+												}
+											],
+											"categories": [
+												"Social"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Occultism",
+											"reference": "B212",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "technique",
+											"version": 1,
+											"name": "True @Fortune-Telling Skill@",
+											"difficulty": "H",
+											"points": 6,
+											"limit": 0,
+											"default": {
+												"type": "Skill",
+												"name": "Fortune-Telling",
+												"specialization": "@Specialty@",
+												"modifier": -8
+											},
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Fortune-Telling"
+														},
+														"specialization": {
+															"compare": "is",
+															"qualifier": "@Specialty@"
+														}
+													},
+													{
+														"type": "advantage_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Precognition"
+														}
+													}
+												]
+											}
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Medium",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Hidden Lore",
+											"reference": "B199",
+											"specialization": "Spirit Lore",
+											"difficulty": "IQ/A",
+											"points": 1,
+											"categories": [
+												"Knowledge",
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Religious Ritual",
+											"reference": "B217",
+											"specialization": "Séance",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Ritual Magic",
+													"specialization": "Séance",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Theology",
+													"specialization": "Séance",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Theology",
+											"reference": "B226",
+											"specialization": "Spiritualism",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Religious Ritual",
+													"specialization": "Spiritualism",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Social Sciences/Humanities"
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Oracle",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Fortune-Telling",
+											"reference": "B196",
+											"specialization": "@Any@",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												},
+												{
+													"type": "Skill",
+													"name": "Fast-Talk",
+													"modifier": -3
+												},
+												{
+													"type": "Skill",
+													"name": "Occultism",
+													"modifier": -3
+												}
+											],
+											"categories": [
+												"Social"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Occultism",
+											"reference": "B212",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Total of 6 points spent on",
+											"notes": "Or package skills or additional background skill",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Theology",
+													"reference": "B226",
+													"specialization": "@Specialty@",
+													"difficulty": "IQ/H",
+													"points": 1,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -6
+														},
+														{
+															"type": "Skill",
+															"name": "Religious Ritual",
+															"specialization": "@Specialty@",
+															"modifier": -4
+														}
+													],
+													"categories": [
+														"Social Sciences/Humanities"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Psychic Consultant",
+									"open": false,
+									"children": [
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Fortune-Telling",
+													"reference": "B196",
+													"specialization": "@Any@",
+													"difficulty": "IQ/A",
+													"points": 1,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Fast-Talk",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Occultism",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Social"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Savoir-Faire",
+													"reference": "B218",
+													"specialization": "Police",
+													"difficulty": "IQ/E",
+													"points": 1,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -4
+														}
+													],
+													"categories": [
+														"Knowledge",
+														"Police",
+														"Social"
+													]
+												}
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Expert Skill",
+													"reference": "B193",
+													"specialization": "Psionics",
+													"difficulty": "IQ/H",
+													"points": 4,
+													"categories": [
+														"Knowledge",
+														"Occult/Magical",
+														"Scholarly"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Occultism",
+													"reference": "B212",
+													"difficulty": "IQ/A",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -5
+														}
+													],
+													"categories": [
+														"Occult/Magical"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Reinarnated Egyptian Sorcerer",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Expert Skill",
+											"reference": "B193",
+											"specialization": "Egyptology",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"categories": [
+												"Knowledge",
+												"Scholarly",
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Four spells at 1 point each",
+											"open": true
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Sensitive",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Expert Skill",
+											"reference": "B193",
+											"specialization": "Pneumatology",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"categories": [
+												"Knowledge",
+												"Scholarly"
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Touched",
+									"open": false
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Weird Lady Who Talks to Cats",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"specialization": "Neighborhood",
+											"difficulty": "IQ/E",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Geography",
+													"modifier": -3
+												}
+											],
+											"notes": "The residents and buildings of a few city blocks",
+											"categories": [
+												"Everyman",
+												"Knowledge"
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Witch",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Occultism",
+											"reference": "B212",
+											"difficulty": "IQ/A",
+											"points": 4,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Occult/Magical"
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Ritual Magic",
+													"reference": "B218",
+													"specialization": "@Specialty@",
+													"difficulty": "IQ/VH",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "Skill",
+															"name": "Ritual Magic",
+															"modifier": -6
+														}
+													],
+													"categories": [
+														"Occult/Magical"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Thaumatology",
+													"reference": "B225",
+													"difficulty": "IQ/VH",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -7
+														}
+													],
+													"categories": [
+														"Occult/Magical"
+													]
+												}
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Two spells at 1 point each",
+											"open": false
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Secondary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Total of 9 points in",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Current Affairs",
+									"reference": "B186",
+									"specialization": "Supernatural",
+									"tech_level": "",
+									"difficulty": "IQ/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Research",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Current Affairs",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Business",
+										"Everyman",
+										"Knowledge",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Detect Lies",
+									"reference": "B187",
+									"difficulty": "Per/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Per",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Body Language",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Psychology",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Police",
+										"Social",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Dreaming",
+									"reference": "B188",
+									"difficulty": "Will/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Will",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Esoteric"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Exorcism",
+									"reference": "B193",
+									"difficulty": "Will/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Will",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Religious Ritual",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Ritual Magic",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Theology",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Occult/Magical"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Hidden Lore",
+									"reference": "B199",
+									"specialization": "@Subject@",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"categories": [
+										"Knowledge"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Hypnotism",
+									"reference": "B201",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"categories": [
+										"Medical"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Meditation",
+									"reference": "B207",
+									"difficulty": "Will/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Will",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Autohypnosis",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Esoteric"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Mental Strength",
+									"reference": "B209",
+									"difficulty": "Will/E",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "weapon master"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "trained by a master"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Esoteric"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Mind Block",
+									"reference": "B210",
+									"difficulty": "Will/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Will",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Meditation",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Esoteric"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Research",
+									"reference": "B217",
+									"tech_level": "",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "prereq_list",
+												"all": true,
+												"when_tl": {
+													"compare": "at_least",
+													"qualifier": 8
+												},
+												"prereqs": [
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Computer Operation"
+														}
+													}
+												]
+											},
+											{
+												"type": "prereq_list",
+												"all": false,
+												"prereqs": [
+													{
+														"type": "advantage_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Native"
+														}
+													},
+													{
+														"type": "advantage_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Accented)"
+														}
+													},
+													{
+														"type": "advantage_prereq",
+														"has": true,
+														"name": {
+															"compare": "starts_with",
+															"qualifier": "Language"
+														},
+														"notes": {
+															"compare": "contains",
+															"qualifier": "Written (Broken)"
+														}
+													}
+												]
+											}
+										]
+									},
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Writing",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Scholarly",
+										"Spy"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Background Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Acting",
+									"reference": "B174",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Performance",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Public Speaking",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Social",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Fast-Talk",
+									"reference": "B195",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Social",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Gambling",
+									"reference": "B197",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Mathematics",
+											"specialization": "Statistics",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Public Speaking",
+									"reference": "B216",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Performance",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Politics",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Business",
+										"Scholarly",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Diplomacy",
+									"reference": "B187",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Politics",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Business",
+										"Police",
+										"Social"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

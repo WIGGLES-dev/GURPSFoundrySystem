@@ -1,0 +1,637 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "242bbd8e-2417-4100-903a-55c1019c7eba",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Standard Issue - Penetration Service",
+			"reference": "IW27",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 20,
+					"description": "3/16\" Rope",
+					"tech_level": "10",
+					"value": "0.5",
+					"weight": "0.025 lb",
+					"reference": "UT81",
+					"notes": "Per yard. Supports 2,000lbs.",
+					"categories": [
+						"Tools and Construction Materials"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "10mm ISP clip",
+					"tech_level": "9",
+					"value": "45",
+					"weight": "0.71 lb",
+					"reference": "IW200",
+					"categories": [
+						"Ammunition",
+						"Missile Weapon"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Assault Boots",
+					"tech_level": "9",
+					"value": "53",
+					"weight": "0.89 lb",
+					"reference": "IW26",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 12,
+							"location": "feet"
+						}
+					],
+					"categories": [
+						"Footwear"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "At Least 1",
+					"notes": "Specific quantity not defined",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Nanobug",
+							"tech_level": "8",
+							"value": "100",
+							"reference": "B289",
+							"notes": "Pinhead-sized audio-visual bug (-10 to spot)",
+							"categories": [
+								"Law-Enforcement",
+								"Spy Gear",
+								"Thief"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Silver Ingot",
+							"value": "62.5",
+							"weight": "0.0625 lb",
+							"reference": "IW27",
+							"notes": "1 oz."
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Backpack, Small",
+					"tech_level": "1",
+					"value": "60",
+					"weight": "3 lb",
+					"reference": "B288",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "40 lb"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Binoculars, Night-Vision",
+					"value": "6000",
+					"weight": "3 lb",
+					"reference": "ACT1:29",
+					"notes": "Night Vision 9. Telescopic Vision 4. Colorblindness. No Depth Perception. No Peripheral Vision. Run for 20hrs.",
+					"categories": [
+						"Optics"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Cell Phone",
+					"tech_level": "8",
+					"value": "250",
+					"weight": "0.25 lb",
+					"reference": "B288",
+					"notes": "Only works in some areas; $20/month fee., 10 hrs.",
+					"categories": [
+						"Communications and Information Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Charcoal-Filtered Canteen",
+					"tech_level": "5",
+					"value": "25",
+					"weight": "3 lb",
+					"reference": "HT53",
+					"notes": "1qt.",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Cloth Cap",
+					"tech_level": "1",
+					"value": "5",
+					"reference": "B284",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						}
+					],
+					"categories": [
+						"Headgear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Compass",
+					"tech_level": "6",
+					"value": "50",
+					"weight": "0.144 lb",
+					"reference": "B288",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "navigation"
+							}
+						}
+					],
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Enhanced Tinder",
+					"tech_level": "1",
+					"value": "2",
+					"weight": "0.1 lb",
+					"reference": "LT35",
+					"categories": [
+						"Personal Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 30,
+					"description": "Eraser",
+					"legality_class": "2",
+					"reference": "IW25",
+					"notes": "Ampoule for Pneumospray Hypo",
+					"categories": [
+						"Medical"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "First Aid Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "B289",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "First Aid"
+							}
+						}
+					],
+					"notes": "TL9 quality; TL4 disguise",
+					"categories": [
+						"Medical Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Flashlight, Mini",
+					"tech_level": "7",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "B288",
+					"notes": "15' beam, lasts 1 hour",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Flint and Steel",
+					"tech_level": "5",
+					"value": "5",
+					"reference": "HT57",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "ISP, 10mm",
+					"tech_level": "9",
+					"legality_class": "3",
+					"value": "1200",
+					"weight": "3.4 lb",
+					"reference": "IW200",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "pi+",
+								"base": "4d+1"
+							},
+							"accuracy": "3",
+							"range": "280/3200",
+							"rate_of_fire": "10",
+							"shots": "15+1(3)",
+							"bulk": "-2",
+							"recoil": "3",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Rifle",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Shotgun",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Light Machine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Submachine Gun",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Musket",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Grenade Launcher",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Gyroc",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Gun!"
+								}
+							]
+						}
+					],
+					"categories": [
+						"Missile Weapon"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Light Cloak",
+					"tech_level": "1",
+					"value": "20",
+					"weight": "2 lb",
+					"reference": "B287",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "-"
+							},
+							"strength": "-",
+							"reach": "-",
+							"parry": "No",
+							"block": "+0",
+							"defaults": [
+								{
+									"type": "Block",
+									"name": "Cloak"
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "Special"
+							},
+							"strength": "5",
+							"usage": "Thrown",
+							"accuracy": "+1",
+							"range": "2",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-4",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Cloak"
+								},
+								{
+									"type": "Skill",
+									"name": "Net",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Shield",
+									"modifier": -4
+								}
+							]
+						}
+					],
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "dodge"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "parry"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "block"
+						}
+					],
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Matches",
+					"tech_level": "5",
+					"value": "0.25",
+					"reference": "HT57",
+					"notes": "Box of 50.",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Pneumospray Hypo",
+					"tech_level": "9",
+					"value": "20",
+					"weight": "0.1 lb",
+					"reference": "IW25",
+					"categories": [
+						"Medical"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Radio, Backpack",
+					"tech_level": "7",
+					"value": "6000",
+					"weight": "15 lb",
+					"reference": "B288",
+					"notes": "VHF radio. 20-mile range. 12 hrs.",
+					"categories": [
+						"Communications and Information Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Small Knife",
+					"tech_level": "0",
+					"value": "30",
+					"weight": "0.5 lb",
+					"reference": "B272",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "-3"
+							},
+							"strength": "5",
+							"usage": "Swung",
+							"reach": "C,1",
+							"parry": "-1",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Knife"
+								},
+								{
+									"type": "Skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Sword!"
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrust",
+							"reach": "C",
+							"parry": "-1",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Knife"
+								},
+								{
+									"type": "Skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Sword!"
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrown",
+							"accuracy": "+0",
+							"range": "x0.5/x1",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-1",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Knife"
+								}
+							]
+						}
+					],
+					"categories": [
+						"Melee Weapon",
+						"Missile Weapon"
+					]
+				}
+			]
+		}
+	]
+}

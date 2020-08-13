@@ -1,0 +1,275 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "0a4394fe-4229-4f5c-85c8-c8362a9e3221",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Silent Killing",
+			"reference": "ACT4:21",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Striking ST",
+					"physical": true,
+					"exotic": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "No Fine Manipulators",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Size",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Super Effort",
+							"reference": "SU24",
+							"cost_type": "percentage",
+							"cost": 400,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "One Attack Only",
+							"reference": "P79",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "@Attack@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Assassination",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total"
+						}
+					],
+					"reference": "B88,ACT3:14",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Weapon Master"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Trained by a Master"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "st",
+							"limitation": "striking_only"
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Dirty Fighting",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 1,
+					"reference": "ACT3:15",
+					"notes": "Max level 3.",
+					"categories": [
+						"Perk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Special Exercises (Striking ST)",
+					"levels": "1",
+					"points_per_level": 1,
+					"reference": "PU2:21",
+					"notes": "When doubling up, treat this as leveled: Special Exercises (Striking ST 2) [2].",
+					"categories": [
+						"Perk"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Silent Killing",
+			"reference": "ACT4:21",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Fast-Draw",
+					"reference": "B194",
+					"specialization": "Knife",
+					"difficulty": "DX/E",
+					"points": 1,
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Holdout",
+					"reference": "B200",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Sleight of Hand",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Garrote",
+					"reference": "B197",
+					"difficulty": "DX/E",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Knife",
+					"reference": "B208",
+					"difficulty": "DX/E",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "DX",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Stealth",
+					"reference": "B222",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "DX/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Police",
+						"Spy"
+					]
+				},
+				{
+					"type": "technique",
+					"version": 1,
+					"name": "Neck Snap",
+					"reference": "B232,MA77",
+					"difficulty": "H",
+					"points": 4,
+					"limit": 3,
+					"default": {
+						"type": "ST",
+						"modifier": -4
+					},
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat",
+						"Technique"
+					]
+				}
+			]
+		}
+	]
+}

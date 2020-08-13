@@ -1,0 +1,340 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "cc66951c-7467-4f2c-9fbf-38778419e2aa",
+	"rows": [
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Body (Yesod)",
+			"reference": "TRPM7",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Chance (Hod)",
+			"reference": "TRPM8",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Crossroads (Tiphareth)",
+			"reference": "TRPM9",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Energy (Geburah)",
+			"reference": "TRPM9",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Magic (Chesed)",
+			"reference": "TRPM10",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Matter (Netzach)",
+			"reference": "TRPM11",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Mind (Chokmah)",
+			"reference": "TRPM11",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Spirit (Binah)",
+			"reference": "TRPM12",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Path of Undead (Malkuth)",
+			"reference": "TRPM12",
+			"difficulty": "IQ/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Thaumatology"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Thaumatology",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"magic",
+				"rpm"
+			]
+		}
+	]
+}

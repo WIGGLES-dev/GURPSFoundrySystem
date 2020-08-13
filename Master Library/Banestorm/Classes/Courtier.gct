@@ -1,0 +1,4119 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "f2fe5604-19bd-4c3e-9d2b-ea53431d641e",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Courtier",
+			"reference": "BS205",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Health",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "2",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Perception",
+							"mental": true,
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "perception"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "20 points chosen from",
+							"open": true,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Hearing",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B35",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "hearing"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Taste & Smell",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B35",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "taste_smell"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Touch",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B35",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "touch"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Vision",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B35",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "vision"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Ally (@Who@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Point total",
+											"reference": "B37",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total",
+											"notes": "25% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Point total",
+											"reference": "B37",
+											"cost_type": "points",
+											"cost": 2,
+											"affects": "total",
+											"notes": "50% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Point total",
+											"reference": "B37",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "75% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Point total",
+											"reference": "B37",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total",
+											"notes": "100% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Point total",
+											"reference": "B37",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "150% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears constantly",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 4,
+											"notes": "No roll required"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 6-10",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 6
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 11-20",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 8
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 21-50",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 10
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 51-100",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 12
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 101-1000",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 18
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 1001-10000",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 24
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 10001-100000",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 30
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group of 100001-1000000",
+											"reference": "B37",
+											"cost_type": "multiplier",
+											"cost": 36
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minion",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minion",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "IQ 0 or Slave Mentality"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Special Abilities",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "@Abilities@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Summonable",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Sympathy",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Death of one party reduces the other to 0 HP"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Sympathy",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": -5,
+											"affects": "total",
+											"notes": "Death of one party reduces the other to 0 HP and wounds affect ally but not you"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Sympathy",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "Death of one party kills the other"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Sympathy",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Death of one party kills the other and wounds affect ally but not you"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unwilling",
+											"reference": "B38",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Favor",
+											"reference": "B55",
+											"cost_type": "multiplier",
+											"cost": 0.2
+										}
+									],
+									"reference": "B36",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Appearance",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Universal",
+											"cost_type": "percentage",
+											"cost": 25,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Off-the-Shelf Looks",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Androgynous",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Impressive",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Attractive",
+											"cost_type": "points",
+											"cost": 4,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Horrific",
+											"cost_type": "points",
+											"cost": -24,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Monstrous",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Hideous",
+											"cost_type": "points",
+											"cost": -16,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Ugly",
+											"cost_type": "points",
+											"cost": -8,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unattractive",
+											"cost_type": "points",
+											"cost": -4,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Handsome",
+											"cost_type": "points",
+											"cost": 12,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Beautiful",
+											"cost_type": "points",
+											"cost": 12,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Handsome",
+											"cost_type": "points",
+											"cost": 16,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Beautiful",
+											"cost_type": "points",
+											"cost": 16,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Transcendent",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										}
+									],
+									"reference": "B21",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Charisma",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B41",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											}
+										}
+									],
+									"notes": "+1/level to Influence rolls",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Contact (@Who@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total",
+											"notes": "12"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 2,
+											"affects": "total",
+											"notes": "15"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "18"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 4,
+											"affects": "total",
+											"notes": "21"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can obtain information using supernatural talents",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group",
+											"cost_type": "multiplier",
+											"cost": 5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Completely reliable",
+											"cost_type": "multiplier",
+											"cost": 3
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Usually reliable",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Somewhat reliable",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unreliable",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Favor",
+											"reference": "B55",
+											"cost_type": "multiplier",
+											"cost": 0.2
+										}
+									],
+									"reference": "B44",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Contact (@Who@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total",
+											"notes": "12"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 2,
+											"affects": "total",
+											"notes": "15"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "18"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effective skill",
+											"cost_type": "points",
+											"cost": 4,
+											"affects": "total",
+											"notes": "21"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can obtain information using supernatural talents",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Group",
+											"cost_type": "multiplier",
+											"cost": 5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Completely reliable",
+											"cost_type": "multiplier",
+											"cost": 3
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Usually reliable",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Somewhat reliable",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unreliable",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Favor",
+											"reference": "B55",
+											"cost_type": "multiplier",
+											"cost": 0.2
+										}
+									],
+									"reference": "B44",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Danger Sense",
+									"mental": true,
+									"base_points": 15,
+									"reference": "B47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Eidetic Memory",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Photographic",
+											"reference": "B51",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Eidetic Memory",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Photographic",
+											"reference": "B51",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Empathy",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "detect lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Empathy (Sensitive)",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "detect lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fashion Sense",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B21",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Honest Face",
+									"physical": true,
+									"base_points": 1,
+									"reference": "B101",
+									"categories": [
+										"Perk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Independent Income",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "B26",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Language Talent",
+									"mental": true,
+									"base_points": 10,
+									"reference": "B65",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Language: @Language@",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Native",
+											"reference": "B23",
+											"cost_type": "points",
+											"cost": -6,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total",
+											"notes": "None"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total",
+											"notes": "Broken"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 2,
+											"affects": "total",
+											"notes": "Accented"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "Native"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total",
+											"notes": "None"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "total",
+											"notes": "Broken"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 2,
+											"affects": "total",
+											"notes": "Accented"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "Native"
+										}
+									],
+									"reference": "B24",
+									"categories": [
+										"Advantage",
+										"Language"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "No Hangover",
+									"physical": true,
+									"base_points": 1,
+									"reference": "B101",
+									"categories": [
+										"Perk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Patron",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Individual with 150% of PC's starting points@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Individual with twice the PC's starting points@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: An ultra-powerful individual@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: A national government or giant multi-national organization@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: A diety@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Equipment",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "@Equipment worth no more than average starting wealth@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Equipment",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "@Equipment worth more than average starting wealth@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Highly Accessible",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Special Abilities",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "@Extensive social or political power@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Special Abilities",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minimal Interventions",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Secret",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unwilling",
+											"reference": "B74",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Favor",
+											"reference": "B55",
+											"cost_type": "multiplier",
+											"cost": 0.2
+										}
+									],
+									"reference": "B72",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Patron",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Individual with 150% of PC's starting points@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Individual with twice the PC's starting points@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: An ultra-powerful individual@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: A national government or giant multi-national organization@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Who: A diety@",
+											"reference": "B72",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Equipment",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "@Equipment worth no more than average starting wealth@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Equipment",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "@Equipment worth more than average starting wealth@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Highly Accessible",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Special Abilities",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "@Extensive social or political power@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Special Abilities",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minimal Interventions",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Secret",
+											"reference": "B73",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unwilling",
+											"reference": "B74",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Favor",
+											"reference": "B55",
+											"cost_type": "multiplier",
+											"cost": 0.2
+										}
+									],
+									"reference": "B72",
+									"notes": "A noble",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Pitiable",
+									"physical": true,
+									"social": true,
+									"base_points": 5,
+									"reference": "B22",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Rank",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Replaces Status",
+											"reference": "B29",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "levels_only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Courtesy",
+											"reference": "B29",
+											"cost_type": "points",
+											"cost": -4,
+											"affects": "levels_only"
+										}
+									],
+									"reference": "B29",
+									"notes": "@Type@: @Title@",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"round_down": true,
+									"name": "Reputation",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "Almost everyone"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.67,
+											"notes": "Almost everyone except @large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "@Large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "@Small class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "10-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "7-"
+										}
+									],
+									"reference": "B26",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Social Chameleon",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B86",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Status",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B28",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Talent (Smooth Operator)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Con artists, politicians, salesmen, etc. – but only if you aren’t trying to manipulate them."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternate Benefit",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Bonus to resist covered skills"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternative Cost",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "levels_only"
+										}
+									],
+									"reference": "B90,PU3:15",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Acting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Carousing"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Detect Lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Diplomacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Fast-Talk"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Intimidation"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Leadership"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Panhandling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Politics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Public Speaking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Savoir-Faire"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Sex Appeal"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Streetwise"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Voice",
+									"physical": true,
+									"base_points": 10,
+									"reference": "B97",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "mimicry"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "performance"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "politics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "singing"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Talent (Smooth Operator)",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 15,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reaction Bonus",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Con artists, politicians, salesmen, etc. – but only if you aren’t trying to manipulate them."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternate Benefit",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Bonus to resist covered skills"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternative Cost",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B90,PU3:15",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Acting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Carousing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Detect Lies"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Diplomacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fast-Talk"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Panhandling"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Politics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Public Speaking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Savoir-Faire"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sex Appeal"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Streetwise"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-20 points chosen from",
+							"open": true,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Addiction (@Substance@)",
+									"mental": true,
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Cheap",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Expensive",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Very Expensive",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Hallucinogenic",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Highly Addictive (-5 on withdrawal roll)",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Incapacitating",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Totally Addictive (-10 on withdrawal roll)",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Illegal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Legal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B122",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (@Type@)",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Great",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Chivalry)",
+									"mental": true,
+									"base_points": -15,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Gentleman's)",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Duty (@Duty@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 6",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 9",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 12",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 15",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extremely Hazardous",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Involuntary",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Nonhazardous",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B133",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Enemy (@Political rival or other@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Weak Individual",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total",
+											"notes": "50% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Equal Individual",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "100% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Powerful Individual",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total",
+											"notes": ">150% of your starting points"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Weak Group",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Medium Group",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "15-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "12-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "9-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "6-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Large/Powerful Group",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Utterly Formidable Group",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unknown",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Evil Twin",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Evil Twin",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total",
+											"notes": "More skilled or extra abilities"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Evil Twin",
+											"reference": "B135",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "More skilled and extra abilities"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Watcher",
+											"reference": "B135",
+											"cost_type": "multiplier",
+											"cost": 0.25
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Rival",
+											"reference": "B135",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Hunter",
+											"reference": "B135",
+											"cost_type": "multiplier",
+											"cost": 1
+										}
+									],
+									"reference": "B135",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fanaticism (@Group or ideal@)",
+									"mental": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extreme",
+											"reference": "B136",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										}
+									],
+									"reference": "B136",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Greed",
+									"mental": true,
+									"base_points": -15,
+									"cr": 12,
+									"reference": "B137",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Jealousy",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B140",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Lecherousness",
+									"mental": true,
+									"base_points": -15,
+									"cr": 12,
+									"reference": "B142",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Megalomania",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B144",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Obsession",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Short term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Long term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B146",
+									"notes": "@Goal@",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Overconfidence",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"round_down": true,
+									"name": "Reputation",
+									"social": true,
+									"levels": "1",
+									"points_per_level": -5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "Almost everyone"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.67,
+											"notes": "Almost everyone except @large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "@Large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "@Small class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "10-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "7-"
+										}
+									],
+									"reference": "B26",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Secret (@Secret@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Serious Embarrassment",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Utter Rejection",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Imprisonment",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Possible Death",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -30,
+											"affects": "total"
+										}
+									],
+									"reference": "B152",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Selfish",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B153",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Sense of Duty",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Friends and Companions",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Small Group@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Individual@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Large Group@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Entire Race@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Every Living Being",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										}
+									],
+									"reference": "B153",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Workaholic",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B162",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Courtier",
+			"reference": "BS205",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Primary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Acting",
+							"reference": "B174",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Performance",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Public Speaking",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Social",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diplomacy",
+							"reference": "B187",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Politics",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Business",
+								"Police",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Fast-Talk",
+							"reference": "B195",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Acting",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Social",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Politics",
+							"reference": "B215",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Diplomacy",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Business",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Savoir-Faire",
+							"reference": "B218",
+							"specialization": "High Society",
+							"difficulty": "IQ/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Savoir-Faire",
+									"specialization": "Servant",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Business",
+								"Knowledge",
+								"Social"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Secondary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "12 points chosen from",
+							"open": true,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Crossbow",
+									"reference": "B186",
+									"difficulty": "DX/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Knife",
+									"reference": "B208",
+									"difficulty": "DX/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Broadsword",
+									"reference": "B208",
+									"difficulty": "DX/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Rapier",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Sword",
+											"modifier": -4
+										},
+										{
+											"type": "DX",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Cloak",
+									"reference": "B184",
+									"difficulty": "DX/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Net",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Shield",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Saber",
+									"reference": "B208",
+									"difficulty": "DX/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Shortswort",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Rapier",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Smallsword",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Heraldry",
+									"reference": "B199",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Savoir-Faire",
+											"specialization": "High Society",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Knowledge",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Leadership",
+									"reference": "B204",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Military",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Public Speaking",
+									"reference": "B216",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Performance",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Politics",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Business",
+										"Scholarly",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Law",
+									"reference": "B204",
+									"specialization": "Local",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Business",
+										"Police",
+										"Social Sciences/Humanities"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Intimidation",
+									"reference": "B202",
+									"difficulty": "Will/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "Per",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Police",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Detect Lies",
+									"reference": "B187",
+									"difficulty": "Per/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "Per",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Body Language",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Psychology",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Police",
+										"Social",
+										"Spy"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Background Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "3 points chosen from",
+							"open": true,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Dancing",
+									"reference": "B187",
+									"difficulty": "DX/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Arts/Entertainment"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Area Knowledge",
+									"reference": "B176",
+									"specialization": "Local",
+									"difficulty": "IQ/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Geography",
+											"modifier": -3
+										}
+									],
+									"notes": "All important citizens and businesses, and most unimportant ones; all public buildings and most houses",
+									"categories": [
+										"Everyman",
+										"Knowledge"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Writing",
+									"reference": "B228",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Arts/Entertainment",
+										"Scholarly"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "History",
+									"reference": "B200",
+									"specialization": "Local",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Social Sciences/Humanities"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Poisons",
+									"reference": "B214",
+									"tech_level": "",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Chemistry",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Pharmacy",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Physician",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Medical",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Strategy",
+									"reference": "B222",
+									"specialization": "Land",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Intelligence Analysis",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Tactics",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Strategy",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Military"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Theology",
+									"reference": "B226",
+									"specialization": "@Specialty@",
+									"difficulty": "IQ/H",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Religious Ritual",
+											"specialization": "@Specialty@",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Social Sciences/Humanities"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Carousing",
+									"reference": "B183",
+									"difficulty": "HT/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "HT",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Sex Appeal",
+									"reference": "B219",
+									"difficulty": "HT/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "HT",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Social"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,392 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "714fbb4c-7c18-4e1b-a1bd-7eb6d4fc8931",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Chimera Halfling Meta-Trait",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Speak With Animals",
+					"mental": true,
+					"exotic": true,
+					"base_points": 25,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Specialized",
+							"reference": "B87",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "All aquatic animals"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Specialized",
+							"reference": "B87",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "All land animals"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Specialized",
+							"reference": "B87",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total",
+							"notes": "@One class: Mammals, Birds, etc.@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Specialized",
+							"reference": "B87",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "Chimera Type"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rattlesnakes",
+							"reference": "B87",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Sapience",
+							"reference": "P77",
+							"cost_type": "percentage",
+							"cost": 40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Universal",
+							"reference": "P77",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B87",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Social Stigma (Minority Group)",
+					"social": true,
+					"base_points": -10,
+					"reference": "B155",
+					"notes": "-2 Reaction from others; +2 Reaction in own group",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Vulnerability",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Silver and DN",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Occasional attack@",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Silver",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Very common attack@",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Wounding x2",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 2
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Wounding x3",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 3
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Wounding x4",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 4
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						}
+					],
+					"reference": "B161",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Distinctive Features",
+			"physical": true,
+			"base_points": -1,
+			"reference": "B165",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": -1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "disguise"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": -1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "shadowing"
+					}
+				}
+			],
+			"notes": "Very light scales, Medusa looks",
+			"categories": [
+				"Quirk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Reputation",
+			"social": true,
+			"levels": "1",
+			"points_per_level": -5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "People Affected",
+					"reference": "B27",
+					"cost_type": "multiplier",
+					"cost": 1,
+					"notes": "Almost everyone"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "People Affected",
+					"reference": "B27",
+					"cost_type": "multiplier",
+					"cost": 0.67,
+					"notes": "Almost everyone except @large class of people@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "People Affected",
+					"reference": "B27",
+					"cost_type": "multiplier",
+					"cost": 0.5,
+					"notes": "@Large class of people@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "People Affected",
+					"reference": "B27",
+					"cost_type": "multiplier",
+					"cost": 0.33,
+					"notes": "@Small class of people@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Recognized all the time",
+					"reference": "B28",
+					"cost_type": "multiplier",
+					"cost": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Recognized sometimes",
+					"reference": "B28",
+					"cost_type": "multiplier",
+					"cost": 0.5,
+					"notes": "10-"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Recognized occasionally",
+					"reference": "B28",
+					"cost_type": "multiplier",
+					"cost": 0.33,
+					"notes": "7-"
+				}
+			],
+			"reference": "B26",
+			"notes": "Manipulative",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Flexibility (Double-Jointed)",
+			"physical": true,
+			"base_points": 15,
+			"reference": "B56",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 5,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "climbing"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 5,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "escape"
+					}
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Striker, Piercing (Snake Hair)",
+			"physical": true,
+			"exotic": true,
+			"base_points": 15,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "pi",
+						"st": "thr",
+						"modifier_per_die": 1
+					},
+					"reach": "C",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "DX"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "Fatigue",
+						"base": "1d"
+					},
+					"usage": "Follow Up"
+				}
+			],
+			"reference": "B88",
+			"notes": "Extra-Flexible",
+			"categories": [
+				"Advantage"
+			]
+		}
+	]
+}

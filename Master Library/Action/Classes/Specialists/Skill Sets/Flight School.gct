@@ -1,0 +1,1022 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "623029f8-9cc9-4abd-9e46-81bf4be0a84d",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Flight School",
+			"reference": "ACT4:16",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Civilian Pilot",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Direction",
+							"mental": true,
+							"physical": true,
+							"base_points": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Requires signal",
+									"reference": "B34",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "3D Spatial Sense",
+									"reference": "B34",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "aerobatics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "free fall"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "hyperspace"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "space"
+											}
+										}
+									]
+								}
+							],
+							"reference": "B34",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "body sense"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "air"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "land"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "sea"
+									}
+								}
+							],
+							"notes": "When doubling up, this becomes 3D Spatial Sense",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Acute Vision",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 2,
+							"reference": "B35",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "vision"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Military Pilot",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Direction",
+							"mental": true,
+							"physical": true,
+							"base_points": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Requires signal",
+									"reference": "B34",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "3D Spatial Sense",
+									"reference": "B34",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "aerobatics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "free fall"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "hyperspace"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 2,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "space"
+											}
+										}
+									]
+								}
+							],
+							"reference": "B34",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "body sense"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "air"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "land"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "sea"
+									}
+								}
+							],
+							"notes": "When doubling up, this becomes 3D Spatial Sense",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Acute Vision",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 2,
+							"reference": "B35",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "vision"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Flight School",
+			"reference": "ACT4:16",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Civilian Pilot",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Operation",
+							"reference": "B189",
+							"specialization": "Communications",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"specialization": "Communications",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Mechanic",
+							"reference": "B207",
+							"specialization": "@For piloting specialty@",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Aerospace",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Machinist",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Mechanic",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Navigation",
+							"reference": "B211",
+							"specialization": "Air",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Astronomy",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Land",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Sea",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration",
+								"Technical",
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "Glider",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Light Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Ultralight",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "Helicopter",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Autogyro",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Vertol",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "Light Airplane",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Glider",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Heavy Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "High-Performance Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Ultralight",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "Ultralight",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Gilder",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Light Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Heavy Airplane",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "High-Performance Airplane",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "A total of 4 points in",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Freight Handling",
+									"reference": "B197",
+									"tech_level": "",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Technical",
+										"Vehicle"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Smuggling",
+									"reference": "B221",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Spy"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Military Pilot",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Operation",
+							"reference": "B189",
+							"specialization": "Communications",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"specialization": "Communications",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Navigation",
+							"reference": "B211",
+							"specialization": "Air",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Astronomy",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Land",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Sea",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration",
+								"Technical",
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Parachuting",
+							"reference": "B212",
+							"tech_level": "",
+							"difficulty": "DX/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Military",
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Savoir-Faire",
+							"reference": "B218",
+							"specialization": "Military",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Knowledge",
+								"Military",
+								"Social"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "Helicopter",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Autogyro",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Vertol",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Piloting",
+									"reference": "B214",
+									"specialization": "High-Performance Airplane",
+									"tech_level": "",
+									"difficulty": "DX/A",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Aerospace",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Heavy Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"specialization": "Light Airplane",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Piloting",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Vehicle"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Any three of",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Artillery",
+									"reference": "B178",
+									"specialization": "Bombs",
+									"tech_level": "",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Artillery",
+									"reference": "B178",
+									"specialization": "Guided Missile",
+									"tech_level": "",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Gunner",
+									"reference": "B198",
+									"specialization": "Machine Gun",
+									"tech_level": "",
+									"difficulty": "DX/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Gunner",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Gunner",
+									"reference": "B198",
+									"specialization": "Rockets",
+									"tech_level": "",
+									"difficulty": "DX/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Gunner",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Tactics",
+									"reference": "B224",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Strategy",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Military",
+										"Police"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

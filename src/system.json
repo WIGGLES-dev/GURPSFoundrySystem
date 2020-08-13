@@ -1,0 +1,59 @@
+{
+    "name": "GURPS",
+    "title": "GURPS 4th Edition",
+    "description": "GURPS 4e system.",
+    "version": "1.0.0",
+    "templateVersion": 2,
+    "author": "Ian Bell",
+    "scripts": [
+        "main.js"
+    ],
+    "esmodules": [],
+    "styles": [],
+    "packs": [
+        {
+            "name": "items",
+            "label": "GURPS4e Items",
+            "system": "GURPS",
+            "path": "./packs/items.db",
+            "entity": "Item"
+        },
+        {
+            "name": "skills",
+            "label": "GURPS4e Skills",
+            "system": "GURPS",
+            "path": "./packs/skills.db",
+            "entity": "Item"
+        },
+        {
+            "name": "traits",
+            "label": "GURPS4e Traits",
+            "system": "GURPS",
+            "path": "./packs/traits.db",
+            "entity": "Item"
+        },
+        {
+            "name": "spells",
+            "label": "GURPS4e Spells",
+            "system": "GURPS",
+            "path": "./packs/spells.db",
+            "entity": "Item"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": false,
+    "initiative": false,
+    "gridDistance": 1,
+    "gridUnits": "yards",
+    "primaryTokenAttribute": "hit_points",
+    "secondaryTokenAttribute": "fatigue_points",
+    "url": null,
+    "manifest": null,
+    "download": null
+}

@@ -1,0 +1,1288 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "8af5ed49-37d6-40df-b39d-60305357a352",
+	"rows": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Armor Familiarity (@Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA49",
+			"notes": "Let you ignore one encumbrance level",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Biting Mastery",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Let you use Karate skill when biting",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Chi Resistance (@Attack@)",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "+3 to withstand chi-based attacks",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Cotton Stomach",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Lets you catch attacker's incoming hand or feed with your abdominal muscles",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Drunken Fighting",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Let you fight effectively when intoxicated",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Exotic Weapon Training (@Weapon@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Lets you ignore built-in penalties for a particular weapon",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Form Mastery (@Weapon@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Let you switch skill at any time",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Grip Mastery (@Weapon@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Lets you change grip as a free action",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Ground Guard",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "+1 to quick contests when lying down",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Heroic Archer",
+			"physical": true,
+			"base_points": 20,
+			"reference": "MA45",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Improvised Weapons (@Weapon@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Ignore skill penalties when wielding an improvised weapon",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Iron Arms ",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Striker",
+					"reach": "C,1",
+					"parry": "0",
+					"block": "no",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				}
+			],
+			"reference": "MA50",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "arms"
+				}
+			],
+			"notes": "+3 to resist injury from Arm Lock, Arm Wrench, etc.; You may opt to buy Partial DR or Striker",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Iron Hands",
+			"physical": true,
+			"exotic": true,
+			"base_points": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Tough Skin",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Partial DR (Hands)",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				}
+			],
+			"reference": "MA50",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "hands"
+				}
+			],
+			"notes": "DR 1",
+			"categories": [
+				"Advantage",
+				"Cinematic"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Iron Legs",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "hands"
+				}
+			],
+			"notes": "+3 to resist injury from Leg Lock, Leg Wrench, etc.; You may opt to buy partial DR",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Iron Neck",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "hands"
+				}
+			],
+			"notes": "+3 to resist injury from chokes, strangles and Neck Snaps; You may opt to buy partial DR",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Naval Training",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "You may ignore -2 to attacks and -1 to defend from bad footing due to naval vessels movement.",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Neck Control (@Striking Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "+1 to hit head, neck or torso in a clinch",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Off-Hand Weapon Training (@Weapon@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA50",
+			"notes": "Replaces equal-named technique on p. B232",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Power Grappling",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "You may base DX-based grappling rolls on ST",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Rapid Retraction (@Kick or Punch@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "+1 to avoid Arm Lock or Leg Grapple after been parried",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "School Adaptation (@School@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Lets you learn traits belonging to other schools.",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Secret Knowledge (@Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Secret Style (@Style@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA49",
+			"categories": [
+				"Cinematic",
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Shield-Wall Training",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "You may block attacks on an ally beside you and ignore attack penalty for large shields",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Skill Adaptation (@Speciality@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Lets you base Techniques on different skill.",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Special Excercises (@Trait@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Let you buy a trait normally off-limits",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Special Setup (@Setup@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Lets you use a setup attack differently",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Strongbow",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Let you ignore some penalties when shooting a bow too strong for you",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Style Adaptation (@Styles@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Lets you learn techniques belonging to other styles",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Style Familiarity (@Style@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA49",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Suit Familiarity (@Suit Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"notes": "Let you ignore DX penalties when using environmental suits.",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Talent (Born Sailor)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Reaction Bonus",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Sailors"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Bonus to resist seasickness and reduce unfamiliarity penalties for system on an appropriate boat or ship"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternative Cost",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "MAFCCS17,PU3:13",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Talent (Mariner)"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Boating"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Knot-Tying"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Meteorology"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Sea"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Seamanship"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shiphandling"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Weather Sense"
+					}
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Talent (Born Soldier)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Reaction Bonus",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Those you serve with or command"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Reduce chance of impersonal battlefield hazards"
+				}
+			],
+			"reference": "MAFCCS17,PU3:12",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Leadership"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Savoir-Faire"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Scrounging"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Soldier"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Tactics"
+					}
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Talent (Forceful Chi)",
+			"mental": true,
+			"supernatural": true,
+			"levels": "1",
+			"points_per_level": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Reaction Bonus",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Honourable opponents, Hard stylists, Lovers"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Bonus to be heard or to Intimidation after using a covered skill"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternative Cost",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "MA47,PU3:7",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Breaking Blow"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Erotic Art"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Flying Leap"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Hypnotic Hands"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Hypnotism"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Invisibility Art"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Kiai"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Power Blow"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Precognitive Parry"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Pressure Points"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Pressure Secrets"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Push"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Throwing Art"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Zen Archery"
+					}
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Talent (Inner Balance)",
+			"mental": true,
+			"supernatural": true,
+			"levels": "1",
+			"points_per_level": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Reaction Bonus",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Pacifists, Ascetics, Soft stylists"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Bonus to resist mundane disease"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternative Cost",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "MA47,PU3:7",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Autohypnosis"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Blind Fighting"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Control"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Language"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Sense"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Breath Control"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dreaming"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Immovable Stance"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Light Walk"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Lizard Climb"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Meditation"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mental Strength"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mind Block"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sensitivity"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Talent (Natural Copper)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Reaction Bonus",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Police and PIs"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Bonus to unskilled Per rolls to notice clues, and to all rolls to use Intuition"
+				}
+			],
+			"reference": "MAFCCS17,PU3:13",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Language"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Criminology"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Detect Lies"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Intelligence Analysis"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Interrogation"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Observation"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Savoir-Faire"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Search"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shadowing"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Streetwise"
+					}
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Teamwork (@Style or Team@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"notes": "Let you work in a team action",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Technique Adaptation (@Technique@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"notes": "Let you learn a style's technique for a skill it doesn't teach",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Technique Mastery (@Technique@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"notes": "Increases your maximum level in a technique",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Template Adaptation (@Templates@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA51",
+			"notes": "Lets you learn traits belonging to other templates.",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Unique Technique (@Technique@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Unusual Training (@Cinematic Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Weapon Adaptation (@Skill to Skill@)",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MA52",
+			"notes": "Let you use one class of weapons with a different skill.",
+			"categories": [
+				"Perk"
+			]
+		}
+	]
+}

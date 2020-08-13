@@ -1,0 +1,83 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "691e0c9c-f778-41b0-ba6b-9fc89e3cbd1d",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Size: Small",
+			"reference": "GUL1",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Decreased Move",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": -5,
+					"reference": "B15",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "move"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Decreased Strength",
+					"physical": true,
+					"levels": "3",
+					"points_per_level": -10,
+					"reference": "B14",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "st"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased Dexterity",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"reference": "B15",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "dx"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "SM -",
+					"physical": true,
+					"levels": "1",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "sm"
+						}
+					],
+					"notes": "Hgt: 1.5yd; Wgt 47lb ; HM: 3/4"
+				}
+			]
+		}
+	]
+}

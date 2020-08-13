@@ -1,0 +1,271 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "d018f1a9-8312-4639-bf86-2d46b4a22385",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Pistolero",
+			"reference": "ACT4:20",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Off-Hand Weapon Training (Pistol)",
+					"mental": true,
+					"base_points": 1,
+					"reference": "MA50",
+					"notes": "When doubling up, these two traits become Off-Hand Weapon Training (Pistol) [1] and Dual-Weapon Attack at Guns (Pistol) [5].",
+					"categories": [
+						"Perk"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Cheaper (Guns; 10%)",
+							"social": true,
+							"base_points": 1,
+							"reference": "PU2:8",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "High-Heeled Heroine"
+										}
+									}
+								]
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Weapon Bond (@any one handgun@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "PU2:9",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Pistolero",
+			"reference": "ACT4:20",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Armoury",
+					"reference": "B178",
+					"specialization": "Small Arms",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Small Arms",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Military",
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Fast-Draw",
+					"reference": "B194",
+					"specialization": "Ammo",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 2,
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Fast-Draw",
+					"reference": "B194",
+					"specialization": "Pistol",
+					"difficulty": "DX/E",
+					"points": 2,
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Pistol",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Beam Weapons",
+							"specialization": "Pistol",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Holdout",
+					"reference": "B200",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Sleight of Hand",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy"
+					]
+				},
+				{
+					"type": "technique",
+					"version": 1,
+					"name": "Dual-Weapon Attack",
+					"reference": "B230,MA83",
+					"difficulty": "H",
+					"points": 2,
+					"limit": 0,
+					"default": {
+						"type": "Skill",
+						"name": "Guns",
+						"specialization": "Pistol",
+						"modifier": -4
+					},
+					"notes": "When doubling up, these two traits become Off-Hand Weapon Training (Pistol) [1] and Dual-Weapon Attack at Guns (Pistol) [5].",
+					"categories": [
+						"Cinematic Techniques",
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "technique",
+					"version": 1,
+					"name": "Retain Weapon (Pistol)",
+					"reference": "B232,MA78",
+					"difficulty": "H",
+					"points": 3,
+					"limit": 5,
+					"default": {
+						"type": "DX"
+					},
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat",
+						"Technique"
+					]
+				}
+			]
+		}
+	]
+}

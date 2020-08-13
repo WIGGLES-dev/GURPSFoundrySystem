@@ -1,0 +1,317 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "0e0326f3-ee4b-47b4-8c0f-9f43120b4d97",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Parkour",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased Basic Move",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B17",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "move"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Compact Frame",
+					"physical": true,
+					"base_points": 1,
+					"reference": "PU2:13",
+					"categories": [
+						"Perk"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Parkour",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Acrobatics",
+					"reference": "B174",
+					"difficulty": "DX/H",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Aerobatics",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Aquabatics",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Athletic"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Climbing",
+					"reference": "B183",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Criminal/Street",
+						"Outdoor/Exploration"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Escape",
+					"reference": "B192",
+					"difficulty": "DX/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Criminal/Street"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Jumping",
+					"reference": "B203",
+					"difficulty": "DX/E",
+					"points": 1,
+					"categories": [
+						"Athletic"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Running",
+					"reference": "B218",
+					"difficulty": "HT/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "HT",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Athletic"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Urban Survival",
+					"reference": "B228",
+					"difficulty": "Per/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "Per",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Police"
+					]
+				},
+				{
+					"type": "technique",
+					"version": 1,
+					"name": "Evade",
+					"reference": "MA71",
+					"difficulty": "H",
+					"points": 2,
+					"limit": 5,
+					"default": {
+						"type": "Skill",
+						"name": "Acrobatics"
+					},
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat",
+						"Technique"
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Acrobatic Stand",
+							"reference": "MA65",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 0,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics",
+								"modifier": -6
+							},
+							"categories": [
+								"Athletic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Balancing",
+							"reference": "ACT3:16",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 5,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics"
+							},
+							"categories": [
+								"Athletic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Dive 'n Roll",
+							"reference": "ACT3:16",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 0,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics",
+								"modifier": -4
+							},
+							"categories": [
+								"Cinematic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Running Climb",
+							"reference": "ACT3:18",
+							"difficulty": "H",
+							"points": 2,
+							"limit": 6,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics"
+							},
+							"categories": [
+								"Cinematic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Skidding",
+							"reference": "ACT3:18",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 0,
+							"default": {
+								"type": "DX",
+								"modifier": -2
+							},
+							"categories": [
+								"Cinematic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Sliding",
+							"reference": "ACT3:18",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 6,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics"
+							},
+							"categories": [
+								"Cinematic",
+								"Technique"
+							]
+						},
+						{
+							"type": "technique",
+							"version": 1,
+							"name": "Spinning",
+							"reference": "ACT3:18",
+							"difficulty": "A",
+							"points": 2,
+							"limit": 0,
+							"default": {
+								"type": "Skill",
+								"name": "Acrobatics",
+								"modifier": -2
+							},
+							"categories": [
+								"Cinematic",
+								"Technique"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

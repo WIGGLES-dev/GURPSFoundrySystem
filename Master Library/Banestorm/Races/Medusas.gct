@@ -1,0 +1,1066 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "b878b69e-0d1f-401d-a448-5b4cd88fbc92",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Medusas",
+			"reference": "BS194",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Dexterity",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 20,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Fine Manipulators",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								}
+							],
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Health",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Racial Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction (Petrifying Gaze)",
+							"physical": true,
+							"exotic": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Advantage; one point per level",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Atribute Penalty; -1 to ST or HT per level",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Atribute Penalty; -1 to DX or IQ per level",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Mortal Condition; Coma",
+									"cost_type": "percentage",
+									"cost": 250,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Mortal Condition; Heart Attack",
+									"cost_type": "percentage",
+									"cost": 300,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Disadvantage; one point per level",
+									"cost_type": "percentage",
+									"cost": 1,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Daze",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Hallucination",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Retching",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Agony",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Choking",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Ecstasy",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Seizure",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Paralysis",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Sleep",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Unconsciousness",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Tipsy",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Coughing",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Drunk",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Moderate Pain",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Euphoria",
+									"cost_type": "percentage",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Nauseated",
+									"cost_type": "percentage",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Severe Pain",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Terrible Pain",
+									"cost_type": "percentage",
+									"cost": 60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Negated Advantage; one point per level",
+									"cost_type": "percentage",
+									"cost": 1,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stunning",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cumulative",
+									"cost_type": "percentage",
+									"cost": 400,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cone, 15 yard width",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cured by Stone to Flesh or Remove Curse spells",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Selective Area",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Malediction 2",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Paralysis",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Vision-Based",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								}
+							],
+							"reference": "BS195",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Resistant",
+							"physical": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Very Common: Metabolic Hazards, etc.@",
+									"reference": "B80",
+									"cost_type": "points",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Common: Poison, Sickness, etc.@",
+									"reference": "B81",
+									"cost_type": "points",
+									"cost": 15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Occasional: Disease, Ingested Poison, etc.@",
+									"reference": "B81",
+									"cost_type": "points",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "To any medusa's gaze",
+									"reference": "B81",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Immunity",
+									"reference": "B81",
+									"cost_type": "multiplier",
+									"cost": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "+8 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_type": "multiplier",
+									"cost": 0.5
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "+3 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_type": "multiplier",
+									"cost": 0.33
+								}
+							],
+							"reference": "B81",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Innate Attack (Toxic)",
+							"physical": true,
+							"exotic": true,
+							"levels": "1",
+							"points_per_level": 4,
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "tox",
+										"base": "1d"
+									},
+									"accuracy": "3",
+									"range": "100/10",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"specialization": "@Attack Type@"
+										},
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 80,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min, 2 Cycles after first. Halted by medical care."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "Mildly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "Highly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Double Blunt Trauma",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "1HP per 10 dmg"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Explosion",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1,
+									"notes": "Hot"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Radiation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Surge",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"notes": "3"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total",
+									"notes": "5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total",
+									"notes": "10"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Side Effect",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Symptoms",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total",
+									"notes": "0.5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "0.2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -70,
+									"affects": "total",
+									"notes": "0.1"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incendiary",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Follow Up",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Follow up to bite"
+								}
+							],
+							"reference": "B62",
+							"notes": "Snake Poison",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Magery",
+							"mental": true,
+							"supernatural": true,
+							"levels": "1",
+							"base_points": 5,
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Dance",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Dark-Aspected",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Day-Aspected",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Musical",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Night-Aspected",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "One College",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only",
+									"notes": "@College@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Solitary",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Song",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B66",
+							"features": [
+								{
+									"type": "spell_bonus",
+									"amount": 1,
+									"per_level": true,
+									"match": "all_colleges"
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Striker, Impaling (Snake Bite)",
+							"physical": true,
+							"exotic": true,
+							"base_points": 8,
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr"
+									},
+									"reach": "C",
+									"parry": "0",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX"
+										},
+										{
+											"type": "Skill",
+											"name": "Brawling"
+										}
+									]
+								}
+							],
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cannot Parry",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Weak",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								}
+							],
+							"reference": "B88",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Racial Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Social Stigma (Monster)",
+							"social": true,
+							"base_points": -15,
+							"reference": "B155",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "intimidation"
+									}
+								}
+							],
+							"notes": "-3 Reaction",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Dislikes other races",
+							"physical": true,
+							"base_points": -1
+						}
+					]
+				}
+			]
+		}
+	]
+}

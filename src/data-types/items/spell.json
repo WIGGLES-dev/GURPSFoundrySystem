@@ -1,0 +1,22 @@
+{
+    "spell": {
+        "templates": [
+            "skill_like",
+            "notable"
+        ],
+        "type": "skill",
+        "tech_level": "",
+        "specialization": "",
+        "encumbrance_penalty_multiplier": 1,
+        "defaults": [],
+        "defaulted_from": false,
+        "college": "",
+        "power_source": "Arcane",
+        "class": "",
+        "casting_cost": "",
+        "maintenance_cost": "",
+        "casting_time": "",
+        "resist": "",
+        "duration": ""
+    }
+}

@@ -1,0 +1,488 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "dc3c5889-f565-4ace-b648-e50d13350d4b",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Life Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Life (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Detect",
+							"mental": true,
+							"physical": true,
+							"exotic": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Rare Substance/Condition@",
+									"reference": "B48",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Occasional Substance/Condition@",
+									"reference": "B48",
+									"cost_type": "points",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "@Common Substance/Condition@",
+									"reference": "B48",
+									"cost_type": "points",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Life",
+									"reference": "B48",
+									"cost_type": "points",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Precise",
+									"reference": "B48",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Signal Detection",
+									"reference": "B48",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Vague",
+									"reference": "B48",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Analyzing",
+									"reference": "P47",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								}
+							],
+							"reference": "B48",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Empathy",
+							"mental": true,
+							"base_points": 15,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Remote",
+									"reference": "P48",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								}
+							],
+							"reference": "B51",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "detect lies"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fortune-telling"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "psychology"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Metabolism Control",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hibernation",
+									"reference": "B68",
+									"cost_type": "percentage",
+									"cost": -60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Maestry",
+									"reference": "P60",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								}
+							],
+							"reference": "B68",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Life",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Healing",
+							"mental": true,
+							"exotic": true,
+							"base_points": 30,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Faith Healing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Xenohealing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "All Mammals"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Xenohealing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total",
+									"notes": "All Earthly Life"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Xenohealing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 60,
+									"affects": "total",
+									"notes": "All Carbon-Based Life"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Xenohealing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 80,
+									"affects": "total",
+									"notes": "Anything Alive"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Xenohealing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"notes": "Anything Animate"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Disease Only",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Injuries Only",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Own Race Only",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Psychic Healing",
+									"reference": "B59",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Affects Self",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cure Affliction",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": 60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Affliction Only",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Capped",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -25,
+									"affects": "total",
+									"notes": "2 FP"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Capped",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total",
+									"notes": "4 FP"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Capped",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total",
+									"notes": "6 FP"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Capped",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"notes": "8 FP"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Capped",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total",
+									"notes": "10 FP"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Empathic",
+									"reference": "P51",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Ranged",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								}
+							],
+							"reference": "B59",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Life Element",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Life (Doubled)",
+					"open": true
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Life",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

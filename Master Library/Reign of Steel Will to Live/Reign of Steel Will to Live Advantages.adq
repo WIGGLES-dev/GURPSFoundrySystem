@@ -1,0 +1,1610 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "a425bc3d-ba58-486e-a717-a5eca6fc519a",
+	"rows": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Built-In Weapons",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Buzzsaw (3d)",
+					"physical": true,
+					"levels": "3",
+					"points_per_level": 7,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Melee Attack (Reach 1)",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Drug Injector",
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Drug Injector",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 3,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach C, Cannot Parry)",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": -35,
+									"affects": "total"
+								}
+							],
+							"reference": "B61"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Toxic Attack",
+							"physical": true,
+							"levels": "3",
+							"points_per_level": 4,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Follow-Up",
+									"reference": "B105",
+									"cost_type": "percentage",
+									"cost": -35,
+									"affects": "total"
+								}
+							],
+							"reference": "B61"
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Electric Stun Wand (for 3+ handed robots)",
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "-1 to lower point cost (as in original book)",
+							"physical": true,
+							"base_points": -1
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction (HT-5)",
+							"physical": true,
+							"levels": "6",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor 0.5",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B115",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack, Reach 1",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": -25,
+									"affects": "total"
+								}
+							],
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Electric Stun Wand",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B106",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach 1, ST-Based)",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 75,
+									"affects": "total"
+								}
+							],
+							"reference": "B61"
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Electric Stun Wand (for one-handed robots)",
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "+2 to raise point cost (as in original book)",
+							"physical": true,
+							"base_points": 2
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction (HT-5)",
+							"physical": true,
+							"levels": "6",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor 0.5",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B106",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack, Reach 1",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": -25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Temporary Disadvantage (No Manipulators)",
+									"reference": "B115",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								}
+							],
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Electric Stun Wand",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B106",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach 1, ST-Based)",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 75,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Temporary Disadvantage (No Manipulators)",
+									"reference": "B115",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								}
+							],
+							"reference": "B61"
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Electric Stun Wand (for two-handed robots)",
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction (HT-5)",
+							"physical": true,
+							"levels": "6",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor 0.5",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B106",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack, Reach 1",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": -25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Temporary Disadvantage (One-Hand)",
+									"reference": "B115",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total"
+								}
+							],
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Electric Stun Wand",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Link",
+									"reference": "B106",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach 1, ST-Based)",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 75,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Temporary Disadvantage (One-Hand)",
+									"reference": "B115",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total"
+								}
+							],
+							"reference": "B61"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "ETC Payload Rifle (5dx3)",
+					"physical": true,
+					"levels": "15",
+					"points_per_level": 8,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Extra Recoil",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"levels": 3,
+							"notes": "Rcl 4"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 10,
+							"affects": "total",
+							"levels": 6,
+							"notes": "100x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 3)",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Gatling Laser (12d)",
+					"physical": true,
+					"levels": "12",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 15
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 7,
+							"notes": "200x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 6,
+							"notes": "100x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 4)",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 70,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Gatling Laser Blue-Green (12d)",
+					"physical": true,
+					"levels": "12",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 15
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 8,
+							"notes": "500x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 7,
+							"notes": "200x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 2)",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Underwater",
+							"reference": "B109",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Gauss Rifle (6d)",
+					"physical": true,
+					"levels": "6",
+					"points_per_level": 3,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 4
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (3)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Extra Recoil",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"levels": 1,
+							"notes": "Rcl 2"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 6,
+							"notes": "100x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5,
+							"notes": "50x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 12), Selective Fire",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 110,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Heavy Blaster (4d)",
+					"physical": true,
+					"levels": "4",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 2
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (5)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 150,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5,
+							"notes": "50x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 3,
+							"notes": "15x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 3)",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Surge",
+							"reference": "B105",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Heavy Electrolaser (Affliction HT-6)",
+					"physical": true,
+					"levels": "7",
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5,
+							"notes": "50x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 3,
+							"notes": "10x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Secondary (Heart Attack)",
+							"cost_type": "percentage",
+							"cost": 60,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Selectivity",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 10,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Heavy Plasma Torch (4d)",
+					"physical": true,
+					"levels": "4",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (5)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 150,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Melee Attack (Reach C, 1, Cannot Parry)",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Holdout Laser (2d)",
+					"physical": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 3,
+							"notes": "10x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 1,
+							"notes": "2x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 10), Selective Fire",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 110,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Laser Carbine (5d)",
+					"physical": true,
+					"levels": "5",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 9
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5,
+							"notes": "50x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 4,
+							"notes": "20x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 10), Selective Fire",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 110,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Laser Rifle (6d)",
+					"physical": true,
+					"levels": "6",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 9
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 5,
+							"notes": "50x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 4,
+							"notes": "20x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 10), Selective Fire",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 110,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Laser Torch (2d)",
+					"physical": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Melee Attack (Reach C, 1, Cannot Parry)",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Light Electrolaser (Affliction HT-4)",
+					"physical": true,
+					"levels": "5",
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (2)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 2,
+							"notes": "5x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 3)",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Secondary (Heart Attack)",
+							"cost_type": "percentage",
+							"cost": 60,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Selectivity",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 10,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Mini-Chainsaw (2d)",
+					"physical": true,
+					"levels": "2",
+					"points_per_level": 7,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Melee Attack (Reach 1)",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Monowire Claws",
+					"reference": "RSWL20",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "+10 points for every die of the robot’s thrust damage (minimum +2 points)",
+							"physical": true,
+							"levels": "0",
+							"points_per_level": 10
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Monowire Claws (1d)",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 7,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor (10)",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach C), Dual, ST-based",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 80,
+									"affects": "total"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Monowire Jaw",
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "+10 points for every die of the robot’s thrust damage (minimum +2 points)",
+							"physical": true,
+							"levels": "0",
+							"points_per_level": 10
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Monowire Jaw (1d)",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 7,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor (10)",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach C), Dual, Cannot Parry, ST-based",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 65,
+									"affects": "total"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Monowire Talons",
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "+10 points for every die of the robot’s thrust damage (minimum +2 points)",
+							"physical": true,
+							"levels": "0",
+							"points_per_level": 10
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Monowire Talons (1d)",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 7,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor (10)",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach C, 1), Dual, ST-based",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 90,
+									"affects": "total"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Particle Beam Cannon (10dx10)",
+					"physical": true,
+					"levels": "100",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 12
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (5)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 150,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 12,
+							"notes": "10000x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 11,
+							"notes": "5000x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Surge",
+							"reference": "B105",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Portable Railgun (15d)",
+					"physical": true,
+					"levels": "15",
+					"points_per_level": 6,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Armor Divisor (3)",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Extra Recoil",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"levels": 2,
+							"notes": "Rcl 3"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 6,
+							"notes": "100x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 7,
+							"notes": "200x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Rapid Fire (ROF 3), Selective Fire",
+							"reference": "B108",
+							"cost_type": "percentage",
+							"cost": 60,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Tangler (Binding)",
+					"physical": true,
+					"levels": "20",
+					"points_per_level": 2,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Reduced Range",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"levels": 2,
+							"notes": "x1/5"
+						}
+					],
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Torpedoes (6dx3)",
+					"physical": true,
+					"levels": "18",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Accurate",
+							"reference": "B102",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 6
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased 1/2D",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 3,
+							"notes": "10x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Increased Max Range",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 5,
+							"affects": "total",
+							"levels": 4,
+							"notes": "20x"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Explosion",
+							"reference": "B104",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Guided",
+							"reference": "B106",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Limited Use (2/day) Slow Reload",
+							"reference": "B112",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Underwater only",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						}
+					],
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Vibroblade Claws",
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "+5 points for every die of the robot’s thrust damage (minimum +1 point)",
+							"physical": true,
+							"levels": "0",
+							"points_per_level": 5
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Vibroblade Claws (3d)",
+							"physical": true,
+							"levels": "3",
+							"points_per_level": 7,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Armor Divisor (3)",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Melee Attack (Reach C), Dual, ST-based",
+									"reference": "B112",
+									"cost_type": "percentage",
+									"cost": 80,
+									"affects": "total"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Weighted Tail (Crushing Striker)",
+					"physical": true,
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Clumsy (-1 to hit)",
+							"reference": "B88",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Long",
+							"reference": "B88",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"levels": 1,
+							"notes": "SM+1"
+						}
+					],
+					"reference": "RSWL21",
+					"categories": [
+						"Built-In Weapon"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Social Stigma (Outlaw)",
+			"social": true,
+			"base_points": -15,
+			"reference": "RSWL8",
+			"notes": "Reaction -3 from robots, +3 from humans from the same subculture",
+			"categories": [
+				"Disadvantage"
+			]
+		}
+	]
+}

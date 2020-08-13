@@ -1,0 +1,437 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "f9c4355f-feaa-427c-bb2a-c5d77cb3ffce",
+	"rows": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Extra AP",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 2,
+			"reference": "PY44:7",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Second Wind",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "PY44:12",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Regeneration (Fatigue Recovery)",
+			"physical": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "1 FP/hour",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "2 FP/hour",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 30,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "5 FP/hour",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 35,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "15 FP/hour",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "30 FP/hour",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 45,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "1 FP/minute",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "2 FP/minute",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 60,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "5 FP/minute",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 70,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "15 FP/minute",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 80,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "30 FP/minute",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 90,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "1 FP/sec",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "2 FP/second",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 110,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "3 FP/second",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 120,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "4 FP/second",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 130,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "6 FP/second",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 140,
+					"affects": "total"
+				}
+			],
+			"reference": "PY44:12",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Abstract Wealth",
+			"social": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 5 ",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": -40,
+					"affects": "total",
+					"notes": "Homeless"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 6 ",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": -30,
+					"affects": "total",
+					"notes": "Destitute"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 7 ",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Working Poor"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 8 ",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": -15,
+					"affects": "total",
+					"notes": "Working Class"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 9 ",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Tradespeople"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 10",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Middle Class"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 11",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 10,
+					"affects": "total",
+					"notes": "Working Rich"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 12",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 20,
+					"affects": "total",
+					"notes": "Wealthy"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 13",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 30,
+					"affects": "total",
+					"notes": "Very Wealthy"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 14",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Millionaire"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 15",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 75,
+					"affects": "total",
+					"notes": "Multimillionaire"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 16",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 100,
+					"affects": "total",
+					"notes": "Billionaire"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 17",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 125,
+					"affects": "total",
+					"notes": "Multibillionaire"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 18",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 150,
+					"affects": "total",
+					"notes": "Megacorporation"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 19",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 175,
+					"affects": "total",
+					"notes": "Small Nation"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 20",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 200,
+					"affects": "total",
+					"notes": "Medium Nation"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 21",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 225,
+					"affects": "total",
+					"notes": "Large Nation"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 22",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 250,
+					"affects": "total",
+					"notes": "Wealthy Nation"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 23",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 275,
+					"affects": "total",
+					"notes": "Multiplanetary Empire"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abstract Wealth 24",
+					"reference": "PY44:12",
+					"cost_type": "points",
+					"cost": 300,
+					"affects": "total",
+					"notes": "Galactic Empire"
+				}
+			],
+			"reference": "PY44:30",
+			"categories": [
+				"Advantage",
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Niche Protection (@Niche@)",
+			"physical": true,
+			"base_points": 1,
+			"reference": "PY44:33",
+			"categories": [
+				"Perk"
+			]
+		}
+	]
+}

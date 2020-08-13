@@ -1,0 +1,3986 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "4b3508fc-1946-43e3-ba53-7ffb9f801114",
+	"rows": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Air",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Air Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Animal Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Animal Control Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Anti-Magic",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P122",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Anti-Magic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Anti-Magic Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P121",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Anti-Super",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Anti-Super",
+					"reference": "P122",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				}
+			],
+			"reference": "P122",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Anti-Super Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P122",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Antipsi",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P122",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Antipsi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P122",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Antipsi Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P122",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Astral Projection",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P122",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Astral Projection Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Awe",
+			"mental": true,
+			"supernatural": true,
+			"levels": "1",
+			"base_points": 30,
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Always On",
+					"reference": "B93",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Active",
+					"reference": "P84",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Presence",
+					"reference": "P84",
+					"cost_type": "percentage",
+					"cost": 25,
+					"affects": "total"
+				}
+			],
+			"reference": "P84",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Bioenergy",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Bioenergy Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Body Alteration",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Body Alteration Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Body Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Body Control Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Chaos",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P124",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Chaos Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P124",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Cold/Ice",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P124",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Cold/Ice Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P124",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Confusion",
+			"mental": true,
+			"supernatural": true,
+			"levels": "1",
+			"base_points": 30,
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Always On",
+					"reference": "B93",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Active",
+					"reference": "P84",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Presence",
+					"reference": "P84",
+					"cost_type": "percentage",
+					"cost": 25,
+					"affects": "total"
+				}
+			],
+			"reference": "P84",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Control (@Element@)",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Persistent",
+					"reference": "P91",
+					"cost_type": "percentage",
+					"cost": 40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Ranged",
+					"reference": "P91",
+					"cost_type": "percentage",
+					"cost": 40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Collective",
+					"reference": "P92",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Natural Phenomena",
+					"reference": "P92",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Cosmetic",
+					"reference": "P92",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Super-Effort",
+					"reference": "SU26",
+					"cost_type": "percentage",
+					"cost": 400,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Rare",
+					"reference": "P90",
+					"cost_type": "multiplier",
+					"cost": 2
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Occasional",
+					"reference": "P90",
+					"cost_type": "multiplier",
+					"cost": 3
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Common",
+					"reference": "P90",
+					"cost_type": "multiplier",
+					"cost": 4
+				}
+			],
+			"reference": "P90",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Cosmic",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Cosmic"
+				}
+			],
+			"reference": "P124",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Cosmic Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 15,
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Create (@Item@)",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Destruction",
+					"reference": "P94",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Destruction Only",
+					"reference": "P94",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Transmutation",
+					"reference": "P94",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "@Category@ to @Category@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Transmutation only",
+					"reference": "P94",
+					"cost_type": "percentage",
+					"cost": -100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Specific item",
+					"reference": "P92",
+					"cost_type": "multiplier",
+					"cost": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Small category",
+					"reference": "P92",
+					"cost_type": "multiplier",
+					"cost": 2
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Medium category",
+					"reference": "P92",
+					"cost_type": "multiplier",
+					"cost": 4
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Large category",
+					"reference": "P92",
+					"cost_type": "multiplier",
+					"cost": 8
+				}
+			],
+			"reference": "P92",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Darkness",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Darkness Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Death",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Death Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Dimensional Travel",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Dimensional Travel Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P125",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Divine (@Deity@)",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				}
+			],
+			"reference": "P126",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Earth",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P126",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Earth Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Electricity",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P126",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Electricity Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P126",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Electrokinesis",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P126",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Electrokinesis Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P123",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Energy Reserve (@Source@)",
+			"physical": true,
+			"exotic": true,
+			"levels": "1",
+			"points_per_level": 3,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Abilities Only",
+					"reference": "P119",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "One Power",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Slow Recharge",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "1/hour"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Slow Recharge",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total",
+					"notes": "1/day"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Special Recharge",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -70,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Special Recharge",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total",
+					"notes": "1/s bleed"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Stunts Only",
+					"reference": "P117",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total"
+				}
+			],
+			"reference": "P119",
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "ESP",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "ESP Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Evil",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Evil Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Force Construct Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Force Constructs",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Good",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P128",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Good Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Gravity",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P128",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Gravity Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "P127",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Healing",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P128",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Heat/Fire",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P129",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Illusion",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P129",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Illusion",
+			"physical": true,
+			"base_points": 25,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Extended",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "@Sense@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Independence",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Initiative",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Mental",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Stigmata",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Auditory Only",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": -70,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Static",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Visual Only",
+					"reference": "P95",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hallucinations",
+					"reference": "PSI14",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "P94",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Injury Tolerance (Damage Reduction)",
+			"physical": true,
+			"exotic": true,
+			"levels": "2",
+			"points_per_level": 25,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "@Common Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total",
+					"notes": "@Occasional Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total",
+					"notes": "@Rare Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "@Very Common Attack Form@"
+				}
+			],
+			"reference": "P53",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Injury Tolerance (Independent Body Parts)",
+			"physical": true,
+			"exotic": true,
+			"base_points": 35,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Detachable Head",
+					"reference": "P52",
+					"cost_type": "percentage",
+					"cost": 15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Instant Reattachment",
+					"reference": "P52",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "No Reattachment",
+					"reference": "P52",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Reattachment Only",
+					"reference": "P52",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "P53",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Injury Tolerance (Unbreakable Bones)",
+			"physical": true,
+			"base_points": 10,
+			"reference": "P53",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Leech",
+			"physical": true,
+			"levels": "1",
+			"base_points": 21,
+			"points_per_level": 4,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Accelerated Healing",
+					"cost_type": "percentage",
+					"cost": 25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Heals FP",
+					"cost_type": "percentage",
+					"cost": 30,
+					"affects": "total",
+					"notes": "After HP"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Heals FP",
+					"cost_type": "percentage",
+					"cost": 60,
+					"affects": "total",
+					"notes": "Player Chooses"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal FP",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal FP then HP",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal ST",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal HT",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal DX",
+					"cost_type": "percentage",
+					"cost": 300,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal IQ",
+					"cost_type": "percentage",
+					"cost": 300,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal Youth",
+					"cost_type": "percentage",
+					"cost": 300,
+					"affects": "total",
+					"notes": "Temporary"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Steal Youth",
+					"cost_type": "percentage",
+					"cost": 450,
+					"affects": "total",
+					"notes": "Permanent"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Only Heals FP",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Dehydration",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Drowning",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Freezing",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Missed Sleep",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Starvation",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Hazard: Suffocation",
+					"reference": "B104",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				}
+			],
+			"reference": "P96",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Life",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P130",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Light",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P130",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Machine Telepathy",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P130",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Magic",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				}
+			],
+			"reference": "P131",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Magnetism",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P131",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Matter Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P131",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Neutralize (@Source@)",
+			"mental": true,
+			"exotic": true,
+			"base_points": 50,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Theft",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": 200,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "One Power",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total",
+					"notes": "@Power@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Cosmic",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": 300,
+					"affects": "total",
+					"notes": "Any Source"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Theft",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": 300,
+					"affects": "total",
+					"notes": "Point Total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Precise",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Derange",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "One Ability",
+					"reference": "P97",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total",
+					"notes": "@Ability@ in @Power@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Derangable",
+					"reference": "PSI16",
+					"cost_type": "percentage",
+					"cost": 10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Theft, Weak",
+					"reference": "PSI16",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Interruption",
+					"reference": "PSI16",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "P97",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Order",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P132",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Plant Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P132",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Power",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Chi"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Cosmic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Moral"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total",
+					"notes": "Electronic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Mechanical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Mutant"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -15,
+					"affects": "total",
+					"notes": "Nanotech"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Savant"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "SU34",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Superscience"
+				}
+			],
+			"reference": "P7",
+			"notes": "To be tooled to a new power",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Power Talent",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "PSI18",
+			"categories": [
+				"Advantage",
+				"Power"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Probability Alteration",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P132",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Psychokinesis",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P133",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Radiation",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P133",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Sound/Vibration",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P133",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Spirit Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				}
+			],
+			"reference": "P134",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Static (@Source@)",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 30,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Area Effect",
+					"reference": "P98",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Switchable",
+					"reference": "P98",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Resistible",
+					"reference": "P98",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Discriminatory",
+					"reference": "P98",
+					"cost_type": "percentage",
+					"cost": 150,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Tiring",
+					"reference": "PSI17",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "One Power",
+					"reference": "PSI17",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "P98",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Telepathy",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P134",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Teleportation",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P134",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Time Mastery",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P135",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Vampirism",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Biological"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Psionic"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P135",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Water",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Elemental"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P135",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Weather Control",
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P26",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Divine"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P27",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Magical"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Nature"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P28",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "Spirit"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Power Modifier",
+					"reference": "P29",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Super"
+				}
+			],
+			"reference": "P136",
+			"categories": [
+				"Advantage",
+				"Power"
+			],
+			"open": true
+		}
+	]
+}

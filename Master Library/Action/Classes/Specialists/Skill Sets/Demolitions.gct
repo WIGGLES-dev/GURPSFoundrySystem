@@ -1,0 +1,275 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "d2b1e4cc-aee1-4a05-8dac-294218c3908a",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Demolitions",
+			"reference": "ACT4:14",
+			"notes": "You may use your Slush Fund to buy Enhanced Dodge (Dive for Cover) [5/level]",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Fearlessness",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 2,
+					"reference": "B55",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Cheaper (Explosives; 10%)",
+							"social": true,
+							"base_points": 1,
+							"reference": "PU2:8",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "High-Heeled Heroine"
+										}
+									}
+								]
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Equipment Bond (@any one tool kit@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "MH1:25",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Demolitions",
+			"reference": "ACT4:14",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Architecture",
+					"reference": "B176",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Civil",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Design/Invention"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Armoury",
+					"reference": "B178",
+					"specialization": "Heavy Weapons",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Heavy Weapons",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Military",
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Chemistry",
+					"reference": "B183",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Alchemy",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Natural Science"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Engineer",
+					"reference": "B190",
+					"specialization": "Combat",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"when_tl": {
+							"compare": "at_least",
+							"qualifier": 5
+						},
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "mathematics"
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "applied"
+								}
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"specialization": "Demolition",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Design/Invention",
+						"Engineer"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Explosives",
+					"reference": "B194",
+					"specialization": "Demolition",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Combat",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Mining",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"specialization": "Underwater Demolition",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Military",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Explosives",
+					"reference": "B194",
+					"specialization": "Fireworks",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Chemistry",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Military",
+						"Technical"
+					]
+				}
+			]
+		}
+	]
+}

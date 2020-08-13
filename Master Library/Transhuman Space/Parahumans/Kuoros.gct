@@ -1,0 +1,308 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "0f8568e6-31be-45c7-a7ba-e8f29ecd43c0",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Kuoros",
+			"reference": "FW118",
+			"notes": "2082; $82,000",
+			"categories": [
+				"Parahuman",
+				"Social"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased IQ",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased HT",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "ht"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Hermaphromorph",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B59",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Language Talent",
+					"mental": true,
+					"base_points": 10,
+					"reference": "B65",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Longevity",
+					"physical": true,
+					"base_points": 2,
+					"reference": "B66",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Resistant",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Disease",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.33
+						}
+					],
+					"reference": "B81",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Versatile",
+					"mental": true,
+					"base_points": 5,
+					"reference": "B96",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Light menses",
+					"physical": true,
+					"base_points": 1,
+					"reference": "BT58",
+					"categories": [
+						"Species",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Capable pf parathogenesis",
+					"physical": true,
+					"base_points": 1,
+					"categories": [
+						"Perk",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Reproductive control",
+					"physical": true,
+					"base_points": 1,
+					"categories": [
+						"Perk",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Sanitized Metabolism",
+					"physical": true,
+					"base_points": 1,
+					"reference": "B101",
+					"categories": [
+						"Perk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Combat Paralysis",
+					"physical": true,
+					"base_points": -15,
+					"reference": "B127",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Unnatural Features (Too androgynous)",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": -1,
+					"reference": "B22",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							}
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Attentive",
+					"mental": true,
+					"base_points": -1,
+					"reference": "B163",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "No appendix",
+					"physical": true,
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Genetic defects",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Mental instability",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				}
+			]
+		}
+	]
+}

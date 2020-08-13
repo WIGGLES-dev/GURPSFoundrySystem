@@ -1,0 +1,187 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "b2bbf9f6-a183-4fb1-82ee-8b8ecfc59ed9",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Booby Traps",
+			"reference": "ACT4:11",
+			"notes": "You may use your Slush Fund to buy Enhanced Dodge (Dive for Cover) [5/level]",
+			"open": true
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Booby Traps",
+			"reference": "ACT4:11",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Camouflage",
+					"reference": "B183",
+					"difficulty": "IQ/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Survival",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Military",
+						"Outdoor/Exploration"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Explosives",
+					"reference": "B194",
+					"specialization": "Demolition",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Combat",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Mining",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"specialization": "Underwater Demolition",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Military",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Mechanic",
+					"reference": "B207",
+					"specialization": "Automobile",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Automobile",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Machinist",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Mechanic",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Scrounging",
+					"reference": "B218",
+					"difficulty": "Per/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "Per",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Smuggling",
+					"reference": "B221",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Traps",
+					"reference": "B226",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Lockpicking",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Military"
+					]
+				}
+			]
+		}
+	]
+}

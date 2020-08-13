@@ -1,0 +1,2979 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "cea07c82-1d46-42a3-9623-8425f67224dd",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Duelist",
+			"reference": "DFDSwash:10",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-15 points chosen from:",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Gentleman's)",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Professional)",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Greed",
+									"mental": true,
+									"base_points": -15,
+									"cr": 12,
+									"reference": "B137",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Obsession",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Short term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Long term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B146",
+									"notes": "Become the best  swordsman in the world!",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Overconfidence",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vow (Duel to the death)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Minor",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Great",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vow (Challenge every swordsman to combat)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Great",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vow (Never refuse a challenge to combat)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Major",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Great",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vow (Never wear armor)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Great",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vow (Use only weapon of choice)",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Minor",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Great",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Another -35 points from:",
+							"notes": "Or chosen from previous list",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bad Temper",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "B124",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bloodlust",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "B125",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Callous",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B125",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "teaching"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Distinctive Features (Dueling Scars)",
+									"physical": true,
+									"base_points": -1,
+									"reference": "B165",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "disguise"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "shadowing"
+											}
+										}
+									],
+									"categories": [
+										"Quirk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Impulsiveness",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "B139",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Jealousy",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B140",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Loner",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B142",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "No Sense of Humor",
+									"physical": true,
+									"base_points": -10,
+									"reference": "B146",
+									"notes": "-2 Reaction",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "One Eye",
+									"physical": true,
+									"base_points": -15,
+									"reference": "B147",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Sense of Duty",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Friends and Companions",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Adventuring Companions",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Individual@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Large Group@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Entire Race@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Every Living Being",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										}
+									],
+									"reference": "B153",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Stubbornness",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B157",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wounded",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B162",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Combat Reflexes",
+							"mental": true,
+							"base_points": 15,
+							"reference": "B43",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Enhanced Time Sense"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "fast-draw"
+									}
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "dodge"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "parry"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "block"
+								},
+								{
+									"type": "attribute_bonus",
+									"amount": 2,
+									"attribute": "fright_check"
+								}
+							],
+							"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Enhanced Parry (@Melee weapon skill@)",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"reference": "B51",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "parry"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Luck",
+							"mental": true,
+							"base_points": 15,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Active",
+									"reference": "B66",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Aspected",
+									"reference": "B66",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total",
+									"notes": "@Aspect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Defensive",
+									"reference": "B66",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Wishing",
+									"reference": "P59",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								}
+							],
+							"reference": "B66",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Luck"
+										}
+									}
+								]
+							},
+							"notes": "Usable once per hour of play",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Weapon Bond",
+							"physical": true,
+							"base_points": 1,
+							"reference": "DF1:14",
+							"notes": "+1 to effective skill when using @a specific weapon@",
+							"categories": [
+								"Advantage",
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Weapon Master (@Specialty@)",
+							"mental": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "One weapon",
+									"reference": "B99",
+									"cost_type": "points",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Two weapons",
+									"reference": "B99",
+									"cost_type": "points",
+									"cost": 25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Small class",
+									"reference": "B99",
+									"cost_type": "points",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Medium class",
+									"reference": "B99",
+									"cost_type": "points",
+									"cost": 35,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Large class",
+									"reference": "B99",
+									"cost_type": "points",
+									"cost": 40,
+									"affects": "total"
+								}
+							],
+							"reference": "B99",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "30 points chosen from:",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Ambidexterity",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B39",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Daredevil",
+									"mental": true,
+									"base_points": 15,
+									"reference": "B47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Enhanced Dodge",
+									"mental": true,
+									"levels": "2",
+									"points_per_level": 15,
+									"reference": "B51",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "dodge"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Enhanced Parry (@Melee weapon skill@)",
+									"mental": true,
+									"levels": "2",
+									"points_per_level": 5,
+									"reference": "B51",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "parry"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Extra Attack",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 25,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Multi-Strike",
+											"reference": "P49",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Single Skill",
+											"reference": "P49",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "@Skill@"
+										}
+									],
+									"reference": "B53",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B55",
+									"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit, Very",
+									"physical": true,
+									"base_points": 15,
+									"reference": "B55",
+									"notes": "+2 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate; lose FP at half the normal rate (in both cases, not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Hard to Kill",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B58",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Basic Move",
+									"physical": true,
+									"levels": "3",
+									"points_per_level": 5,
+									"reference": "B17",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "move"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Basic Speed",
+									"physical": true,
+									"levels": "4",
+									"points_per_level": 5,
+									"reference": "B17",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 0,
+											"per_level": true,
+											"attribute": "speed"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Dexterity",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 20,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										}
+									],
+									"reference": "B15",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "dx"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Health",
+									"physical": true,
+									"levels": "3",
+									"points_per_level": 10,
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "ht"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Strength",
+									"physical": true,
+									"levels": "3",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Size",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"levels": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Super-Effort",
+											"reference": "SU24",
+											"cost_type": "percentage",
+											"cost": 300,
+											"affects": "total"
+										}
+									],
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Will",
+									"mental": true,
+									"levels": "6",
+									"points_per_level": 5,
+									"reference": "B16",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "will"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Luck, Extraordinary",
+									"mental": true,
+									"base_points": 30,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Active",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Aspected",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "@Aspect@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Defensive",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P59",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B66",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Luck"
+												}
+											}
+										]
+									},
+									"notes": "Usable once per 30 minutes of play",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Luck, Ridiculous",
+									"mental": true,
+									"base_points": 60,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Active",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Aspected",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "@Aspect@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Defensive",
+											"reference": "B66",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P59",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B66",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Luck"
+												}
+											}
+										]
+									},
+									"notes": "Usable once per 10 minutes of play",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Perfect Balance",
+									"physical": true,
+									"base_points": 15,
+									"reference": "B74",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "acrobatics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "climbing"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Serendipity",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "For others only"
+										}
+									],
+									"reference": "B83",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Signature Gear",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "B85",
+									"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Striking ST",
+									"physical": true,
+									"exotic": true,
+									"levels": "2",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Size",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"levels": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Super Effort",
+											"reference": "SU24",
+											"cost_type": "percentage",
+											"cost": 400,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "One Attack Only",
+											"reference": "P79",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "@Attack@"
+										}
+									],
+									"reference": "B88",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st",
+											"limitation": "striking_only"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Familiar Horrors",
+											"reference": "H20",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B95",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Weapon Master (@Specialty@)",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "One weapon",
+											"reference": "B99",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Two weapons",
+											"reference": "B99",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Small class",
+											"reference": "B99",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Medium class",
+											"reference": "B99",
+											"cost_type": "points",
+											"cost": 35,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Large class",
+											"reference": "B99",
+											"cost_type": "points",
+											"cost": 40,
+											"affects": "total"
+										}
+									],
+									"reference": "B99",
+									"notes": "+5-20 points",
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Basic Speed",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 5,
+							"reference": "B17",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 0,
+									"per_level": true,
+									"attribute": "speed"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Dexterity",
+							"physical": true,
+							"levels": "6",
+							"points_per_level": 20,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Fine Manipulators",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								}
+							],
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Health",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Strength",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Size",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost_type": "percentage",
+									"cost": 300,
+									"affects": "total"
+								}
+							],
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Duelist",
+			"reference": "DFDSwash:10",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Background Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose seven",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Fast-Draw",
+									"reference": "B194",
+									"specialization": "@Speciality@",
+									"difficulty": "DX/E",
+									"points": 1,
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Climbing",
+									"reference": "B183",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Athletic",
+										"Criminal/Street",
+										"Outdoor/Exploration"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Lasso",
+									"reference": "B204",
+									"difficulty": "DX/A",
+									"points": 1,
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Stealth",
+									"reference": "B222",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "DX",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Police",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Whip",
+									"reference": "B209",
+									"difficulty": "DX/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Force Whip",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Kusari",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Monowire Whip",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "First Aid",
+									"reference": "B195",
+									"tech_level": "",
+									"difficulty": "IQ/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Esoteric Medicine"
+										},
+										{
+											"type": "Skill",
+											"name": "Physician"
+										},
+										{
+											"type": "Skill",
+											"name": "Veterinary",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Everyman",
+										"Medical"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Gesture",
+									"reference": "B198",
+									"difficulty": "IQ/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Savoir-Faire",
+									"reference": "B218",
+									"specialization": "High Society",
+									"difficulty": "IQ/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Savoir-Faire",
+											"specialization": "Servant",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Business",
+										"Knowledge",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Armoury",
+									"reference": "B178",
+									"specialization": "Melee Weapons",
+									"tech_level": "",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Engineer",
+											"specialization": "Melee Weapons",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Military",
+										"Repair/Maintainance"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Connoisseur",
+									"reference": "B185",
+									"specialization": "Weapons",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Arts/Entertainment",
+										"Knowledge",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Fast-Talk",
+									"reference": "B195",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Social",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Gambling",
+									"reference": "B197",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Mathematics",
+											"specialization": "Statistics",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Streetwise",
+									"reference": "B223",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Criminal/Street",
+										"Police",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Teaching",
+									"reference": "B224",
+									"difficulty": "IQ/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Scholarly",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Hiking",
+									"reference": "B200",
+									"difficulty": "HT/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "HT",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Athletic",
+										"Outdoor/Exploration"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Running",
+									"reference": "B218",
+									"difficulty": "HT/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "HT",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Athletic"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Search",
+									"reference": "B219",
+									"difficulty": "Per/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "Per",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Criminology",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Police",
+										"Spy"
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Or 1 point to raise one of those skills or any one-point primary or secondary skill by a level.",
+									"open": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Secondary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Acrobatics",
+							"reference": "B174",
+							"difficulty": "DX/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Aerobatics",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Aquabatics",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Intimidation",
+							"reference": "B202",
+							"difficulty": "Will/A",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Acting",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Jumping",
+							"reference": "B203",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Wrestling",
+							"reference": "B228",
+							"difficulty": "DX/A",
+							"points": 2,
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one:",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Brawling",
+									"reference": "B182",
+									"difficulty": "DX/E",
+									"points": 2,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Brawling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Boxing",
+									"reference": "B182",
+									"difficulty": "DX/A",
+									"points": 2,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Boxing"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											}
+										},
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Boxing"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one:",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Throwing",
+									"reference": "B226",
+									"difficulty": "DX/A",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Dropping",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Athletic",
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Thrown Weapon",
+									"reference": "B226",
+									"specialization": "Knife",
+									"difficulty": "DX/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Thrown Weapon",
+									"reference": "B226",
+									"specialization": "Sword",
+									"difficulty": "DX/E",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Ranged Combat"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Primary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Fast-Draw",
+							"reference": "B194",
+							"specialization": "Sword",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one:",
+							"open": true,
+							"children": [
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Melee 1",
+									"open": false,
+									"children": [
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one:",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Shield",
+													"reference": "B220",
+													"specialization": "Buckler",
+													"difficulty": "DX/E",
+													"points": 8,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shield",
+															"specialization": "Force",
+															"modifier": -2
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Cloak",
+													"reference": "B184",
+													"difficulty": "DX/A",
+													"points": 8,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Net",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shield",
+															"modifier": -4
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Main-Gauche",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 8,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Jitte/Sai",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Knife",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												}
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one:",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Rapier",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 12,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Saber",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 12,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shortswort",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Smallsword",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 12,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Shortsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Melee 2",
+									"open": false,
+									"children": [
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one:",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Shield",
+													"reference": "B220",
+													"specialization": "Buckler",
+													"difficulty": "DX/E",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shield",
+															"specialization": "Force",
+															"modifier": -2
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Cloak",
+													"reference": "B184",
+													"difficulty": "DX/A",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Net",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shield",
+															"modifier": -4
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Main-Gauche",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 4,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Jitte/Sai",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Knife",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												}
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one:",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Rapier",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 16,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Saber",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 16,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shortswort",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Smallsword",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 16,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Shortsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Melee 3",
+									"open": false,
+									"children": [
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one:",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Rapier",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 20,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Saber",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 20,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Broadsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Shortswort",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Smallsword",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Smallsword",
+													"reference": "B208",
+													"difficulty": "DX/A",
+													"points": 20,
+													"defaults": [
+														{
+															"type": "DX",
+															"modifier": -5
+														},
+														{
+															"type": "Skill",
+															"name": "Shortsword",
+															"modifier": -4
+														},
+														{
+															"type": "Skill",
+															"name": "Main-Gauche",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Rapier",
+															"modifier": -3
+														},
+														{
+															"type": "Skill",
+															"name": "Saber",
+															"modifier": -3
+														}
+													],
+													"categories": [
+														"Combat/Weapon",
+														"Melee Combat"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

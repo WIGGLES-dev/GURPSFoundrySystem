@@ -1,0 +1,1624 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "bbb3f45f-9e22-4998-a1b2-f9bbaffa034e",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Imp",
+			"reference": "F109",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Intelligence",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": -20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Basic Speed",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 5,
+							"reference": "B17",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 0,
+									"per_level": true,
+									"attribute": "speed"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Size Modifier",
+							"physical": true,
+							"levels": "4",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "sm"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Strength",
+							"physical": true,
+							"levels": "8",
+							"points_per_level": -10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Perception",
+							"mental": true,
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "perception"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Racial Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction",
+							"physical": true,
+							"exotic": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Advantage; one point per level",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Atribute Penalty; -1 to ST or HT per level",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Atribute Penalty; -1 to DX or IQ per level",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Mortal Condition; Coma",
+									"cost_type": "percentage",
+									"cost": 250,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Mortal Condition; Heart Attack",
+									"cost_type": "percentage",
+									"cost": 300,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Disadvantage; Bad Temper (12)",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Daze",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Hallucination",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Retching",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Agony",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Choking",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Ecstasy",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Seizure",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Paralysis",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Sleep",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incapacitating Condition; Unconsciousness",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Tipsy",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Coughing",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Drunk",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Moderate Pain",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Euphoria",
+									"cost_type": "percentage",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Nauseated",
+									"cost_type": "percentage",
+									"cost": 30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Severe Pain",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Irritating Condition; Terrible Pain",
+									"cost_type": "percentage",
+									"cost": 60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Negated Advantage; one point per level",
+									"cost_type": "percentage",
+									"cost": 1,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stunning",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cumulative",
+									"cost_type": "percentage",
+									"cost": 400,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Malediction",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								}
+							],
+							"reference": "B35",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Infernal Rank",
+							"physical": true,
+							"levels": "0",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Replaces Status",
+									"reference": "B29",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Courtesy",
+									"reference": "B29",
+									"cost_type": "points",
+									"cost": -4,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B29",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Unmanifested Spirit",
+							"reference": "F134",
+							"notes": "Magical Spirit Lens",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Doesn't Breathe",
+									"physical": true,
+									"exotic": true,
+									"base_points": 20,
+									"reference": "B49"
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Doesn't Eat or Drink",
+									"physical": true,
+									"exotic": true,
+									"base_points": 10,
+									"reference": "B50"
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Doesn't Sleep",
+									"physical": true,
+									"exotic": true,
+									"base_points": 20,
+									"reference": "B50"
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Insubstantiality",
+									"mental": true,
+									"physical": true,
+									"exotic": true,
+									"base_points": 80,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Affect Substantial",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Up to No Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Up to Light Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Up to Medium Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "Up to Heavy Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Partial Change",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Partial Change",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "Can turn an item you are carrying substantial without dropping it"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Always On",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Usually On",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "Materialization costs 1 FP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Vertical Move",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Noisy",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Projection",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Reversion",
+											"reference": "H16",
+											"cost_type": "percentage",
+											"cost": 60,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Touch",
+											"reference": "H16",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Always On"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Touch",
+											"reference": "H16",
+											"cost_type": "percentage",
+											"cost": 5,
+											"affects": "total",
+											"notes": "Switchable"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Difficult Materialization",
+											"reference": "H16",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "Mutually exclusive with Usually On."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Ectoplasmic Materialization",
+											"reference": "H16",
+											"cost_type": "percentage",
+											"cost": -35,
+											"affects": "total"
+										}
+									],
+									"reference": "B62",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Invisibility",
+									"mental": true,
+									"physical": true,
+									"exotic": true,
+									"base_points": 40,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Affects Machines",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Up to No Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Up to Light Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Up to Medium Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "Up to Heavy Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extended",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"notes": "@Type@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Switchable",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Usually On",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 5,
+											"affects": "total",
+											"notes": "Turning visible costs 1 FP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Machines Only",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Substantial Only",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Visible Reflection",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Visible Shadow",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fringe",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B63",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Resistant (Immunity to Metabolic Hazards)",
+									"physical": true,
+									"base_points": 30,
+									"reference": "B81"
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unaging",
+									"physical": true,
+									"exotic": true,
+									"base_points": 15,
+									"reference": "B95"
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Cannot Speak (Mute)",
+									"physical": true,
+									"base_points": -25,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Substantial Only",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B125",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Racial Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Appearance",
+							"physical": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Universal",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Off-the-Shelf Looks",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Androgynous",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Impressive",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Attractive",
+									"cost_type": "points",
+									"cost": 4,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Average",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Horrific",
+									"cost_type": "points",
+									"cost": -24,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Monstrous",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hideous",
+									"cost_type": "points",
+									"cost": -16,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Ugly",
+									"cost_type": "points",
+									"cost": -8,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Unattractive",
+									"cost_type": "points",
+									"cost": -4,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Handsome",
+									"cost_type": "points",
+									"cost": 12,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Beautiful",
+									"cost_type": "points",
+									"cost": 12,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Very Handsome",
+									"cost_type": "points",
+									"cost": 16,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Very Beautiful",
+									"cost_type": "points",
+									"cost": 16,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Transcendent",
+									"cost_type": "points",
+									"cost": 20,
+									"affects": "total"
+								}
+							],
+							"reference": "B21",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Callous",
+							"mental": true,
+							"base_points": -5,
+							"reference": "B125",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "psychology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "teaching"
+									}
+								}
+							],
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Dread (Holy Objects)",
+							"mental": true,
+							"supernatural": true,
+							"levels": "1",
+							"base_points": -9,
+							"points_per_level": -1,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Very Common",
+									"reference": "B161",
+									"cost_type": "multiplier",
+									"cost": 3
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Common",
+									"reference": "B161",
+									"cost_type": "multiplier",
+									"cost": 2
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Occasional",
+									"reference": "B161",
+									"cost_type": "multiplier",
+									"cost": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Rare",
+									"reference": "B161",
+									"cost_type": "multiplier",
+									"cost": 0.5
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cannot be trapped",
+									"reference": "B133",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Insensitive",
+									"reference": "H25",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								}
+							],
+							"reference": "B132",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Duty (Tempt or harass mortals)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 6",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 9",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "FR: 12",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 15",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Extremely Hazardous",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Involuntary",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Nonhazardous",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total"
+								}
+							],
+							"reference": "B133",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Enemy (Celestial Hierarchy)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Weak Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total",
+									"notes": "50% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Equal Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total",
+									"notes": "100% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Powerful Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total",
+									"notes": ">150% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Weak Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Medium Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears almost all the time",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 3,
+									"notes": "15-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears quite often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 2,
+									"notes": "12-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears fairly often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 1,
+									"notes": "9-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Appears quite rarely",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 0.5,
+									"notes": "6-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Large/Powerful Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Utterly Formidable Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Unknown",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total",
+									"notes": "More skilled or extra abilities"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total",
+									"notes": "More skilled and extra abilities"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Watcher",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 0.25
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Rival",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 0.5
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hunter",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 1
+								}
+							],
+							"reference": "B135",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Enemy (Immediate infernal superior)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Weak Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total",
+									"notes": "50% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Equal Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total",
+									"notes": "100% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Powerful Individual",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total",
+									"notes": ">150% of your starting points"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Weak Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Medium Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears almost all the time",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 3,
+									"notes": "15-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears quite often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 2,
+									"notes": "12-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Appears fairly often",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 1,
+									"notes": "9-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Appears quite rarely",
+									"reference": "B36",
+									"cost_type": "multiplier",
+									"cost": 0.5,
+									"notes": "6-"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Large/Powerful Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Utterly Formidable Group",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Unknown",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total",
+									"notes": "More skilled or extra abilities"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Evil Twin",
+									"reference": "B135",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total",
+									"notes": "More skilled and extra abilities"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Watcher",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 0.25
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Rival",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 0.5
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hunter",
+									"reference": "B135",
+									"cost_type": "multiplier",
+									"cost": 1
+								}
+							],
+							"reference": "B135",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Odious Personal Habit",
+							"physical": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "-1 Reaction",
+									"reference": "B22",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "-2 Reaction",
+									"reference": "B22",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "-3 Reaction",
+									"reference": "B22",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								}
+							],
+							"reference": "B22",
+							"notes": "@Habit@",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Selfish",
+							"mental": true,
+							"base_points": -5,
+							"cr": 6,
+							"reference": "B153",
+							"categories": [
+								"Disadvantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,724 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "b035ec06-ddb0-4440-926f-1b9f8dfd16a3",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Soldier",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Advantages",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "20 points chosen from",
+							"open": true,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Ambidexterity",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B39",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Danger Sense",
+									"mental": true,
+									"base_points": 15,
+									"reference": "B47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fearlessness",
+									"mental": true,
+									"levels": "7",
+									"points_per_level": 2,
+									"reference": "B55",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B55",
+									"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit, Very",
+									"physical": true,
+									"base_points": 15,
+									"reference": "B55",
+									"notes": "+2 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate; lose FP at half the normal rate (in both cases, not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "High Pain Threshold",
+									"physical": true,
+									"base_points": 10,
+									"reference": "B59",
+									"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Dexterity",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 20,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										}
+									],
+									"reference": "B15",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "dx"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Health",
+									"physical": true,
+									"levels": "2",
+									"points_per_level": 10,
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "ht"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Strength",
+									"physical": true,
+									"levels": "2",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Fine Manipulators",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Size",
+											"reference": "B15",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"levels": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Super-Effort",
+											"reference": "SU24",
+											"cost_type": "percentage",
+											"cost": 300,
+											"affects": "total"
+										}
+									],
+									"reference": "B14",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Patron",
+									"social": true,
+									"base_points": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Heavy Influence",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Large Budget",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Loaded Budget",
+											"cost_type": "percentage",
+											"cost": 200,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Modest Budget",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Light Influence",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										}
+									],
+									"reference": "MH1:24",
+									"notes": "<= 20 points",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Rapid Healing",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B79",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "attribute_prereq",
+												"has": true,
+												"which": "ht",
+												"qualifier": {
+													"compare": "at_least",
+													"qualifier": 10
+												}
+											}
+										]
+									},
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Regeneration",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Slow",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "You recover 1 HP per 12 hours"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Regular",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total",
+											"notes": "You recover 1 HP per hour"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "You recover 1 HP per minute"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 100,
+											"affects": "total",
+											"notes": "You recover 1 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extreme",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 150,
+											"affects": "total",
+											"notes": "You recover 10 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Heals Radiation",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": 40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Radiation Only",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Recovery",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited: @Advantage@ Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										}
+									],
+									"reference": "B80",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Templates with Ten-Hut! spend an additional 5 points",
+									"physical": true
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"reference": "B95",
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Add remaining traits to template options",
+							"physical": true
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Disadvantages",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Add to template options",
+							"open": true,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Secret (Works for an extra-legal organization)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Serious Embarrassment",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Utter Rejection",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Imprisonment",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Possible Death",
+											"reference": "B152",
+											"cost_type": "points",
+											"cost": -30,
+											"affects": "total"
+										}
+									],
+									"reference": "B152",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Sense of Duty",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Friends and Companions",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Teammates",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Individual@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Organization",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Entire Race@",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Every Living Being",
+											"reference": "B153",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										}
+									],
+									"reference": "B153",
+									"notes": "Only one of them",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Duty (@Duty@)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 6",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 9",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "FR: 12",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "FR: 15",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Extremely Hazardous",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Involuntary",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Nonhazardous",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total"
+								}
+							],
+							"reference": "B133",
+							"categories": [
+								"Disadvantage",
+								"Why we fight"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Soldier",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Primary Combat Skill OR a Guns specialty +1",
+					"difficulty": "DX/A",
+					"points": 4
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Templates without Ten-Hut!",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Soldier",
+							"reference": "B221",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Military"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Tactics",
+							"reference": "B224",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Strategy",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Military",
+								"Police"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Templates with Ten-Hut!",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Any template skill",
+							"difficulty": "DX/A",
+							"points": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

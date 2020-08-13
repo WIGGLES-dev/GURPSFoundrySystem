@@ -1,0 +1,2346 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "e1585aee-8272-4383-8ff3-99b5b54b3bfd",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Writer",
+			"reference": "H44",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "2",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "20 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Alcohol Tolerance",
+									"physical": true,
+									"base_points": 1,
+									"reference": "B100",
+									"categories": [
+										"Perk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Higher Purpose (Artistic truth and experience)",
+									"mental": true,
+									"exotic": true,
+									"base_points": 5,
+									"reference": "B59",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Intuition",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Inspired",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B63",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Less Sleep",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "B65",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Talent (Poet)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Readers and listeners of your work; literati."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternative Benefit",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "+1/level to the first Influence roll (p. B359) of any kind made on an audience member (or several of them as a group) after a successful performance."
+										}
+									],
+									"reference": "PU3:14",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Connoisseur (Literature)"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Literature"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Poetry"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Public Speaking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Writing"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"round_down": true,
+									"name": "Reputation",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "Almost everyone"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.67,
+											"notes": "Almost everyone except @large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "@Large class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "People Affected",
+											"reference": "B27",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "@Small class of people@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.5,
+											"notes": "10-"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"cost_type": "multiplier",
+											"cost": 0.33,
+											"notes": "7-"
+										}
+									],
+									"reference": "B26",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Empathy (Sensitive)",
+									"mental": true,
+									"base_points": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Remote",
+											"reference": "P48",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "detect lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Serendipity",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wishing",
+											"reference": "P73",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "For others only"
+										}
+									],
+									"reference": "B83",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Single-Minded",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B85",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Familiar Horrors",
+											"reference": "H20",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B95",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Versatile",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B96",
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-20 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Addiction (@Substance@)",
+									"mental": true,
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Cheap",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Expensive",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cost: Very Expensive",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Hallucinogenic",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Highly Addictive (-5 on withdrawal roll)",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Incapacitating",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Effects: Totally Addictive (-10 on withdrawal roll)",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Illegal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Legal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B122",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Alcoholism",
+									"physical": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Illegal",
+											"reference": "B122",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										}
+									],
+									"reference": "B122",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bad Sight (Farsighted)",
+									"physical": true,
+									"base_points": -25,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Mitigator",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "Glasses"
+										}
+									],
+									"reference": "B123",
+									"notes": "-6 to Vision rolls to spot items within 1 yd; -3 DX to any close manual task, including close combat",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bad Sight (Nearsighted)",
+									"physical": true,
+									"base_points": -25,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Mitigator",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "Glasses"
+										}
+									],
+									"reference": "B123",
+									"notes": " -6 to Vision rolls to spot items more than 1 yd away; -2 to all melee attacks; double actual distance to the target when calculating the range modifier for ranged attacks",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Combat Paralysis",
+									"physical": true,
+									"base_points": -15,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Compulsive Behavior",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Minor",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Severe",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B128",
+									"notes": "Bibliomania",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Curious",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B129",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Delusion (@Belief@)",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Minor",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Major",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Severe",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "B130",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Jealousy",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B140",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Laziness",
+									"mental": true,
+									"base_points": -10,
+									"reference": "B142",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Loner",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B142",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Oblivious",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B146",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "intimidation"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "savoir-faire"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "streetwise"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Shyness",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Mild",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -1,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Severe",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -2,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Crippling",
+											"reference": "B154",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total",
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "intimidation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "panhandling"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "performance"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "public speaking"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -4,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "teaching"
+													}
+												}
+											]
+										}
+									],
+									"reference": "B154",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Slow Riser",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B155",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Stubbornness",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B157",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Truthfulness",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B159",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -5,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast talk"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Weirdness Magnet",
+									"mental": true,
+									"supernatural": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Origins Magnet",
+											"reference": "SU32",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Writer",
+			"reference": "H44",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Primary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Research",
+							"reference": "B217",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"when_tl": {
+											"compare": "at_least",
+											"qualifier": 8
+										},
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Computer Operation"
+												}
+											}
+										]
+									},
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Native"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Accented)"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Broken)"
+												}
+											}
+										]
+									}
+								]
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Writing",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Scholarly",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Writing",
+							"reference": "B228",
+							"difficulty": "IQ/A",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Arts/Entertainment",
+								"Scholarly"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Secondary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Speed-Reading",
+							"reference": "B222",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"categories": [
+								"Scholarly"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Artist",
+									"reference": "B179",
+									"specialization": "Calligraphy",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Artist",
+											"specialization": "Drawing",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Artist",
+											"specialization": "Illumination",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Artist",
+											"specialization": "Painting",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Artist",
+											"specialization": "Body Art",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Artist",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Arts/Entertainment"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Computer Operation",
+									"reference": "B184",
+									"tech_level": "",
+									"difficulty": "IQ/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Everyman",
+										"Scholarly",
+										"Technical"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Typing",
+									"reference": "B228",
+									"difficulty": "DX/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Everyman",
+										"Scholarly",
+										"Technical"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose two",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Area Knowledge",
+									"reference": "B176",
+									"specialization": "@Any@",
+									"difficulty": "IQ/E",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Geography",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Everyman",
+										"Knowledge"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Poetry",
+									"reference": "B214",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Writing",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Arts/Entertainment"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Public Speaking",
+									"reference": "B216",
+									"difficulty": "IQ/A",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Acting",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Performance",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Politics",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Business",
+										"Scholarly",
+										"Social"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "History",
+									"reference": "B200",
+									"specialization": "@Specialty@",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Social Sciences/Humanities"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Literature",
+									"reference": "B205",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										}
+									],
+									"categories": [
+										"Scholarly",
+										"Social Sciences/Humanities"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Psychology",
+									"reference": "B216",
+									"difficulty": "IQ/H",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "IQ",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Sociology",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Social Sciences/Humanities"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Background Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Total of 6 points in IQ-Based skills as personal subject specialties such as",
+							"open": false,
+							"children": [
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Conspiracy Theorist",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Current Affairs",
+											"reference": "B186",
+											"specialization": "Politics",
+											"tech_level": "",
+											"difficulty": "IQ/E",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Research",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Current Affairs",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Everyman",
+												"Knowledge",
+												"Social"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Expert Skill",
+											"reference": "B193",
+											"specialization": "Conspiracy Theory",
+											"difficulty": "IQ/H",
+											"points": 4,
+											"categories": [
+												"Knowledge",
+												"Scholarly"
+											]
+										},
+										{
+											"type": "skill_container",
+											"version": 1,
+											"name": "Choose one",
+											"open": false,
+											"children": [
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Occultism",
+													"reference": "B212",
+													"difficulty": "IQ/A",
+													"points": 1,
+													"defaults": [
+														{
+															"type": "IQ",
+															"modifier": -5
+														}
+													],
+													"categories": [
+														"Occult/Magical"
+													]
+												},
+												{
+													"type": "skill",
+													"version": 1,
+													"name": "Weird Science",
+													"reference": "B228",
+													"difficulty": "IQ/VH",
+													"points": 1,
+													"categories": [
+														"Design/Invention"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "Morbid Poet and Ratiocinator",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Criminology",
+											"reference": "B186",
+											"tech_level": "",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												},
+												{
+													"type": "Skill",
+													"name": "Psychology",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Police",
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Cryptography",
+											"reference": "B186",
+											"tech_level": "",
+											"difficulty": "IQ/H",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Mathematics",
+													"specialization": "Cryptology",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Military",
+												"Spy"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Geography",
+											"reference": "B198",
+											"specialization": "Regional; Antarctic",
+											"tech_level": "",
+											"difficulty": "IQ/H",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Area Knowledge",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Geography",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Expert Skill",
+											"reference": "B193",
+											"specialization": "Thantology",
+											"difficulty": "IQ/H",
+											"points": 2,
+											"categories": [
+												"Knowledge",
+												"Scholarly",
+												"Social Sciences/Humanities"
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "New England Horrorist",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"specialization": "New England",
+											"difficulty": "IQ/E",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"categories": [
+												"Everyman",
+												"Knowledge"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Astronomy",
+											"reference": "B179",
+											"specialization": "Observational",
+											"tech_level": "",
+											"difficulty": "IQ/A",
+											"points": 1,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "mathematics"
+														},
+														"specialization": {
+															"compare": "is",
+															"qualifier": "applied"
+														}
+													}
+												]
+											},
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												}
+											],
+											"categories": [
+												"Natural Science"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Connoisseur",
+											"reference": "B185",
+											"specialization": "Architecture",
+											"difficulty": "IQ/A",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												}
+											],
+											"categories": [
+												"Arts/Entertainment",
+												"Knowledge",
+												"Social"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Hidden Lore",
+											"reference": "B199",
+											"specialization": "Things Man Was Not Meant To Know",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"categories": [
+												"Knowledge"
+											]
+										}
+									]
+								},
+								{
+									"type": "skill_container",
+									"version": 1,
+									"name": "True Crime or Mystey Writer",
+									"open": false,
+									"children": [
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Criminology",
+											"reference": "B186",
+											"tech_level": "",
+											"difficulty": "IQ/A",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -5
+												},
+												{
+													"type": "Skill",
+													"name": "Psychology",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Police",
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Forensics",
+											"reference": "B196",
+											"tech_level": "",
+											"difficulty": "IQ/H",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Criminology",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Police"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Law",
+											"reference": "B204",
+											"specialization": "@Specialty@",
+											"difficulty": "IQ/H",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												}
+											],
+											"categories": [
+												"Business",
+												"Police",
+												"Social Sciences/Humanities"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Poisons",
+											"reference": "B214",
+											"tech_level": "",
+											"difficulty": "IQ/H",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -6
+												},
+												{
+													"type": "Skill",
+													"name": "Chemistry",
+													"modifier": -5
+												},
+												{
+													"type": "Skill",
+													"name": "Pharmacy",
+													"modifier": -3
+												},
+												{
+													"type": "Skill",
+													"name": "Physician",
+													"modifier": -3
+												}
+											],
+											"categories": [
+												"Criminal/Street",
+												"Medical",
+												"Spy"
+											]
+										},
+										{
+											"type": "skill",
+											"version": 1,
+											"name": "Savoir-Faire",
+											"reference": "B218",
+											"specialization": "Police",
+											"difficulty": "IQ/E",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "IQ",
+													"modifier": -4
+												}
+											],
+											"categories": [
+												"Knowledge",
+												"Police",
+												"Social"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

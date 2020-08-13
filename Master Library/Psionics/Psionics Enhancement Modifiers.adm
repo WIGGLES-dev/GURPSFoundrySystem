@@ -1,0 +1,75 @@
+{
+	"type": "modifier_list",
+	"version": 1,
+	"id": "b25a52af-8edf-47b6-8388-5003e0f6468d",
+	"rows": [
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Can Carry Objects ",
+			"reference": "PSI19",
+			"cost_type": "percentage",
+			"cost": 150,
+			"affects": "total",
+			"notes": "Extra Heavy Encumberance"
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Hazard: Heat",
+			"reference": "PSI19",
+			"cost_type": "percentage",
+			"cost": 20,
+			"affects": "total"
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Glamour",
+			"reference": "PSI20",
+			"cost_type": "percentage",
+			"cost": 0,
+			"affects": "total"
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Increased Range, Line of Sight",
+			"reference": "PSI20",
+			"cost_type": "percentage",
+			"cost": 40,
+			"affects": "total",
+			"notes": "For 100 Yard Range abilities"
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Increased Range, Line of Sight",
+			"reference": "PSI20",
+			"cost_type": "percentage",
+			"cost": 70,
+			"affects": "total",
+			"notes": "For 10 Yard Range abilities"
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Low Psychic Signature",
+			"reference": "PSI20",
+			"cost_type": "percentage",
+			"cost": 5,
+			"affects": "total",
+			"levels": 1
+		},
+		{
+			"type": "modifier",
+			"version": 1,
+			"name": "Decreased Immunity",
+			"reference": "PSI21",
+			"cost_type": "percentage",
+			"cost": 50,
+			"affects": "total",
+			"levels": 1
+		}
+	]
+}

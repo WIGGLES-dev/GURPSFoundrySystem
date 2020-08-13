@@ -1,0 +1,47 @@
+{
+  "name": "gurps_foundry-vtt",
+  "version": "1.0.0",
+  "description": "A gurps system implementation for Foundry VTT",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack --config webpack.config.ts",
+    "watch": "webpack --config webpack.config.ts --watch"
+  },
+  "author": "Ian Bell",
+  "license": "ISC",
+  "devDependencies": {
+    "foundry-pc-types": "gitlab:foundry-projects/foundry-pc/foundry-pc-types"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@popperjs/core": "^2.4.4",
+    "@tsconfig/svelte": "^1.0.8",
+    "@types/copy-webpack-plugin": "^6.0.0",
+    "@types/mini-css-extract-plugin": "^0.9.1",
+    "@types/node": "^14.0.27",
+    "@types/webpack": "^4.41.21",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.1",
+    "g4elogic": "^1.1.10",
+    "gurps-foundry-roll-lib": "git+https://gitlab.com/gurps-foundry/roll-lib.git",
+    "i": "^0.3.6",
+    "json-query": "^2.2.2",
+    "math-expression-evaluator": "^1.2.22",
+    "mini-css-extract-plugin": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.7",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "svelte": "^3.24.1",
+    "svelte-check": "^1.0.13",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.0.11",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

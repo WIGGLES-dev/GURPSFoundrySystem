@@ -1,0 +1,3717 @@
+{
+	"type": "spell_list",
+	"version": 1,
+	"id": "3c9cb17d-9059-4d19-9011-13eba119bc80",
+	"rows": [
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Animate Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "Half",
+			"casting_time": "5 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Control"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 7
+						}
+					}
+				]
+			},
+			"notes": "Double casting cost if fungus moves",
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Blade of Grass",
+			"reference": "MPS10",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1 per 12\" of length",
+			"maintenance_cost": "Half",
+			"casting_time": "1 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Bless Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "1 minimum",
+			"maintenance_cost": "-",
+			"casting_time": "5 min",
+			"duration": "1 Crop or Season",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Heal Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Blight",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "1 minimum",
+			"maintenance_cost": "-",
+			"casting_time": "5 min",
+			"duration": "1 Crop or Season",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Bloodsucking Branches",
+			"reference": "MPS11",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "Half",
+			"casting_time": "1 Sec. x radius",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Weaken Blood"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 6
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Body of Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "7",
+			"maintenance_cost": "3",
+			"casting_time": "5 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (plant)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Body of Leaves",
+			"reference": "MPS11",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"maintenance_cost": "2",
+			"casting_time": "4 Sec.",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Form Other"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Body of Slime"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Body of Slime",
+			"reference": "M165",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "6",
+			"maintenance_cost": "2",
+			"casting_time": "5 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "shape water"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (plant)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Branch Fingers",
+			"reference": "MPS18",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "5/6",
+			"maintenance_cost": "4",
+			"casting_time": "1 Sek.",
+			"duration": "5 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wooden Arm"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Default: Wooden Arm -2, cannot exceed prerequisite spell",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Breakfall Plants",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant/Movement",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1 per 50 lbs",
+			"maintenance_cost": "Half",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Walk Through Plants"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "apportation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Movement",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Buoyant Plant Life",
+			"reference": "MPS11",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "0,5/1/2",
+			"maintenance_cost": "Half",
+			"casting_time": "30 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Capturing Vines",
+			"reference": "MPS12",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "Half",
+			"casting_time": "4 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Grasping Branch"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Change Species",
+			"reference": "MPS12",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "min 4",
+			"maintenance_cost": "Half",
+			"casting_time": "30 Sec.",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reverse Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Choke",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Body Control",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "30 sec",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Body Control",
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Contagious Creeping Moss",
+			"reference": "MPS18",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "7",
+			"maintenance_cost": "6",
+			"casting_time": "3 Sec.",
+			"duration": "5 Seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Pestilence"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Gather Moss"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Default: Gather Moss -4, cannot exceed prerequisite spell",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Create Book",
+			"reference": "MPS18",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2/4/6",
+			"maintenance_cost": "-",
+			"casting_time": "4 Min.",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Create Paper"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Default: Create Paper -4, cannot exceed prerequisite spell",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Create Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "Varies",
+			"maintenance_cost": "-",
+			"casting_time": "Varies",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (plant)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Create Paper",
+			"reference": "MPS12",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "Varies",
+			"maintenance_cost": "-",
+			"casting_time": "4 Min.",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Heal Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Cure Disease",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Healing",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"maintenance_cost": "-",
+			"casting_time": "10 min",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 3
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "cures fungal infections only",
+			"categories": [
+				"Fungus",
+				"Healing"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Decay",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Food",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1/meal",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Food",
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Druid's Panacea",
+			"reference": "MPS12",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1-3 once per day",
+			"maintenance_cost": "-",
+			"casting_time": "10 Min.",
+			"duration": "Varies",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Plant Empathy"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 3
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Body of Wood"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Exploding Vegetable",
+			"reference": "MPS13",
+			"difficulty": "IQ/VH",
+			"college": "Plant/Making & Breaking",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "2-6",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "frag/2 points",
+						"base": "1d"
+					},
+					"reach": "Special",
+					"parry": "No"
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "affects only vegetables",
+			"categories": [
+				"Making & Breaking",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fast Plant Growth",
+			"reference": "MPS12",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "Half",
+			"casting_time": "30 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fling Fruit",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant/Movement",
+			"power_source": "Arcane",
+			"spell_class": "Missile",
+			"casting_cost": "1 or 2",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "Special cr"
+					},
+					"accuracy": "1",
+					"range": "20/60",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Throwing"
+						}
+					]
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "apportation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "throws vegetable with ST 15, p. B355.  Cost: 1 pt for a vegetable up to 10 lbs (1d dmg); 2 pts for something up to 25 lbs (1d+1 dmg).",
+			"categories": [
+				"Movement",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Forest Defense",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Blocking",
+			"casting_cost": "1-3",
+			"maintenance_cost": "-",
+			"casting_time": "1 Sek.",
+			"duration": "Sofort",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Animate Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fungus Control",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "Half",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 6
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fungus Form",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Special",
+			"casting_cost": "5",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 6
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (plant)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fungus Form Other",
+			"reference": "MPS17",
+			"difficulty": "IQ/VH",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Special",
+			"casting_cost": "5",
+			"maintenance_cost": "2",
+			"casting_time": "30 sec",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Form"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (plant)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fungus Growth",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "10 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Heal Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Fungus Speech",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Gather Moss",
+			"reference": "MPS13",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "3 Sec.",
+			"duration": "5 Seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Hair Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fast Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Grant Plant Intelligence",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant/Mind Control",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3/pt of IQ",
+			"maintenance_cost": "one third",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Speech"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					}
+				]
+			},
+			"categories": [
+				"Mind Control",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Grasping Branch",
+			"reference": "MPS14",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "3 Sec.",
+			"duration": "10 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Animate Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Green Death",
+			"reference": "MPS14",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "6",
+			"maintenance_cost": "-",
+			"casting_time": "30 Sec.",
+			"duration": "1 hour",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sickness"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Create Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Green Telurgy",
+			"reference": "MPS14",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1/SM (min 2)",
+			"maintenance_cost": "1",
+			"casting_time": "30 Sec.",
+			"duration": "5 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Speech"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Harvest",
+			"reference": "MPS14",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "0,25",
+			"maintenance_cost": "-",
+			"casting_time": "20 Sec.",
+			"duration": "Sofort",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Measurement"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Apportation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Heal Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "3",
+			"maintenance_cost": "-",
+			"casting_time": "1 Min",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Hypnotic Leaves",
+			"reference": "MPS15",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "2",
+			"maintenance_cost": "Half",
+			"casting_time": "4 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Sense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Daze"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Identify Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Info",
+			"casting_cost": "2",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Seek Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Improved Firewood",
+			"reference": "MPS15",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1/ lb",
+			"maintenance_cost": "-",
+			"casting_time": "10 Sec. / 5lb",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Invoke Fence",
+			"reference": "MPS15",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3 / 10yards",
+			"maintenance_cost": "-",
+			"casting_time": "2 Min.",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Heal Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Itch",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Body Control",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Until scratched",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Body Control",
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Join Plants",
+			"reference": "MPS15",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3/4",
+			"maintenance_cost": "-",
+			"casting_time": "10 Sec.",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Miniaturize Plant",
+			"reference": "MPS16",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"maintenance_cost": "1 / Min.",
+			"casting_time": "30 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Reverse Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Neutralize Poison",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Healing",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"maintenance_cost": "-",
+			"casting_time": "30 sec",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 3
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "only negates fungal poisons",
+			"categories": [
+				"Fungus",
+				"Healing"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Pestilence",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Necromancy",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "6",
+			"maintenance_cost": "-",
+			"casting_time": "30 sec",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (necromancy)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sickness"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "causes horrible fungus infections",
+			"categories": [
+				"Fungus",
+				"Necromancy"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Plant to Object",
+			"reference": "MPS16",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2 / 5lb",
+			"maintenance_cost": "-",
+			"casting_time": "Sec. = Cost",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plants"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Process Plant/TL",
+			"reference": "MPS16",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "-",
+			"casting_time": "30 Sec.",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Heal Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Distill"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Razor Grass",
+			"reference": "MPS16",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "Same",
+			"casting_time": "10 Sec.",
+			"duration": "10 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Essential Wood"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Resilient Vegetation",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "Same",
+			"casting_time": "1 Min.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Reverse Plant Growth",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "1 Sek.",
+			"duration": "30 Sec.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Rotting Death",
+			"reference": "MPS17",
+			"difficulty": "IQ/VH",
+			"college": "Fungus/Necromancy",
+			"power_source": "Arcane",
+			"spell_class": "Melee",
+			"casting_cost": "3",
+			"maintenance_cost": "2",
+			"casting_time": "1 sec",
+			"duration": "1 sec",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr +1d-1 tox/second",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (necromancy)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 2
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "pestilence"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus",
+				"Necromancy"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Ruin",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus/Making & Breaking",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "2/lb",
+			"maintenance_cost": "Same",
+			"casting_time": "5 sec/lb",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "decay"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (making & breaking)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "does_not_contain",
+									"qualifier": "one college"
+								}
+							}
+						]
+					}
+				]
+			},
+			"notes": "only affects organic targets",
+			"categories": [
+				"Fungus",
+				"Making & Breaking"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Run Across Treetops",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Plant/Movement",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2",
+			"maintenance_cost": "2",
+			"casting_time": "1 Sek.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Levitation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Breakfall Plants"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Movement",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Searching Roots",
+			"reference": "MPS18",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Information",
+			"casting_cost": "2",
+			"maintenance_cost": "1",
+			"casting_time": "5 Min.",
+			"duration": "10 Sec.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Animate Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Seaweed Clutch",
+			"reference": "MPS18",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "5",
+			"maintenance_cost": "Half",
+			"casting_time": "4 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Capturing Vines"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Default: Capturing Vines -4, cannot exceed prerequisite spell",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "See Plant Health",
+			"reference": "MPS19",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "Same",
+			"casting_time": "1 Sek.",
+			"duration": "30 Sec.",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Seek Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Info",
+			"casting_cost": "2",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Shape Fungus",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "1",
+			"casting_time": "10 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Identify Fungus"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Shuriken Leaf",
+			"reference": "MPS19",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1/3",
+			"maintenance_cost": "-",
+			"casting_time": "1 Sek.",
+			"duration": "Sofort",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Blade of Grass"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Slimy Skin",
+			"reference": "MPS19",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "5",
+			"maintenance_cost": "4",
+			"casting_time": "3 Sec.",
+			"duration": "1 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Wooden Arm"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Water"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Spore Cloud",
+			"reference": "MPS17",
+			"difficulty": "IQ/H",
+			"college": "Fungus",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "5 min#",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "Cough/Sneeze"
+					},
+					"usage": "Area",
+					"reach": "Special",
+					"parry": "No"
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Fungus Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Fungus"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Spying Blossom",
+			"reference": "MPS19",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "1/2",
+			"casting_time": "10 Sec.",
+			"duration": "5 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Sense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Summon Dryad",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant/Air",
+			"power_source": "Arcane",
+			"spell_class": "Special",
+			"casting_cost": "23",
+			"maintenance_cost": "-",
+			"casting_time": "30 sec",
+			"duration": "1 hr",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 7
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sense Spirit"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Air",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Targeted Creeping Moss",
+			"reference": "MPS18",
+			"difficulty": "IQ/VH",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "7",
+			"maintenance_cost": "6",
+			"casting_time": "3 Sec.",
+			"duration": "5 Seconds",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Gather Moss"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Default: Gather Moss -4, cannot exceed prerequisite spell",
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Toxic Plant",
+			"reference": "MPS19",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "1/3/5/8",
+			"maintenance_cost": "Half",
+			"casting_time": "1 Min.",
+			"duration": "2 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Sickness"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Trapped Light",
+			"reference": "MPS20",
+			"difficulty": "IQ/H",
+			"college": "Plant/Light & Darkness",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "1",
+			"casting_time": "5 Sec.",
+			"duration": "10 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant Growth"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Flash"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Light & Darkness",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Tree Bark Armor",
+			"reference": "MPS20",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "4",
+			"maintenance_cost": "3",
+			"casting_time": "4 Sec.",
+			"duration": "10 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Essential Wood"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Treetop Blink",
+			"reference": "MPS21",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Blocking",
+			"casting_cost": "3",
+			"maintenance_cost": "-",
+			"casting_time": "1 Sek.",
+			"duration": "Sofort",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Forest Defense"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Run Across Treetops"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Undergrowth Ambush",
+			"reference": "MPS21",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "Half",
+			"casting_time": "6 Sec.",
+			"duration": "15 Sec.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Searching Roots"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Vine to Snake",
+			"reference": "MPS13",
+			"difficulty": "IQ/H",
+			"college": "Plant/Illusion & Creation",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "Varies",
+			"maintenance_cost": "Half",
+			"casting_time": "1 sec/cost",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 2
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Create Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Illusion & Creation",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Wood Golem",
+			"reference": "MPS13",
+			"difficulty": "IQ/VH",
+			"college": "Plant/Enchantment",
+			"power_source": "Arcane",
+			"spell_class": "Enchantment",
+			"casting_cost": "360",
+			"maintenance_cost": "-",
+			"casting_time": "Varies",
+			"duration": "Permanent",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "animation"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Shape Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "enchant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "add ST +2, HP +10, DR 4, and Fragile (Combustible) to clay golem traits",
+			"categories": [
+				"Enchantment",
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Wooden Arm",
+			"reference": "MPS21",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "3/4",
+			"maintenance_cost": "2",
+			"casting_time": "1 Sek.",
+			"duration": "5 Min.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "contains",
+							"qualifier": "Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 6
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"name": "Woodfall",
+			"reference": "MPS21",
+			"difficulty": "IQ/H",
+			"college": "Plant",
+			"power_source": "Arkan",
+			"spell_class": "Regular",
+			"casting_cost": "2/ pound (max. 10)",
+			"maintenance_cost": "Same",
+			"casting_time": "1 Sek.",
+			"duration": "10 Sec.",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Rain of Nuts"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		}
+	]
+}

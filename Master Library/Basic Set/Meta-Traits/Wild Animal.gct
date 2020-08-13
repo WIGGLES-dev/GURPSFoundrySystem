@@ -1,0 +1,72 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "11bf6455-bd13-44c0-8091-b1d95f2458a4",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Meta-Trait: Wild Animal",
+			"reference": "B263",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Bestial",
+					"mental": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B124",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Cannot Speak",
+					"physical": true,
+					"base_points": -15,
+					"reference": "B125",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "stuttering"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Hidebound",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B138",
+					"notes": "-2 penalty on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo Trait (Fixed IQ)",
+					"physical": true,
+					"reference": "B263"
+				}
+			]
+		}
+	]
+}

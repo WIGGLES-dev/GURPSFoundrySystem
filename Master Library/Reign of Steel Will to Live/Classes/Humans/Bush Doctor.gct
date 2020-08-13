@@ -1,0 +1,941 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "5095bf06-fc65-4ddc-9b0e-424f464a0396",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Advantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"round_down": true,
+					"name": "Reputation (Doctor)",
+					"social": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "Almost everyone"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.67,
+							"notes": "Almost everyone except @large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "@Large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "@Small class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Recognized all the time",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Recognized sometimes",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "10-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Recognized occasionally",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "7-"
+						}
+					],
+					"reference": "B26",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Resistant",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Sickness",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.33
+						}
+					],
+					"reference": "B81",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Talent (Healer)",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Reaction Bonus",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "Patients"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Alternate Benefit",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "Bonus to HT rolls for a specific patient and condition if treated full time."
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Alternative Cost",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B90,PU3:11",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Talent (Healer)"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Modern"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diagnosis"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Esoteric Medicine"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "First Aid"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Pharmacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Physician"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Physiology"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Psychology"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Surgery"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Veterinary"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							}
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Talent"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Class Disadvantages",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Pacifism: Self-Defense Only",
+					"mental": true,
+					"base_points": -15,
+					"reference": "B148",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Humanity",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Bicycling",
+			"reference": "B180",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Motorcycle",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Diagnosis",
+			"reference": "B187",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "First Aid",
+					"modifier": -8
+				},
+				{
+					"type": "Skill",
+					"name": "Physician",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Physician",
+			"reference": "B213",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -7
+				},
+				{
+					"type": "Skill",
+					"name": "First Aid",
+					"modifier": -11
+				},
+				{
+					"type": "Skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Surgery",
+			"reference": "B223",
+			"tech_level": "",
+			"difficulty": "IQ/VH",
+			"points": 2,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "first aid"
+						},
+						"specialization": {
+							"compare": "is"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "physician"
+						},
+						"specialization": {
+							"compare": "is"
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "First Aid",
+					"modifier": -12
+				},
+				{
+					"type": "Skill",
+					"name": "Physician",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Physiology",
+					"modifier": -8
+				},
+				{
+					"type": "Skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Medical"
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Choose One from:",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Driving",
+					"reference": "B188",
+					"specialization": "Automobile",
+					"tech_level": "",
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Driving",
+							"specialization": "Heavy Wheeled",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Driving",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Driving",
+					"reference": "B188",
+					"specialization": "Heavy Wheeled",
+					"tech_level": "",
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Driving",
+							"specialization": "Automobile",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Driving",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Driving",
+					"reference": "B188",
+					"specialization": "Motorcycle",
+					"tech_level": "",
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Bicycling",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Riding",
+					"reference": "B217",
+					"specialization": "any",
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Animal Handling",
+							"specialization": "any",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Animal"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "12 Points in:",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Diplomacy",
+					"reference": "B187",
+					"difficulty": "IQ/H",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Politics",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Business",
+						"Police",
+						"Social"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Expert Skill",
+					"reference": "B193",
+					"specialization": "Epidemiology",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"categories": [
+						"Knowledge",
+						"Medical",
+						"Natural Science",
+						"Scholarly"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Housekeeping",
+					"reference": "B200",
+					"difficulty": "IQ/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Pharmacy",
+					"reference": "B213",
+					"specialization": "Synthetic",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Chemistry",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Physician",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Design/Invention",
+						"Medical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Physiology",
+					"reference": "B213",
+					"specialization": "human",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Diagnosis",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Physician",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Surgery",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Medical",
+						"Natural Science"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Poisons",
+					"reference": "B214",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Chemistry",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Pharmacy",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Physician",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Medical",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Psychology",
+					"reference": "B216",
+					"difficulty": "IQ/H",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Sociology",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Social Sciences/Humanities"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Veterinary",
+					"reference": "B228",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Animal Handling",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Physician",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Surgery",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Animal",
+						"Medical"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "include": [
+        "src/**/*",
+        "src/node_modules",
+        "types"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "__sapper__/*",
+        "public/*",
+        "**/*.spec.ts",
+    ],
+    "compilerOptions": {
+        "importsNotUsedAsValues": "preserve",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {},
+        "lib": [
+            "webworker",
+            "scripthost",
+            "ESNext",
+            "DOM"
+        ],
+        "types": [
+            "node",
+            "foundry-pc-types",
+            "svelte",
+            "copy-webpack-plugin",
+        ],
+        "target": "ES2015"
+    }
+}

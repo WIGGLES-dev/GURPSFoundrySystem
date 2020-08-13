@@ -1,0 +1,12 @@
+{
+    "melee attack": {
+        "templates": [
+            "attack",
+            "notable"
+        ],
+        "type": "melee_weapon",
+        "reach": "",
+        "parry": false,
+        "block": false
+    }
+}

@@ -1,0 +1,334 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "d1f22a0b-0b6f-4eb1-86b2-a6c0383e0538",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Computer Intrustion",
+			"reference": "ACT4:13",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Talent (Born to be Wired)",
+					"mental": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"reference": "ACT1:19",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Computer Hacking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Computer Operation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Computer Programming"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Cryptography"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Electronics Repair"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Computers"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Expert Skill"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Cheaper (Electronics; 10%)",
+							"social": true,
+							"base_points": 1,
+							"reference": "PU2:8",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "High-Heeled Heroine"
+										}
+									}
+								]
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Equipment Bond (@any one computer@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "MH1:25",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Computer Intrustion",
+			"reference": "ACT4:13",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Computer Hacking",
+					"reference": "B184",
+					"tech_level": "",
+					"difficulty": "IQ/VH",
+					"points": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "computer programming"
+								},
+								"specialization": {
+									"compare": "is"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Criminal/Street",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tech_level": "",
+					"difficulty": "IQ/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Computer Programming",
+					"reference": "B184",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"categories": [
+						"Design/Invention"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Cryptography",
+					"reference": "B186",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Mathematics",
+							"specialization": "Cryptology",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Military",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Communications",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Communications",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Repair",
+					"reference": "B190",
+					"specialization": "Computer",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Computer Operation",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Repair/Maintainance"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Expert Skill",
+					"reference": "B193",
+					"specialization": "Computer Security",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"categories": [
+						"Knowledge",
+						"Scholarly",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Scrounging",
+					"reference": "B218",
+					"difficulty": "Per/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "Per",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street"
+					]
+				}
+			]
+		}
+	]
+}

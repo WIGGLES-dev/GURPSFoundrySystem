@@ -1,0 +1,934 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "77ea592d-14ec-4ac8-888d-bd87bbd0befb",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Unarmed Combat",
+			"reference": "ACT4:23",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Self-Defense",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Enhanced Parry (Bare hands)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B51",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "parry"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit",
+									"physical": true,
+									"base_points": 5,
+									"reference": "B55",
+									"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Martial Arts",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Fit",
+							"physical": true,
+							"base_points": 5,
+							"reference": "B55",
+							"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Enhanced Parry (Bare hands)",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"reference": "B51",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"attribute": "parry"
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "A total of 12 points in any combination of perks and techniques from Furious Fists, pp. 15-19 for which you have the prerequisites.",
+							"open": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Unarmed Combat",
+			"reference": "ACT4:23",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Self-Defense",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Brawling",
+									"reference": "B182",
+									"difficulty": "DX/E",
+									"points": 8,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Brawling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Karate",
+									"reference": "B203",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/H",
+									"points": 8,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Karate"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 0
+											}
+										},
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Karate"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Judo",
+									"reference": "B203",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/H",
+									"points": 8,
+									"notes": "Allows parrying two different attacks per turn, one with each hand.",
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Wrestling",
+									"reference": "B228",
+									"difficulty": "DX/A",
+									"points": 8,
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "A total of 4 points in any combination of",
+							"open": false,
+							"children": [
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Arm Lock",
+									"reference": "B230",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Judo"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Arm Lock",
+									"reference": "B230",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Wrestling"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Choke Hold",
+									"reference": "B230,MA69",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Judo",
+										"modifier": -2
+									},
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Judo"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Choke Hold",
+									"reference": "B230,MA69",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Wrestling",
+										"modifier": -3
+									},
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Wrestling"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Disarming",
+									"reference": "B230",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 5,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Disarming",
+									"reference": "B230",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 5,
+									"default": {
+										"type": "Skill",
+										"name": "Karate"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Elbow Strike",
+									"reference": "B230,MA71",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -2
+									},
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Brawling"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Elbow Strike",
+									"reference": "B230,MA71",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -2
+									},
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Karate"
+												}
+											}
+										]
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Feint",
+									"reference": "B231",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Feint",
+									"reference": "B231",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Karate"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Ground Fighting",
+									"reference": "B231",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -4
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Ground Fighting",
+									"reference": "B231",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -4
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Kicking",
+									"reference": "B231,MA75",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -2
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Kicking",
+									"reference": "B231,MA75",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -2
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Knee Strike",
+									"reference": "B232,MA76",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -1
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Knee Strike",
+									"reference": "B232",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -1
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Leg Lock",
+									"reference": "MA76",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Judo"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Leg Lock",
+									"reference": "MA76",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 4,
+									"default": {
+										"type": "Skill",
+										"name": "Wrestling"
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Stamp Kick",
+									"reference": "MA80",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -3
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Stamp Kick",
+									"reference": "MA80",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -3
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Uppercut",
+									"reference": "MA81",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Brawling",
+										"modifier": -1
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Uppercut",
+									"reference": "MA81",
+									"difficulty": "A",
+									"points": 1,
+									"limit": 0,
+									"default": {
+										"type": "Skill",
+										"name": "Karate",
+										"modifier": -1
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								},
+								{
+									"type": "technique",
+									"version": 1,
+									"name": "Wrench @Limb@",
+									"reference": "MA82",
+									"difficulty": "H",
+									"points": 2,
+									"limit": 3,
+									"default": {
+										"type": "ST",
+										"modifier": -4
+									},
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat",
+										"Technique"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Martial Arts",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Acrobatics",
+							"reference": "B174",
+							"difficulty": "DX/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Aerobatics",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Aquabatics",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Boxing",
+									"reference": "B182",
+									"difficulty": "DX/A",
+									"points": 12,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Boxing"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											}
+										},
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Boxing"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Brawling",
+									"reference": "B182",
+									"difficulty": "DX/E",
+									"points": 12,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Brawling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Karate",
+									"reference": "B203",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/H",
+									"points": 12,
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Karate"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 0
+											}
+										},
+										{
+											"type": "weapon_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Karate"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											}
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Judo",
+									"reference": "B203",
+									"encumbrance_penalty_multiplier": 1,
+									"difficulty": "DX/H",
+									"points": 12,
+									"notes": "Allows parrying two different attacks per turn, one with each hand.",
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Sumo Wrestling",
+									"reference": "B223",
+									"difficulty": "DX/A",
+									"points": 12,
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Wrestling",
+									"reference": "B228",
+									"difficulty": "DX/A",
+									"points": 12,
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

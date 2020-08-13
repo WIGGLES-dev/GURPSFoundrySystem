@@ -1,0 +1,2522 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "25fe75af-0967-4134-9ca7-d5ad8853ab9b",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Malebrachne",
+			"reference": "PY115:33",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes and Secondary Characteristics",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Strength",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Size",
+									"reference": "B15",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost_type": "percentage",
+									"cost": 300,
+									"affects": "total"
+								}
+							],
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Health",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 10,
+							"reference": "B14",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Extra Fatigue Points",
+							"physical": true,
+							"levels": "5",
+							"points_per_level": 3,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "fp"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Advantages",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Charisma",
+							"mental": true,
+							"levels": "3",
+							"points_per_level": 5,
+							"reference": "B41",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fortune-telling"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "panhandling"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "public speaking"
+									}
+								}
+							],
+							"notes": "+1/level to Influence rolls",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Racial Skill Bonus - Fast-Talk",
+							"mental": true,
+							"exotic": true,
+							"levels": "3",
+							"points_per_level": 2,
+							"reference": "B452",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fast-Talk"
+									}
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Talent (Smooth Operator)",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 15,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reaction Bonus",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Con artists, politicians, salesmen, etc. – but only if you aren’t trying to manipulate them."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternate Benefit",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Bonus to resist covered skills"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternative Cost",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B90,PU3:15",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Acting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Carousing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Detect Lies"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Diplomacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fast-Talk"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Panhandling"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Politics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Public Speaking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Savoir-Faire"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sex Appeal"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Streetwise"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									}
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Magery",
+							"mental": true,
+							"supernatural": true,
+							"levels": "1",
+							"base_points": 5,
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Dance",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Dark-Aspected",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Day-Aspected",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Musical",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Night-Aspected",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "One College",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only",
+									"notes": "@College@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Solitary",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Song",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B66",
+							"features": [
+								{
+									"type": "spell_bonus",
+									"amount": 1,
+									"per_level": true,
+									"match": "all_colleges"
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									}
+								}
+							],
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "60 Points from the following",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Damage Resistance",
+									"physical": true,
+									"exotic": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Force Field",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Hardened",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"levels": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Absorption",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": 80,
+											"affects": "total",
+											"notes": "Enhances @Trait@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Absorption",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": 80,
+											"affects": "total",
+											"notes": "Healing only"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Absorption",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "Enhances any trait"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Reflection",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H14",
+											"cost_type": "points",
+											"cost": -1,
+											"affects": "total",
+											"notes": "@Rare@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H14",
+											"cost_type": "percentage",
+											"cost": -5,
+											"affects": "total",
+											"notes": "@Occasional@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H14",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"notes": "@Common@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H14",
+											"cost_type": "percentage",
+											"cost": -15,
+											"affects": "total",
+											"notes": "@Very Common@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Directional",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "Front"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Flexible",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total",
+											"notes": "@Very Common Attack Form@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Semi-Ablative",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can't wear armor",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Directional",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "@Direction: Back, Right, Left, Top or Underside@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "@Common Attack Form@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Tough Skin",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "Effects that just require skin contact or a scratch ignore this DR"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total",
+											"notes": "@Occasional Attack Form@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Ablative",
+											"reference": "B47",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited",
+											"reference": "B46",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total",
+											"notes": "@Rare Attack Form@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Laminate",
+											"reference": "RSWL18",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Malediction-Proof",
+											"reference": "PSI14",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Maledictions Only",
+											"reference": "PSI14",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										}
+									],
+									"reference": "B47",
+									"features": [
+										{
+											"type": "dr_bonus",
+											"amount": 1,
+											"per_level": true,
+											"location": "full_body_except_eyes"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Morph",
+									"physical": true,
+									"exotic": true,
+									"levels": "0",
+									"base_points": 100,
+									"points_per_level": 1,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unlimited",
+											"reference": "B85",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Cosmetic",
+											"reference": "B85",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Retains Shape",
+											"reference": "B85",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Mass Conservation",
+											"reference": "B85",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Active Change",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Improvised Forms",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cosmic (For Improvised Forms)",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "No Memorization Required",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cannot Memorize Forms",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Flawed",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unliving Forms Only",
+											"reference": "P75",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										}
+									],
+									"reference": "B84",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Talent (Smooth Operator)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Con artists, politicians, salesmen, etc. – but only if you aren’t trying to manipulate them."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternate Benefit",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Bonus to resist covered skills"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternative Cost",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "levels_only"
+										}
+									],
+									"reference": "B90,PU3:15",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Acting"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Carousing"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Detect Lies"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Diplomacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Fast-Talk"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Intimidation"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Leadership"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Panhandling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Politics"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Public Speaking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Savoir-Faire"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Sex Appeal"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Streetwise"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Regeneration",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Slow",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "You recover 1 HP per 12 hours"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Regular",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total",
+											"notes": "You recover 1 HP per hour"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "You recover 1 HP per minute"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 100,
+											"affects": "total",
+											"notes": "You recover 1 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extreme",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 150,
+											"affects": "total",
+											"notes": "You recover 10 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Heals Radiation",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": 40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Radiation Only",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Recovery",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited: @Advantage@ Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@Common or Very Common@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -30,
+											"affects": "total",
+											"notes": "@Occasional@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"notes": "@Rare@"
+										}
+									],
+									"reference": "B80",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Regeneration",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Slow",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "You recover 1 HP per 12 hours"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Regular",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total",
+											"notes": "You recover 1 HP per hour"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "You recover 1 HP per minute"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 100,
+											"affects": "total",
+											"notes": "You recover 1 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extreme",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 150,
+											"affects": "total",
+											"notes": "You recover 10 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Heals Radiation",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": 40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Radiation Only",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Recovery",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited: @Advantage@ Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@Common or Very Common@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -30,
+											"affects": "total",
+											"notes": "@Occasional@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"notes": "@Rare@"
+										}
+									],
+									"reference": "B80",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Regeneration",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Slow",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "You recover 1 HP per 12 hours"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Regular",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 25,
+											"affects": "total",
+											"notes": "You recover 1 HP per hour"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "You recover 1 HP per minute"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Fast",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 100,
+											"affects": "total",
+											"notes": "You recover 1 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extreme",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 150,
+											"affects": "total",
+											"notes": "You recover 10 HP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Heals Radiation",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": 40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Radiation Only",
+											"reference": "B80",
+											"cost_type": "percentage",
+											"cost": -60,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Recovery",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Limited: @Advantage@ Only",
+											"reference": "P70",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total",
+											"notes": "@Common or Very Common@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -30,
+											"affects": "total",
+											"notes": "@Occasional@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Bane",
+											"reference": "H18",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total",
+											"notes": "@Rare@"
+										}
+									],
+									"reference": "B80",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Invisibility",
+									"mental": true,
+									"physical": true,
+									"exotic": true,
+									"base_points": 40,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Affects Machines",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Up to No Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Up to Light Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Up to Medium Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Can Carry Objects",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total",
+											"notes": "Up to Heavy Encumbrance"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extended",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total",
+											"notes": "@Type@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Switchable",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Usually On",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": 5,
+											"affects": "total",
+											"notes": "Turning visible costs 1 FP per second"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Machines Only",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Substantial Only",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Visible Reflection",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Visible Shadow",
+											"reference": "B63",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fringe",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "B63",
+									"categories": [
+										"Advantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Disadvantages",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "Demon",
+							"reference": "PY115:32",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Callous",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B125",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "psychology"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "teaching"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Dependency (Mana)",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Rarity: Rare",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Rarity: Occasional",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Rarity: Common",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Rarity: Very Common",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Illegal",
+											"reference": "B130",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Frequency: Constantly",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 5,
+											"notes": "Lose 1 HP per minute without it"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Hourly",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 4,
+											"notes": "Lose 1 HP per 10 minutes after missing a hourly dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Daily",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 3,
+											"notes": "Lose 1 HP per hour after missing a daily dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Weekly",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 2,
+											"notes": "Lose 1 HP per six hours after missing a weekly dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Monthly",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 1,
+											"notes": "Lose 1 HP per day after missing a monthly dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Seasonally",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 0.33333,
+											"notes": "Lose 1 HP per 3 days after missing a seasonal dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Frequency: Yearly",
+											"reference": "B130",
+											"cost_type": "multiplier",
+											"cost": 0.1,
+											"notes": "Lose 1 HP per 2 weeks after missing a yearly dose"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Aging",
+											"reference": "B130",
+											"cost_type": "percentage",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Age 2 years for each HP lost due to this dependency"
+										}
+									],
+									"reference": "B130",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Doesn't Sleep",
+									"physical": true,
+									"exotic": true,
+									"base_points": 20,
+									"reference": "B50",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Dread (Holy Symbols)",
+									"mental": true,
+									"supernatural": true,
+									"levels": "1",
+									"base_points": -9,
+									"points_per_level": -1,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Common",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 3
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Common",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Occasional",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Rare",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Cannot be trapped",
+											"reference": "B133",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Insensitive",
+											"reference": "H25",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										}
+									],
+									"reference": "B132",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Extra Life",
+									"mental": true,
+									"exotic": true,
+									"levels": "1",
+									"points_per_level": 25,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Copy",
+											"reference": "B55",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Requires Body",
+											"reference": "B55",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Requires Body",
+											"reference": "B55",
+											"cost_type": "percentage",
+											"cost": -40,
+											"affects": "total",
+											"notes": "@Illegal, rare or expensive body@"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Brain Pod",
+											"reference": "RSWL19",
+											"cost_type": "percentage",
+											"cost": -20,
+											"affects": "total"
+										}
+									],
+									"reference": "B55",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Feature: Affected by True Faith, Banish, and Pentagram.",
+									"physical": true
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fragile (Unnatural)",
+									"physical": true,
+									"exotic": true,
+									"base_points": -50,
+									"reference": "B137",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Night Vision",
+									"physical": true,
+									"levels": "5",
+									"points_per_level": 1,
+									"reference": "B71",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Pacifism: Cannot Harm Innocents",
+									"mental": true,
+									"base_points": -10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Species-Specific",
+											"reference": "UT32",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Only Truly Good Folks",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										}
+									],
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Resistant",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Mind-Affecting Magic",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Common: Poison, Sickness, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Occasional: Disease, Ingested Poison, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Immunity",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "+8 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "+3 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.33
+										}
+									],
+									"reference": "B81",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Resistant",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Very Common: Metabolic Hazards, etc.@",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Sickness",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Occasional: Disease, Ingested Poison, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Immunity",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "+8 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "+3 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.33
+										}
+									],
+									"reference": "B81",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Social Stigma (Excommunicated)",
+									"social": true,
+									"base_points": -5,
+									"reference": "B155",
+									"notes": "-3 Reaction",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Social Stigma (Monster)",
+									"social": true,
+									"base_points": -15,
+									"reference": "B155",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "intimidation"
+											}
+										}
+									],
+									"notes": "-3 Reaction",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unaging",
+									"physical": true,
+									"exotic": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Age Control",
+											"reference": "B95",
+											"cost_type": "percentage",
+											"cost": 20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "IQ Only",
+											"reference": "RSWL24",
+											"cost_type": "percentage",
+											"cost": -75,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Halt Aging, Weekly",
+											"reference": "PSI18",
+											"cost_type": "percentage",
+											"cost": 80,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Halt Aging, Monthly",
+											"reference": "PSI18",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Halt Aging, Yearly",
+											"reference": "PSI18",
+											"cost_type": "percentage",
+											"cost": 130,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Life Extension",
+											"reference": "PSI18",
+											"cost_type": "percentage",
+											"cost": -30,
+											"affects": "total"
+										}
+									],
+									"reference": "B95",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Vulnerability",
+									"physical": true,
+									"exotic": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Rare attack@",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Depleted Necronium or Silver",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Common attack@",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "@Very common attack@",
+											"reference": "B161",
+											"cost_type": "points",
+											"cost": -20,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Wounding x2",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 2
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wounding x3",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 3
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wounding x4",
+											"reference": "B161",
+											"cost_type": "multiplier",
+											"cost": 4
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Fatigue Only",
+											"reference": "B161",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										}
+									],
+									"reference": "B161",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Sadism",
+							"mental": true,
+							"base_points": -15,
+							"cr": 12,
+							"reference": "B152",
+							"categories": [
+								"Disadvantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,297 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "0a9ccb69-d342-49b7-a90e-1b8d6403c853",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Conspiracies",
+			"reference": "ACT4:13",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Perception",
+							"mental": true,
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "perception"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Will",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"reference": "B16",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "will"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Conspiracies",
+			"reference": "ACT4:13",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Current Affairs",
+					"reference": "B186",
+					"specialization": "Headline News",
+					"tech_level": "",
+					"difficulty": "IQ/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Research",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Current Affairs",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Knowledge",
+						"Social"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Current Affairs",
+					"reference": "B186",
+					"specialization": "Politics",
+					"tech_level": "",
+					"difficulty": "IQ/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Research",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Current Affairs",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Knowledge",
+						"Social"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Detect Lies",
+					"reference": "B187",
+					"difficulty": "Per/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "Per",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Body Language",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Psychology",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Police",
+						"Social",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Expert Skill",
+					"reference": "B193",
+					"specialization": "Conspiracy Theory",
+					"difficulty": "IQ/H",
+					"points": 8,
+					"categories": [
+						"Knowledge",
+						"Scholarly"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Intelligence Analysis",
+					"reference": "B201",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Strategy",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Military",
+						"Police",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Research",
+					"reference": "B217",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Scholarly",
+						"Spy"
+					]
+				}
+			]
+		}
+	]
+}

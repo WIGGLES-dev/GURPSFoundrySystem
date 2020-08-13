@@ -1,0 +1,378 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "19fa0fca-23e3-4ed1-8912-7b8abfb92425",
+	"rows": [
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Bear Hug",
+			"reference": "MATG34",
+			"difficulty": "A",
+			"points": 1,
+			"default": {
+				"type": "ST"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Break Free",
+			"reference": "MATG34",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "DX"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Break Free",
+			"reference": "MATG34",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Break Free",
+			"reference": "MATG34",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Sumo Wrestling"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Break Free",
+			"reference": "MATG34",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Change Position",
+			"reference": "MATG35",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Change Position",
+			"reference": "MATG35",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Sumo Wrestling"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Change Position",
+			"reference": "MATG35",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Change Position",
+			"reference": "MATG35",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Choke or Strangle",
+			"reference": "MATG36",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "ST"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Escaping Parry",
+			"reference": "MATG36",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "@Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Force Posture Change",
+			"reference": "MATG37",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "@Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Force Posture Change",
+			"reference": "MATG37",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "DX",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Force Posture Change",
+			"reference": "MATG37",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "DX",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Arm or Hand Lock",
+			"reference": "MATG38",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Head Lock",
+			"reference": "MATG38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg or Foot Lock",
+			"reference": "MATG39",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Sprawling Parry",
+			"reference": "MATG40",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Wrestling"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Testicle Grab",
+			"reference": "MATG40",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -3
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Testicle Grab",
+			"reference": "MATG40",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Testicle Grab",
+			"reference": "MATG40",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Grabbing Parry",
+			"reference": "MATG42",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Secret Lock",
+			"reference": "MATG42",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Technique"
+			]
+		}
+	]
+}

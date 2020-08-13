@@ -1,0 +1,1395 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "fac1fdb9-c377-4902-9e1f-42104cca7a1a",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Budget Monster Hunter Basic Kit (TL8)",
+			"reference": "LMH19",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Clothing, Ordinary, Status 0",
+					"tech_level": "7",
+					"value": "120",
+					"weight": "2 lb",
+					"reference": "HT63",
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Belt",
+					"tech_level": "5",
+					"value": "10",
+					"reference": "HT31",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Boots",
+					"tech_level": "5",
+					"value": "80",
+					"weight": "3 lb",
+					"reference": "HT68",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "feet"
+						}
+					],
+					"notes": "Flexible.",
+					"categories": [
+						"Defenses"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Leather Gloves",
+					"tech_level": "1",
+					"value": "30",
+					"reference": "B284",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hands"
+						}
+					],
+					"categories": [
+						"Gloves"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Hat, Cloth",
+					"tech_level": "1",
+					"value": "6",
+					"reference": "HT64",
+					"categories": [
+						"Headgear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Multi-Tool",
+					"tech_level": "5",
+					"value": "50",
+					"weight": "0.5 lb",
+					"reference": "HT26",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Notebook, Pencil, and Chalk",
+					"tech_level": "6",
+					"value": "2",
+					"weight": "0.1 lb",
+					"reference": "HT17",
+					"notes": "Holdout -1",
+					"categories": [
+						"Information Technology"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Cellular Phone",
+					"tech_level": "8",
+					"value": "100",
+					"weight": "0.5 lb",
+					"reference": "HT39",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Digital Storage Device, Rugged",
+					"tech_level": "8",
+					"value": "60",
+					"reference": "HT22",
+					"notes": "16 GB. Waterproof, shock-resistant, durable",
+					"categories": [
+						"Information Technology"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Wristwatch",
+					"tech_level": "6",
+					"value": "25",
+					"reference": "HT31",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Religious Symbol",
+					"tech_level": "5",
+					"value": "1",
+					"reference": "HT31",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Waist Pack",
+					"tech_level": "5",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "HT54",
+					"notes": "Holds 10lbs.",
+					"categories": [
+						"General Equipment"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Small Tactical Light, Cheap",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "0.38 lb",
+							"reference": "HT52",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"usage": "Punch",
+									"reach": "C",
+									"parry": "0",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX"
+										},
+										{
+											"type": "Skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "Skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "Skill",
+											"name": "Karate"
+										}
+									]
+								}
+							],
+							"notes": "25-yard beam. 2xXS/2hrs.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Small Computer, Rugged, Compact",
+							"tech_level": "8",
+							"value": "400",
+							"weight": "0.24 lb",
+							"reference": "HT20",
+							"notes": "Complexity 2. Stores 10 GB. M/5hrs.",
+							"categories": [
+								"Information Technology"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Portable Terminal, Rugged",
+									"tech_level": "8",
+									"value": "100",
+									"weight": "0.6 lb",
+									"reference": "HT21",
+									"categories": [
+										"Information Technology"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 2,
+							"description": "Battery (XS)",
+							"value": "0.5",
+							"weight": "0.1 lb",
+							"reference": "HT13",
+							"categories": [
+								"Power"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 10,
+							"description": "Chemlight",
+							"tech_level": "7",
+							"value": "2",
+							"weight": "0.1 lb",
+							"reference": "HT52",
+							"notes": "Lasts 12 hours.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Duct Tape",
+							"tech_level": "6",
+							"value": "1",
+							"weight": "2 lb",
+							"reference": "HT26",
+							"notes": "60 yards per roll.",
+							"categories": [
+								"General Equipment"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Slayer",
+					"reference": "LMH20",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Early Concealable Vest",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "200",
+							"weight": "2.5 lb",
+							"reference": "HT66",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "torso"
+								}
+							],
+							"notes": "Flexible. DR8 vs. pi, cut.",
+							"categories": [
+								"Defenses"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Glock 21, .45 ACP",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "600",
+							"weight": "2.4 lb",
+							"reference": "HT101",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi+",
+										"base": "2d"
+									},
+									"strength": "10",
+									"accuracy": "2",
+									"range": "160/1,800",
+									"rate_of_fire": "3",
+									"shots": "13+1(3)",
+									"bulk": "-2",
+									"recoil": "3",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Pistol"
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 2,
+							"description": "Glock 21, .45 ACP 13-round magazine",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "32",
+							"weight": "0.17 lb",
+							"reference": "HT100",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Patrol Sling",
+							"tech_level": "7",
+							"value": "50",
+							"weight": "1 lb",
+							"reference": "HT154",
+							"notes": "+1 Fast-Draw (Long Arm).",
+							"categories": [
+								"Firearm Accessories"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "FN BAR Magnum, .300 WM",
+									"tech_level": "7",
+									"legality_class": "3",
+									"value": "890",
+									"weight": "8.8 lb",
+									"reference": "HT120",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "8d+1"
+											},
+											"strength": "10†",
+											"accuracy": "5",
+											"range": "1,600",
+											"rate_of_fire": "3",
+											"shots": "4+1(3)",
+											"bulk": "-6",
+											"recoil": "4",
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Rifle"
+												},
+												{
+													"type": "DX",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Pistol",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Rifle",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Musket",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Shotgun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Machine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Submachine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Gun!"
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Grenade Launcher",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Gyroc",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Anti-Armor Weapon",
+													"modifier": -4
+												}
+											]
+										}
+									],
+									"categories": [
+										"Firearms"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 5,
+							"description": "FN BAR Magnum, .300 4-round magazine",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "26",
+							"weight": "0.15 lb",
+							"reference": "HT120",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Fixed-Power Scope",
+							"tech_level": "7",
+							"value": "300",
+							"weight": "1 lb",
+							"reference": "HT156",
+							"notes": "+2 Acc. Magnification 4x",
+							"categories": [
+								"Firearm Accessories"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Large Knife, Fine",
+							"tech_level": "0",
+							"value": "40",
+							"weight": "1 lb",
+							"reference": "B272",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "-1"
+									},
+									"strength": "6",
+									"usage": "Swung",
+									"reach": "C,1",
+									"parry": "-1",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Knife"
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Sword!"
+										}
+									]
+								},
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "+1"
+									},
+									"strength": "6",
+									"usage": "Thrust",
+									"reach": "C",
+									"parry": "-1",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Knife"
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Sword!"
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "+1"
+									},
+									"strength": "6",
+									"usage": "Thrown",
+									"accuracy": "+0",
+									"range": "x0.8/x1.5",
+									"rate_of_fire": "1",
+									"shots": "T(1)",
+									"bulk": "-2",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Thrown Weapon",
+											"specialization": "Knife"
+										}
+									]
+								}
+							],
+							"categories": [
+								"Melee Weapon",
+								"Missile Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 24,
+							"description": ".300 Winchester Magnum (7.62x66mmB) HP",
+							"value": "1.5",
+							"weight": "0.068 lb",
+							"reference": "HT176",
+							"notes": "8d+1(0.5) pi+",
+							"categories": [
+								"Ammunition and Warheads"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 39,
+							"description": ".45 ACP (11.43x23mm) HP+P",
+							"value": "0.75",
+							"weight": "0.047 lb",
+							"reference": "HT176",
+							"notes": "Dmg 2d+1(0.5) pi++",
+							"categories": [
+								"Ammunition and Warheads"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Wicking Undergarment",
+							"tech_level": "8",
+							"value": "30",
+							"reference": "HT64",
+							"categories": [
+								"Defenses"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Load-Bearing Vest",
+							"tech_level": "7",
+							"value": "30",
+							"weight": "2 lb",
+							"reference": "HT54",
+							"notes": "Holds 20-30lbs.",
+							"categories": [
+								"General Equipment"
+							],
+							"open": true
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Assault Rifle Slayer",
+					"reference": "LMH20",
+					"notes": "Take slayer, but remove the rifle, rounds, and magazines.",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Izhmash AKMS, 7.62x39mm",
+							"tech_level": "7",
+							"legality_class": "2",
+							"value": "450",
+							"weight": "9.4 lb",
+							"reference": "HT114",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "pi",
+										"base": "5d+1"
+									},
+									"strength": "9†",
+									"accuracy": "4",
+									"range": "500/3,100",
+									"rate_of_fire": "10",
+									"shots": "30(3)",
+									"bulk": "-5*",
+									"recoil": "2",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Rifle"
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Pistol",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Rifle",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Musket",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Shotgun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Light Machine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Submachine Gun",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Gun!"
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Grenade Launcher",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Gyroc",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Guns",
+											"specialization": "Light Anti-Armor Weapon",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 5,
+							"description": "Izhmash AKMS, 7.62x39mm 30-round magazine",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "30",
+							"weight": "0.73 lb",
+							"reference": "HT114",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Izhmash AKMS, 7.62x39mm 75-round drum",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "264",
+							"weight": "4.6 lb",
+							"reference": "HT114",
+							"categories": [
+								"Firearms"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 255,
+							"description": "7.62x39mm API",
+							"value": "1.35",
+							"weight": "0.036 lb",
+							"reference": "HT176",
+							"notes": "4d-1(2) pi- inc",
+							"categories": [
+								"Ammunition and Warheads"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Supernatural Slayer",
+					"reference": "LMH20",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Religious Symbol, Silver",
+							"tech_level": "5",
+							"value": "20",
+							"reference": "HT31",
+							"notes": "Remove regular religious symbol",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Mirror",
+							"tech_level": "7",
+							"value": "5",
+							"reference": "HT31",
+							"notes": "Sturdy.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 26,
+							"description": ".45 ACP (11.43x23mm) HP+P, Silver",
+							"value": "5.45",
+							"weight": "0.047 lb",
+							"reference": "HT176",
+							"notes": "Dmg 2d+1(0.5) pi++",
+							"categories": [
+								"Ammunition and Warheads"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Choose One",
+							"open": false,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 8,
+									"description": ".300 Winchester Magnum (7.62x66mmB) HP, Silver",
+									"value": "8.3",
+									"weight": "0.068 lb",
+									"reference": "HT176",
+									"notes": "8d+1(0.5) pi+",
+									"categories": [
+										"Ammunition and Warheads"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 30,
+									"description": "7.62x39mm, Silver",
+									"value": "4.2",
+									"weight": "0.036 lb",
+									"reference": "HT176",
+									"notes": "5d+1 Pi + Silver follow-up",
+									"categories": [
+										"Ammunition and Warheads"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Fill HP bullets with Garlic",
+							"notes": "Free"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Large Knife, Fine, Silver Edged",
+							"tech_level": "0",
+							"value": "120",
+							"weight": "1 lb",
+							"reference": "B272",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "-1"
+									},
+									"strength": "6",
+									"usage": "Swung",
+									"reach": "C,1",
+									"parry": "-1",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Knife"
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Sword!"
+										}
+									]
+								},
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "+1"
+									},
+									"strength": "6",
+									"usage": "Thrust",
+									"reach": "C",
+									"parry": "-1",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Knife"
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Sword!"
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "+1"
+									},
+									"strength": "6",
+									"usage": "Thrown",
+									"accuracy": "+0",
+									"range": "x0.8/x1.5",
+									"rate_of_fire": "1",
+									"shots": "T(1)",
+									"bulk": "-2",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Thrown Weapon",
+											"specialization": "Knife"
+										}
+									]
+								}
+							],
+							"notes": "Replace mundane knife",
+							"categories": [
+								"Melee Weapon",
+								"Missile Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Tear Gas Spray, Silver Nitrate",
+							"tech_level": "7",
+							"value": "20",
+							"weight": "0.1 lb",
+							"reference": "HT180",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "HT-2 aff"
+									},
+									"strength": "3",
+									"usage": "(coughing)",
+									"reach": "1,2",
+									"parry": "no",
+									"block": "no",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Liquid Projector",
+											"specialization": "Sprayer"
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Liquid Projector",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "HT-2 aff"
+									},
+									"usage": "Follow-Up (blindness)"
+								}
+							],
+							"categories": [
+								"Liquid Projectors"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "UV Bulb",
+							"tech_level": "7",
+							"value": "25",
+							"reference": "HT52",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 2,
+							"description": "Wooden Stake",
+							"tech_level": "0",
+							"value": "4",
+							"weight": "0.5 lb",
+							"reference": "B272",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"armor_divisor": 0.5
+									},
+									"strength": "5",
+									"usage": "Thrust",
+									"reach": "C",
+									"parry": "-1",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Knife"
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Sword!"
+										}
+									]
+								},
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"armor_divisor": 0.5
+									},
+									"strength": "5",
+									"usage": "Thrown",
+									"accuracy": "+0",
+									"range": "x0.5/x1",
+									"rate_of_fire": "1",
+									"shots": "T(1)",
+									"bulk": "-2",
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Thrown Weapon",
+											"specialization": "Knife"
+										}
+									]
+								}
+							],
+							"categories": [
+								"Melee Weapon",
+								"Missile Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Hammer",
+							"tech_level": "7",
+							"value": "15",
+							"weight": "1.5 lb",
+							"reference": "HT25",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "sw",
+										"base": "+2"
+									},
+									"strength": "10",
+									"usage": "Swing",
+									"reach": "1",
+									"parry": "0U",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Axe/Mace"
+										}
+									]
+								}
+							],
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Canteen",
+							"tech_level": "5",
+							"value": "10",
+							"weight": "3 lb",
+							"reference": "HT53",
+							"notes": "1qt.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Rifle Sling",
+							"tech_level": "5",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "HT154",
+							"categories": [
+								"Firearm Accessories"
+							],
+							"open": false,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Squirt Carbine",
+									"tech_level": "8",
+									"value": "30",
+									"weight": "3.5 lb",
+									"reference": "HT180",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "Special"
+											},
+											"strength": "4†",
+											"range": "8",
+											"rate_of_fire": "Jet",
+											"shots": "2",
+											"bulk": "-3",
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Liquid Projector",
+													"specialization": "Squirt Gun"
+												},
+												{
+													"type": "Skill",
+													"name": "Liquid Projector",
+													"modifier": -4
+												},
+												{
+													"type": "DX",
+													"modifier": -4
+												}
+											]
+										}
+									],
+									"notes": "Sling swivels.",
+									"categories": [
+										"Liquid Projectors"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

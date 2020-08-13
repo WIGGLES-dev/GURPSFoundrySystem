@@ -1,0 +1,1323 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "242b3f80-5f13-447d-9db0-99ec379e5add",
+	"rows": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Cyborg Brain",
+			"mental": true,
+			"exotic": true,
+			"reference": "UT27",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Drone",
+			"reference": "UT27",
+			"categories": [
+				"Machine Intelligence",
+				"Meta-Trait",
+				"Robot"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Decreased Intelligence",
+					"mental": true,
+					"levels": "10",
+					"points_per_level": -20,
+					"reference": "B15",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					],
+					"categories": [
+						"Attribute",
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Fixed IQ",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"which": "iq",
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": 0
+								}
+							}
+						]
+					},
+					"categories": [
+						"Taboo Trait"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Reprogrammable",
+					"mental": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B150",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Social Stigma (Subjugated)",
+					"social": true,
+					"base_points": -20,
+					"reference": "B155",
+					"notes": "-1 Reaction",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Wealth (Dead Broke)",
+					"social": true,
+					"base_points": -25,
+					"reference": "B25",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Expiration Date",
+			"reference": "UT28",
+			"notes": "Choose one.",
+			"categories": [
+				"Lens",
+				"Machine Intelligence"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Terminally Ill (1 month to live)",
+					"physical": true,
+					"base_points": -100,
+					"reference": "B158",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Terminally Ill (1 year to live)",
+					"physical": true,
+					"base_points": -75,
+					"reference": "B158",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Terminally Ill (2 years to live)",
+					"physical": true,
+					"base_points": -50,
+					"reference": "B158",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Fast",
+			"reference": "UT28",
+			"categories": [
+				"Lens",
+				"Machine Intelligence"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "+1 Complexity"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Enhanced Time Sense",
+					"mental": true,
+					"exotic": true,
+					"base_points": 45,
+					"reference": "B52",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "fast-draw"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Fragment",
+			"reference": "HT28",
+			"categories": [
+				"Lens",
+				"Machine Intelligence"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Amnesia (Partial)",
+					"physical": true,
+					"base_points": -10,
+					"reference": "B123",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Furry",
+			"physical": true,
+			"base_points": 1,
+			"reference": "UT28",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 9
+				},
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Realistic Flesh"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Mannequin"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Living Flesh"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Living Flesh",
+			"physical": true,
+			"reference": "UT28",
+			"notes": "+50% dollars.",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Low-Res Upload",
+			"reference": "UT28",
+			"categories": [
+				"Lens",
+				"Machine Intelligence"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "-1 Complexity"
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose -5 to -20 points",
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Modifier",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						}
+					],
+					"reference": "UT28",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Confused",
+							"physical": true,
+							"base_points": -10,
+							"cr": 12,
+							"reference": "B129",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Hidebound",
+							"physical": true,
+							"base_points": -5,
+							"reference": "B138",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Neurological Disorder (Mild)",
+							"physical": true,
+							"base_points": -15,
+							"reference": "B144",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "artist"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "jeweler"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "knot-tying"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leatherworking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "lockpicking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "pickpocket"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sewing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sleight of hand"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "surgery"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "acting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "performance"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "pubic speaking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sex appeal"
+									}
+								}
+							],
+							"categories": [
+								"Disadvantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Decreased Intelligence",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": -20,
+					"reference": "B15",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					],
+					"categories": [
+						"Attribute",
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Mannequin",
+			"physical": true,
+			"base_points": -2,
+			"reference": "UT28",
+			"notes": "-2 reaction. +10% dollars.",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Mind Emulation",
+			"reference": "UT27",
+			"categories": [
+				"Machine Intelligence",
+				"Meta-Trait"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Complexity-Limited IQ",
+					"mental": true,
+					"reference": "UT27",
+					"categories": [
+						"Taboo Trait"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Digital Mind",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B49",
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Non-Volitional AI",
+			"reference": "UT27",
+			"categories": [
+				"Machine Intelligence",
+				"Meta-Trait"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Complexity-Limited IQ",
+					"mental": true,
+					"reference": "UT27",
+					"categories": [
+						"Taboo Trait"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Indomitable",
+					"mental": true,
+					"base_points": 15,
+					"reference": "B60",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Meta-Trait: Artificial Intelligence",
+					"reference": "B263",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Timing",
+							"mental": true,
+							"base_points": 2,
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Digital Mind",
+							"physical": true,
+							"exotic": true,
+							"base_points": 5,
+							"reference": "B49"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Doesn't Sleep",
+							"physical": true,
+							"exotic": true,
+							"base_points": 20,
+							"reference": "B50"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Eidetic Memory (Photographic)",
+							"mental": true,
+							"base_points": 10,
+							"reference": "B51"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Lightning Calculator (Intuitive Mathematician)",
+							"mental": true,
+							"base_points": 5,
+							"reference": "B66"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Reprogrammable",
+							"mental": true,
+							"exotic": true,
+							"base_points": -10,
+							"reference": "B150"
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Meta-Trait: Automaton",
+					"reference": "B263",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Hidebound",
+							"physical": true,
+							"base_points": -5,
+							"reference": "B138"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Incurious (CR: 6)",
+							"mental": true,
+							"base_points": -10,
+							"reference": "B140"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Low Empathy",
+							"mental": true,
+							"base_points": -20,
+							"reference": "B142",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "oblivious"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "callous"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "empathy"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "acting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "carousing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "criminology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "detect lies"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "diplomacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "enthrallment"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fast-talk"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "interrogation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "merchant"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "politics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "psychology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "savoir-faire"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sex appeal"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sociology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "streetwise"
+									}
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "No Sense of Humor",
+							"physical": true,
+							"base_points": -10,
+							"reference": "B146",
+							"notes": "-2 Reaction"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Slave Mentality",
+							"physical": true,
+							"base_points": -40,
+							"reference": "B154"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Realistic Flesh",
+			"physical": true,
+			"base_points": -1,
+			"reference": "UT28",
+			"notes": "-1 reaction. +20% dollars.",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Sculpted Body",
+			"physical": true,
+			"reference": "UT28",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Semi-Sculpted Body",
+			"physical": true,
+			"base_points": -3,
+			"reference": "UT28",
+			"notes": "-3 reaction. +5% dollars.",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Synthetic Organs",
+			"physical": true,
+			"reference": "UT28",
+			"notes": "+100% dollars.",
+			"categories": [
+				"Lens",
+				"Robot"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Volitional AI",
+			"reference": "UT28",
+			"categories": [
+				"Machine Intelligence",
+				"Meta-Trait"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Complexity-Limited IQ",
+					"mental": true,
+					"reference": "UT27",
+					"categories": [
+						"Taboo Trait"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Meta-Trait: Artificial Intelligence",
+					"reference": "B263",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Timing",
+							"mental": true,
+							"base_points": 2,
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Digital Mind",
+							"physical": true,
+							"exotic": true,
+							"base_points": 5,
+							"reference": "B49"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Doesn't Sleep",
+							"physical": true,
+							"exotic": true,
+							"base_points": 20,
+							"reference": "B50"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Eidetic Memory (Photographic)",
+							"mental": true,
+							"base_points": 10,
+							"reference": "B51"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Lightning Calculator (Intuitive Mathematician)",
+							"mental": true,
+							"base_points": 5,
+							"reference": "B66"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Reprogrammable",
+							"mental": true,
+							"exotic": true,
+							"base_points": -10,
+							"reference": "B150"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Weak Dedicated AI",
+			"reference": "UT28",
+			"categories": [
+				"Machine Intelligence",
+				"Meta-Trait"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Cannot Learn",
+					"mental": true,
+					"base_points": -30,
+					"reference": "B125",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Complexity-Limited IQ",
+					"mental": true,
+					"reference": "UT27",
+					"categories": [
+						"Taboo Trait"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Meta-Trait: Artificial Intelligence",
+					"reference": "B263",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Absolute Timing",
+							"mental": true,
+							"base_points": 2,
+							"reference": "B35"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Digital Mind",
+							"physical": true,
+							"exotic": true,
+							"base_points": 5,
+							"reference": "B49"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Doesn't Sleep",
+							"physical": true,
+							"exotic": true,
+							"base_points": 20,
+							"reference": "B50"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Eidetic Memory (Photographic)",
+							"mental": true,
+							"base_points": 10,
+							"reference": "B51"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Lightning Calculator (Intuitive Mathematician)",
+							"mental": true,
+							"base_points": 5,
+							"reference": "B66"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Reprogrammable",
+							"mental": true,
+							"exotic": true,
+							"base_points": -10,
+							"reference": "B150"
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Meta-Trait: Automaton",
+					"reference": "B263",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Hidebound",
+							"physical": true,
+							"base_points": -5,
+							"reference": "B138"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Incurious (CR: 6)",
+							"mental": true,
+							"base_points": -10,
+							"reference": "B140"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Low Empathy",
+							"mental": true,
+							"base_points": -20,
+							"reference": "B142",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "oblivious"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "callous"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "empathy"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "acting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "carousing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "criminology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "detect lies"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "diplomacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "enthrallment"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fast-talk"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "interrogation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leadership"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "merchant"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "politics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "psychology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "savoir-faire"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sex appeal"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "sociology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": -3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "streetwise"
+									}
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "No Sense of Humor",
+							"physical": true,
+							"base_points": -10,
+							"reference": "B146",
+							"notes": "-2 Reaction"
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Slave Mentality",
+							"physical": true,
+							"base_points": -40,
+							"reference": "B154"
+						}
+					]
+				}
+			]
+		}
+	]
+}

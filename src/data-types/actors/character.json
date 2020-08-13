@@ -1,0 +1,9 @@
+{
+    "character": {
+        "templates": [
+            "profile",
+            "pools",
+            "attributes"
+        ]
+    }
+}

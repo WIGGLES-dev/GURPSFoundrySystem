@@ -1,0 +1,118 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "072789cc-527b-4ef9-ac66-6be0eb787d59",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Meta-Trait: Artificial Intelligence",
+			"reference": "B263",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Absolute Timing",
+					"mental": true,
+					"base_points": 2,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Chronolocation",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total"
+						}
+					],
+					"reference": "B35",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Digital Mind",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B49",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Doesn't Sleep",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"reference": "B50",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Eidetic Memory",
+					"mental": true,
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Photographic",
+							"reference": "B51",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B51",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Lightning Calculator",
+					"mental": true,
+					"base_points": 2,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Intuitive Mathematician",
+							"reference": "B66",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total"
+						}
+					],
+					"reference": "B66",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Reprogrammable",
+					"mental": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B150",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	]
+}

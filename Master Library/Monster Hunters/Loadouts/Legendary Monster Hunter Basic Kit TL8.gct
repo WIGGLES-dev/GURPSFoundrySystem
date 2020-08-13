@@ -1,0 +1,1054 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "fac1fdb9-c377-4902-9e1f-42104cca7a1a",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Legendary Monster Hunter Basic Kit (TL8)",
+			"reference": "LMH19",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Clothing, Ordinary, Status 1, Scent Masked",
+					"tech_level": "7",
+					"value": "720",
+					"weight": "2 lb",
+					"reference": "HT63",
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Belt",
+					"tech_level": "5",
+					"value": "10",
+					"reference": "HT31",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Boots, Expensive",
+					"tech_level": "5",
+					"value": "160",
+					"weight": "2 lb",
+					"reference": "HT68",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "feet"
+						}
+					],
+					"notes": "Flexible.",
+					"categories": [
+						"Defenses"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Leather Gloves, Expensive",
+					"tech_level": "1",
+					"value": "60",
+					"reference": "B284",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hands"
+						}
+					],
+					"categories": [
+						"Gloves"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Hat, Cloth, Expensive",
+					"tech_level": "1",
+					"value": "12",
+					"reference": "HT64",
+					"categories": [
+						"Headgear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Personal Basics, Expensive",
+					"tech_level": "0",
+					"value": "10",
+					"weight": "0.66 lb",
+					"reference": "B288",
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Multi-Tool, Expensive",
+					"tech_level": "5",
+					"value": "100",
+					"weight": "0.33 lb",
+					"reference": "HT26",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Notebook, Pencil, and Chalk",
+					"tech_level": "6",
+					"value": "2",
+					"weight": "0.1 lb",
+					"reference": "HT17",
+					"notes": "Holdout -1",
+					"categories": [
+						"Information Technology"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Cellular Phone With Camera",
+					"tech_level": "8",
+					"value": "200",
+					"weight": "0.5 lb",
+					"reference": "HT39",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 2,
+					"description": "Digital Storage Device, Rugged",
+					"tech_level": "8",
+					"value": "60",
+					"reference": "HT22",
+					"notes": "16 GB. Waterproof, shock-resistant, durable",
+					"categories": [
+						"Information Technology"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Gadget Wristwatch",
+					"tech_level": "8",
+					"value": "117.5",
+					"reference": "HT32",
+					"notes": "Includes Compass and Thermometer",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Religious Symbol, Silver",
+					"tech_level": "5",
+					"value": "20",
+					"reference": "HT31",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Waist Pack",
+					"tech_level": "5",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "HT54",
+					"notes": "Holds 10lbs.",
+					"categories": [
+						"General Equipment"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Small Tactical Light",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "0.25 lb",
+							"reference": "HT52",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr"
+									},
+									"usage": "Punch",
+									"reach": "C",
+									"parry": "0",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "DX"
+										},
+										{
+											"type": "Skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "Skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "Skill",
+											"name": "Karate"
+										}
+									]
+								}
+							],
+							"notes": "25-yard beam. 2xXS/2hrs.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Small Computer, Rugged, Compact",
+							"tech_level": "8",
+							"value": "400",
+							"weight": "0.24 lb",
+							"reference": "HT20",
+							"notes": "Complexity 2. Stores 10 GB. M/5hrs.",
+							"categories": [
+								"Information Technology"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Portable Terminal, Rugged",
+									"tech_level": "8",
+									"value": "100",
+									"weight": "0.6 lb",
+									"reference": "HT21",
+									"categories": [
+										"Information Technology"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 2,
+							"description": "Battery (XS)",
+							"value": "0.5",
+							"weight": "0.1 lb",
+							"reference": "HT13",
+							"categories": [
+								"Power"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 10,
+							"description": "Chemlight",
+							"tech_level": "7",
+							"value": "2",
+							"weight": "0.1 lb",
+							"reference": "HT52",
+							"notes": "Lasts 12 hours.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Duct Tape",
+							"tech_level": "6",
+							"value": "1",
+							"weight": "2 lb",
+							"reference": "HT26",
+							"notes": "60 yards per roll.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 2,
+							"description": "Battery (XS), Rechargeable",
+							"value": "2.5",
+							"weight": "0.1 lb",
+							"reference": "HT13",
+							"categories": [
+								"Power"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Micro-Camcorder",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "0.25 lb",
+							"reference": "HT43",
+							"notes": "Rechargeable battery lasts 1hr. Holdout +1.",
+							"categories": [
+								"General Equipment"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Sage",
+					"reference": "LMH24",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Backpack, Small, Expensive",
+							"tech_level": "5",
+							"value": "240",
+							"weight": "2 lb",
+							"reference": "HT54",
+							"notes": "Holds 50lbs.",
+							"categories": [
+								"General Equipment"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Fingerprint Kit",
+									"tech_level": "6",
+									"value": "50",
+									"weight": "1 lb",
+									"reference": "HT217",
+									"categories": [
+										"Enforcement and Coercion"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Chemical Test Kit",
+									"tech_level": "6",
+									"value": "25",
+									"weight": "0.5 lb",
+									"reference": "HT48",
+									"notes": "50 strips.",
+									"categories": [
+										"General Equipment"
+									]
+								},
+								{
+									"type": "equipment_container",
+									"version": 1,
+									"description": "Choose 1",
+									"open": true,
+									"children": [
+										{
+											"type": "equipment",
+											"version": 1,
+											"quantity": 1,
+											"description": "Mini-Tool Kit (Armoury: @Specialty@)",
+											"tech_level": "5",
+											"value": "200",
+											"weight": "4 lb",
+											"reference": "HT24",
+											"notes": "-2 quality.",
+											"categories": [
+												"General Equipment"
+											]
+										},
+										{
+											"type": "equipment",
+											"version": 1,
+											"quantity": 1,
+											"description": "Mini-Tool Kit (Electrician)",
+											"tech_level": "5",
+											"value": "200",
+											"weight": "4 lb",
+											"reference": "HT24",
+											"notes": "-2 quality.",
+											"categories": [
+												"General Equipment"
+											]
+										},
+										{
+											"type": "equipment",
+											"version": 1,
+											"quantity": 1,
+											"description": "Mini-Tool Kit (Electronics Repair: @Specialty@)",
+											"tech_level": "5",
+											"value": "400",
+											"weight": "2 lb",
+											"reference": "HT24",
+											"notes": "-2 quality.",
+											"categories": [
+												"General Equipment"
+											]
+										},
+										{
+											"type": "equipment",
+											"version": 1,
+											"quantity": 1,
+											"description": "Mini-Tool Kit (Machinist)",
+											"tech_level": "5",
+											"value": "200",
+											"weight": "4 lb",
+											"reference": "HT24",
+											"notes": "-2 quality.",
+											"categories": [
+												"General Equipment"
+											]
+										},
+										{
+											"type": "equipment",
+											"version": 1,
+											"quantity": 1,
+											"description": "Mini-Tool Kit (Mechanic: @Specialty@)",
+											"tech_level": "5",
+											"value": "200",
+											"weight": "4 lb",
+											"reference": "HT24",
+											"notes": "-2 quality.",
+											"categories": [
+												"General Equipment"
+											]
+										},
+										{
+											"type": "equipment_container",
+											"version": 1,
+											"description": "Doctor's Bag",
+											"tech_level": "5",
+											"legality_class": "3",
+											"value": "200",
+											"weight": "10 lb",
+											"reference": "HT221",
+											"categories": [
+												"Emergency Equipment"
+											],
+											"open": true
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Patrol Sling, Expensive",
+							"tech_level": "7",
+							"value": "100",
+							"weight": "0.67 lb",
+							"reference": "HT154",
+							"notes": "+1 Fast-Draw (Long Arm).",
+							"categories": [
+								"Firearm Accessories"
+							],
+							"open": false,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Remington Model 870P, 12G 2.75\"",
+									"tech_level": "7",
+									"legality_class": "3",
+									"value": "400",
+									"weight": "8.3 lb",
+									"reference": "HT104",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "1d+1"
+											},
+											"strength": "10†",
+											"accuracy": "3",
+											"range": "40/800",
+											"rate_of_fire": "2x9",
+											"shots": "7+1(2i)",
+											"bulk": "-5",
+											"recoil": "1/5",
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Shotgun"
+												},
+												{
+													"type": "DX",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Pistol",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Rifle",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Musket",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Shotgun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Machine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Submachine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Gun!"
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Grenade Launcher",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Gyroc",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Anti-Armor Weapon",
+													"modifier": -4
+												}
+											]
+										}
+									],
+									"categories": [
+										"Firearms"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Concealable Vest",
+							"tech_level": "8",
+							"legality_class": "3",
+							"value": "1000",
+							"weight": "2 lb",
+							"reference": "HT66",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 5,
+									"location": "torso"
+								}
+							],
+							"notes": "Flexible. DR12 vs. pi, cut.",
+							"categories": [
+								"Defenses"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Wicking Undergarment",
+							"tech_level": "8",
+							"value": "30",
+							"reference": "HT64",
+							"categories": [
+								"Defenses"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Ballistic Sunglasses",
+							"tech_level": "8",
+							"value": "35",
+							"reference": "HT71",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "eyes"
+								}
+							],
+							"categories": [
+								"Defenses"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Tactical Headset, Expensive",
+							"tech_level": "8",
+							"value": "400",
+							"weight": "0.66 lb",
+							"reference": "HT39",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Load-Bearing Vest, Expensive",
+							"tech_level": "7",
+							"value": "60",
+							"weight": "1.32 lb",
+							"reference": "HT54",
+							"notes": "Holds 20-30lbs.",
+							"categories": [
+								"General Equipment"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Small Radio, Rugged, ECCM, Secure Encryption",
+									"tech_level": "8",
+									"value": "1500",
+									"weight": "0.6 lb",
+									"reference": "HT38",
+									"notes": "5-mile range. 3xXS/10hrs.",
+									"categories": [
+										"General Equipment"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Ruger Super Redhawk Alaskan, .454 Casull",
+									"tech_level": "8",
+									"legality_class": "3",
+									"value": "820",
+									"weight": "3 lb",
+									"reference": "HT97",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "4d"
+											},
+											"strength": "12",
+											"accuracy": "1",
+											"range": "210/2,300",
+											"rate_of_fire": "3",
+											"shots": "6(3i)",
+											"bulk": "-2",
+											"recoil": "6",
+											"defaults": [
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Pistol"
+												},
+												{
+													"type": "DX",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Pistol",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Rifle",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Musket",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Shotgun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Machine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Submachine Gun",
+													"modifier": -2
+												},
+												{
+													"type": "Skill",
+													"name": "Gun!"
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Grenade Launcher",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Gyroc",
+													"modifier": -4
+												},
+												{
+													"type": "Skill",
+													"name": "Guns",
+													"specialization": "Light Anti-Armor Weapon",
+													"modifier": -4
+												}
+											]
+										}
+									],
+									"notes": "No lanyard ring.",
+									"categories": [
+										"Firearms"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Improved-Visibility Sights",
+									"tech_level": "6",
+									"value": "75",
+									"reference": "HT156",
+									"notes": "For Revolver",
+									"categories": [
+										"Firearm Accessories"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 18,
+									"description": ".454 Casull (11.43x35mmR) HP",
+									"value": "1",
+									"weight": "0.066 lb",
+									"reference": "HT176",
+									"notes": "4d(0.5) pi++",
+									"categories": [
+										"Ammunition and Warheads"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 2,
+									"description": "Speedloader",
+									"tech_level": "6",
+									"value": "10",
+									"weight": "0.1 lb",
+									"reference": "HT155",
+									"categories": [
+										"Firearm Accessories"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 20,
+									"description": "12-gauge 2.75\" (18.5x70mmR)",
+									"value": "0.5",
+									"weight": "0.11 lb",
+									"reference": "HT176",
+									"notes": "Light cased. Shotshell.",
+									"categories": [
+										"Ammunition and Warheads"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 5,
+									"description": "12-gauge 2.75\" (18.5x70mmR)",
+									"value": "0.5",
+									"weight": "0.11 lb",
+									"reference": "HT166",
+									"notes": "Slug",
+									"categories": [
+										"Ammunition and Warheads"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Magnifying Glass",
+									"tech_level": "5",
+									"value": "10",
+									"reference": "HT57",
+									"categories": [
+										"General Equipment"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Supernatural Sage",
+					"reference": "LMH24",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Mirror",
+							"tech_level": "7",
+							"value": "5",
+							"reference": "HT31",
+							"notes": "Sturdy.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Tear Gas Spray",
+							"tech_level": "7",
+							"value": "20",
+							"weight": "0.1 lb",
+							"reference": "HT180",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "HT-2 aff"
+									},
+									"strength": "3",
+									"usage": "(coughing)",
+									"reach": "1,2",
+									"parry": "no",
+									"block": "no",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Liquid Projector",
+											"specialization": "Sprayer"
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Liquid Projector",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "HT-2 aff"
+									},
+									"usage": "Follow-Up (blindness)"
+								}
+							],
+							"notes": "Silver Nitrate",
+							"categories": [
+								"Liquid Projectors"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "UV Bulb",
+							"tech_level": "7",
+							"value": "25",
+							"reference": "HT52",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 10,
+							"description": "12-gauge 2.75\" (18.5x70mmR), Silver",
+							"value": "11.5",
+							"weight": "0.11 lb",
+							"reference": "HT176",
+							"notes": "Light cased. Shotshell.",
+							"categories": [
+								"Ammunition and Warheads"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Canteen",
+							"tech_level": "5",
+							"value": "10",
+							"weight": "3 lb",
+							"reference": "HT53",
+							"notes": "1qt.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "EM Field Meter",
+							"tech_level": "7",
+							"value": "500",
+							"weight": "1 lb",
+							"reference": "HT50",
+							"notes": "S/10hrs.",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Esoteric Tool Kit, Portable (@skill@)",
+							"tech_level": "8",
+							"value": "1000",
+							"weight": "10 lb",
+							"reference": "LMH7"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire, Legendary (@skill@)",
+							"tech_level": "8",
+							"value": "4000",
+							"weight": "12 lb",
+							"reference": "LMH8",
+							"notes": "Gives +2 to @skill@ if known, and the book is consulted first."
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Choose 1",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Geiger Counter",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "0.5 lb",
+									"reference": "HT49",
+									"notes": "XS/10hrs.",
+									"categories": [
+										"General Equipment"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Temperature Gun",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "0.5 lb",
+									"reference": "HT50",
+									"notes": "S/20hrs.",
+									"categories": [
+										"General Equipment"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

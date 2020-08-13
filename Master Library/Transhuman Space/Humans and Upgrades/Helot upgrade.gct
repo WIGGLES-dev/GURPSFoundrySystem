@@ -1,0 +1,192 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "7ced121e-5bd3-4bc5-95ff-d1f0bde0f26b",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Helot upgrade",
+			"reference": "FW118",
+			"notes": "2080; $37,000",
+			"categories": [
+				"China",
+				"Social",
+				"Upgrade"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased HT",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "ht"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Resistant",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_type": "points",
+							"cost": 30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Disease",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"disabled": true,
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_type": "multiplier",
+							"cost": 0.33
+						}
+					],
+					"reference": "B81",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Broad-Minded",
+					"mental": true,
+					"base_points": -1,
+					"reference": "B163",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Humble",
+					"mental": true,
+					"base_points": -1,
+					"reference": "B164",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Staid",
+					"mental": true,
+					"base_points": -1,
+					"reference": "B164",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Genetic defects",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Mental instability",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Unattractiveness",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Agressiveness",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				}
+			]
+		}
+	]
+}

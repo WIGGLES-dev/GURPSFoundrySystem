@@ -1,0 +1,401 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "635e5a6d-4dab-455f-82b9-439d31abe648",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Basic Delver Package",
+			"reference": "PY106:11",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Blanket",
+					"value": "20",
+					"weight": "4 lb",
+					"reference": "DFA111",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Pouch",
+					"value": "10",
+					"weight": "0.2 lb",
+					"reference": "DFA111",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "3 lb"
+								}
+							}
+						]
+					},
+					"notes": "3 lb small items",
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bandages",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "DFA111",
+							"notes": "Basic EQ for First Aid",
+							"categories": [
+								"Medical Gear"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Personal Basics",
+							"value": "5",
+							"weight": "1 lb",
+							"reference": "DFA111",
+							"notes": "Basic EQ for individual Survival",
+							"categories": [
+								"Camping and Survival Gear"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Whetstone",
+							"value": "5",
+							"weight": "1 lb",
+							"reference": "DFA111",
+							"categories": [
+								"Combat Accessories"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Rope, 3/8\", 10 yd",
+					"value": "5",
+					"weight": "1.5 lb",
+					"reference": "DFA111",
+					"notes": "Supports 300 lb",
+					"categories": [
+						"Miscellaneous Hardware"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Small Belt Knife",
+					"value": "15",
+					"weight": "0.25 lb",
+					"reference": "PY106:11",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "-3"
+							},
+							"strength": "5",
+							"usage": "Swung",
+							"reach": "C,1",
+							"parry": "-1",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Knife",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Main-Gauche",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Shortsword",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Sword!",
+									"modifier": -1
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"strength": "5",
+							"usage": "Thrust",
+							"reach": "C",
+							"parry": "-1",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Knife",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Main-Gauche",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Shortsword",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Sword!",
+									"modifier": -1
+								}
+							]
+						}
+					],
+					"categories": [
+						"Melee Weapon",
+						"Missile Weapon"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Wineskin",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "DFA111",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "8 lb"
+								}
+							}
+						]
+					},
+					"notes": "1 gal liquid",
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 4,
+							"description": "Water (1 Quart)",
+							"weight": "2 lb",
+							"reference": "DFA111",
+							"categories": [
+								"Camping and Survival Gear"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Upgrade Options",
+			"reference": "PY106:11",
+			"open": false,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "One Per Group",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grapnel",
+							"value": "80",
+							"weight": "2 lb",
+							"reference": "DFA113",
+							"notes": "Throw to ST×2 yd. 300 lb.",
+							"categories": [
+								"Covert Ops and Security Gear"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Pole, 10'",
+					"value": "8",
+					"weight": "5 lb",
+					"reference": "DFA111",
+					"categories": [
+						"Miscellaneous Hardware"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Replace Blanket With",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Sleeping Fur",
+							"value": "50",
+							"weight": "8 lb",
+							"reference": "DFA111",
+							"categories": [
+								"Camping and Survival Gear"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Replace Wineskin with",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Canteen",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "DFA111",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "contained_weight_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most",
+											"qualifier": "2 lb"
+										}
+									}
+								]
+							},
+							"notes": "Holds 1 qt of liquid",
+							"categories": [
+								"Camping and Survival Gear"
+							],
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Water (1 Quart)",
+									"weight": "2 lb",
+									"reference": "DFA111",
+									"categories": [
+										"Camping and Survival Gear"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Sack",
+					"value": "30",
+					"weight": "3 lb",
+					"reference": "DFA111",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "40 lb"
+								}
+							}
+						]
+					},
+					"notes": "40 lb, DR 1, HP 5",
+					"categories": [
+						"Containers"
+					],
+					"open": false
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Torch",
+					"value": "3",
+					"weight": "1 lb",
+					"reference": "DFA111",
+					"notes": "Burns for 1 hour, 2 yd.",
+					"categories": [
+						"Light Sources"
+					]
+				}
+			]
+		}
+	]
+}

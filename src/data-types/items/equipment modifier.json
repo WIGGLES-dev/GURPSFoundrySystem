@@ -1,0 +1,11 @@
+{
+    "eqpipment modifier": {
+        "templates": [
+            "modifier"
+        ],
+        "type": "eqp_modifier",
+        "cost": "",
+        "cost_type": "",
+        "weight": "weight_type"
+    }
+}

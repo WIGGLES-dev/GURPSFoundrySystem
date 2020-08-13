@@ -1,0 +1,1940 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "f2f6b62f-2be5-4b9d-87af-fd7168cb15a5",
+	"rows": [
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Acrobatics",
+			"reference": "Lite13",
+			"difficulty": "DX/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Athletic"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Acting",
+			"reference": "Lite13",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Animal Handling",
+			"reference": "Lite14",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Animal"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Area Knowledge",
+			"reference": "Lite14",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Armoury",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Axe/Mace",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Bicycling",
+			"reference": "B180",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Motorcycle",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Boating",
+			"reference": "Lite17",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Bow",
+			"reference": "Lite16",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Brawling",
+			"reference": "Lite14",
+			"difficulty": "DX/E",
+			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					}
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Broadsword",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Camouflage",
+			"reference": "Lite14",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Military",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Carousing",
+			"reference": "Lite14",
+			"difficulty": "HT/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Climbing",
+			"reference": "Lite14",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Criminal/Street",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Computer Operation",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Computer Programming",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"categories": [
+				"Design/Invention"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Crewman",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Criminology",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Police",
+				"Social Sciences/Humanities"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Crossbow",
+			"reference": "Lite16",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Diagnosis",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Diplomacy",
+			"reference": "Lite15",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "Politics",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Business",
+				"Police",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Disguise",
+			"reference": "Lite14",
+			"specialization": "@Specialty@",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Driving",
+			"reference": "Lite17",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Electronics Operation",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Electronics Repair",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Engineer",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Design/Invention",
+				"Engineer"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Environment Suit",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Escape",
+			"reference": "Lite14",
+			"difficulty": "DX/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Expert Skill",
+			"reference": "B193",
+			"specialization": "@Field of expertise@",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Scholarly",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Explosives",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Military",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Fast-Talk",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "First Aid",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Forgery",
+			"reference": "Lite14",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Gambling",
+			"reference": "Lite14",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Guns",
+			"reference": "Lite16",
+			"specialization": "Pistol",
+			"tech_level": "",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Guns",
+			"reference": "Lite16",
+			"specialization": "Rifle",
+			"tech_level": "",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Guns",
+			"reference": "Lite16",
+			"specialization": "Shotgun",
+			"tech_level": "",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Hiking",
+			"reference": "Lite14",
+			"difficulty": "HT/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Hobby Skill",
+			"reference": "B200",
+			"specialization": "@Mental Hobby@",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Hobby Skill",
+			"reference": "B200",
+			"specialization": "@Physical Hobby@",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Holdout",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Humanities",
+			"reference": "Lite15",
+			"specialization": "@Choose@",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Interrogation",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Military",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Intimidation",
+			"reference": "Lite15",
+			"difficulty": "Will/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Jumping",
+			"reference": "Lite15",
+			"difficulty": "DX/E",
+			"points": 1,
+			"categories": [
+				"Athletic"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Karate",
+			"reference": "Lite15",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/H",
+			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Karate"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 0
+					}
+				},
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Karate"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 1
+					}
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Knife",
+			"reference": "Lite15",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Law",
+			"reference": "Lite15",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Business",
+				"Police",
+				"Social Sciences/Humanities"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Leadership",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Military",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Lockpicking",
+			"reference": "Lite15",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mathematics",
+			"reference": "Lite15",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Mechanic",
+			"reference": "Lite15",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Merchant",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Business",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Natural Sciences",
+			"reference": "Lite16",
+			"specialization": "@Choose@",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Naturalist",
+			"reference": "Lite16",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Animal",
+				"Natural Science",
+				"Outdoor/Exploration",
+				"Plant"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Navigation",
+			"reference": "Lite16",
+			"specialization": "@Specialty@",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration",
+				"Technical",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Observation",
+			"reference": "Lite16",
+			"difficulty": "Per/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Military",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Occultism",
+			"reference": "Lite16",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Occult/Magical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Photography",
+			"reference": "Lite16",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Arts/Entertainment",
+				"Spy",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Physician",
+			"reference": "Lite16",
+			"tech_level": "",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -7
+				}
+			],
+			"categories": [
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Pickpocket",
+			"reference": "Lite16",
+			"difficulty": "DX/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Piloting",
+			"reference": "Lite17",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Polearm",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Professional Skill",
+			"reference": "B215",
+			"specialization": "@Mental Skill@",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Professional Skill",
+			"reference": "B215",
+			"specialization": "@Physical Skill@",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Public Speaking",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Business",
+				"Scholarly",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Rapier",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Research",
+			"reference": "Lite16",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": true,
+						"when_tl": {
+							"compare": "at_least",
+							"qualifier": 8
+						},
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Computer Operation"
+								}
+							}
+						]
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Native"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Accented)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Broken)"
+								}
+							}
+						]
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Scholarly",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Riding",
+			"reference": "Lite16",
+			"specialization": "@Specialty@",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Animal"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Savoir-Faire",
+			"reference": "Lite15",
+			"specialization": "@Social group@",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Scrounging",
+			"reference": "Lite16",
+			"difficulty": "Per/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Search",
+			"reference": "Lite16",
+			"difficulty": "Per/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Sex Appeal",
+			"reference": "Lite15",
+			"difficulty": "HT/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Shadowing",
+			"reference": "Lite16",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Stealth",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Shield",
+			"reference": "Lite16",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Shortsword",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Smuggling",
+			"reference": "Lite16",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Social Sciences",
+			"reference": "Lite16",
+			"specialization": "@Choose@",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Knowledge",
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Spear",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Staff",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Stealth",
+			"reference": "Lite17",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Streetwise",
+			"reference": "Lite15",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Submarine",
+			"reference": "Lite17",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "diving suit"
+						},
+						"specialization": {
+							"compare": "is"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "scuba"
+						},
+						"specialization": {
+							"compare": "is"
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Survival",
+			"reference": "Lite17",
+			"difficulty": "Per/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Swimming",
+			"reference": "Lite17",
+			"encumbrance_penalty_multiplier": 2,
+			"difficulty": "HT/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Tactics",
+			"reference": "Lite17",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Military",
+				"Police"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Throwing",
+			"reference": "Lite17",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Thrown Weapon",
+			"reference": "Lite17",
+			"specialization": "Axe/Mace",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Thrown Weapon",
+			"reference": "Lite17",
+			"specialization": "Knife",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Thrown Weapon",
+			"reference": "Lite17",
+			"specialization": "Spear",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Tracking",
+			"reference": "Lite17",
+			"difficulty": "Per/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Traps",
+			"reference": "Lite17",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Military"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Two-Handed Axe/Mace",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Two-Handed Sword",
+			"reference": "Lite15",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Wrestling",
+			"reference": "B228",
+			"difficulty": "DX/A",
+			"points": 1,
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Writing",
+			"reference": "Lite17",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Arts/Entertainment",
+				"Scholarly"
+			]
+		}
+	]
+}

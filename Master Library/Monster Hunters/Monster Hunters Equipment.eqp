@@ -1,0 +1,3201 @@
+{
+	"type": "equipment_list",
+	"version": 1,
+	"id": "b03c0be4-cabf-48be-b625-a8e217ff5da6",
+	"rows": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Common Gadgets",
+			"tech_level": "8",
+			"notes": "Items can be Cutting-Edge, Disguised, Fine-Quality, Good-Quality, Rugged",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Basic Gear",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bandages",
+							"tech_level": "8",
+							"value": "2",
+							"weight": "0.2 lb",
+							"reference": "MH1:54",
+							"categories": [
+								"Emergency Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Cigarette Lighter",
+							"tech_level": "8",
+							"value": "10",
+							"reference": "MH1:54",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Duct Tape",
+							"tech_level": "8",
+							"value": "1",
+							"weight": "0.5 lb",
+							"reference": "MH1:54",
+							"categories": [
+								"General Equipment"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Flashlight, Mini",
+							"tech_level": "8",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Mirror, Pocket",
+							"tech_level": "8",
+							"value": "5",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Multi-Tool",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "0.5 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Notebook, Pencil, Chalk",
+							"tech_level": "8",
+							"value": "2",
+							"weight": "0.1 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Wristwatch",
+							"tech_level": "8",
+							"value": "20",
+							"reference": "MH1:54"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Cameras",
+					"tech_level": "8",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Camcorder, Micro",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "0.2 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Camera, Digital",
+							"tech_level": "8",
+							"value": "75",
+							"weight": "0.5 lb",
+							"reference": "MH1:54",
+							"notes": "good quality 2.5 lbs, fine quality 10 lbs"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Camera, Film",
+							"tech_level": "8",
+							"value": "80",
+							"weight": "0.5 lb",
+							"reference": "MH1:54",
+							"notes": "good quality 2.5 lbs, fine quality 10 lbs"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Film",
+							"tech_level": "8",
+							"value": "2",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Film, Infrared",
+							"tech_level": "8",
+							"value": "30",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Film, Kirlian",
+							"tech_level": "8",
+							"value": "100",
+							"reference": "MH1:54"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Communication",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Cell Phone",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "0.5 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Flare, Pen",
+							"tech_level": "8",
+							"value": "15",
+							"weight": "0.1 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Headset, Bluetooth",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "0.1 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Radio, Handheld",
+							"tech_level": "8",
+							"value": "250",
+							"weight": "0.5 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Radio, Pocket",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "0.2 lb",
+							"reference": "MH1:54"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Computers",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Computer, Desktop",
+							"tech_level": "8",
+							"value": "1500",
+							"weight": "17 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Computer, Laptop",
+							"tech_level": "8",
+							"value": "2050",
+							"weight": "2.5 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "PDA, Basic",
+							"tech_level": "8",
+							"value": "60",
+							"weight": "0.1 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "PDA, Full-Featured",
+							"tech_level": "8",
+							"value": "210",
+							"weight": "0.3 lb",
+							"reference": "MH1:54"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Containers",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Backpack, Small",
+							"tech_level": "8",
+							"value": "120",
+							"weight": "1.5 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Balloon",
+							"tech_level": "8",
+							"value": "2",
+							"reference": "MH1:54",
+							"notes": "Pack of 10"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bottle",
+							"tech_level": "8",
+							"value": "2",
+							"weight": "0.1 lb",
+							"reference": "MH1:54"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Load-Bearing Vest",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "2 lb",
+							"reference": "MH1:54"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Demolition and Intrusion",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bolt Cutters",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "15 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Detonator, Fuse",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Detonator, Remote",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Detonator, Timed",
+							"tech_level": "8",
+							"value": "25",
+							"weight": "0.5 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Dynamite, Stick",
+							"tech_level": "8",
+							"value": "5",
+							"weight": "0.5 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Go-Bar",
+							"value": "175",
+							"weight": "17 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lockpicks",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "0.1 lb",
+							"reference": "MH1:55",
+							"notes": "Good quality 0.5 lbs, fine quality 2 lbs"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Plastique",
+							"tech_level": "8",
+							"value": "40",
+							"weight": "1.3 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Thermite",
+							"tech_level": "8",
+							"value": "40",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Wire Cutters",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "2 lb",
+							"reference": "MH1:55"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Gun Accessories",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bayonet",
+							"tech_level": "8",
+							"value": "40",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holster",
+							"tech_level": "8",
+							"value": "25",
+							"weight": "0.5 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holster, Concealed",
+							"tech_level": "8",
+							"value": "125",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Reflex Sight",
+							"tech_level": "8",
+							"value": "550",
+							"weight": "0.2 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Scope",
+							"tech_level": "8",
+							"value": "150",
+							"weight": "1 lb",
+							"reference": "MH1:55",
+							"notes": "$150 * Acc (max 5)"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Silencer",
+							"tech_level": "8",
+							"value": "1000",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Sling",
+							"tech_level": "8",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Tactical Light",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "0.2 lb",
+							"reference": "MH1:55"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Targeting Laser, Integral",
+							"tech_level": "8",
+							"value": "900",
+							"reference": "MH1:55"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Labs and Tools Kits",
+					"tech_level": "8",
+					"notes": "Double the price and half the cost for Electronics Repair tool kits",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lab or Tool Kit, Belt",
+							"tech_level": "8",
+							"value": "1000",
+							"weight": "4 lb",
+							"reference": "MH1:56",
+							"notes": "$200 for a tool kit"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lab or Tool Kit, Box",
+							"tech_level": "8",
+							"value": "3000",
+							"weight": "20 lb",
+							"reference": "MH1:56",
+							"notes": "$600 for a tool kit"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lab or Tool Kit, Field",
+							"tech_level": "8",
+							"value": "15000",
+							"weight": "200 lb",
+							"reference": "MH1:56",
+							"notes": "$3,000 for a tool kit"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lab or Tool Kit, Shop",
+							"tech_level": "8",
+							"value": "75000",
+							"reference": "MH1:56",
+							"notes": "$15,000 for a tool kit"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Light Sources",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Flashlight, Mini",
+							"tech_level": "8",
+							"value": "10",
+							"weight": "0.2 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Flashlight, Regular",
+							"tech_level": "8",
+							"value": "20",
+							"weight": "1 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Flashlight, Smart",
+							"tech_level": "8",
+							"value": "300",
+							"weight": "0.5 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Glow Stick",
+							"tech_level": "8",
+							"value": "2",
+							"weight": "0.1 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lantern, Electric",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "3 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "UV Bulb",
+							"tech_level": "8",
+							"value": "25",
+							"reference": "MH1:56"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Medical supplies",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Body Bag",
+							"tech_level": "8",
+							"value": "5",
+							"weight": "2.5 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Crash Kit",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "10 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "First Aid Kit",
+							"tech_level": "8",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Surgical Kit",
+							"tech_level": "8",
+							"value": "300",
+							"weight": "15 lb",
+							"reference": "MH1:56"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Miscellaneous Gear",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Climbing Kit",
+							"tech_level": "8",
+							"value": "400",
+							"weight": "26 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Disguise Kit",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "10 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grapnel",
+							"tech_level": "8",
+							"value": "40",
+							"weight": "3 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Industrial Cleanser",
+							"tech_level": "8",
+							"value": "5",
+							"weight": "1 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Library",
+							"tech_level": "8",
+							"value": "70000",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Media Player, DIgital",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "0.2 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Reloading Press",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "2 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Rope",
+							"tech_level": "8",
+							"value": "25",
+							"weight": "1.6 lb",
+							"reference": "MH1:56",
+							"notes": "Per 10 yards"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Optics",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Binoculars",
+							"tech_level": "8",
+							"value": "150",
+							"weight": "3 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Binoculars, Nigth-Vision",
+							"tech_level": "8",
+							"value": "6000",
+							"weight": "3 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Binoculars, Thermal-Imaging",
+							"tech_level": "8",
+							"value": "7000",
+							"weight": "3 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Goggles, Night-Vision",
+							"tech_level": "8",
+							"value": "3500",
+							"weight": "1.5 lb",
+							"reference": "MH1:56"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Goggles, Thermal-Imaging",
+							"tech_level": "8",
+							"value": "13000",
+							"weight": "1.5 lb",
+							"reference": "MH1:56"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Esoteric Gear",
+			"tech_level": "8",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Grimoires and Collections",
+					"tech_level": "8",
+					"notes": "Items can be Dead-Language and Encrypted",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Collection",
+							"reference": "MH1:57",
+							"notes": "Total cost of all Rituals, Weight: Highest weight + 1/5 total of the rest"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +2",
+							"tech_level": "8",
+							"value": "100",
+							"weight": "2 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +3",
+							"tech_level": "8",
+							"value": "250",
+							"weight": "2.5 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 3,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +4",
+							"tech_level": "8",
+							"value": "600",
+							"weight": "3 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 4,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +5",
+							"tech_level": "8",
+							"value": "1500",
+							"weight": "3.5 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 5,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +6",
+							"tech_level": "8",
+							"value": "3500",
+							"weight": "4 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 6,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +7",
+							"tech_level": "8",
+							"value": "7500",
+							"weight": "5 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 7,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +8",
+							"tech_level": "8",
+							"value": "20000",
+							"weight": "6 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 8,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +9",
+							"tech_level": "8",
+							"value": "50000",
+							"weight": "8 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 9,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire +10",
+							"tech_level": "8",
+							"value": "100000",
+							"weight": "10 lb",
+							"reference": "MH1:57",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 10,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "@Specific Ritual@"
+									}
+								}
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Grimoire, Legendary (@skill@)",
+							"tech_level": "8",
+							"value": "4000",
+							"weight": "12 lb",
+							"reference": "LMH8",
+							"notes": "Gives +2 to @skill@ if known, and the book is consulted first."
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Magical Workspace Kits",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Workspace Kit, Basic",
+							"tech_level": "8",
+							"value": "3000",
+							"weight": "20 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Workspace Kit, Fine",
+							"tech_level": "8",
+							"value": "60000",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Workspace Kit, Good",
+							"tech_level": "8",
+							"value": "15000",
+							"weight": "200 lb",
+							"reference": "MH1:57"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Mystical Supplies",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Esoteric Kit",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "4 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holy Symbol",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "0.5 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holy Symbol, Aged",
+							"tech_level": "8",
+							"value": "1000",
+							"weight": "0.5 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holy Symbol, Ancient",
+							"tech_level": "8",
+							"value": "4000",
+							"weight": "0.5 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holy Symbol, Mass-Produced",
+							"tech_level": "8",
+							"value": "5",
+							"weight": "0.1 lb",
+							"reference": "MH1:57"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Holy Water",
+							"weight": "0.5 lb",
+							"reference": "MH1:57",
+							"notes": "per pint"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Esoteric Tool Kit, Portable (@skill@)",
+							"tech_level": "8",
+							"value": "1000",
+							"weight": "10 lb",
+							"reference": "LMH7"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Esoteric Tool Kit, Mini (@skill@)",
+							"tech_level": "8",
+							"value": "200",
+							"weight": "4 lb",
+							"reference": "LMH7"
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Psychotronics",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Electronics",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Ectocognitive Wave Detector (EWD)",
+									"tech_level": "8",
+									"value": "1500",
+									"weight": "1 lb",
+									"reference": "MH1:57"
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Ethereal Barrier Cord",
+									"tech_level": "8",
+									"value": "50",
+									"weight": "0.5 lb",
+									"reference": "MH1:57",
+									"notes": "per yard of cord. The power converter is $1,000, 10 lbs"
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Mental Shield",
+									"tech_level": "8",
+									"value": "1000",
+									"weight": "1 lb",
+									"reference": "MH1:58"
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Spiricom",
+									"tech_level": "8",
+									"value": "3200",
+									"weight": "80 lb",
+									"reference": "MH1:58"
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Psi Drugs",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Psi-Block",
+									"tech_level": "8",
+									"value": "30",
+									"reference": "MH1:58",
+									"notes": "per dose"
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Psi-Boost",
+									"tech_level": "8",
+									"value": "50",
+									"reference": "MH1:58",
+									"notes": "per dose"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Protective Clothing",
+			"tech_level": "8",
+			"notes": "Items can be Scent-Masking and Undercover",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Boots, Reinforced",
+					"tech_level": "8",
+					"value": "75",
+					"weight": "3 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "feet"
+						}
+					],
+					"notes": "DR +1 to underside of foot. Kicking dmg+1",
+					"categories": [
+						"Body Armor",
+						"Footwear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Clothing, Extra Outfit",
+					"tech_level": "8",
+					"value": "120",
+					"weight": "2 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 0,
+							"location": "full_body"
+						}
+					],
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Coat, Long",
+					"tech_level": "8",
+					"value": "50",
+					"weight": "5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 0,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "arms"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 0,
+							"location": "legs"
+						}
+					],
+					"notes": "Holdout +4. Undercover for larger bonus.",
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Coat, Long Leather",
+					"tech_level": "8",
+					"value": "250",
+					"weight": "10 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arms"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "legs"
+						}
+					],
+					"notes": "Flexible. Holdout +4. Undercover for larger bonus. ",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Collar, Reinforced",
+					"tech_level": "8",
+					"value": "10",
+					"weight": "0.5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "neck"
+						}
+					],
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Cup, Athletic",
+					"tech_level": "8",
+					"value": "20",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "neck"
+						}
+					],
+					"notes": "Front. DR +1 vs. Crushing",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Glasses, Ballistic",
+					"tech_level": "8",
+					"value": "35",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "eyes"
+						}
+					],
+					"categories": [
+						"Body Armor",
+						"Eyewear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Gloves, Sap",
+					"tech_level": "8",
+					"value": "60",
+					"weight": "1 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hands"
+						}
+					],
+					"notes": "Flexible. Punching dmg +1. Bad Grip 1.",
+					"categories": [
+						"Body Armor",
+						"Gloves"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Gloves, Shooting",
+					"tech_level": "8",
+					"value": "50",
+					"weight": "0.5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "hands"
+						}
+					],
+					"notes": "Flexible",
+					"categories": [
+						"Body Armor",
+						"Gloves"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Hat, Leather",
+					"tech_level": "8",
+					"value": "60",
+					"weight": "0.5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						}
+					],
+					"notes": "Flexible",
+					"categories": [
+						"Body Armor",
+						"Headgear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Helmet, Motorcycle with visor",
+					"tech_level": "8",
+					"value": "250",
+					"weight": "3.5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "eyes"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						}
+					],
+					"notes": "Skull DR +3 vs. Crushing",
+					"categories": [
+						"Body Armor",
+						"Headgear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Jacket, Leather",
+					"tech_level": "8",
+					"value": "50",
+					"weight": "5 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arms"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						}
+					],
+					"notes": "Flexible",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Leggings, Sharp-Proof",
+					"tech_level": "8",
+					"value": "100",
+					"weight": "4 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "legs"
+						}
+					],
+					"notes": "Concealable under clothing, not as clothing. DR +2 vs. Cutting and Impaling",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Pants, Leather",
+					"tech_level": "8",
+					"value": "40",
+					"weight": "4 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "legs"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "groin"
+						}
+					],
+					"notes": "Flexible",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Shoes, Climbing",
+					"tech_level": "8",
+					"value": "80",
+					"weight": "1 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "feet"
+						}
+					],
+					"notes": "Flexible",
+					"categories": [
+						"Body Armor",
+						"Footwear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Sleeves, Sharp-Proof",
+					"tech_level": "8",
+					"value": "100",
+					"weight": "2 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arms"
+						}
+					],
+					"notes": "Concealable under clothing, not as clothing. DR +2 vs. Cutting and Impaling",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Vest, Advanced",
+					"tech_level": "8",
+					"value": "4600",
+					"weight": "17 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 35,
+							"location": "torso"
+						}
+					],
+					"notes": "Flexible. Concealable under clothing, not as clothing. DR 5 vs. Crushing",
+					"categories": [
+						"Body Armor"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Vest, Concealable",
+					"tech_level": "8",
+					"value": "1000",
+					"weight": "2 lb",
+					"reference": "MH1:59",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 5,
+							"location": "torso"
+						}
+					],
+					"notes": "Flexible. Concealable under clothing, not as clothing. DR +7 vs. Cutting/Piercing",
+					"categories": [
+						"Body Armor"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Weapons",
+			"tech_level": "8",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Firearms",
+					"tech_level": "8",
+					"notes": "Firearms can be Disguised, Fine, Very Fine",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Beam Weapons (Projector)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Ghost Blaster",
+									"tech_level": "8",
+									"value": "12500",
+									"weight": "50 lb",
+									"reference": "MH1:58,MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "fat",
+												"base": "2d"
+											},
+											"strength": "11‡",
+											"accuracy": "2",
+											"range": "25 /40",
+											"rate_of_fire": "1",
+											"shots": "30",
+											"bulk": "-7",
+											"recoil": "1"
+										}
+									],
+									"notes": "Psychotronic weapon. Reload by recharging internal batteries",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Mind Disruptor",
+									"tech_level": "8",
+									"value": "26000",
+									"weight": "11 lb",
+									"reference": "MH1:58,MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "Will-2 aff"
+											},
+											"strength": "9‡",
+											"accuracy": "3",
+											"range": "10/30",
+											"rate_of_fire": "1",
+											"shots": "22",
+											"bulk": "-5",
+											"recoil": "1"
+										}
+									],
+									"notes": "Psychotronic weapon. Reload by recharging internal batteries",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Neutralizer",
+									"tech_level": "8",
+									"value": "19000",
+									"weight": "15 lb",
+									"reference": "MH1:58,MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "Will-4 aff"
+											},
+											"strength": "10‡",
+											"accuracy": "3",
+											"range": "23/70",
+											"rate_of_fire": "1",
+											"shots": "33",
+											"bulk": "-6",
+											"recoil": "1"
+										}
+									],
+									"notes": "Psychotronic weapon. Reload by recharging internal batteries",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Guns (Pistol)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Auto Pistol, .40",
+									"tech_level": "8",
+									"value": "770",
+									"weight": "2.3 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi++",
+												"base": "2d+2"
+											},
+											"strength": "9",
+											"accuracy": "2",
+											"range": "160/1,800",
+											"rate_of_fire": "3",
+											"shots": "13+1(3)",
+											"bulk": "-2",
+											"recoil": "2"
+										}
+									],
+									"notes": "$4($32). 0.6 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Auto Pistol, .50AE",
+									"tech_level": "8",
+									"value": "1250",
+									"weight": "4.6 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "4d"
+											},
+											"strength": "12",
+											"accuracy": "2",
+											"range": "220/2,500",
+											"rate_of_fire": "3",
+											"shots": "7+1(3)",
+											"bulk": "-4",
+											"recoil": "4"
+										}
+									],
+									"notes": "$8($45) 0.6 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Backup Auto Pistol, .40",
+									"tech_level": "8",
+									"value": "720",
+									"weight": "1.9 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "2d+1"
+											},
+											"strength": "8",
+											"accuracy": "1",
+											"range": "140/1,600",
+											"rate_of_fire": "3",
+											"shots": "6+1(3)",
+											"bulk": "-1",
+											"recoil": "2"
+										}
+									],
+									"notes": "$2($37) 0.4 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Revolver, .44M",
+									"tech_level": "8",
+									"value": "770",
+									"weight": "3.1 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "3d+2"
+											},
+											"strength": "11",
+											"accuracy": "2",
+											"range": "210/2,300",
+											"rate_of_fire": "3",
+											"shots": "6(6)",
+											"bulk": "-3",
+											"recoil": "4"
+										}
+									],
+									"notes": "$4($10) 0.4 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Revolver, Snub .38",
+									"tech_level": "8",
+									"value": "350",
+									"weight": "1.2 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "2d-1"
+											},
+											"strength": "9",
+											"accuracy": "1",
+											"range": "90/1,000",
+											"rate_of_fire": "3",
+											"shots": "5(6)",
+											"bulk": "-1",
+											"recoil": "2"
+										}
+									],
+									"notes": "$2($10) 0.3 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Guns (Rifle)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Assault Carbine, 5.56mm",
+									"tech_level": "8",
+									"value": "950",
+									"weight": "7.3 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "4d+2"
+											},
+											"strength": "9†",
+											"accuracy": "4",
+											"range": "750/2,900",
+											"rate_of_fire": "15",
+											"shots": "30+1(3)",
+											"bulk": "-4",
+											"recoil": "2"
+										}
+									],
+									"notes": "$15($34) 1 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Assault Rifle, 5.56mm",
+									"tech_level": "8",
+									"value": "850",
+									"weight": "8.9 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "5d"
+											},
+											"strength": "8†",
+											"accuracy": "5",
+											"range": "800/3,500",
+											"rate_of_fire": "13",
+											"shots": "30+1(3)",
+											"bulk": "-5",
+											"recoil": "2"
+										}
+									],
+									"notes": "$15($34) 1 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Entry Rifle, .50BW",
+									"tech_level": "8",
+									"value": "1200",
+									"weight": "7 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "6d+1"
+											},
+											"strength": "10†",
+											"accuracy": "4",
+											"range": "380/2,700",
+											"rate_of_fire": "3",
+											"shots": "10+1(3)",
+											"bulk": "-5",
+											"recoil": "4"
+										}
+									],
+									"notes": "$11($34) 1.1 lbs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Sniper Rifle, 7.62mm",
+									"tech_level": "8",
+									"value": "2350",
+									"weight": "15 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "7d"
+											},
+											"strength": "11B†",
+											"accuracy": "5+3",
+											"range": "1,000/4,200",
+											"rate_of_fire": "1",
+											"shots": "10+1(3)",
+											"bulk": "-6",
+											"recoil": "3"
+										}
+									],
+									"notes": "$9($50) 1 lb. Requires two hands to use, regardless of wielder's ST",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Guns (Shotgun)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Auto Shotgun, 12G",
+									"tech_level": "8",
+									"value": "1000",
+									"weight": "8.2 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "1d+1"
+											},
+											"strength": "10†",
+											"accuracy": "3",
+											"range": "40/800",
+											"rate_of_fire": "3x9",
+											"shots": "7+1(2i)",
+											"bulk": "-5",
+											"recoil": "1"
+										}
+									],
+									"notes": "$4",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Auto Shotgun, 12G",
+									"tech_level": "8",
+									"value": "1000",
+									"weight": "8.2 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi++",
+												"base": "5d"
+											},
+											"strength": "10†",
+											"usage": "Firing slugs",
+											"accuracy": "4",
+											"range": "100/1,200",
+											"rate_of_fire": "3",
+											"shots": "7+1(2i)",
+											"bulk": "-5",
+											"recoil": "4"
+										}
+									],
+									"notes": "$4. firing slugs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Compact Pump Shotgun, 12G",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "6.7 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "1d+1"
+											},
+											"strength": "12†",
+											"accuracy": "2",
+											"range": "40/800",
+											"rate_of_fire": "2x9",
+											"shots": "4+1(2i)",
+											"bulk": "-3",
+											"recoil": "1"
+										}
+									],
+									"notes": "$2. 0.4 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Compact Pump Shotgun, 12G",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "6.7 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi++",
+												"base": "5d"
+											},
+											"strength": "12†",
+											"usage": "firing slugs",
+											"accuracy": "3",
+											"range": "100/1,200",
+											"rate_of_fire": "3",
+											"shots": "4+1(2i)",
+											"bulk": "-3",
+											"recoil": "6"
+										}
+									],
+									"notes": "$2. 0.4 lb. firing slugs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Pump Shotgun, 12G",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "8.3 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "1d+1"
+											},
+											"strength": "10†",
+											"accuracy": "3",
+											"range": "40/800",
+											"rate_of_fire": "2x9",
+											"shots": "7+1(2i)",
+											"bulk": "-5",
+											"recoil": "1"
+										}
+									],
+									"notes": "$4. 0.9 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Pump Shotgun, 12G",
+									"tech_level": "8",
+									"value": "400",
+									"weight": "8.3 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi++",
+												"base": "5d"
+											},
+											"strength": "10†",
+											"usage": "firing slugs",
+											"accuracy": "4",
+											"range": "100/1,200",
+											"rate_of_fire": "2",
+											"shots": "7+1(2i)",
+											"bulk": "-5",
+											"recoil": "5"
+										}
+									],
+									"notes": "$4. 0.9 lb. firing slugs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Guns (SMG)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Machine Pistol, 9mm",
+									"tech_level": "8",
+									"value": "425",
+									"weight": "7.5 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "2d+2"
+											},
+											"strength": "10",
+											"accuracy": "2",
+											"range": "130/1,400",
+											"rate_of_fire": "18",
+											"shots": "32(3)",
+											"bulk": "-2",
+											"recoil": "3"
+										}
+									],
+									"notes": "$10($29) 1.3 lbs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "SMG, .45",
+									"tech_level": "8",
+									"value": "900",
+									"weight": "6.5 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi+",
+												"base": "2d+1"
+											},
+											"strength": "8†",
+											"accuracy": "3",
+											"range": "160/1,700",
+											"rate_of_fire": "10",
+											"shots": "25+1(3)",
+											"bulk": "-4",
+											"recoil": "2"
+										}
+									],
+									"notes": "$13($36) 1.6 lbs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "SMG, 9mm",
+									"tech_level": "8",
+									"value": "1500",
+									"weight": "6 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "",
+												"base": "3d-1"
+											},
+											"strength": "8†",
+											"accuracy": "4",
+											"range": "170/1,900",
+											"rate_of_fire": "13",
+											"shots": "30+1(3)",
+											"bulk": "-4",
+											"recoil": "2"
+										}
+									],
+									"notes": "$9($29) 1.2 lbs",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "SMG, Compact 9mm",
+									"tech_level": "8",
+									"value": "1200",
+									"weight": "3.8 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi",
+												"base": "2d+2"
+											},
+											"strength": "8†",
+											"accuracy": "2",
+											"range": "160/1,800",
+											"rate_of_fire": "15",
+											"shots": "30+1(3)",
+											"bulk": "-2",
+											"recoil": "2"
+										}
+									],
+									"notes": "$9($34) 1 lb",
+									"categories": [
+										"Firearm",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Improvised",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Flare Gun",
+									"tech_level": "8",
+									"value": "480",
+									"weight": "2 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "cr dkb inc",
+												"base": "1d+1",
+												"armor_divisor": 0.5
+											},
+											"strength": "?",
+											"usage": "any Guns-4",
+											"accuracy": "?",
+											"range": "10/330",
+											"rate_of_fire": "?",
+											"shots": "1(3)",
+											"bulk": "?",
+											"recoil": "?"
+										}
+									],
+									"notes": "Hot for 10 seconds after firing, 1d burn to anyone touching it",
+									"categories": [
+										"Improvised Weapon",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Nail Gun",
+									"tech_level": "8",
+									"value": "350",
+									"weight": "8 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "pi-",
+												"base": "2d-1"
+											},
+											"strength": "?",
+											"usage": "Pistol-4",
+											"accuracy": "?",
+											"range": "5/25",
+											"rate_of_fire": "?",
+											"shots": "50(3)",
+											"bulk": "?",
+											"recoil": "?"
+										}
+									],
+									"categories": [
+										"Improvised Weapon",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Spray Can and a Lighter",
+									"tech_level": "8",
+									"value": "2",
+									"weight": "0.5 lb",
+									"reference": "MH1:63",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "burn",
+												"base": "1d-2"
+											},
+											"strength": "?",
+											"usage": "Flamethrower-2, Sprayer",
+											"accuracy": "?",
+											"range": "1",
+											"rate_of_fire": "?",
+											"shots": "5",
+											"bulk": "?",
+											"recoil": "?"
+										}
+									],
+									"categories": [
+										"Improvised Weapon",
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Lioquid Projector (Squirt Gun)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Backpack Squirt Gun",
+									"tech_level": "8",
+									"value": "45",
+									"weight": "18 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "special"
+											},
+											"strength": "4†",
+											"range": "12",
+											"rate_of_fire": "Jet",
+											"shots": "15(12)",
+											"bulk": "-3"
+										}
+									],
+									"notes": "($15) 15 lbs. Usually filled with Holy Water. Dispersion gives +2 to hit",
+									"categories": [
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Squirt Carbine",
+									"tech_level": "8",
+									"value": "30",
+									"weight": "3.5 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "special"
+											},
+											"strength": "4†",
+											"range": "8",
+											"rate_of_fire": "Jet",
+											"shots": "2(7)",
+											"bulk": "-3"
+										}
+									],
+									"notes": "($5) 2 lbs. Usually filled with Holy Water. Dispersion gives +2 to hit",
+									"categories": [
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Liquid Projector (Flamethrower)",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Backpack Flamethrower",
+									"tech_level": "8",
+									"value": "2000",
+									"weight": "50 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "burn",
+												"base": "3d"
+											},
+											"strength": "10†",
+											"range": "40",
+											"rate_of_fire": "Jet",
+											"shots": "10",
+											"bulk": "-7"
+										}
+									],
+									"notes": "$10. 20 lbs. If hit, take 1d burn/s for 2dx5s (1dx5 past 25 yards). If dmg through tank DR2t, 1/6 explodes to hit all within 2 yards",
+									"categories": [
+										"Heavy Weapon",
+										"Ranged Weapon"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Handheld Flamethrower",
+									"tech_level": "8",
+									"value": "500",
+									"weight": "7.8 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "burn",
+												"base": "3d"
+											},
+											"strength": "6†",
+											"range": "40",
+											"rate_of_fire": "Jet",
+											"shots": "1",
+											"bulk": "-4"
+										}
+									],
+									"notes": "$1. 2 lbs. If hit, take 1d burn/s for 2dx5s (1dx5 past 25 yards).",
+									"categories": [
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Liquid Projector (Sprayer)",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Handheld Sprayer",
+									"tech_level": "8",
+									"value": "10",
+									"weight": "0.1 lb",
+									"reference": "MH1:62",
+									"weapons": [
+										{
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "special"
+											},
+											"strength": "3",
+											"range": "2",
+											"rate_of_fire": "Jet",
+											"shots": "20",
+											"bulk": "-1"
+										}
+									],
+									"notes": "Usually filled with Holy Water. Dispersion gives +2 to hit",
+									"categories": [
+										"Ranged Weapon"
+									]
+								}
+							]
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Special Ammo",
+							"tech_level": "8",
+							"open": true,
+							"children": [
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Payload Options",
+									"tech_level": "8",
+									"reference": "MH1:63",
+									"notes": "Armor-Piercing, Chemical, Dragon's Breath, Explosive, Flare, Hollow-Point, Holy-Water, Rock Salt, Silver, Thermate, Wooden",
+									"categories": [
+										"Ammunition"
+									]
+								},
+								{
+									"type": "equipment",
+									"version": 1,
+									"quantity": 1,
+									"description": "Powder Options",
+									"tech_level": "8",
+									"reference": "MH1:63",
+									"notes": "Extra-Powerful, Hand-Matched, Match-Grade, Silent",
+									"categories": [
+										"Ammunition"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Grenades",
+					"tech_level": "8",
+					"reference": "MH1:63",
+					"categories": [
+						"Hand Grenade"
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Concussion Grenade",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "0.3 lb",
+							"reference": "MH1:63",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cr ex",
+										"base": "5d"
+									}
+								}
+							],
+							"notes": "4s fuse. Heard at +3",
+							"categories": [
+								"Hand Grenade"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Fragmentation Grenade",
+							"tech_level": "8",
+							"value": "25",
+							"weight": "0.4 lb",
+							"reference": "MH1:63",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cr ex",
+										"base": "3d-1",
+										"fragmentation": "2d",
+										"fragmentation_type": "cut"
+									}
+								}
+							],
+							"notes": "4s fuse. Heard at +3",
+							"categories": [
+								"Hand Grenade"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Smoke Grenade",
+							"tech_level": "8",
+							"value": "25",
+							"weight": "0.2 lb",
+							"reference": "MH1:63",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": ""
+									}
+								}
+							],
+							"notes": "2s fuse. Heard at +0. Tear Gas +$10. Fills 4 yard radius for 20s",
+							"categories": [
+								"Hand Grenade"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "White Phosphorus Grenade",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "1 lb",
+							"reference": "MH1:63",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "burn ex",
+										"base": "2d",
+										"fragmentation": "1d",
+										"fragmentation_armor_divisor": 0.2,
+										"fragmentation_type": "cut"
+									}
+								}
+							],
+							"notes": "4s fuse. Heard at +3. Each fragment does dmg every 10s for 1 minute. DX roll per fragment to brush off. Also acts as smoke grenade.",
+							"categories": [
+								"Hand Grenade"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Melee Weapons",
+					"tech_level": "8",
+					"notes": "Weapons can be Balanced, Disguised, Fine, Holy, Silver, Silver-Coated, Titanium, Very Fine, Weighted",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Chainsaw",
+							"tech_level": "8",
+							"value": "300",
+							"weight": "13 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "1d"
+									},
+									"strength": "11‡",
+									"usage": "swing",
+									"reach": "1",
+									"parry": "0U",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"notes": "low-end chainsaw is half price with 1/6 chance of chain snapping if stopped by DR",
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Circular Saw",
+							"tech_level": "8",
+							"value": "75",
+							"weight": "20 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "+3",
+										"armor_divisor": 2
+									},
+									"strength": "11‡",
+									"usage": "swing",
+									"reach": "1",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -3
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Pool Cue",
+							"tech_level": "8",
+							"value": "30",
+							"weight": "2 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "sw"
+									},
+									"strength": "9",
+									"usage": "swing",
+									"reach": "1",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Broadsword",
+											"modifier": -1
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Power Drill",
+							"tech_level": "8",
+							"value": "50",
+							"weight": "2 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "pi++",
+										"base": "1d+2",
+										"armor_divisor": 2
+									},
+									"strength": "8",
+									"usage": "thrust",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Road Flare",
+							"tech_level": "8",
+							"value": "5",
+							"weight": "1 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "burn",
+										"base": "1d-4"
+									},
+									"strength": "6",
+									"reach": "1",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Scissors OR Screwdriver",
+							"tech_level": "8",
+							"value": "2",
+							"weight": "0.3 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "-2"
+									},
+									"strength": "5",
+									"usage": "thrust",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Knife",
+											"modifier": -1
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Shovel",
+							"tech_level": "8",
+							"value": "15",
+							"weight": "6 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "sw",
+										"base": "+3"
+									},
+									"strength": "12‡",
+									"usage": "swing",
+									"reach": "1, 2*",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Tire Iron",
+							"tech_level": "8",
+							"value": "10",
+							"weight": "2 lb",
+							"reference": "MH1:60",
+							"weapons": [
+								{
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "sw",
+										"base": "+1"
+									},
+									"strength": "10",
+									"usage": "swing",
+									"reach": "1",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Axe/Mace",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"categories": [
+								"Improvised Weapon",
+								"Melee Weapon"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Muscle-Powered Ranged Weapons",
+					"tech_level": "8",
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Bows and Crossbows",
+							"notes": "See Basic Set. They can be Balanced, Compound, Fine. Arrow and bolt heads can be normal, bodkin-point, willow-leaf in shape and silver in material"
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Thrown Weapons",
+							"tech_level": "8",
+							"notes": "Same as Melee Weapons"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "54a72f71-a08f-42ce-ba7b-89806488a214",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Meta-trait (Intact Undead)",
+			"reference": "F133",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Doesn't Breathe",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"reference": "B49"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Feature (Sterile)",
+					"physical": true
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "High Pain Threshold",
+					"physical": true,
+					"base_points": 10,
+					"reference": "B59"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Injury Tolerance (No Blood)",
+					"physical": true,
+					"exotic": true,
+					"base_points": 5,
+					"reference": "B61"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Injury Tolerance (Unliving)",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"reference": "B61"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Resistant (Immune to Metabolic Hazards)",
+					"physical": true,
+					"base_points": 30,
+					"reference": "B81"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Supernatural Features (No Body Heat)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -5,
+					"reference": "B157"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Supernatural Features (Pallor)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -10,
+					"reference": "B157"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Temperature Tolerance",
+					"physical": true,
+					"levels": "10",
+					"points_per_level": 1,
+					"reference": "B93"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Unaging",
+					"physical": true,
+					"exotic": true,
+					"base_points": 15,
+					"reference": "B95"
+				}
+			]
+		}
+	]
+}

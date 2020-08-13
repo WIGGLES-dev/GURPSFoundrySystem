@@ -1,0 +1,184 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "fb4418c5-5645-463a-b67f-d26a9757841c",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Nuclear Disposal",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Fearlessness",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 2,
+					"reference": "B55",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Precautions",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 1,
+					"reference": "ACT4:23"
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Nuclear Disposal",
+			"reference": "ACT4:19",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Security",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Security",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Expert Skill",
+					"reference": "B193",
+					"specialization": "Military Science",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"categories": [
+						"Knowledge",
+						"Military",
+						"Scholarly"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Explosives",
+					"reference": "B194",
+					"specialization": "Nuclear Ordnance Disposal",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"specialization": "Explosive Ordnance Disposal",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Military",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Hazardous Materials",
+					"reference": "B199",
+					"specialization": "Radioactive",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "NBC Suit",
+					"reference": "B192",
+					"tech_level": "",
+					"difficulty": "DX/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Battlesuit",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Diving Suit",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Vacc Suit",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Military",
+						"Technical"
+					]
+				}
+			]
+		}
+	]
+}

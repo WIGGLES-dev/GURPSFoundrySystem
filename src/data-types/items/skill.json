@@ -1,0 +1,14 @@
+{
+    "skill": {
+        "templates": [
+            "skill_like",
+            "notable"
+        ],
+        "type": "skill",
+        "tech_level": "",
+        "specialization": "",
+        "encumbrance_penalty_multiplier": 1,
+        "defaults": [],
+        "defaulted_from": false
+    }
+}

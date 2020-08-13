@@ -1,0 +1,264 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "5a565d51-7383-4bd6-8953-f08b644a795d",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Travel Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Travel (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction",
+							"physical": true,
+							"exotic": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "HT",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Area Effect, 4 Yards",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Advantage, Enhanced Move 1 (Ground)",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Emanation",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Extended Duration, Permanent while servitor alive and summoned",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Malediction",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Preparation Required, 1 Hour",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Selective Area",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								}
+							],
+							"reference": "B35",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Travel",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Affliction",
+							"physical": true,
+							"exotic": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "HT",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Area Effect, 4 Yards",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Advantage, Enhanced Move 0.5 (Ground)",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Emanation",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Extended Duration, Permanent while servitor alive and summoned",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Malediction",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Preparation Required, 1 Hour",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Selective Area",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								}
+							],
+							"reference": "B35",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Travel Element",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Travel (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Map!",
+							"difficulty": "IQ/W",
+							"points": 36
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Navigation",
+							"reference": "B211",
+							"specialization": "Land",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Cartography",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Mathematics",
+									"specialization": "Surveying",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Air",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Navigation",
+									"specialization": "Sea",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration",
+								"Technical",
+								"Vehicle"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Travel",
+					"open": true
+				}
+			]
+		}
+	]
+}

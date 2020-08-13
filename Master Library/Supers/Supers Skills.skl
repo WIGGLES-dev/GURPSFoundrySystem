@@ -1,0 +1,498 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "24403158-d278-4c7c-a583-06355257a496",
+	"rows": [
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Bullet Parry",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Parry Missile-Weapons",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Parry Missile-Weapons"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Camouflaged Mind Block",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Mind Block",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Mind Block"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Coded Thoughts",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Mind Block",
+				"modifier": -6
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Mind Block"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Cryptography"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Current Affairs",
+			"reference": "SU35",
+			"specialization": "Supers",
+			"tech_level": "",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Research",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Current Affairs",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Knowledge",
+				"Social",
+				"Supers"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Energy Parry",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Parry Missile-Weapons",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Parry Missile-Weapons"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Precognition"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Hidden Lore",
+			"reference": "SU36",
+			"specialization": "Supers",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"categories": [
+				"Knowledge"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Human Missile",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Super Jump"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Acrobatics"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Human Missile",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Aerobatics",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Flight"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Aerobatics"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Human Missile",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Aquabatics",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Flight"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Move (Water)"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Amphibious"
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Aquatic"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Aquabatics"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Human Missile",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Jumping",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Super Jump"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Jumping"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Multiport",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"default": {
+				"type": "Skill",
+				"name": "Body Sense"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Warp"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Aquabatics"
+						}
+					}
+				]
+			},
+			"notes": "Offsets Rapid Fire penalties"
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "No Mind",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"default": {
+				"type": "Skill",
+				"name": "Mind Block",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Invisibility Art"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Mind Block"
+						}
+					}
+				]
+			},
+			"notes": "Can not exceed level of Invisibility Art"
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Remote Hypnosis",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"default": {
+				"type": "Skill",
+				"name": "Hypnosis",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Hypnosis"
+						}
+					}
+				]
+			}
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Tight Beam",
+			"reference": "SU38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Innate Attack",
+				"specialization": "Beam",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Unusual Training (Tight Beam)"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Innate Attack"
+						}
+					}
+				]
+			}
+		}
+	]
+}

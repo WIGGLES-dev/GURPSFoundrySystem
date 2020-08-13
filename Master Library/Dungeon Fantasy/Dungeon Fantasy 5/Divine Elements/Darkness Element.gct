@@ -1,0 +1,342 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "34a349f7-6352-49ba-8164-baab3f051190",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Darkness Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Darkness (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Dark Vision",
+							"physical": true,
+							"exotic": true,
+							"base_points": 25,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Can see colors in the dark",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hypersensory",
+									"reference": "P46",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Affects Others 2",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								}
+							],
+							"reference": "B47",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Obscure (Vision)",
+							"physical": true,
+							"exotic": true,
+							"levels": "10",
+							"points_per_level": 2,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Defensive",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Extended",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "@Sense@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Ranged",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stealthy",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Always On",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total",
+									"notes": "@Source@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total",
+									"notes": "@Power@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Area Effect, 4 Yards",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Variable, Area",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total"
+								}
+							],
+							"reference": "B72",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Darkness",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Dark Vision",
+							"physical": true,
+							"exotic": true,
+							"base_points": 25,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Can see colors in the dark",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Hypersensory",
+									"reference": "P46",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								}
+							],
+							"reference": "B47",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Obscure (Vision)",
+							"physical": true,
+							"exotic": true,
+							"levels": "10",
+							"points_per_level": 2,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Defensive",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Extended",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "@Sense@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Ranged",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stealthy",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Always On",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total",
+									"notes": "@Source@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total",
+									"notes": "@Power@"
+								}
+							],
+							"reference": "B72",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Darkness",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Darkness",
+					"open": true
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Darkness (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Innate Attack",
+							"reference": "B201",
+							"specialization": "Gaze",
+							"difficulty": "DX/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Innate Attack",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

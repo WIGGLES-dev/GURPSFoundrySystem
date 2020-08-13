@@ -1,0 +1,1039 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "7ce0b149-eca3-485b-a25b-6ca45aae3a6f",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Fire Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Fire (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"round_down": true,
+							"name": "Alternate Form (Superior Body of Fire)",
+							"physical": true,
+							"exotic": true,
+							"base_points": 46,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cannot Memorize Forms",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Flawed",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"notes": "Only for Morph. Flawed is mutually incompatible with Cosmetic."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total",
+									"notes": "Only for Morph. You must touch the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total",
+									"notes": "Only for Morph. You must obtain a drop of blood, hair sample, etc. from the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph. You must eat the entire target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Projected Form",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": " Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Skinbound",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reduced Time",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 2
+								}
+							],
+							"reference": "B83",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Innate Attack (Burn)",
+							"physical": true,
+							"exotic": true,
+							"levels": "3",
+							"points_per_level": 5,
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "burn",
+										"base": "1d"
+									},
+									"accuracy": "3",
+									"range": "100/10",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"specialization": "Projectile"
+										},
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "Mildly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "Highly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Double Blunt Trauma",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "1HP per 10 dmg"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Explosion",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1,
+									"notes": "Hot"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Radiation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Surge",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"notes": "3"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total",
+									"notes": "5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total",
+									"notes": "10"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Side Effect",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Symptoms",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total",
+									"notes": "0.5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "0.2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -70,
+									"affects": "total",
+									"notes": "0.1"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Costs Fatigue, 1FP",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total"
+								}
+							],
+							"reference": "B61",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Infravision",
+							"physical": true,
+							"exotic": true,
+							"base_points": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No normal vision",
+									"reference": "B60",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								}
+							],
+							"reference": "B60",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Fire",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Alternate Form (Enhanced Body of Fire)",
+							"physical": true,
+							"exotic": true,
+							"base_points": 22,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cannot Memorize Forms",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Flawed",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"notes": "Only for Morph. Flawed is mutually incompatible with Cosmetic."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total",
+									"notes": "Only for Morph. You must touch the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total",
+									"notes": "Only for Morph. You must obtain a drop of blood, hair sample, etc. from the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph. You must eat the entire target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Projected Form",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": " Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Skinbound",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reduced Time",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 2
+								}
+							],
+							"reference": "B83",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Innate Attack (Burn)",
+							"physical": true,
+							"exotic": true,
+							"levels": "2",
+							"points_per_level": 5,
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "burn",
+										"base": "1d"
+									},
+									"accuracy": "3",
+									"range": "100/10",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"specialization": "Projectile"
+										},
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total",
+									"levels": 1,
+									"notes": "10 sec; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 min; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 10,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 hr; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cyclic",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 5,
+									"affects": "total",
+									"levels": 1,
+									"notes": "1 day; Resistible"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "Mildly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Contagious",
+									"reference": "B103",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "Highly"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Double Blunt Trauma",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "1HP per 10 dmg"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Explosion",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1,
+									"notes": "Hot"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Radiation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Surge",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"notes": "3"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total",
+									"notes": "5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total",
+									"notes": "10"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Side Effect",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Symptoms",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total",
+									"notes": "0.5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "0.2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -70,
+									"affects": "total",
+									"notes": "0.1"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Costs Fatigue, 1FP",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total"
+								}
+							],
+							"reference": "B61",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Fire Element",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Fire (Doubled)",
+					"notes": "Increase Innate Attack to 4 points",
+					"open": true
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Fire",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Innate Attack",
+							"reference": "B201",
+							"specialization": "Projectile",
+							"difficulty": "DX/E",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Innate Attack",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

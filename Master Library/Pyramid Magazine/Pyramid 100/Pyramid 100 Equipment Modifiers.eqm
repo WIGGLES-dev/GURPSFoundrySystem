@@ -1,0 +1,68 @@
+{
+	"type": "eqp_modifier_list",
+	"version": 1,
+	"id": "a0ab04b1-75c7-42ac-bfc8-a55cbdb15236",
+	"rows": [
+		{
+			"type": "eqp_modifier_container",
+			"version": 1,
+			"disabled": true,
+			"name": "Fashion Forward Modifiers",
+			"reference": "PY100:25",
+			"open": true,
+			"children": [
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"name": "Kinetic Fabric (TL9)",
+					"reference": "PY100:26",
+					"cost_type": "to_base_cost",
+					"cost": "x2",
+					"notes": "2A/10hr"
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"name": "Magnetic Fluid (TL9)",
+					"reference": "PY100:26",
+					"cost_type": "to_base_cost",
+					"cost": "x3",
+					"weight_type": "to_base_weight",
+					"weight": "x3",
+					"notes": "B/6hr"
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"name": "Video Cloth (TL9)",
+					"reference": "PY100:26",
+					"cost_type": "to_base_cost",
+					"cost": "x5",
+					"notes": "B/10hr. Speakers sold separately for $50"
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"name": "Living Garments (TL10)",
+					"reference": "PY100:26",
+					"cost_type": "to_base_cost",
+					"cost": "x4",
+					"weight_type": "to_base_weight",
+					"weight": "x4",
+					"notes": "Storage costs 1% of cost per month"
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"name": "Force Suit (TL12^)",
+					"reference": "PY100:26",
+					"cost_type": "to_original_cost",
+					"cost": "+800",
+					"weight_type": "to_original_weight",
+					"weight": "+1 lb",
+					"notes": "B/4hr. Provides 1DR, the \"filling\" may require extra cost and weight"
+				}
+			]
+		}
+	]
+}

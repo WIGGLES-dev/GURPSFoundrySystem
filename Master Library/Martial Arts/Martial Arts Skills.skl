@@ -1,0 +1,3200 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "86c9c189-7c80-4caa-b7de-91df49988286",
+	"rows": [
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Acrobatic Stand",
+			"reference": "MA65",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics",
+				"modifier": -6
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Acrobatics"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Aggressive Parry",
+			"reference": "MA65",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Boxing",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Aggressive Parry",
+			"reference": "MA65",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Aggressive Parry",
+			"reference": "MA65",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Arm Lock",
+			"reference": "MA65",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Grappling or Melee Weapon Skill@"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Grappling or Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Armed Grapple",
+			"reference": "MA67",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Cloak or Melee Weapon Skill@",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Cloak or Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Attack from Above",
+			"reference": "MA67",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Unarmed or Melee Weapon Skill@",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Unarmed or Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Back Strike",
+			"reference": "MA67",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Melee Weapon Skill@",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Backbreaker",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 3,
+			"default": {
+				"type": "ST",
+				"modifier": -3
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Backbreaker",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 3,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -3
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Bind Weapon",
+			"reference": "MA67",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Jitte/Sai or Fencing Weapon Skill@",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Jitte/Sai or Fencing Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Binding",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Binding",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Knot-Tying"
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Breakfall",
+			"reference": "MA68",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 5,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Acrobatics"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Breakfall",
+			"reference": "MA68",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 5,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Breakfall",
+			"reference": "MA68",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 5,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wrestling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Cavalry Training",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Melee Weapon Skill@",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Riding"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Animal",
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Choke Hold",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Melee Weapon Skill@",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Close Combat",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -2,
+			"default": {
+				"type": "Skill",
+				"name": "@Reach 1 Weapon Skill@",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Reach 1 Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Close Combat",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "@Reach 2 Weapon Skill@",
+				"modifier": -8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Reach 2 Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Close Combat",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -6,
+			"default": {
+				"type": "Skill",
+				"name": "@Reach 3 Weapon Skill@",
+				"modifier": -12
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Reach 3 Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Combat Riding",
+			"reference": "MA69",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Riding"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Riding"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Counterattack",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Unarmed or Melee Weapon Skill@",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Unarmed or Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Crack",
+			"reference": "MA70",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Whip",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Whip"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Drop Kick",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Drop Kick",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Sumo Wrestling",
+				"modifier": -1
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Sumo Wrestling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Drop Kick",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wrestling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Ear Clap",
+			"reference": "MA70",
+			"difficulty": "A",
+			"points": 1,
+			"limit": -1,
+			"default": {
+				"type": "Skill",
+				"name": "@Unarmed Striking Skill@",
+				"modifier": -3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Unarmed Striking Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Elbow Drop",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Elbow Drop",
+			"reference": "MA70",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wrestling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Entangle",
+			"reference": "MA71",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Kusari",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Kusari"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Entangle",
+			"reference": "MA71",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Whip",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Whip"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Evade",
+			"reference": "MA71",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 5,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Acrobatics"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Evade",
+			"reference": "MA71",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 5,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Exotic Hand Strike",
+			"reference": "MA71",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Gouging",
+			"reference": "MA71",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Gouging",
+			"reference": "MA71",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Gouging",
+			"reference": "MA71",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Wrestling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Pluck",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -10
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Pluck",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -10
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Poke",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "Boxing",
+				"modifier": -9
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Boxing"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Poke",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -9
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Poke",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -4,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -9
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Rake",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Brawling"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Eye-Rake",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Fighting While Seated",
+			"reference": "MA83",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Unarrmed or Weapon Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Flying Jump Kick",
+			"reference": "MA83",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -7
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Flying Lunge",
+			"reference": "MA83",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Thrusting Weapon Skill@",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Flying Lunge",
+			"reference": "MA83",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Grand Disarm",
+			"reference": "MA84",
+			"difficulty": "H",
+			"points": 2,
+			"default": {
+				"type": "Skill",
+				"name": "@Fencing Weapon Skill@",
+				"modifier": -9
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Grand Disarm",
+			"reference": "MA84",
+			"difficulty": "H",
+			"points": 2,
+			"default": {
+				"type": "Skill",
+				"name": "@Non-Fencing Melee Combat Skill@",
+				"modifier": -11
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hammer Fist",
+			"reference": "MA73",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hand Catch",
+			"reference": "MA84",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Judo",
+				"modifier": -3
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hand Catch",
+			"reference": "MA84",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Sumo Wrestling",
+				"modifier": -3
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hand Catch",
+			"reference": "MA84",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Wrestling",
+				"modifier": -3
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Handcuffing",
+			"reference": "MA73",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Binding"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Handcuffing",
+			"reference": "MA73",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "DX",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Handcuffing",
+			"reference": "MA73",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Handcuffing",
+			"reference": "MA73",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hands-Free Riding",
+			"reference": "MA73",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Riding",
+				"modifier": -3
+			},
+			"categories": [
+				"Animal",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Head Butt",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Head Butt",
+					"reach": "C",
+					"parry": "no",
+					"block": "no",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Head Butt"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -1
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -1
+						}
+					]
+				}
+			],
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Head Butt",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Head Butt",
+					"reach": "C",
+					"parry": "no",
+					"block": "no",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Head Butt"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -1
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -1
+						}
+					]
+				}
+			],
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Head Lock",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Head Lock",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Hook",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Melee Weapon Skill@",
+				"modifier": -5
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "riding"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Hypnotic Hands",
+			"reference": "MA61",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Trained by a Master"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Hypnotism"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					}
+				]
+			},
+			"categories": [
+				"Martial Arts"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Initial Carving",
+			"reference": "MA85",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Fencing Weapon Skill@",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Jam",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Jam",
+			"reference": "MA74",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Judo Throw",
+			"reference": "MA75",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Knee Drop",
+			"reference": "MA76",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Knee Drop",
+			"reference": "MA76",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Grapple",
+			"reference": "MA76",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "DX"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Grapple",
+			"reference": "MA76",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Grapple",
+			"reference": "MA76",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Lock",
+			"reference": "MA76",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Lock",
+			"reference": "MA76",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Leg Throw",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lethal Eye-Poke",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -5,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -11
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lethal Eye-Poke",
+			"reference": "MA72",
+			"difficulty": "H",
+			"points": 2,
+			"limit": -5,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -11
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Karate"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lethal Kick",
+			"reference": "MA85",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lethal Strike",
+			"reference": "MA85",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Lizard Climb",
+			"reference": "MA61",
+			"difficulty": "DX/H",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Climbing"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Trained by a Master"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Acrobatics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					}
+				]
+			},
+			"categories": [
+				"Martial Arts"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Low Fighting",
+			"reference": "MA77",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Combat Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lower-Body Arm Lock",
+			"reference": "MA79",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lower-Body Arm Lock",
+			"reference": "MA78",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lower-Body Leg Lock",
+			"reference": "MA79",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Lower-Body Leg Lock",
+			"reference": "MA78",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Piledriver",
+			"reference": "MA85",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "ST"
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Piledriver",
+			"reference": "MA85",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -5
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Pole-Vault Kick",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Jumping"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Precognitive Parry",
+			"reference": "MA62",
+			"difficulty": "IQ/H",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@melee combat skill@"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 18
+						}
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Precognition"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Danger Sense"
+								}
+							}
+						]
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Weapon Master"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Trained by a Master"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Martial Arts"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Pressure-Point Strike",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Combat Skill@",
+				"modifier": -2
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pressure Secrets"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Pressure Points"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Push Kick",
+			"reference": "MA77",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Push Kick",
+			"reference": "MA77",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Quick Mount",
+			"reference": "MA77",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics",
+				"modifier": -3
+			},
+			"categories": [
+				"Animal",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Quick Mount",
+			"reference": "MA77",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Jumping",
+				"modifier": -3
+			},
+			"categories": [
+				"Animal",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Quick Mount",
+			"reference": "MA77",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Riding",
+				"modifier": -3
+			},
+			"categories": [
+				"Animal",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Return Strike",
+			"reference": "MA78",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Flail",
+				"modifier": -5
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Return Strike",
+			"reference": "MA78",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Kusari",
+				"modifier": -5
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Reverse Grip",
+			"reference": "MA78",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@One-Handed Weapon Skill@",
+				"modifier": -6
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Reverse Grip",
+			"reference": "MA78",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Two-Handed Weapon Skill@",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Reverse Grip",
+			"reference": "MA78",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Tonfa"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Roll with Blow",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Unarmed Combat Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Roll with Blow",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Acrobatics",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Sacrifice Throw",
+			"reference": "MA78",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo"
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Scissors Hold",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"name": "Sensitivity",
+			"reference": "MA62",
+			"difficulty": "Per/VH",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Weapon Master"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Trained by a Master"
+								}
+							}
+						]
+					}
+				]
+			},
+			"categories": [
+				"Martial Arts"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Snap Weapon",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Jitte/Sai",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Snap Weapon",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "ST",
+				"modifier": -4
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Spinning Kick",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Spinning Punch",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Spinning Strike",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Melee Weapon Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Springing Attack",
+			"reference": "MA87",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "@Combat Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Stamp Kick",
+			"reference": "MA80",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Stamp Kick",
+			"reference": "MA80",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -3
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Staying Seated",
+			"reference": "MA81",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "Riding"
+			},
+			"categories": [
+				"Animal",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Timed Defense",
+			"reference": "MA89",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Parry",
+				"name": "@Combat Skill@",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Timed Defense",
+			"reference": "MA89",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Block",
+				"name": "Shield",
+				"modifier": -2
+			},
+			"categories": [
+				"Cinematic Techniques",
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Triangle Choke",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Judo",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Triangle Choke",
+			"reference": "MA79",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -5
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Two-Handed Punch",
+			"reference": "MA81",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -2
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Uppercut",
+			"reference": "MA81",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Boxing",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Uppercut",
+			"reference": "MA81",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Brawling",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Uppercut",
+			"reference": "MA81",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Skill",
+				"name": "Karate",
+				"modifier": -1
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Wrench @Limb@",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 3,
+			"default": {
+				"type": "ST",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Wrench Spine",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 3,
+			"default": {
+				"type": "ST",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Wrench Spine",
+			"reference": "MA82",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 3,
+			"default": {
+				"type": "Skill",
+				"name": "Wrestling",
+				"modifier": -4
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"name": "Wrist Lock",
+			"reference": "MA65",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Grappling or Melee Weapon Skill@"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Grappling or Melee Weapon Skill@"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat",
+				"Technique"
+			]
+		}
+	]
+}

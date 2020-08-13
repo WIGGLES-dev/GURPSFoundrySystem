@@ -1,0 +1,187 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "8b61ba00-46b0-42f1-8b30-515c8b748826",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Fear Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Fear (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Terror",
+							"mental": true,
+							"supernatural": true,
+							"levels": "5",
+							"base_points": 30,
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Always On",
+									"reference": "B93",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Active",
+									"reference": "P84",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Presence",
+									"reference": "P84",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Selective Effect",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								}
+							],
+							"reference": "B93",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Fear",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Terror",
+							"mental": true,
+							"supernatural": true,
+							"levels": "1",
+							"base_points": 30,
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Always On",
+									"reference": "B93",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Active",
+									"reference": "P84",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Presence",
+									"reference": "P84",
+									"cost_type": "percentage",
+									"cost": 25,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Selective Effect",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								}
+							],
+							"reference": "B93",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Fear Element",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Fear (Doubled)",
+					"notes": "Increase Psychology (Fears) to 4 points",
+					"open": true
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Fear",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Psychology",
+							"reference": "B216",
+							"specialization": "Fears",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Sociology",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Social Sciences/Humanities"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

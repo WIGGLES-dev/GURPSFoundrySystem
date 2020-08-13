@@ -1,0 +1,12 @@
+{
+    "item": {
+        "templates": ["character_element", "list_element"],
+        "type": "equipment",
+        "quantity": 1,
+        "description": "",
+        "tech_level": "",
+        "legality_class": "",
+        "value": 0,
+        "weight": 0
+    }
+}

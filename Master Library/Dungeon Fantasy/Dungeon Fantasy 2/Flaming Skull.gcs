@@ -1,0 +1,601 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "ef376335-c1cd-44ab-be42-fab6b7784fb6",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_and_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"block_layout": [
+			"reactions",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Jan 18, 2016, 12:00 AM",
+	"modified_date": "Dec 2, 2019, 2:33 PM",
+	"profile": {
+		"name": "Flaming Skull",
+		"body_type": "humanoid"
+	},
+	"HP_adj": 20,
+	"FP_adj": -10,
+	"total_points": 174,
+	"ST": 0,
+	"DX": 14,
+	"IQ": 10,
+	"HT": 10,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Doesn't Breathe",
+			"physical": true,
+			"exotic": true,
+			"base_points": 20,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Gills",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Gills",
+					"reference": "B49",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Suffocates in air"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Absorption",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total",
+					"notes": "Can hold breath 25 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "Can hold breath 50 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total",
+					"notes": "Can hold breath 100 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Can hold breath 200 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Can hold breath 300 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Oxygen Combustion",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "B49",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Doesn't Eat or Drink",
+			"physical": true,
+			"exotic": true,
+			"base_points": 10,
+			"reference": "B50",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Doesn't Sleep",
+			"physical": true,
+			"exotic": true,
+			"base_points": 20,
+			"reference": "B50",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "High Pain Threshold",
+			"physical": true,
+			"base_points": 10,
+			"reference": "B59",
+			"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Immunity to Metabolic Hazards",
+			"physical": true,
+			"base_points": 30,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "@Very Common: Metabolic Hazards, etc.@",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 30,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "@Common: Poison, Sickness, etc.@",
+					"reference": "B81",
+					"cost_type": "points",
+					"cost": 15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "@Occasional: Disease, Ingested Poison, etc.@",
+					"reference": "B81",
+					"cost_type": "points",
+					"cost": 10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+					"reference": "B81",
+					"cost_type": "points",
+					"cost": 5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Immunity",
+					"reference": "B81",
+					"cost_type": "multiplier",
+					"cost": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "+8 to all HT rolls to resist",
+					"reference": "B81",
+					"cost_type": "multiplier",
+					"cost": 0.5
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "+3 to all HT rolls to resist",
+					"reference": "B81",
+					"cost_type": "multiplier",
+					"cost": 0.33
+				}
+			],
+			"reference": "B81",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Injury Tolerance (Diffuse)",
+			"physical": true,
+			"exotic": true,
+			"base_points": 100,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Infiltration",
+					"reference": "P53",
+					"cost_type": "percentage",
+					"cost": 40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Swarm",
+					"reference": "P53",
+					"cost_type": "percentage",
+					"cost": 80,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Swarm",
+					"reference": "P53",
+					"cost_type": "percentage",
+					"cost": 160,
+					"affects": "total",
+					"notes": "Can Affect Substantial"
+				}
+			],
+			"reference": "B60",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "No Fine Manipulators",
+			"physical": true,
+			"base_points": -30,
+			"reference": "B145",
+			"features": [
+				{
+					"type": "cost_reduction",
+					"attribute": "st",
+					"percentage": 40
+				},
+				{
+					"type": "cost_reduction",
+					"attribute": "dx",
+					"percentage": 40
+				}
+			],
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "No Legs (Aerial)",
+			"physical": true,
+			"exotic": true,
+			"reference": "B145",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "flight"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Flight",
+			"physical": true,
+			"exotic": true,
+			"base_points": 40,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Newtonian Space Flight",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": 25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Space Flight",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Cannot Hover",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Controlled Gliding",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -45,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Gliding",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Lighter Than Air",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Low Ceiling",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "30'"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Low Ceiling",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "10'"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"name": "Low Ceiling",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total",
+					"notes": "5'"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Small Wings",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Space Flight Only",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -75,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Winged",
+					"reference": "B56",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Planetary",
+					"reference": "P50",
+					"cost_type": "percentage",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Requires Surface",
+					"reference": "P50",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				}
+			],
+			"reference": "B56",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Unfazeable",
+			"mental": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "Familiar Horrors",
+					"reference": "H20",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				}
+			],
+			"reference": "B95",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Flaming Bite",
+			"physical": true,
+			"exotic": true,
+			"base_points": 11,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "burn",
+						"base": "+2"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				}
+			],
+			"reference": "D2:23",
+			"notes": "Cosmic, Ignores DR",
+			"categories": [
+				"Advantage"
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"version": 1,
+			"text": "Flaming Skull (DF2:23)\n\nFlaming skulls are semi-corporeal undead that resemble flying human skills wreathed in fire. Streaking into close combat, they deliver flaming bites to their living prey. Owing to their size, speed, and diffuse nature, they're difficult targets, and can often inflict great damage before being destroyed. The jury is out on whether they're necromantic creations or freewilled evil spirits who loathe mortals.\n\nNotes: Unwilling to negotiate. Truly evil.\n\nFlaming Bite\n    Innate Attack, Base Cost (Burn): 5/die\n    Damage (0d+2): 0.6 dice\n    Melee Attack, Reach C, No Parry: -35%\n    Cosmic, Irresistible attack (Ignores DR): +300%\n    Cost = (5 * 0.6) @ (-35+300)% = 11 pts"
+		}
+	],
+	"print_settings": {
+		"printer": "HP Color LaserJet M452dw (4EB237)",
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.267716,
+		"height": 11.692913,
+		"top_margin": 0.5,
+		"left_margin": 0.5,
+		"bottom_margin": 0.499999,
+		"right_margin": 0.499999,
+		"ink_chromaticity": "monochrome",
+		"sides": "duplex",
+		"quality": "normal",
+		"resolution": "120000"
+	}
+}

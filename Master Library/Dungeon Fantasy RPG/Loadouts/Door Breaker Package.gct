@@ -1,0 +1,453 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "635e5a6d-4dab-455f-82b9-439d31abe648",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Basic",
+			"reference": "PY106:11",
+			"open": false,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Crowbar, 3'",
+					"value": "20",
+					"weight": "3 lb",
+					"reference": "DFA112",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Axe/Mace",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Flail",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-3",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace",
+									"modifier": -1
+								}
+							]
+						}
+					],
+					"categories": [
+						"Melee Weapon",
+						"Missile Weapon",
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Hatchet (Tool Grade)",
+					"value": "15",
+					"weight": "2 lb",
+					"reference": "DFA112",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw"
+							},
+							"strength": "8",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Axe/Mace",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Flail",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw"
+							},
+							"strength": "8",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1.5/x2.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-2",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace",
+									"modifier": -1
+								}
+							]
+						}
+					],
+					"categories": [
+						"Melee Weapon",
+						"Missile Weapon"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Haversack",
+					"value": "30",
+					"weight": "1 lb",
+					"reference": "PY106:11",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "10 lb"
+								}
+							}
+						]
+					},
+					"notes": "Worn on Shoulder. Holds 10 lbs",
+					"categories": [
+						"Containers"
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 6,
+							"description": "Iron Spike",
+							"value": "1",
+							"weight": "0.5 lb",
+							"reference": "DFA111",
+							"categories": [
+								"Miscellaneous Hardware"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Mallet",
+					"value": "15",
+					"weight": "3 lb",
+					"reference": "DFA112",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Axe/Mace",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Flail",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -2
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-3",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace"
+								}
+							]
+						}
+					],
+					"notes": "-1 to Skill to attack",
+					"categories": [
+						"Tools"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Complete",
+			"reference": "PY106:12",
+			"notes": "Add to Basic",
+			"open": false,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 4,
+					"description": "Acid",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "DFA114",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cor",
+								"base": "1d-3"
+							},
+							"usage": "Grenade",
+							"accuracy": "0",
+							"range": "×2",
+							"bulk": "-2",
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Throwing"
+								},
+								{
+									"type": "DX",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Dropping",
+									"modifier": -4
+								}
+							]
+						}
+					],
+					"notes": "3d min to eat through a mundane lock.",
+					"categories": [
+						"Concoctions",
+						"Concoctions:Chemicals"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Portable Ram",
+					"value": "150",
+					"weight": "35 lb",
+					"reference": "DFA113",
+					"notes": "sw+3d+1 every 3 sec. 2-4 users. Max ST + 1/5 others.",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Upgrade Options",
+			"reference": "PY106:12",
+			"open": false,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Choose 1 to hold extra supplies",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Pouch",
+							"value": "10",
+							"weight": "0.2 lb",
+							"reference": "DFA111",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "contained_weight_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most",
+											"qualifier": "3 lb"
+										}
+									}
+								]
+							},
+							"notes": "3 lb small items",
+							"categories": [
+								"Camping and Survival Gear"
+							],
+							"open": true
+						},
+						{
+							"type": "equipment_container",
+							"version": 1,
+							"description": "Replace Haversack With",
+							"open": false,
+							"children": [
+								{
+									"type": "equipment_container",
+									"version": 1,
+									"description": "Backpack, Small",
+									"value": "60",
+									"weight": "3 lb",
+									"reference": "DFA111",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "contained_weight_prereq",
+												"has": true,
+												"qualifier": {
+													"compare": "at_most",
+													"qualifier": "40 lb"
+												}
+											}
+										]
+									},
+									"notes": "Holds 40 lbs of gear",
+									"categories": [
+										"Camping and Survival Gear"
+									],
+									"open": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "File",
+					"value": "40",
+					"weight": "1 lb",
+					"reference": "DFA112",
+					"notes": "(DR+HP) min to cut through item",
+					"categories": [
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Lockpicks",
+					"value": "50",
+					"weight": "0.1 lb",
+					"reference": "DFA113",
+					"notes": "Basic EQ for Lockpicking",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				}
+			]
+		}
+	]
+}

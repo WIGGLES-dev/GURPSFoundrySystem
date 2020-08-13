@@ -1,0 +1,112 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "e0ac87b4-33b4-40ac-96a3-e0e248e2c245",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Istislaam",
+			"reference": "BD120",
+			"notes": "Beta version; 2090; $100,000",
+			"categories": [
+				"Islamic Caliphate",
+				"Upgrade"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Increased IQ",
+					"mental": true,
+					"levels": "2",
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Longevity",
+					"physical": true,
+					"base_points": 2,
+					"reference": "B66",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Single-Minded",
+					"mental": true,
+					"base_points": 5,
+					"reference": "B85",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Collected",
+					"mental": true,
+					"base_points": 1,
+					"categories": [
+						"Perk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Slave Mentality",
+					"physical": true,
+					"base_points": -40,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"name": "Only in the presence of an Imam",
+							"cost_type": "percentage",
+							"cost": -75,
+							"affects": "total"
+						}
+					],
+					"reference": "B154",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Deep Sleeper",
+					"physical": true,
+					"base_points": 1,
+					"reference": "B101",
+					"categories": [
+						"Perk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Taboo trait: Genetic defects",
+					"physical": true,
+					"reference": "TS135",
+					"categories": [
+						"Trait",
+						"Upgrade"
+					]
+				}
+			]
+		}
+	]
+}

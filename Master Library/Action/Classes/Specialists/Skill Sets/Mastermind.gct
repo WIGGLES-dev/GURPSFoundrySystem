@@ -1,0 +1,381 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "f23ab670-48e6-428a-959b-bbe8abd168d7",
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Mastermind",
+			"reference": "ACT4:18",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"specialization": "@Any@",
+					"difficulty": "IQ/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Geography",
+							"specialization": "@Specialty@",
+							"modifier": -3
+						}
+					],
+					"notes": "All important businesses, streets, citizens, leaders, etc.",
+					"categories": [
+						"Everyman",
+						"Knowledge"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Cartography",
+					"reference": "B183",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Geography",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Mathematics",
+							"specialization": "Surveying",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Navigation",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Outdoor/Exploration",
+						"Social Sciences/Humanities"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Research",
+					"reference": "B217",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 4,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Scholarly",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Three of",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Architecture",
+							"reference": "B176",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Civil",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Design/Invention"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Leadership",
+							"reference": "B204",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Military",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Streetwise",
+							"reference": "B223",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Teaching",
+							"reference": "B224",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Scholarly",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Writing",
+							"reference": "B228",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Arts/Entertainment",
+								"Scholarly"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Strategy",
+							"reference": "B222",
+							"specialization": "@any@",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Intelligence Analysis",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Tactics",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Strategy",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Military"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Tactics",
+							"reference": "B224",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Strategy",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Military",
+								"Police"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Criminology",
+							"reference": "B186",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Psychology",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Police",
+								"Social Sciences/Humanities"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Intelligence Analysis",
+							"reference": "B201",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Strategy",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Military",
+								"Police",
+								"Spy"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

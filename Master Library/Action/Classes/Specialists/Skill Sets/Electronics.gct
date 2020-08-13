@@ -1,0 +1,384 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "42cf583e-09f4-4f3a-b268-98effe6df1ca",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Electronics",
+			"reference": "ACT4:15",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Talent (Circuit Sense)",
+					"mental": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"reference": "ACT1:19",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Electrician"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Electronics Operation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Electronics Repair"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Engineer"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Electrical"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Engineer"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Electronics"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Choose one",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Cheaper (Electronics; 10%)",
+							"social": true,
+							"base_points": 1,
+							"reference": "PU2:8",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "High-Heeled Heroine"
+										}
+									}
+								]
+							},
+							"categories": [
+								"Perk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Equipment Bond (@any one tool kit@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "MH1:25",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Electronics",
+			"reference": "ACT4:15",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Scrounging",
+					"reference": "B218",
+					"difficulty": "Per/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "Per",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street"
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Take two specialties at [4]",
+					"notes": "Take remaining four at [1]",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Communications",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"specialization": "Communications",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Computer",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Computer Operation",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Media",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"specialization": "Media",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Security",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"specialization": "Security",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Sensors",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"specialization": "Sensors",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Repair",
+							"reference": "B190",
+							"specialization": "Surveillance",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"specialization": "Surveillance",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Repair/Maintainance"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

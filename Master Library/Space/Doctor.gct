@@ -1,0 +1,1630 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "7606009d-4f32-43b0-b01d-49539fa0af90",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Doctor",
+			"reference": "Space229",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Intelligence",
+							"mental": true,
+							"levels": "3",
+							"points_per_level": 20,
+							"reference": "B15",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Advantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "20 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "High Manual Dexterity",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B59",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "artist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "jeweler"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "knot-tying"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leatherworking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "lockpicking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "pickpocket"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sewing"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sleight of hand"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "surgery"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "machinist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "mechanic"
+											}
+										}
+									],
+									"notes": "Up to 2",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Intuition",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Inspired",
+											"reference": "P56",
+											"cost_type": "percentage",
+											"cost": 100,
+											"affects": "total"
+										}
+									],
+									"reference": "B63",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Status",
+									"social": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "B28",
+									"notes": "Up to 2",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Talent (Healer)",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Patients"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternate Benefit",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Bonus to HT rolls for a specific patient and condition if treated full time."
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Alternative Cost",
+											"cost_type": "points",
+											"cost": 1,
+											"affects": "levels_only"
+										}
+									],
+									"reference": "B90,PU3:11",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Talent (Healer)"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 1
+												},
+												"notes": {
+													"compare": "does_not_contain",
+													"qualifier": "Modern"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Diagnosis"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Esoteric Medicine"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "First Aid"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Pharmacy"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Physician"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Physiology"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Psychology"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Surgery"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Veterinary"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Electronics Operation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Medical"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Expert Skill"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Epidemiology"
+											}
+										}
+									],
+									"notes": "Modern",
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Familiar Horrors",
+											"reference": "H20",
+											"cost_type": "percentage",
+											"cost": 50,
+											"affects": "total"
+										}
+									],
+									"reference": "B95",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Versatile",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B96",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Comfortable",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total",
+											"notes": "Starting wealth is 2x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 20,
+											"affects": "total",
+											"notes": "Starting wealth is 5x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total",
+											"notes": "Starting wealth is 20x average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": 50,
+											"affects": "total",
+											"notes": "Starting wealth is 100x average"
+										}
+									],
+									"reference": "B25",
+									"categories": [
+										"Advantage",
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Class Disadvantage",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-35 points chosen from",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Hippocratic Oath)",
+									"mental": true,
+									"base_points": -5,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Charitable",
+									"mental": true,
+									"base_points": -15,
+									"cr": 12,
+									"reference": "B125",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Combat Paralysis",
+									"physical": true,
+									"base_points": -15,
+									"reference": "B127",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Duty (@Duty@)",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 6",
+											"cost_type": "points",
+											"cost": -2,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 9",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "FR: 12",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "FR: 15",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Extremely Hazardous",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Involuntary",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Nonhazardous",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										}
+									],
+									"reference": "B133",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Honesty",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "B138",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Overconfidence",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Pacifism: Cannot Kill",
+									"mental": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Species-Specific",
+											"reference": "UT32",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total"
+										}
+									],
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Pacifism: Self-Defense Only",
+									"mental": true,
+									"base_points": -15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Species-Specific",
+											"reference": "UT32",
+											"cost_type": "percentage",
+											"cost": -80,
+											"affects": "total"
+										}
+									],
+									"reference": "B148",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Workaholic",
+									"physical": true,
+									"base_points": -5,
+									"reference": "B162",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Doctor",
+			"reference": "Space229",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Primary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Physician",
+							"reference": "B213",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -7
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -11
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Choose one",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Bioengineering",
+									"reference": "B180",
+									"specialization": "@Specialty@",
+									"tech_level": "",
+									"difficulty": "IQ/H",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Biology",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Bioengineering",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Design/Invention"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Surgery",
+									"reference": "B223",
+									"tech_level": "",
+									"difficulty": "IQ/VH",
+									"points": 8,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "first aid"
+												},
+												"specialization": {
+													"compare": "is"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "physician"
+												},
+												"specialization": {
+													"compare": "is"
+												}
+											}
+										]
+									},
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "First Aid",
+											"modifier": -12
+										},
+										{
+											"type": "Skill",
+											"name": "Physician",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Physiology",
+											"modifier": -8
+										},
+										{
+											"type": "Skill",
+											"name": "Veterinary",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Medical"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Secondary Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Operation",
+							"reference": "B189",
+							"specialization": "Medical",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"specialization": "Medical",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Medical",
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Hazardous Materials",
+							"reference": "B199",
+							"specialization": "@Any@",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Law",
+							"reference": "B204",
+							"specialization": "Medical",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Business",
+								"Police",
+								"Social Sciences/Humanities"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Pharmacy",
+							"reference": "B213",
+							"specialization": "Synthetic",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Chemistry",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Design/Invention",
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Physiology",
+							"reference": "B213",
+							"specialization": "@Specialty@",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Diagnosis",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical",
+								"Natural Science"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Psychology",
+							"reference": "B216",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Sociology",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Social Sciences/Humanities"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Background Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Biology",
+							"reference": "B180",
+							"specialization": "@Specialty@",
+							"tech_level": "",
+							"difficulty": "IQ/VH",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Natural Science",
+								"Plant"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Chemistry",
+							"reference": "B183",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Alchemy",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Natural Science"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Computer Operation",
+							"reference": "B184",
+							"tech_level": "",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Everyman",
+								"Scholarly",
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Research",
+							"reference": "B217",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"when_tl": {
+											"compare": "at_least",
+											"qualifier": 8
+										},
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Computer Operation"
+												}
+											}
+										]
+									},
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Native"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Accented)"
+												}
+											},
+											{
+												"type": "advantage_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Broken)"
+												}
+											}
+										]
+									}
+								]
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Writing",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Scholarly",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Savoir-Faire",
+							"reference": "B218",
+							"specialization": "High Society",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Savoir-Faire",
+									"specialization": "Servant",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Business",
+								"Knowledge",
+								"Social"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Doctor Lenses",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Field Medic",
+					"reference": "Space229",
+					"notes": "Choose any other templaet and add the following skills",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Electronics Operation",
+							"reference": "B189",
+							"specialization": "Medical",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Repair",
+									"specialization": "Medical",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Electronics",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Electronics Operation",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Medical",
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "First Aid",
+							"reference": "B195",
+							"tech_level": "",
+							"difficulty": "IQ/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Esoteric Medicine"
+								},
+								{
+									"type": "Skill",
+									"name": "Physician"
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Everyman",
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Hazardous Materials",
+							"reference": "B199",
+							"specialization": "@Any@",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Surgery",
+							"reference": "B223",
+							"tech_level": "",
+							"difficulty": "IQ/VH",
+							"points": 2,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "first aid"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									},
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "physician"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									}
+								]
+							},
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -12
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physiology",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Xenomedical Specialist",
+					"reference": "Space230",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Biology",
+							"reference": "B180",
+							"specialization": "@Alien World Specialization@",
+							"tech_level": "",
+							"difficulty": "IQ/VH",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Natural Science",
+								"Plant"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Expert Skill",
+							"reference": "B193",
+							"specialization": "Xenology",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"categories": [
+								"Knowledge",
+								"Scholarly",
+								"Social Sciences/Humanities"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Physiology",
+							"reference": "B213",
+							"specialization": "@Alien species@",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Diagnosis",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical",
+								"Natural Science"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Vacc Suit",
+							"reference": "B192",
+							"tech_level": "",
+							"difficulty": "DX/A",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Diving Suit",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "NBC Suit",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Battlesuit",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Technical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Veterinary",
+							"reference": "B228",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Animal Handling",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal",
+								"Medical"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

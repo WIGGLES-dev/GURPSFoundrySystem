@@ -1,0 +1,317 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "635e5a6d-4dab-455f-82b9-439d31abe648",
+	"equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Thief Skills Package",
+			"reference": "PY106:12",
+			"open": true,
+			"children": [
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Haversack",
+					"value": "30",
+					"weight": "1 lb",
+					"reference": "PY106:11",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "10 lb"
+								}
+							}
+						]
+					},
+					"notes": "Worn on Shoulder. Holds 10 lbs",
+					"categories": [
+						"Containers"
+					],
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 4,
+							"description": "Acid",
+							"value": "10",
+							"weight": "1 lb",
+							"reference": "DFA114",
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cor",
+										"base": "1d-3"
+									},
+									"usage": "Grenade",
+									"accuracy": "0",
+									"range": "×2",
+									"bulk": "-2",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Throwing"
+										},
+										{
+											"type": "DX",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Dropping",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"notes": "3d min to eat through a mundane lock.",
+							"categories": [
+								"Concoctions",
+								"Concoctions:Chemicals"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "File",
+							"value": "40",
+							"weight": "1 lb",
+							"reference": "DFA112",
+							"notes": "(DR+HP) min to cut through item",
+							"categories": [
+								"Tools"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lockpicks",
+							"value": "50",
+							"weight": "0.1 lb",
+							"reference": "DFA113",
+							"notes": "Basic EQ for Lockpicking",
+							"categories": [
+								"Covert Ops and Security Gear"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Mirror, Hand",
+							"value": "15",
+							"weight": "1 lb",
+							"reference": "DFA114",
+							"categories": [
+								"Optics"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Ninja Slippers",
+					"value": "100",
+					"weight": "0.5 lb",
+					"reference": "DFA113",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Reflector",
+					"value": "75",
+					"weight": "1 lb",
+					"reference": "DFA114",
+					"categories": [
+						"Optics"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Spy's Horn",
+					"value": "100",
+					"weight": "2 lb",
+					"reference": "DFA113",
+					"notes": "Listen through doors etc at penalty of (DR+HP)/5",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Trap-Finder's Kit, Good",
+					"value": "250",
+					"weight": "2 lb",
+					"reference": "DFA113",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"description": "Upgrade Options",
+			"reference": "PY106:12",
+			"open": false,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Bit and Brace",
+					"value": "120",
+					"weight": "5 lb",
+					"reference": "DFA113",
+					"notes": "sw-2(2) pi++ each turn to wood.",
+					"categories": [
+						"Covert Ops and Security Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Delver's Periscope",
+					"value": "50",
+					"weight": "4 lb",
+					"reference": "DFA114",
+					"categories": [
+						"Optics"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Glow Vial",
+					"value": "30",
+					"weight": "0.5 lb",
+					"reference": "DFA115",
+					"notes": "Drop in pill. 12 hour. 2yd.  Neck lanyard.",
+					"categories": [
+						"Concoctions",
+						"Concoctions:Chemicals"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Replace Lockpicks",
+					"notes": "Choose 1",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lockpicks, Fine",
+							"value": "1000",
+							"weight": "2 lb",
+							"reference": "DFA113",
+							"notes": "+2 to Lockpicking",
+							"categories": [
+								"Covert Ops and Security Gear"
+							]
+						},
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Lockpicks, Good",
+							"value": "250",
+							"weight": "0.5 lb",
+							"reference": "DFA113",
+							"notes": "+1 to Lockpicking",
+							"categories": [
+								"Covert Ops and Security Gear"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"description": "Replace Trap-Finder's Kit",
+					"open": false,
+					"children": [
+						{
+							"type": "equipment",
+							"version": 1,
+							"quantity": 1,
+							"description": "Trap-Finder's Kit, Fine",
+							"value": "1250",
+							"weight": "10 lb",
+							"reference": "DFA113",
+							"categories": [
+								"Covert Ops and Security Gear"
+							]
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"quantity": 1,
+					"description": "Visibility Dust (Grenade)",
+					"value": "60",
+					"weight": "1 lb",
+					"reference": "DFA115",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "Spec"
+							},
+							"usage": "Grenade",
+							"accuracy": "0",
+							"range": "×2",
+							"bulk": "-2",
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Throwing"
+								},
+								{
+									"type": "DX",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Dropping",
+									"modifier": -4
+								}
+							]
+						}
+					],
+					"categories": [
+						"Concoctions",
+						"Concoctions:Chemicals"
+					]
+				}
+			]
+		}
+	]
+}

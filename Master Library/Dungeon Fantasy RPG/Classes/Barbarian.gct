@@ -1,0 +1,3589 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "c146f706-75ac-4757-83dc-d4bb2d73b32a",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Barbarian",
+			"reference": "DFA13",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Attributes",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Strength",
+							"physical": true,
+							"levels": "7",
+							"points_per_level": 10,
+							"reference": "DFA8",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Dexterity",
+							"physical": true,
+							"levels": "3",
+							"points_per_level": 20,
+							"reference": "DFA8",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Health",
+							"physical": true,
+							"levels": "3",
+							"points_per_level": 10,
+							"reference": "DFA8",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Advantages",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "High Pain Threshold",
+							"physical": true,
+							"base_points": 10,
+							"reference": "DFA50",
+							"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Outdoorsman",
+							"mental": true,
+							"levels": "2",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Benefit",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Bonus to HT rolls to avoid harm from failure of covered skills"
+								}
+							],
+							"reference": "DFA51",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Camouflage"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fishing"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Mimicry"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Animal sounds"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Naturalist"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Navigation"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Survival"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Tracking"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Disguise"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Animals"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Mimicry"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Bird Calls"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "weather sense"
+									}
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "40 Points chosen from:",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Strength",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"reference": "DFA8",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Dexterity",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 20,
+									"reference": "DFA8",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "dx"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Health",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"reference": "DFA8",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "ht"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Perception",
+									"mental": true,
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "DFA10",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "perception"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Increased Basic Speed",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "DFA11",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 0,
+											"per_level": true,
+											"attribute": "speed"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Absolute Direction",
+									"mental": true,
+									"physical": true,
+									"base_points": 5,
+									"reference": "DFA46",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "body sense"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											}
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Hearing",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA46",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "hearing"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Taste & Smell",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA46",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "taste_smell"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Touch",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA46",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "touch"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Acute Vision",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA46",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "vision"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Animal Empathy",
+									"mental": true,
+									"base_points": 5,
+									"reference": "DFA47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Animal Friend",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Reaction Bonus",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Ordinary animals"
+										}
+									],
+									"reference": "DFA47",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "animal handling"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Disguise"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Animals"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Mimicry"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Animal Sounds"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "riding"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Mimicry"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Bird Calls"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "veterinary"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Combat Reflexes",
+									"mental": true,
+									"base_points": 15,
+									"reference": "DFA48",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Enhanced Time Sense"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "fast-draw"
+											}
+										},
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "dodge"
+										},
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "parry"
+										},
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"attribute": "block"
+										},
+										{
+											"type": "attribute_bonus",
+											"amount": 2,
+											"attribute": "fright_check"
+										}
+									],
+									"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Discriminatory Smell",
+									"physical": true,
+									"exotic": true,
+									"base_points": 15,
+									"reference": "DFA16",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Extra Attack",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 25,
+									"reference": "DFA49",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fearlessness",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA49",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"reference": "DFA53",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit",
+									"physical": true,
+									"base_points": 5,
+									"reference": "DFA49",
+									"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Fit, Very",
+									"physical": true,
+									"base_points": 15,
+									"reference": "DFA49",
+									"notes": "+2 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate; lose FP at half the normal rate (in both cases, not FP spent for spells or psi powers)",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Hard to Kill",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA50",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Hard to Subdue",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA50",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Lifting ST",
+									"physical": true,
+									"exotic": true,
+									"levels": "1",
+									"points_per_level": 3,
+									"reference": "DFA16",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st",
+											"limitation": "lifting_only"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Luck",
+									"mental": true,
+									"base_points": 15,
+									"reference": "DFA51",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Luck"
+												}
+											}
+										]
+									},
+									"notes": "Usable once per hour of play",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Luck, Extraordinary",
+									"mental": true,
+									"base_points": 30,
+									"reference": "DFA51",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Luck"
+												}
+											}
+										]
+									},
+									"notes": "Usable once per 30 minutes of play",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Magic Resistance",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 2,
+									"reference": "DFA51",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Outdoorsman",
+									"mental": true,
+									"levels": "1",
+									"points_per_level": 10,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Benefit",
+											"cost_type": "percentage",
+											"cost": 0,
+											"affects": "total",
+											"notes": "Bonus to HT rolls to avoid harm from failure of covered skills"
+										}
+									],
+									"reference": "DFA51",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Camouflage"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Fishing"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Mimicry"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Animal sounds"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Naturalist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Navigation"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Survival"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Tracking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Disguise"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Animals"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Mimicry"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "Bird Calls"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": 1,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "weather sense"
+											}
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Talent"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Rapid Healing",
+									"physical": true,
+									"base_points": 5,
+									"reference": "DFA52",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "attribute_prereq",
+												"has": true,
+												"which": "ht",
+												"qualifier": {
+													"compare": "at_least",
+													"qualifier": 10
+												}
+											}
+										]
+									},
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Rapid Healing, Very",
+									"physical": true,
+									"base_points": 15,
+									"reference": "DFA52",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "attribute_prereq",
+												"has": true,
+												"which": "ht",
+												"qualifier": {
+													"compare": "at_least",
+													"qualifier": 12
+												}
+											}
+										]
+									},
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Recovery",
+									"physical": true,
+									"exotic": true,
+									"base_points": 10,
+									"reference": "DFA52",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Resistant to Disease",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "DFA52",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Resistant to Poison",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "DFA52",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Signature Gear (@Item@)",
+									"social": true,
+									"base_points": 1,
+									"reference": "DFA53",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Striking ST",
+									"physical": true,
+									"exotic": true,
+									"levels": "1",
+									"points_per_level": 5,
+									"reference": "DFA53",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "st",
+											"limitation": "striking_only"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Temperature Tolerance (Cold)",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "DFA16",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Temperature Tolerance (Hot)",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": 1,
+									"reference": "DFA16",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Tough Skin",
+									"physical": true,
+									"exotic": true,
+									"levels": "1",
+									"points_per_level": 3,
+									"reference": "DFA16",
+									"features": [
+										{
+											"type": "dr_bonus",
+											"amount": 1,
+											"per_level": true,
+											"location": "full_body_except_eyes"
+										}
+									],
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Trademark Move",
+									"physical": true,
+									"base_points": 1,
+									"reference": "DFA53",
+									"notes": "+1 to @One turn of detailed combat actions@",
+									"categories": [
+										"Perk"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Weapon Bond (@Specific Weapon@)",
+									"physical": true,
+									"base_points": 1,
+									"reference": "DFA54",
+									"categories": [
+										"Perk"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Disadvantages",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Social Stigma (Minority Group)",
+							"social": true,
+							"base_points": -10,
+							"reference": "DFA66",
+							"notes": "-2 Reaction from others; +2 Reaction in own group",
+							"categories": [
+								"Disadvantage"
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-10 Points Chosen From:",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Easy to Read",
+									"mental": true,
+									"base_points": -10,
+									"reference": "DFA60",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Gullibility",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "DFA61",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "detect lies"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "merchant"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Language: @Native Language with no Literacy@",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Native",
+											"reference": "B23",
+											"cost_type": "points",
+											"cost": -6,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total",
+											"notes": "None"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Spoken",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "Native"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 0,
+											"affects": "total",
+											"notes": "None"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Written",
+											"reference": "B24",
+											"cost_type": "points",
+											"cost": 3,
+											"affects": "total",
+											"notes": "Native"
+										}
+									],
+									"reference": "DFA51",
+									"categories": [
+										"Advantage",
+										"Language"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Odious Personal Habit",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "-1 Reaction",
+											"reference": "DFA63",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "-2 Reaction or two habits",
+											"reference": "DFA63",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "DFA63",
+									"notes": "Unrefined Manners",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Phobia (Machinery)",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "DFA64",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wealth",
+									"social": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Dead Broke",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -25,
+											"affects": "total",
+											"notes": "Starting wealth is $0"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Poor",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total",
+											"notes": "Starting wealth is 1/5 average"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Struggling",
+											"reference": "B25",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total",
+											"notes": "Starting wealth is 1/2 average"
+										}
+									],
+									"reference": "DFA67",
+									"notes": "Disadvantage",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						},
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"name": "-20 Points Chosen From:",
+							"notes": "May choose from the previous category as well.",
+							"open": false,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Appearance",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Ugly",
+											"cost_type": "points",
+											"cost": -8,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Unattractive",
+											"cost_type": "points",
+											"cost": -4,
+											"affects": "total"
+										}
+									],
+									"reference": "DFA47",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bad Temper",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "DFA57",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Berserk",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "DFA57",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Bloodlust",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "DFA57",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Outlaw's)",
+									"mental": true,
+									"base_points": -5,
+									"reference": "DFA58",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Code of Honor (Soldier's)",
+									"mental": true,
+									"base_points": -10,
+									"reference": "DFA58",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Compulsive Carousing",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "DFA59",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Gluttony",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "DFA60",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Greed",
+									"mental": true,
+									"base_points": -15,
+									"cr": 12,
+									"reference": "DFA60",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Ham-Fisted",
+									"physical": true,
+									"levels": "1",
+									"points_per_level": -5,
+									"reference": "DFA61",
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "advantage_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "high manual dexterity"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "artist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "jeweler"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "knot-tying"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leatherworking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "lockpicking"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "pickpocket"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sewing"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sleight of hand"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "surgery"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "machinist"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "mechanic"
+											}
+										},
+										{
+											"type": "skill_bonus",
+											"amount": -3,
+											"per_level": true,
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "fast-draw"
+											}
+										}
+									],
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Impulsiveness",
+									"mental": true,
+									"base_points": -10,
+									"cr": 12,
+									"reference": "DFA61",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Obsession",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"name": "Short term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Long term",
+											"reference": "B146",
+											"cost_type": "points",
+											"cost": -10,
+											"affects": "total"
+										}
+									],
+									"reference": "DFA63",
+									"notes": "@Slay some specific type of monster or Become a master of my weapon@",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Overconfidence",
+									"mental": true,
+									"base_points": -5,
+									"cr": 12,
+									"reference": "DFA64",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Sense of Duty",
+									"mental": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Adventuring Companions",
+											"reference": "DFA65",
+											"cost_type": "points",
+											"cost": -5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"disabled": true,
+											"name": "Nature",
+											"reference": "DFA66",
+											"cost_type": "points",
+											"cost": -15,
+											"affects": "total"
+										}
+									],
+									"reference": "DFA65",
+									"categories": [
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"name": "Wounded",
+									"physical": true,
+									"base_points": -5,
+									"reference": "DFA67",
+									"categories": [
+										"Disadvantage"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Secondary Characteristics",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Extra Hit Points",
+							"physical": true,
+							"levels": "5",
+							"points_per_level": 2,
+							"reference": "DFA10",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "hp"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Increased Perception",
+							"mental": true,
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 5,
+							"reference": "DFA10",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "perception"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Decreased Basic Speed",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": -5,
+							"reference": "DFA11",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 0,
+									"per_level": true,
+									"attribute": "speed"
+								}
+							],
+							"categories": [
+								"Attribute",
+								"Disadvantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Barbarian",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Melee Package - Choose One",
+					"notes": "20 Points",
+					"open": false,
+					"children": [
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Two-Handed Weapon",
+							"notes": "Choose One",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Polearm",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 20,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Spear",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Staff",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Spear",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 20,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Staff",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Two-Handed Axe/Mace",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 20,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Axe/Mace",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Flail",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Two-Handed Sword",
+									"reference": "DFA82",
+									"difficulty": "DX/A",
+									"points": 20,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "DX",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						},
+						{
+							"type": "skill_container",
+							"version": 1,
+							"name": "Weapon and Shield",
+							"notes": "Choose one weapon and take Shield",
+							"open": false,
+							"children": [
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Axe/Mace",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 12,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -3
+										},
+										{
+											"type": "Skill",
+											"name": "Flail",
+											"modifier": -4
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Broadsword",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 12,
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Rapier",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Shortsword",
+											"modifier": -2
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Sword",
+											"modifier": -4
+										},
+										{
+											"type": "DX",
+											"modifier": -5
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Flail",
+									"reference": "DFA81",
+									"difficulty": "DX/H",
+									"points": 12,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -6
+										},
+										{
+											"type": "Skill",
+											"name": "Axe/Mace",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Two-Handed Flail",
+											"modifier": -3
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Spear",
+									"reference": "DFA81",
+									"difficulty": "DX/A",
+									"points": 12,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -5
+										},
+										{
+											"type": "Skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Staff",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								},
+								{
+									"type": "skill",
+									"version": 1,
+									"name": "Shield",
+									"reference": "DFA88",
+									"specialization": "Shield",
+									"difficulty": "DX/E",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "DX",
+											"modifier": -4
+										},
+										{
+											"type": "Skill",
+											"name": "Shield",
+											"modifier": -2
+										}
+									],
+									"categories": [
+										"Combat/Weapon",
+										"Melee Combat"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Choose One Ranged Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Bolas",
+							"reference": "DFA73",
+							"difficulty": "DX/A",
+							"points": 4,
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Bow",
+							"reference": "DFA83",
+							"difficulty": "DX/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Sling",
+							"reference": "DFA83",
+							"difficulty": "DX/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Spear Thrower",
+							"reference": "DFA83",
+							"difficulty": "DX/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Spear",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Throwing",
+							"reference": "DFA91",
+							"difficulty": "DX/A",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Dropping",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Thrown Weapon",
+							"reference": "DFA91",
+							"specialization": "Axe/Mace",
+							"difficulty": "DX/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Thrown Weapon",
+							"reference": "DFA91",
+							"specialization": "Harpoon",
+							"difficulty": "DX/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Spear",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Thrown Weapon",
+							"reference": "DFA91",
+							"specialization": "Spear",
+							"difficulty": "DX/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Spear Thrower",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Harpoon",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Thrown Weapon",
+							"reference": "DFA91",
+							"specialization": "Stick",
+							"difficulty": "DX/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Mandatory",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Brawling",
+							"reference": "DFA93",
+							"difficulty": "DX/E",
+							"points": 1,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 2
+									}
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Camouflage",
+							"reference": "DFA73",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Military",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Disguise",
+							"reference": "DFA75",
+							"specialization": "Animals",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Makeup",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Fishing",
+							"reference": "DFA76",
+							"difficulty": "Per/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Hiking",
+							"reference": "DFA78",
+							"difficulty": "HT/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Intimidation",
+							"reference": "DFA79",
+							"difficulty": "Will/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "Will",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Acting",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Naturalist",
+							"reference": "DFA83",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Biology",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Animal",
+								"Natural Science",
+								"Outdoor/Exploration",
+								"Plant"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Navigation",
+							"reference": "DFA84",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Cartography",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Seamanship",
+									"modifier": -5
+								},
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration",
+								"Technical",
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Running",
+							"reference": "DFA87",
+							"difficulty": "HT/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Stealth",
+							"reference": "DFA89",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Swimming",
+							"reference": "DFA90",
+							"encumbrance_penalty_multiplier": 2,
+							"difficulty": "HT/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Tracking",
+							"reference": "DFA92",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Weather Sense",
+							"reference": "DFA94",
+							"difficulty": "IQ/A",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Everyman",
+								"Outdoor/Exploration"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "One Specialty of Mimicry",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Mimicry",
+							"reference": "DFA83",
+							"specialization": "Animal Sounds",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Mimicry",
+									"specialization": "Bird Calls",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Animal",
+								"Arts/Entertainment",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Mimicry",
+							"reference": "DFA83",
+							"specialization": "Bird Calls",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Mimicry",
+									"specialization": "Animal Sounds",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Animal",
+								"Arts/Entertainment",
+								"Outdoor/Exploration"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "One Grappling Skill",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Sumo Wrestling",
+							"reference": "DFA92",
+							"difficulty": "DX/A",
+							"points": 2,
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Wrestling",
+							"reference": "DFA93",
+							"difficulty": "DX/A",
+							"points": 2,
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "One Survival Specialty",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Arctic",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swamplands",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Desert",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Island/Beach",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Tropical Lagoon",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Jungle",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Mountain",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Plains",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Swampland",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "River/Stream",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Woodlands",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Survival",
+							"reference": "DFA90",
+							"specialization": "Woodlands",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Arctic",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Desert",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Island/Beach",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Jungle",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Mountain",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Plains",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Swampland",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Choose Four",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Animal Handling",
+							"reference": "DFA72",
+							"specialization": "@Specialty@",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Animal Handling",
+							"reference": "DFA72",
+							"specialization": "Canines",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Animal Handling",
+							"reference": "DFA72",
+							"specialization": "Equines",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Animal Handling",
+							"reference": "DFA72",
+							"specialization": "Felines",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Animal Handling",
+							"reference": "DFA72",
+							"specialization": "Snakes",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Carousing",
+							"reference": "DFA73",
+							"difficulty": "HT/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Climbing",
+							"reference": "DFA74",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Criminal/Street",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "First Aid",
+							"reference": "DFA76",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Esoteric Medicine"
+								},
+								{
+									"type": "Skill",
+									"name": "Physician"
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Everyman",
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Forced Entry",
+							"reference": "DFA77",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Gesture",
+							"reference": "DFA77",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Lifting",
+							"reference": "DFA80",
+							"difficulty": "HT/A",
+							"points": 1,
+							"categories": [
+								"Athletic"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Observation",
+							"reference": "DFA84",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Shadowing",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Military",
+								"Police",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Seamanship",
+							"reference": "DFA88",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Skiing",
+							"reference": "DFA89",
+							"difficulty": "HT/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "HT",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Strategy",
+							"reference": "DFA90",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Intelligence Analysis",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Tactics",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Military"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Tactics",
+							"reference": "DFA91",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Strategy",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Military",
+								"Police"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

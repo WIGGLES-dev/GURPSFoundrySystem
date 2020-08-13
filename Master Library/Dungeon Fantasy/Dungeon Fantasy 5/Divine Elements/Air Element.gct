@@ -1,0 +1,693 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "44b28582-51b2-4cf1-bb7c-9d1993c0fa5f",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Air Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Air",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Alternate Form (Body of Air)",
+							"physical": true,
+							"exotic": true,
+							"base_points": 19,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cannot Memorize Forms",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Flawed",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"notes": "Only for Morph. Flawed is mutually incompatible with Cosmetic."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total",
+									"notes": "Only for Morph. You must touch the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total",
+									"notes": "Only for Morph. You must obtain a drop of blood, hair sample, etc. from the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph. You must eat the entire target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Projected Form",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": " Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Skinbound",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reduced Time",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"levels": 2
+								}
+							],
+							"reference": "B83",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Innate Attack (Crush)",
+							"physical": true,
+							"exotic": true,
+							"levels": "3",
+							"base_points": 2,
+							"points_per_level": 5,
+							"weapons": [
+								{
+									"type": "ranged_weapon",
+									"damage": {
+										"type": "cr",
+										"base": "1d"
+									},
+									"usage": "Gust",
+									"accuracy": "3",
+									"range": "100/10",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"defaults": [
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"specialization": "Breath"
+										},
+										{
+											"type": "Skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										},
+										{
+											"type": "DX",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Explosion",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Fragmentation",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total",
+									"levels": 1,
+									"notes": "Hot"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Surge",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total",
+									"notes": "2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total",
+									"notes": "3"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 150,
+									"affects": "total",
+									"notes": "5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"cost_type": "percentage",
+									"cost": 200,
+									"affects": "total",
+									"notes": "10"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Side Effect",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Symptoms",
+									"reference": "B109",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "@Effect@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total",
+									"notes": "0.5"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "0.2"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"cost_type": "percentage",
+									"cost": -70,
+									"affects": "total",
+									"notes": "0.1"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "No Blunt Trauma",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "No Knockback",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Double Knockback",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Incendiary",
+									"reference": "B104",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cone, 1 yard",
+									"cost_type": "percentage",
+									"cost": 60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Costs Fatigue, 1FP",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reduced Range (1/5)",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Increased 1/2D x10",
+									"cost_type": "percentage",
+									"cost": 15,
+									"affects": "total"
+								}
+							],
+							"reference": "B61",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Air (Doubled",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Obscure (Vision)",
+							"physical": true,
+							"exotic": true,
+							"levels": "4",
+							"points_per_level": 2,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Defensive",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Extended",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "@Sense@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Ranged",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stealthy",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Always On",
+									"reference": "B72",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total",
+									"notes": "@Source@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Limited",
+									"reference": "P65",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total",
+									"notes": "@Power@"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Area Effect, 4 Yards",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Requires air",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total"
+								}
+							],
+							"reference": "B72",
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Telekinesis",
+							"mental": true,
+							"physical": true,
+							"exotic": true,
+							"levels": "8",
+							"points_per_level": 5,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Magnetic",
+									"reference": "B92",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Visible",
+									"reference": "B92",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Super-Effort",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": 400,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Animation",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Animation",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total",
+									"notes": "No Flight"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Attraction",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Repulsion",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -60,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Attraction/Repulsion",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Lift Only",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -20,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Move Only",
+									"reference": "P83",
+									"cost_type": "percentage",
+									"cost": -40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Animate Life-forms",
+									"reference": "SU28",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Animate Life-forms",
+									"reference": "SU28",
+									"cost_type": "percentage",
+									"cost": 20,
+									"affects": "total",
+									"notes": "Partial"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Super-Damage",
+									"reference": "SU29",
+									"cost_type": "percentage",
+									"cost": 900,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Requires air",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total"
+								}
+							],
+							"reference": "B92",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Air",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"name": "Innate Attack",
+					"reference": "B201",
+					"specialization": "Breath",
+					"difficulty": "DX/E",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Innate Attack",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				}
+			]
+		}
+	]
+}

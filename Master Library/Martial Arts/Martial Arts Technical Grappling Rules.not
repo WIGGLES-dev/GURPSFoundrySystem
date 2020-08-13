@@ -1,0 +1,346 @@
+{
+	"type": "note_list",
+	"version": 1,
+	"id": "79723d12-8af3-4ed3-bc90-9a6c24b983be",
+	"rows": [
+		{
+			"type": "note_container",
+			"version": 1,
+			"text": "Grappling Concepts",
+			"reference": "MATG4",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Training Bonus and Trained ST ",
+					"reference": "MATG4"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Rounding Conventions ",
+					"reference": "MATG4"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Control Points ",
+					"reference": "MATG5"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Ready to Rumble ",
+					"reference": "MATG5"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Grappling With the Whole Body ",
+					"reference": "MATG6"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Nonhuman and Superhuman Grapplers ",
+					"reference": "MATG6"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Grappling and Hit Location",
+					"reference": "MATG7"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Harsh Realism: Scaling Trained ST",
+					"reference": "MATG7"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "How Tough Is My Stuff? ",
+					"reference": "MATG8"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Weight and Grappling",
+					"reference": "MATG8"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Bigger and Stronger! ",
+					"reference": "MATG9"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Posture ",
+					"reference": "MATG9"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Position ",
+					"reference": "MATG10"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Contests ",
+					"reference": "MATG11"
+				}
+			]
+		},
+		{
+			"type": "note_container",
+			"version": 1,
+			"text": "Armed Grappling",
+			"reference": "MATG12",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Grabbing Weapons, Shields, and Objects",
+					"reference": "MATG12"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Straps and Slings ",
+					"reference": "MATG13"
+				},
+				{
+					"type": "note_container",
+					"version": 1,
+					"text": "Weapons",
+					"reference": "MATG14",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Characteristics of Grappling Weapons",
+							"reference": "MATG14"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Escaping Cuffs ",
+							"reference": "MATG17"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "note_container",
+			"version": 1,
+			"text": "Combat",
+			"reference": "MATG18",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Know Yourself",
+					"reference": "MATG18"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Know Your Goals ",
+					"reference": "MATG18"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Know Your Foe ",
+					"reference": "MATG19"
+				},
+				{
+					"type": "note_container",
+					"version": 1,
+					"text": "Maneuvers",
+					"reference": "MATG20",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Changes to All-Out and Committed Attacks When Grappling",
+							"reference": "MATG20"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Attack Options",
+							"reference": "MATG22"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Defending",
+							"reference": "MATG22"
+						}
+					]
+				},
+				{
+					"type": "note_container",
+					"version": 1,
+					"text": "Even More Actions After a Grapple ",
+					"reference": "MATG23",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Locks, Throws, Damage, and Multiple Attacks ",
+							"reference": "MATG25"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "note_container",
+			"version": 1,
+			"text": "Character Traits\n",
+			"reference": "MATG26",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Attributes ",
+					"reference": "MATG26"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Muscling It ",
+					"reference": "MATG26"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Advantages ",
+					"reference": "MATG27"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Funky Powers and CP ",
+					"reference": "MATG28"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Perks ",
+					"reference": "MATG29"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Disadvantages ",
+					"reference": "MATG30"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Skills ",
+					"reference": "MATG31"
+				},
+				{
+					"type": "note_container",
+					"version": 1,
+					"text": "Techniques",
+					"reference": "MATG34",
+					"open": true,
+					"children": [
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Realistic Techniques ",
+							"reference": "MATG34"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Chokes",
+							"reference": "MATG36"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Pile On!",
+							"reference": "MATG37"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Inflicting More Pain With Locks ",
+							"reference": "MATG38"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Harsh Realism: Judo Throw ",
+							"reference": "MATG39"
+						},
+						{
+							"type": "note",
+							"version": 1,
+							"text": "Cinematic Techniques ",
+							"reference": "MATG41"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "note_container",
+			"version": 1,
+			"text": "Lenses and Styles",
+			"reference": "MATG43",
+			"open": true,
+			"children": [
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Lenses",
+					"reference": "MATG43"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Trial by Combat ",
+					"reference": "MATG44"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Animal Styles",
+					"reference": "MATG44"
+				},
+				{
+					"type": "note",
+					"version": 1,
+					"text": "Character Styles",
+					"reference": "MATG45"
+				}
+			]
+		},
+		{
+			"type": "note",
+			"version": 1,
+			"text": "Appendix: Tables",
+			"reference": "MATG47"
+		}
+	]
+}

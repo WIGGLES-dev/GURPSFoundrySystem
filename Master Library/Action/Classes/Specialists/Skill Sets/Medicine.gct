@@ -1,0 +1,766 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "a5e13e39-8954-4553-a8ac-cf03b33884de",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Medicine",
+			"reference": "ACT4:18",
+			"notes": "You may use your Slush Fund to buy Higher Purpose (\"Medic!\") [5l]",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Medic",
+					"notes": "25 points",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Talent (Healer)",
+							"mental": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reaction Bonus",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Patients"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternate Benefit",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Bonus to HT rolls for a specific patient and condition if treated full time."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternative Cost",
+									"cost_type": "points",
+									"cost": 1,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B90,PU3:11",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Talent (Healer)"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "Modern"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Diagnosis"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Esoteric Medicine"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "First Aid"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Pharmacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Physician"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Physiology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Psychology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Surgery"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Veterinary"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Electronics Operation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Medical"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Epidemiology"
+									}
+								}
+							],
+							"notes": "Modern",
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Equipment Bond (@crash kit or first aid kit@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "MH1:25",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Doctor",
+					"notes": "50 points",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Talent (Healer)",
+							"mental": true,
+							"levels": "3",
+							"points_per_level": 10,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reaction Bonus",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Patients"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternate Benefit",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Bonus to HT rolls for a specific patient and condition if treated full time."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Alternative Cost",
+									"cost_type": "points",
+									"cost": 1,
+									"affects": "levels_only"
+								}
+							],
+							"reference": "B90,PU3:11",
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Talent (Healer)"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "Modern"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Diagnosis"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Esoteric Medicine"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "First Aid"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Pharmacy"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Physician"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Physiology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Psychology"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Surgery"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Veterinary"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Electronics Operation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Medical"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"per_level": true,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Expert Skill"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Epidemiology"
+									}
+								}
+							],
+							"notes": "Modern",
+							"categories": [
+								"Advantage",
+								"Talent"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Equipment Bond (@crash kit, first aid kit, or surgical kit@)",
+							"physical": true,
+							"base_points": 1,
+							"reference": "MH1:25",
+							"categories": [
+								"Perk"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Medicine",
+			"reference": "ACT4:18",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Medic",
+					"notes": "25 points",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Fast-Draw",
+							"reference": "ACT1:13",
+							"specialization": "Medical Gear",
+							"tech_level": "",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "First Aid",
+							"reference": "B195",
+							"tech_level": "",
+							"difficulty": "IQ/E",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Esoteric Medicine"
+								},
+								{
+									"type": "Skill",
+									"name": "Physician"
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Everyman",
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Surgery",
+							"reference": "B223",
+							"tech_level": "",
+							"difficulty": "IQ/VH",
+							"points": 8,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "first aid"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									},
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "physician"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									}
+								]
+							},
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -12
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physiology",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Doctor",
+					"notes": "50 points",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Fast-Draw",
+							"reference": "ACT1:13",
+							"specialization": "Medical Gear",
+							"tech_level": "",
+							"difficulty": "DX/E",
+							"points": 1,
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Pharmacy",
+							"reference": "B213",
+							"specialization": "Synthetic",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Chemistry",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Design/Invention",
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Physician",
+							"reference": "B213",
+							"tech_level": "",
+							"difficulty": "IQ/H",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -7
+								},
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -11
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Surgery",
+							"reference": "B223",
+							"tech_level": "",
+							"difficulty": "IQ/VH",
+							"points": 8,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "first aid"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									},
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "physician"
+										},
+										"specialization": {
+											"compare": "is"
+										}
+									}
+								]
+							},
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "First Aid",
+									"modifier": -12
+								},
+								{
+									"type": "Skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Physiology",
+									"modifier": -8
+								},
+								{
+									"type": "Skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Medical"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

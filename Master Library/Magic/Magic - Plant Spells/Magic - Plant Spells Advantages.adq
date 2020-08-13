@@ -1,0 +1,236 @@
+{
+	"type": "advantage_list",
+	"version": 1,
+	"id": "fe1390f7-6716-4cb8-a757-9a87b9d372bb",
+	"rows": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Detect Plant Sapience",
+			"mental": true,
+			"base_points": 1,
+			"reference": "MPS8",
+			"notes": "Maximum level is 5",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Druid's Tight Grasp",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 1,
+			"reference": "MPS8",
+			"features": [
+				{
+					"type": "spell_bonus",
+					"amount": 1,
+					"per_level": true,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Capturing Vines"
+					}
+				},
+				{
+					"type": "spell_bonus",
+					"amount": 1,
+					"per_level": true,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Grasping Branch"
+					}
+				},
+				{
+					"type": "spell_bonus",
+					"amount": 1,
+					"per_level": true,
+					"match": "spell_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Undergrowth Ambush"
+					}
+				}
+			],
+			"notes": "Maximum level is 5",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Environment Awareness",
+			"mental": true,
+			"supernatural": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "jungle",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "plains",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "swampland",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"disabled": true,
+					"name": "woodlands",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				}
+			],
+			"reference": "MPS8",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Fresh Cudgel",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 1,
+			"reference": "MPS8",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Little Green Digit",
+			"levels": "1",
+			"points_per_level": 1,
+			"reference": "MPS8",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Plant-Form Rest",
+			"mental": true,
+			"exotic": true,
+			"base_points": 1,
+			"reference": "MPS8",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Recover Energy"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Sympathetic Species @Species@",
+			"mental": true,
+			"social": true,
+			"levels": "1",
+			"points_per_level": 1,
+			"reference": "MPS8",
+			"notes": "Maximum level is 3",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Tree-Tickler",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 1,
+			"reference": "MPS8",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"name": "Unusual Background",
+			"mental": true,
+			"base_points": 5,
+			"reference": "MPS9",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Hidden Lore"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Druidic"
+						}
+					},
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "college",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "Plant"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 5
+						}
+					}
+				]
+			},
+			"notes": "(Trained by an Archdruid)",
+			"categories": [
+				"Advantage"
+			]
+		}
+	]
+}

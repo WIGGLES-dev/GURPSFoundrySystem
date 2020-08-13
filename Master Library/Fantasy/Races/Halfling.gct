@@ -1,0 +1,205 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "a3253c94-1148-4f43-ab86-fbff306a518e",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Halfling",
+			"reference": "F109",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Attribute modifiers: ST -5, DX +1 HT +2",
+					"physical": true,
+					"base_points": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -5,
+							"attribute": "st"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "dx"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 2,
+							"attribute": "ht"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Fond of Food and drink",
+					"mental": true,
+					"base_points": -1
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Hard to Kill",
+					"physical": true,
+					"levels": "4",
+					"points_per_level": 2,
+					"reference": "B58"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Mundane Background",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B144"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Overweight (ST+1 vs knockback)",
+					"physical": true,
+					"base_points": -1,
+					"reference": "B19",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "swimming"
+							}
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Prefers to live underground",
+					"mental": true,
+					"base_points": -1
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Secondary characteristic, SM-2 Will+2",
+					"mental": true,
+					"physical": true,
+					"base_points": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 2,
+							"attribute": "will"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Silence",
+					"physical": true,
+					"exotic": true,
+					"levels": "4",
+					"points_per_level": 5,
+					"reference": "B85",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "stealth"
+							}
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"name": "Talent (Green Thumb)",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B90",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "biology"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "farming"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "gardening"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "herb lore"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "naturalist"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

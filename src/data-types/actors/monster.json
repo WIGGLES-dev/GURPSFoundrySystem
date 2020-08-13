@@ -1,0 +1,8 @@
+{
+    "monster": {
+        "templates": [
+            "pools",
+            "attributes"
+        ]
+    }
+}

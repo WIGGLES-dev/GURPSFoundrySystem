@@ -1,0 +1,166 @@
+{
+	"type": "eqp_modifier_list",
+	"version": 1,
+	"id": "cb11c8ad-fd4b-4c4e-943e-c1b895c790f1",
+	"rows": [
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Modifiers do not change weapon damage or add new attacks. That must be done manually."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Balanced",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+4 CF"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Cheap",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "-0.6 CF"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+2 CF",
+			"notes": "Projectiles, and crushing- or impaling-only melee or thrown weapons."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+3 CF",
+			"notes": "Fencing weapons, knives, swords, and missile weapons."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+9 CF",
+			"notes": "Other cutting melee or thrown weapons."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Poorly Balanced",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "-0.6 CF"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Silver Coated",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+2 CF"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Silver",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+19 CF"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Very Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+14 CF",
+			"notes": "Crushing-only melee and thrown weapons:."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Very Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+19 CF",
+			"notes": "Fencing weapons, knives, and swords."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Very Fine",
+			"reference": "LT59",
+			"cost_type": "to_base_cost",
+			"cost": "+49 CF",
+			"notes": "Other melee or thrown weapons, and projectiles."
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Cheap",
+			"reference": "LT109",
+			"cost_type": "to_base_cost",
+			"cost": "-0.6 CF",
+			"notes": "Armor, -1 DR"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Expert Tailoring",
+			"reference": "LT110",
+			"cost_type": "to_base_cost",
+			"cost": "+5 CF",
+			"weight_type": "to_base_weight",
+			"weight": "x85%"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Masterful Tailoring",
+			"reference": "LT110",
+			"cost_type": "to_base_cost",
+			"cost": "+29 CF",
+			"weight_type": "to_base_weight",
+			"weight": "x70%"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Fluting",
+			"reference": "LT110",
+			"cost_type": "to_base_cost",
+			"cost": "+4 CF",
+			"weight_type": "to_base_weight",
+			"weight": "x90%",
+			"notes": "Plate, Scale, Lamellar"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Hardened Steel",
+			"reference": "LT110",
+			"cost_type": "to_base_cost",
+			"cost": "+4 CF",
+			"notes": "+1 DR"
+		},
+		{
+			"type": "eqp_modifier",
+			"version": 1,
+			"name": "Duplex Plate",
+			"reference": "LT110",
+			"cost_type": "to_base_cost",
+			"cost": "+8 CF",
+			"weight_type": "to_base_weight",
+			"weight": "x90%",
+			"notes": "+1 DR"
+		}
+	]
+}

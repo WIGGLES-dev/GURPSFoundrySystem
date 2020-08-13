@@ -1,0 +1,286 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "eda074d3-cbec-43da-8e24-cda0573ae06c",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"name": "Deception Element",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Deception (Doubled)",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Morph",
+							"physical": true,
+							"exotic": true,
+							"base_points": 100,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Cannot Memorize Forms",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Flawed",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -10,
+									"affects": "total",
+									"notes": "Only for Morph. Flawed is mutually incompatible with Cosmetic."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -5,
+									"affects": "total",
+									"notes": "Only for Morph. You must touch the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -15,
+									"affects": "total",
+									"notes": "Only for Morph. You must obtain a drop of blood, hair sample, etc. from the target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Needs Sample",
+									"reference": "H18",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": "Only for Morph. You must eat the entire target."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Projected Form",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total",
+									"notes": " Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Skinbound",
+									"reference": "H19",
+									"cost_type": "percentage",
+									"cost": 0,
+									"affects": "total",
+									"notes": "Only for Alternate Form."
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Cosmetic",
+									"cost_type": "percentage",
+									"cost": -50,
+									"affects": "total"
+								}
+							],
+							"reference": "B83",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"name": "Deception",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"name": "Illusion",
+							"physical": true,
+							"base_points": 25,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Extended",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total",
+									"notes": "Smell/Taste, Touch"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Independence",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": 50,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Initiative",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Mental",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Stigmata",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": 100,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Auditory Only",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": -70,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Static",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"disabled": true,
+									"name": "Visual Only",
+									"reference": "P95",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Ranged",
+									"cost_type": "percentage",
+									"cost": 40,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"version": 1,
+									"name": "Reduced Range 1/10",
+									"cost_type": "percentage",
+									"cost": -30,
+									"affects": "total"
+								}
+							],
+							"reference": "P94",
+							"categories": [
+								"Advantage"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"name": "Deception (Doubled)",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Deception",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"name": "Artist",
+							"reference": "B179",
+							"specialization": "Illusion",
+							"difficulty": "IQ/H",
+							"points": 12,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Arts/Entertainment"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"name": "Deception (Doubled)",
+					"open": true
+				}
+			]
+		}
+	]
+}
