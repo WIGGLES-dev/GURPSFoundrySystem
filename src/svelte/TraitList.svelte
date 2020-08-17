@@ -33,8 +33,15 @@
       <th />
     </tr>
   </thead>
-  {#each $GURPS.traitList.iter() as trait, i (trait.foundryID)}
-    <Row colspan="5" {i} id={trait.foundryID} draggable={true}>
+  {#each window.game.gurps4e.indexSort($GURPS.traitList.iter()) as trait, i (trait.foundryID)}
+    <Row
+      colspan="5"
+      {i}
+      id={trait.foundryID}
+      draggable={true}
+      on:delete={(e) => {
+        $entity.getOwnedItem(e.detail.id).delete();
+      }}>
       <td>
         <Input
           config={{ clickToEdit: true }}
@@ -42,7 +49,7 @@
           path="data.name"
           alsoUpdate={['name']}
           let:value>
-          <span slot="no-edit">{trait.toString()}</span>
+          <span slot="no-edit">{trait.name}</span>
         </Input>
       </td>
       <td>{trait.adjustedPoints()}</td>

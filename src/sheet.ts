@@ -1,7 +1,7 @@
 import _Sheet from "./svelte/Sheet.svelte";
+import Popout from "./svelte/Popout.svelte";
 import { _Item } from "./item";
-import { Character as GURPSCharacter, Skill } from "g4elogic";
-import { FoundryEntity } from "./foundry_actor";
+import { Character as GURPSCharacter, Skill, Weapon } from "g4elogic";
 import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
@@ -30,6 +30,16 @@ export class _ActorSheet extends ActorSheet {
     submit(): null {
         return null
     }
+
+    customPopout() {
+        const popout = window.open();
+        new Popout({
+            target: popout.document.body,
+            props: {
+                entity: this._entity
+            }
+        });
+    }
 }
 
 @injectHelpers
@@ -46,7 +56,7 @@ export class _Actor extends Actor {
         super(data, options);
         //@ts-ignore
         this._entity = writable(this);
-        this.GURPS = new GURPSCharacter(new FoundryEntity());
+        this.GURPS = new GURPSCharacter("foundry");
         this._GURPS = writable(this.GURPS);
         this.updateGURPS();
     }
@@ -121,6 +131,13 @@ export class _Actor extends Actor {
         renderer.render(roll).then((html) => {
             ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
         });
+    }
+
+    rollDamage(weapon: Weapon) {
+        const roll = new Roll(weapon.damage, {
+
+        });
+        return roll.toMessage({ GURPSRollType: "Damage" })
     }
 
     // static getBase64Image(img: HTMLImageElement) {

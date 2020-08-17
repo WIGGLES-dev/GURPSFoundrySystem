@@ -1,10 +1,21 @@
-import Roll from "./svelte/rolls/Roll.svelte"
+import Message from "./svelte/chat/Message.svelte"
 
 export class _ChatMessage extends ChatMessage {
-    data: any
+
     constructor(data: EntityData<any>, options: any) {
         super(data, options);
     }
+
+    static async create(data: any, options?: any) {
+        let message = await super.create(data, options);
+        if (message instanceof _ChatMessage) {
+            await message.setFlag("GURPS", "type", data.GURPSRollType);
+        }
+        return message
+    }
+
+    rollType() { return this.getFlag("GURPS", "type") }
+
     render: () => Promise<HTMLElement>
 }
 
@@ -26,7 +37,7 @@ export class _ChatLog extends ChatLog {
         if (!message.visible) return
         if (!this._lastId) this._lastId = message.id
         const target = this.element.find("#chat-log").get(0);
-        const app = new Roll({
+        const app = new Message({
             target,
             props: {
                 message
@@ -72,7 +83,7 @@ export class _ChatLog extends ChatLog {
 
             //create the missing applications
             html.forEach(message => {
-                const app = new Roll({
+                const app = new Message({
                     target: log.get(0),
                     props: { message }
                 });

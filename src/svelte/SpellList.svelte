@@ -33,8 +33,14 @@
       <th>Ref</th>
     </tr>
   </thead>
-  {#each $GURPS.spellList.iter() as spell, i (spell.foundryID)}
-    <Row {i} draggable={true} id={spell.foundryID}>
+  {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}
+    <Row
+      {i}
+      draggable={true}
+      id={spell.foundryID}
+      on:delete={(e) => {
+        $entity.getOwnedItem(e.detail.id).delete();
+      }}>
       <td style="width: 100%;">{spell.name}</td>
       <td />
       <td>{spell.spellClass}</td>

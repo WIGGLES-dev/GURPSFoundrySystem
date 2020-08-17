@@ -1,6 +1,46 @@
-import { _Item } from "./item";
 import { createPopper } from "@popperjs/core";
-import { writable } from "svelte/store";
+
+export function fixed6(number: string | number) {
+    let ifString;
+    let ifNumber;
+    if (typeof number === "string") {
+        ifString = +number
+    }
+    if (typeof number === "number" && number !== NaN) {
+        ifNumber = parseFloat(number.toFixed(3));
+    }
+
+    if (ifString === NaN) {
+        return number
+    } else {
+        return ifNumber
+    }
+}
+
+/**
+ * Sorts a list
+ * @param list a list of object that must have a listIndex property
+ */
+export function indexSort(list: any[]) {
+    return list.sort((a, b) => a.listIndex - b.listIndex)
+}
+
+/**
+ * Move an index of an array in place to another index, displacing that index and adding blank indexes if the target is outside
+ * the length.
+ * @param array Array to sort in place.
+ * @param from The index you are moving.
+ * @param to The index you are targeting.
+ */
+export function arrayMove(array: any[], from: number, to: number) {
+    if (to >= array.length) {
+        var k = to - array.length + 1;
+        while (k--) {
+            array.push(undefined);
+        }
+    }
+    array.splice(to, 0, array.splice(from, 1)[0]);
+}
 
 /**
  * Get an item from an id searching in the following place in this order
@@ -8,20 +48,20 @@ import { writable } from "svelte/store";
  * 2. the Item collection
  * 3. all the actors in the actors collection
  */
-export function getItem(id: string, entity?: Actor): _Item {
+export function getItem(id: string, entity?: Actor): Item {
     let item;
     try {
         if (item = entity?.getOwnedItem(id)) {
-            return item as _Item
+            return item as Item
         }
         if (item = game.items.find((item: Item) => item.id === id)) {
-            return item as _Item
+            return item as Item
         }
         if (item = game.actors.find((actor: Actor) => {
             const item = actor.getOwnedItem(id);
             return Boolean(item);
         })) {
-            return item.getOwnedItem(id) as _Item
+            return item.getOwnedItem(id) as Item
         }
         return null
     } catch (err) {
@@ -209,6 +249,7 @@ export function svelte(app: any) {
             app: any
             actor: any
             item: any
+            _entity: any;
 
             constructor(...args: any[]) {
                 //@ts-ignore
@@ -231,10 +272,18 @@ export function svelte(app: any) {
             render(force: boolean = false, options: any) {
                 if ((this?.actor?.shouldRender || this?.item?.shouldRender) || !this.rendered) {
                     return super.render(force, options);
-                } else {
+                } else if (this.actor || this.item?.actor) {
                     if (this.actor) this.actor.updateGURPS();
-                    if (this.item) this.item.actor.updateGURPS();
+                    if (this.item?.actor) this.item.actor.updateGURPS();
+                } else {
+                    const _entity = (this.item || this.actor)._entity;
+                    _entity.set(this.item || this.actor);
+                    this.app.$set({ entity: _entity });
                 }
+            }
+
+            updateStores() {
+
             }
         }
     }

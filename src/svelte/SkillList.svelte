@@ -11,6 +11,9 @@
   th {
     padding: 0px 5px 0px 5px;
   }
+  .skill-roll-ico:hover {
+    box-shadow: 0 0 8px red;
+  }
 </style>
 
 <List
@@ -28,16 +31,20 @@
       <th>Pts</th>
       <th>Ref</th>
       <th />
+      <th />
     </tr>
   </thead>
-  {#each $GURPS.skillList.iter() as skill, i (skill.foundryID)}
+  {#each window.game.gurps4e.indexSort($GURPS.skillList.iter()) as skill, i (skill.foundryID)}
     <Row
+      on:delete={(e) => {
+        $entity.getOwnedItem(e.detail.id).delete();
+      }}
       colspan="6"
       {i}
       draggable={true}
       id={skill.foundryID}
       on:middleclick={(e) => {
-        entity.rollSkill(skill);
+        $entity.rollSkill(skill);
       }}>
       <td style="width: 100%;">
         <Input
@@ -70,6 +77,17 @@
           let:value>
           <span slot="no-edit">{value}</span>
         </Input>
+      </td>
+      <td slot="row-after" style="min-width: 21px;">
+        <img
+          class="skill-roll-ico"
+          on:click={(e) => {
+            $entity.rollSkill(skill);
+          }}
+          src="systems/GURPS/icons/roll-ico.png"
+          alt="roll"
+          height="21px"
+          width="auto" />
       </td>
       <div slot="notes">{skill.notes}</div>
     </Row>

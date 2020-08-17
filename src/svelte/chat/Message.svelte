@@ -1,6 +1,8 @@
 <script>
   export let message = null;
 
+  import Damage from "./Damage";
+
   let isWhisper = getProperty(message, "data.whisper.length");
   let whisperTo = message.data.whisper.map((u) => {
     let user = game.users.get(u);
@@ -23,10 +25,12 @@
   export let rollComponent = false;
   export let rollData = null;
 
-  async function test() {
-    let result = await message.render();
+  function getRollComponent(type) {
+    switch (type) {
+      case "Damage":
+        return Damage;
+    }
   }
-  test();
 </script>
 
 <style>
@@ -61,14 +65,17 @@
       {/if}
     </header>
     <div class="message-content">
-      {#if message.roll}
-        {#await message.roll.render() then roll} 
+      {#if message.rollType()}
+        <svelte:component
+          this={getRollComponent(message.rollType())}
+          {message}
+          {rollData} />
+      {:else if message.roll}
+        {#await message.roll.render() then roll}
           {@html roll}
         {/await}
       {:else if hasHTMLContent || (message.data.content && !rollComponent)}
         {@html message.data.content}
-      {:else}
-        <svelte:component this={rollComponent} {rollData} />
       {/if}
     </div>
   </li>

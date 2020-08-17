@@ -1,6 +1,7 @@
 <script>
   import Character from "./Character";
   import Monster from "./monster/Monster";
+  import PartyManager from "./party/PartyManager";
 
   export let entity = null;
 
@@ -10,6 +11,8 @@
         return Character;
       case "monster":
         return Monster;
+      case "party":
+        return PartyManager;
     }
   }
 </script>

@@ -34,6 +34,14 @@
 
   export let hideNotes = true;
 
+  export let config = {
+    draggable: false,
+    highlightHover: true,
+    deleteButton: true,
+  };
+
+  export let children = [];
+
   export let menuItems = (() => {
     if ($entity && $entity.entity === "Actor" && id) {
       return $entity.getOwnedItem(id).getMenuItems();
@@ -62,6 +70,7 @@
   }
   .hovered {
     border: 1px solid red;
+    margin: -1px;
   }
   .notes {
     min-height: 50px;
@@ -72,6 +81,8 @@
     color: rgb(240, 240, 224);
     background-color: black;
   }
+  .focus {
+  }
 </style>
 
 <tr
@@ -81,9 +92,17 @@
   data-listtype={type}
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
-  class:hovered={$hovered && $hovered.i === i}
+  class:hovered={$hovered === i && config.highlightHover}
   class:container
   bind:this={row}
+  on:mouseover={(e) => {
+    setDragover(e, i);
+    dispatch('mouseover');
+  }}
+  on:mouseout={(e) => {
+    hovered.set(null);
+    dispatch('mouseout');
+  }}
   on:auxclick={(e) => {
     if (e.button === 1) {
       dispatch('middleclick');
@@ -103,6 +122,7 @@
     dispatch('dragenter');
   }}
   on:dragleave={(e) => {
+    hovered.set(null);
     dispatch('dragleave');
   }}
   on:dragover={(e) => {
@@ -120,10 +140,16 @@
     {hideNotes ? '>' : '∨'}
   </td>
   <slot />
-  <td>
-    <i class="fas fa-trash" on:click={$entity.getOwnedItem(id).delete()} />
-  </td>
+  {#if config.deleteButton}
+    <td>
+      <i class="fas fa-trash" on:click={dispatch('delete', { id })} />
+    </td>
+  {/if}
+  <slot name="row-after" />
 </tr>
+{#each children as child}
+  <svelte:self />
+{/each}
 {#if !hideNotes}
   <td class="notes" {colspan}>
     <slot name="notes" />

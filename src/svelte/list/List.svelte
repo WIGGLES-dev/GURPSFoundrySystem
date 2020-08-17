@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  import { _DragDrop } from "../../item";
+  import { GURPSDragDrop } from "../../dragdrop";
   import { writable } from "svelte/store";
   import {
     onMount,
@@ -20,27 +20,20 @@
 
   let table;
 
-  const DD = new _DragDrop($entity);
-  const dragDropBinder = DD.dragDropBinder();
-
-  function bind() {
-    dragDropBinder(table, {
-      application: DD.onList(
-        `[data-listtype='${type}']`,
-        `[data-listtype='${type}']`,
-        type
-      ),
-    });
+  function bind(element) {
+    if (config.dragDrop) {
+      GURPSDragDrop.dropOnList(type).bind(element);
+    }
   }
 
   function getTableColumns() {}
 
   onMount(() => {
-    bind();
+    bind(table);
   });
 
   afterUpdate(() => {
-    bind();
+    bind(table);
   });
 
   export const hovered = writable(null);
@@ -49,6 +42,7 @@
   export const columns = writable(0);
   export let buttonLabel = "Add New";
   export let type = null;
+  export let config = { dragDrop: true };
 
   setContext(ROWS, {
     registerRow(rowElement) {
@@ -60,8 +54,7 @@
       dispatch("focused");
     },
     setDragover(e, i, length) {
-      const targetI = DD.dragover(e, i, length);
-      hovered.set({ i, targetI });
+      hovered.set(i);
       dispatch("hovered", i);
     },
     hovered,

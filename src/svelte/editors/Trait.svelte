@@ -1,32 +1,33 @@
 <script>
-  import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
-  export let entity = null;
+  import {getContext} from "svelte";
+import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
 
-  let traitIsLeveled = getProperty(entity.data, "data.has_levels");
-  let traitHasHalfLevels = getProperty(entity.data, "data.has_half_level");
+  export let entity = getContext("entity") || null;
+
+  let traitIsLeveled = getProperty($entity.data, "data.has_levels");
+  let traitHasHalfLevels = getProperty($entity.data, "data.has_half_level");
 
   async function handleLevelSetting(index) {
-    console.log(index);
     switch (index) {
       case 0:
         traitIsLeveled = false;
         traitHasHalfLevels = false;
-        await entity.update({ "data.has_levels": false });
-        await entity.update({ "data.has_half_level": false });
+        await $entity.update({ "data.has_levels": false });
+        await $entity.update({ "data.has_half_level": false });
 
         break;
       case 1:
         traitIsLeveled = true;
         traitHasHalfLevels = false;
-        await entity.update({ "data.has_levels": true });
-        await entity.update({ "data.has_half_level": false });
+        await $entity.update({ "data.has_levels": true });
+        await $entity.update({ "data.has_half_level": false });
 
         break;
       case 2:
         traitIsLeveled = true;
         traitHasHalfLevels = true;
-        await entity.update({ "data.has_levels": true });
-        await entity.update({ "data.has_half_level": true });
+        await $entity.update({ "data.has_levels": true });
+        await $entity.update({ "data.has_half_level": true });
 
         break;
     }

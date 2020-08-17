@@ -1,24 +1,29 @@
 import { _ActorSheet, _Actor } from "./sheet";
 import { _ItemSheet, _Item } from "./item";
-import { customUpdate, getItem } from "./helpers";
+import { customUpdate, getItem, indexSort } from "./helpers";
 import { _ChatMessage, _ChatLog } from "./chat";
-import { config } from "process";
+import { FoundryEntity } from "./foundry_actor";
+import { registerSerializer } from "g4elogic"
 
 import "./styles/global.scss";
 
 Hooks.once('init', init);
 
 async function init() {
+
     game.gurps4e = {
         customUpdate,
-        getItem
+        getItem,
+        indexSort
     }
 
+    registerSerializer(FoundryEntity);
+
     CONFIG.Actor.entityClass = _Actor;
-    CONFIG.Actor.sheetClass = _ActorSheet;
+    //CONFIG.Actor.sheetClass = _ActorSheet;
 
     CONFIG.Item.entityClass = _Item;
-    CONFIG.Item.sheetClass = _ItemSheet;
+    //CONFIG.Item.sheetClass = _ItemSheet;
 
     CONFIG.ChatMessage.entityClass = _ChatMessage;
     CONFIG.ui.chat = _ChatLog;

@@ -9,13 +9,14 @@
     RichTextEditor,
     Input,
   } from "../form/form";
+  import { Tabs, TabList, TabPanel, Tab } from "../tabs/tabs";
 
   import { List, Row } from "../list/list";
   import WeaponEditor from "../WeaponEditor";
 
   export let entity = getContext("entity") || null;
 
-  let editing = false;
+  let editing = { ranged: false, melee: false };
 </script>
 
 <style>
@@ -36,47 +37,117 @@
 <Input type="text" path="data.categories" label="categories" />
 <RichTextEditor path="data.user_description" />
 
-<List
-  buttonLabel="Add Weapon"
-  {entity}
-  on:addlistitem={(e) => {
-    $entity.addWeapon({
-      type: 'melee_weapon',
-      usage: 'bash skulls',
-      damage: '1d6+3',
-    });
-  }}>
-  <thead slot="header">
-    <tr>
-      <th />
-      <th>type</th>
-      <th>usage</th>
-      <th>damage</th>
-    </tr>
-  </thead>
-  {#each $entity.displayWeapons() as weapon, i (weapon._id)}
-    <!-- svelte-ignore missing-declaration -->
-    <Row
-      colspan="4"
-      {i}
-      menuItems={() => [{ name: 'delete weapon', icon: '', condition: () => true, callback() {
+<Tabs tabIndex={0}>
+  <TabList>
+    <Tab index={0}>Defaults</Tab>
+    <Tab index={1}>Prerequisites</Tab>
+    <Tab index={2}>Features</Tab>
+    <Tab index={3}>Melee Weapon</Tab>
+    <Tab index={4}>Ranged Weapon</Tab>
+  </TabList>
+  <TabPanel />
+  <TabPanel />
+  <TabPanel />
+  <TabPanel>
+    <List
+      buttonLabel="Add Melee Weapon"
+      {entity}
+      on:addlistitem={(e) => {
+        $entity.addWeapon({
+          type: 'melee_weapon',
+          usage: 'bash skulls',
+          damage: '1d6+3',
+        });
+      }}>
+      <thead slot="header">
+        <tr>
+          <th />
+          <th>type</th>
+          <th>usage</th>
+          <th>damage</th>
+          <th />
+        </tr>
+      </thead>
+      {#each $entity.getWeapons().melee as weapon, i (weapon._id)}
+        <!-- svelte-ignore missing-declaration -->
+        <Row
+          on:delete={(e) => {
             $entity.removeByPath('data.weapons', weapon._id);
-          } }, { name: 'roll damage', icon: '', condition: () => true, callback() {
-            alert('test');
-          } }, { name: 'edit weapon', icon: '', condition: () => true, callback() {
-            editing = i;
-          } }]}>
-      <td>{weapon.type}</td>
-      <td>{weapon.usage}</td>
-      <td>{weapon.damage}</td>
-      <div slot="notes">{weapon.notes}</div>
-      {#if editing === i}
-        <WeaponEditor
-          {entity}
-          weapon={weapon.getGURPSObject()}
+          }}
+          colspan="4"
           {i}
-          on:close={(e) => (editing = false)} />
-      {/if}
-    </Row>
-  {/each}
-</List>
+          menuItems={() => [{ name: 'delete weapon', icon: '', condition: () => true, callback() {
+                $entity.removeByPath('data.weapons', weapon._id);
+              } }, { name: 'roll damage', icon: '', condition: () => true, callback() {
+                alert('test');
+              } }, { name: 'edit weapon', icon: '', condition: () => true, callback() {
+                editing.melee = i;
+              } }]}>
+          <td>{weapon.type}</td>
+          <td>{weapon.usage}</td>
+          <td>{weapon.damage}</td>
+          <div slot="notes">{weapon.notes}</div>
+          {#if editing.melee === i}
+            <WeaponEditor
+              {entity}
+              {weapon}
+              {i}
+              on:close={(e) => (editing.melee = false)} />
+          {/if}
+        </Row>
+      {/each}
+    </List>
+  </TabPanel>
+  <TabPanel>
+    <List
+      buttonLabel="Add Ranged Weapon"
+      {entity}
+      on:addlistitem={(e) => {
+        $entity.addWeapon({
+          type: 'ranged_weapon',
+          usage: 'bash skulls',
+          damage: '1d6+3',
+        });
+      }}>
+      <thead slot="header">
+        <tr>
+          <th />
+          <th>type</th>
+          <th>usage</th>
+          <th>damage</th>
+          <th />
+        </tr>
+      </thead>
+      {#each $entity.getWeapons().ranged as weapon, i (weapon._id)}
+        <!-- svelte-ignore missing-declaration -->
+        <Row
+          on:delete={(e) => {
+            $entity.removeByPath('data.weapons', weapon._id);
+          }}
+          id={weapon._id}
+          colspan="5"
+          {i}
+          menuItems={() => [{ name: 'delete weapon', icon: '', condition: () => true, callback() {
+                $entity.removeByPath('data.weapons', weapon._id);
+              } }, { name: 'roll damage', icon: '', condition: () => true, callback() {
+                alert('test');
+              } }, { name: 'edit weapon', icon: '', condition: () => true, callback() {
+                editing.ranged = i;
+              } }]}>
+          <td>{weapon.type}</td>
+          <td>{weapon.usage}</td>
+          <td>{weapon.damage}</td>
+          <div slot="notes">{weapon.notes}</div>
+          {#if editing.ranged === i}
+            <WeaponEditor
+              {entity}
+              {weapon}
+              {i}
+              on:close={(e) => (editing.ranged = false)} />
+          {/if}
+        </Row>
+      {/each}
+    </List>
+
+  </TabPanel>
+</Tabs>

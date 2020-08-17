@@ -5,8 +5,7 @@
 
   import Input from "./form/Input";
 
-  import { List, Row } from "./list/list.ts";
-  import { create } from "domain";
+  import { List, Row } from "./list/list";
 </script>
 
 <style>
@@ -49,8 +48,11 @@
       <th />
     </tr>
   </thead>
-  {#each $GURPS.equipmentList.iter() as item, i (item.foundryID)}
+  {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iter()) as item, i (item.foundryID)}
     <Row
+      on:delete={(e) => {
+        $entity.getOwnedItem(e.detail.id).delete();
+      }}
       {i}
       draggable={true}
       id={item.foundryID}

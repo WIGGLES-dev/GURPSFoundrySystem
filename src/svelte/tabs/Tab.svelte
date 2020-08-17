@@ -18,7 +18,7 @@
   }
 
   .selected {
-    background-color: black;
+    background-color: rgb(122, 121, 113);
     color: white;
   }
 </style>

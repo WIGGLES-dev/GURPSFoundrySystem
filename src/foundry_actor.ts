@@ -78,8 +78,8 @@ export class FoundryEntity extends Serializer {
             })
     }
 
-    private mapListItem(listItem: ListItem<any>, entity?: _Item) {
-
+    private static mapListItem(listItem: ListItem<any>, entity?: _Item) {
+        listItem.listIndex = entity.getIndex() || listItem.list.length + 1
     }
 
     private static mapSkillLike(skillLike: SkillLike<any>, entity?: _Item) {
@@ -101,13 +101,9 @@ export class FoundryEntity extends Serializer {
         const data = entity.data;
         skill.foundryID = entity.id;
 
-        if (entity.getIndex()) {
-            skill.listIndex = entity.getIndex();
-        } else if (!entity.getIndex()) {
-            entity.setIndex(skill.listIndex);
-        }
-
+        FoundryEntity.mapListItem(skill, entity);
         FoundryEntity.mapSkillLike(skill, entity);
+
         skill.difficulty = getProperty(data, "data.difficulty") as Difficulty;
         skill.signature = getProperty(data, "data.signature") as Signature;
         skill.techLevel = getProperty(data, "data.tech_level");
@@ -122,11 +118,12 @@ export class FoundryEntity extends Serializer {
         }
     }
     saveSkill() {
-
+        
     }
     mapTechnique(technique: Technique, entity?: _Item): null {
         const data = entity.data;
-        this.mapSkill(technique, entity)
+        FoundryEntity.mapListItem(technique, entity);
+        this.mapSkill(technique, entity);
         technique.limit = getProperty(data, "data.limit");
         technique.difficulty = getProperty(data, "data.difficulty") as TehchniqueDifficulty;
         technique.default = new SkillDefault<Technique>(technique).load(getProperty(data, "data.default"));
@@ -138,13 +135,9 @@ export class FoundryEntity extends Serializer {
     mapSpell(spell: Spell, entity?: _Item) {
         const data = entity.data
 
-        if (entity.getIndex()) {
-            spell.listIndex = entity.getIndex();
-        } else if (!entity.getIndex()) {
-            entity.setIndex(spell.listIndex);
-        }
-
+        FoundryEntity.mapListItem(spell, entity);
         FoundryEntity.mapSkillLike(spell, entity);
+
         spell.college = getProperty(data, "data.college");
         spell.powerSource = getProperty(data, "data.power_source");
         spell.spellClass = getProperty(data, "data.class");
@@ -167,13 +160,9 @@ export class FoundryEntity extends Serializer {
         try {
             const data = entity.data;
 
-            if (entity.getIndex()) {
-                equipment.listIndex = entity.getIndex();
-            } else if (!entity.getIndex()) {
-                entity.setIndex(equipment.listIndex);
-            }
+            FoundryEntity.mapListItem(equipment, entity);
 
-            equipment.foundryID = entity.id
+            equipment.foundryID = entity.id;
             equipment.canContainChildren = getProperty(data, "data.type")?.includes("_container") ?? false
 
             isArray(getProperty(data, "data.modifiers"))?.forEach(
@@ -191,7 +180,7 @@ export class FoundryEntity extends Serializer {
             equipment.containedWeightReduction = isArray(getProperty(data, "data.features"))?.find((feature: json) => feature.type === "contained_weight_reduction")?.reduction ?? null;
 
             entity.getWeapons().forEach((weapon: any, i: number, list: any[]) => {
-                let tWeapon = equipment.addWeapon(weapon.type || "melee_weapon");
+                let tWeapon = equipment.addWeapon(weapon.type);
                 tWeapon.load(weapon);
             });
 
@@ -217,11 +206,7 @@ export class FoundryEntity extends Serializer {
         const data = entity.data;
         trait.foundryID = entity.id;
 
-        if (entity.getIndex()) {
-            trait.listIndex = entity.getIndex();
-        } else if (!entity.getIndex()) {
-            entity.setIndex(trait.listIndex);
-        }
+        FoundryEntity.mapListItem(trait, entity);
 
         trait.name = getProperty(data, "data.name");
         getProperty(data, "data.modifiers")?.forEach((modifier: any) => trait.modifiers.add(new TraitModifier(trait).load(modifier)));
@@ -310,12 +295,15 @@ export class FoundryEntity extends Serializer {
                 weapon.reach = getProperty(data, "reach");
                 weapon.parry = getProperty(data, "parry");
                 weapon.block = getProperty(data, "block");
+                break
             case "ranged_weapon":
                 weapon.accuracy = getProperty(data, "accuracy");
                 weapon.range = getProperty(data, "range");
                 weapon.rateOfFire = getProperty(data, "rate_of_fire");
                 weapon.shots = getProperty(data, "shots");
                 weapon.bulk = getProperty(data, "bulk");
+                break
+            default:
         }
         return weapon
     }

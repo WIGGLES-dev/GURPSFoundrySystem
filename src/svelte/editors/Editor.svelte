@@ -34,4 +34,4 @@
 
 </style>
 
-<svelte:component this={getEditorComponent($entity)} {entity} />
+<svelte:component this={getEditorComponent($entity)} />

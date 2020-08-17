@@ -28,7 +28,7 @@
     path="data.weapons"
     array={{ index: i, property: 'damage' }}
     label="Damage" />
-  {#if weapon.type === 'melee_weapon'}
+  {#if (weapon.type || weapon.getType()) === 'melee_weapon'}
     <Input
       {entity}
       path="data.weapons"

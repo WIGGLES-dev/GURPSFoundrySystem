@@ -24,8 +24,7 @@
   function loadCharacter(e) {
     let file = e.target;
     file.files[0].text().then((value) => {
-      entity._GURPS.load(JSON.parse(value));
-      entity = entity;
+      $entity.GURPS.load(JSON.parse(value), "GCSJSON");
     });
   }
 </script>
@@ -65,6 +64,9 @@
   </TabList>
   <TabPanel>
     <h1>General</h1>
+    <!-- <button type="button" on:click={() => $entity.sheet.customPopout()}>
+      Popout
+    </button> -->
     <Input
       config={{ width: '50px' }}
       on:update={() => $entity.setPools()}

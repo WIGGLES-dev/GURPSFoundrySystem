@@ -1,7 +1,8 @@
 <script>
-  import {Input, Select, Option, Checkbox, Textarea} from "../form/form";
+  import { getContext } from "svelte";
+  import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
 
-  export let entity = null;
+  export let entity = getContext("entity") || null;
 </script>
 
 <style>
