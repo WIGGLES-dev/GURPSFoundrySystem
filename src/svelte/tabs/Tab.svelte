@@ -24,6 +24,9 @@
 </style>
 
 <button
+  on:dragenter={(e) => {
+    selectTab(tab);
+  }}
   type="button"
   class:selected={$selectedTab === tab}
   on:click={() => selectTab(tab)}>

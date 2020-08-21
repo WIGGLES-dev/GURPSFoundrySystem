@@ -1,4 +1,5 @@
 <script>
+  import WeaponEditor from "./WeaponEditor";
   import { getContext } from "svelte";
   const GURPS = getContext("GURPS");
   const entity = getContext("entity");
@@ -17,13 +18,70 @@
     }, {});
     return Object.entries(x);
   }
+
+  let editing = false;
+
+  function transformWeapon(weapon, name) {
+    return {
+      type: weapon.type,
+      getType() {
+        return weapon.type;
+      },
+      damage: weapon.damage,
+      damageType: weapon.damage_type,
+      usage: weapon.usage,
+      owner: { name },
+    };
+  }
+
+  const weaponMenuItems = (id, weapon, i) => [
+    {
+      name: "Delete",
+      icon: '<i class="fas fa-trash"></i>',
+      condition: () => true,
+      callback() {
+        $entity
+          .getOwnedItem(id)
+          .removeByPath("data.weapons", weapon.foundryID || weapon._id);
+      },
+    },
+    {
+      name: "Roll",
+      icon: '<i class="fas fa-dice-d6"></i>',
+      condition: () => true,
+      callback() {
+        $entity.rollDamage(weapon);
+      },
+    },
+    {
+      name: "Edit",
+      icon: '<i class="fas fa-edit"></i>',
+      condition: () => true,
+      callback() {
+        if (!editing) {
+          editing = {
+            entity: $entity.getOwnedItem(id)._entity,
+            i,
+            weapon,
+          };
+        }
+      },
+    },
+  ];
 </script>
 
 <style>
 
 </style>
 
-<List buttonLabel="Add Weapon">
+<button
+  type="button"
+  on:click={(e) => {
+    $entity.createOwnedItem({ type: 'weapon', name: '???', data: {} });
+  }}>
+  Add Weapon
+</button>
+<List buttonLabel="Add Weapon" config={{ button: false }}>
   <thead name="head">
     <tr>
       <th />
@@ -32,41 +90,103 @@
       <th />
     </tr>
   </thead>
-  {#each getWeapons($GURPS.featureList.weapons.values()) as weapon, i (weapon[0])}
-    <Row {i} colspan="4" id={weapon[0]}>
-      <td>{$GURPS.getElementById('foundryID', weapon[0]).name}</td>
-      <td>{weapon[1].length}</td>
-      <table slot="notes" class="weapon-list">
-        <thead>
-          <tr>
-            <th />
-            <th>type</th>
-            <th>usage</th>
-            <th>damage</th>
-            <th />
-          </tr>
-        </thead>
-        <tbody>
-          {#each weapon[1] as weapon, i (weapon.foundryID)}
-            <Row
-              config={{ highlightHover: false, deleteButton: false }}
-              menuItems={() => [{ name: 'roll', icon: '', condition: () => true, callback() {
-                    $entity.rollDamage(weapon);
-                  } }]}>
-              <td>{weapon.getType()}</td>
-              <td>{weapon.usage}</td>
-              <td>{weapon.damage}</td>
-            </Row>
-          {/each}
-        </tbody>
-      </table>
-    </Row>
-  {/each}
-  <!-- <tbody class="wild">
-    {#each entity.getWildWeapons() as weapon, i (weapon.foundryID)}
-      <tr>
-
-      </tr>
+  <tbody>
+    {#each getWeapons($GURPS.featureList.weapons.values()) as weapon, i (weapon[0])}
+      <Row {i} colspan="4" id={weapon[0]} config={{ toggle: true }}>
+        <td>{$GURPS.getElementById('foundryID', weapon[0]).name}</td>
+        <td>{weapon[1].length}</td>
+        <table slot="notes" class="weapon-list">
+          <thead>
+            <tr>
+              <th />
+              <th>type</th>
+              <th>usage</th>
+              <th>damage</th>
+              <th />
+            </tr>
+          </thead>
+          <tbody>
+            {#each weapon[1] as weapon, i (weapon.foundryID)}
+              <Row
+                config={{ highlightHover: false, deleteButton: false }}
+                menuItems={() => weaponMenuItems(weapon.owner.foundryID, weapon, i)}>
+                <td>{weapon.getType()}</td>
+                <td>{weapon.usage}</td>
+                <td>
+                  <span>
+                    <img
+                      class="roll-ico"
+                      on:click={(e) => {
+                        $entity.rollDamage(weapon);
+                      }}
+                      src="systems/GURPS/icons/roll-ico.png"
+                      alt="roll"
+                      height="19px" />
+                    {weapon.damage} {weapon.damageType}
+                  </span>
+                </td>
+              </Row>
+            {/each}
+          </tbody>
+        </table>
+      </Row>
     {/each}
-  </tbody> -->
+  </tbody>
+  <tbody class="wild">
+    {#each $entity.ownedItemsByType('weapon') as weaponEntity, i (weaponEntity.id)}
+      <Row colspan="4" id={weaponEntity.id} {i} config={{ toggle: true }}>
+        <td>
+          <Input
+            config={{ clickToEdit: true }}
+            let:value
+            path="name"
+            entity={weaponEntity._entity}>
+            <span slot="no-edit">{value}</span>
+          </Input>
+        </td>
+        <td>{weaponEntity.getProperty('data.weapons').length}</td>
+        <table slot="notes" class="weapon-list">
+          <thead>
+            <tr>
+              <th />
+              <th>type</th>
+              <th>usage</th>
+              <th>damage</th>
+              <th />
+            </tr>
+          </thead>
+          <tbody>
+            {#each weaponEntity.getProperty('data.weapons') as weapon, i (weapon._id)}
+              <Row
+                config={{ highlightHover: false, deleteButton: false }}
+                menuItems={() => weaponMenuItems(weaponEntity.id, transformWeapon(weapon, weaponEntity.getProperty('name')), i)}>
+                <td>{weapon.type}</td>
+                <td>{weapon.usage}</td>
+                <td>
+                  <span>
+                    <img
+                      class="roll-ico"
+                      on:click={(e) => {
+                        $entity.rollDamage(transformWeapon(weapon, weaponEntity.getProperty('name')));
+                      }}
+                      src="systems/GURPS/icons/roll-ico.png"
+                      alt="roll"
+                      height="19px" />
+                    {weapon.damage} {weapon.damage_type}
+                  </span>
+                </td>
+              </Row>
+            {/each}
+          </tbody>
+        </table>
+      </Row>
+    {/each}
+  </tbody>
 </List>
+
+<svelte:component
+  this={editing ? WeaponEditor : false}
+  on:close={() => (editing = false)}
+  entity={editing.entity}
+  i={editing.i}
+  weapon={editing.weapon} />

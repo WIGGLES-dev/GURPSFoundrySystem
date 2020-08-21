@@ -1,4 +1,5 @@
 import { _Actor } from "./sheet";
+import { _Item } from "./item";
 
 export abstract class ItemContainer extends Item {
     actor: _Actor
@@ -26,13 +27,9 @@ export abstract class ItemContainer extends Item {
         }
     }
 
-    getChildren(): Item[] {
-        const childIDs = this.getFlag("GURPS", "children");
-        if (Array.isArray(childIDs)) {
-            return childIDs.map(id => this.actor.getOwnedItem(id))
-        } else {
-            return null
-        }
+    getChildren(): _Item[] {
+        const childIDs: string[] = this.getFlag("GURPS", "children") || [];
+        return childIDs.map(id => this.actor.getOwnedItem(id) as _Item)
     }
 
     async deleteDeep(options?: object) {

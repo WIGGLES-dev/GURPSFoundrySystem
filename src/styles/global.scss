@@ -50,3 +50,26 @@ h2 {
 
     .rte-save {}
 }
+
+tr.strikethrough {
+    td {
+        position: relative;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            border-bottom: 1px solid red;
+            width: 100%;
+        }
+    }
+}
+
+.roll-ico {
+    &:hover {
+        box-shadow: 0 0 8px red;
+    }
+
+    border: none;
+}

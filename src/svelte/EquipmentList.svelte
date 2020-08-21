@@ -6,6 +6,7 @@
   import Input from "./form/Input";
 
   import { List, Row } from "./list/list";
+  import { EquipmentList } from "g4elogic";
 </script>
 
 <style>
@@ -18,6 +19,20 @@
   }
 </style>
 
+<h3>
+  Total Inventory Weight:
+  <b>
+    {$GURPS.equipmentList.totalWeight()} lb / {$GURPS.equipmentList.totalWeight(
+      { carriedOnly: false }
+    )} lb
+  </b>
+</h3>
+<h3>
+  Total Inventory Value:
+  <b>
+    ${$GURPS.equipmentList.totalValue()} / ${$GURPS.equipmentList.totalValue({ carriedOnly: false })}
+  </b>
+</h3>
 <!-- <button
   type="button"
   on:click={(e) => $entity.createOwnedItem({
@@ -48,27 +63,30 @@
       <th />
     </tr>
   </thead>
-  {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iter()) as item, i (item.foundryID)}
+  {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
     <Row
-      on:delete={(e) => {
-        $entity.getOwnedItem(e.detail.id).delete();
+      let:GURPS
+      let:id
+      id={item.foundryID}
+      on:delete={async (e) => {
+        console.log($entity);
+        await $entity.getOwnedItem(e.detail.id).delete();
       }}
       {i}
       draggable={true}
-      id={item.foundryID}
       colspan={10}
       container={item.canContainChildren}>
       <td
         on:dblclick={(e) => {
           $entity
-            .getOwnedItem(item.foundryID)
+            .getOwnedItem(id)
             .update({ 'data.equipped': !Boolean(item.equipped) });
         }}>
         {item.equipped ? 'yes' : 'no'}
       </td>
       <td>
         <Input
-          entity={$entity.getOwnedItem(item.foundryID)._entity}
+          entity={$entity.getOwnedItem(id)._entity}
           config={{ clickToEdit: true }}
           path="data.quantity"
           type="number"
@@ -77,9 +95,9 @@
           <span class="no-edit" slot="no-edit">{value}</span>
         </Input>
       </td>
-      <td style="width: 100%; padding-left: {item.getListDepth() * 30}px">
+      <td style="width: 100%; padding-left: {item.getListDepth() * 30}*/px">
         <Input
-          entity={$entity.getOwnedItem(item.foundryID)._entity}
+          entity={$entity.getOwnedItem(id)._entity}
           config={{ clickToEdit: true }}
           path="data.description"
           let:value>

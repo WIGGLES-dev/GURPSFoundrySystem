@@ -5,6 +5,7 @@ import { injectHelpers, svelte, arrayMove } from "./helpers";
 import { Writable, writable } from "svelte/store";
 import { Weapon } from "g4elogic";
 import { _ChatMessage } from "./chat";
+import { callbackify } from "util";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
@@ -32,30 +33,31 @@ export class _ItemSheet extends ItemSheet {
 
 @injectHelpers
 export class _Item extends ItemContainer {
-    getData: (path: string) => any
+    getProperty: (path: string) => any
 
     _entity: Writable<Entity>
     sheet: _ItemSheet
     actor: _Actor
-    shouldRender: boolean
 
     constructor(data: any, options: any) {
         super(data, options);
         this._entity = writable(this);
     }
 
-    initialize() {
-        super.initialize();
-    }
-
-    _onUpdate(data: any, options: any, userId: string, context: any) {
-        if (data.name || data.img) this.shouldRender = true;
-        return super._onUpdate(data, options, userId, context);
+    openPDFReference() {
+        //@ts-ignore
+        const api = ui.PDFoundry;
+        const ref = this.getProperty("data.reference");
+        try {
+            const meta = ref.includes(":") ? ref.split(":") : [ref.split(/[0-9]+/)[0], ref.split(/^[^0-9]+/)[1]];
+            api.openPDFByCode(meta[0], { page: +meta[1] });
+        } catch (err) {
+            ui.notifications.info("Unable to open page reference. Make sure that you've properly recorded it in the reference field.");
+        }
     }
 
     embeddedUpdate() {
         this._entity.set(this);
-        this?.actor?.updateGURPS();
     }
 
     getWeapons(): any[] {
@@ -65,7 +67,7 @@ export class _Item extends ItemContainer {
             const {
                 type, damage, usage, reach, parry, block,
                 accuracy, range, rate_of_fire, shots, bulk
-            } = cur
+            } = cur;
             switch (cur.type) {
                 case "melee_weapon":
                     prev.melee.push({
@@ -76,8 +78,9 @@ export class _Item extends ItemContainer {
                         usage,
                         reach,
                         parry,
-                        block
-                    })
+                        block,
+                    });
+                    break
                 case "ranged_weapon":
                     prev.ranged.push({
                         _id: cur._id,
@@ -86,6 +89,7 @@ export class _Item extends ItemContainer {
                         damage,
                         usage,
                     })
+                    break
                 default:
             }
             return prev
@@ -101,7 +105,22 @@ export class _Item extends ItemContainer {
     }
 
     async addWeapon(data: any = {}) {
-        const weapons = this.getData("data.weapons") || [];
+        data = Object.assign({
+            type: "melee_weapon",
+            usage: "",
+            strength_requirement: "10",
+            damage: "1d6",
+            damage_type: "cut",
+            reach: "",
+            parry: 0,
+            block: false,
+            accuracy: 0,
+            range: "10/100",
+            rate_of_fire: 1,
+            bulk: -2,
+            shots: "1"
+        }, data);
+        const weapons = this.getProperty("data.weapons") || [];
         weapons.push(Object.assign(data, {
             _id: randomID()
         }));
@@ -232,33 +251,73 @@ export class _Item extends ItemContainer {
         return () => {
             const entity = this;
             const getBaseMenu = () => {
-                return [{
-                    name: `delete ${this.getGURPSObject().name}`,
-                    icon: "",
-                    condition: () => true,
-                    async callback() {
-                        entity.delete()
-                    }
-                },
-                {
-                    name: `edit ${this.getGURPSObject().name}`,
-                    icon: "",
-                    condition: () => true,
-                    callback() {
-                        entity.sheet.render(true);
-                    }
-                }]
+                return [
+                    {
+                        name: `Edit`,
+                        icon: '<i class="fas fa-edit"></i>',
+                        condition: () => true,
+                        callback() {
+                            entity.sheet.render(true);
+                        }
+                    },
+                    {
+                        name: `Open PDF`,
+                        icon: '<i class="fas fa-file-pdf"></i>',
+                        condition: () => true,
+                        callback() {
+                            entity.openPDFReference();
+                        }
+                    },
+                    {
+                        name: `Copy ID`,
+                        icon: `<i class="fas fa-copy"></i>`,
+                        condition: () => this._id,
+                        async callback() {
+                            try {
+                                await navigator.clipboard.writeText(entity._id);
+                            } catch (err) {
+                                ui.notifications.info("Your browser does not support clipboard operations")
+                            }
+                        }
+                    },
+                    {
+                        name: `Delete`,
+                        icon: '<i class="fas fa-trash"></i>',
+                        condition: () => true,
+                        async callback() {
+                            entity.delete()
+                        }
+                    },
+                ]
             }
 
             let options = getBaseMenu();
             switch (this.data.type) {
+                case "weapon":
+                    return [{
+                        name: "Add Weapon",
+                        icon: `<i class="fas fa-add"></i>`,
+                        condition: () => true,
+                        async callback() {
+                            await entity.addWeapon()
+                        }
+                    },
+                    {
+                        name: "Delete",
+                        icon: '<i class="fas fa-trash"></i>',
+                        condition: () => true,
+                        async callback() {
+                            await entity.delete()
+                        }
+                    }
+                    ]
                 case "item":
-
+                    break
                 case "skill":
                     options = options.concat([
                         {
-                            name: `roll against ${this.getGURPSObject().name}`,
-                            icon: "",
+                            name: `Roll`,
+                            icon: '<i class="fas fa-dice-d6"></i>',
                             condition: () => true,
                             callback() {
                                 entity.actor.rollSkill(entity.getGURPSObject())
@@ -266,13 +325,13 @@ export class _Item extends ItemContainer {
                         }
                     ])
                 case "spell":
-
+                    break
                 case "trait":
-
+                    break
                 case "melee_weapon":
-
+                    break
                 case "ranged_weapon":
-
+                    break
                 default:
 
             }

@@ -1,5 +1,6 @@
 import _Sheet from "./svelte/Sheet.svelte";
 import Popout from "./svelte/Popout.svelte";
+import GCSImportDialog from "./svelte/GCSImportDialog.svelte";
 import { _Item } from "./item";
 import { Character as GURPSCharacter, Skill, Weapon } from "g4elogic";
 import { writable, Writable } from "svelte/store";
@@ -11,7 +12,6 @@ import { injectHelpers, svelte } from "./helpers";
 export class _ActorSheet extends ActorSheet {
     actor: _Actor
     app: _Sheet
-    _entity: Writable<Entity>
 
     static get defaultOptions() {
         return mergeObject(ActorSheet.defaultOptions, {
@@ -32,29 +32,78 @@ export class _ActorSheet extends ActorSheet {
     }
 
     customPopout() {
-        const popout = window.open();
-        new Popout({
-            target: popout.document.body,
-            props: {
-                entity: this._entity
+        const popout = window.open("./", "_blank", "config='toolbar=no', height='700', width='700' menubar='no', location='no'");
+
+        popout.document.write(`
+            ${document.querySelector("head").outerHTML}
+            <style>
+                body {
+                    background: url(../ui/parchment.jpg) repeat;
+                }
+            </style>
+            <body></body>
+        `);
+
+        window.setTimeout(() => {
+            new Popout({
+                target: popout.document.body,
+                props: {
+                    entity: this.actor._entity
+                }
+            });
+        }, 500);
+    }
+
+    loadGCSFile() {
+        const dialog = new GCSImportDialog({
+            target: document.body,
+        });
+
+        dialog.$on("File Loaded", async (e) => {
+            const files = e.detail;
+            if (files.length === 1) {
+                let file = files[0];
+                let character = new GURPSCharacter("GCSJSON").load(JSON.parse(await file.text()), "GCSJSON");
+
+                console.log(character);
+                character.save("foundry", this.actor);
+            } else if (files.length > 1) {
+
             }
         });
+    }
+
+    customHeaderButtons() {
+        return [
+            {
+                label: "Popout",
+                class: "popout",
+                icon: "fas fa-external-link-alt",
+                onclick: (e: Event) => this.customPopout()
+            },
+            {
+                label: "LoadGCS",
+                class: "load",
+                icon: "fas fa-file-import",
+                onclick: (e: Event) => this.loadGCSFile()
+            }
+        ]
     }
 }
 
 @injectHelpers
 export class _Actor extends Actor {
-    getData: (path: string) => any
+    getProperty: (path: string) => any
 
     _entity: Writable<Entity>
+
     _GURPS: Writable<GURPSCharacter>
     GURPS: GURPSCharacter
     sheet: _ActorSheet
-    shouldRender: boolean
+
 
     constructor(data: any, options: any) {
         super(data, options);
-        //@ts-ignore
         this._entity = writable(this);
         this.GURPS = new GURPSCharacter("foundry");
         this._GURPS = writable(this.GURPS);
@@ -62,58 +111,29 @@ export class _Actor extends Actor {
     }
 
     async setPools() {
-        const ST = this.getData("data.attributes.strength");
-        const HT = this.getData("data.attributes.health");
-        const hp = this.getData("data.attributes.hit_points");
-        const fp = this.getData("data.attributes.fatigue_points");
-        await this.update({ "data.pools.fatigue_points.max": HT + fp });
-        await this.update({ "data.pools.hit_points.max": ST + hp });
-    }
-
-    prepareData() {
-        super.prepareData();
-    }
-
-    _onUpdate(data: any, options: any, userId: string, context: any) {
-        if (data.name || data.img) this.shouldRender = true;
-        super._onUpdate(data, options, userId, context);
+        const ST = this.getProperty("data.attributes.strength");
+        const HT = this.getProperty("data.attributes.health");
+        const hp = this.getProperty("data.attributes.hit_points");
+        const fp = this.getProperty("data.attributes.fatigue_points");
+        let update1 = await this.update({ "data.pools.fatigue_points.max": HT + fp });
+        let update2 = await this.update({ "data.pools.hit_points.max": ST + hp });
+        return { ...update1, ...update2 }
     }
 
     _onUpdateEmbeddedEntity(type: string, doc: any, update: any, options: any, userId: string) {
-        super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
         (this.getOwnedItem(doc._id) as _Item).embeddedUpdate();
-    }
-
-    initialize() {
-        super.initialize();
+        this.updateGURPS();
+        super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
     }
 
     updateGURPS() {
         try {
-            this._GURPS.set(this.GURPS.load(this));
-            //@ts-ignore
+            const update = this.GURPS.load(this);
+            this._GURPS.set(update);
             this._entity.set(this);
-            console.log(this.GURPS, this);
         } catch (e) {
             console.log(e);
         }
-    }
-
-    updateIndexes(type: string) {
-        const updates =
-            this.ownedItemsByType(type)
-                .sort((a, b) => a.getIndex() - b.getIndex())
-                .map((item, i) => {
-                    return {
-                        _id: item._id,
-                        flags: {
-                            GURPS: {
-                                index: i
-                            }
-                        }
-                    }
-                });
-        return this.updateEmbeddedEntity("OwnedItem", updates)
     }
 
     ownedItemsByType(...types: string[]): _Item[] {
@@ -133,11 +153,19 @@ export class _Actor extends Actor {
         });
     }
 
-    rollDamage(weapon: Weapon) {
+    async rollDamage(weapon: Weapon) {
         const roll = new Roll(weapon.damage, {
-
+            swing: this.GURPS.getSwingDamage(),
+            thrust: this.GURPS.getThrustDamage()
         });
-        return roll.toMessage({ GURPSRollType: "Damage" })
+        return roll.toMessage({
+            GURPSRollType: "Damage", GURPSRollData: {
+                type: weapon.getType(),
+                damageType: weapon.damageType,
+                weaponUsage: weapon.usage,
+                weaponName: weapon.owner.name
+            }
+        })
     }
 
     // static getBase64Image(img: HTMLImageElement) {

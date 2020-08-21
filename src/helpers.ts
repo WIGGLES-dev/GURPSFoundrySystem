@@ -1,4 +1,5 @@
 import { createPopper } from "@popperjs/core";
+import App from "./svelte/application/Application.svelte";
 
 export function fixed6(number: string | number) {
     let ifString;
@@ -240,15 +241,16 @@ export function createContextMenu(node: HTMLElement, parameters: any) {
             menu.menuItems = parameters.menuItems();
         }
     }
-
 }
 
 export function svelte(app: any) {
     return function (constructor: new () => Application): any {
         return class extends constructor {
+            _app: App
             app: any
             actor: any
             item: any
+            entity: string
             _entity: any;
 
             constructor(...args: any[]) {
@@ -269,17 +271,38 @@ export function svelte(app: any) {
                 return html as JQuery<HTMLElement>
             }
 
-            render(force: boolean = false, options: any) {
-                if ((this?.actor?.shouldRender || this?.item?.shouldRender) || !this.rendered) {
-                    return super.render(force, options);
-                } else if (this.actor || this.item?.actor) {
-                    if (this.actor) this.actor.updateGURPS();
-                    if (this.item?.actor) this.item.actor.updateGURPS();
-                } else {
-                    const _entity = (this.item || this.actor)._entity;
-                    _entity.set(this.item || this.actor);
-                    this.app.$set({ entity: _entity });
+            async _renderOuter(options: any) {
+                let html = await super._renderOuter(options);
+
+                return html
+            }
+
+            _getHeaderButtons() {
+                return [].concat(this.customHeaderButtons(), super._getHeaderButtons())
+            }
+
+            customHeaderButtons(): any[] {
+                try {
+                    //@ts-ignore
+                    return super.customHeaderButtons()
+                } catch (err) {
+                    return []
                 }
+            }
+
+            render(force: boolean = false, options: any) {
+                if (!this.rendered) return super.render(force, options);
+
+                //@ts-ignore
+                this.element.find(".window-title").text(this.title);
+
+                const actor = this.actor || this.item?.actor;
+                const entity = (this.item || this.actor);
+                actor?.updateGURPS();
+                entity._entity.set(entity);
+                this.app.$set({ entity: entity._entity });
+
+                Hooks.call(`render${this.options.baseApplication}`, this, this.element, {});
             }
 
             updateStores() {
@@ -303,7 +326,7 @@ export function injectHelpers(constructor: any): any {
             return super.delete(options)
         }
 
-        getData(path: string) {
+        getProperty(path: string) {
             return getProperty(this.data, path)
         }
 

@@ -14,7 +14,6 @@
         "importsNotUsedAsValues": "preserve",
         "module": "commonjs",
         "esModuleInterop": true,
-        "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "moduleResolution": "node",

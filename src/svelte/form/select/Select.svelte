@@ -5,6 +5,7 @@
   export let noop = false;
   export let defaultIndex = null;
   export let path = null;
+  export let array = false;
   export let entity = getContext("entity") || null;
   export let name = null;
   export let label = "";
@@ -43,12 +44,20 @@
     }
 
     if (noop) {
-      $entity.update({ [path]: targetValue });
+      game.gurps4e.customUpdate({
+        entity: $entity,
+        value: targetValue,
+        path,
+        array,
+        alsoUpdate,
+      });
     } else {
       game.gurps4e.customUpdate({
         entity: $entity,
         value: targetValue,
         path,
+        array,
+        alsoUpdate,
       });
     }
 

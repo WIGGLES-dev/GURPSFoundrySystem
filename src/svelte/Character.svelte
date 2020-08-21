@@ -9,6 +9,8 @@
   import SpellList from "./SpellList";
   import WeaponList from "./WeaponList";
   import Encumbrance from "./Encumbrance";
+  import Totals from "./Totals";
+  import Armor from "./Armor";
 
   import Input from "./form/Input.svelte";
   import FilePicker from "./form/FilePicker.svelte";
@@ -20,13 +22,6 @@
   setContext("entity", entity);
 
   $: totals = $GURPS.pointTotals();
-
-  function loadCharacter(e) {
-    let file = e.target;
-    file.files[0].text().then((value) => {
-      $entity.GURPS.load(JSON.parse(value), "GCSJSON");
-    });
-  }
 </script>
 
 <style>
@@ -34,17 +29,12 @@
     display: flex;
   }
 
+  .attributes {
+  }
+
   .column {
     display: flex;
     flex-direction: column;
-  }
-
-  .point-total {
-    display: flex;
-  }
-
-  .point-total .numbers {
-    padding-right: 5px;
   }
 </style>
 
@@ -64,117 +54,113 @@
   </TabList>
   <TabPanel>
     <h1>General</h1>
-    <!-- <button type="button" on:click={() => $entity.sheet.customPopout()}>
-      Popout
-    </button> -->
-    <Input
-      config={{ width: '50px' }}
-      on:update={() => $entity.setPools()}
-      path="data.attributes.strength"
-      min="0"
-      type="number"
-      label="ST" />
-    <Input
-      config={{ width: '50px' }}
-      path="data.attributes.dexterity"
-      min="0"
-      type="number"
-      label="DX" />
-    <Input
-      config={{ width: '50px' }}
-      path="data.attributes.intelligence"
-      min="0"
-      type="number"
-      label="IQ" />
-    <Input
-      config={{ width: '50px' }}
-      on:update={() => $entity.setPools()}
-      path="data.attributes.health"
-      min="0"
-      type="number"
-      label="HT" />
-    <Input
-      config={{ width: '50px' }}
-      let:value
-      path="data.attributes.will"
-      min={-$entity.getData('data.attributes.intelligence')}
-      type="number">
-      <span slot="label-text">
-        [{$GURPS.getAttribute('Will').pointsSpent()}] Will: {$entity.getData('data.attributes.intelligence')}
-        +
-      </span>
-    </Input>
-    <Input
-      config={{ width: '50px' }}
-      path="data.attributes.perception"
-      min={-$entity.getData('data.attributes.intelligence')}
-      type="number">
-      <span slot="label-text">
-        [{$GURPS.getAttribute('Per').pointsSpent()}] Per: {$entity.getData('data.attributes.intelligence')}
-        +
-      </span>
-    </Input>
-
-    <div class="flex">
-      <Input
-        config={{ width: '50px' }}
-        on:update={() => $entity.setPools()}
-        path="data.attributes.hit_points"
-        min={-$entity.getData('data.attributes.strength')}
-        type="number">
-        <span slot="label-text">
-          [{$GURPS.getAttribute('HP').pointsSpent()}] HP: {$entity.getData('data.attributes.strength')}
-          +
-        </span>
-      </Input>
-      <Input
-        config={{ width: '50px' }}
-        path="data.pools.hit_points.value"
-        label="Current HP"
-        min={-$GURPS.getAttribute('HP') * 10}
-        type="number" />
-    </div>
-
-    <div class="flex">
-      <Input
-        config={{ width: '50px' }}
-        on:update={() => $entity.setPools()}
-        path="data.attributes.fatigue_points"
-        min={-$entity.getData('data.attributes.health')}
-        type="number">
-        <span slot="label-text">
-          [{$GURPS.getAttribute('FP').pointsSpent()}] FP: {$entity.getData('data.attributes.health')}
-          +
-        </span>
-      </Input>
-      <Input
-        config={{ width: '50px' }}
-        path="data.pools.fatigue_points.value"
-        label="Current FP"
-        min={-$GURPS.getAttribute('HP') * 10}
-        type="number" />
-    </div>
-
-    <div class="point-total">
-      <div class="numbers column">
-        <div class="total">{totals.racialPoints}</div>
-        <div class="total">{totals.attributePoints}</div>
-        <div class="total">{totals.advantages}</div>
-        <div class="total">{totals.disadvantages}</div>
-        <div class="total">{totals.quirks}</div>
-        <div class="totals">{totals.skills}</div>
-        <div class="totals">{totals.spells}</div>
+    <div class="attributes flex">
+      <div class="column">
+        <Input
+          config={{ width: '50px' }}
+          on:update={() => $entity.setPools()}
+          path="data.attributes.strength"
+          min="0"
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
+          </span>
+        </Input>
+        <Input
+          config={{ width: '50px' }}
+          path="data.attributes.dexterity"
+          min="0"
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('DX').pointsSpent()}] DX:
+          </span>
+        </Input>
+        <Input
+          config={{ width: '50px' }}
+          path="data.attributes.intelligence"
+          min="0"
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ
+          </span>
+        </Input>
+        <Input
+          config={{ width: '50px' }}
+          on:update={() => $entity.setPools()}
+          path="data.attributes.health"
+          min="0"
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
+          </span>
+        </Input>
       </div>
-      <div class="labels column">
-        <div>Race</div>
-        <div>Attributes</div>
-        <div>Advantages</div>
-        <div>Disadvantages</div>
-        <div>Quirks</div>
-        <div>Skills</div>
-        <div>Spells</div>
+      <div class="column">
+        <Input
+          config={{ width: '50px' }}
+          let:value
+          path="data.attributes.will"
+          min={-$entity.getProperty('data.attributes.intelligence')}
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('Will').pointsSpent()}] Will: {$entity.getProperty('data.attributes.intelligence')}
+            +
+          </span>
+        </Input>
+        <Input
+          config={{ width: '50px' }}
+          path="data.attributes.perception"
+          min={-$entity.getProperty('data.attributes.intelligence')}
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('Per').pointsSpent()}] Per: {$entity.getProperty('data.attributes.intelligence')}
+            +
+          </span>
+        </Input>
+
+        <div class="flex">
+          <Input
+            config={{ width: '50px' }}
+            on:update={() => $entity.setPools()}
+            path="data.attributes.hit_points"
+            min={-$entity.getProperty('data.attributes.strength')}
+            type="number">
+            <span slot="label-text">
+              [{$GURPS.getAttribute('HP').pointsSpent()}] HP: {$entity.getProperty('data.attributes.strength')}
+              +
+            </span>
+          </Input>
+          <Input
+            config={{ width: '50px' }}
+            path="data.pools.hit_points.value"
+            label="Current HP"
+            min={-$GURPS.getAttribute('HP') * 10}
+            type="number" />
+        </div>
+
+        <div class="flex">
+          <Input
+            config={{ width: '50px' }}
+            on:update={() => $entity.setPools()}
+            path="data.attributes.fatigue_points"
+            min={-$entity.getProperty('data.attributes.health')}
+            type="number">
+            <span slot="label-text">
+              [{$GURPS.getAttribute('FP').pointsSpent()}] FP: {$entity.getProperty('data.attributes.health')}
+              +
+            </span>
+          </Input>
+          <Input
+            config={{ width: '50px' }}
+            path="data.pools.fatigue_points.value"
+            label="Current FP"
+            min={-$GURPS.getAttribute('HP') * 10}
+            type="number" />
+        </div>
       </div>
+      <Totals />
     </div>
+
     <div style="max-width: 50%;">
       <Encumbrance />
     </div>
@@ -195,6 +181,8 @@
   <TabPanel>
     <h1>Combat</h1>
     <WeaponList />
+    <Armor />
+    <Encumbrance />
   </TabPanel>
   <TabPanel>
     <h1>Inventory</h1>

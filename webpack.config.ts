@@ -11,14 +11,15 @@ type production = "development" | "production" | "none"
 const mode = process.env.NODE_ENV as production || choose;
 const prod = mode === 'production';
 
-// const GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
-const GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
+const GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
+// const GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
 
 const config: webpack.Configuration = {
     entry: {
         bundle: [path.resolve(__dirname, 'src/index.ts')],
         // worker: [path.resolve(__dirname), 'src/worker.ts']
     },
+    externals: {},
     resolve: {
         extensions: ['.mjs', '.ts', '.js', '.wasm', '.svelte', '.json'],
         mainFields: ['svelte', 'browser', 'module', 'main']
@@ -83,7 +84,9 @@ const config: webpack.Configuration = {
                     'css-loader',
                     {
                         loader: 'sass-loader',
-                        options: {}
+                        options: {
+                            sassOptions: {}
+                        }
                     }
                 ]
             }

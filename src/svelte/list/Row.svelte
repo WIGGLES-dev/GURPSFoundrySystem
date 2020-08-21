@@ -25,34 +25,33 @@
   export let entity = getContext("entity");
 
   export let colspan;
-  export let row;
-  export let draggable = null;
 
   export let container = null;
   export let i = null;
   export let id = null;
 
   export let hideNotes = true;
+  export let disabled = false;
 
   export let config = {
     draggable: false,
     highlightHover: true,
     deleteButton: true,
+    toggle: false,
   };
 
   export let children = [];
 
   export let menuItems = (() => {
-    if ($entity && $entity.entity === "Actor" && id) {
-      return $entity.getOwnedItem(id).getMenuItems();
-    } else if ($entity && $entity.entity === "Item") {
-      return $entity.getMenuItems();
-    } else {
-      return () => [];
-    }
+    let item = $entity.getOwnedItem(id) || $entity;
+    return item && item.getMenuItems ? item.getMenuItems() : () => [];
   })();
 
   export let selector = "contextmenu";
+
+  let GURPS = {};
+
+  // $: GURPS = ($entity.getOwnedItem(id) || $entity).getGURPSObject();
 
   const self = get_current_component();
 
@@ -69,8 +68,7 @@
     border-bottom: 1px solid red;
   }
   .hovered {
-    border: 1px solid red;
-    margin: -1px;
+    background-color: rgba(0, 0, 0, 0.25);
   }
   .notes {
     min-height: 50px;
@@ -86,6 +84,7 @@
 </style>
 
 <tr
+  class:strikethrough={disabled}
   data-container={container}
   data-index={i}
   data-entity-id={id}
@@ -94,7 +93,6 @@
   use:createContextMenu={{ menuItems, selector }}
   class:hovered={$hovered === i && config.highlightHover}
   class:container
-  bind:this={row}
   on:mouseover={(e) => {
     setDragover(e, i);
     dispatch('mouseover');
@@ -135,23 +133,29 @@
   }}>
   <td
     on:click={(e) => {
+      if (!config.toggle) return;
       hideNotes = !hideNotes;
     }}>
-    {hideNotes ? '>' : '∨'}
+    {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot />
+  <slot {GURPS} {id} />
   {#if config.deleteButton}
     <td>
       <i class="fas fa-trash" on:click={dispatch('delete', { id })} />
     </td>
   {/if}
-  <slot name="row-after" />
+  <slot name="row-after" {GURPS} {id} />
 </tr>
-{#each children as child}
-  <svelte:self />
-{/each}
 {#if !hideNotes}
   <td class="notes" {colspan}>
-    <slot name="notes" />
+    <slot name="notes" {GURPS} {id} />
   </td>
 {/if}
+
+<!-- {#each $entity.getOwnedItem(id).getChildren() as child, i (child.id)}
+  <svelte:self {entity} {config} {menuItems} {colspan} {container}>
+    <slot {GURPS} {id} />
+    <slot name="row-after" {GURPS} {id} />
+    <slot name="notes" {GURPS} {id} />
+  </svelte:self>
+{/each} -->

@@ -2,5 +2,6 @@
     "name": "",
     "difficulty": "A",
     "signature": "IQ",
-    "points": 1
+    "points": 1,
+    "global_mod": 0
 }

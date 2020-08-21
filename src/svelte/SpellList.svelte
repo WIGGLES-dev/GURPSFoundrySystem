@@ -20,6 +20,7 @@
   }}>
   <thead name="header">
     <tr>
+      <td />
       <th>Spells</th>
       <th>Resist</th>
       <th>Class</th>
@@ -31,6 +32,7 @@
       <th>RSL</th>
       <th>Pts</th>
       <th>Ref</th>
+      <th />
     </tr>
   </thead>
   {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}

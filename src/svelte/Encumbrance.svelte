@@ -13,9 +13,12 @@
   .active {
     background-color: yellow;
   }
+  .cannot-move {
+    background-color: red;
+  }
 </style>
 
-<table>
+<table class:cannot-move={encLevel === -5}>
   <thead>
     <tr>
       <th>Level</th>

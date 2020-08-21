@@ -17,6 +17,7 @@
   export let autocomplete = "off";
   export let label = "";
   export let step = null;
+  export let defaultValue = type === "text" ? "" : type === "number" ? 0 : null;
 
   export let config = {
     clickToEdit: false,
@@ -42,18 +43,18 @@
     dispatch("update", { entity: update });
   }
 
-  $: value = getValue($entity);
+  $: value = getValue($entity) || defaultValue;
 
   function getValue(entity) {
     if (array) {
-      const data = entity.getData(path);
+      const data = entity.getProperty(path);
       if (array.property) {
         return data[array.index][array.property];
       } else {
         return data[array.index];
       }
     } else {
-      return entity.getData(path);
+      return entity.getProperty(path);
     }
   }
 </script>

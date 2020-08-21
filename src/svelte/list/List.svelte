@@ -42,7 +42,7 @@
   export const columns = writable(0);
   export let buttonLabel = "Add New";
   export let type = null;
-  export let config = { dragDrop: true };
+  export let config = { dragDrop: true, button: true };
 
   setContext(ROWS, {
     registerRow(rowElement) {
@@ -80,9 +80,13 @@
 
 <svelte:window />
 
-<button type="button" on:click={addListItem}>{buttonLabel}</button>
-<table bind:this={table} on:drop={(e) => {}}>
-  <slot name="header" />
-  <slot />
-  <slot name="footer" />
-</table>
+<div bind:this={table}>
+  {#if config.button}
+    <button type="button" on:click={addListItem}>{buttonLabel}</button>
+  {/if}
+  <table on:drop={(e) => {}}>
+    <slot name="header" />
+    <slot />
+    <slot name="footer" />
+  </table>
+</div>

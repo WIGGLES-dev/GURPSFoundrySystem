@@ -1,9 +1,7 @@
 <script>
-  import { onMount, tick } from "svelte";
+  import { onMount, onUpdate } from "svelte";
   import { createEventDispatcher, getContext } from "svelte";
   const dispatch = createEventDispatcher();
-
-  import { asyncEnrichHTML } from "../../rich-text-editor";
 
   export let entity = getContext("entity") || null;
   export let path = null;
@@ -12,21 +10,29 @@
   export let links = true;
   export let rolls = true;
 
-  function getRollData() {
-    let data = {
-      data: {
-        this: {
-          ...$entity.data,
-        },
-        actor: $entity.actor
-          ? {
-              ...$entity.actor.data,
-            }
-          : null,
-      },
-    };
-    return { data };
-  }
+  // function getRollData() {
+  //   let data = {
+  //     data: {
+  //       this: {
+  //         ...$entity.data,
+  //       },
+  //       actor: $entity.actor
+  //         ? {
+  //             ...$entity.actor.data,
+  //           }
+  //         : null,
+  //     },
+  //   };
+  //   return { data };
+  // }
+
+  onMount(() => {
+    createEditorInstance();
+  });
+
+  // onUpdate(() => {
+  //   createEditorInstance();
+  // });
 
   let RTE;
   let target;
@@ -38,7 +44,7 @@
       entities: true,
       links: true,
       rolls: true,
-      rollData: getRollData(),
+      //rollData: getRollData(),
     });
     return content;
   };
@@ -52,9 +58,7 @@
       {
         target,
         save_onsavecallback() {
-          editing = false;
-          enrichHTML();
-          dispatch("save");
+          update(RTE.getContent());
         },
       },
       value || ""
@@ -63,13 +67,13 @@
     RTE.on("blur", (e) => {
       update(e.target.getContent());
     });
-    editing = true;
   }
 
   async function update(value) {
     await $entity.update({ [path]: value });
     enrichHTML(value);
     dispatch("save");
+    editing = false;
   }
 </script>
 
@@ -97,7 +101,6 @@
       <i
         class="fas fa-edit"
         on:click={async () => {
-          await createEditorInstance();
           if (RTE) editing = true;
         }} />
     </a>
@@ -111,7 +114,6 @@
       type="button"
       on:click={async (e) => {
         await update(RTE.getContent());
-        RTE.remove();
         editing = false;
       }}>
       <i class="fas fa-feather-alt" />

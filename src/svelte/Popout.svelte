@@ -18,7 +18,7 @@
   });
 
   function getComponent() {
-    switch (type) {
+    switch ($entity.data.type) {
       case "character":
         return Character;
     }
@@ -30,5 +30,5 @@
 </style>
 
 <div>
-  <svelte:component this={component} {entity} />
+  <svelte:component this={getComponent()} {entity} />
 </div>

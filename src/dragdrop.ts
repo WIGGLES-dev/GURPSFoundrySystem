@@ -58,6 +58,11 @@ export class GURPSDragDrop {
         */
     private static async handleDropOnList(e: DragEvent) {
         const { origin, target } = getDragContext(e);
+
+        console.log(origin, target);
+
+
+
         if (origin.data.type === target.data.type) {
             if (origin.actor && target.actor && origin.actor !== target.actor) {
                 let newItem = await target.actor.createOwnedItem(origin) as _Item;
@@ -69,8 +74,8 @@ export class GURPSDragDrop {
                     origin.moveToIndex(target.getIndex() - 1, target.data.type);
                 }
             } else if (target.actor && !origin.actor) {
-                let newItem = await target.actor.createOwnedItem(origin) as _Item;
-                newItem.moveToIndex(target.getIndex(), target.data.type);
+                // let newItem = await target.actor.createOwnedItem(origin) as _Item;
+                // newItem.moveToIndex(target.getIndex(), target.data.type);
             } else {
 
             }
@@ -91,9 +96,6 @@ function setDragData(e: DragEvent) {
 function getDragContext(e: DragEvent) {
     const target = (e.target as HTMLElement).closest("tr").dataset;
     const origin = JSON.parse(e.dataTransfer.getData("text/plain"));
-
-    console.log(e.target);
-    console.log(origin);
 
     return {
         origin: getItem(origin.id) as _Item,

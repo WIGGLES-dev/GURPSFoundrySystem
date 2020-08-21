@@ -5,14 +5,12 @@
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
+  console.log($entity);
 </script>
 
 <style>
   th {
     padding: 0px 5px 0px 5px;
-  }
-  .skill-roll-ico:hover {
-    box-shadow: 0 0 8px red;
   }
 </style>
 
@@ -28,9 +26,9 @@
       <th>Skills</th>
       <th>SL</th>
       <th>RSL</th>
+      <th>Mod</th>
       <th>Pts</th>
       <th>Ref</th>
-      <th />
       <th />
     </tr>
   </thead>
@@ -47,6 +45,16 @@
         $entity.rollSkill(skill);
       }}>
       <td style="width: 100%;">
+        <img
+          style="margin-left: 10px;"
+          class="roll-ico"
+          on:click={(e) => {
+            $entity.rollSkill(skill);
+          }}
+          src="systems/GURPS/icons/roll-ico.png"
+          alt="roll"
+          height="21px"
+          width="auto" />
         <Input
           entity={$entity.getOwnedItem(skill.foundryID)._entity}
           path="data.name"
@@ -58,6 +66,16 @@
       </td>
       <td>{skill.calculateLevel()}</td>
       <td />
+      <td>
+        <Input
+          entity={$entity.getOwnedItem(skill.foundryID)._entity}
+          type="number"
+          path="data.global_mod"
+          config={{ clickToEdit: true }}
+          let:value>
+          <span slot="no-edit">{value}</span>
+        </Input>
+      </td>
       <td>
         <Input
           entity={$entity.getOwnedItem(skill.foundryID)._entity}
@@ -77,17 +95,6 @@
           let:value>
           <span slot="no-edit">{value}</span>
         </Input>
-      </td>
-      <td slot="row-after" style="min-width: 21px;">
-        <img
-          class="skill-roll-ico"
-          on:click={(e) => {
-            $entity.rollSkill(skill);
-          }}
-          src="systems/GURPS/icons/roll-ico.png"
-          alt="roll"
-          height="21px"
-          width="auto" />
       </td>
       <div slot="notes">{skill.notes}</div>
     </Row>

@@ -5,10 +5,10 @@
     "version": "1.0.0",
     "templateVersion": 2,
     "author": "Ian Bell",
-    "scripts": [
+    "scripts": [],
+    "esmodules": [
         "main.js"
     ],
-    "esmodules": [],
     "styles": [],
     "packs": [
         {

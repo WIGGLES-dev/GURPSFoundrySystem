@@ -1,8 +1,11 @@
 <script>
   export let message = null;
-  export let rollData = null;
 
-  let roll = message.roll;
+  const roll = message.roll;
+  const { type, weaponName, damageType, weaponUsage } = message.getFlag(
+    "GURPS",
+    "roll_data"
+  );
 </script>
 
 <style>
@@ -11,21 +14,23 @@
 
 <div class="dice-roll">
   <div class="dice-result">
-    <div class="dice-formula">f</div>
+    <div class="dice-formula">{weaponName} - {weaponUsage}</div>
     <div class="dice-tooltip">
       <div class="dice">
-        <p class="part-formu">
-          "fdsa"
-          <span class="part-total" />
-        </p>
+        {#each roll.dice as die}
+          <p class="part-formula">
+            {die.formula}
+            <span class="part-total">{die.total}</span>
+          </p>
 
-        <ol class="dice-roll">
-          <li class="roll die">3</li>
-          <li class="roll die">3</li>
-        </ol>
-        
+          <ol class="dice-rolls">
+            {#each die.results as result}
+              <li class="roll die d6">{result}</li>
+            {/each}
+          </ol>
+        {/each}
       </div>
     </div>
-    <h4 class="dice-total">f</h4>
+    <h4 class="dice-total">{roll.total} {damageType}</h4>
   </div>
 </div>

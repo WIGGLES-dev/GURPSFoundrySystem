@@ -35,6 +35,7 @@
   </thead>
   {#each window.game.gurps4e.indexSort($GURPS.traitList.iter()) as trait, i (trait.foundryID)}
     <Row
+      disabled={trait.disabled}
       colspan="5"
       {i}
       id={trait.foundryID}
@@ -49,7 +50,7 @@
           path="data.name"
           alsoUpdate={['name']}
           let:value>
-          <span slot="no-edit">{trait.name}</span>
+          <span slot="no-edit">{trait.toString()}</span>
         </Input>
       </td>
       <td>{trait.adjustedPoints()}</td>

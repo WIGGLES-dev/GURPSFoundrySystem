@@ -8,8 +8,10 @@
   export let disabled = null;
   export let name = null;
   export let label = "";
-  let value = window.getProperty(entity.data, path);
-  function update(e) {
+  
+  let value = window.getProperty($entity.data, path);
+
+  async function update(e) {
     let target = e.target;
     $entity.update({ [path]: target.checked ? on : off });
     dispatch("toggle");

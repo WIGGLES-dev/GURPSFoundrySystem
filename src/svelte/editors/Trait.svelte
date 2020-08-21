@@ -1,6 +1,6 @@
 <script>
-  import {getContext} from "svelte";
-import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
+  import { getContext } from "svelte";
+  import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
 
   export let entity = getContext("entity") || null;
 
@@ -48,7 +48,9 @@ import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
 
 </style>
 
-<Checkbox {entity} path="data.enabled" on="true" off="false" label="Enabled" />
+{#if $entity.actor}
+  <Checkbox {entity} path="data.enabled" label="Enabled" />
+{/if}
 <Input
   label="Name"
   {entity}
