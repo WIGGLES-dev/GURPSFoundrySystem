@@ -34,6 +34,7 @@
   </thead>
   {#each window.game.gurps4e.indexSort($GURPS.skillList.iter()) as skill, i (skill.foundryID)}
     <Row
+      let:hovered
       on:delete={(e) => {
         $entity.getOwnedItem(e.detail.id).delete();
       }}
@@ -45,16 +46,11 @@
         $entity.rollSkill(skill);
       }}>
       <td style="width: 100%;">
-        <img
-          style="margin-left: 10px;"
-          class="roll-ico"
-          on:click={(e) => {
-            $entity.rollSkill(skill);
-          }}
-          src="systems/GURPS/icons/roll-ico.png"
-          alt="roll"
-          height="21px"
-          width="auto" />
+        {#if hovered}
+          <span
+            class="fas fa-dice d6 roll-ico"
+            on:click={$entity.rollSkill(skill)} />
+        {/if}
         <Input
           entity={$entity.getOwnedItem(skill.foundryID)._entity}
           path="data.name"
@@ -64,7 +60,7 @@
           <span slot="no-edit">{skill.toString()}</span>
         </Input>
       </td>
-      <td>{skill.calculateLevel()}</td>
+      <td>{Math.floor(skill.calculateLevel())}</td>
       <td />
       <td>
         <Input

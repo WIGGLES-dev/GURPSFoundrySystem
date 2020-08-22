@@ -1,5 +1,5 @@
 <script>
-  import Character from "./Character";
+  import Sheet from "./Sheet";
 
   import { onDestroy } from "svelte";
 
@@ -16,13 +16,6 @@
   onDestroy(() => {
     messenger.close();
   });
-
-  function getComponent() {
-    switch ($entity.data.type) {
-      case "character":
-        return Character;
-    }
-  }
 </script>
 
 <style>
@@ -30,5 +23,5 @@
 </style>
 
 <div>
-  <svelte:component this={getComponent()} {entity} />
+  <svelte:component this={Sheet} {entity} />
 </div>

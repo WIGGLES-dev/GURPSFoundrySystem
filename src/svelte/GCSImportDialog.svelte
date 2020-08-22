@@ -8,7 +8,7 @@
 
 </style>
 
-<Dialog on:close>
+<Dialog on:close title="GCS Import">
   <input
     type="file"
     on:change={(e) => {

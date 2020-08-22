@@ -10,46 +10,77 @@
 </script>
 
 <style>
-  .column {
-    display: flex;
-    flex-direction: column;
-  }
-  .total {
-    padding: 7px;
+  .totals {
     background-color: rgba(0, 0, 0, 0.05);
-  }
-  .point-total {
-    display: flex;
+    gap: 5px;
     margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
   }
-  .point-total .numbers {
-    padding-right: 5px;
+  .totals :global(.GURPS-label) {
+    padding: 0px;
+  }
+
+  .totals :global(input) {
+    float: right;
+  }
+
+  .total {
+    text-align: right;
+  }
+
+  .total-points {
+    grid-column: 1 / span 2;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .thrust {
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+  .swing {
+    color: white;
+    background-color: black;
+    text-align: center;
   }
 </style>
 
-<!-- <div>{totals.total + $entity.getProperty('data.unspent_points')}</div>
-<Input path="data.unspent_points" type="number" /> -->
-<div class="point-total">
-  <div class="numbers column">
-    <div class="total">{totals.racialPoints}</div>
-    <div class="total">{totals.attributePoints}</div>
-    <div class="total">{totals.advantages}</div>
-    <div class="total">{totals.disadvantages}</div>
-    <div class="total">{totals.quirks}</div>
-    <div class="total">{totals.skills}</div>
-    <div class="total">{totals.spells}</div>
-    <div class="swing total">{$GURPS.getSwingDamage()}</div>
-    <div class="thrust total">{$GURPS.getThrustDamage()}</div>
+<div class="totals">
+  <div class="total-points">
+    {totals.total + $entity.getProperty('data.unspent_points')} CP
   </div>
-  <div class="labels column">
-    <div class="total">Race</div>
-    <div class="total">Attributes</div>
-    <div class="total">Advantages</div>
-    <div class="total">Disadvantages</div>
-    <div class="total">Quirks</div>
-    <div class="total">Skills</div>
-    <div class="total">Spells</div>
-    <div class="total">Swing</div>
-    <div class="total">Thrust</div>
-  </div>
+
+  <div>Unspent Points</div>
+  <Input path="data.unspent_points" type="number" />
+
+  <div class="">Race</div>
+  <div class="total">{totals.racialPoints}</div>
+
+  <div class="">Attributes</div>
+  <div class="total">{totals.attributePoints}</div>
+
+  <div class="">Advantages</div>
+  <div class="total">{totals.advantages}</div>
+
+  <div class="">Disadvantages</div>
+  <div class="total">{totals.disadvantages}</div>
+
+  <div class="">Quirks</div>
+  <div class="total">{totals.quirks}</div>
+
+  <div class="">Skills</div>
+  <div class="total">{totals.skills}</div>
+
+  <div class="">Spells</div>
+  <div class="total">{totals.spells}</div>
+
+  <div class="thrust">Thrust</div>
+  <div class="thrust total">{$GURPS.getThrustDamage()}</div>
+
+  <div class="swing">Swing</div>
+  <div class="swing total">{$GURPS.getSwingDamage()}</div>
 </div>

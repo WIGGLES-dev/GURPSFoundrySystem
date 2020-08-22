@@ -12,8 +12,7 @@
   import Totals from "./Totals";
   import Armor from "./Armor";
 
-  import Input from "./form/Input.svelte";
-  import FilePicker from "./form/FilePicker.svelte";
+  import { RichTextEditor, Input, FilePicker } from "./form/form";
 
   export let entity = null;
   const GURPS = $entity._GURPS;
@@ -29,7 +28,8 @@
     display: flex;
   }
 
-  .attributes {
+  .attributes :global(.GURPS-label input) {
+    max-width: 50px;
   }
 
   .column {
@@ -57,7 +57,6 @@
     <div class="attributes flex">
       <div class="column">
         <Input
-          config={{ width: '50px' }}
           on:update={() => $entity.setPools()}
           path="data.attributes.strength"
           min="0"
@@ -66,26 +65,17 @@
             [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
           </span>
         </Input>
-        <Input
-          config={{ width: '50px' }}
-          path="data.attributes.dexterity"
-          min="0"
-          type="number">
+        <Input path="data.attributes.dexterity" min="0" type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('DX').pointsSpent()}] DX:
           </span>
         </Input>
-        <Input
-          config={{ width: '50px' }}
-          path="data.attributes.intelligence"
-          min="0"
-          type="number">
+        <Input path="data.attributes.intelligence" min="0" type="number">
           <span slot="label-text">
-            [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ
+            [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:
           </span>
         </Input>
         <Input
-          config={{ width: '50px' }}
           on:update={() => $entity.setPools()}
           path="data.attributes.health"
           min="0"
@@ -94,44 +84,62 @@
             [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
           </span>
         </Input>
-      </div>
-      <div class="column">
         <Input
-          config={{ width: '50px' }}
-          let:value
-          path="data.attributes.will"
-          min={-$entity.getProperty('data.attributes.intelligence')}
-          type="number">
+          path="data.attributes.move"
+          type="number"
+          basedOn={$GURPS
+            .getAttribute('Move')
+            .calculateLevel() - $entity.getProperty('data.attributes.move')}>
           <span slot="label-text">
-            [{$GURPS.getAttribute('Will').pointsSpent()}] Will: {$entity.getProperty('data.attributes.intelligence')}
-            +
+            [{$GURPS.getAttribute('Move').pointsSpent()}] Move:
           </span>
         </Input>
         <Input
-          config={{ width: '50px' }}
-          path="data.attributes.perception"
-          min={-$entity.getProperty('data.attributes.intelligence')}
+          path="data.attributes.speed"
+          step="0.25"
+          min={0}
+          basedOn={$GURPS
+            .getAttribute('Speed')
+            .calculateLevel() - $entity.getProperty('data.attributes.speed')}
           type="number">
           <span slot="label-text">
-            [{$GURPS.getAttribute('Per').pointsSpent()}] Per: {$entity.getProperty('data.attributes.intelligence')}
-            +
+            [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:
+          </span>
+        </Input>
+      </div>
+      <div class="column">
+        <Input
+          let:value
+          path="data.attributes.will"
+          basedOn={$entity.getProperty('data.attributes.intelligence')}
+          min={0}
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('Will').pointsSpent()}] Will:
+          </span>
+        </Input>
+        <Input
+          path="data.attributes.perception"
+          min={0}
+          basedOn={$entity.getProperty('data.attributes.intelligence')}
+          type="number">
+          <span slot="label-text">
+            [{$GURPS.getAttribute('Per').pointsSpent()}] Per:
           </span>
         </Input>
 
         <div class="flex">
           <Input
-            config={{ width: '50px' }}
             on:update={() => $entity.setPools()}
             path="data.attributes.hit_points"
-            min={-$entity.getProperty('data.attributes.strength')}
+            min={0}
+            basedOn={$entity.getProperty('data.attributes.strength')}
             type="number">
             <span slot="label-text">
-              [{$GURPS.getAttribute('HP').pointsSpent()}] HP: {$entity.getProperty('data.attributes.strength')}
-              +
+              [{$GURPS.getAttribute('HP').pointsSpent()}] HP:
             </span>
           </Input>
           <Input
-            config={{ width: '50px' }}
             path="data.pools.hit_points.value"
             label="Current HP"
             min={-$GURPS.getAttribute('HP') * 10}
@@ -140,21 +148,19 @@
 
         <div class="flex">
           <Input
-            config={{ width: '50px' }}
             on:update={() => $entity.setPools()}
             path="data.attributes.fatigue_points"
-            min={-$entity.getProperty('data.attributes.health')}
+            min={0}
+            basedOn={$entity.getProperty('data.attributes.health')}
             type="number">
             <span slot="label-text">
-              [{$GURPS.getAttribute('FP').pointsSpent()}] FP: {$entity.getProperty('data.attributes.health')}
-              +
+              [{$GURPS.getAttribute('FP').pointsSpent()}] FP:
             </span>
           </Input>
           <Input
-            config={{ width: '50px' }}
             path="data.pools.fatigue_points.value"
             label="Current FP"
-            min={-$GURPS.getAttribute('HP') * 10}
+            min={0}
             type="number" />
         </div>
       </div>
@@ -164,6 +170,8 @@
     <div style="max-width: 50%;">
       <Encumbrance />
     </div>
+    <h3>Notes</h3>
+    <RichTextEditor path="data.notes" />
   </TabPanel>
   <TabPanel>
     <h1>Traits</h1>
@@ -173,6 +181,8 @@
     <h1>Bio/Misc</h1>
     <Input {entity} type="text" path="name" label="Name" />
     <FilePicker type="image" />
+    <h3>Biography</h3>
+    <RichTextEditor path="data.bio" />
   </TabPanel>
   <TabPanel>
     <h1>Skills</h1>
@@ -180,6 +190,7 @@
   </TabPanel>
   <TabPanel>
     <h1>Combat</h1>
+    <button type="button">Dodge</button>
     <WeaponList />
     <Armor />
     <Encumbrance />

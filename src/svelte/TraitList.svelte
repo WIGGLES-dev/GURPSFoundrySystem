@@ -50,7 +50,7 @@
           path="data.name"
           alsoUpdate={['name']}
           let:value>
-          <span slot="no-edit">{trait.toString()}</span>
+          <span slot="no-edit">{trait.name}</span>
         </Input>
       </td>
       <td>{trait.adjustedPoints()}</td>

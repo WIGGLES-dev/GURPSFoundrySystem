@@ -6,13 +6,15 @@
   export let entity = null;
   export let weapon = null;
   export let i = null;
+
+  $: weaponType = $entity.getProperty("data.weapons")[i].type;
 </script>
 
 <style>
 
 </style>
 
-<Dialog on:close>
+<Dialog on:close title="Weapon Editor">
   <Select
     {entity}
     path="data.weapons"
@@ -43,7 +45,7 @@
       array={{ index: i, property: 'damage_type' }}
       label="Type" />
   </div>
-  {#if (weapon.type || weapon.getType()) === 'melee_weapon'}
+  {#if weaponType === 'melee_weapon'}
     <Input
       {entity}
       path="data.weapons"
@@ -59,7 +61,7 @@
       path="data.weapons"
       array={{ index: i, property: 'block' }}
       label="Block" />
-  {:else if (weapon.type || weapon.getType()) === 'ranged_weapon'}
+  {:else if weaponType === 'ranged_weapon'}
     <Input
       {entity}
       path="data.weapons"
@@ -86,4 +88,15 @@
       array={{ index: i, property: 'bulk' }}
       label="Bulk" />
   {/if}
+
+  <Input
+    {entity}
+    path="data.weapons"
+    label="Skill ID"
+    array={{ index: i, property: 'skill_id' }} />
+  <Input
+    {entity}
+    label="Weapon Skill Bonus"
+    path="data.weapons"
+    array={{ index: i, property: 'weapon_skill_mod' }} />
 </Dialog>

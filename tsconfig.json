@@ -22,6 +22,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "baseUrl": ".",
+        "allowJs": true,
         "paths": {},
         "lib": [
             "webworker",

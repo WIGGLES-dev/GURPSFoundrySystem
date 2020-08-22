@@ -8,6 +8,14 @@
 </script>
 
 <style>
+  table {
+    white-space: nowrap;
+  }
+
+  table :global(.GURPS-label) {
+    padding: 0px !important;
+  }
+
   .grow {
     width: 100%;
   }

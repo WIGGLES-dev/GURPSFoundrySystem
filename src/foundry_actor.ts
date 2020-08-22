@@ -196,6 +196,7 @@ export class FoundryEntity extends Serializer {
     saveSpell(spell: Spell) {
         try {
             return Object.assign({}, {
+                name: spell.name,
                 college: spell.college,
                 power_source: spell.powerSource,
                 class: spell.spellClass,
@@ -449,7 +450,7 @@ export class FoundryEntity extends Serializer {
         character.getAttribute(Signature.Will).setLevel(getProperty(data, "data.attributes.will"));
         character.getAttribute(Signature.Per).setLevel(getProperty(data, "data.attributes.perception"));
         character.getAttribute(Signature.Move).setLevel(getProperty(data, "data.attributes.move"));
-        character.getAttribute(Signature.Speed).setLevel(getProperty(data, "data.attribtues.speed"));
+        character.getAttribute(Signature.Speed).setLevel(getProperty(data, "data.attributes.speed"));
 
         character.getAttribute(Signature.FP).setLevel(
             getProperty(data, "data.attributes.fatigue_points")

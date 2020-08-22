@@ -1,5 +1,6 @@
 import Message from "./svelte/chat/Message.svelte"
 
+
 export class _ChatMessage extends ChatMessage {
 
     constructor(data: EntityData<any>, options: any) {

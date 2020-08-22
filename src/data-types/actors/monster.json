@@ -3,6 +3,10 @@
         "templates": [
             "pools",
             "attributes"
-        ]
+        ],
+        "damage_resistance": 0,
+        "bio": "",
+        "notes": "",
+        "class": ""
     }
 }

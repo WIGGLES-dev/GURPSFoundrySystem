@@ -2,7 +2,7 @@
     "name": "GURPS",
     "title": "GURPS 4th Edition",
     "description": "GURPS 4e system.",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "templateVersion": 2,
     "author": "Ian Bell",
     "scripts": [],
@@ -48,12 +48,12 @@
         }
     ],
     "socket": false,
-    "initiative": false,
+    "initiative": "@initiative",
     "gridDistance": 1,
     "gridUnits": "yards",
     "primaryTokenAttribute": "hit_points",
     "secondaryTokenAttribute": "fatigue_points",
     "url": "https://github.com/WIGGLES-dev/GURPSFoundrySystem",
     "manifest": null,
-    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/releases/download/1.0.0/GURPS.zip"
+    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/releases/download/1.0.2/GURPS.zip"
 }

@@ -23,6 +23,7 @@
 
   function transformWeapon(weapon, name) {
     return {
+      _id: weapon._id,
       type: weapon.type,
       getType() {
         return weapon.type;
@@ -34,25 +35,7 @@
     };
   }
 
-  const weaponMenuItems = (id, weapon, i) => [
-    {
-      name: "Delete",
-      icon: '<i class="fas fa-trash"></i>',
-      condition: () => true,
-      callback() {
-        $entity
-          .getOwnedItem(id)
-          .removeByPath("data.weapons", weapon.foundryID || weapon._id);
-      },
-    },
-    {
-      name: "Roll",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => true,
-      callback() {
-        $entity.rollDamage(weapon);
-      },
-    },
+  const weaponMenuItems = (id, weapon, i, weaponEntityData) => [
     {
       name: "Edit",
       icon: '<i class="fas fa-edit"></i>',
@@ -67,11 +50,60 @@
         }
       },
     },
+    {
+      name: "Roll Skill",
+      icon: '<i class="fas fa-dice-d6"></i>',
+      condition: () => {
+        try {
+          if (weaponEntityData.skill_id) {
+            return true;
+          }
+        } catch (err) {
+          return false;
+        }
+      },
+      callback() {
+        try {
+          const skill = $GURPS.getElementById(
+            "foundryID",
+            weaponEntityData.skill_id
+          );
+          $entity.rollSkill(skill, weaponEntityData.weapon_skill_mod || "");
+        } catch (err) {
+          console.log(err);
+          ui.notifications.warn(
+            "The ID reference you have provided cannot find the skill on your character sheet"
+          );
+        }
+      },
+    },
+    {
+      name: "Roll Damage",
+      icon: '<i class="fas fa-dice-d6"></i>',
+      condition: () => true,
+      callback() {
+        $entity.rollDamage(weapon);
+      },
+    },
+    {
+      name: "Delete",
+      icon: '<i class="fas fa-trash"></i>',
+      condition: () => true,
+      callback() {
+        $entity
+          .getOwnedItem(id)
+          .removeByPath("data.weapons", weapon.foundryID || weapon._id);
+      },
+    },
   ];
 </script>
 
 <style>
-
+  .weapon-tools {
+  }
+  .weapon-tools > .tool {
+    float: left;
+  }
 </style>
 
 <button
@@ -93,7 +125,10 @@
   <tbody>
     {#each getWeapons($GURPS.featureList.weapons.values()) as weapon, i (weapon[0])}
       <Row {i} colspan="4" id={weapon[0]} config={{ toggle: true }}>
-        <td>{$GURPS.getElementById('foundryID', weapon[0]).name}</td>
+        <td class="weapon-tools">
+          <span class="tool fas fa-dice d6" />
+          {$GURPS.getElementById('foundryID', weapon[0]).name}
+        </td>
         <td>{weapon[1].length}</td>
         <table slot="notes" class="weapon-list">
           <thead>
@@ -109,7 +144,9 @@
             {#each weapon[1] as weapon, i (weapon.foundryID)}
               <Row
                 config={{ highlightHover: false, deleteButton: false }}
-                menuItems={() => weaponMenuItems(weapon.owner.foundryID, weapon, i)}>
+                menuItems={() => weaponMenuItems(weapon.owner.foundryID, weapon, i, $entity
+                      .getOwnedItem(weapon.owner.foundryID)
+                      .getProperty('data.weapons')[i])}>
                 <td>{weapon.getType()}</td>
                 <td>{weapon.usage}</td>
                 <td>
@@ -159,7 +196,7 @@
             {#each weaponEntity.getProperty('data.weapons') as weapon, i (weapon._id)}
               <Row
                 config={{ highlightHover: false, deleteButton: false }}
-                menuItems={() => weaponMenuItems(weaponEntity.id, transformWeapon(weapon, weaponEntity.getProperty('name')), i)}>
+                menuItems={() => weaponMenuItems(weaponEntity.id, transformWeapon(weapon, weaponEntity.getProperty('name')), i, weapon)}>
                 <td>{weapon.type}</td>
                 <td>{weapon.usage}</td>
                 <td>

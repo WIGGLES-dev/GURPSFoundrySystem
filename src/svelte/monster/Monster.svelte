@@ -38,6 +38,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
   }
+  .statgrid :global(input) {
+    width: 50px;
+  }
   .stat {
   }
   .box {
@@ -90,13 +93,11 @@
   <div class="stat">
     <div class="flex">
       <Input
-        config={{ width: '50px' }}
         type="number"
         min="0"
         label="HP"
         path="data.pools.hit_points.value" />
       <Input
-        config={{ width: '50px' }}
         width="50px"
         type="number"
         min="0"
@@ -158,16 +159,11 @@
   <div class="stat">
     <span class="flex">
       <Input
-        config={{ width: '50px' }}
         type="number"
         min="0"
         label="FP"
         path="data.pools.fatigue_points.value" />
-      <Input
-        config={{ width: '50px' }}
-        type="number"
-        min="0"
-        path="data.pools.fatigue_points.max" />
+      <Input type="number" min="0" path="data.pools.fatigue_points.max" />
     </span>
   </div>
   <div class="stat">
@@ -225,8 +221,8 @@
               <img
                 on:click={(e) => {
                   let roll = new SuccessRoll({
-                    level: attack.getData('data.roll_against'),
-                    trait: attack.getData('name'),
+                    level: attack.getProperty('data.roll_against'),
+                    trait: attack.getProperty('name'),
                     modifiers: prompt('Modifiers'),
                   });
                   roll.roll();

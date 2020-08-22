@@ -11,9 +11,9 @@ type production = "development" | "production" | "none"
 const mode = process.env.NODE_ENV as production || choose;
 const prod = mode === 'production';
 
-const GURPS = false;
-// const GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
-// const GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
+let GURPS = false;
+// GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
+// GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
 
 const config: webpack.Configuration = {
     entry: {

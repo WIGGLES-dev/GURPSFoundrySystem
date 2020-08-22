@@ -20,22 +20,6 @@
 
   const weaponMenuItems = (id, weapon, i) => [
     {
-      name: "Delete",
-      icon: '<i class="fas fa-trash"></i>',
-      condition: () => true,
-      callback() {
-        $entity.removeByPath("data.weapons", id);
-      },
-    },
-    {
-      name: "Roll",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => true,
-      callback() {
-        if ($entity.actor) $entity.actor.rollDamage(weapon);
-      },
-    },
-    {
       name: "Edit",
       icon: '<i class="fas fa-edit"></i>',
       condition: () => true,
@@ -47,6 +31,22 @@
             weapon,
           };
         }
+      },
+    },
+    {
+      name: "Roll",
+      icon: '<i class="fas fa-dice-d6"></i>',
+      condition: () => true,
+      callback() {
+        if ($entity.actor) $entity.actor.rollDamage(weapon);
+      },
+    },
+    {
+      name: "Delete",
+      icon: '<i class="fas fa-trash"></i>',
+      condition: () => true,
+      callback() {
+        $entity.removeByPath("data.weapons", id);
       },
     },
   ];

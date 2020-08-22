@@ -1,5 +1,4 @@
 import _Sheet from "./svelte/Sheet.svelte";
-import Popout from "./svelte/Popout.svelte";
 import GCSImportDialog from "./svelte/GCSImportDialog.svelte";
 import { _Item } from "./item";
 import { Character as GURPSCharacter, Skill, Weapon } from "g4elogic";
@@ -7,6 +6,7 @@ import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
 import { injectHelpers, svelte } from "./helpers";
+import Popout from "./popout.js";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -31,29 +31,6 @@ export class _ActorSheet extends ActorSheet {
         return null
     }
 
-    customPopout() {
-        const popout = window.open("./", "_blank", "config='toolbar=no', height='700', width='700' menubar='no', location='no'");
-
-        popout.document.write(`
-            ${document.querySelector("head").outerHTML}
-            <style>
-                body {
-                    background: url(../ui/parchment.jpg) repeat;
-                }
-            </style>
-            <body></body>
-        `);
-
-        window.setTimeout(() => {
-            new Popout({
-                target: popout.document.body,
-                props: {
-                    entity: this.actor._entity
-                }
-            });
-        }, 500);
-    }
-
     loadGCSFile() {
         const dialog = new GCSImportDialog({
             target: document.body,
@@ -75,12 +52,15 @@ export class _ActorSheet extends ActorSheet {
 
     customHeaderButtons() {
         return [
-            {
-                label: "Popout",
-                class: "popout",
-                icon: "fas fa-external-link-alt",
-                onclick: (e: Event) => this.customPopout()
-            },
+            // {
+            //     label: "Popout",
+            //     class: "popout",
+            //     icon: "fas fa-external-link-alt",
+            //     onclick: (e: Event) => {
+            //         const getter = `game.${(this.entity.collection.name as string).toLowerCase()}.get("${this.entity.id}")`
+            //         Popout.onPopoutClicked(e, this, getter)
+            //     }
+            // },
             {
                 label: "LoadGCS",
                 class: "load",
@@ -95,11 +75,10 @@ export class _ActorSheet extends ActorSheet {
 export class _Actor extends Actor {
     getProperty: (path: string) => any
 
-    _entity: Writable<Entity>
-
-    _GURPS: Writable<GURPSCharacter>
-    GURPS: GURPSCharacter
-    sheet: _ActorSheet
+    readonly _entity: Writable<Entity>
+    readonly _GURPS: Writable<GURPSCharacter>
+    readonly GURPS: GURPSCharacter
+    readonly sheet: _ActorSheet
 
 
     constructor(data: any, options: any) {
@@ -108,6 +87,32 @@ export class _Actor extends Actor {
         this.GURPS = new GURPSCharacter("foundry");
         this._GURPS = writable(this.GURPS);
         this.updateGURPS();
+    }
+
+    prepareData() {
+        super.prepareData();
+
+        if (this.GURPS) {
+
+        }
+
+        this.determineInitiative();
+    }
+
+    private determineInitiative() {
+        const speed = this.getProperty("data.attributes.speed");
+        const dexterity = this.getProperty("data.attributes.dexterity");
+        const health = this.getProperty("data.attributes.health");
+
+        if (this.data.type === "character") {
+            mergeObject(this.data.data, {
+                initiative: speed + (dexterity + health) / 4
+            });
+        } else if (this.data.type === "monster") {
+            mergeObject(this.data.data, {
+                initiative: speed
+            })
+        }
     }
 
     async setPools() {
@@ -126,7 +131,7 @@ export class _Actor extends Actor {
         super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
     }
 
-    updateGURPS() {
+    async updateGURPS() {
         try {
             const update = this.GURPS.load(this);
             this._GURPS.set(update);
@@ -144,8 +149,9 @@ export class _Actor extends Actor {
         return this.ownedItemsByType("melee attack", "ranged attack")
     }
 
-    rollSkill(skill: Skill, modifiers: string = null) {
-        let roll = new SuccessRoll({ level: skill.calculateLevel(), trait: skill.name, modifiers });
+    rollSkill(skill: Skill, modifiers: string) {
+        modifiers = "+" + (modifiers || "0") + "+" + (prompt("modifiers") || "0");
+        let roll = new SuccessRoll({ level: Math.floor(skill.calculateLevel()), trait: skill.name, modifiers });
         roll.roll();
         let renderer = new SuccessRollRenderer();
         renderer.render(roll).then((html) => {

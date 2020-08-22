@@ -4,6 +4,7 @@
   export let entity = getContext("entity") || null;
 
   import Input from "./form/Input";
+  import { fixed6 } from "../helpers.ts";
 
   import { List, Row } from "./list/list";
   import { EquipmentList } from "g4elogic";
@@ -13,24 +14,20 @@
   th {
     padding: 0 5px 0 5px;
   }
-  .no-edit {
-    height: 100%;
-    float: left;
-  }
 </style>
 
 <h3>
   Total Inventory Weight:
   <b>
-    {$GURPS.equipmentList.totalWeight()} lb / {$GURPS.equipmentList.totalWeight(
-      { carriedOnly: false }
-    )} lb
+    {fixed6($GURPS.equipmentList.totalWeight())} lb / {fixed6($GURPS.equipmentList.totalWeight(
+        { carriedOnly: false }
+      ))} lb
   </b>
 </h3>
 <h3>
   Total Inventory Value:
   <b>
-    ${$GURPS.equipmentList.totalValue()} / ${$GURPS.equipmentList.totalValue({ carriedOnly: false })}
+    ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))}
   </b>
 </h3>
 <!-- <button
@@ -95,7 +92,7 @@
           <span class="no-edit" slot="no-edit">{value}</span>
         </Input>
       </td>
-      <td style="width: 100%; padding-left: {item.getListDepth() * 30}*/px">
+      <td style="width: 100%; padding-left: {item.getListDepth() * 30}px">
         <Input
           entity={$entity.getOwnedItem(id)._entity}
           config={{ clickToEdit: true }}
@@ -105,10 +102,10 @@
         </Input>
       </td>
       <td />
-      <td>{item.value}</td>
-      <td>{item.weight}</td>
-      <td>{item.extendedWeight()}</td>
-      <td>{item.extendedValue()}</td>
+      <td>{fixed6(item.value)}</td>
+      <td>{fixed6(item.weight)}</td>
+      <td>{fixed6(item.extendedWeight())}</td>
+      <td>{fixed6(item.extendedValue())}</td>
       <td>{item.reference}</td>
     </Row>
   {/each}

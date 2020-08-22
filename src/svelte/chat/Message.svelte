@@ -2,6 +2,15 @@
   export let message = null;
 
   import Damage from "./Damage";
+  import { send } from "process";
+
+  let sender = game.users.get(message.data.user);
+  let userAvatar = sender.avatar;
+  let aliasAvatar = sender.character
+    ? sender.character.getProperty("img")
+    : null;
+
+  let avatar = aliasAvatar || userAvatar;
 
   let isWhisper = getProperty(message, "data.whisper.length");
   let whisperTo = message.data.whisper.map((u) => {
@@ -34,7 +43,19 @@
 </script>
 
 <style>
-
+  .message-header {
+    background-color: black;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .message-header > * {
+    color: white;
+  }
+  .message-avatar {
+    display: inline-block;
+    height: 20px;
+    background-color: black;
+  }
 </style>
 
 {#if isVisible}
@@ -47,6 +68,10 @@
     class:blind={message.data.blind}
     data-message-id={message._id}>
     <header class="message-header flexrow">
+      <!-- <img
+        class="message-avatar"
+        src={avatar}
+        alt="icons/svg/mystery-man.svg" /> -->
       <h4 class="message-sender">{message.alias}</h4>
       <span class="message-metadata">
         <time>{window.timeSince(message.data.timestamp)}</time>

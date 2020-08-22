@@ -1,7 +1,6 @@
 <script>
   import { createEventDispatcher, getContext, tick } from "svelte";
-  import { writable } from "svelte/store";
-  import Character from "../Character.svelte";
+  import { getValue, createTooltip } from "../../helpers.ts";
   const dispatch = createEventDispatcher();
 
   let inputElem;
@@ -18,45 +17,43 @@
   export let label = "";
   export let step = null;
   export let defaultValue = type === "text" ? "" : type === "number" ? 0 : null;
+  export let basedOn = 0;
+  export let tooltipText = null;
 
   export let config = {
     clickToEdit: false,
-    width: null,
-    basedOn: null,
-    delta: 0,
   };
 
   let clickedToEdit = false;
 
   async function update(e) {
     let target = e.target;
-    let tValue = type === "number" ? +target.value : target.value;
+    value = e.target.value;
+
+    if (type === "number") {
+      value = +target.value - basedOn;
+      if (+target.value < min && min !== null) value = min - basedOn;
+    }
 
     let update = await game.gurps4e.customUpdate({
       entity: $entity,
-      value: tValue,
+      value,
       path,
       array,
       alsoUpdate,
     });
-
     dispatch("update", { entity: update });
   }
 
-  $: value = getValue($entity) || defaultValue;
+  $: getDefaultValue = (entity) => {
+    let value = getValue(entity, path, array);
+    if (value === null) return defaultValue;
+    if (type === "string") return value;
+    if (type === "number") return value + basedOn;
+    return value;
+  };
 
-  function getValue(entity) {
-    if (array) {
-      const data = entity.getProperty(path);
-      if (array.property) {
-        return data[array.index][array.property];
-      } else {
-        return data[array.index];
-      }
-    } else {
-      return entity.getProperty(path);
-    }
-  }
+  $: value = getDefaultValue($entity);
 </script>
 
 <style>
@@ -68,6 +65,7 @@
 
 {#if !config.clickToEdit || clickedToEdit}
   <label
+    use:createTooltip={{ tooltipText }}
     class:click-to-edit={config.clickToEdit}
     for={name}
     class="GURPS-label"
@@ -84,7 +82,6 @@
       on:dragstart|preventDefault|stopPropagation
       bind:this={inputElem}
       {step}
-      style={config.width ? `width:${config.width};` : ''}
       autocomplete={autocomplete === 'off' ? 'off' : null}
       {name}
       {disabled}

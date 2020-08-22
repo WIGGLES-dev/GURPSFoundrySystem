@@ -84,7 +84,9 @@
   {#if config.button}
     <button type="button" on:click={addListItem}>{buttonLabel}</button>
   {/if}
-  <table on:drop={(e) => {}}>
+  <table
+    on:drop={(e) => {}}
+    >
     <slot name="header" />
     <slot />
     <slot name="footer" />

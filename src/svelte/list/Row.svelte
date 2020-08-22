@@ -98,8 +98,11 @@
     dispatch('mouseover');
   }}
   on:mouseout={(e) => {
-    hovered.set(null);
     dispatch('mouseout');
+  }}
+  on:mouseleave={(e) => {
+    hovered.set(null);
+    dispatch('mouseleave');
   }}
   on:auxclick={(e) => {
     if (e.button === 1) {
@@ -138,12 +141,12 @@
     }}>
     {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot {GURPS} {id} />
-  {#if config.deleteButton}
-    <td>
+  <slot {GURPS} {id} hovered={$hovered === i} />
+  <td>
+    {#if config.deleteButton && $hovered === i}
       <i class="fas fa-trash" on:click={dispatch('delete', { id })} />
-    </td>
-  {/if}
+    {/if}
+  </td>
   <slot name="row-after" {GURPS} {id} />
 </tr>
 {#if !hideNotes}

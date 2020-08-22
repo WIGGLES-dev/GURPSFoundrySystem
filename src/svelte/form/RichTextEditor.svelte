@@ -26,17 +26,9 @@
   //   return { data };
   // }
 
-  onMount(() => {
-    createEditorInstance();
-  });
-
-  // onUpdate(() => {
-  //   createEditorInstance();
-  // });
-
   let RTE;
   let target;
-  let value = getProperty($entity.data, path);
+  let value = $entity.getProperty(path);
 
   const enrichHTML = (value) => {
     content = TextEditor.enrichHTML(value, {
@@ -82,7 +74,8 @@
     display: none;
   }
   .editor-content {
-    min-height: 50px;
+    min-height: 100px;
+    border: 1px solid black;
   }
 </style>
 
@@ -101,6 +94,7 @@
       <i
         class="fas fa-edit"
         on:click={async () => {
+          await createEditorInstance();
           if (RTE) editing = true;
         }} />
     </a>
@@ -114,6 +108,7 @@
       type="button"
       on:click={async (e) => {
         await update(RTE.getContent());
+        RTE.destroy();
         editing = false;
       }}>
       <i class="fas fa-feather-alt" />

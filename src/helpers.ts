@@ -80,10 +80,11 @@ export async function customUpdate({
     value,
     path,
     array = false,
-    alsoUpdate,
-}: CustomUpdate) {
-    let oldValue = getProperty(entity.data, path)
+    alsoUpdate
+}: any) {
+    let oldValue = getProperty(entity.data, path);
     value = coerce(value);
+
     let updates: any = {};
     if (array && Array.isArray(oldValue)) {
         array.property
@@ -95,7 +96,7 @@ export async function customUpdate({
         updates = { [path]: value };
     }
     if (Array.isArray(alsoUpdate)) {
-        alsoUpdate.forEach((path: paths) => {
+        alsoUpdate.forEach((path: string) => {
             if (typeof path === "string") {
                 Object.assign(updates, {
                     [path]: value
@@ -111,18 +112,6 @@ export async function customUpdate({
         }
     }
     return entity.update(updates);
-}
-
-type primitive = (string | number | boolean) | (string | number | boolean)[]
-type objectPrimitive<T extends primitive> = { [key: string]: objectPrimitive<T> }
-type paths = string | string[] | { entity: Entity, paths: paths } | { entity: Entity, paths: paths }[]
-
-interface CustomUpdate {
-    entity: Entity
-    value: primitive | { [key: string]: primitive } | { [key: string]: primitive }[] | objectPrimitive<primitive>
-    array: { index: number, property: string } | false
-    path: string
-    alsoUpdate: paths
 }
 
 /**
@@ -157,6 +146,19 @@ export function coerce(value: any): any {
     return proxy || null
 }
 
+export function getValue(entity, path, array: any = false) {
+    if (array) {
+        const data = entity.getProperty(path);
+        if (array.property) {
+            return data[array.index][array.property]
+        } else {
+            return data[array.index]
+        }
+    } else {
+        return entity.getProperty(path)
+    }
+}
+
 function popperVirtualElement() {
     return {
         getBoundingClientRect() { return this.generateGetBoundingClientRect() },
@@ -177,50 +179,81 @@ function popperVirtualElement() {
 }
 
 export function createTooltip(node: HTMLElement, parameters: any) {
-    const tooltip = document.body.appendChild(document.createElement("div"));
+    const _document = node.ownerDocument;
+    const _window = _document.defaultView;
+
+    const tooltip = document.createElement("div")
+
+    tooltip.style.color = "white";
+    tooltip.style.padding = "15px";
+    tooltip.style.backgroundColor = "black";
+    tooltip.style.borderRadius = "5px";
     tooltip.style.zIndex = "100001";
-    tooltip.style.display = "none";
-    tooltip.innerHTML = parameters.innerHTML;
+    tooltip.innerHTML = parameters.tooltipText;
+
+    if (!parameters.tooltipText) tooltip.style.display = "none";
 
     const virtualElement = popperVirtualElement();
-    let popper = createPopper(virtualElement, tooltip);
 
-    const show = (e: Event) => { tooltip.style.display = "block" };
-    const hide = (e: Event) => { tooltip.style.display = "none" };
+    const show = async (e: MouseEvent) => {
+        let state = await popper.update();
+        _document.body.appendChild(tooltip);
+    };
+    const hide = (e: MouseEvent) => {
+        tooltip.remove();
+    };
 
     node.addEventListener("mouseenter", show);
     node.addEventListener("mouseleave", hide);
+
+    let popper = createPopper(node, tooltip, {
+        placement: "left",
+        modifiers: [{
+            name: 'offset',
+            options: {
+                offset: [0, 0]
+            }
+        }]
+    });
 
     return {
         destroy() {
             popper.destroy();
             node.removeEventListener("mouseenter", show);
             node.removeEventListener("mouseleave", hide);
+            tooltip.remove();
         },
         update(parameters: any) {
-            tooltip.innerHTML = parameters.innerHTML
+            tooltip.innerHTML = parameters.tooltipText
         }
     }
 }
 
 export function createContextMenu(node: HTMLElement, parameters: any) {
-    const contextBox = document.body.appendChild(document.createElement("div"));
+    const _document = node.ownerDocument;
+    const _window = _document.defaultView;
+
+    const contextBox = document.createElement("div");
     contextBox.style.zIndex = "10000";
 
     const virtualElement = popperVirtualElement();
 
     let popper = createPopper(virtualElement, contextBox);
 
-    const render = (e: MouseEvent) => {
+    const render = async (e: MouseEvent) => {
+        _document.body.appendChild(contextBox);
         menu.menuItems = parameters.menuItems();
         popper.destroy();
         virtualElement.update(e.clientX, e.clientY);
         popper = createPopper(virtualElement, contextBox);
-        popper.update().then(state => {
-            menu.render(jQuery(contextBox));
-        });
+        await popper.update();
+        menu.render(jQuery(contextBox));
     }
-    const close = (e: Event) => menu.close();
+
+    const close = async (e: Event) => {
+        await menu.close();
+        contextBox.remove();
+    };
 
     let menu = new ContextMenu(
         jQuery(contextBox),
@@ -229,13 +262,13 @@ export function createContextMenu(node: HTMLElement, parameters: any) {
     );
 
     node.addEventListener("contextmenu", render);
-    window.addEventListener("click", close, { capture: true });
+    _window.addEventListener("click", close, { capture: true });
 
     return {
         destroy() {
             popper.destroy();
             node.removeEventListener("contextmenu", render);
-            window.removeEventListener("click", close);
+            _window.removeEventListener("click", close);
         },
         update(parameters: any) {
             menu.menuItems = parameters.menuItems();
@@ -303,6 +336,10 @@ export function svelte(app: any) {
                 this.app.$set({ entity: entity._entity });
 
                 Hooks.call(`render${this.options.baseApplication}`, this, this.element, {});
+
+                const sheet = (this.element as JQuery<HTMLElement>).get(0);
+                //Hotfix for Popout!
+                sheet.querySelector(".window-header > a.popout").remove();
             }
 
             updateStores() {

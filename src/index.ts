@@ -10,7 +10,7 @@ import "./styles/global.scss";
 Hooks.once('init', init);
 
 async function init() {
-    
+
     game.gurps4e = {
         customUpdate,
         getItem,
@@ -29,6 +29,10 @@ async function init() {
 
     CONFIG.ChatMessage.entityClass = _ChatMessage;
     CONFIG.ui.chat = _ChatLog;
+    CONFIG.Combat.initiative = {
+        decimals: 2,
+        formula: "@initiative"
+    }
 
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("GURPS", _ActorSheet, { makeDefault: true });

@@ -2,6 +2,8 @@
   import { createEventDispatcher, setContext, getContext } from "svelte";
   const dispatch = createEventDispatcher();
 
+  import { getValue } from "../../../helpers.ts";
+
   export let noop = false;
   export let defaultIndex = null;
   export let path = null;
@@ -28,7 +30,7 @@
     },
   });
 
-  export let value = getProperty($entity.data, path);
+  export let value = getValue($entity, path, array);
 
   function update(e) {
     let target = e.target;
@@ -44,13 +46,7 @@
     }
 
     if (noop) {
-      game.gurps4e.customUpdate({
-        entity: $entity,
-        value: targetValue,
-        path,
-        array,
-        alsoUpdate,
-      });
+      $entity.update({ [path]: targetValue });
     } else {
       game.gurps4e.customUpdate({
         entity: $entity,
@@ -66,7 +62,6 @@
 
   function setDefault(select) {
     if (!defaultIndex) {
-      console.log(select, value);
       Array.from(select.options).forEach((option, i) => {
         if (option.value == value) {
           select.selectedIndex = i;
@@ -82,9 +77,10 @@
 
 </style>
 
+<!-- svelte-ignore a11y-no-onchange -->
 <label class="GURPS-label" for={name}>
   {label}
-  <select {name} on:blur={update} use:setDefault>
+  <select {name} on:change={update} use:setDefault>
     <slot />
   </select>
 </label>
