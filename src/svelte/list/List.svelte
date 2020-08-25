@@ -18,7 +18,7 @@
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
 
-  let table;
+  let tableHTMLElement;
 
   function bind(element) {
     if (config.dragDrop) {
@@ -26,49 +26,36 @@
     }
   }
 
-  function getTableColumns() {}
-
   onMount(() => {
-    bind(table);
+    bind(tableHTMLElement);
   });
 
   afterUpdate(() => {
-    bind(table);
+    bind(tableHTMLElement);
   });
 
   export const hovered = writable(null);
-  export const focused = writable(null);
+  export const focused = writable([]);
   export const rows = writable(0);
-  export const columns = writable(0);
-  export let buttonLabel = "Add New";
   export let type = null;
-  export let config = { dragDrop: true, button: true };
+  export let config = { dragDrop: true };
 
   setContext(ROWS, {
-    registerRow(rowElement) {
-      ROWS.push(rowElement);
-      rows.update((store) => store++);
-    },
-    setFocused(i) {
-      focused.set(i);
-      dispatch("focused");
-    },
-    setDragover(e, i, length) {
-      hovered.set(i);
-      dispatch("hovered", i);
+    setFocused(i, toggle) {
+      focused.update((focused) => {
+        if (focused.includes(i) && toggle) {
+          focused.splice(focused.indexOf(i), 1);
+        } else {
+          focused.push(i);
+        }
+        dispatch("focus", { focused, newest: i });
+        return focused;
+      });
     },
     hovered,
     focused,
-    rows,
     type,
-    columns,
   });
-
-  onDestroy(() => {});
-
-  function addListItem(e) {
-    dispatch("addlistitem");
-  }
 </script>
 
 <style>
@@ -76,19 +63,39 @@
     white-space: nowrap;
     text-align: center;
   }
+  .flex {
+    display: flex;
+  }
+  .toolbar {
+    width: 100%;
+  }
+  .toolbar > :global(.tool) {
+    color: white;
+    background-color: black;
+    padding: 5px;
+  }
+  .toolbar > :global(.tool):hover {
+  }
 </style>
 
-<svelte:window />
+<slot name="button" />
 
-<div bind:this={table}>
-  {#if config.button}
-    <button type="button" on:click={addListItem}>{buttonLabel}</button>
-  {/if}
-  <table
-    on:drop={(e) => {}}
-    >
-    <slot name="header" />
-    <slot />
-    <slot name="footer" />
-  </table>
+<div class="flex toolbar">
+  <slot name="tool" />
 </div>
+
+<svelte:window
+  on:click|capture={(e) => {
+    if (tableHTMLElement.contains(e.target)) {
+    } else {
+      hovered.set(null);
+      focused.set([]);
+    }
+  }} />
+
+<table bind:this={tableHTMLElement} on:drop={(e) => {}}>
+  <slot name="colgroups" />
+  <slot name="header" />
+  <slot />
+  <slot name="footer" />
+</table>

@@ -1,3 +1,11 @@
 {
-    "technique": {}
+    "technique": {
+        "templates": [
+            "skill_like",
+            "notable"
+        ],
+        "type": "technique",
+        "limit": 0,
+        "difficulty": "A"
+    }
 }

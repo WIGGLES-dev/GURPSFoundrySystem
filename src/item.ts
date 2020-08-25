@@ -1,4 +1,6 @@
 import Editor from "./svelte/editors/Editor.svelte";
+import ColorPicker from "./svelte/ColorPicker.svelte";
+
 import { _Actor } from "./sheet";
 import { ItemContainer } from "./container";
 import { injectHelpers, svelte, arrayMove } from "./helpers";
@@ -168,30 +170,16 @@ export class _Item extends ItemContainer {
         return this.update({ "flags.GURPS.container_index": index }, null) as Promise<_Item>
     }
 
-    private async orderList(type: string) {
-        let array = this.actor.ownedItemsByType(type).sort((a, b) => a.getIndex() - b.getIndex());
-        const updates = array.map((item, i) => {
-            return {
-                _id: item._id,
-                flags: {
-                    GURPS: {
-                        index: i + 1
-                    }
-                }
-            }
-        });
-        return this.actor.updateEmbeddedEntity("OwnedItem", updates);
-    }
-
+    isLabel() { return this.getFlag("GURPS", "is_label"); }
     /**
      * Rearrange a list of indexes and flags in a batch to keep socket requests to a minimum
      * @param index 
      * @param type 
      */
-    async moveToIndex(to: number, type: string, { container = false } = {}) {
-        // let proxy = await this.orderList(type);
-        let array = this.actor.ownedItemsByType(type).sort((a, b) => a.getIndex() - b.getIndex());
-        const from = Math.max(this.getIndex() - 1, 0);
+    async moveToIndex(to: number, types: string[], { container = false } = {}) {
+        await this.setIndex(to);
+        let array = this.actor.ownedItemsByType(...types).sort((a, b) => a.getIndex() - b.getIndex());
+        let from = Math.max(this.getIndex() - 1, 0);
 
         if (typeof from === "number") {
             arrayMove(array, from, to);
@@ -203,7 +191,7 @@ export class _Item extends ItemContainer {
         const updates = array.map((item, i, array) => {
             if (item) {
                 return {
-                    _id: item._id,
+                    _id: item.id,
                     flags: {
                         GURPS: {
                             [container ? "container_index" : "index"]: i + 1 - correction
@@ -214,8 +202,6 @@ export class _Item extends ItemContainer {
                 correction++;
             }
         }).filter(update => update !== undefined);
-
-        console.log(updates);
 
         return this.actor.updateEmbeddedEntity("OwnedItem", updates);
     }
@@ -250,20 +236,44 @@ export class _Item extends ItemContainer {
     getMenuItems() {
         return () => {
             const entity = this;
+            const isLabel = this.isLabel();
+
             const getBaseMenu = () => {
                 return [
                     {
                         name: `Edit`,
                         icon: '<i class="fas fa-edit"></i>',
-                        condition: () => true,
+                        condition: () => !isLabel,
                         callback() {
                             entity.sheet.render(true);
                         }
                     },
                     {
+                        name: `Set As ${isLabel ? "Item" : "Label"}`,
+                        icon: `<i class="fas fa-tags"></i>`,
+                        condition: () => {
+                            return ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type)
+                            //return false
+                        },
+                        async callback() {
+                            entity.setFlag("GURPS", "is_label", !isLabel)
+                        }
+                    },
+                    {
+                        name: "Change Color",
+                        icon: `<i class="fas fa-eye-dropper"></i>`,
+                        condition: () => ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type),
+                        callback() {
+                            new ColorPicker({
+                                target: document.body,
+                                props: { entity: entity._entity }
+                            })
+                        }
+                    },
+                    {
                         name: `Open PDF`,
                         icon: '<i class="fas fa-file-pdf"></i>',
-                        condition: () => true,
+                        condition: () => !isLabel,
                         callback() {
                             entity.openPDFReference();
                         }
@@ -320,7 +330,7 @@ export class _Item extends ItemContainer {
                             icon: '<i class="fas fa-dice-d6"></i>',
                             condition: () => true,
                             callback() {
-                                entity.actor.rollSkill(entity.getGURPSObject())
+                                entity.actor.rollSkill(entity.getGURPSObject(), null)
                             }
                         }
                     ])

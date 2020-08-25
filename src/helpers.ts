@@ -304,12 +304,6 @@ export function svelte(app: any) {
                 return html as JQuery<HTMLElement>
             }
 
-            async _renderOuter(options: any) {
-                let html = await super._renderOuter(options);
-
-                return html
-            }
-
             _getHeaderButtons() {
                 return [].concat(this.customHeaderButtons(), super._getHeaderButtons())
             }
@@ -324,6 +318,7 @@ export function svelte(app: any) {
             }
 
             render(force: boolean = false, options: any) {
+                console.log(this.rendered);
                 if (!this.rendered) return super.render(force, options);
 
                 //@ts-ignore
@@ -331,8 +326,8 @@ export function svelte(app: any) {
 
                 const actor = this.actor || this.item?.actor;
                 const entity = (this.item || this.actor);
-                actor?.updateGURPS();
                 entity._entity.set(entity);
+                actor?.updateGURPS();
                 this.app.$set({ entity: entity._entity });
 
                 Hooks.call(`render${this.options.baseApplication}`, this, this.element, {});
@@ -356,11 +351,12 @@ export function injectHelpers(constructor: any): any {
         }
 
         async delete(options: any) {
+            let deleted = await super.delete(options);
             if (this.entity === "Item") {
                 this.removeReferenceFromParent();
                 this._deleteDeep(options);
             }
-            return super.delete(options)
+            return deleted
         }
 
         getProperty(path: string) {

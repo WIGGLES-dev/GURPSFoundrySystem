@@ -80,6 +80,7 @@
   {entity}
   path="data.levels"
   type="number"
+  min="0"
   disabled={!traitIsLeveled} />
 
 <Checkbox

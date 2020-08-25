@@ -2,6 +2,7 @@
   import { setContext } from "svelte";
   import Trait from "./Trait";
   import Skill from "./Skill";
+  import Technique from "./Technique";
   import Equipment from "./Equipment";
   import Modifier from "./Modifier";
   import EquipmentModifier from "./EquipmentModifier";
@@ -24,6 +25,8 @@
         return EquipmentModifier;
       case "spell":
         return Spell;
+      case "technique":
+        return Technique
       default:
         return false;
     }

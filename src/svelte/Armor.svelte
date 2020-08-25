@@ -42,7 +42,7 @@
       <td>Eye</td>
       <td>-9</td>
       <td>
-        <Input path="data.locations.eye.armor" />
+        <Input path="data.locations.eye" />
       </td>
     </tr>
     <tr>
@@ -50,7 +50,7 @@
       <td>Skull</td>
       <td>-7</td>
       <td>
-        <Input path="data.locations.eye.skull" />
+        <Input path="data.locations.skull" />
       </td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@
       <td>Face</td>
       <td>-5</td>
       <td>
-        <Input path="data.locations.eye.face" />
+        <Input path="data.locations.face" />
       </td>
     </tr>
     <tr>
@@ -66,7 +66,7 @@
       <td>Right Leg</td>
       <td>-2</td>
       <td>
-        <Input path="data.locations.eye.right_leg" />
+        <Input path="data.locations.right_leg" />
       </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@
       <td>Right Arm</td>
       <td>-2</td>
       <td>
-        <Input path="data.locations.eye.right_arm" />
+        <Input path="data.locations.right_arm" />
       </td>
     </tr>
     <tr>
@@ -82,7 +82,7 @@
       <td>Torso</td>
       <td>0</td>
       <td>
-        <Input path="data.locations.eye.torso" />
+        <Input path="data.locations.torso" />
       </td>
     </tr>
     <tr>
@@ -90,7 +90,7 @@
       <td>Groin</td>
       <td>-3</td>
       <td>
-        <Input path="data.locations.eye.groin" />
+        <Input path="data.locations.groin" />
       </td>
     </tr>
     <tr>
@@ -98,7 +98,7 @@
       <td>Left Arm</td>
       <td>-2</td>
       <td>
-        <Input path="data.locations.eye.left_arm" />
+        <Input path="data.locations.left_arm" />
       </td>
     </tr>
     <tr>
@@ -106,7 +106,7 @@
       <td>Left Leg</td>
       <td>-2</td>
       <td>
-        <Input path="data.locations.eye.left_leg" />
+        <Input path="data.locations.left_leg" />
       </td>
     </tr>
     <tr>
@@ -114,7 +114,7 @@
       <td>Hand</td>
       <td>-4</td>
       <td>
-        <Input path="data.locations.eye.hand" />
+        <Input path="data.locations.hand" />
       </td>
     </tr>
     <tr>
@@ -122,7 +122,7 @@
       <td>Foot</td>
       <td>-4</td>
       <td>
-        <Input path="data.locations.eye.foot" />
+        <Input path="data.locations.foot" />
       </td>
     </tr>
     <tr>
@@ -130,7 +130,7 @@
       <td>Neck</td>
       <td>-5</td>
       <td>
-        <Input path="data.locations.eye.neck" />
+        <Input path="data.locations.neck" />
       </td>
     </tr>
     <tr>
@@ -138,7 +138,15 @@
       <td>Vitals</td>
       <td>-3</td>
       <td>
-        <Input path="data.locations.eye.vitals" />
+        <Input path="data.locations.vitals" />
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Area</td>
+      <td>N/A</td>
+      <td>
+        <Input path="data.locations.area" />
       </td>
     </tr>
   </tbody>

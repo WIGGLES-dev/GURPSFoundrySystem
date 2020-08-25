@@ -22,7 +22,7 @@
     padding: 0px;
   }
 
-  .totals :global(input) {
+  .totals :global(input.float-right) {
     float: right;
   }
 
@@ -30,8 +30,16 @@
     text-align: right;
   }
 
-  .total-points {
+  .divider {
+    height: 5px;
+    background-color: yellow;
+  }
+
+  .span-2 {
     grid-column: 1 / span 2;
+  }
+
+  .total-points {
     background-color: black;
     color: white;
     text-align: center;
@@ -50,12 +58,12 @@
 </style>
 
 <div class="totals">
-  <div class="total-points">
+  <div class="total-points span-2">
     {totals.total + $entity.getProperty('data.unspent_points')} CP
   </div>
 
   <div>Unspent Points</div>
-  <Input path="data.unspent_points" type="number" />
+  <Input path="data.unspent_points" type="number" classList="float-right" />
 
   <div class="">Race</div>
   <div class="total">{totals.racialPoints}</div>
@@ -83,4 +91,22 @@
 
   <div class="swing">Swing</div>
   <div class="swing total">{$GURPS.getSwingDamage()}</div>
+
+  <div class="hp">Hit Points</div>
+  <div class="hp total">
+    <Input path="data.pools.hit_points.value" type="number" min="0">
+      <span slot="label-text-after">
+        / {$GURPS.getAttribute('HP').calculateLevel()}
+      </span>
+    </Input>
+  </div>
+
+  <div class="fatigue">Fatigue Points</div>
+  <div class="fatigue total">
+    <Input path="data.pools.fatigue_points.value" type="number" min="0">
+      <span slot="label-text-after">
+        / {$GURPS.getAttribute('FP').calculateLevel()}
+      </span>
+    </Input>
+  </div>
 </div>

@@ -12,6 +12,9 @@
   export let name = null;
   export let label = "";
   export let alsoUpdate = null;
+  export let disabled = null;
+
+  export let selected;
 
   const options = [];
 
@@ -80,7 +83,12 @@
 <!-- svelte-ignore a11y-no-onchange -->
 <label class="GURPS-label" for={name}>
   {label}
-  <select {name} on:change={update} use:setDefault>
+  <select
+    {name}
+    on:change={update}
+    use:setDefault
+    {disabled}
+    bind:value={selected}>
     <slot />
   </select>
 </label>

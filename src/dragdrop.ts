@@ -11,7 +11,6 @@ export class GURPSDragDrop {
         const callbacks = {
 
         }
-
         return {
             dragSelector,
             dropSelector,
@@ -29,7 +28,7 @@ export class GURPSDragDrop {
             },
             drop: (e: DragEvent) => {
                 const { origin, target } = getDragContext(e);
-                return origin.data.type === target.data.type
+                return origin.data.type === target.data.type || type.includes(origin.data.type)
             }
         };
         const callbacks = {
@@ -37,7 +36,7 @@ export class GURPSDragDrop {
                 setDragData(e);
             },
             drop: async (e: DragEvent) => {
-                GURPSDragDrop.handleDropOnList(e)
+                GURPSDragDrop.handleDropOnList(e, type)
             }
         };
         const app = {
@@ -56,29 +55,26 @@ export class GURPSDragDrop {
         * 2. The same actor, which will be a reorder operation
         * 3. Dragging from the Item directory
         */
-    private static async handleDropOnList(e: DragEvent) {
+    private static async handleDropOnList(e: DragEvent, type: string) {
         const { origin, target } = getDragContext(e);
 
-        console.log(origin, target);
+        // console.log(origin, target);
 
+        if (origin.actor && target.actor && origin.actor !== target.actor) {
+            let newItem = await target.actor.createOwnedItem(origin) as _Item;
+            (getItem(newItem._id) as _Item).moveToIndex(target.getIndex() - 1, type.split(" "));
+        } else if (origin.actor && target.actor && origin.actor === target.actor) {
+            if (target.getGURPSObject().canContainChildren) {
 
-
-        if (origin.data.type === target.data.type) {
-            if (origin.actor && target.actor && origin.actor !== target.actor) {
-                let newItem = await target.actor.createOwnedItem(origin) as _Item;
-                newItem.moveToIndex(target.getIndex(), target.data.type);
-            } else if (origin.actor && target.actor && origin.actor === target.actor) {
-                if (target.getGURPSObject().canContainChildren) {
-
-                } else {
-                    origin.moveToIndex(target.getIndex() - 1, target.data.type);
-                }
-            } else if (target.actor && !origin.actor) {
-                // let newItem = await target.actor.createOwnedItem(origin) as _Item;
-                // newItem.moveToIndex(target.getIndex(), target.data.type);
             } else {
-
+                origin.moveToIndex(target.getIndex() - 1, type.split(" "));
             }
+        } else if (target.actor && !origin.actor) {
+            e.stopImmediatePropagation();
+            let newItem = await target.actor.createOwnedItem(origin) as _Item;
+            (getItem(newItem._id) as _Item).moveToIndex(target.getIndex(), type.split(" "));
+        } else {
+            
         }
     }
 }

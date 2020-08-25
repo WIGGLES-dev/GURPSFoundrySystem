@@ -12,6 +12,8 @@
   import Totals from "./Totals";
   import Armor from "./Armor";
 
+  import CharacterCombat from "./CharacterCombat";
+
   import { RichTextEditor, Input, FilePicker } from "./form/form";
 
   export let entity = null;
@@ -53,14 +55,9 @@
     <Tab index={6}>Grimoire</Tab>
   </TabList>
   <TabPanel>
-    <h1>General</h1>
     <div class="attributes flex">
       <div class="column">
-        <Input
-          on:update={() => $entity.setPools()}
-          path="data.attributes.strength"
-          min="0"
-          type="number">
+        <Input path="data.attributes.strength" min="0" type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
           </span>
@@ -75,11 +72,7 @@
             [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:
           </span>
         </Input>
-        <Input
-          on:update={() => $entity.setPools()}
-          path="data.attributes.health"
-          min="0"
-          type="number">
+        <Input path="data.attributes.health" min="0" type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
           </span>
@@ -130,7 +123,6 @@
 
         <div class="flex">
           <Input
-            on:update={() => $entity.setPools()}
             path="data.attributes.hit_points"
             min={0}
             basedOn={$entity.getProperty('data.attributes.strength')}
@@ -139,16 +131,10 @@
               [{$GURPS.getAttribute('HP').pointsSpent()}] HP:
             </span>
           </Input>
-          <Input
-            path="data.pools.hit_points.value"
-            label="Current HP"
-            min={-$GURPS.getAttribute('HP') * 10}
-            type="number" />
         </div>
 
         <div class="flex">
           <Input
-            on:update={() => $entity.setPools()}
             path="data.attributes.fatigue_points"
             min={0}
             basedOn={$entity.getProperty('data.attributes.health')}
@@ -157,11 +143,6 @@
               [{$GURPS.getAttribute('FP').pointsSpent()}] FP:
             </span>
           </Input>
-          <Input
-            path="data.pools.fatigue_points.value"
-            label="Current FP"
-            min={0}
-            type="number" />
         </div>
       </div>
       <Totals />
@@ -174,33 +155,39 @@
     <RichTextEditor path="data.notes" />
   </TabPanel>
   <TabPanel>
-    <h1>Traits</h1>
     <TraitList />
   </TabPanel>
   <TabPanel>
-    <h1>Bio/Misc</h1>
     <Input {entity} type="text" path="name" label="Name" />
     <FilePicker type="image" />
     <h3>Biography</h3>
     <RichTextEditor path="data.bio" />
   </TabPanel>
   <TabPanel>
-    <h1>Skills</h1>
     <SkillList />
   </TabPanel>
   <TabPanel>
-    <h1>Combat</h1>
-    <button type="button">Dodge</button>
-    <WeaponList />
-    <Armor />
-    <Encumbrance />
+    <CharacterCombat />
   </TabPanel>
   <TabPanel>
-    <h1>Inventory</h1>
-    <EquipmentList />
+    <Tabs
+      tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}
+      on:tabchange={(e) => {
+        $entity.setFlag('GURPS', 'inventory-tab', e.detail);
+      }}>
+      <TabList>
+        <Tab index={0}>Main</Tab>
+        <Tab index={1}>Other</Tab>
+      </TabList>
+      <TabPanel>
+        <EquipmentList />
+      </TabPanel>
+      <TabPanel>
+        <h1>Under Construction</h1>
+      </TabPanel>
+    </Tabs>
   </TabPanel>
   <TabPanel>
-    <h1>Grimoire</h1>
     <SpellList />
   </TabPanel>
 </Tabs>

@@ -2,10 +2,33 @@
   import Input from "./form/Input";
   import { List, Row } from "./list/list.ts";
   import { getContext } from "svelte";
+  import { Skill } from "g4elogic";
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
-  console.log($entity);
+
+  const getSkillLevelForTechnique = (technique) => {
+    try {
+      if (technique.getProperty("data.based_on") === "skill") {
+        let skill = $entity.getOwnedItem(
+          technique.getProperty("data.skill_id")
+        );
+        if (skill && skill.type === "skill") {
+          let level = $GURPS
+            .getElementById("foundryID", skill.id)
+            .calculateLevel();
+          if (typeof level === "number") return Math.floor(level);
+          return NaN;
+        }
+      } else if (technique.getProperty("data.based_on") === "attribute") {
+        let signature = technique.getProperty("data.signature");
+        return $GURPS.getAttribute(signature).calculateLevel();
+      }
+    } catch (err) {
+      console.log(err);
+      return 10;
+    }
+  };
 </script>
 
 <style>
@@ -14,16 +37,31 @@
   }
 </style>
 
-<List
-  type="skill"
-  buttonLabel="Add Skill"
-  on:addlistitem={() => {
-    $entity.createOwnedItem({ name: '???', type: 'skill' });
-  }}>
+<List type="skill technique">
+  <button
+    type="button"
+    slot="button"
+    on:click={(e) => {
+      $entity.createOwnedItem({ name: '???', type: 'technique' });
+    }}>
+    Add Technique
+  </button>
+  <button
+    type="button"
+    slot="button"
+    on:click={() => $entity.createOwnedItem({ name: '???', type: 'skill' })}>
+    Add Skill
+  </button>
   <thead name="header">
     <tr>
       <th />
-      <th>Skills</th>
+      <th
+        on:dblclick={(e) => {
+          $entity.sortList('skill', 'data.name');
+        }}>
+        Skills
+        <i class="fas fa-sort" />
+      </th>
       <th>SL</th>
       <th>RSL</th>
       <th>Mod</th>
@@ -32,9 +70,10 @@
       <th />
     </tr>
   </thead>
-  {#each window.game.gurps4e.indexSort($GURPS.skillList.iter()) as skill, i (skill.foundryID)}
+  {#each window.game.gurps4e.indexSort([].concat($GURPS.skillList.iter(), $GURPS.techniqueList.iter())) as skill, i (skill.foundryID)}
     <Row
       let:hovered
+      let:ownedItem
       on:delete={(e) => {
         $entity.getOwnedItem(e.detail.id).delete();
       }}
@@ -45,26 +84,42 @@
       on:middleclick={(e) => {
         $entity.rollSkill(skill);
       }}>
-      <td style="width: 100%;">
-        {#if hovered}
-          <span
-            class="fas fa-dice d6 roll-ico"
-            on:click={$entity.rollSkill(skill)} />
-        {/if}
+      <td class="main-list-col">
+        <span
+          class:no-show={!hovered || ownedItem.isLabel()}
+          class="fas fa-dice d6 roll-ico"
+          on:contextmenu|capture={(e) => {
+            $entity.rollSkill({ calculateLevel: () => skill.calculateLevel(getSkillLevelForTechnique(ownedItem)), name: skill.name }, 'none');
+            e.stopImmediatePropagation();
+            e.preventDefault();
+          }}
+          on:click={(e) => {
+            $entity.rollSkill({
+              calculateLevel: () =>
+                skill.calculateLevel(getSkillLevelForTechnique(ownedItem)),
+              name: skill.name,
+            });
+          }} />
         <Input
-          entity={$entity.getOwnedItem(skill.foundryID)._entity}
+          entity={ownedItem._entity}
           path="data.name"
           alsoUpdate={['name']}
           config={{ clickToEdit: true }}
           let:value>
-          <span slot="no-edit">{skill.toString()}</span>
+          <span slot="no-edit">
+            {skill.name}{skill.techLevel ? `/TL${skill.techLevel}` : ''} {skill.specialization ? `(${skill.specialization})` : ``}
+          </span>
         </Input>
       </td>
-      <td>{Math.floor(skill.calculateLevel())}</td>
-      <td />
+      <td>
+        {Math.floor(skill.calculateLevel(getSkillLevelForTechnique(ownedItem)))}
+      </td>
+      <td>
+        {!skill.isTechnique ? skill.signature : ''}{skill.getRelativeLevel(getSkillLevelForTechnique(ownedItem)) >= 0 ? '+' : ''}{skill.getRelativeLevel(getSkillLevelForTechnique(ownedItem))}
+      </td>
       <td>
         <Input
-          entity={$entity.getOwnedItem(skill.foundryID)._entity}
+          entity={ownedItem._entity}
           type="number"
           path="data.global_mod"
           config={{ clickToEdit: true }}
@@ -74,7 +129,7 @@
       </td>
       <td>
         <Input
-          entity={$entity.getOwnedItem(skill.foundryID)._entity}
+          entity={ownedItem._entity}
           type="number"
           min="0"
           path="data.points"
@@ -85,7 +140,7 @@
       </td>
       <td>
         <Input
-          entity={$entity.getOwnedItem(skill.foundryID)._entity}
+          entity={ownedItem._entity}
           path="data.reference"
           config={{ clickToEdit: true }}
           let:value>

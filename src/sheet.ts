@@ -15,7 +15,7 @@ export class _ActorSheet extends ActorSheet {
 
     static get defaultOptions() {
         return mergeObject(ActorSheet.defaultOptions, {
-            classes: ["sheet"],
+            classes: ["GURPSActor"],
             template: "systems/GURPS/holder.html",
             width: 700,
             height: 900,
@@ -80,7 +80,6 @@ export class _Actor extends Actor {
     readonly GURPS: GURPSCharacter
     readonly sheet: _ActorSheet
 
-
     constructor(data: any, options: any) {
         super(data, options);
         this._entity = writable(this);
@@ -93,10 +92,11 @@ export class _Actor extends Actor {
         super.prepareData();
 
         if (this.GURPS) {
-
+            this.updateGURPS();
         }
 
         this.determineInitiative();
+        this.setPools();
     }
 
     private determineInitiative() {
@@ -115,14 +115,29 @@ export class _Actor extends Actor {
         }
     }
 
-    async setPools() {
-        const ST = this.getProperty("data.attributes.strength");
-        const HT = this.getProperty("data.attributes.health");
-        const hp = this.getProperty("data.attributes.hit_points");
-        const fp = this.getProperty("data.attributes.fatigue_points");
-        let update1 = await this.update({ "data.pools.fatigue_points.max": HT + fp });
-        let update2 = await this.update({ "data.pools.hit_points.max": ST + hp });
-        return { ...update1, ...update2 }
+    private setPools() {
+        const ST = this.getProperty("data.attributes.strength") || 10;
+        const HT = this.getProperty("data.attributes.health") || 10;
+        const hp = this.getProperty("data.attributes.hit_points") || 0;
+        const fp = this.getProperty("data.attributes.fatigue_points") || 0;
+
+        const hpValue = this.getProperty("data.pools.hit_points.value");
+        const fpValue = this.getProperty("data.pools.fatigue_points.value");
+
+        if (this.data.type === "character") {
+            mergeObject(this.data.data, {
+                pools: {
+                    fatigue_points: {
+                        max: HT + fp,
+                        value: fpValue
+                    },
+                    hit_points: {
+                        max: ST + hp,
+                        value: hpValue
+                    }
+                }
+            });
+        }
     }
 
     _onUpdateEmbeddedEntity(type: string, doc: any, update: any, options: any, userId: string) {
@@ -131,7 +146,7 @@ export class _Actor extends Actor {
         super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
     }
 
-    async updateGURPS() {
+    updateGURPS() {
         try {
             const update = this.GURPS.load(this);
             this._GURPS.set(update);
@@ -139,6 +154,21 @@ export class _Actor extends Actor {
         } catch (e) {
             console.log(e);
         }
+    }
+
+    async sortList(type: string, sortPropPath: string) {
+        const list = this.ownedItemsByType(type)
+        const toUpdate = list
+            .map((item, i) => { return { original: i, sortProp: item.getProperty(sortPropPath) } })
+            .sort((a, b) => a.sortProp - b.sortProp)
+            .map(item => list[item.original])
+            .map((item, i) => {
+                return {
+                    _id: item.id,
+                    "flags.GURPS.index": i + 1
+                }
+            });
+        return this.updateEmbeddedEntity("OwnedItem", toUpdate);
     }
 
     ownedItemsByType(...types: string[]): _Item[] {
@@ -150,7 +180,7 @@ export class _Actor extends Actor {
     }
 
     rollSkill(skill: Skill, modifiers: string) {
-        modifiers = "+" + (modifiers || "0") + "+" + (prompt("modifiers") || "0");
+        modifiers = (modifiers === "none" || !modifiers ? `` : `+${modifiers}`) + (modifiers !== "none" && !modifiers ? `+${prompt("modifiers") || "0"}` : "");
         let roll = new SuccessRoll({ level: Math.floor(skill.calculateLevel()), trait: skill.name, modifiers });
         roll.roll();
         let renderer = new SuccessRollRenderer();
@@ -160,9 +190,13 @@ export class _Actor extends Actor {
     }
 
     async rollDamage(weapon: Weapon) {
+        const swing = this.GURPS.getSwingDamage();
+        const thrust = this.GURPS.getThrustDamage();
         const roll = new Roll(weapon.damage, {
-            swing: this.GURPS.getSwingDamage(),
-            thrust: this.GURPS.getThrustDamage()
+            swing,
+            sw: swing,
+            thrust,
+            thr: thrust
         });
         return roll.toMessage({
             GURPSRollType: "Damage", GURPSRollData: {

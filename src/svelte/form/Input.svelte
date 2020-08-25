@@ -5,11 +5,21 @@
 
   let inputElem;
 
+  function entityHandler(entity) {
+    if (entity._entity) {
+      return entity._entity;
+    } else if (entity.subscribe) {
+      return entity;
+    } else {
+      return null;
+    }
+  }
+
   export let entity = getContext("entity") || null;
+
   export let path = null;
   export let array = false;
   export let alsoUpdate = null;
-  export let type = "text";
   export let min = null;
   export let disabled = null;
   export let name = null;
@@ -17,27 +27,29 @@
   export let label = "";
   export let step = null;
   export let defaultValue = type === "text" ? "" : type === "number" ? 0 : null;
+  export let type = "text";
   export let basedOn = 0;
   export let tooltipText = null;
+  export let classList = null;
 
   export let config = {
     clickToEdit: false,
   };
 
-  let clickedToEdit = false;
+  $: clickedToEdit = false;
 
   async function update(e) {
     let target = e.target;
-    value = e.target.value;
+    let tValue = e.target.value;
 
     if (type === "number") {
-      value = +target.value - basedOn;
-      if (+target.value < min && min !== null) value = min - basedOn;
+      tValue = +target.value - basedOn;
+      if (+target.value < min && min !== null) tValue = min - basedOn;
     }
 
     let update = await game.gurps4e.customUpdate({
       entity: $entity,
-      value,
+      value: tValue,
       path,
       array,
       alsoUpdate,
@@ -47,7 +59,7 @@
 
   $: getDefaultValue = (entity) => {
     let value = getValue(entity, path, array);
-    if (value === null) return defaultValue;
+    if (value === null || value === undefined) return defaultValue;
     if (type === "string") return value;
     if (type === "number") return value + basedOn;
     return value;
@@ -78,6 +90,7 @@
     {/if}
 
     <input
+      class={classList}
       draggable={true}
       on:dragstart|preventDefault|stopPropagation
       bind:this={inputElem}
@@ -90,6 +103,9 @@
       on:blur={() => (clickedToEdit = false)}
       on:change={update}
       {value} />
+
+    <slot name="label-text-after" {value} />
+
   </label>
 {:else}
   <div

@@ -7,7 +7,7 @@
         "type": "skill",
         "tech_level": "",
         "specialization": "",
-        "encumbrance_penalty_multiplier": 1,
+        "encumbrance_penalty_multiplier": 0,
         "defaults": [],
         "defaulted_from": false
     }

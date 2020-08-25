@@ -23,53 +23,67 @@ h2 {
     color: red;
 }
 
-.GURPS-label {
-    &[data-label="true"] span::after {
-        content: ":"
+.GURPSActor {
+    .no-show {
+        display: none;
     }
 
-    box-sizing: border-box;
-
-    &:hover {
-        border: 1px solid red;
-        margin: -1px;
+    .is-row-label>td:not(.show-when-label):not(.main-list-col) {
+        opacity: 0;
     }
 
-    padding: 7px;
-}
+    .main-list-col {
+        width: 100%;
+    }
 
-.click-to-edit {
-    padding: 0;
-}
+    .GURPS-label {
+        &[data-label="true"] span::after {
+            content: ":"
+        }
 
-.GURPS-rte {
-    // height: 14px;
-    // font-size: 14px;
+        box-sizing: border-box;
 
-    .rte-edit {}
+        &:hover {
+            border: 1px solid red;
+            margin: -1px;
+        }
 
-    .rte-save {}
-}
+        padding: 7px;
+    }
 
-tr.strikethrough {
-    td {
-        position: relative;
+    .click-to-edit {
+        padding: 0;
+    }
 
-        &:before {
-            content: " ";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            border-bottom: 1px solid red;
-            width: 100%;
+    .GURPS-rte {
+        // height: 14px;
+        // font-size: 14px;
+
+        .rte-edit {}
+
+        .rte-save {}
+    }
+
+    tr.strikethrough {
+        td {
+            position: relative;
+
+            &:before {
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                border-bottom: 1px solid red;
+                width: 100%;
+            }
         }
     }
-}
 
-.roll-ico {
-    &:hover {
-        box-shadow: 0 0 8px red;
+    .roll-ico {
+        &:hover {
+            box-shadow: 0 0 8px red;
+        }
+
+        border: none;
     }
-
-    border: none;
 }

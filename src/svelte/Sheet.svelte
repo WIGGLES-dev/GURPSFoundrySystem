@@ -5,8 +5,6 @@
 
   export let entity = null;
 
-  console.log($entity);
-
   function getSheetComponent(entity) {
     switch (entity.data.type) {
       case "character":

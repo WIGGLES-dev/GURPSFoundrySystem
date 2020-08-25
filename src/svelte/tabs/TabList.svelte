@@ -1,9 +1,9 @@
 <style>
-	.tab-list {
-		display: flex;
-	}
+  .tab-list {
+    display: flex;
+  }
 </style>
 
 <div class="tab-list">
-	<slot></slot>
+  <slot />
 </div>

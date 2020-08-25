@@ -21,6 +21,8 @@
 
   let editing = false;
 
+  $: weapons = [].concat($GURPS.featureList.weapons.values());
+
   function transformWeapon(weapon, name) {
     return {
       _id: weapon._id,
@@ -104,6 +106,10 @@
   .weapon-tools > .tool {
     float: left;
   }
+  .weapon-list {
+    margin: 0px;
+    border: none;
+  }
 </style>
 
 <button
@@ -113,6 +119,18 @@
   }}>
   Add Weapon
 </button>
+
+<!-- <List buttonLabel="Add Weapon" config={{button: false}} >
+  <thead name="head">
+    <tr>
+      <th />
+      <th>Name</th>
+      <th>#</th>
+      <th />
+    </tr>
+  </thead>
+</List> -->
+
 <List buttonLabel="Add Weapon" config={{ button: false }}>
   <thead name="head">
     <tr>
@@ -150,17 +168,12 @@
                 <td>{weapon.getType()}</td>
                 <td>{weapon.usage}</td>
                 <td>
-                  <span>
-                    <img
-                      class="roll-ico"
-                      on:click={(e) => {
-                        $entity.rollDamage(weapon);
-                      }}
-                      src="systems/GURPS/icons/roll-ico.png"
-                      alt="roll"
-                      height="19px" />
-                    {weapon.damage} {weapon.damageType}
-                  </span>
+                  <span
+                    class="fas fa-dice d6 roll-ico"
+                    on:click={(e) => {
+                      $entity.rollDamage(weapon);
+                    }} />
+                  {weapon.damage} {weapon.damageType}
                 </td>
               </Row>
             {/each}
@@ -200,17 +213,12 @@
                 <td>{weapon.type}</td>
                 <td>{weapon.usage}</td>
                 <td>
-                  <span>
-                    <img
-                      class="roll-ico"
-                      on:click={(e) => {
-                        $entity.rollDamage(transformWeapon(weapon, weaponEntity.getProperty('name')));
-                      }}
-                      src="systems/GURPS/icons/roll-ico.png"
-                      alt="roll"
-                      height="19px" />
-                    {weapon.damage} {weapon.damage_type}
-                  </span>
+                  <span
+                    class="fas fa-dice d6 roll-ico"
+                    on:click={(e) => {
+                      $entity.rollDamage(transformWeapon(weapon, weaponEntity.getProperty('name')));
+                    }} />
+                  {weapon.damage} {weapon.damage_type}
                 </td>
               </Row>
             {/each}

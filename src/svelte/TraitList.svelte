@@ -5,6 +5,7 @@
 
   import Input from "./form/Input";
   import { List, Row } from "./list/list.ts";
+  import { Trait } from "g4elogic";
 
   let list;
 
@@ -17,17 +18,23 @@
   }
 </style>
 
-<List
-  buttonLabel="Add Trait"
-  type="trait"
-  bind:this={list}
-  on:addlistitem={() => {
-    $entity.createOwnedItem({ name: '???', type: 'trait' });
-  }}>
+<List type="trait" bind:this={list}>
+  <button
+    on:click={() => $entity.createOwnedItem({ name: '???', type: 'trait' })}
+    type="button"
+    slot="button">
+    Add Trait
+  </button>
   <thead slot="header">
     <tr>
       <th />
-      <th>Advantages & Disadvantages</th>
+      <th
+        on:dblclick={(e) => {
+          $entity.sortList('trait', 'data.name');
+        }}>
+        Advantages & Disadvantages
+        <i class="fas fa-sort" />
+      </th>
       <th>Pts</th>
       <th>Ref</th>
       <th />
@@ -37,27 +44,30 @@
     <Row
       disabled={trait.disabled}
       colspan="5"
+      let:ownedItem
       {i}
       id={trait.foundryID}
       draggable={true}
       on:delete={(e) => {
-        $entity.getOwnedItem(e.detail.id).delete();
+        $entity.getOwnedItem(trait.foundryID).delete();
       }}>
       <td>
         <Input
           config={{ clickToEdit: true }}
-          entity={$entity.getOwnedItem(trait.foundryID)._entity}
+          entity={ownedItem._entity}
           path="data.name"
           alsoUpdate={['name']}
           let:value>
-          <span slot="no-edit">{trait.name}</span>
+          <span slot="no-edit">
+            {trait.name} {trait.hasLevels ? trait.levels : ''}
+          </span>
         </Input>
       </td>
       <td>{trait.adjustedPoints()}</td>
       <td>
         <Input
           config={{ clickToEdit: true }}
-          entity={$entity.getOwnedItem(trait.foundryID)._entity}
+          entity={ownedItem._entity}
           path="data.reference"
           let:value>
           <span slot="no-edit">{value}</span>

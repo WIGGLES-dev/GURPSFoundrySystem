@@ -24,6 +24,9 @@ import {
     AttributeBonus,
     DRBonus,
     SkillBonus,
+    Group,
+    RangedWeapon,
+    MeleeWeapon
 } from "g4elogic";
 import { _Actor as FoundryActor } from "./sheet";
 import { _Item } from "./item";
@@ -134,6 +137,7 @@ export class FoundryEntity extends Serializer {
         skill.difficulty = getProperty(data, "data.difficulty") as Difficulty;
         skill.signature = getProperty(data, "data.signature") as Signature;
         skill.techLevel = getProperty(data, "data.tech_level");
+        skill.specialization = getProperty(data, "data.specialization");
         skill.encumbrancePenaltyMultiple = getProperty(data, "data.encumbrance_penalty_multiplier");
         // skill.defaultedFrom = new SkillDefault<Skill>(skill).load(getProperty(data, "data.defaulted_from"));
         skill.reference = getProperty(data, "data.reference");
@@ -159,20 +163,28 @@ export class FoundryEntity extends Serializer {
 
         }
     }
-    mapTechnique(technique: Technique, entity?: _Item): null {
+    mapTechnique(technique: Technique, entity?: _Item) {
         const data = entity.data;
+        technique.foundryID = entity.id;
         FoundryEntity.mapListItem(technique, entity);
-        this.mapSkill(technique, entity);
+        FoundryEntity.mapSkillLike(technique, entity);
+
+        technique.name = getProperty(data, "data.name");
+        technique.points = getProperty(data, "data.points");
+        technique.gMod = getProperty(data, "data.global_mod");
+        technique.difficulty = getProperty(data, "data.difficulty");
+        technique.signature = getProperty(data, "data.signature");
         technique.limit = getProperty(data, "data.limit");
-        technique.difficulty = getProperty(data, "data.difficulty") as TehchniqueDifficulty;
-        // technique.default = new SkillDefault<Technique>(technique).load(getProperty(data, "data.default"));
-        return null
+        technique.default = { modifier: getProperty(data, "data.default") };
+        technique.techLevel = getProperty(data, "data.tech_level");
     }
     saveTechnique() {
 
     }
     mapSpell(spell: Spell, entity?: _Item) {
         const data = entity.data
+
+        spell.foundryID = entity.id
 
         FoundryEntity.mapListItem(spell, entity);
         FoundryEntity.mapSkillLike(spell, entity);
@@ -185,7 +197,6 @@ export class FoundryEntity extends Serializer {
         spell.castingTime = getProperty(data, "data.casting_time");
         spell.reference = getProperty(data, "data.reference");
         //resisted by
-
         spell.duration = getProperty(data, "data.duration");
 
 
@@ -212,6 +223,8 @@ export class FoundryEntity extends Serializer {
     mapEquipment(equipment: Equipment, entity?: _Item) {
         try {
             const data = entity.data;
+
+            equipment.foundryID = entity.id
 
             FoundryEntity.mapListItem(equipment, entity);
 
@@ -288,7 +301,7 @@ export class FoundryEntity extends Serializer {
         trait.controlRating = getProperty(data, "data.cr");
         //data.types?.forEach((type: TraitType) => trait.types.add(type));
         trait.pointsPerLevel = parseInt(getProperty(data, "data.points_per_level"));
-        trait.hasLevels = Boolean(getProperty(data, "data.levels")) ? true : false;
+        trait.hasLevels = getProperty(data, "data.has_levels");
         trait.reference = getProperty(data, "data.reference");
         trait.notes = getProperty(data, "data.notes");
 
@@ -381,6 +394,7 @@ export class FoundryEntity extends Serializer {
         weapon.strength = getProperty(data, "strength_requirement")
         weapon.usage = getProperty(data, "usage");
         weapon.damage = getProperty(data, "damage");
+
         weapon.damageType = getProperty(data, "damage_type");
         switch (weapon.getType()) {
             case "melee_weapon":
@@ -400,13 +414,17 @@ export class FoundryEntity extends Serializer {
         return weapon
     }
     saveWeapon(weapon: Weapon) {
+        const getDamage = () => {
+            const base = weapon.damageStrength === "sw" || weapon.damageStrength === "thr" ? `@${weapon.damageStrength}` : weapon.damageBase || "";
+            return `${base}${weapon.damageBase}`
+        }
         try {
             return {
                 type: weapon.getType(),
                 _id: randomID(),
                 strength_requirement: weapon.strength,
                 usage: weapon.usage,
-                damage: weapon.damage,
+                damage: getDamage(),
                 damage_type: weapon.damageType,
                 reach: weapon.reach,
                 parry: weapon.parry,
@@ -465,11 +483,23 @@ export class FoundryEntity extends Serializer {
         const skills = actor.ownedItemsByType("skill");
         character.skillList.load(skills);
 
+        const techniques = actor.ownedItemsByType("technique");
+        character.techniqueList.load(techniques);
+
         const traits = actor.ownedItemsByType("trait");
         character.traitList.load(traits);
 
         const spells = actor.ownedItemsByType("spell");
         character.spellList.load(spells);
+
+        const weapons = actor.ownedItemsByType("melee weapon", "ranged weapon");
+        weapons.forEach(weapon => {
+            if (weapon.type === "melee_weapon") {
+                const meleeWeapons = new Group<RangedWeapon>("melee weapons", character);
+            } else if (weapon.type === "ranged_weapon") {
+                const rangedWeapons = new Group<MeleeWeapon>("ranged weapons", character);
+            }
+        })
 
         return character
     }
@@ -492,12 +522,6 @@ export class FoundryEntity extends Serializer {
         });
 
         await actor.createEmbeddedEntity("OwnedItem", duplicate(create));
-
-        const weaponUpdates = create.map(item => {
-
-        });
-
-        // await actor.updateEmbeddedEntity("OwnedItem", weaponUpdates)
 
         await actor.update({
             "name": character?.profile?.name || "???",

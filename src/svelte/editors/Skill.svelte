@@ -1,6 +1,6 @@
 <script>
-  import {getContext} from "svelte";
-  import {Input, Select, Option, Checkbox, Textarea} from "../form/form";
+  import { getContext } from "svelte";
+  import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
 
   import { Tabs, TabList, TabPanel, Tab } from "../tabs/tabs";
 
@@ -21,9 +21,13 @@
   <Input {entity} path="data.tech_level" label="Tech Level" type="text" />
   <Input {entity} path="data.points" label="points" type="number" min="0" />
   <Select {entity} path="data.signature" label="Signature">
+    <Option value="ST">ST</Option>
     <Option value="IQ">IQ</Option>
     <Option value="DX">DX</Option>
     <Option value="HT">HT</Option>
+    <Option value="Per">Per</Option>
+    <Option value="Will">Will</Option>
+    <Option value="10" disabled={true}>10</Option>
   </Select>
   <Select {entity} path="data.difficulty" label="Difficulty">
     <Option value="E">E</Option>
@@ -32,9 +36,14 @@
     <Option value="VH">VH</Option>
     <Option value="W">W</Option>
   </Select>
-  <Select {entity} path="data.encumbrance_penalty_multiplier">
-    <option value="0">No Penalty Due To Encumbrance</option>
-  </Select>
+  <Input
+    {entity}
+    tooltipText="Will apply a penalty equal to this number times your
+    encumbrance level to skill level"
+    label="Encumbrance Penalty Multiplier"
+    path="data.encumbrance_penalty_multiplier"
+    type="number"
+    min="0" />
   <Textarea {entity} path="data.notes" cols="15" rows="1" label="Notes" />
   <Input {entity} path="data.categories" label="categories" />
   <Input {entity} path="data.reference" label="Page Reference" />

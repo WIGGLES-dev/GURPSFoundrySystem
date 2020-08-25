@@ -24,6 +24,11 @@
 </style>
 
 <button
+  on:mouseover={(e) => {
+    if (e.which == 1) {
+      selectTab(tab);
+    }
+  }}
   on:dragenter={(e) => {
     selectTab(tab);
   }}

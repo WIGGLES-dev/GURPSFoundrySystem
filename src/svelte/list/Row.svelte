@@ -10,19 +10,13 @@
     onDestroy,
     onMount,
     createEventDispatcher,
+    tick,
   } from "svelte";
 
   const dispatch = createEventDispatcher();
-  const {
-    registerRow,
-    setDragover,
-    setFocused,
-    hovered,
-    rows,
-    type,
-  } = getContext(ROWS);
+  const { setFocused, hovered, focused, type } = getContext(ROWS);
 
-  export let entity = getContext("entity");
+  export let entity = getContext("entity") || null;
 
   export let colspan;
 
@@ -42,6 +36,21 @@
 
   export let children = [];
 
+  let ownedItem = $entity.getOwnedItem(id);
+
+  $: isRowLabel = $entity.getOwnedItem(id)
+    ? $entity.getOwnedItem(id).isLabel()
+    : false;
+
+  $: colors = {
+    textColor: $entity.getOwnedItem(id)
+      ? $entity.getOwnedItem(id).getFlag("GURPS", "text_color")
+      : "",
+    backgroundColor: $entity.getOwnedItem(id)
+      ? $entity.getOwnedItem(id).getFlag("GURPS", "background_color")
+      : "",
+  };
+
   export let menuItems = (() => {
     let item = $entity.getOwnedItem(id) || $entity;
     return item && item.getMenuItems ? item.getMenuItems() : () => [];
@@ -53,11 +62,7 @@
 
   // $: GURPS = ($entity.getOwnedItem(id) || $entity).getGURPSObject();
 
-  const self = get_current_component();
-
-  onMount(() => {
-    registerRow(self);
-  });
+  let rowHTMLElement;
 </script>
 
 <style>
@@ -71,19 +76,21 @@
     background-color: rgba(0, 0, 0, 0.25);
   }
   .notes {
-    min-height: 50px;
-    text-align: left;
-    border: 1px solid black;
+    padding: 0px;
   }
   .container {
     color: rgb(240, 240, 224);
     background-color: black;
   }
-  .focus {
+  .focused {
+    box-shadow: 0 0 10px #ff6400;
   }
 </style>
 
 <tr
+  class:is-row-label={isRowLabel}
+  bind:this={rowHTMLElement}
+  style="background-color: {colors.backgroundColor}; color: {colors.textColor}"
   class:strikethrough={disabled}
   data-container={container}
   data-index={i}
@@ -92,16 +99,31 @@
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
   class:hovered={$hovered === i && config.highlightHover}
+  class:focused={$focused.includes(i)}
   class:container
   on:mouseover={(e) => {
-    setDragover(e, i);
     dispatch('mouseover');
+  }}
+  on:mouseenter={(e) => {
+    hovered.set(i);
+    if (e.which == 1 && e.shiftKey) {
+      setFocused(i);
+    }
+    dispatch('mouseenter');
+  }}
+  on:mousedown={(e) => {
+    if (e.which == 1 && e.shiftKey) {
+      setFocused(i, true);
+    }
+    dispatch('mousedown');
+  }}
+  on:click={(e) => {
+    dispatch('click');
   }}
   on:mouseout={(e) => {
     dispatch('mouseout');
   }}
   on:mouseleave={(e) => {
-    hovered.set(null);
     dispatch('mouseleave');
   }}
   on:auxclick={(e) => {
@@ -123,11 +145,10 @@
     dispatch('dragenter');
   }}
   on:dragleave={(e) => {
-    hovered.set(null);
     dispatch('dragleave');
   }}
   on:dragover={(e) => {
-    setDragover(e, i);
+    hovered.set(i);
     dispatch('dragover');
   }}
   on:dragend={(e) => {
@@ -135,25 +156,31 @@
     dispatch('dragend');
   }}>
   <td
+    on:dragenter={(e) => (hideNotes = false)}
     on:click={(e) => {
       if (!config.toggle) return;
       hideNotes = !hideNotes;
     }}>
     {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot {GURPS} {id} hovered={$hovered === i} />
-  <td>
-    {#if config.deleteButton && $hovered === i}
-      <i class="fas fa-trash" on:click={dispatch('delete', { id })} />
-    {/if}
+  <slot {id} {ownedItem} hovered={$hovered === i} />
+  <td class="show-when-label">
+    <i
+      class:no-show={!($hovered === i && config.deleteButton)}
+      class="fas fa-trash"
+      on:click={() => dispatch('delete', { id })} />
   </td>
-  <slot name="row-after" {GURPS} {id} />
 </tr>
+
 {#if !hideNotes}
   <td class="notes" {colspan}>
     <slot name="notes" {GURPS} {id} />
   </td>
 {/if}
+
+<!-- <tr>
+  <slot name="row-after" {GURPS} {id} />
+</tr> -->
 
 <!-- {#each $entity.getOwnedItem(id).getChildren() as child, i (child.id)}
   <svelte:self {entity} {config} {menuItems} {colspan} {container}>

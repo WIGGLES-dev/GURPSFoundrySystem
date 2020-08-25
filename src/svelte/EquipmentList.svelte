@@ -14,6 +14,10 @@
   th {
     padding: 0 5px 0 5px;
   }
+  .no-show {
+    /* color: transparent; */
+    visibility: hidden;
+  }
 </style>
 
 <h3>
@@ -30,27 +34,29 @@
     ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))}
   </b>
 </h3>
-<!-- <button
-  type="button"
-  on:click={(e) => $entity.createOwnedItem({
-      name: '???',
-      type: 'item',
-      data: { type: 'equipment_container' },
-    })}>
-  Add Container
-</button> -->
-<List
-  type="item"
-  buttonLabel="Add Item"
-  on:addlistitem={() => {
-    $entity.createOwnedItem({ name: '???', type: 'item' });
-  }}>
-  <thead name="header">
+
+<List type="item">
+  <span slot="tool" class="tool">Equip All</span>
+
+  <button
+    on:click={() => $entity.createOwnedItem({ name: '???', type: 'item' })}
+    type="button"
+    slot="button">
+    Add Item
+  </button>
+
+  <thead slot="header">
     <tr>
       <th />
-      <th>Equipped</th>
+      <th>E</th>
       <th>Qty</th>
-      <th>Description</th>
+      <th
+        on:dblclick={(e) => {
+          $entity.sortList('trait', 'data.description');
+        }}>
+        Description
+        <i class="fas fa-sort" />
+      </th>
       <th>Uses</th>
       <th>$</th>
       <th>Weight</th>
@@ -62,8 +68,9 @@
   </thead>
   {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
     <Row
-      let:GURPS
       let:id
+      let:ownedItem
+      let:hovered
       id={item.foundryID}
       on:delete={async (e) => {
         console.log($entity);
@@ -79,11 +86,13 @@
             .getOwnedItem(id)
             .update({ 'data.equipped': !Boolean(item.equipped) });
         }}>
-        {item.equipped ? 'yes' : 'no'}
+        {#if item.equipped}
+          <i class="fas fa-check" />
+        {/if}
       </td>
       <td>
         <Input
-          entity={$entity.getOwnedItem(id)._entity}
+          entity={ownedItem._entity}
           config={{ clickToEdit: true }}
           path="data.quantity"
           type="number"
@@ -92,9 +101,9 @@
           <span class="no-edit" slot="no-edit">{value}</span>
         </Input>
       </td>
-      <td style="width: 100%; padding-left: {item.getListDepth() * 30}px">
+      <td class="main-list-col">
         <Input
-          entity={$entity.getOwnedItem(id)._entity}
+          entity={ownedItem._entity}
           config={{ clickToEdit: true }}
           path="data.description"
           let:value>
