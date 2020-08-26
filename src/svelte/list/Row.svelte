@@ -83,7 +83,7 @@
     background-color: black;
   }
   .focused {
-    box-shadow: 0 0 10px #ff6400;
+    background-color: #ff6400;
   }
 </style>
 
@@ -113,7 +113,9 @@
   }}
   on:mousedown={(e) => {
     if (e.which == 1 && e.shiftKey) {
-      setFocused(i, true);
+      setFocused(i, true, e.timestamp);
+    } else if (e.which == 1) {
+      focused.set([i]);
     }
     dispatch('mousedown');
   }}

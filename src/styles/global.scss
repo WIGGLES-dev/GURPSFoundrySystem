@@ -24,6 +24,10 @@ h2 {
 }
 
 .GURPSActor {
+    .flex {
+        display: flex;
+    }
+
     .no-show {
         display: none;
     }

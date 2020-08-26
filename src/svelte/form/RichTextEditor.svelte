@@ -10,23 +10,6 @@
   export let links = true;
   export let rolls = true;
 
-  // function getRollData() {
-  //   let data = {
-  //     data: {
-  //       this: {
-  //         ...$entity.data,
-  //       },
-  //       actor: $entity.actor
-  //         ? {
-  //             ...$entity.actor.data,
-  //           }
-  //         : null,
-  //     },
-  //   };
-  //   return { data };
-  // }
-
-  let RTE;
   let target;
   let value = $entity.getProperty(path);
 
@@ -36,7 +19,6 @@
       entities: true,
       links: true,
       rolls: true,
-      //rollData: getRollData(),
     });
     return content;
   };
@@ -45,27 +27,27 @@
 
   export let editing = false;
 
-  async function createEditorInstance() {
-    let editor = await TextEditor.create(
+  onMount(async () => {});
+
+  const createEditorInstance = async (target) => {
+    let RTE = await TextEditor.create(
       {
         target,
         save_onsavecallback() {
-          update(RTE.getContent());
+          try {
+            update(this.getContent());
+          } catch (err) {}
         },
       },
       value || ""
     );
-    RTE = editor[0];
-    RTE.on("blur", (e) => {
-      update(e.target.getContent());
-    });
-  }
+    return RTE[0];
+  };
 
   async function update(value) {
     await $entity.update({ [path]: value });
     enrichHTML(value);
     dispatch("save");
-    editing = false;
   }
 </script>
 
@@ -94,8 +76,8 @@
       <i
         class="fas fa-edit"
         on:click={async () => {
-          await createEditorInstance();
-          if (RTE) editing = true;
+          await createEditorInstance(target);
+          editing = true;
         }} />
     </a>
   </div>
@@ -107,12 +89,10 @@
       class:rte-save={editing}
       type="button"
       on:click={async (e) => {
-        await update(RTE.getContent());
-        RTE.destroy();
         editing = false;
       }}>
       <i class="fas fa-feather-alt" />
-      Save
+      View As Text
     </button>
   {/if}
 </div>

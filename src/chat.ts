@@ -1,4 +1,5 @@
 import Message from "./svelte/chat/Message.svelte"
+import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 
 
 export class _ChatMessage extends ChatMessage {
@@ -10,6 +11,10 @@ export class _ChatMessage extends ChatMessage {
     static async create(data: any, options?: any) {
         let message = await super.create(data, options);
         if (message instanceof _ChatMessage) {
+            // if (data.roll instanceof SuccessRoll) {
+            //     await message.setFlag("GURPS", "type", "Skill");
+            //     await message.setFlag("GURPS", "roll_data", data.GURPSRollData || {})
+            // }
             await message.setFlag("GURPS", "roll_data", data.GURPSRollData || {})
             await message.setFlag("GURPS", "type", data.GURPSRollType);
         }

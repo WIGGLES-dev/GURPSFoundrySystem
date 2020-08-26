@@ -18,12 +18,18 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
   }
+
   .totals :global(.GURPS-label) {
     padding: 0px;
   }
 
-  .totals :global(input.float-right) {
-    float: right;
+  .total-points :global(input.total-points-input) {
+    color: white;
+    max-width: 100px !important;
+  }
+
+  .total-points .point-total-label {
+    margin-right: auto;
   }
 
   .total {
@@ -58,12 +64,21 @@
 </style>
 
 <div class="totals">
-  <div class="total-points span-2">
-    {totals.total + $entity.getProperty('data.unspent_points')} CP
+  <div class="span-2 total-points flex">
+    <div class="point-total-label">Point Total</div>
+    <Input
+      path="data.point_total"
+      type="number"
+      classList="total-points-input" />
   </div>
 
+  <div>Spent</div>
+  <div class="total">{totals.total}</div>
+
   <div>Unspent Points</div>
-  <Input path="data.unspent_points" type="number" classList="float-right" />
+  <div class="total">
+    {$entity.getProperty('data.point_total') - totals.total}
+  </div>
 
   <div class="">Race</div>
   <div class="total">{totals.racialPoints}</div>

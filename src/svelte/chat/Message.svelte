@@ -1,8 +1,10 @@
 <script>
-  export let message = null;
+  import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 
   import Damage from "./Damage";
-  import { send } from "process";
+  import Skill from "./Skill";
+
+  export let message = null;
 
   let sender = game.users.get(message.data.user);
   let userAvatar = sender.avatar;
@@ -46,7 +48,7 @@
   .message-header {
     background-color: black;
     padding: 3px;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   .message-header > * {
     color: white;

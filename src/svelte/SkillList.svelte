@@ -6,29 +6,6 @@
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
-
-  const getSkillLevelForTechnique = (technique) => {
-    try {
-      if (technique.getProperty("data.based_on") === "skill") {
-        let skill = $entity.getOwnedItem(
-          technique.getProperty("data.skill_id")
-        );
-        if (skill && skill.type === "skill") {
-          let level = $GURPS
-            .getElementById("foundryID", skill.id)
-            .calculateLevel();
-          if (typeof level === "number") return Math.floor(level);
-          return NaN;
-        }
-      } else if (technique.getProperty("data.based_on") === "attribute") {
-        let signature = technique.getProperty("data.signature");
-        return $GURPS.getAttribute(signature).calculateLevel();
-      }
-    } catch (err) {
-      console.log(err);
-      return 10;
-    }
-  };
 </script>
 
 <style>
@@ -89,15 +66,22 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill({ calculateLevel: () => skill.calculateLevel(getSkillLevelForTechnique(ownedItem)), name: skill.name }, 'none');
+            $entity.rollSkill({
+              level: skill.calculateLevel(
+                $entity.getSkillLevelForTechnique(ownedItem)
+              ),
+              trait: skill.name,
+              modifiers: 'none',
+            });
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
             $entity.rollSkill({
-              calculateLevel: () =>
-                skill.calculateLevel(getSkillLevelForTechnique(ownedItem)),
-              name: skill.name,
+              level: skill.calculateLevel(
+                $entity.getSkillLevelForTechnique(ownedItem)
+              ),
+              trait: skill.name,
             });
           }} />
         <Input
@@ -112,10 +96,10 @@
         </Input>
       </td>
       <td>
-        {Math.floor(skill.calculateLevel(getSkillLevelForTechnique(ownedItem)))}
+        {Math.floor(skill.calculateLevel($entity.getSkillLevelForTechnique(ownedItem)))}
       </td>
       <td>
-        {!skill.isTechnique ? skill.signature : ''}{skill.getRelativeLevel(getSkillLevelForTechnique(ownedItem)) >= 0 ? '+' : ''}{skill.getRelativeLevel(getSkillLevelForTechnique(ownedItem))}
+        {!skill.isTechnique ? skill.signature : ''}{skill.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem)) >= 0 ? '+' : ''}{skill.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem))}
       </td>
       <td>
         <Input

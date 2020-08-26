@@ -15,28 +15,28 @@
             "name": "items",
             "label": "GURPS4e Items",
             "system": "GURPS",
-            "path": "./packs/items.db",
+            "path": "packs/items.db",
             "entity": "Item"
         },
         {
             "name": "skills",
             "label": "GURPS4e Skills",
             "system": "GURPS",
-            "path": "./packs/skills.db",
+            "path": "packs/skills.db",
             "entity": "Item"
         },
         {
             "name": "traits",
             "label": "GURPS4e Traits",
             "system": "GURPS",
-            "path": "./packs/traits.db",
+            "path": "packs/traits.db",
             "entity": "Item"
         },
         {
             "name": "spells",
             "label": "GURPS4e Spells",
             "system": "GURPS",
-            "path": "./packs/spells.db",
+            "path": "packs/spells.db",
             "entity": "Item"
         }
     ],

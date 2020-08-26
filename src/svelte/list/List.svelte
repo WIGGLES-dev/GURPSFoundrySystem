@@ -13,18 +13,22 @@
     onDestroy,
     createEventDispatcher,
   } from "svelte";
+  import { noop } from "svelte/internal";
   const dispatch = createEventDispatcher();
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
 
   let tableHTMLElement;
+  let lastTimestamp = Number.NEGATIVE_INFINITY;
 
   function bind(element) {
     if (config.dragDrop) {
       GURPSDragDrop.dropOnList(type).bind(element);
     }
   }
+
+  function getEntityFromIndex(table) {}
 
   onMount(() => {
     bind(tableHTMLElement);
@@ -41,10 +45,20 @@
   export let config = { dragDrop: true };
 
   setContext(ROWS, {
-    setFocused(i, toggle) {
+    setFocused(i, toggle, timestamp) {
+      if (timestamp) lastTimestamp = timestamp;
       focused.update((focused) => {
         if (focused.includes(i) && toggle) {
           focused.splice(focused.indexOf(i), 1);
+        } else if (timestamp) {
+          let lastFocused = focused[focused.length - 1];
+          if (timestamp - lastTimestamp < 100) {
+            console.log(timestamp - lastTimestamp);
+            for (let i = 0; i < Math.abs(lastFocused - i); ++i) {
+              let toInclude = lastFocused + i + 1;
+              if (!focused.includes(toIncludes)) focused.push(i);
+            }
+          }
         } else {
           focused.push(i);
         }
@@ -86,10 +100,17 @@
 
 <svelte:window
   on:click|capture={(e) => {
-    if (tableHTMLElement.contains(e.target)) {
-    } else {
-      hovered.set(null);
-      focused.set([]);
+    try {
+      if (tableHTMLElement.contains(e.target)) {
+      } else {
+        hovered.set(null);
+        focused.set([]);
+      }
+    } catch (err) {}
+  }}
+  on:keydown={(e) => {
+    if (e.code == 46) {
+      $focused.forEach((focusedItem, i) => {});
     }
   }} />
 

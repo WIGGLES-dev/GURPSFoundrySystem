@@ -11,6 +11,7 @@
   import Encumbrance from "./Encumbrance";
   import Totals from "./Totals";
   import Armor from "./Armor";
+  import Pools from "./Pools";
 
   import CharacterCombat from "./CharacterCombat";
 
@@ -146,6 +147,7 @@
         </div>
       </div>
       <Totals />
+      <Pools />
     </div>
 
     <div style="max-width: 50%;">

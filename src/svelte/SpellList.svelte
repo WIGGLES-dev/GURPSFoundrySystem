@@ -82,12 +82,19 @@
           class:no-show={!hovered || isLabel}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(spell, 'none');
+            $entity.rollSkill({
+              level: spell.calculateLevel() + spellBonus,
+              trait: spell.name,
+              modifiers: 'none',
+            });
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill(spell);
+            $entity.rollSkill({
+              level: spell.calculateLevel() + spellBonus,
+              trait: spell.name,
+            });
           }} />
         <Input
           entity={ownedItem._entity}

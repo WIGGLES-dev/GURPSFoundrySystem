@@ -14,7 +14,11 @@
 
 <div class="dice-roll">
   <div class="dice-result">
-    <div class="dice-formula">{weaponName} - {weaponUsage}</div>
+    <div class="dice-formula">
+      {weaponName} - {weaponUsage}
+      <br />
+      {roll.formula}
+    </div>
     <div class="dice-tooltip">
       <div class="dice">
         {#each roll.dice as die}

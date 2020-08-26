@@ -58,6 +58,7 @@ export class _Item extends ItemContainer {
         }
     }
 
+
     embeddedUpdate() {
         this._entity.set(this);
     }
@@ -271,6 +272,19 @@ export class _Item extends ItemContainer {
                         }
                     },
                     {
+                        name: `Roll`,
+                        icon: '<i class="fas fa-dice-d6"></i>',
+                        condition: () => !isLabel && ["skill", "technique", "spell"].includes(entity.data.type),
+                        callback() {
+                            let skillike = entity.getGURPSObject();
+                            if (skillike.isTechnique) {
+                                ui.notifications.warn("Please roll from the skill list for now");
+                                return false
+                            }
+                            entity.actor.rollSkill(skillike, null)
+                        }
+                    },
+                    {
                         name: `Open PDF`,
                         icon: '<i class="fas fa-file-pdf"></i>',
                         condition: () => !isLabel,
@@ -324,16 +338,7 @@ export class _Item extends ItemContainer {
                 case "item":
                     break
                 case "skill":
-                    options = options.concat([
-                        {
-                            name: `Roll`,
-                            icon: '<i class="fas fa-dice-d6"></i>',
-                            condition: () => true,
-                            callback() {
-                                entity.actor.rollSkill(entity.getGURPSObject(), null)
-                            }
-                        }
-                    ])
+                    break
                 case "spell":
                     break
                 case "trait":

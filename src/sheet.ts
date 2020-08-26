@@ -179,9 +179,9 @@ export class _Actor extends Actor {
         return this.ownedItemsByType("melee attack", "ranged attack")
     }
 
-    rollSkill(skill: Skill, modifiers: string) {
+    rollSkill({ trait, level, modifiers }) {
         modifiers = (modifiers === "none" || !modifiers ? `` : `+${modifiers}`) + (modifiers !== "none" && !modifiers ? `+${prompt("modifiers") || "0"}` : "");
-        let roll = new SuccessRoll({ level: Math.floor(skill.calculateLevel()), trait: skill.name, modifiers });
+        let roll = new SuccessRoll({ level, trait: trait, modifiers });
         roll.roll();
         let renderer = new SuccessRollRenderer();
         renderer.render(roll).then((html) => {
@@ -206,6 +206,25 @@ export class _Actor extends Actor {
                 weaponName: weapon.owner.name
             }
         })
+    }
+
+    getSkillLevelForTechnique(technique) {
+        try {
+            if (technique.getProperty("data.based_on") === "skill") {
+                let skill = this.getOwnedItem(technique.getProperty("data.skill_id"));
+                if (skill && skill.type === "skill") {
+                    let level = this.GURPS.getElementById("foundryID", skill.id).calculateLevel();
+                    if (typeof level === "number") return Math.floor(level);
+                    return NaN;
+                }
+            } else if (technique.getProperty("data.based_on") === "attribute") {
+                let signature = technique.getProperty("data.signature");
+                return this.GURPS.getAttribute(signature).calculateLevel();
+            }
+        } catch (err) {
+            console.log(err);
+            return 10;
+        }
     }
 
     // static getBase64Image(img: HTMLImageElement) {

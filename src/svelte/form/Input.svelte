@@ -54,7 +54,8 @@
       array,
       alsoUpdate,
     });
-    dispatch("update", { entity: update });
+    
+    dispatch("update", { entity: update, change: tValue });
   }
 
   $: getDefaultValue = (entity) => {
@@ -90,6 +91,7 @@
     {/if}
 
     <input
+      data-path={path}
       class={classList}
       draggable={true}
       on:dragstart|preventDefault|stopPropagation

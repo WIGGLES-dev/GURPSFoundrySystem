@@ -7,6 +7,7 @@
         "fatigue_points": {
             "value": 10,
             "max": 10
-        }
+        },
+        "custom": {}
     }
 }
