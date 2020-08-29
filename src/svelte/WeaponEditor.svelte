@@ -5,9 +5,14 @@
 
   export let entity = null;
   export let weapon = null;
-  export let i = null;
 
-  $: weaponType = $entity.getProperty("data.weapons")[i].type;
+  let i = $entity
+    .getProperty("data.weapons")
+    .findIndex((item) => item._id === weapon.foundryID);
+
+  $: weaponType = $entity
+    .getProperty("data.weapons")
+    .find((item) => item._id === weapon.foundryID).type;
 </script>
 
 <style>

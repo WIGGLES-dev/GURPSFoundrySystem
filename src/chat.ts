@@ -70,7 +70,6 @@ export class _ChatLog extends ChatLog {
         let targetIdx = Math.max((lastIdx - size) || 0, 0);
         let m = null;
 
-        console.log(messages, targetIdx, lastIdx, size);
 
         if (lastIdx !== 0) {
             let html: any[] = [];

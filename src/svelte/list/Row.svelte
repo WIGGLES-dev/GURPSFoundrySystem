@@ -32,27 +32,30 @@
     highlightHover: true,
     deleteButton: true,
     toggle: false,
+    focusable: true,
   };
 
   export let children = [];
 
-  let ownedItem = $entity.getOwnedItem(id);
+  const getItem = (entity) => {
+    return entity.getOwnedItem ? entity.getOwnedItem(id) : entity;
+  };
 
-  $: isRowLabel = $entity.getOwnedItem(id)
-    ? $entity.getOwnedItem(id).isLabel()
+  $: isRowLabel = getItem($entity)
+    ? getItem($entity).getFlag("GURPS", "is_label") || false
     : false;
 
   $: colors = {
-    textColor: $entity.getOwnedItem(id)
-      ? $entity.getOwnedItem(id).getFlag("GURPS", "text_color")
+    textColor: getItem($entity)
+      ? getItem($entity).getFlag("GURPS", "text_color") || ""
       : "",
-    backgroundColor: $entity.getOwnedItem(id)
-      ? $entity.getOwnedItem(id).getFlag("GURPS", "background_color")
+    backgroundColor: getItem($entity)
+      ? getItem($entity).getFlag("GURPS", "background_color") || ""
       : "",
   };
 
   export let menuItems = (() => {
-    let item = $entity.getOwnedItem(id) || $entity;
+    let item = getItem($entity);
     return item && item.getMenuItems ? item.getMenuItems() : () => [];
   })();
 
@@ -66,12 +69,6 @@
 </script>
 
 <style>
-  .drop-top {
-    border-top: 1px solid red;
-  }
-  .drop-bottom {
-    border-bottom: 1px solid red;
-  }
   .hovered {
     background-color: rgba(0, 0, 0, 0.25);
   }
@@ -84,6 +81,10 @@
   }
   .focused {
     background-color: #ff6400;
+  }
+  tr > :global(td) {
+    padding: 3px 0px 3px 0px;
+    border-bottom: 1px solid black;
   }
 </style>
 
@@ -99,22 +100,22 @@
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
   class:hovered={$hovered === i && config.highlightHover}
-  class:focused={$focused.includes(i)}
+  class:focused={$focused.includes(i) && config.focusable}
   class:container
   on:mouseover={(e) => {
     dispatch('mouseover');
   }}
   on:mouseenter={(e) => {
     hovered.set(i);
-    if (e.which == 1 && e.shiftKey) {
+    if (e.which == 1 && e.shiftKey && config.focusable) {
       setFocused(i);
     }
     dispatch('mouseenter');
   }}
   on:mousedown={(e) => {
-    if (e.which == 1 && e.shiftKey) {
+    if (e.which == 1 && e.shiftKey && config.focusable) {
       setFocused(i, true, e.timestamp);
-    } else if (e.which == 1) {
+    } else if (e.which == 1 && e.shiftKey && config) {
       focused.set([i]);
     }
     dispatch('mousedown');
@@ -165,7 +166,7 @@
     }}>
     {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot {id} {ownedItem} hovered={$hovered === i} />
+  <slot {id} ownedItem={getItem($entity)} hovered={$hovered === i} />
   <td class="show-when-label">
     <i
       class:no-show={!($hovered === i && config.deleteButton)}

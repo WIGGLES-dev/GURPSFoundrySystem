@@ -1,5 +1,4 @@
 import { createPopper } from "@popperjs/core";
-import App from "./svelte/application/Application.svelte";
 
 export function fixed6(number: string | number) {
     let ifString;
@@ -279,7 +278,6 @@ export function createContextMenu(node: HTMLElement, parameters: any) {
 export function svelte(app: any) {
     return function (constructor: new () => Application): any {
         return class extends constructor {
-            _app: App
             app: any
             actor: any
             item: any
@@ -318,7 +316,6 @@ export function svelte(app: any) {
             }
 
             render(force: boolean = false, options: any) {
-                console.log(this.rendered);
                 if (!this.rendered) return super.render(force, options);
 
                 //@ts-ignore

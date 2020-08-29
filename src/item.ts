@@ -5,9 +5,8 @@ import { _Actor } from "./sheet";
 import { ItemContainer } from "./container";
 import { injectHelpers, svelte, arrayMove } from "./helpers";
 import { Writable, writable } from "svelte/store";
-import { Weapon } from "g4elogic";
 import { _ChatMessage } from "./chat";
-import { callbackify } from "util";
+import WeaponEditor from "./svelte/WeaponEditor.svelte";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
@@ -16,7 +15,7 @@ export class _ItemSheet extends ItemSheet {
 
     static get defaultOptions() {
         return mergeObject(ItemSheet.defaultOptions, {
-            classes: [""],
+            classes: ["GURPSItem"],
             template: "systems/GURPS/holder.html",
             width: 700,
             height: 900,
@@ -82,6 +81,15 @@ export class _Item extends ItemContainer {
                         reach,
                         parry,
                         block,
+                        edit: () => {
+                            new WeaponEditor({
+                                target: document.body,
+                                props: {
+                                    entity: this._entity,
+                                    weapon: { foundryID: cur._id }
+                                }
+                            })
+                        }
                     });
                     break
                 case "ranged_weapon":
@@ -91,6 +99,20 @@ export class _Item extends ItemContainer {
                         type,
                         damage,
                         usage,
+                        accuracy,
+                        range,
+                        rate_of_fire,
+                        shots,
+                        bulk,
+                        edit: () => {
+                            new WeaponEditor({
+                                target: document.body,
+                                props: {
+                                    entity: this._entity,
+                                    weapon: { foundryID: cur._id }
+                                }
+                            })
+                        }
                     })
                     break
                 default:

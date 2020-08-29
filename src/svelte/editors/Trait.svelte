@@ -1,6 +1,13 @@
 <script>
   import { getContext } from "svelte";
-  import { Input, Select, Option, Checkbox, Textarea } from "../form/form";
+  import {
+    Input,
+    Select,
+    Option,
+    Checkbox,
+    Textarea,
+    ChipList,
+  } from "../form/form";
 
   export let entity = getContext("entity") || null;
 
@@ -108,7 +115,7 @@
   path="data.round_down" />
 <Input disabled={true} label="Total" />
 <Textarea {entity} path="data.notes" label="Notes" cols="30" rows="1" />
-<Input {entity} type="text" path="data.categories" label="categories" />
+<ChipList {entity} path="data.categories" label="Categories" />
 <Select {entity} path="data.cr" label="Self-Control Roll">
   <option value="0">CR: N/A (Cannot Resist)</option>
   <option value="6">CR: 6 (Resist Rarely)</option>

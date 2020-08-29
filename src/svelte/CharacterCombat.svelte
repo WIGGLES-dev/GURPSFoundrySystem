@@ -3,8 +3,9 @@
   import { Tabs, TabList, TabPanel, Tab } from "./tabs/tabs";
 
   import Armor from "./Armor";
-  import WeaponList from "./WeaponList";
   import Encumbrance from "./Encumbrance";
+  import MeleeWeapons from "./weapon-list/MeleeWeapons.svelte";
+  import RangedWeapons from "./weapon-list/RangedWeapons.svelte";
 
   export let entity = getContext("entity") || null;
   export let GURPS = getContext("GURPS") || $entity._GURPS || null;
@@ -22,20 +23,26 @@
   <TabList>
     <Tab index={0}>Ranged Weapons</Tab>
     <Tab index={1}>Melee Weapons</Tab>
-    <Tab index={2}>Weapons</Tab>
+    <Tab index={2}>Tools</Tab>
     <Tab index={3}>Armor</Tab>
   </TabList>
   <TabPanel>
-    <h1>Under Construction</h1>
+    <RangedWeapons />
+  </TabPanel>
+  <TabPanel>
+    <MeleeWeapons />
   </TabPanel>
   <TabPanel>
     <h1>Under Construction</h1>
-  </TabPanel>
-  <TabPanel>
-    <WeaponList />
   </TabPanel>
   <TabPanel>
     <Armor />
   </TabPanel>
 </Tabs>
-<button type="button">Dodge</button>
+<button
+  type="button"
+  on:click={() => {
+    $entity.dodge();
+  }}>
+  Dodge
+</button>

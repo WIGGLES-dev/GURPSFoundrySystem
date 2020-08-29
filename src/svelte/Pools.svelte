@@ -1,7 +1,6 @@
 <script>
   import { Input } from "./form/form";
   import { getContext } from "svelte";
-  import Application from "./application/Application.svelte";
   export let entity = getContext("entity") || null;
   export let GURPS = getContext("GURPS") || $entity._GURPS || null;
 </script>

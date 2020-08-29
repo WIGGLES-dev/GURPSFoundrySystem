@@ -28,8 +28,6 @@
     }
   }
 
-  function getEntityFromIndex(table) {}
-
   onMount(() => {
     bind(tableHTMLElement);
   });
@@ -42,7 +40,17 @@
   export const focused = writable([]);
   export const rows = writable(0);
   export let type = null;
+  export let title = "";
   export let config = { dragDrop: true };
+
+  async function deleteAllFocused() {
+    let focusedIds = $focused.map(
+      (index) =>
+        tableHTMLElement.querySelector(`[data-index='${index}']`).dataset
+          .entityId
+    );
+    $entity.deleteEmbeddedEntity("OwnedItem", focusedIds);
+  }
 
   setContext(ROWS, {
     setFocused(i, toggle, timestamp) {
@@ -76,12 +84,22 @@
   table {
     white-space: nowrap;
     text-align: center;
+    margin-top: 0px;
+  }
+  table caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
   }
   .flex {
     display: flex;
   }
   .toolbar {
     width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    color: white;
   }
   .toolbar > :global(.tool) {
     color: white;
@@ -91,12 +109,6 @@
   .toolbar > :global(.tool):hover {
   }
 </style>
-
-<slot name="button" />
-
-<div class="flex toolbar">
-  <slot name="tool" />
-</div>
 
 <svelte:window
   on:click|capture={(e) => {
@@ -109,14 +121,42 @@
     } catch (err) {}
   }}
   on:keydown={(e) => {
-    if (e.code == 46) {
-      $focused.forEach((focusedItem, i) => {});
+    if (e.key === 'Delete') {
+      deleteAllFocused();
     }
   }} />
 
+<slot name="button" />
+
+<!-- <div class="flex toolbar">
+  <slot name="tool" />
+</div> -->
+
 <table bind:this={tableHTMLElement} on:drop={(e) => {}}>
+  <caption>{title}</caption>
   <slot name="colgroups" />
-  <slot name="header" />
+  <thead>
+    <tr>
+      <th>
+        <!-- <i
+          class="fas fa-cogs"
+          on:click={(e) => {
+            dispatch('settingchange');
+          }} /> -->
+      </th>
+      <slot name="header" />
+      <th>
+        <i
+          class="fas fa-plus-square"
+          style="margin-left: auto;"
+          on:click={(e) => {
+            dispatch('addlistitem');
+          }} />
+      </th>
+    </tr>
+  </thead>
   <slot />
-  <slot name="footer" />
+  <tfoot>
+    <slot name="footer" />
+  </tfoot>
 </table>

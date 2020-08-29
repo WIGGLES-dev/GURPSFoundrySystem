@@ -35,30 +35,29 @@
   .total {
     text-align: right;
   }
-
-  .divider {
-    height: 5px;
-    background-color: yellow;
-  }
-
   .span-2 {
     grid-column: 1 / span 2;
   }
 
   .total-points {
-    background-color: black;
+    background-color: rgb(122, 121, 113);
     color: white;
+    padding: 5px;
+    border-radius: 3px;
     text-align: center;
   }
-
+  .divider {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid rgb(122, 121, 113);
+  }
   .thrust {
     color: white;
-    background-color: black;
+    background-color: rgb(122, 121, 113);
     text-align: center;
   }
   .swing {
     color: white;
-    background-color: black;
+    background-color: rgb(122, 121, 113);
     text-align: center;
   }
 </style>
@@ -79,6 +78,8 @@
   <div class="total">
     {$entity.getProperty('data.point_total') - totals.total}
   </div>
+
+  <div class="divider" />
 
   <div class="">Race</div>
   <div class="total">{totals.racialPoints}</div>

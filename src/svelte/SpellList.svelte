@@ -7,6 +7,12 @@
   const entity = getContext("entity");
 
   $: spellBonus = $entity.getProperty("data.bonuses.spell_bonus");
+  $: spellOnPenalty = $entity.getProperty("data.penalties.spells_on");
+  $: spellConcentrationPenalty =
+    $entity.getProperty("data.penalties.concentration_spells") * 3;
+
+  const getRollMod = () =>
+    spellBonus - spellOnPenalty - spellConcentrationPenalty;
 </script>
 
 <style>
@@ -28,44 +34,39 @@
     path={'data.penalties.spells_on'}
     type="number"
     {entity}
+    min="0"
     label="Spells On" />
   <Input
     type="number"
-    path={'data.penalties.concetration_spells'}
+    path={'data.penalties.concentration_spells'}
     {entity}
-    label="Concentration Penalty" />
+    min="0"
+    label="Spell Concentrating On" />
 </div>
 
-<List type="spell">
-  <button
-    type="button"
-    slot="button"
-    on:click={() => $entity.createOwnedItem({ name: '???', type: 'spell' })}>
-    Add Spell
-  </button>
-  <thead name="header">
-    <tr>
-      <td />
-      <th
-        on:dblclick={(e) => {
-          $entity.sortList('spell', 'data.name');
-        }}>
-        Spells
-        <i class="fas fa-sort" />
-      </th>
-      <th>Resist</th>
-      <th>Class</th>
-      <th>Cost</th>
-      <th>Maintain</th>
-      <th>Time</th>
-      <th>Duration</th>
-      <th>SL</th>
-      <th>RSL</th>
-      <th>Pts</th>
-      <th>Ref</th>
-      <th />
-    </tr>
-  </thead>
+<List
+  type="spell"
+  on:addlistitem={() => {
+    $entity.createOwnedItem({ name: '???', type: 'spell' });
+  }}>
+  <th
+    slot="header"
+    on:dblclick={(e) => {
+      $entity.sortList('spell', 'data.name');
+    }}>
+    Spells
+    <i class="fas fa-sort" />
+  </th>
+  <th slot="header">Resist</th>
+  <th slot="header">Class</th>
+  <th slot="header">Cost</th>
+  <th slot="header">Maintain</th>
+  <th slot="header">Time</th>
+  <th slot="header">Duration</th>
+  <th slot="header">SL</th>
+  <th slot="header">RSL</th>
+  <th slot="header">Pts</th>
+  <th slot="header">Ref</th>
   {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}
     <Row
       let:ownedItem
@@ -83,7 +84,7 @@
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
             $entity.rollSkill({
-              level: spell.calculateLevel() + spellBonus,
+              level: spell.calculateLevel() + getRollMod(),
               trait: spell.name,
               modifiers: 'none',
             });
@@ -92,7 +93,7 @@
           }}
           on:click={(e) => {
             $entity.rollSkill({
-              level: spell.calculateLevel() + spellBonus,
+              level: spell.calculateLevel() + getRollMod(),
               trait: spell.name,
             });
           }} />

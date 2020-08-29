@@ -305,6 +305,10 @@ export class FoundryEntity extends Serializer {
         trait.reference = getProperty(data, "data.reference");
         trait.notes = getProperty(data, "data.notes");
 
+        getProperty(data, "data.categories")?.forEach((category) => {
+            trait.categories.add(category);
+        })
+
         getProperty(data, "data.features")?.forEach((feature: json) => {
             Feature.loadFeature<Trait>(trait, feature.type)?.load(feature)
         });
@@ -391,6 +395,9 @@ export class FoundryEntity extends Serializer {
     mapWeapon(weapon: Weapon, data: any) {
         weapon.foundryID = data._id;
 
+        weapon.skillID = data.skill_id;
+        weapon.skillMod = data.weapon_skill_mod;
+
         weapon.strength = getProperty(data, "strength_requirement")
         weapon.usage = getProperty(data, "usage");
         weapon.damage = getProperty(data, "damage");
@@ -458,7 +465,8 @@ export class FoundryEntity extends Serializer {
 
     }
 
-    load(character: Character, actor: FoundryActor): Character {
+    load(character: Character, actor: FoundryActor, config: any): Character {
+
         const data = actor.data;
         character.getAttribute(Signature.DX).setLevel(getProperty(data, "data.attributes.dexterity"));
         const ST = character.getAttribute(Signature.ST).setLevel(getProperty(data, "data.attributes.strength"));
@@ -492,14 +500,22 @@ export class FoundryEntity extends Serializer {
         const spells = actor.ownedItemsByType("spell");
         character.spellList.load(spells);
 
-        const weapons = actor.ownedItemsByType("melee weapon", "ranged weapon");
+        const weapons = actor.ownedItemsByType("melee weapon", "ranged weapon", "weapon");
+
         weapons.forEach(weapon => {
-            if (weapon.type === "melee_weapon") {
-                const meleeWeapons = new Group<RangedWeapon>("melee weapons", character);
-            } else if (weapon.type === "ranged_weapon") {
-                const rangedWeapons = new Group<MeleeWeapon>("ranged weapons", character);
-            }
-        })
+            let group = new Group(`${weapon.name}`);
+            weapon.data.data.weapons.forEach(weapon => {
+                if (weapon.type === "melee_weapon") {
+                    let meleeWeapon = new MeleeWeapon(group);
+                    group.weapons.add(meleeWeapon);
+                    this.mapWeapon(meleeWeapon, weapon)
+                } else if (weapon.type === "ranged_weapon") {
+                    let rangedWeapon = new RangedWeapon(group);
+                    group.weapons.add(rangedWeapon);
+                    this.mapWeapon(rangedWeapon, weapon);
+                }
+            });
+        });
 
         return character
     }

@@ -4,6 +4,6 @@
   }
 </style>
 
-<div class="tab-list">
+<nav class="tab-list">
   <slot />
-</div>
+</nav>

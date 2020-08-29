@@ -34,7 +34,7 @@
 </script>
 
 <style>
-
+  
 </style>
 
 <svelte:component this={getEditorComponent($entity)} />

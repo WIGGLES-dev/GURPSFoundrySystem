@@ -9,10 +9,6 @@ input[type="number"] {
     line-height: inherit;
     border: 1px solid #7a7971;
     border-radius: 3px;
-
-    &:hover {
-        box-shadow: 0 0 5px red;
-    }
 }
 
 h2 {
@@ -21,6 +17,27 @@ h2 {
 
 .fas.fa-trash:hover {
     color: red;
+}
+
+.GURPS-label {
+    &[data-label="true"] span::after {
+        content: ":"
+    }
+
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: rgb(122, 121, 113);
+        border-radius: 3px;
+        color: white;
+
+        input,
+        textarea {
+            color: white;
+        }
+    }
+
+    padding: 7px;
 }
 
 .GURPSActor {
@@ -40,32 +57,8 @@ h2 {
         width: 100%;
     }
 
-    .GURPS-label {
-        &[data-label="true"] span::after {
-            content: ":"
-        }
-
-        box-sizing: border-box;
-
-        &:hover {
-            border: 1px solid red;
-            margin: -1px;
-        }
-
-        padding: 7px;
-    }
-
     .click-to-edit {
         padding: 0;
-    }
-
-    .GURPS-rte {
-        // height: 14px;
-        // font-size: 14px;
-
-        .rte-edit {}
-
-        .rte-save {}
     }
 
     tr.strikethrough {

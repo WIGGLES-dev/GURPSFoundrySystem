@@ -7,12 +7,11 @@
   import TraitList from "./TraitList";
   import SkillList from "./SkillList";
   import SpellList from "./SpellList";
-  import WeaponList from "./WeaponList";
   import Encumbrance from "./Encumbrance";
   import Totals from "./Totals";
   import Armor from "./Armor";
   import Pools from "./Pools";
-
+  import Biography from "./Biography";
   import CharacterCombat from "./CharacterCombat";
 
   import { RichTextEditor, Input, FilePicker } from "./form/form";
@@ -54,6 +53,9 @@
     <Tab index={4}>Combat</Tab>
     <Tab index={5}>Inventory</Tab>
     <Tab index={6}>Grimoire</Tab>
+    <Tab index={7}>
+      <i class="fas fa-cogs" />
+    </Tab>
   </TabList>
   <TabPanel>
     <div class="attributes flex">
@@ -153,17 +155,13 @@
     <div style="max-width: 50%;">
       <Encumbrance />
     </div>
-    <h3>Notes</h3>
-    <RichTextEditor path="data.notes" />
+    <RichTextEditor path="data.notes" title="Notes" />
   </TabPanel>
   <TabPanel>
     <TraitList />
   </TabPanel>
   <TabPanel>
-    <Input {entity} type="text" path="name" label="Name" />
-    <FilePicker type="image" />
-    <h3>Biography</h3>
-    <RichTextEditor path="data.bio" />
+    <Biography />
   </TabPanel>
   <TabPanel>
     <SkillList />
@@ -191,5 +189,27 @@
   </TabPanel>
   <TabPanel>
     <SpellList />
+  </TabPanel>
+  <TabPanel>
+    <Tabs
+      tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}
+      on:tabchange={(e) => {
+        $entity.setFlag('GURPS', 'config-tab', e.detail);
+      }}>
+      <TabList>
+        <Tab index={0}>Attributes</Tab>
+        <Tab index={1}>Options</Tab>
+      </TabList>
+      <TabPanel>
+        <ul>
+          {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}
+            <li>{attribute[0]} ~ {attribute[1]}</li>
+          {/each}
+        </ul>
+      </TabPanel>
+      <TabPanel>
+        <h1>Under Construction</h1>
+      </TabPanel>
+    </Tabs>
   </TabPanel>
 </Tabs>

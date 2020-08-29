@@ -35,37 +35,28 @@
   </b>
 </h3>
 
-<List type="item">
-  <span slot="tool" class="tool">Equip All</span>
-
-  <button
-    on:click={() => $entity.createOwnedItem({ name: '???', type: 'item' })}
-    type="button"
-    slot="button">
-    Add Item
-  </button>
-
-  <thead slot="header">
-    <tr>
-      <th />
-      <th>E</th>
-      <th>Qty</th>
-      <th
-        on:dblclick={(e) => {
-          $entity.sortList('trait', 'data.description');
-        }}>
-        Description
-        <i class="fas fa-sort" />
-      </th>
-      <th>Uses</th>
-      <th>$</th>
-      <th>Weight</th>
-      <th>Total Weight</th>
-      <th>Total $</th>
-      <th>Ref</th>
-      <th />
-    </tr>
-  </thead>
+<List
+  title="Items"
+  type="item"
+  on:addlistitem={(e) => {
+    $entity.createOwnedItem({ name: '???', type: 'item' });
+  }}>
+  <th slot="header">E</th>
+  <th slot="header">Qty</th>
+  <th
+    slot="header"
+    on:dblclick={(e) => {
+      $entity.sortList('trait', 'data.description');
+    }}>
+    Description
+    <i class="fas fa-sort" />
+  </th>
+  <th slot="header">Uses</th>
+  <th slot="header">$</th>
+  <th slot="header">Weight</th>
+  <th slot="header">Total Weight</th>
+  <th slot="header">Total $</th>
+  <th slot="header">Ref</th>
   {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
     <Row
       let:id

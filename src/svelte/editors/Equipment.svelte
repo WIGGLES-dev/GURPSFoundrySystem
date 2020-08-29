@@ -12,8 +12,6 @@
   import { Tabs, TabList, TabPanel, Tab } from "../tabs/tabs";
 
   import { List, Row } from "../list/list";
-  import WeaponEditor from "../WeaponEditor";
-
   export let entity = getContext("entity") || null;
 
   let editing = false;
@@ -24,13 +22,7 @@
       icon: '<i class="fas fa-edit"></i>',
       condition: () => true,
       callback() {
-        if (!editing) {
-          editing = {
-            entity,
-            i,
-            weapon,
-          };
-        }
+        weapon.edit();
       },
     },
     {
@@ -86,29 +78,23 @@
   <TabPanel />
   <TabPanel>
     <List
-      buttonLabel="Add Melee Weapon"
       {entity}
       on:addlistitem={(e) => {
         $entity.addWeapon({ type: 'melee_weapon' });
       }}>
-      <thead slot="header">
-        <tr>
-          <th />
-          <th>type</th>
-          <th>usage</th>
-          <th>damage</th>
-          <th />
-        </tr>
-      </thead>
+      <th slot="header">type</th>
+      <th slot="header">usage</th>
+      <th slot="header">damage</th>
       {#each $entity.getWeapons().melee as weapon, i (weapon._id)}
         <!-- svelte-ignore missing-declaration -->
         <Row
+          config={{ highlightHover: false, deleteButton: false, focusable: false }}
           on:delete={(e) => {
             $entity.removeByPath('data.weapons', weapon._id);
           }}
           colspan="4"
           {i}
-          menuItems={() => weaponMenuItems(weapon._id, weapon.GURPS, i)}>
+          menuItems={() => weaponMenuItems(weapon._id, weapon, i)}>
           <td>{weapon.type}</td>
           <td>{weapon.usage}</td>
           <td>{weapon.damage}</td>
@@ -119,30 +105,26 @@
   </TabPanel>
   <TabPanel>
     <List
-      buttonLabel="Add Ranged Weapon"
       {entity}
       on:addlistitem={(e) => {
         $entity.addWeapon({ type: 'ranged_weapon' });
       }}>
-      <thead slot="header">
-        <tr>
-          <th />
-          <th>type</th>
-          <th>usage</th>
-          <th>damage</th>
-          <th />
-        </tr>
-      </thead>
+
+      <th slot="header">type</th>
+      <th slot="header">usage</th>
+      <th slot="header">damage</th>
+
       {#each $entity.getWeapons().ranged as weapon, i (weapon._id)}
         <!-- svelte-ignore missing-declaration -->
         <Row
+          config={{ highlightHover: false, deleteButton: false, focusable: false }}
           on:delete={(e) => {
             $entity.removeByPath('data.weapons', weapon._id);
           }}
           id={weapon._id}
           colspan="5"
           {i}
-          menuItems={() => weaponMenuItems(weapon._id, weapon.GURPS, i)}>
+          menuItems={() => weaponMenuItems(weapon._id, weapon, i)}>
           <td>{weapon.type}</td>
           <td>{weapon.usage}</td>
           <td>{weapon.damage}</td>
@@ -153,10 +135,3 @@
 
   </TabPanel>
 </Tabs>
-
-<svelte:component
-  this={editing ? WeaponEditor : false}
-  on:close={() => (editing = false)}
-  entity={editing.entity}
-  i={editing.i}
-  weapon={editing.weapon} />

@@ -54,7 +54,7 @@
       array,
       alsoUpdate,
     });
-    
+
     dispatch("update", { entity: update, change: tValue });
   }
 

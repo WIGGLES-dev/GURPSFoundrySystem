@@ -9,9 +9,10 @@
   export let entities = true;
   export let links = true;
   export let rolls = true;
+  export let title = "???";
 
   let target;
-  let value = $entity.getProperty(path);
+  let value = $entity.getProperty(path) || "";
 
   const enrichHTML = (value) => {
     content = TextEditor.enrichHTML(value, {
@@ -23,7 +24,7 @@
     return content;
   };
 
-  let content = enrichHTML(value) || "";
+  let content = enrichHTML(value);
 
   export let editing = false;
 
@@ -56,13 +57,13 @@
     display: none;
   }
   .editor-content {
-    min-height: 100px;
-    border: 1px solid black;
+    min-height: 50px;
   }
 </style>
 
 <div style="width: 100%;">
-  <div class="editor GURPS-rte">
+  <h2>{title}</h2>
+  <div class="editor">
     <div class:hidden={editing} class="editor-content">
       {#if content}
         {@html content}
@@ -84,7 +85,6 @@
 
   {#if editing}
     <button
-      class="GURPS-rte"
       class:rte-edit={!editing}
       class:rte-save={editing}
       type="button"

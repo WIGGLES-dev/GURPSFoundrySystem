@@ -8,10 +8,14 @@
 </script>
 
 <style>
-
+  .selectable {
+    user-select: text;
+  }
 </style>
 
 <div>
+  ID:
+  <span class="selectable">{$entity.id}</span>
   <Input path="data.name" alsoUpdate={['name']} label="Name" />
   <Input
     {entity}

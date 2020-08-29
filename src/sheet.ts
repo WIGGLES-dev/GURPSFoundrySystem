@@ -1,12 +1,12 @@
 import _Sheet from "./svelte/Sheet.svelte";
 import GCSImportDialog from "./svelte/GCSImportDialog.svelte";
 import { _Item } from "./item";
-import { Character as GURPSCharacter, Skill, Weapon } from "g4elogic";
+import { Character as GURPSCharacter, Skill, Weapon, Signature } from "g4elogic";
 import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
 import { injectHelpers, svelte } from "./helpers";
-import Popout from "./popout.js";
+import WeaponEditor from "./svelte/WeaponEditor.svelte";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -175,8 +175,25 @@ export class _Actor extends Actor {
         return this.items.filter((item: Item) => types.includes(item.data.type))
     }
 
-    getWildWeapons() {
-        return this.ownedItemsByType("melee attack", "ranged attack")
+    getWeapons() {
+        const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
+            edit(entity) {
+                new WeaponEditor({
+                    target: document.body,
+                    props: {
+                        entity,
+                        weapon
+                    }
+                })
+            },
+            roll() { },
+            skill: () => this.GURPS.getElementById("foundryID", weapon.skillID) || false,
+            type: weapon.getType()
+        }));
+        return {
+            ranged: weapons.filter(weapon => weapon.getType() === "ranged_weapon"),
+            melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
+        }
     }
 
     rollSkill({ trait, level, modifiers }) {
@@ -189,23 +206,37 @@ export class _Actor extends Actor {
         });
     }
 
+    dodge() {
+        let roll = new SuccessRoll({ level: Math.floor(this.GURPS.getAttribute(Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3), modifiers: prompt(), trait: "Dodge" })
+        roll.roll();
+        let renderer = new SuccessRollRenderer();
+        renderer.render(roll).then(html => {
+            ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
+        });
+    }
+
     async rollDamage(weapon: Weapon) {
         const swing = this.GURPS.getSwingDamage();
         const thrust = this.GURPS.getThrustDamage();
-        const roll = new Roll(weapon.damage, {
-            swing,
-            sw: swing,
-            thrust,
-            thr: thrust
-        });
-        return roll.toMessage({
-            GURPSRollType: "Damage", GURPSRollData: {
-                type: weapon.getType(),
-                damageType: weapon.damageType,
-                weaponUsage: weapon.usage,
-                weaponName: weapon.owner.name
-            }
-        })
+        try {
+            const roll = new Roll(weapon.damage, {
+                swing,
+                sw: swing,
+                thrust,
+                thr: thrust
+            });
+            return roll.toMessage({
+                GURPSRollType: "Damage", GURPSRollData: {
+                    type: weapon.getType(),
+                    damageType: weapon.damageType,
+                    weaponUsage: weapon.usage,
+                    weaponName: weapon.owner.name
+                }
+            })
+        }
+        catch (err) {
+            ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed")
+        }
     }
 
     getSkillLevelForTechnique(technique) {
