@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  export let tabIndex = $selectedTab;
+  export let tabIndex = $selectedTab || 0;
   import { setContext, onDestroy, onMount } from "svelte";
   import { writable } from "svelte/store";
 

@@ -5,9 +5,10 @@
     getContext,
     createEventDispatcher,
   } from "svelte";
+
   const dispatch = createEventDispatcher();
 
-  const { registerOption } = getContext("select");
+  const { registerOption, optionPreface } = getContext("select");
 
   let registration;
 
@@ -27,5 +28,6 @@
 </style>
 
 <option use:registerOption={{ onSelect }} {value} {disabled}>
+  {$optionPreface}
   <slot />
 </option>

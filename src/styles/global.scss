@@ -2,6 +2,7 @@ input[type="number"] {
     background: rgba(0, 0, 0, 0.05);
     padding: 1px 3px;
     margin: 0px;
+    height: 24px;
     color: #191813;
     font-family: inherit;
     font-size: inherit;
@@ -13,6 +14,15 @@ input[type="number"] {
 
 h2 {
     min-height: 26px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .fas.fa-trash:hover {
@@ -41,9 +51,7 @@ h2 {
 }
 
 .GURPSActor {
-    .flex {
-        display: flex;
-    }
+
 
     .no-show {
         display: none;

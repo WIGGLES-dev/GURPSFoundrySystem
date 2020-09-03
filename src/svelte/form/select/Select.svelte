@@ -1,11 +1,17 @@
 <script>
-  import { createEventDispatcher, setContext, getContext } from "svelte";
+  import {
+    createEventDispatcher,
+    setContext,
+    getContext,
+    onMount,
+  } from "svelte";
+  import { readable } from "svelte/store";
   const dispatch = createEventDispatcher();
 
   import { getValue } from "../../../helpers.ts";
 
   export let noop = false;
-  export let defaultIndex = null;
+  export let defaultValue = null;
   export let path = null;
   export let array = false;
   export let entity = getContext("entity") || null;
@@ -13,6 +19,7 @@
   export let label = "";
   export let alsoUpdate = null;
   export let disabled = null;
+  export let optionPreface = "";
 
   export let selected;
 
@@ -31,6 +38,7 @@
         },
       };
     },
+    optionPreface: readable(optionPreface),
   });
 
   export let value = getValue($entity, path, array);
@@ -64,15 +72,11 @@
   }
 
   function setDefault(select) {
-    if (!defaultIndex) {
-      Array.from(select.options).forEach((option, i) => {
-        if (option.value == value) {
-          select.selectedIndex = i;
-        }
-      });
-    } else {
-      select.selectedIndex = defaultIndex;
-    }
+    Array.from(select.options).forEach((option, i) => {
+      if (option.value == value) {
+        select.selectedIndex = i;
+      }
+    });
   }
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher, getContext, tick } from "svelte";
+  import { createEventDispatcher, getContext, tick, onMount } from "svelte";
   import { getValue, createTooltip } from "../../helpers.ts";
   const dispatch = createEventDispatcher();
 
@@ -28,9 +28,11 @@
   export let step = null;
   export let defaultValue = type === "text" ? "" : type === "number" ? 0 : null;
   export let type = "text";
-  export let basedOn = 0;
+  export let basedOn = null;
+  export let mod = null;
   export let tooltipText = null;
   export let classList = null;
+  export let placeholder = null;
 
   export let config = {
     clickToEdit: false,
@@ -43,8 +45,8 @@
     let tValue = e.target.value;
 
     if (type === "number") {
-      tValue = +target.value - basedOn;
-      if (+target.value < min && min !== null) tValue = min - basedOn;
+      tValue = +target.value - basedOn - mod;
+      if (+target.value < min && min !== null) tValue = min - basedOn - mod;
     }
 
     let update = await game.gurps4e.customUpdate({
@@ -60,9 +62,11 @@
 
   $: getDefaultValue = (entity) => {
     let value = getValue(entity, path, array);
-    if (value === null || value === undefined) return defaultValue;
+    if (value === undefined || value === null) {
+      return defaultValue;
+    }
     if (type === "string") return value;
-    if (type === "number") return value + basedOn;
+    if (type === "number") return value + basedOn + mod;
     return value;
   };
 
@@ -81,9 +85,8 @@
     use:createTooltip={{ tooltipText }}
     class:click-to-edit={config.clickToEdit}
     for={name}
-    class="GURPS-label"
+    class="GURPS-label {classList}"
     data-label={Boolean(label)}>
-
     {#if label}
       <span>{label}</span>
     {:else}
@@ -91,6 +94,7 @@
     {/if}
 
     <input
+      {placeholder}
       data-path={path}
       class={classList}
       draggable={true}
@@ -107,7 +111,6 @@
       {value} />
 
     <slot name="label-text-after" {value} />
-
   </label>
 {:else}
   <div

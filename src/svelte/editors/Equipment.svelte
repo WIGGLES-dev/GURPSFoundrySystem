@@ -11,37 +11,11 @@
   } from "../form/form";
   import { Tabs, TabList, TabPanel, Tab } from "../tabs/tabs";
 
-  import { List, Row } from "../list/list";
+  import Features from "./panels/Features";
+  import RangedWeapons from "./panels/RangedWeapons";
+  import MeleeWeapons from "./panels/MeleeWeapons";
+
   export let entity = getContext("entity") || null;
-
-  let editing = false;
-
-  const weaponMenuItems = (id, weapon, i) => [
-    {
-      name: "Edit",
-      icon: '<i class="fas fa-edit"></i>',
-      condition: () => true,
-      callback() {
-        weapon.edit();
-      },
-    },
-    {
-      name: "Roll",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => true,
-      callback() {
-        if ($entity.actor) $entity.actor.rollDamage(weapon);
-      },
-    },
-    {
-      name: "Delete",
-      icon: '<i class="fas fa-trash"></i>',
-      condition: () => true,
-      callback() {
-        $entity.removeByPath("data.weapons", id);
-      },
-    },
-  ];
 </script>
 
 <style>
@@ -50,88 +24,47 @@
   }
 </style>
 
-{#if $entity.actor}
-  <Checkbox path="data.equipped" label="Equipped" />
-{/if}
-<Input path="data.description" alsoUpdate={['name']} type="text" label="Name" />
-<Input path="data.quantity" min="0" type="number" label="Quantity" />
-<Input path="data.tech_level" type="text" label="Tech Level" />
-<Input path="data.legality_class" type="text" label="Legality Class" />
-<Input path="data.value" type="number" min="0" label="Value" />
-<Input path="data.weight" type="number" min="0" label="Weight" />
-
-<Textarea path="data.notes" label="Notes" cols="30" rows="1" />
-<Input type="text" path="data.categories" label="Categories" />
-<Input path="data.reference" label="Reference" />
-<RichTextEditor path="data.user_description" />
-
-<Tabs tabIndex={0}>
+<Tabs
+  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}
+  on:tabchange={(e) => {
+    $entity.setFlag('GURPS', 'tab', e.detail);
+  }}>
   <TabList>
-    <Tab index={0}>Defaults</Tab>
-    <Tab index={1}>Prerequisites</Tab>
-    <Tab index={2}>Features</Tab>
-    <Tab index={3}>Melee Weapon</Tab>
-    <Tab index={4}>Ranged Weapon</Tab>
+    <Tab index={0}>Equipment Data</Tab>
+    <Tab index={1}>Features</Tab>
+    <Tab index={2}>Melee Weapons</Tab>
+    <Tab index={3}>Ranged Weapons</Tab>
+    <Tab index={4}>User Description</Tab>
   </TabList>
-  <TabPanel />
-  <TabPanel />
-  <TabPanel />
   <TabPanel>
-    <List
-      {entity}
-      on:addlistitem={(e) => {
-        $entity.addWeapon({ type: 'melee_weapon' });
-      }}>
-      <th slot="header">type</th>
-      <th slot="header">usage</th>
-      <th slot="header">damage</th>
-      {#each $entity.getWeapons().melee as weapon, i (weapon._id)}
-        <!-- svelte-ignore missing-declaration -->
-        <Row
-          config={{ highlightHover: false, deleteButton: false, focusable: false }}
-          on:delete={(e) => {
-            $entity.removeByPath('data.weapons', weapon._id);
-          }}
-          colspan="4"
-          {i}
-          menuItems={() => weaponMenuItems(weapon._id, weapon, i)}>
-          <td>{weapon.type}</td>
-          <td>{weapon.usage}</td>
-          <td>{weapon.damage}</td>
-          <div slot="notes">{weapon.notes}</div>
-        </Row>
-      {/each}
-    </List>
+    {#if $entity.actor}
+      <Checkbox path="data.equipped" label="Equipped" />
+    {/if}
+    <Input
+      path="data.description"
+      alsoUpdate={['name']}
+      type="text"
+      label="Name" />
+    <Input path="data.quantity" min="0" type="number" label="Quantity" />
+    <Input path="data.tech_level" type="text" label="Tech Level" />
+    <Input path="data.legality_class" type="text" label="Legality Class" />
+    <Input path="data.value" type="number" min="0" label="Value" />
+    <Input path="data.weight" type="number" min="0" label="Weight" />
+
+    <Textarea path="data.notes" label="Notes" cols="30" rows="1" />
+    <Input type="text" path="data.categories" label="Categories" />
+    <Input path="data.reference" label="Reference" />
   </TabPanel>
   <TabPanel>
-    <List
-      {entity}
-      on:addlistitem={(e) => {
-        $entity.addWeapon({ type: 'ranged_weapon' });
-      }}>
-
-      <th slot="header">type</th>
-      <th slot="header">usage</th>
-      <th slot="header">damage</th>
-
-      {#each $entity.getWeapons().ranged as weapon, i (weapon._id)}
-        <!-- svelte-ignore missing-declaration -->
-        <Row
-          config={{ highlightHover: false, deleteButton: false, focusable: false }}
-          on:delete={(e) => {
-            $entity.removeByPath('data.weapons', weapon._id);
-          }}
-          id={weapon._id}
-          colspan="5"
-          {i}
-          menuItems={() => weaponMenuItems(weapon._id, weapon, i)}>
-          <td>{weapon.type}</td>
-          <td>{weapon.usage}</td>
-          <td>{weapon.damage}</td>
-          <div slot="notes">{weapon.notes}</div>
-        </Row>
-      {/each}
-    </List>
-
+    <Features />
+  </TabPanel>
+  <TabPanel>
+    <MeleeWeapons />
+  </TabPanel>
+  <TabPanel>
+    <RangedWeapons />
+  </TabPanel>
+  <TabPanel>
+    <RichTextEditor path="data.user_description" title="User Description" />
   </TabPanel>
 </Tabs>

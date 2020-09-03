@@ -2,16 +2,13 @@
   import Input from "./form/Input";
   import { List, Row } from "./list/list.ts";
   import { getContext } from "svelte";
-  import { Skill } from "g4elogic";
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
 </script>
 
 <style>
-  th {
-    padding: 0px 5px 0px 5px;
-  }
+
 </style>
 
 <List
@@ -25,8 +22,7 @@
     on:dblclick={(e) => {
       $entity.sortList('technique', 'data.name');
     }}>
-    Techniques
-    <i class="fas fa-sort" />
+    Techniques <i class="fas fa-sort" />
   </th>
   <th slot="header">SL</th>
   <th slot="header">RSL</th>
@@ -52,23 +48,12 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill({
-              level: technique.calculateLevel(
-                $entity.getSkillLevelForTechnique(ownedItem)
-              ),
-              trait: technique.name,
-              modifiers: 'none',
-            });
+            $entity.rollSkill(technique.name, technique.calculateLevel(), '', 'none');
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill({
-              level: technique.calculateLevel(
-                $entity.getSkillLevelForTechnique(ownedItem)
-              ),
-              trait: technique.name,
-            });
+            $entity.rollSkill(technique.name, technique.calculateLevel());
           }} />
         <Input
           entity={ownedItem._entity}
@@ -82,11 +67,9 @@
           </span>
         </Input>
       </td>
+      <td>{Math.floor(technique.calculateLevel())}</td>
       <td>
-        {Math.floor(technique.calculateLevel($entity.getSkillLevelForTechnique(ownedItem)))}
-      </td>
-      <td>
-        {technique.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem)) >= 0 ? '+' : ''}{technique.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem))}
+        {technique.getRelativeLevel() >= 0 ? '+' : ''}{Math.floor(technique.getRelativeLevel())}
       </td>
       <td>
         <Input
@@ -134,8 +117,7 @@
     on:dblclick={(e) => {
       $entity.sortList('skill', 'data.name');
     }}>
-    Skills
-    <i class="fas fa-sort" />
+    Skills <i class="fas fa-sort" />
   </th>
   <th slot="header">SL</th>
   <th slot="header">RSL</th>
@@ -152,32 +134,18 @@
       colspan="6"
       {i}
       draggable={true}
-      id={skill.foundryID}
-      on:middleclick={(e) => {
-        $entity.rollSkill(skill);
-      }}>
+      id={skill.foundryID}>
       <td class="main-list-col">
         <span
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill({
-              level: skill.calculateLevel(
-                $entity.getSkillLevelForTechnique(ownedItem)
-              ),
-              trait: skill.name,
-              modifiers: 'none',
-            });
+            $entity.rollSkill(skill.name, skill.calculateLevel(), '', 'none');
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill({
-              level: skill.calculateLevel(
-                $entity.getSkillLevelForTechnique(ownedItem)
-              ),
-              trait: skill.name,
-            });
+            $entity.rollSkill(skill.name, skill.calculateLevel());
           }} />
         <Input
           entity={ownedItem._entity}
@@ -186,15 +154,14 @@
           config={{ clickToEdit: true }}
           let:value>
           <span slot="no-edit">
-            {skill.name}{skill.techLevel ? `/TL${skill.techLevel}` : ''} {skill.specialization ? `(${skill.specialization})` : ``}
+            {skill.name}{skill.techLevel ? `/TL${skill.techLevel}` : ''}
+            {skill.specialization ? `(${skill.specialization})` : ``}
           </span>
         </Input>
       </td>
+      <td>{Math.floor(skill.calculateLevel())}</td>
       <td>
-        {Math.floor(skill.calculateLevel($entity.getSkillLevelForTechnique(ownedItem)))}
-      </td>
-      <td>
-        {!skill.isTechnique ? skill.signature : ''}{skill.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem)) >= 0 ? '+' : ''}{skill.getRelativeLevel($entity.getSkillLevelForTechnique(ownedItem))}
+        {!skill.isTechnique ? skill.signature : ''}{skill.getRelativeLevel() >= 0 ? '+' : ''}{Math.floor(skill.getRelativeLevel())}
       </td>
       <td>
         <Input
@@ -210,6 +177,7 @@
         <Input
           entity={ownedItem._entity}
           type="number"
+          F
           min="0"
           path="data.points"
           config={{ clickToEdit: true }}

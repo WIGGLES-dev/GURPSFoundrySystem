@@ -11,19 +11,19 @@
   export let buttons = {};
   export let defaultButton = null;
   export let onClose = new Function();
+  export let overrideSubmit = false;
 
   function _onClose() {
-    onClose();
+    let close = onClose();
+    dispatch("close", close);
     dialogOpen = false;
-    dispatch("close");
   }
 
-  function launchDialog(node, parameters) {
+  async function launchDialog(node, parameters) {
     const dialog = new Dialog(
       {
         title,
         buttons,
-        button: defaultButton,
         close: _onClose,
         default: defaultButton,
       },
@@ -32,16 +32,25 @@
         height,
       }
     );
-    dialog._render(true).then((value) => {
-      dialog.element.get(0).querySelector(".dialog-content").appendChild(node);
-      dialogOpen = true;
-    });
+
+    if (overrideSubmit)
+      dialog.submit = (button) => {
+        try {
+          if (button.callback) button.callback();
+          dialog.close();
+        } catch (err) {
+          console.log(err);
+        }
+      };
+
+    await dialog._render(true);
+    dialog.element.get(0).querySelector(".dialog-content").appendChild(node);
+    dialogOpen = true;
+    dispatch("opened");
+
     return () => {
       return {
-        destroy: () => {
-          dialog.close();
-          dialogOpen = false;
-        },
+        destroy: () => {},
       };
     };
   }

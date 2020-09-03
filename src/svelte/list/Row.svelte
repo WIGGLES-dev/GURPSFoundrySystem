@@ -37,27 +37,28 @@
 
   export let children = [];
 
-  const getItem = (entity) => {
-    return entity.getOwnedItem ? entity.getOwnedItem(id) : entity;
+  const getItem = (id) => {
+    return $entity.getOwnedItem ? $entity.getOwnedItem(id) || $entity : $entity;
   };
 
-  $: isRowLabel = getItem($entity)
-    ? getItem($entity).getFlag("GURPS", "is_label") || false
+  $: isRowLabel = getItem(id)
+    ? getItem(id).getFlag("GURPS", "is_label") || false
     : false;
 
   $: colors = {
-    textColor: getItem($entity)
-      ? getItem($entity).getFlag("GURPS", "text_color") || ""
+    textColor: getItem(id)
+      ? getItem(id).getFlag("GURPS", "text_color") || ""
       : "",
-    backgroundColor: getItem($entity)
-      ? getItem($entity).getFlag("GURPS", "background_color") || ""
+    backgroundColor: getItem(id)
+      ? getItem(id).getFlag("GURPS", "background_color") || ""
       : "",
   };
 
-  export let menuItems = (() => {
-    let item = getItem($entity);
-    return item && item.getMenuItems ? item.getMenuItems() : () => [];
-  })();
+  let menuItems = getItem(id)
+    ? getItem(id).getMenuItems
+      ? getItem(id).getMenuItems()
+      : () => []
+    : () => [];
 
   export let selector = "contextmenu";
 
@@ -69,15 +70,16 @@
 </script>
 
 <style>
-  .hovered {
+  .hovered,
+  tr:hover {
     background-color: rgba(0, 0, 0, 0.25);
   }
   .notes {
     padding: 0px;
   }
   .container {
-    color: rgb(240, 240, 224);
-    background-color: black;
+    color: black;
+    background-color: white;
   }
   .focused {
     background-color: #ff6400;
@@ -166,12 +168,14 @@
     }}>
     {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot {id} ownedItem={getItem($entity)} hovered={$hovered === i} />
+  <slot depth={0} {id} ownedItem={getItem(id)} hovered={$hovered === i} />
   <td class="show-when-label">
     <i
       class:no-show={!($hovered === i && config.deleteButton)}
       class="fas fa-trash"
-      on:click={() => dispatch('delete', { id })} />
+      on:click={() => {
+        getItem(id).delete();
+      }} />
   </td>
 </tr>
 
@@ -181,14 +185,23 @@
   </td>
 {/if}
 
-<!-- <tr>
-  <slot name="row-after" {GURPS} {id} />
-</tr> -->
-
-<!-- {#each $entity.getOwnedItem(id).getChildren() as child, i (child.id)}
-  <svelte:self {entity} {config} {menuItems} {colspan} {container}>
-    <slot {GURPS} {id} />
-    <slot name="row-after" {GURPS} {id} />
-    <slot name="notes" {GURPS} {id} />
-  </svelte:self>
-{/each} -->
+{#if container}
+  {#each children as child, i (child.foundryID)}
+    <svelte:self
+      i={i + 1}
+      id={child.foundryID}
+      {entity}
+      {config}
+      {menuItems}
+      {colspan}
+      children={Array.from(child.children)}
+      container={child.canContainChildren}>
+      <slot
+        depth={child.getListDepth()}
+        id={child.foundryID}
+        ownedItem={getItem(child.foundryID)}
+        hovered={$hovered === i} />
+      <slot name="notes" {GURPS} {id} />
+    </svelte:self>
+  {/each}
+{/if}

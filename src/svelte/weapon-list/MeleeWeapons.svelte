@@ -4,69 +4,22 @@
   const GURPS = getContext("GURPS");
   const entity = getContext("entity");
 
-  function rollSkill(weapon) {
-    try {
-      const skill = weapon.skill();
-      $entity.rollSkill({
-        trait: skill.name,
-        level: skill.calculateLevel(),
-        modifiers: weapon.skillMod,
-      });
-    } catch (err) {
-      ui.notifications.warn(
-        "The ID reference you have provided cannot find the skill on your character sheet"
-      );
-    }
-  }
-
   const weaponMenuItems = (weapon, i, id) => [
     {
       name: "Edit",
       icon: '<i class="fas fa-edit"></i>',
       condition: () => true,
       callback() {
-        weapon.edit($entity.getOwnedItem(weapon.owner.foundryID)._entity);
-      },
-    },
-    {
-      name: "Roll Skill",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => {
-        try {
-          if (weapon.skill()) {
-            return true;
-          }
-        } catch (err) {
-          return false;
-        }
-      },
-      callback() {
-        rollSkill(weapon);
-      },
-    },
-    {
-      name: "Roll Damage",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => true,
-      callback() {
-        $entity.rollDamage(weapon);
-      },
-    },
-    {
-      name: "Delete",
-      icon: '<i class="fas fa-trash"></i>',
-      condition: () => true,
-      callback() {
-        $entity
-          .getOwnedItem(id)
-          .removeByPath("data.weapons", weapon.foundryID || weapon._id);
+        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);
       },
     },
   ];
 </script>
 
 <style>
-
+  .d6 {
+    float: left;
+  }
 </style>
 
 <List>
@@ -85,18 +38,20 @@
       <td>{weapon.owner.name}</td>
       <td>{weapon.usage}</td>
       <td>
-        {#if weapon.skill()}
-          <span class="fas fa-dice d6" on:click={() => rollSkill(weapon)} />
+        {#if weapon.skillLevel()}
+          <span
+            class="fas fa-dice d6 roll-ico"
+            on:click={() => weapon.rollSkill()} />
         {/if}
-        <span>{weapon.skill() ? weapon.skill().calculateLevel() : ''}</span>
+        <span>{weapon.skillLevel() || ''}</span>
       </td>
       <td>{weapon.parry || ''}</td>
       <td>{weapon.block || ''}</td>
       <td>
         {#if weapon.damage}
           <span
-            class="fas fa-dice d6"
-            on:click={() => $entity.rollDamage(weapon)} />
+            class="fas fa-dice d6 roll-ico"
+            on:click={() => weapon.rollDamage()} />
         {/if}
         {weapon.damage || ''}
       </td>

@@ -4,7 +4,6 @@
   export let index = null;
   const tab = { index };
   const { registerTab, selectTab, selectedTab } = getContext(TABS);
-
   registerTab(tab);
 </script>
 

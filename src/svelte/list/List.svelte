@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { createContextMenu } from "../../helpers";
   import { GURPSDragDrop } from "../../dragdrop";
   import { writable } from "svelte/store";
   import {
@@ -41,6 +42,7 @@
   export const rows = writable(0);
   export let type = null;
   export let title = "";
+  export let addListItemMenu = () => [];
   export let config = { dragDrop: true };
 
   async function deleteAllFocused() {
@@ -85,6 +87,9 @@
     white-space: nowrap;
     text-align: center;
     margin-top: 0px;
+  }
+  table > thead :global(th) {
+    padding: 0px 5px 0px 5px;
   }
   table caption {
     background: rgba(0, 0, 0, 0.5);
@@ -149,6 +154,7 @@
         <i
           class="fas fa-plus-square"
           style="margin-left: auto;"
+          use:createContextMenu={{ menuItems: addListItemMenu, event: 'click' }}
           on:click={(e) => {
             dispatch('addlistitem');
           }} />

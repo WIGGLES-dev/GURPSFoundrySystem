@@ -6,6 +6,11 @@
         ],
         "type": "technique",
         "limit": 0,
-        "difficulty": "A"
+        "difficulty": "A",
+        "default": {
+            "type": "skill",
+            "name": "Skill",
+            "modifier": 0
+        }
     }
 }

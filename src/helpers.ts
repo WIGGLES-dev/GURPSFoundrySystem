@@ -1,4 +1,5 @@
 import { createPopper } from "@popperjs/core";
+import jsonQuery from "json-query";
 
 export function fixed6(number: string | number) {
     let ifString;
@@ -48,8 +49,15 @@ export function arrayMove(array: any[], from: number, to: number) {
  * 2. the Item collection
  * 3. all the actors in the actors collection
  */
-export function getItem(id: string, entity?: Actor): Item {
+export function getEntity(id: string, type: string, entity?: Actor): Item {
     let item;
+    if (type === "actor") {
+        try {
+            return game.actors.find(actor => actor.id === id)
+        } catch (err) {
+
+        }
+    }
     try {
         if (item = entity?.getOwnedItem(id)) {
             return item as Item
@@ -79,21 +87,38 @@ export async function customUpdate({
     value,
     path,
     array = false,
-    alsoUpdate
+    alsoUpdate,
 }: any) {
-    let oldValue = getProperty(entity.data, path);
     value = coerce(value);
+    if (/\[(.*?)\]|:/.test(path)) {
+        let query = jsonQuery(path, {
+            data: entity.data
+        });
+        if (query.references) {
 
+            if (typeof array.index === "number" && array.property) {
+                query.references[0][array.index][array.property] = value;
+            } else if (typeof array.index === "number") {
+                query.references[0][array.index] = value;
+            } else if (array.property) {
+                query.references[0][array.property] = value;
+            }
+        }
+        let update = await entity.update({ data: duplicate(entity.data.data) });
+        return update
+    }
+
+    let oldValue = getProperty(entity.data, path);
     let updates: any = {};
     if (array && Array.isArray(oldValue)) {
         array.property
             ? oldValue[array.index][array.property] = value
             : oldValue[array.index] = value
-
         updates = { [path]: coerce(oldValue) }
     } else {
         updates = { [path]: value };
     }
+
     if (Array.isArray(alsoUpdate)) {
         alsoUpdate.forEach((path: string) => {
             if (typeof path === "string") {
@@ -103,6 +128,7 @@ export async function customUpdate({
             }
         });
     }
+
     let nameIndex = Object.keys(updates)?.indexOf("name");
     if (nameIndex !== -1) {
         const nameValue = updates[Object.keys(updates)[nameIndex]];
@@ -146,16 +172,30 @@ export function coerce(value: any): any {
 }
 
 export function getValue(entity, path, array: any = false) {
+    // console.log(duplicate(entity.data.data), array, path);
+
+    let data;
+
+    if (/\[(.*?)\]|:/.test(path)) {
+        data = jsonQuery(path, entity.data).value
+    } else {
+        data = entity.getProperty ? entity.getProperty(path) : getProperty(entity, path);
+    }
+
     if (array) {
         const data = entity.getProperty(path);
-        if (array.property) {
-            return data[array.index][array.property]
-        } else {
+        if (!data) return null
+        if (array.property && typeof array.index === "number") {
+            return data[array.index][array.property];
+        } else if (typeof array.index === "number") {
             return data[array.index]
+        } else if (array.property) {
+            return data[array.property]
         }
     } else {
         return entity.getProperty(path)
     }
+
 }
 
 function popperVirtualElement() {
@@ -228,7 +268,7 @@ export function createTooltip(node: HTMLElement, parameters: any) {
     }
 }
 
-export function createContextMenu(node: HTMLElement, parameters: any) {
+export function createContextMenu(node: HTMLElement, { menuItems, selector, event = "contextmenu" }) {
     const _document = node.ownerDocument;
     const _window = _document.defaultView;
 
@@ -241,7 +281,7 @@ export function createContextMenu(node: HTMLElement, parameters: any) {
 
     const render = async (e: MouseEvent) => {
         _document.body.appendChild(contextBox);
-        menu.menuItems = parameters.menuItems();
+        menu.menuItems = menuItems();
         popper.destroy();
         virtualElement.update(e.clientX, e.clientY);
         popper = createPopper(virtualElement, contextBox);
@@ -256,11 +296,11 @@ export function createContextMenu(node: HTMLElement, parameters: any) {
 
     let menu = new ContextMenu(
         jQuery(contextBox),
-        `[data-contextmenu="${parameters.selector}"]`,
-        parameters.menuItems()
+        `[data-contextmenu="${selector}"]`,
+        menuItems()
     );
 
-    node.addEventListener("contextmenu", render);
+    node.addEventListener(event, render);
     _window.addEventListener("click", close, { capture: true });
 
     return {
@@ -331,7 +371,11 @@ export function svelte(app: any) {
 
                 const sheet = (this.element as JQuery<HTMLElement>).get(0);
                 //Hotfix for Popout!
-                sheet.querySelector(".window-header > a.popout").remove();
+                try {
+                    sheet.querySelector(".window-header > a.popout").remove();
+                } catch (err) {
+
+                }
             }
 
             updateStores() {
@@ -348,15 +392,18 @@ export function injectHelpers(constructor: any): any {
         }
 
         async delete(options: any) {
-            let deleted = await super.delete(options);
             if (this.entity === "Item") {
-                this.removeReferenceFromParent();
+                await this.removeReferenceFromParent();
                 this._deleteDeep(options);
             }
+            let deleted = await super.delete(options);
             return deleted
         }
 
         getProperty(path: string) {
+            if (/\[(.*?)\]|:/.test(path)) {
+                return jsonQuery(path, { data: this.data }).value
+            }
             return getProperty(this.data, path)
         }
 

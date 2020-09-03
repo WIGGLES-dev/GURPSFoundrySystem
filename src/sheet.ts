@@ -6,7 +6,9 @@ import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
 import { injectHelpers, svelte } from "./helpers";
-import WeaponEditor from "./svelte/WeaponEditor.svelte";
+import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
+import ModifierDialog from "./svelte/ModifierDialog.svelte";
+import { getDragContext } from "./dragdrop";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -25,6 +27,35 @@ export class _ActorSheet extends ActorSheet {
 
     activateListeners(html: JQuery<HTMLElement>) {
         return super.activateListeners(html);
+    }
+
+    async _onDrop(e: DragEvent) {
+
+        async function attemptToAddPartyMember(id, entity) {
+            let roster = entity.getProperty("data.members") || [];
+            if (!roster.includes(id)) {
+                roster.push(id);
+                return entity.update(
+                    { "data.members": duplicate(roster) },
+                    { diff: false }
+                );
+            }
+        }
+
+        if (this?.actor?.data?.type === "party") {
+            try {
+                const { origin } = getDragContext(e, "actor");
+                if (origin && origin.data.type === "character") {
+                    return attemptToAddPartyMember(origin.id, this.actor);
+                }
+            } catch (err) {
+                console.log(err);
+                return false
+            }
+            return false
+        }
+        //@ts-ignore
+        return super._onDrop(e);
     }
 
     submit(): null {
@@ -176,6 +207,7 @@ export class _Actor extends Actor {
     }
 
     getWeapons() {
+        const entity = this
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
             edit(entity) {
                 new WeaponEditor({
@@ -186,9 +218,36 @@ export class _Actor extends Actor {
                     }
                 })
             },
-            roll() { },
-            skill: () => this.GURPS.getElementById("foundryID", weapon.skillID) || false,
-            type: weapon.getType()
+            skillLevel: () => {
+                let skillDefault = weapon?.getBestDefault();
+                let level = null
+                let mod = skillDefault?.modifier ?? null
+                if (skillDefault) {
+                    if (skillDefault.isSkillBased()) {
+                        level = skillDefault?.getMatches()?.highest?.calculateLevel() ?? null
+                    } else {
+                        level = weapon.owner.character.getAttribute(skillDefault.type)?.calculateLevel() ?? null
+                    }
+                }
+                return level + mod
+            },
+            rollSkill() {
+                entity.rollSkill(
+                    `${weapon.owner.name} ${weapon.usage}`,
+                    this.skillLevel(),
+                    weapon.skillMod || "0",
+                    "attack"
+                );
+            },
+            rollDamage: () => {
+                this.rollDamage({
+                    damage: weapon.damage,
+                    damageType: weapon.damageType,
+                    type: weapon.getType(),
+                    weaponName: weapon.owner.name,
+                    weaponUsage: weapon.usage
+                })
+            },
         }));
         return {
             ranged: weapons.filter(weapon => weapon.getType() === "ranged_weapon"),
@@ -196,8 +255,28 @@ export class _Actor extends Actor {
         }
     }
 
-    rollSkill({ trait, level, modifiers }) {
-        modifiers = (modifiers === "none" || !modifiers ? `` : `+${modifiers}`) + (modifiers !== "none" && !modifiers ? `+${prompt("modifiers") || "0"}` : "");
+    rollSkill(trait: string, level: number, modifiers = "", modType = "none") {
+        switch (modType) {
+            case "none":
+                this.rollAndRender(trait, level, modifiers);
+                break
+            case "attack":
+                const modifierDialog = new ModifierDialog({
+                    target: document.body,
+                    props: {
+                        type: "attack"
+                    }
+                });
+                modifierDialog.$on("roll", (e) => {
+                    console.log(e.detail, modifiers);
+                    this.rollAndRender(trait, level, `+${e.detail}+${modifiers}`);
+                });
+                break
+            default:
+        }
+    }
+
+    private rollAndRender(trait: string, level: number, modifiers: string) {
         let roll = new SuccessRoll({ level, trait: trait, modifiers });
         roll.roll();
         let renderer = new SuccessRollRenderer();
@@ -215,11 +294,11 @@ export class _Actor extends Actor {
         });
     }
 
-    async rollDamage(weapon: Weapon) {
+    async rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
         const swing = this.GURPS.getSwingDamage();
         const thrust = this.GURPS.getThrustDamage();
         try {
-            const roll = new Roll(weapon.damage, {
+            const roll = new Roll(damage, {
                 swing,
                 sw: swing,
                 thrust,
@@ -227,34 +306,15 @@ export class _Actor extends Actor {
             });
             return roll.toMessage({
                 GURPSRollType: "Damage", GURPSRollData: {
-                    type: weapon.getType(),
-                    damageType: weapon.damageType,
-                    weaponUsage: weapon.usage,
-                    weaponName: weapon.owner.name
+                    type,
+                    damageType,
+                    weaponUsage,
+                    weaponName
                 }
             })
         }
         catch (err) {
             ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed")
-        }
-    }
-
-    getSkillLevelForTechnique(technique) {
-        try {
-            if (technique.getProperty("data.based_on") === "skill") {
-                let skill = this.getOwnedItem(technique.getProperty("data.skill_id"));
-                if (skill && skill.type === "skill") {
-                    let level = this.GURPS.getElementById("foundryID", skill.id).calculateLevel();
-                    if (typeof level === "number") return Math.floor(level);
-                    return NaN;
-                }
-            } else if (technique.getProperty("data.based_on") === "attribute") {
-                let signature = technique.getProperty("data.signature");
-                return this.GURPS.getAttribute(signature).calculateLevel();
-            }
-        } catch (err) {
-            console.log(err);
-            return 10;
         }
     }
 

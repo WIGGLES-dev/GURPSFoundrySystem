@@ -1,4 +1,5 @@
 import Editor from "./svelte/editors/Editor.svelte";
+import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
 import ColorPicker from "./svelte/ColorPicker.svelte";
 
 import { _Actor } from "./sheet";
@@ -6,7 +7,7 @@ import { ItemContainer } from "./container";
 import { injectHelpers, svelte, arrayMove } from "./helpers";
 import { Writable, writable } from "svelte/store";
 import { _ChatMessage } from "./chat";
-import WeaponEditor from "./svelte/WeaponEditor.svelte";
+import { FeatureType, Signature } from "g4elogic";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
@@ -48,8 +49,11 @@ export class _Item extends ItemContainer {
     openPDFReference() {
         //@ts-ignore
         const api = ui.PDFoundry;
-        const ref = this.getProperty("data.reference");
+        let ref = this.getProperty("data.reference");
         try {
+            ref = /( )/.test(ref) ? ref.split(" ")[0] : ref;
+            ref = /,/.test(ref) ? ref.split(",")[0] : ref;
+            ref = /\//.test(ref) ? ref.split("/")[0] : ref;
             const meta = ref.includes(":") ? ref.split(":") : [ref.split(/[0-9]+/)[0], ref.split(/^[^0-9]+/)[1]];
             api.openPDFByCode(meta[0], { page: +meta[1] });
         } catch (err) {
@@ -122,11 +126,15 @@ export class _Item extends ItemContainer {
     }
 
     getFeatures() {
-        return getProperty(this.data, "data.features") ?? []
+        return getProperty(this.data, "data.features") || []
     }
 
     getModifiers() {
-        return getProperty(this.data, "data.modifiers") ?? []
+        return getProperty(this.data, "data.modifiers") || []
+    }
+
+    getDefaults(path) {
+        return this.getProperty(path) || []
     }
 
     async addWeapon(data: any = {}) {
@@ -153,23 +161,42 @@ export class _Item extends ItemContainer {
     }
 
     async addFeature(data: any = {}) {
+        if (!["trait", "skill", "item"].includes(this.data.type)) return false
         const features = this.getFeatures();
-        features.push(Object.assign(data, {
+        features.push(Object.assign({
+            type: FeatureType.skillBonus,
+            attribute: Signature.ST,
+            name_compare_type: "is",
+            specialization_compare_type: "is"
+        }, data, {
             _id: randomID()
         }));
         return this.update({ "data.features": duplicate(features) }, null)
     }
 
-    async addModifier(data: any = {}) {
+    async addModifier(data: any = {}, path?: string) {
+        if (this.data.type !== "trait") return false
         const modifiers = this.getModifiers();
-        modifiers.push(Object.assign(data, {
+        modifiers.push(Object.assign({}, data, {
             _id: randomID()
         }));
         return this.update({ "data.modifiers": duplicate(modifiers) }, null)
     }
 
+    async addDefault(data: any = {}, path: string = "data.defaults") {
+        if (this.data.type !== "skill" && !path) return false
+        const defaults = this.getDefaults(path);
+        defaults.push(Object.assign({
+            type: "DX",
+            modifier: 0
+        }, data, {
+            _id: randomID()
+        }));
+        return this.update({ [path]: duplicate(defaults) }, null)
+    }
+
     async removeByPath(path: string, id: string) {
-        let list = getProperty(this.data, path);
+        let list = this.getProperty(path);
         list = list.filter((item: any) => item._id !== id);
         return this.update({ [path]: duplicate(list) }, null);
     }
@@ -199,11 +226,8 @@ export class _Item extends ItemContainer {
      * @param index 
      * @param type 
      */
-    async moveToIndex(to: number, types: string[], { container = false } = {}) {
-        await this.setIndex(to);
+    async moveToIndex(from: number, to: number, types: string[], { container = false } = {}) {
         let array = this.actor.ownedItemsByType(...types).sort((a, b) => a.getIndex() - b.getIndex());
-        let from = Math.max(this.getIndex() - 1, 0);
-
         if (typeof from === "number") {
             arrayMove(array, from, to);
         } else {
@@ -228,30 +252,6 @@ export class _Item extends ItemContainer {
 
         return this.actor.updateEmbeddedEntity("OwnedItem", updates);
     }
-
-    static getDragoverIndex(event: DragEvent, index: number, endIndex: number): number {
-        const boundingBox = (event.target as HTMLElement).getBoundingClientRect();
-
-        const vSplit = boundingBox.height / 2;
-        const hSplit = boundingBox.width / 2;
-
-        if (index !== 0 && index !== endIndex) {
-            if (event.offsetY > vSplit) {
-                index = index + 1
-            } else if (event.offsetY <= vSplit) {
-
-            }
-        }
-
-        if (index < 0) {
-            return 0
-        } else if (index >= endIndex) {
-            return endIndex
-        } else {
-            return index
-        }
-    }
-
     /**
      * Dynamically generate menu item objects for the context menu based on the type of item this instance is
      * @return the context menu object
@@ -260,6 +260,8 @@ export class _Item extends ItemContainer {
         return () => {
             const entity = this;
             const isLabel = this.isLabel();
+
+            console.log(this);
 
             const getBaseMenu = () => {
                 return [
@@ -303,7 +305,10 @@ export class _Item extends ItemContainer {
                                 ui.notifications.warn("Please roll from the skill list for now");
                                 return false
                             }
-                            entity.actor.rollSkill(skillike, null)
+                            entity.actor.rollSkill(
+                                skillike.name,
+                                skillike.calculateLevel()
+                            )
                         }
                     },
                     {

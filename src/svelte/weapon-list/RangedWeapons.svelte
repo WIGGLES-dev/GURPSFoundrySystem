@@ -11,59 +11,16 @@
       icon: '<i class="fas fa-edit"></i>',
       condition: () => true,
       callback() {
-        weapon.edit($entity.getOwnedItem(weapon.owner.foundryID)._entity);
-      },
-    },
-    {
-      name: "Roll Skill",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => {
-        try {
-          if (weapon.skill()) {
-            return true;
-          }
-        } catch (err) {
-          return false;
-        }
-      },
-      callback() {
-        try {
-          const skill = weapon.skill();
-          $entity.rollSkill({
-            trait: skill.name,
-            level: skill.calculateLevel(),
-            modifiers: weaponEntityData.weapon_skill_mod || "",
-          });
-        } catch (err) {
-          ui.notifications.warn(
-            "The ID reference you have provided cannot find the skill on your character sheet"
-          );
-        }
-      },
-    },
-    {
-      name: "Roll Damage",
-      icon: '<i class="fas fa-dice-d6"></i>',
-      condition: () => true,
-      callback() {
-        $entity.rollDamage(weapon);
-      },
-    },
-    {
-      name: "Delete",
-      icon: '<i class="fas fa-trash"></i>',
-      condition: () => true,
-      callback() {
-        $entity
-          .getOwnedItem(id)
-          .removeByPath("data.weapons", weapon.foundryID || weapon._id);
+        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);
       },
     },
   ];
 </script>
 
 <style>
-
+  .d6 {
+    float: left;
+  }
 </style>
 
 <List>
@@ -84,9 +41,23 @@
       config={{ highlightHover: false, deleteButton: false, focusable: false }}>
       <td>{weapon.owner.name || ''}</td>
       <td>{weapon.usage || ''}</td>
-      <td>{weapon.skill() ? weapon.skill().calculateLevel() : ''}</td>
+      <td>
+        {#if weapon.skillLevel()}
+          <span
+            class="fas fa-dice d6 roll-ico"
+            on:click={() => weapon.rollSkill()} />
+        {/if}
+        <span>{weapon.skillLevel() || ''}</span>
+      </td>
       <td>{weapon.accuracy || ''}</td>
-      <td>{weapon.damage || ''}</td>
+      <td>
+        {#if weapon.damage}
+          <span
+            class="fas fa-dice d6 roll-ico"
+            on:click={() => weapon.rollDamage()} />
+        {/if}
+        <span>{weapon.damage || ''}</span>
+      </td>
       <td>{weapon.range || ''}</td>
       <td>{weapon.rateOfFire || ''}</td>
       <td>{weapon.shots || ''}</td>

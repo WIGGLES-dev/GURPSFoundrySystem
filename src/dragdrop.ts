@@ -1,4 +1,4 @@
-import { getItem } from "./helpers";
+import { getEntity } from "./helpers";
 import { _Item } from "./item";
 
 export class GURPSDragDrop {
@@ -27,7 +27,7 @@ export class GURPSDragDrop {
                 return true
             },
             drop: (e: DragEvent) => {
-                const { origin, target } = getDragContext(e);
+                const { origin, target } = getDragContext(e, "item");
                 return origin.data.type === target.data.type || type.includes(origin.data.type)
             }
         };
@@ -56,31 +56,31 @@ export class GURPSDragDrop {
         * 3. Dragging from the Item directory
         */
     private static async handleDropOnList(e: DragEvent, type: string) {
-        const { origin, target } = getDragContext(e);
-
-        // console.log(origin, target);
-
+        const { origin, target } = getDragContext(e, "item");
+        if (/_container/.test(target.getProperty("data.type"))) {
+            if (!/equipment/.test(target.getProperty("data.type"))) return
+            origin.setContainedBy(target);
+            return
+        }
         if (origin.actor && target.actor && origin.actor !== target.actor) {
             let newItem = await target.actor.createOwnedItem(origin) as _Item;
-            (getItem(newItem._id) as _Item).moveToIndex(target.getIndex() - 1, type.split(" "));
+            (getEntity(newItem._id, "item") as _Item).moveToIndex(origin.getIndex() - 1, target.getIndex() - 1, type.split(" "));
         } else if (origin.actor && target.actor && origin.actor === target.actor) {
             if (target.getGURPSObject().canContainChildren) {
 
             } else {
-                origin.moveToIndex(target.getIndex() - 1, type.split(" "));
+                origin.moveToIndex(origin.getIndex() - 1, target.getIndex() - 1, type.split(" "));
             }
         } else if (target.actor && !origin.actor) {
             e.stopImmediatePropagation();
             let newItem = await target.actor.createOwnedItem(origin) as _Item;
-            (getItem(newItem._id) as _Item).moveToIndex(target.getIndex(), type.split(" "));
-        } else {
-            
+            (getEntity(newItem._id, "item") as _Item).moveToIndex(origin.getIndex() - 1, target.getIndex() - 1, type.split(" "));
         }
     }
 }
 
-function setDragData(e: DragEvent) {
-    const origin = getItem((e.target as HTMLElement).dataset.entityId) as _Item
+export function setDragData(e: DragEvent) {
+    const origin = getEntity((e.target as HTMLElement).dataset.entityId, "item") as _Item
     const data = {
         id: origin._id,
         index: origin.getIndex(),
@@ -89,12 +89,12 @@ function setDragData(e: DragEvent) {
     e.dataTransfer.setData("text/plain", JSON.stringify(data));
 }
 
-function getDragContext(e: DragEvent) {
-    const target = (e.target as HTMLElement).closest("tr").dataset;
+export function getDragContext(e: DragEvent, type: string) {
+    const target = (e.target as HTMLElement).closest("tr")?.dataset ?? null;
     const origin = JSON.parse(e.dataTransfer.getData("text/plain"));
 
     return {
-        origin: getItem(origin.id) as _Item,
-        target: getItem(target.entityId) as _Item
+        origin: getEntity(origin?.id, type) as _Item,
+        target: getEntity(target?.entityId, type) as _Item
     }
 }

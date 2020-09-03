@@ -15,6 +15,7 @@
   import CharacterCombat from "./CharacterCombat";
 
   import { RichTextEditor, Input, FilePicker } from "./form/form";
+  import { Signature } from "g4elogic";
 
   export let entity = null;
   const GURPS = $entity._GURPS;
@@ -53,29 +54,43 @@
     <Tab index={4}>Combat</Tab>
     <Tab index={5}>Inventory</Tab>
     <Tab index={6}>Grimoire</Tab>
-    <Tab index={7}>
-      <i class="fas fa-cogs" />
-    </Tab>
+    <Tab index={7}><i class="fas fa-cogs" /></Tab>
   </TabList>
   <TabPanel>
     <div class="attributes flex">
       <div class="column">
-        <Input path="data.attributes.strength" min="0" type="number">
+        <Input
+          mod={$GURPS.getAttribute(Signature.ST).getMod()}
+          path="data.attributes.strength"
+          min="0"
+          type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
           </span>
         </Input>
-        <Input path="data.attributes.dexterity" min="0" type="number">
+        <Input
+          mod={$GURPS.getAttribute(Signature.DX).getMod()}
+          path="data.attributes.dexterity"
+          min="0"
+          type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('DX').pointsSpent()}] DX:
           </span>
         </Input>
-        <Input path="data.attributes.intelligence" min="0" type="number">
+        <Input
+          mod={$GURPS.getAttribute(Signature.IQ).getMod()}
+          path="data.attributes.intelligence"
+          min="0"
+          type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:
           </span>
         </Input>
-        <Input path="data.attributes.health" min="0" type="number">
+        <Input
+          mod={$GURPS.getAttribute(Signature.HT).getMod()}
+          path="data.attributes.health"
+          min="0"
+          type="number">
           <span slot="label-text">
             [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
           </span>

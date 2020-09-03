@@ -6,19 +6,16 @@
   const GURPS = getContext("GURPS");
   const entity = getContext("entity");
 
-  $: spellBonus = $entity.getProperty("data.bonuses.spell_bonus");
-  $: spellOnPenalty = $entity.getProperty("data.penalties.spells_on");
+  $: spellBonus = $entity.getProperty("data.bonuses.spell_bonus") || 0;
+  $: spellOnPenalty = $entity.getProperty("data.penalties.spells_on") || 0;
   $: spellConcentrationPenalty =
-    $entity.getProperty("data.penalties.concentration_spells") * 3;
+    ($entity.getProperty("data.penalties.concentration_spells") || 0) * 3;
 
   const getRollMod = () =>
     spellBonus - spellOnPenalty - spellConcentrationPenalty;
 </script>
 
 <style>
-  th {
-    padding: 0px 5px 0px 5px;
-  }
   .spell-tools {
     display: flex;
   }
@@ -54,8 +51,7 @@
     on:dblclick={(e) => {
       $entity.sortList('spell', 'data.name');
     }}>
-    Spells
-    <i class="fas fa-sort" />
+    Spells <i class="fas fa-sort" />
   </th>
   <th slot="header">Resist</th>
   <th slot="header">Class</th>
@@ -83,19 +79,12 @@
           class:no-show={!hovered || isLabel}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill({
-              level: spell.calculateLevel() + getRollMod(),
-              trait: spell.name,
-              modifiers: 'none',
-            });
+            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill({
-              level: spell.calculateLevel() + getRollMod(),
-              trait: spell.name,
-            });
+            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
           }} />
         <Input
           entity={ownedItem._entity}
@@ -104,7 +93,8 @@
           config={{ clickToEdit: true }}
           let:value>
           <span slot="no-edit">
-            {spell.name}{spell.techLevel ? `/TL${spell.techLevel}` : ''} {spell.specialization ? `(${spell.specialization})` : ``}
+            {spell.name}{spell.techLevel ? `/TL${spell.techLevel}` : ''}
+            {spell.specialization ? `(${spell.specialization})` : ``}
           </span>
         </Input>
       </td>

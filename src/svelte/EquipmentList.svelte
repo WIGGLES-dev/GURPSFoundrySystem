@@ -7,7 +7,31 @@
   import { fixed6 } from "../helpers.ts";
 
   import { List, Row } from "./list/list";
-  import { EquipmentList } from "g4elogic";
+
+  const menuItems = () => [
+    {
+      name: "Add Item",
+      icon: "",
+      condition: () => true,
+      callback: () => {
+        $entity.createOwnedItem({ name: "???", type: "item" });
+      },
+    },
+    {
+      name: "Add Container",
+      icon: "",
+      condition: () => false,
+      callback: () => {
+        $entity.createOwnedItem({
+          name: "???",
+          type: "item",
+          data: {
+            type: "equipment_container",
+          },
+        });
+      },
+    },
+  ];
 </script>
 
 <style>
@@ -18,38 +42,28 @@
     /* color: transparent; */
     visibility: hidden;
   }
+  .main-list-col {
+    text-align: left;
+  }
 </style>
 
 <h3>
-  Total Inventory Weight:
-  <b>
-    {fixed6($GURPS.equipmentList.totalWeight())} lb / {fixed6($GURPS.equipmentList.totalWeight(
+  Total Inventory Weight: <b> {fixed6($GURPS.equipmentList.totalWeight())} lb / {fixed6($GURPS.equipmentList.totalWeight(
         { carriedOnly: false }
-      ))} lb
-  </b>
+      ))} lb </b>
 </h3>
 <h3>
-  Total Inventory Value:
-  <b>
-    ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))}
-  </b>
+  Total Inventory Value: <b> ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))} </b>
 </h3>
-
-<List
-  title="Items"
-  type="item"
-  on:addlistitem={(e) => {
-    $entity.createOwnedItem({ name: '???', type: 'item' });
-  }}>
+<List title="Items" type="item" addListItemMenu={menuItems}>
   <th slot="header">E</th>
   <th slot="header">Qty</th>
   <th
     slot="header"
     on:dblclick={(e) => {
-      $entity.sortList('trait', 'data.description');
+      $entity.sortList('item', 'data.description');
     }}>
-    Description
-    <i class="fas fa-sort" />
+    Description <i class="fas fa-sort" />
   </th>
   <th slot="header">Uses</th>
   <th slot="header">$</th>
@@ -59,17 +73,18 @@
   <th slot="header">Ref</th>
   {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
     <Row
+      let:depth
       let:id
       let:ownedItem
       let:hovered
       id={item.foundryID}
       on:delete={async (e) => {
-        console.log($entity);
         await $entity.getOwnedItem(e.detail.id).delete();
       }}
       {i}
       draggable={true}
       colspan={10}
+      children={Array.from(item.children)}
       container={item.canContainChildren}>
       <td
         on:dblclick={(e) => {
@@ -77,9 +92,7 @@
             .getOwnedItem(id)
             .update({ 'data.equipped': !Boolean(item.equipped) });
         }}>
-        {#if item.equipped}
-          <i class="fas fa-check" />
-        {/if}
+        {#if item.equipped}<i class="fas fa-check" />{/if}
       </td>
       <td>
         <Input
@@ -92,7 +105,7 @@
           <span class="no-edit" slot="no-edit">{value}</span>
         </Input>
       </td>
-      <td class="main-list-col">
+      <td class="main-list-col" style="padding-left:{depth * 30}px">
         <Input
           entity={ownedItem._entity}
           config={{ clickToEdit: true }}

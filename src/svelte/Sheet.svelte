@@ -4,6 +4,7 @@
   import PartyManager from "./party/PartyManager";
 
   export let entity = null;
+  export let appInstance;
 
   function getSheetComponent(entity) {
     switch (entity.data.type) {
@@ -21,4 +22,7 @@
 
 </style>
 
-<svelte:component this={getSheetComponent($entity)} {entity} />
+<svelte:component
+  this={getSheetComponent($entity)}
+  bind:this={appInstance}
+  {entity} />

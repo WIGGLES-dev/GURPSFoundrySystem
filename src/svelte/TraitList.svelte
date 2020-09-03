@@ -24,9 +24,7 @@
 </script>
 
 <style>
-  th {
-    padding: 0px 5px 0px 5px;
-  }
+
 </style>
 
 <Tabs
@@ -72,7 +70,7 @@
           on:delete={(e) => {
             $entity.getOwnedItem(trait.foundryID).delete();
           }}>
-          <td>
+          <td class="main-list-col">
             <Input
               config={{ clickToEdit: true }}
               entity={ownedItem ? ownedItem._entity : null}
@@ -132,7 +130,7 @@
           on:delete={(e) => {
             $entity.getOwnedItem(trait.foundryID).delete();
           }}>
-          <td>
+          <td class="main-list-col">
             <Input
               config={{ clickToEdit: true }}
               entity={ownedItem ? ownedItem._entity : null}
