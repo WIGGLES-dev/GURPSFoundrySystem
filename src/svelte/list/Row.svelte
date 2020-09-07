@@ -1,6 +1,6 @@
 <script>
   import { ROWS } from "./List.svelte";
-  import { createContextMenu } from "../../helpers";
+  import { createContextMenu, indexSort } from "../../helpers";
   import { get_current_component } from "svelte/internal";
   import { slide, fade } from "svelte/transition";
 
@@ -14,14 +14,15 @@
   } from "svelte";
 
   const dispatch = createEventDispatcher();
-  const { setFocused, hovered, focused, type } = getContext(ROWS);
+  const { setFocused, hovered, focused, dragover, type } = getContext(ROWS);
 
   export let entity = getContext("entity") || null;
 
   export let colspan;
 
   export let container = null;
-  export let i = null;
+  // export let i = null;
+  export let depth = 0;
   export let id = null;
 
   export let hideNotes = true;
@@ -37,36 +38,43 @@
 
   export let children = [];
 
-  const getItem = (id) => {
-    return $entity.getOwnedItem ? $entity.getOwnedItem(id) || $entity : $entity;
+  const getItem = (entity) => {
+    return entity.getOwnedItem ? entity.getOwnedItem(id) || entity : entity;
   };
 
-  $: isRowLabel = getItem(id)
-    ? getItem(id).getFlag("GURPS", "is_label") || false
+  $: itemIsOpen = (id) => {
+    let ownedItem = $entity.getOwnedItem(id);
+    if (!ownedItem) return true;
+    return !ownedItem.getFlag("GURPS", "container_closed");
+  };
+
+  $: isRowLabel = getItem($entity, id)
+    ? getItem($entity).getFlag("GURPS", "is_label") || false
     : false;
 
   $: colors = {
-    textColor: getItem(id)
-      ? getItem(id).getFlag("GURPS", "text_color") || ""
+    textColor: getItem($entity, id)
+      ? getItem($entity, id).getFlag("GURPS", "text_color") || ""
       : "",
-    backgroundColor: getItem(id)
-      ? getItem(id).getFlag("GURPS", "background_color") || ""
+    backgroundColor: getItem($entity, id)
+      ? getItem($entity, id).getFlag("GURPS", "background_color") || ""
       : "",
   };
 
-  let menuItems = getItem(id)
-    ? getItem(id).getMenuItems
-      ? getItem(id).getMenuItems()
+  let menuItems = getItem($entity, id)
+    ? getItem($entity, id).getMenuItems
+      ? getItem($entity, id).getMenuItems()
       : () => []
     : () => [];
 
   export let selector = "contextmenu";
 
-  let GURPS = {};
-
-  // $: GURPS = ($entity.getOwnedItem(id) || $entity).getGURPSObject();
+  $: GURPS = getItem($entity, id).getGURPSObject
+    ? getItem($entity, id).getGURPSObject()
+    : {};
 
   let rowHTMLElement;
+  $: i = rowHTMLElement ? rowHTMLElement.rowIndex : null;
 </script>
 
 <style>
@@ -84,6 +92,9 @@
   .focused {
     background-color: #ff6400;
   }
+  .dragover {
+    background-color: #ff6400;
+  }
   tr > :global(td) {
     padding: 3px 0px 3px 0px;
     border-bottom: 1px solid black;
@@ -96,13 +107,14 @@
   style="background-color: {colors.backgroundColor}; color: {colors.textColor}"
   class:strikethrough={disabled}
   data-container={container}
-  data-index={i}
+  data-index={rowHTMLElement ? rowHTMLElement.rowIndex : null}
   data-entity-id={id}
   data-listtype={type}
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
   class:hovered={$hovered === i && config.highlightHover}
   class:focused={$focused.includes(i) && config.focusable}
+  class:dragover={$dragover === i}
   class:container
   on:mouseover={(e) => {
     dispatch('mouseover');
@@ -153,11 +165,11 @@
     dispatch('dragleave');
   }}
   on:dragover={(e) => {
-    hovered.set(i);
+    dragover.set(i);
     dispatch('dragover');
   }}
   on:dragend={(e) => {
-    hovered.set(null);
+    dragover.set(null);
     dispatch('dragend');
   }}>
   <td
@@ -168,13 +180,20 @@
     }}>
     {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}
   </td>
-  <slot depth={0} {id} ownedItem={getItem(id)} hovered={$hovered === i} />
+  <slot
+    item={GURPS}
+    open={itemIsOpen(id)}
+    {depth}
+    {id}
+    ownedItem={getItem($entity, id)}
+    hovered={$hovered === i} />
   <td class="show-when-label">
+    <i class:no-show={!($dragover === i && container)} class="fas fa-box" />
     <i
-      class:no-show={!($hovered === i && config.deleteButton)}
+      class:no-show={!($hovered === i && config.deleteButton && $dragover !== i)}
       class="fas fa-trash"
       on:click={() => {
-        getItem(id).delete();
+        getItem($entity, id).delete();
       }} />
   </td>
 </tr>
@@ -185,23 +204,29 @@
   </td>
 {/if}
 
-{#if container}
-  {#each children as child, i (child.foundryID)}
+{#if container && itemIsOpen(id)}
+  {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
     <svelte:self
-      i={i + 1}
-      id={child.foundryID}
+      let:id
+      let:ownedItem
+      let:depth
+      let:open
+      let:item={child}
       {entity}
+      id={child.foundryID}
+      i={i + 1}
       {config}
       {menuItems}
       {colspan}
+      container={child.canContainChildren}
       children={Array.from(child.children)}
-      container={child.canContainChildren}>
+      open={itemIsOpen(id)}>
       <slot
-        depth={child.getListDepth()}
+        open={itemIsOpen(id)}
+        item={child}
+        depth={depth + 1}
         id={child.foundryID}
-        ownedItem={getItem(child.foundryID)}
-        hovered={$hovered === i} />
-      <slot name="notes" {GURPS} {id} />
+        ownedItem={$entity.getOwnedItem(child.foundryID)} />
     </svelte:self>
   {/each}
 {/if}

@@ -3,7 +3,7 @@ import { _ItemSheet, _Item } from "./item";
 import { customUpdate, getEntity, indexSort } from "./helpers";
 import { _ChatMessage, _ChatLog } from "./chat";
 import { FoundryEntity } from "./foundry_actor";
-import { registerSerializer, GCSJSON } from "g4elogic"
+import { registerSerializer, GCSJSON } from "g4elogic";
 import jsonQuery from "json-query";
 
 import "./styles/global.scss";

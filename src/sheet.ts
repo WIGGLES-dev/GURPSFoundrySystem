@@ -9,6 +9,7 @@ import { injectHelpers, svelte } from "./helpers";
 import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
 import ModifierDialog from "./svelte/ModifierDialog.svelte";
 import { getDragContext } from "./dragdrop";
+import { normalizeInventory } from "./container";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -114,7 +115,8 @@ export class _Actor extends Actor {
     constructor(data: any, options: any) {
         super(data, options);
         this._entity = writable(this);
-        this.GURPS = new GURPSCharacter("foundry");
+        //@ts-ignore
+        this.GURPS = new GURPSCharacter();
         this._GURPS = writable(this.GURPS);
         this.updateGURPS();
     }
@@ -179,7 +181,7 @@ export class _Actor extends Actor {
 
     updateGURPS() {
         try {
-            const update = this.GURPS.load(this);
+            const update = this.GURPS.load(this, "foundry");
             this._GURPS.set(update);
             this._entity.set(this);
         } catch (e) {

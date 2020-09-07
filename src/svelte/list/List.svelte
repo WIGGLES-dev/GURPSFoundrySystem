@@ -39,6 +39,7 @@
 
   export const hovered = writable(null);
   export const focused = writable([]);
+  export const dragover = writable(null);
   export const rows = writable(0);
   export let type = null;
   export let title = "";
@@ -77,6 +78,7 @@
       });
     },
     hovered,
+    dragover,
     focused,
     type,
   });
@@ -137,7 +139,10 @@
   <slot name="tool" />
 </div> -->
 
-<table bind:this={tableHTMLElement} on:drop={(e) => {}}>
+<table
+  bind:this={tableHTMLElement}
+  on:drop={(e) => {}}
+  on:dragleave={() => dragover.set(null)}>
   <caption>{title}</caption>
   <slot name="colgroups" />
   <thead>

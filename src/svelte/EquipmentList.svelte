@@ -2,33 +2,50 @@
   import { getContext } from "svelte";
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
+  export let location = "carried";
 
   import Input from "./form/Input";
   import { fixed6 } from "../helpers.ts";
 
   import { List, Row } from "./list/list";
 
+  async function toggleItemOpen(id) {
+    let ownedItem = $entity.getOwnedItem(id);
+    if (ownedItem) {
+      ownedItem.setFlag(
+        "GURPS",
+        "container_closed",
+        !ownedItem.getFlag("GURPS", "container_closed")
+      );
+    }
+  }
+
   const menuItems = () => [
     {
       name: "Add Item",
       icon: "",
       condition: () => true,
-      callback: () => {
-        $entity.createOwnedItem({ name: "???", type: "item" });
+      callback: async () => {
+        let update = await $entity.createOwnedItem({
+          name: "???",
+          type: "item",
+        });
+        $entity.getOwnedItem(update._id).update({ "data.location": location });
       },
     },
     {
       name: "Add Container",
       icon: "",
-      condition: () => false,
-      callback: () => {
-        $entity.createOwnedItem({
+      condition: () => true,
+      callback: async () => {
+        let update = await $entity.createOwnedItem({
           name: "???",
           type: "item",
           data: {
             type: "equipment_container",
           },
         });
+        $entity.getOwnedItem(update._id).update({ "data.location": location });
       },
     },
   ];
@@ -45,17 +62,24 @@
   .main-list-col {
     text-align: left;
   }
+  .container-toggle {
+    position: relative;
+  }
+  .toggle {
+    position: absolute;
+  }
 </style>
 
-<h3>
-  Total Inventory Weight: <b> {fixed6($GURPS.equipmentList.totalWeight())} lb / {fixed6($GURPS.equipmentList.totalWeight(
-        { carriedOnly: false }
-      ))} lb </b>
-</h3>
-<h3>
-  Total Inventory Value: <b> ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))} </b>
-</h3>
-<List title="Items" type="item" addListItemMenu={menuItems}>
+{#if location === 'carried'}
+  <h3>
+    Total Inventory Weight: <b> {fixed6($GURPS.equipmentList.totalWeight())} lb /
+      {fixed6($GURPS.equipmentList.totalWeight({ carriedOnly: false }))} lb </b>
+  </h3>
+  <h3>
+    Total Inventory Value: <b> ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))} </b>
+  </h3>
+{/if}
+<List title="{location} Items" type="item" addListItemMenu={menuItems}>
   <th slot="header">E</th>
   <th slot="header">Qty</th>
   <th
@@ -71,12 +95,14 @@
   <th slot="header">Total Weight</th>
   <th slot="header">Total $</th>
   <th slot="header">Ref</th>
-  {#each window.game.gurps4e.indexSort($GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
+  {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
     <Row
+      let:item
       let:depth
       let:id
       let:ownedItem
       let:hovered
+      let:open
       id={item.foundryID}
       on:delete={async (e) => {
         await $entity.getOwnedItem(e.detail.id).delete();
@@ -105,7 +131,15 @@
           <span class="no-edit" slot="no-edit">{value}</span>
         </Input>
       </td>
-      <td class="main-list-col" style="padding-left:{depth * 30}px">
+      <td
+        class="main-list-col container-toggle"
+        style="padding-left:{depth * 30 + 30}px">
+        <span
+          style="left:{15 + depth * 30}px;"
+          on:click={() => toggleItemOpen(id)}
+          class="toggle fas"
+          class:fa-angle-down={open && item.canContainChildren}
+          class:fa-angle-right={!open && item.canContainChildren} />
         <Input
           entity={ownedItem._entity}
           config={{ clickToEdit: true }}

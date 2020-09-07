@@ -5,21 +5,16 @@
 
   let inputElem;
 
-  function entityHandler(entity) {
-    if (entity._entity) {
-      return entity._entity;
-    } else if (entity.subscribe) {
-      return entity;
-    } else {
-      return null;
-    }
-  }
-
+  /**
+   *  Foundry specific inputs
+   **/
   export let entity = getContext("entity") || null;
-
   export let path = null;
   export let array = false;
   export let alsoUpdate = null;
+
+  export let bindTo = null;
+
   export let min = null;
   export let disabled = null;
   export let name = null;
@@ -49,6 +44,11 @@
       if (+target.value < min && min !== null) tValue = min - basedOn - mod;
     }
 
+    if (bindTo && bindTo.prop && bindTo.root) {
+      bindTo.root[bindTo.prop] = tValue;
+      return this;
+    }
+
     let update = await game.gurps4e.customUpdate({
       entity: $entity,
       value: tValue,
@@ -60,17 +60,16 @@
     dispatch("update", { entity: update, change: tValue });
   }
 
-  $: getDefaultValue = (entity) => {
-    let value = getValue(entity, path, array);
+  $: {
+    value = getValue($entity, path, array);
     if (value === undefined || value === null) {
-      return defaultValue;
+      value = defaultValue;
     }
-    if (type === "string") return value;
-    if (type === "number") return value + basedOn + mod;
-    return value;
-  };
+    if (type === "string") value = value;
+    if (type === "number") value = value + basedOn + mod;
+  }
 
-  $: value = getDefaultValue($entity);
+  let value = null;
 </script>
 
 <style>
@@ -93,23 +92,41 @@
       <slot name="label-text" {value} />
     {/if}
 
-    <input
-      {placeholder}
-      data-path={path}
-      class={classList}
-      draggable={true}
-      on:dragstart|preventDefault|stopPropagation
-      bind:this={inputElem}
-      {step}
-      autocomplete={autocomplete === 'off' ? 'off' : null}
-      {name}
-      {disabled}
-      {min}
-      {type}
-      on:blur={() => (clickedToEdit = false)}
-      on:change={update}
-      {value} />
-
+    {#if type === 'text'}
+      <input
+        on:dragstart|preventDefault|stopPropagation
+        {placeholder}
+        data-path={path}
+        class={classList}
+        draggable={true}
+        bind:this={inputElem}
+        {step}
+        autocomplete={autocomplete === 'off' ? 'off' : null}
+        {name}
+        {disabled}
+        {min}
+        type="text"
+        on:blur={() => (clickedToEdit = false)}
+        on:change={update}
+        {value} />
+    {:else if type === 'number'}
+      <input
+        {placeholder}
+        data-path={path}
+        class={classList}
+        draggable={true}
+        on:dragstart|preventDefault|stopPropagation
+        bind:this={inputElem}
+        {step}
+        autocomplete={autocomplete === 'off' ? 'off' : null}
+        {name}
+        {disabled}
+        {min}
+        type="number"
+        on:blur={() => (clickedToEdit = false)}
+        on:change={update}
+        {value} />
+    {/if}
     <slot name="label-text-after" {value} />
   </label>
 {:else}

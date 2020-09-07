@@ -10,6 +10,7 @@
         "legality_class": "",
         "value": 0,
         "weight": 0,
+        "location": null,
         "weapons": []
     }
 }

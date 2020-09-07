@@ -22,8 +22,8 @@ export function fixed6(number: string | number) {
  * Sorts a list
  * @param list a list of object that must have a listIndex property
  */
-export function indexSort(list: any[]) {
-    return list.sort((a, b) => a.listIndex - b.listIndex)
+export function indexSort(list: any[], property = "listIndex") {
+    return list.sort((a, b) => a[property] - b[property])
 }
 
 /**

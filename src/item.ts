@@ -36,6 +36,7 @@ export class _ItemSheet extends ItemSheet {
 @injectHelpers
 export class _Item extends ItemContainer {
     getProperty: (path: string) => any
+    GURPSUpdater: (store: any) => void
 
     _entity: Writable<Entity>
     sheet: _ItemSheet
@@ -212,14 +213,6 @@ export class _Item extends ItemContainer {
         return this.update({ "flags.GURPS.index": index }, null) as Promise<_Item>
     }
 
-    getContainerIndex(): number {
-        return this.getFlag("GURPS", "container_index")
-    }
-
-    async setContainerIndex(index: number): Promise<_Item> {
-        return this.update({ "flags.GURPS.container_index": index }, null) as Promise<_Item>
-    }
-
     isLabel() { return this.getFlag("GURPS", "is_label"); }
     /**
      * Rearrange a list of indexes and flags in a batch to keep socket requests to a minimum
@@ -233,7 +226,6 @@ export class _Item extends ItemContainer {
         } else {
 
         }
-
         let correction = 0;
         const updates = array.map((item, i, array) => {
             if (item) {
@@ -241,7 +233,7 @@ export class _Item extends ItemContainer {
                     _id: item.id,
                     flags: {
                         GURPS: {
-                            [container ? "container_index" : "index"]: i + 1 - correction
+                            ["index"]: i + 1 - correction
                         }
                     }
                 }
@@ -260,8 +252,6 @@ export class _Item extends ItemContainer {
         return () => {
             const entity = this;
             const isLabel = this.isLabel();
-
-            console.log(this);
 
             const getBaseMenu = () => {
                 return [

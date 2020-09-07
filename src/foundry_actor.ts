@@ -268,10 +268,14 @@ export class FoundryEntity extends Serializer {
     }
     mapEquipment(equipment: Equipment, entity?: _Item) {
         try {
+            if (!entity.GURPSUpdater) {
+                entity.GURPSUpdater = equipment.subscribe((store: any) => {
+                    console.log(store);
+                });
+            }
             const data = entity.data;
 
             equipment.foundryID = entity.id
-
             FoundryEntity.mapListItem(equipment, entity);
 
             equipment.foundryID = entity.id;
@@ -288,6 +292,7 @@ export class FoundryEntity extends Serializer {
             equipment.weight = +(getProperty(data, "data.weight"));
             equipment.techLevel = getProperty(data, "data.tech_level");
             equipment.legalityClass = getProperty(data, "data.legality_class");
+            equipment.reference = getProperty(data, "data.reference");
             // equipment.containedWeightReduction = isArray(getProperty(data, "data.features"))?.find((feature: json) => feature.type === "contained_weight_reduction")?.reduction ?? null;
 
             getProperty(data, "data.weapons")?.forEach((weapon: any, i: number, list: any[]) => {
@@ -300,8 +305,8 @@ export class FoundryEntity extends Serializer {
             });
 
             if (getProperty(data, "data.type")?.includes("_container") || entity.getFlag("GURPS", "children")?.length > 0) {
-                const children = entity.getFlag("GURPS", "children")?.filter(item => item)?.map((itemID: string) => entity?.actor?.getOwnedItem(itemID)) as Item[]
-                console.log(children);
+                const children = entity.getFlag("GURPS", "children")?.map((itemID: string) => entity?.actor?.getOwnedItem(itemID))?.filter(item => Boolean(item)) as Item[]
+                equipment.canContainChildren = true;
                 return children
             }
 
@@ -523,7 +528,7 @@ export class FoundryEntity extends Serializer {
     }
     loadList(list: List<any>, data: Item[]) {
         data.forEach(listItem => {
-            const ownedBy = listItem.getFlag("GURPS", "containedBy");
+            const ownedBy = listItem.getFlag("GURPS", "contained_by");
             const children = listItem.getFlag("GURPS", "children");
             try {
                 if (!ownedBy) {
@@ -560,8 +565,11 @@ export class FoundryEntity extends Serializer {
             getProperty(data, "data.attributes.hit_points")
         );
 
-        const items = actor.ownedItemsByType("item").filter(item => !item.getContainedBy());
+        const items = actor.ownedItemsByType("item").filter(item => !item.getContainedBy() && item.getProperty("data.location") !== "other");
         character.equipmentList.load(items);
+
+        const otherItems = actor.ownedItemsByType("item").filter(item => !item.getContainedBy() && item.getProperty("data.location") === "other");
+        character.otherEquipmentList.load(otherItems);
 
         const skills = actor.ownedItemsByType("skill");
         character.skillList.load(skills);

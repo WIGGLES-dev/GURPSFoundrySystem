@@ -56,10 +56,16 @@ export class GURPSDragDrop {
         * 3. Dragging from the Item directory
         */
     private static async handleDropOnList(e: DragEvent, type: string) {
-        const { origin, target } = getDragContext(e, "item");
+        const { origin, target, targetI } = getDragContext(e, "item");
+        // if (origin.getContainedBy() && !target.getContainedBy()) {
+        //     alert("this is what is happening");
+        //     await origin.removeReferenceFromParent();
+        //     return
+        // }
         if (/_container/.test(target.getProperty("data.type"))) {
             if (!/equipment/.test(target.getProperty("data.type"))) return
             origin.setContainedBy(target);
+            origin.moveToIndex(origin.getIndex() - 1, targetI, type.split(" "))
             return
         }
         if (origin.actor && target.actor && origin.actor !== target.actor) {
@@ -90,11 +96,13 @@ export function setDragData(e: DragEvent) {
 }
 
 export function getDragContext(e: DragEvent, type: string) {
-    const target = (e.target as HTMLElement).closest("tr")?.dataset ?? null;
+    const tr = (e.target as HTMLElement).closest("tr");
+    const target = tr?.dataset ?? null
     const origin = JSON.parse(e.dataTransfer.getData("text/plain"));
 
     return {
         origin: getEntity(origin?.id, type) as _Item,
-        target: getEntity(target?.entityId, type) as _Item
+        target: getEntity(target?.entityId, type) as _Item,
+        targetI: tr.rowIndex
     }
 }

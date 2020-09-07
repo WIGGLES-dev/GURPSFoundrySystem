@@ -4,6 +4,7 @@
             "profile",
             "pools",
             "attributes"
-        ]
+        ],
+        "point_total": 100
     }
 }

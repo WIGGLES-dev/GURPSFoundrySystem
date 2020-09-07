@@ -198,7 +198,7 @@
         <EquipmentList />
       </TabPanel>
       <TabPanel>
-        <h1>Under Construction</h1>
+        <EquipmentList location="other" />
       </TabPanel>
     </Tabs>
   </TabPanel>
