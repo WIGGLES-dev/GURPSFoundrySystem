@@ -5,11 +5,10 @@ import { Character as GURPSCharacter, Skill, Weapon, Signature } from "g4elogic"
 import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
-import { injectHelpers, svelte } from "./helpers";
+import { injectHelpers, svelte, ownedItemsByType, formatModList } from "./helpers";
 import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
-import ModifierDialog from "./svelte/ModifierDialog.svelte";
+import AttackDialog from "./svelte/AttackDialog.svelte";
 import { getDragContext } from "./dragdrop";
-import { normalizeInventory } from "./container";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -205,7 +204,7 @@ export class _Actor extends Actor {
     }
 
     ownedItemsByType(...types: string[]): _Item[] {
-        return this.items.filter((item: Item) => types.includes(item.data.type))
+        return ownedItemsByType(this, ...types) as _Item[];
     }
 
     getWeapons() {
@@ -221,24 +220,31 @@ export class _Actor extends Actor {
                 })
             },
             skillLevel: () => {
-                let skillDefault = weapon?.getBestDefault();
-                let level = null
-                let mod = skillDefault?.modifier ?? null
-                if (skillDefault) {
-                    if (skillDefault.isSkillBased()) {
-                        level = skillDefault?.getMatches()?.highest?.calculateLevel() ?? null
-                    } else {
-                        level = weapon.owner.character.getAttribute(skillDefault.type)?.calculateLevel() ?? null
-                    }
-                }
-                return level + mod
+                let level = weapon.getBestAttackLevel();
+                console.log(level);
+                return level
+            },
+            rollParry() {
+                entity.rollSkill(
+                    `Parry With ${weapon.owner.name}`,
+                    weapon.getParryLevel(),
+                    [+weapon.parry]
+                )
+            },
+            rollBlock() {
+                entity.rollSkill(
+                    `Block With ${this.owner.name}`,
+                    weapon.getBlockLevel(),
+                    [+weapon.block]
+                )
             },
             rollSkill() {
                 entity.rollSkill(
                     `${weapon.owner.name} ${weapon.usage}`,
                     this.skillLevel(),
-                    weapon.skillMod || "0",
-                    "attack"
+                    [weapon.skillMod || 0],
+                    "attack",
+                    { weapon }
                 );
             },
             rollDamage: () => {
@@ -257,21 +263,21 @@ export class _Actor extends Actor {
         }
     }
 
-    rollSkill(trait: string, level: number, modifiers = "", modType = "none") {
+    rollSkill(trait: string, level: number, modifiers: number[] = [], modType = "none", data: any = {}) {
         switch (modType) {
             case "none":
-                this.rollAndRender(trait, level, modifiers);
+                this.rollAndRender(trait, level, formatModList(modifiers));
                 break
             case "attack":
-                const modifierDialog = new ModifierDialog({
+                const modifierDialog = new AttackDialog({
                     target: document.body,
                     props: {
-                        type: "attack"
+                        type: "attack",
+                        weapon: data.weapon ? data.weapon : null
                     }
                 });
                 modifierDialog.$on("roll", (e) => {
-                    console.log(e.detail, modifiers);
-                    this.rollAndRender(trait, level, `+${e.detail}+${modifiers}`);
+                    this.rollAndRender(trait, level, formatModList([...e.detail, ...modifiers]));
                 });
                 break
             default:
@@ -279,12 +285,16 @@ export class _Actor extends Actor {
     }
 
     private rollAndRender(trait: string, level: number, modifiers: string) {
-        let roll = new SuccessRoll({ level, trait: trait, modifiers });
-        roll.roll();
-        let renderer = new SuccessRollRenderer();
-        renderer.render(roll).then((html) => {
-            ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
-        });
+        try {
+            let roll = new SuccessRoll({ level, trait, modifiers });
+            roll.roll();
+            let renderer = new SuccessRollRenderer();
+            renderer.render(roll).then((html) => {
+                ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
+            });
+        } catch (err) {
+            ui.notifications.error(err)
+        }
     }
 
     dodge() {

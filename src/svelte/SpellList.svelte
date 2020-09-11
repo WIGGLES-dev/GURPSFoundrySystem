@@ -72,7 +72,7 @@
       draggable={true}
       id={spell.foundryID}
       on:delete={(e) => {
-        $entity.getOwnedItem(e.detail.id).delete();
+        e.detail.entity.delete();
       }}>
       <td class="main-list-col">
         <span

@@ -28,13 +28,17 @@
   export let hideNotes = true;
   export let disabled = false;
 
-  export let config = {
+  export let config = {};
+
+  const defaultConfig = {
     draggable: false,
     highlightHover: true,
     deleteButton: true,
     toggle: false,
     focusable: true,
   };
+
+  $: config = Object.assign({}, defaultConfig, config);
 
   export let children = [];
 
@@ -61,7 +65,7 @@
       : "",
   };
 
-  let menuItems = getItem($entity, id)
+  export let menuItems = getItem($entity, id)
     ? getItem($entity, id).getMenuItems
       ? getItem($entity, id).getMenuItems()
       : () => []
@@ -74,7 +78,7 @@
     : {};
 
   let rowHTMLElement;
-  $: i = rowHTMLElement ? rowHTMLElement.rowIndex : null;
+  $: i = getItem($entity, id).getFlag("GURPS", "index");
 </script>
 
 <style>
@@ -107,15 +111,15 @@
   style="background-color: {colors.backgroundColor}; color: {colors.textColor}"
   class:strikethrough={disabled}
   data-container={container}
-  data-index={rowHTMLElement ? rowHTMLElement.rowIndex : null}
+  data-index={i}
   data-entity-id={id}
   data-listtype={type}
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
-  class:hovered={$hovered === i && config.highlightHover}
+  class:container
   class:focused={$focused.includes(i) && config.focusable}
   class:dragover={$dragover === i}
-  class:container
+  class:hovered={$hovered === i && config.highlightHover}
   on:mouseover={(e) => {
     dispatch('mouseover');
   }}
@@ -188,13 +192,17 @@
     ownedItem={getItem($entity, id)}
     hovered={$hovered === i} />
   <td class="show-when-label">
-    <i class:no-show={!($dragover === i && container)} class="fas fa-box" />
-    <i
-      class:no-show={!($hovered === i && config.deleteButton && $dragover !== i)}
-      class="fas fa-trash"
-      on:click={() => {
-        getItem($entity, id).delete();
-      }} />
+    {#if config.deleteButton}
+      {#if container}
+        <!-- <i class="fas fa-box" /> -->
+      {/if}
+      <i
+        class:no-show={!($hovered === i && $dragover !== i)}
+        class="fas fa-trash"
+        on:click={() => {
+          dispatch('delete', { entity: getItem($entity, id) });
+        }} />
+    {/if}
   </td>
 </tr>
 
@@ -216,7 +224,6 @@
       id={child.foundryID}
       i={i + 1}
       {config}
-      {menuItems}
       {colspan}
       container={child.canContainChildren}
       children={Array.from(child.children)}

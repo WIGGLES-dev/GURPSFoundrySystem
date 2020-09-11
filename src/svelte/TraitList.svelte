@@ -24,7 +24,6 @@
 </script>
 
 <style>
-
 </style>
 
 <Tabs
@@ -36,6 +35,7 @@
     <Tab index={0}>Disadvantages & Quirks</Tab>
     <Tab index={1}>Advantages & Perks</Tab>
     <Tab index={2}>Languages & Culture</Tab>
+    <Tab index={3}>Racial Traits</Tab>
   </TabList>
   <TabPanel>
     <List
@@ -54,8 +54,7 @@
         on:dblclick={(e) => {
           $entity.sortList('trait', 'data.name');
         }}>
-        Disadvantages & Quirks
-        <i class="fas fa-sort" />
+        Disadvantages & Quirks <i class="fas fa-sort" />
       </th>
       <th slot="header">Pts</th>
       <th slot="header">Ref</th>
@@ -68,7 +67,7 @@
           id={trait.foundryID}
           draggable={true}
           on:delete={(e) => {
-            $entity.getOwnedItem(trait.foundryID).delete();
+            e.detail.entity.delete();
           }}>
           <td class="main-list-col">
             <Input
@@ -78,7 +77,8 @@
               alsoUpdate={['name']}
               let:value>
               <span slot="no-edit">
-                {trait.name} {trait.hasLevels ? trait.levels : ''}
+                {trait.name}
+                {trait.hasLevels ? trait.levels : ''}
               </span>
             </Input>
           </td>
@@ -114,8 +114,7 @@
         on:dblclick={(e) => {
           $entity.sortList('trait', 'data.name');
         }}>
-        Advantages & Perks
-        <i class="fas fa-sort" />
+        Advantages & Perks <i class="fas fa-sort" />
       </th>
       <th slot="header">Pts</th>
       <th slot="header">Ref</th>
@@ -138,7 +137,8 @@
               alsoUpdate={['name']}
               let:value>
               <span slot="no-edit">
-                {trait.name} {trait.hasLevels ? trait.levels : ''}
+                {trait.name}
+                {trait.hasLevels ? trait.levels : ''}
               </span>
             </Input>
           </td>
@@ -156,6 +156,9 @@
         </Row>
       {/each}
     </List>
+  </TabPanel>
+  <TabPanel>
+    <h1>Under Construction</h1>
   </TabPanel>
   <TabPanel>
     <h1>Under Construction</h1>

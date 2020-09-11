@@ -12,7 +12,7 @@ const mode = process.env.NODE_ENV as production || choose;
 const prod = mode === 'production';
 
 let GURPS = null;
-GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
+// GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
 // GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
 
 const config: webpack.Configuration = {
@@ -44,22 +44,6 @@ const config: webpack.Configuration = {
                     loader: 'svelte-loader',
                     options: {
                         emitCss: true,
-                        preprocess: sveltePreprocess({
-                            babel: {
-                                presets: [
-                                    [
-                                        "@babel/preset-env",
-                                        {
-                                            loose: true,
-                                            modules: false,
-                                            targets: {
-                                                esmodules: true
-                                            }
-                                        }
-                                    ],
-                                ]
-                            }
-                        })
                     }
                 }
             },

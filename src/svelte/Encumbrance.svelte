@@ -11,6 +11,11 @@
 </script>
 
 <style>
+  table,
+  thead {
+    margin: 0px;
+    border: none;
+  }
   .active {
     background-color: yellow;
   }

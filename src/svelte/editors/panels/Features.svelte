@@ -91,10 +91,13 @@
             <Option value="IQ">to IQ</Option>
             <Option value="HT">to HT</Option>
           </Select>
-          {#if feature.attribute === 'ST'}
-            <Select disabled={true}>
-              <Option>for lifting only</Option>
-              <Option>for striking only</Option>
+          {#if ['ST', 'SS', 'SL'].includes(feature.attribute)}
+            <Select
+              path="data.features"
+              array={{ index: i, property: 'attribute' }}>
+              <Option value="ST" />
+              <Option value="LS">for lifting only</Option>
+              <Option value="SS">for striking only</Option>
             </Select>
           {/if}
         </div>

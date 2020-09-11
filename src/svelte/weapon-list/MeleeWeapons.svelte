@@ -18,11 +18,15 @@
 
 <style>
   .d6 {
-    float: left;
+    position: relative;
+    left: 10;
+  }
+  td {
+    position: relative;
   }
 </style>
 
-<List>
+<List config={{ addListItemButton: false }}>
   <th slot="header">Melee Weapons</th>
   <th slot="header">Usage</th>
   <th slot="header">Lvl</th>
@@ -42,18 +46,28 @@
           <span
             class="fas fa-dice d6 roll-ico"
             on:click={() => weapon.rollSkill()} />
+          {weapon.skillLevel() || ''}
         {/if}
-        <span>{weapon.skillLevel() || ''}</span>
       </td>
-      <td>{weapon.parry || ''}</td>
-      <td>{weapon.block || ''}</td>
+      <td>
+        {#if weapon.parry}
+          <span class="fas fa-shield-alt" on:click={() => weapon.rollParry()} />
+          {weapon.parry || ''}
+        {/if}
+      </td>
+      <td>
+        {#if weapon.block}
+          <span class="fas fa-shield-alt" on:click={() => weapon.rollBlock()} />
+          {weapon.block || ''}
+        {/if}
+      </td>
       <td>
         {#if weapon.damage}
           <span
             class="fas fa-dice d6 roll-ico"
             on:click={() => weapon.rollDamage()} />
+          {weapon.damage || ''}
         {/if}
-        {weapon.damage || ''}
       </td>
       <td>{weapon.reach || ''}</td>
       <td>{weapon.strength || ''}</td>

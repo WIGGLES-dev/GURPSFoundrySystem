@@ -4,12 +4,11 @@
   import { Select, Option, Input } from "../../form/form";
 
   export let entity = getContext("entity") || null;
-  console.log($entity);
 
   export let path = "data.defaults";
 
   $: getDefaults = () => {
-    return $entity.getProperty(path) || [];
+    return ($entity.getProperty(path) || []).filter((index) => index);
   };
 </script>
 
@@ -56,7 +55,7 @@
           on:click={() => dispatch('adddefault')} />
       </div>
       <div class="flex">
-        <Select {path} array={{ index: i, property: 'type' }}>
+        <Select {entity} {path} array={{ index: i, property: 'type' }}>
           <Option value="DX">DX</Option>
           <Option value="ST">ST</Option>
           <Option value="IQ">IQ</Option>
@@ -70,6 +69,7 @@
         </Select>
         {#if skillikeDefault.type !== 'Skill'}
           <Input
+            {entity}
             {path}
             type="number"
             array={{ index: i, property: 'modifier' }} />
@@ -78,15 +78,18 @@
       {#if skillikeDefault.type === 'Skill'}
         <div class="flex default-detail">
           <Input
+            {entity}
             classList={'grow'}
             {path}
             array={{ index: i, property: 'name' }} />
           <Input
+            {entity}
             classList={'grow'}
             {path}
             array={{ index: i, property: 'specialization' }}
             placeholder="Optional Specialization" />
           <Input
+            {entity}
             type="number"
             {path}
             array={{ index: i, property: 'modifier' }} />

@@ -19,10 +19,16 @@
 </script>
 
 <style>
-
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
-<svelte:component
-  this={getSheetComponent($entity)}
-  bind:this={appInstance}
-  {entity} />
+<div>
+  <svelte:component
+    this={getSheetComponent($entity)}
+    bind:this={appInstance}
+    {entity} />
+</div>

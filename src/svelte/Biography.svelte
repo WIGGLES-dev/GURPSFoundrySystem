@@ -1,5 +1,5 @@
 <script>
-  import { RichTextEditor, Input, FilePicker } from "./form/form";
+  import { RichTextEditor, Input, FilePicker, Textarea } from "./form/form";
   import { Tabs, TabList, TabPanel, Tab } from "./tabs/tabs";
   import { getContext } from "svelte";
   export let entity = getContext("entity") || null;

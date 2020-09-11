@@ -24,12 +24,12 @@ import {
     AttributeBonus,
     DRBonus,
     SkillBonus,
-    Group,
     RangedWeapon,
     MeleeWeapon
 } from "g4elogic";
 import { _Actor as FoundryActor } from "./sheet";
 import { _Item } from "./item";
+import { getContainedBy } from "./container";
 
 export class FoundryEntity extends Serializer {
     static scope = "foundry"
@@ -131,7 +131,7 @@ export class FoundryEntity extends Serializer {
         skillDefault.name = data.name;
 
         if (skillDefault.getClass() instanceof SkillDefault) {
-
+            
         }
     }
     static saveSkillDefault(skillDefault: SkillDefault<any>) {
@@ -166,7 +166,7 @@ export class FoundryEntity extends Serializer {
 
         getProperty(data, "data.weapons")?.forEach((weapon: any) => {
             let tWeapon = skill.addWeapon(weapon.type);
-            tWeapon.load(weapon);
+            tWeapon.load(weapon, entity);
         });
 
         if (getProperty(data, "data.type")?.includes("_container")) {
@@ -205,7 +205,7 @@ export class FoundryEntity extends Serializer {
 
         getProperty(data, "data.weapons")?.forEach((weapon: any) => {
             let tWeapon = technique.addWeapon(weapon.type);
-            tWeapon.load(weapon);
+            tWeapon.load(weapon, entity);
         });
     }
     saveTechnique(technique: Technique) {
@@ -238,7 +238,7 @@ export class FoundryEntity extends Serializer {
 
         getProperty(data, "data.weapons")?.forEach((weapon: any) => {
             let tWeapon = spell.addWeapon(weapon.type);
-            tWeapon.load(weapon);
+            tWeapon.load(weapon, entity);
         });
 
         if (getProperty(data, "data.type")?.includes("_container")) {
@@ -268,11 +268,6 @@ export class FoundryEntity extends Serializer {
     }
     mapEquipment(equipment: Equipment, entity?: _Item) {
         try {
-            if (!entity.GURPSUpdater) {
-                entity.GURPSUpdater = equipment.subscribe((store: any) => {
-                    console.log(store);
-                });
-            }
             const data = entity.data;
 
             equipment.foundryID = entity.id
@@ -295,14 +290,20 @@ export class FoundryEntity extends Serializer {
             equipment.reference = getProperty(data, "data.reference");
             // equipment.containedWeightReduction = isArray(getProperty(data, "data.features"))?.find((feature: json) => feature.type === "contained_weight_reduction")?.reduction ?? null;
 
-            getProperty(data, "data.weapons")?.forEach((weapon: any, i: number, list: any[]) => {
+            getProperty(data, "data.weapons")?.forEach((weapon: any) => {
                 let tWeapon = equipment.addWeapon(weapon.type);
-                tWeapon.load(weapon);
+                tWeapon.load(weapon, entity);
             });
 
             getProperty(data, "data.features")?.forEach((feature: json) => {
                 Feature.loadFeature<Equipment>(equipment, feature.type)?.load(feature)
             });
+
+            if (!entity.GURPSUpdater) {
+                entity.GURPSUpdater = equipment.subscribe(async (item: Equipment) => {
+                    //let update = await entity.update({ data: item.save() }, {});
+                });
+            }
 
             if (getProperty(data, "data.type")?.includes("_container") || entity.getFlag("GURPS", "children")?.length > 0) {
                 const children = entity.getFlag("GURPS", "children")?.map((itemID: string) => entity?.actor?.getOwnedItem(itemID))?.filter(item => Boolean(item)) as Item[]
@@ -468,9 +469,9 @@ export class FoundryEntity extends Serializer {
     saveModifier() {
 
     }
-    mapWeapon(weapon: (RangedWeapon | MeleeWeapon), data: any) {
+    mapWeapon(weapon: (RangedWeapon | MeleeWeapon), data: any, owner: Item) {
         weapon.foundryID = data._id;
-        weapon.skillMod = data.weapon_skill_mod;
+        weapon.attackBonus = +data.weapon_skill_mod || 0;
 
         weapon.strength = getProperty(data, "strength_requirement")
         weapon.usage = getProperty(data, "usage");
@@ -495,6 +496,10 @@ export class FoundryEntity extends Serializer {
         getProperty(data, "defaults")?.forEach(weaponDefault => {
             let proxy = weapon.addDefault();
             FoundryEntity.mapSkillDefault(proxy, weaponDefault);
+        });
+
+        weapon.subscribe((weapon) => {
+            //owner.update({ "data.weapons": [] }, {})
         });
 
         return weapon
@@ -565,10 +570,10 @@ export class FoundryEntity extends Serializer {
             getProperty(data, "data.attributes.hit_points")
         );
 
-        const items = actor.ownedItemsByType("item").filter(item => !item.getContainedBy() && item.getProperty("data.location") !== "other");
+        const items = actor.ownedItemsByType("item").filter(item => !getContainedBy(item) && item.getProperty("data.location") !== "other");
         character.equipmentList.load(items);
 
-        const otherItems = actor.ownedItemsByType("item").filter(item => !item.getContainedBy() && item.getProperty("data.location") === "other");
+        const otherItems = actor.ownedItemsByType("item").filter(item => !getContainedBy(item) && item.getProperty("data.location") === "other");
         character.otherEquipmentList.load(otherItems);
 
         const skills = actor.ownedItemsByType("skill");

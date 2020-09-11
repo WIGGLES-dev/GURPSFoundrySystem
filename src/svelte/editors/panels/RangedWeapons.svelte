@@ -33,7 +33,6 @@
 </script>
 
 <style>
-
 </style>
 
 <List
@@ -41,7 +40,6 @@
   on:addlistitem={(e) => {
     $entity.addWeapon({ type: 'ranged_weapon' });
   }}>
-
   <th slot="header">type</th>
   <th slot="header">usage</th>
   <th slot="header">damage</th>
@@ -49,7 +47,7 @@
   {#each $entity.getWeapons().ranged as weapon, i (weapon._id)}
     <!-- svelte-ignore missing-declaration -->
     <Row
-      config={{ highlightHover: false, deleteButton: false, focusable: false }}
+      config={{ highlightHover: false, focusable: false }}
       on:delete={(e) => {
         $entity.removeByPath('data.weapons', weapon._id);
       }}

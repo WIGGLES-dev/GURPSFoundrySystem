@@ -10,12 +10,12 @@
   import Encumbrance from "./Encumbrance";
   import Totals from "./Totals";
   import Armor from "./Armor";
+  import Attributes from "./Attributes";
   import Pools from "./Pools";
   import Biography from "./Biography";
   import CharacterCombat from "./CharacterCombat";
 
-  import { RichTextEditor, Input, FilePicker } from "./form/form";
-  import { Signature } from "g4elogic";
+  import { RichTextEditor, Input, FilePicker, Textarea } from "./form/form";
 
   export let entity = null;
   const GURPS = $entity._GURPS;
@@ -30,14 +30,23 @@
   .flex {
     display: flex;
   }
-
-  .attributes :global(.GURPS-label input) {
-    max-width: 50px;
-  }
-
   .column {
     display: flex;
     flex-direction: column;
+  }
+  .general {
+    position: relative;
+    height: 100%;
+  }
+  .general-page {
+    margin-left: 75px;
+  }
+  .attribute-sidebar {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
   }
 </style>
 
@@ -57,120 +66,27 @@
     <Tab index={7}><i class="fas fa-cogs" /></Tab>
   </TabList>
   <TabPanel>
-    <div class="attributes flex">
-      <div class="column">
-        <Input
-          mod={$GURPS.getAttribute(Signature.ST).getMod()}
-          path="data.attributes.strength"
-          min="0"
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
-          </span>
-        </Input>
-        <Input
-          mod={$GURPS.getAttribute(Signature.DX).getMod()}
-          path="data.attributes.dexterity"
-          min="0"
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('DX').pointsSpent()}] DX:
-          </span>
-        </Input>
-        <Input
-          mod={$GURPS.getAttribute(Signature.IQ).getMod()}
-          path="data.attributes.intelligence"
-          min="0"
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:
-          </span>
-        </Input>
-        <Input
-          mod={$GURPS.getAttribute(Signature.HT).getMod()}
-          path="data.attributes.health"
-          min="0"
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
-          </span>
-        </Input>
-        <Input
-          path="data.attributes.move"
-          type="number"
-          basedOn={$GURPS
-            .getAttribute('Move')
-            .calculateLevel() - $entity.getProperty('data.attributes.move')}>
-          <span slot="label-text">
-            [{$GURPS.getAttribute('Move').pointsSpent()}] Move:
-          </span>
-        </Input>
-        <Input
-          path="data.attributes.speed"
-          step="0.25"
-          min={0}
-          basedOn={$GURPS
-            .getAttribute('Speed')
-            .calculateLevel() - $entity.getProperty('data.attributes.speed')}
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:
-          </span>
-        </Input>
+    <div class="general">
+      <div class="attribute-sidebar">
+        <Attributes />
       </div>
-      <div class="column">
-        <Input
-          let:value
-          path="data.attributes.will"
-          basedOn={$entity.getProperty('data.attributes.intelligence')}
-          min={0}
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('Will').pointsSpent()}] Will:
-          </span>
-        </Input>
-        <Input
-          path="data.attributes.perception"
-          min={0}
-          basedOn={$entity.getProperty('data.attributes.intelligence')}
-          type="number">
-          <span slot="label-text">
-            [{$GURPS.getAttribute('Per').pointsSpent()}] Per:
-          </span>
-        </Input>
-
-        <div class="flex">
-          <Input
-            path="data.attributes.hit_points"
-            min={0}
-            basedOn={$entity.getProperty('data.attributes.strength')}
-            type="number">
-            <span slot="label-text">
-              [{$GURPS.getAttribute('HP').pointsSpent()}] HP:
-            </span>
-          </Input>
+      <div class="general-page">
+        <div class="flex" style="background-color: rgba(0, 0, 0, 0.05);">
+          <div class="flex-col" />
+          <div style="flex-grow: 1; padding: 0px 5px 0px 5px;">
+            <Encumbrance />
+            <Pools />
+          </div>
+          <div class="flex-col">
+            <Totals />
+          </div>
         </div>
-
-        <div class="flex">
-          <Input
-            path="data.attributes.fatigue_points"
-            min={0}
-            basedOn={$entity.getProperty('data.attributes.health')}
-            type="number">
-            <span slot="label-text">
-              [{$GURPS.getAttribute('FP').pointsSpent()}] FP:
-            </span>
-          </Input>
+        <div style="background-color: rgba(0, 0, 0, 0.05);">
+          <Textarea path="data.notes" label="Notes" />
         </div>
+        
       </div>
-      <Totals />
-      <Pools />
     </div>
-
-    <div style="max-width: 50%;">
-      <Encumbrance />
-    </div>
-    <RichTextEditor path="data.notes" title="Notes" />
   </TabPanel>
   <TabPanel>
     <TraitList />

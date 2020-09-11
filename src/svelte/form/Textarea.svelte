@@ -18,7 +18,10 @@
 </script>
 
 <style>
-
+  label {
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 
 <label class="GURPS-label" for={name}>

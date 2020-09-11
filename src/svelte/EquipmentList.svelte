@@ -1,13 +1,17 @@
 <script>
-  import { getContext } from "svelte";
+  import { getContext, onMount } from "svelte";
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
   export let location = "carried";
 
   import Input from "./form/Input";
   import { fixed6 } from "../helpers.ts";
-
+  import { fixIndexes } from "../container.ts";
   import { List, Row } from "./list/list";
+
+  onMount(() => {
+    fixIndexes($entity, ["item"]);
+  });
 
   async function toggleItemOpen(id) {
     let ownedItem = $entity.getOwnedItem(id);
@@ -95,7 +99,7 @@
   <th slot="header">Total Weight</th>
   <th slot="header">Total $</th>
   <th slot="header">Ref</th>
-  {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as item, i (item.foundryID)}
+  {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}
     <Row
       let:item
       let:depth
@@ -103,15 +107,15 @@
       let:ownedItem
       let:hovered
       let:open
-      id={item.foundryID}
+      id={equipment.foundryID}
       on:delete={async (e) => {
-        await $entity.getOwnedItem(e.detail.id).delete();
+        await e.detail.entity.delete();
       }}
       {i}
       draggable={true}
       colspan={10}
-      children={Array.from(item.children)}
-      container={item.canContainChildren}>
+      children={Array.from(equipment.children)}
+      container={equipment.canContainChildren}>
       <td
         on:dblclick={(e) => {
           $entity

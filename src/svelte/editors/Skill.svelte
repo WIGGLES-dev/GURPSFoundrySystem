@@ -41,7 +41,9 @@
       label="specialization"
       type="text" />
     <Input {entity} path="data.tech_level" label="Tech Level" type="text" />
-    <Input {entity} path="data.points" label="points" type="number" min="0" />
+    {#if $entity.actor}
+      <Input {entity} path="data.points" label="points" type="number" min="0" />
+    {/if}
     <Select {entity} path="data.signature" label="Signature">
       <Option value="ST">ST</Option>
       <Option value="IQ">IQ</Option>

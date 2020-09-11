@@ -1,6 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { TABS } from "./Tabs.svelte";
+  export let component = null;
   const panel = {};
   const { registerPanel, selectedPanel } = getContext(TABS);
   registerPanel(panel);
@@ -8,7 +9,7 @@
 
 <style>
   .panel {
-    flex-grow: 1;
+    height: 100%;
     padding-top: 10px;
   }
   .hide {
@@ -17,5 +18,9 @@
 </style>
 
 <div class="panel" class:hide={!($selectedPanel === panel)}>
-  <slot />
+  {#if component}
+    <svelte:component this={component} />
+  {:else}
+    <slot />
+  {/if}
 </div>

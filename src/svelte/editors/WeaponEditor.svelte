@@ -23,7 +23,6 @@
 </script>
 
 <style>
-
 </style>
 
 <Dialog on:close title="Weapon Editor">

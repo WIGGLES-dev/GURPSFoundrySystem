@@ -14,6 +14,7 @@
   let target;
   let value = $entity.getProperty(path) || "";
 
+  let content;
   const enrichHTML = (value) => {
     content = TextEditor.enrichHTML(value, {
       secrets: true,
@@ -23,8 +24,7 @@
     });
     return content;
   };
-
-  let content = enrichHTML(value);
+  content = enrichHTML(value);
 
   export let editing = false;
 
@@ -91,8 +91,7 @@
       on:click={async (e) => {
         editing = false;
       }}>
-      <i class="fas fa-feather-alt" />
-      View As Text
+      <i class="fas fa-feather-alt" /> View As Text
     </button>
   {/if}
 </div>

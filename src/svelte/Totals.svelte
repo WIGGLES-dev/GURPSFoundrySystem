@@ -12,11 +12,13 @@
 <style>
   .totals {
     background-color: rgba(0, 0, 0, 0.05);
-    gap: 5px;
-    margin-left: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
+  }
+
+  .totals :global(.GURPS-label input) {
+    max-width: 50px;
   }
 
   .totals :global(.GURPS-label) {
@@ -25,7 +27,6 @@
 
   .total-points :global(input.total-points-input) {
     color: white;
-    max-width: 100px !important;
   }
 
   .total-points .point-total-label {
@@ -34,31 +35,28 @@
 
   .total {
     text-align: right;
+    padding: 3px 0 3px 3px;
   }
   .span-2 {
     grid-column: 1 / span 2;
   }
 
   .total-points {
-    background-color: rgb(122, 121, 113);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px;
-    border-radius: 3px;
     text-align: center;
   }
   .divider {
     grid-column: 1 / span 2;
-    border-bottom: 1px solid rgb(122, 121, 113);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
-  .thrust {
-    color: white;
-    background-color: rgb(122, 121, 113);
-    text-align: center;
-  }
+  .thrust,
   .swing {
     color: white;
-    background-color: rgb(122, 121, 113);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    grid-column: 1 / span 2;
   }
 </style>
 
@@ -76,7 +74,11 @@
 
   <div>Unspent Points</div>
   <div class="total">
-    {$entity.getProperty('data.point_total') - totals.total}
+    <input
+      style="width: 50px;"
+      type="number"
+      disabled
+      value={$entity.getProperty('data.point_total') - totals.total} />
   </div>
 
   <div class="divider" />
@@ -102,11 +104,15 @@
   <div class="">Spells</div>
   <div class="total">{totals.spells}</div>
 
-  <div class="thrust">Thrust</div>
-  <div class="thrust total">{$GURPS.getThrustDamage()}</div>
+  <div class="thrust total">
+    <span style="float: left;">Thrust:</span>
+    {$GURPS.getThrustDamage()}
+  </div>
 
-  <div class="swing">Swing</div>
-  <div class="swing total">{$GURPS.getSwingDamage()}</div>
+  <div class="swing total">
+    <span style="float: left;">Swing:</span>
+    {$GURPS.getSwingDamage()}
+  </div>
 
   <div class="hp">Hit Points</div>
   <div class="hp total">

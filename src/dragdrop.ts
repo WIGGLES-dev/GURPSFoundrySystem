@@ -1,6 +1,8 @@
 import { getEntity } from "./helpers";
 import { _Item } from "./item";
 
+import { setContainedBy, getIndex, getContainedBy, fixIndexes } from "./container";
+
 export class GURPSDragDrop {
     static dropOnHotbar() {
         const dragSelector = "";
@@ -57,15 +59,18 @@ export class GURPSDragDrop {
         */
     private static async handleDropOnList(e: DragEvent, type: string) {
         const { origin, target, targetI } = getDragContext(e, "item");
-        // if (origin.getContainedBy() && !target.getContainedBy()) {
-        //     alert("this is what is happening");
-        //     await origin.removeReferenceFromParent();
-        //     return
-        // }
+
+        const tContainedBy = getContainedBy(target);
+
         if (/_container/.test(target.getProperty("data.type"))) {
             if (!/equipment/.test(target.getProperty("data.type"))) return
-            origin.setContainedBy(target);
-            origin.moveToIndex(origin.getIndex() - 1, targetI, type.split(" "))
+            await setContainedBy(origin, target);
+            await origin.moveToIndex(origin.getIndex() - 1, targetI, type.split(" "));
+            return
+        }
+        if (tContainedBy) {
+            await setContainedBy(origin, tContainedBy);
+            await origin.moveToIndex(origin.getIndex() - 1, targetI, type.split(" "));
             return
         }
         if (origin.actor && target.actor && origin.actor !== target.actor) {
@@ -97,12 +102,13 @@ export function setDragData(e: DragEvent) {
 
 export function getDragContext(e: DragEvent, type: string) {
     const tr = (e.target as HTMLElement).closest("tr");
-    const target = tr?.dataset ?? null
+    const target = tr?.dataset ?? null;
     const origin = JSON.parse(e.dataTransfer.getData("text/plain"));
 
     return {
         origin: getEntity(origin?.id, type) as _Item,
+        get originI() { return getIndex(this.origin) },
         target: getEntity(target?.entityId, type) as _Item,
-        targetI: tr.rowIndex
+        targetI: tr?.rowIndex ?? null
     }
 }

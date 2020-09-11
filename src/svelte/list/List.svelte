@@ -44,7 +44,7 @@
   export let type = null;
   export let title = "";
   export let addListItemMenu = () => [];
-  export let config = { dragDrop: true };
+  export let config = { dragDrop: true, addListItemButton: true };
 
   async function deleteAllFocused() {
     let focusedIds = $focused.map(
@@ -141,11 +141,16 @@
 
 <table
   bind:this={tableHTMLElement}
-  on:drop={(e) => {}}
-  on:dragleave={() => dragover.set(null)}>
+  on:dragleave={() => {
+    dragover.set(null);
+    dispatch('dragleave');
+  }}>
   <caption>{title}</caption>
   <slot name="colgroups" />
-  <thead>
+  <thead
+    on:drop={(e) => {
+      dispatch('drop');
+    }}>
     <tr>
       <th>
         <!-- <i
@@ -156,13 +161,15 @@
       </th>
       <slot name="header" />
       <th>
-        <i
-          class="fas fa-plus-square"
-          style="margin-left: auto;"
-          use:createContextMenu={{ menuItems: addListItemMenu, event: 'click' }}
-          on:click={(e) => {
-            dispatch('addlistitem');
-          }} />
+        {#if config.addListItemButton}
+          <i
+            class="fas fa-plus-square"
+            style="margin-left: auto;"
+            use:createContextMenu={{ menuItems: addListItemMenu, event: 'click' }}
+            on:click={(e) => {
+              dispatch('addlistitem');
+            }} />
+        {/if}
       </th>
     </tr>
   </thead>

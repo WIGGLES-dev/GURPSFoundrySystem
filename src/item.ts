@@ -3,7 +3,7 @@ import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
 import ColorPicker from "./svelte/ColorPicker.svelte";
 
 import { _Actor } from "./sheet";
-import { ItemContainer } from "./container";
+import { getContainedBy, setContainedBy } from "./container";
 import { injectHelpers, svelte, arrayMove } from "./helpers";
 import { Writable, writable } from "svelte/store";
 import { _ChatMessage } from "./chat";
@@ -34,7 +34,7 @@ export class _ItemSheet extends ItemSheet {
 }
 
 @injectHelpers
-export class _Item extends ItemContainer {
+export class _Item extends Item {
     getProperty: (path: string) => any
     GURPSUpdater: (store: any) => void
 
@@ -219,7 +219,7 @@ export class _Item extends ItemContainer {
      * @param index 
      * @param type 
      */
-    async moveToIndex(from: number, to: number, types: string[], { container = false } = {}) {
+    async moveToIndex(from: number, to: number, types: string[]) {
         let array = this.actor.ownedItemsByType(...types).sort((a, b) => a.getIndex() - b.getIndex());
         if (typeof from === "number") {
             arrayMove(array, from, to);
@@ -261,6 +261,27 @@ export class _Item extends ItemContainer {
                         condition: () => !isLabel,
                         callback() {
                             entity.sheet.render(true);
+                        }
+                    },
+                    {
+                        name: `Move to ${(entity.getProperty("data.location") || "carried") === "carried" ? "Other" : "Carried"} Equipment`,
+                        icon: "",
+                        condition: entity.data.type === "item",
+                        async callback() {
+                            const containedBy = getContainedBy(entity);
+                            const location = entity.getProperty("data.location");
+
+                            if (containedBy && location) {
+                                console.log(containedBy, location);
+                                await setContainedBy(entity, null);
+                            }
+                            if (location === "carried") {
+                                entity.update({ "data.location": "other" }, {});
+                            } else if (location === "other") {
+                                entity.update({ "data.location": "carried" }, {});
+                            } else {
+                                entity.update({ "data.location": "carried" }, {})
+                            }
                         }
                     },
                     {

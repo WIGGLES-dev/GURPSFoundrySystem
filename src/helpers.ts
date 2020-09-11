@@ -1,5 +1,7 @@
 import { createPopper } from "@popperjs/core";
 import jsonQuery from "json-query";
+import { deleteDeep, removeReferenceFromParent } from "./container";
+import { types } from "util";
 
 export function fixed6(number: string | number) {
     let ifString;
@@ -17,12 +19,30 @@ export function fixed6(number: string | number) {
         return ifNumber
     }
 }
+export function formatModList(mods: number[]) {
+    return mods.reduce((prev, cur, i) => {
+        if (cur > 0) {
+            prev += `+${cur}`
+        } else if (cur < 0) {
+            prev += cur
+        }
+        return prev
+    }, "")
+}
+export function formatSkill() { }
+export function formatTrait() { }
+export function formatEquipment() { }
+
+export function ownedItemsByType(actor: Actor, ...types: string[]): Item[] {
+    return actor.items.filter((item: Item) => types.includes(item.data.type));
+}
 
 /**
  * Sorts a list
  * @param list a list of object that must have a listIndex property
  */
 export function indexSort(list: any[], property = "listIndex") {
+
     return list.sort((a, b) => a[property] - b[property])
 }
 
@@ -172,10 +192,7 @@ export function coerce(value: any): any {
 }
 
 export function getValue(entity, path, array: any = false) {
-    // console.log(duplicate(entity.data.data), array, path);
-
     let data;
-
     if (/\[(.*?)\]|:/.test(path)) {
         data = jsonQuery(path, entity.data).value
     } else {
@@ -387,14 +404,16 @@ export function svelte(app: any) {
 
 export function injectHelpers(constructor: any): any {
     return class extends constructor {
+
         constructor(...args: any[]) {
+            //@ts-ignore
             super(...args);
         }
 
         async delete(options: any) {
-            if (this.entity === "Item") {
-                await this.removeReferenceFromParent();
-                this._deleteDeep(options);
+            if (this.entity === "Item" && this instanceof Item) {
+                await removeReferenceFromParent(this);
+                deleteDeep(this, options);
             }
             let deleted = await super.delete(options);
             return deleted

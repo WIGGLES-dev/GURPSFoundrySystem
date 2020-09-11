@@ -8,7 +8,6 @@
 </script>
 
 <style>
-
 </style>
 
 <List
@@ -34,21 +33,19 @@
       let:hovered
       let:ownedItem
       on:delete={(e) => {
-        $entity.getOwnedItem(e.detail.id).delete();
+        e.detail.entity.delete();
       }}
       colspan="6"
       {i}
       draggable={true}
       id={technique.foundryID}
-      on:middleclick={(e) => {
-        $entity.rollSkill(technique);
-      }}>
+      on:middleclick={(e) => {}}>
       <td class="main-list-col">
         <span
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(technique.name, technique.calculateLevel(), '', 'none');
+            $entity.rollSkill(technique.name, technique.calculateLevel(), [], 'none');
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
@@ -129,7 +126,7 @@
       let:hovered
       let:ownedItem
       on:delete={(e) => {
-        $entity.getOwnedItem(e.detail.id).delete();
+        e.detail.entity.delete();
       }}
       colspan="6"
       {i}
@@ -140,7 +137,7 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(skill.name, skill.calculateLevel(), '', 'none');
+            $entity.rollSkill(skill.name, skill.calculateLevel(), [], 'none');
             e.stopImmediatePropagation();
             e.preventDefault();
           }}

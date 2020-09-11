@@ -60,12 +60,13 @@
 </script>
 
 <style>
-  .flex-column {
+  div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 </style>
 
-<div class="flex-column">
+<div>
   <slot />
 </div>

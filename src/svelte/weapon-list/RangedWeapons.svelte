@@ -23,7 +23,7 @@
   }
 </style>
 
-<List>
+<List config={{ addListItemButton: false }}>
   <th slot="header">Ranged Weapons</th>
   <th slot="header">Usage</th>
   <th slot="header">Lvl</th>

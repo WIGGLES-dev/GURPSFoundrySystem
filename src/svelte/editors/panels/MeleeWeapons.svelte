@@ -24,7 +24,6 @@
 </script>
 
 <style>
-
 </style>
 
 <List
@@ -38,7 +37,7 @@
   {#each $entity.getWeapons().melee as weapon, i (weapon._id)}
     <!-- svelte-ignore missing-declaration -->
     <Row
-      config={{ highlightHover: false, deleteButton: false, focusable: false }}
+      config={{ highlightHover: false, focusable: false }}
       on:delete={(e) => {
         $entity.removeByPath('data.weapons', weapon._id);
       }}
