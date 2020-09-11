@@ -11,7 +11,15 @@ import { FeatureType, Signature } from "g4elogic";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
-    item: _Item
+    private _item: _Item;
+
+    public get item(): _Item {
+        return this._item;
+    }
+
+    public set item(value: _Item) {
+        this._item = value;
+    }
     app: Editor
 
     static get defaultOptions() {
@@ -39,8 +47,20 @@ export class _Item extends Item {
     GURPSUpdater: (store: any) => void
 
     _entity: Writable<Entity>
-    sheet: _ItemSheet
-    actor: _Actor
+    private _sheet: _ItemSheet;
+    public get sheet(): _ItemSheet {
+        return this._sheet;
+    }
+    public set sheet(value: _ItemSheet) {
+        this._sheet = value;
+    }
+    private _actor: _Actor;
+    public get actor(): _Actor {
+        return this._actor;
+    }
+    public set actor(value: _Actor) {
+        this._actor = value;
+    }
 
     constructor(data: any, options: any) {
         super(data, options);

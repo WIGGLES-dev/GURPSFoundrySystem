@@ -33,15 +33,17 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
   }
   .day {
     width: 100%;
-    height: 100%;
+    height: 40px;
     border: 1px solid black;
   }
 </style>
 
 <div class="calendar">
+  <div class="current-month">???</div>
   <div class="weekday-list">
     {#each DTC.weekDays as day, i (day)}
       <div class="weekday">{day}</div>

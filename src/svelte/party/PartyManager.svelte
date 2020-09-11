@@ -1,7 +1,9 @@
 <script>
   import { getContext, setContext } from "svelte";
   import { Tabs, TabList, Tab, TabPanel } from "../tabs/tabs";
+  
   import Calendar from "./Calendar";
+  import Clocks from "./Clocks";
 
   export let entity = null;
 
@@ -72,5 +74,6 @@
   </TabPanel>
   <TabPanel>
     <Calendar />
+    <Clocks />
   </TabPanel>
 </Tabs>

@@ -2,7 +2,7 @@
     "name": "GURPS",
     "title": "GURPS 4th Edition",
     "description": "GURPS 4e system.",
-    "version": "1.2",
+    "version": "1.2.1",
     "templateVersion": 2,
     "author": "Ian Bell",
     "scripts": [],
@@ -10,36 +10,7 @@
         "main.js"
     ],
     "styles": [],
-    "packs": [
-        {
-            "name": "items",
-            "label": "GURPS4e Items",
-            "system": "GURPS",
-            "path": "packs/items.db",
-            "entity": "Item"
-        },
-        {
-            "name": "skills",
-            "label": "GURPS4e Skills",
-            "system": "GURPS",
-            "path": "packs/skills.db",
-            "entity": "Item"
-        },
-        {
-            "name": "traits",
-            "label": "GURPS4e Traits",
-            "system": "GURPS",
-            "path": "packs/traits.db",
-            "entity": "Item"
-        },
-        {
-            "name": "spells",
-            "label": "GURPS4e Spells",
-            "system": "GURPS",
-            "path": "packs/spells.db",
-            "entity": "Item"
-        }
-    ],
+    "packs": [],
     "languages": [
         {
             "lang": "en",
@@ -54,6 +25,6 @@
     "primaryTokenAttribute": "hit_points",
     "secondaryTokenAttribute": "fatigue_points",
     "url": "https://github.com/WIGGLES-dev/GURPSFoundrySystem",
-    "manifest": null,
-    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/releases/download/1.2/GURPS.zip"
+    "manifest": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/latest/download/system.json",
+    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/latest/download/GURPS.zip"
 }

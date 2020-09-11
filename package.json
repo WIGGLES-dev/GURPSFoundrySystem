@@ -1,21 +1,24 @@
 {
   "name": "gurps_foundry-vtt",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A gurps system implementation for Foundry VTT",
   "main": "src/index.ts",
   "scripts": {
-    "build": "webpack --config webpack.config.ts",
-    "watch": "webpack --config webpack.config.ts --watch"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "semantic-release": "semantic-release"
   },
   "author": "Ian Bell",
   "license": "ISC",
   "devDependencies": {
-    "foundry-pc-types": "gitlab:foundry-projects/foundry-pc/foundry-pc-types"
+    "foundry-pc-types": "gitlab:foundry-projects/foundry-pc/foundry-pc-types",
+    "semantic-release": "^17.1.1"
   },
   "dependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@popperjs/core": "^2.4.4",
+    "@semantic-release/exec": "github:semantic-release/exec",
     "@tsconfig/svelte": "^1.0.10",
     "@types/copy-webpack-plugin": "^6.0.0",
     "@types/json-query": "^2.2.0",
@@ -37,6 +40,7 @@
     "npm": "^6.14.8",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^10.0.2",
+    "semantic-release": "^17.1.1",
     "style-loader": "^1.2.1",
     "svelte": "^3.25.0",
     "svelte-check": "^1.0.39",
@@ -47,5 +51,9 @@
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WIGGLES-dev/GURPSFoundrySystem.git"
   }
 }

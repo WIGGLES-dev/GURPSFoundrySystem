@@ -1,19 +1,16 @@
 import * as path from "path";
 import webpack from "webpack";
-import * as utils from "./webpack_utils";
+import * as utils from "./system-builder";
 import CopyPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import sveltePreprocess from "svelte-preprocess";
 
-const choose = "development"
-
-type production = "development" | "production" | "none"
-const mode = process.env.NODE_ENV as production || choose;
+type mode = "development" | "production" | "none"
+const mode = process.argv[process.argv.indexOf("--mode") >= 0 ? process.argv.indexOf("--mode") + 1 : null] as mode || "development";
 const prod = mode === 'production';
 
-let GURPS = null;
-// GURPS = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
-// GURPS = "D:\\FoundryServer\\Data\\Data\\systems\\GURPS"
+let output;
+output = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
 
 const config: webpack.Configuration = {
     entry: {
@@ -26,7 +23,7 @@ const config: webpack.Configuration = {
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
     output: {
-        path: GURPS || __dirname + '/GURPS',
+        path: output || __dirname + '/dist',
         filename: 'main.js',
     },
     module: {

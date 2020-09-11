@@ -12,7 +12,13 @@ import { getDragContext } from "./dragdrop";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
-    actor: _Actor
+    private _actor: _Actor;
+    public get actor(): _Actor {
+        return this._actor;
+    }
+    public set actor(value: _Actor) {
+        this._actor = value;
+    }
     app: _Sheet
 
     static get defaultOptions() {
@@ -106,10 +112,16 @@ export class _ActorSheet extends ActorSheet {
 export class _Actor extends Actor {
     getProperty: (path: string) => any
 
-    readonly _entity: Writable<Entity>
-    readonly _GURPS: Writable<GURPSCharacter>
-    readonly GURPS: GURPSCharacter
-    readonly sheet: _ActorSheet
+    _entity: Writable<Entity>
+    _GURPS: Writable<GURPSCharacter>
+    GURPS: GURPSCharacter
+    private _sheet: _ActorSheet;
+    public get sheet(): _ActorSheet {
+        return this._sheet;
+    }
+    public set sheet(value: _ActorSheet) {
+        this._sheet = value;
+    }
 
     constructor(data: any, options: any) {
         super(data, options);
