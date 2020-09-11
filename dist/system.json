@@ -25,6 +25,6 @@
     "primaryTokenAttribute": "hit_points",
     "secondaryTokenAttribute": "fatigue_points",
     "url": "https://github.com/WIGGLES-dev/GURPSFoundrySystem",
-    "manifest": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/releases/latest/download/system.json",
-    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/releases/latest/download/GURPS.zip"
+    "manifest": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/latest/download/system.json",
+    "download": "https://github.com/WIGGLES-dev/GURPSFoundrySystem/latest/download/GURPS.zip"
 }
