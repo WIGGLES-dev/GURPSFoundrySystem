@@ -10,6 +10,7 @@ const mode = process.argv[process.argv.indexOf("--mode") >= 0 ? process.argv.ind
 const prod = mode === 'production';
 
 let output
+// output = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
 
 const config: webpack.Configuration = {
     entry: {
