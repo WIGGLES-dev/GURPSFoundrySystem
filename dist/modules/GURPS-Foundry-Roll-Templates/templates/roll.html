@@ -1,0 +1,19 @@
+<div class="dice-roll">
+    {{#if flavor}}
+    <div class="dice-flavor">{{{flavor}}}</div>
+    {{/if}}
+    <div class="dice-result">
+        <div class="dice-formula">
+            <div class="mouseover-anchor">
+                {{{formula}}}
+                {{#if mouseover}}
+                <span class="mouseover-container">
+                    <span class="mouseover">{{{mouseover}}}</span>
+                </span>
+                {{/if}}
+            </div>
+        </div>
+        {{{tooltip}}}
+        <h4 class="dice-total">{{{total}}}</h4>
+    </div>
+</div>

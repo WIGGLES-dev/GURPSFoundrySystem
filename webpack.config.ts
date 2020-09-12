@@ -79,6 +79,7 @@ const config: webpack.Configuration = {
         new CopyPlugin({
             patterns: [
                 { from: 'src/images' },
+                { from: "src/modules", to: "./modules" },
                 {
                     from: 'src/system.json',
                     transform(content, path) {

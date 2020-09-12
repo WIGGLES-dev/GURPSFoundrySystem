@@ -52,6 +52,10 @@ export class _Item extends Item {
     openPDFReference() {
         //@ts-ignore
         const api = ui.PDFoundry;
+        if (!api) {
+            ui.notifications.warn("You must install and configure the PDFoundry module in order to open PDFReferences");
+            return
+        }
         let ref = this.getProperty("data.reference");
         try {
             ref = /( )/.test(ref) ? ref.split(" ")[0] : ref;

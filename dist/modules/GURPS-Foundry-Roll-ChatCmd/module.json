@@ -1,0 +1,12 @@
+{
+    "name": "GURPS-Foundry-Roll-ChatCmd",
+    "title": "GURPS Foundry Roll Chat Commands",
+    "description": "Chat commands for performing GURPS dice rolls using the GURPS Foundry Roll Library. Requires the GURPS Foundry Roll Templates module to work.",
+    "version": "0.1.0",
+    "author": "Exxar",
+    "esmodules": ["./gurps-foundry-roll-chatcmd.bundle.js"],
+    "minimumCoreVersion": "0.6.0",
+    "url": "https://gitlab.com/gurps-foundry/roll-chat-commands",
+    "manifest": "https://gitlab.com/gurps-foundry/roll-chat-commands/-/jobs/artifacts/release/raw/system.json?job=build",
+    "download": "https://gitlab.com/gurps-foundry/roll-chat-commands/-/jobs/artifacts/release/raw/gfrollchatcmd.zip?job=build"
+}
