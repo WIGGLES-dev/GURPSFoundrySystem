@@ -8,17 +8,13 @@ import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessR
 import { injectHelpers, svelte, ownedItemsByType, formatModList } from "./helpers";
 import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
 import AttackDialog from "./svelte/AttackDialog.svelte";
+import ModifierPrompt from "./svelte/dialogs/ModifierPrompt.svelte";
 import { getDragContext } from "./dragdrop";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
-    private _actor: _Actor;
-    public get actor(): _Actor {
-        return this._actor;
-    }
-    public set actor(value: _Actor) {
-        this._actor = value;
-    }
+    //@ts-ignore
+    actor: _Actor;
     app: _Sheet
 
     static get defaultOptions() {
@@ -115,13 +111,7 @@ export class _Actor extends Actor {
     _entity: Writable<Entity>
     _GURPS: Writable<GURPSCharacter>
     GURPS: GURPSCharacter
-    private _sheet: _ActorSheet;
-    public get sheet(): _ActorSheet {
-        return this._sheet;
-    }
-    public set sheet(value: _ActorSheet) {
-        this._sheet = value;
-    }
+    _sheet: _ActorSheet;
 
     constructor(data: any, options: any) {
         super(data, options);
@@ -219,6 +209,10 @@ export class _Actor extends Actor {
         return ownedItemsByType(this, ...types) as _Item[];
     }
 
+    getWildWeapons() {
+        return this.ownedItemsByType("melee attack");
+    }
+
     getWeapons() {
         const entity = this
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
@@ -275,11 +269,8 @@ export class _Actor extends Actor {
         }
     }
 
-    rollSkill(trait: string, level: number, modifiers: number[] = [], modType = "none", data: any = {}) {
+    rollSkill(trait: string, level: number, modifiers: number[] = [], modType = "", data: any = {}) {
         switch (modType) {
-            case "none":
-                this.rollAndRender(trait, level, formatModList(modifiers));
-                break
             case "attack":
                 const modifierDialog = new AttackDialog({
                     target: document.body,
@@ -293,12 +284,24 @@ export class _Actor extends Actor {
                 });
                 break
             default:
+                const modifierPrompt = new ModifierPrompt({
+                    target: document.body,
+                });
+                modifierPrompt.$on("roll", (e) => {
+                    this.rollAndRender(trait, level, formatModList([e.detail]));
+                })
         }
     }
 
     private rollAndRender(trait: string, level: number, modifiers: string) {
         try {
-            let roll = new SuccessRoll({ level, trait, modifiers });
+            let roll;
+            try {
+                roll = new SuccessRoll({ level, trait, modifiers });
+            } catch (err) {
+                roll = new SuccessRoll({ level, trait, modifiers: null });
+                ui.notifications.warn("Your modifier is invalid");
+            }
             roll.roll();
             let renderer = new SuccessRollRenderer();
             renderer.render(roll).then((html) => {

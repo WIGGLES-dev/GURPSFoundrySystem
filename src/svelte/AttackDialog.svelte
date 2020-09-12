@@ -4,7 +4,6 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  export let type = null;
   export let weapon = null;
 
   let deceptiveAttacks = 0;

@@ -131,7 +131,7 @@ export class FoundryEntity extends Serializer {
         skillDefault.name = data.name;
 
         if (skillDefault.getClass() instanceof SkillDefault) {
-            
+
         }
     }
     static saveSkillDefault(skillDefault: SkillDefault<any>) {

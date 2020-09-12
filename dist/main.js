@@ -3009,7 +3009,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".attributes.svelte-8mvyn2{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 75px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-8mvyn2{border:1px solid black}.attribute.svelte-8mvyn2 .GURPS-label input{max-width:50px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDc1cHgpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGdhcDogMnB4O1xyXG4gIH1cclxuICAuYXR0cmlidXRlIHtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuICAuYXR0cmlidXRlIDpnbG9iYWwoLkdVUlBTLWxhYmVsIGlucHV0KSB7XHJcbiAgICBtYXgtd2lkdGg6IDUwcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBpbnRlbGxpZ2VuY2VcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLklRKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSVEnKS5wb2ludHNTcGVudCgpfV0gSVE6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBoZWFsdGhcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFQnKS5wb2ludHNTcGVudCgpfV0gSFQ6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnV2lsbCcpLnBvaW50c1NwZW50KCl9XSBXaWxsOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGNBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxjQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx3QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Attributes.svelte","webpack://src/svelte/Attributes.svelte.css"],"names":[],"mappings":"AAUE,0BAAa,YACE,CACb,qCAAsC,CACtC,qCAAsC,CACtC,oCAAqC,CACrC,OAAQ,CACT,yBACW,sBACa,CACxB,4CACuC,cACvB;ACpBnB,i2MAAi2M","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { RichTextEditor, Input, FilePicker } from \"./form/form\";\r\n  import { Signature } from \"g4elogic\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n</script>\r\n\r\n<style>\r\n  .attributes {\r\n    display: grid;\r\n    grid-template-rows: repeat(auto, 60px);\r\n    grid-template-columns: repeat(1, 75px);\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    gap: 2px;\r\n  }\r\n  .attribute {\r\n    border: 1px solid black;\r\n  }\r\n  .attribute :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n</style>\r\n\r\n<div class=\"attributes strength\">\r\n  <div class=\"attribute\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.ST).getMod()}\r\n      path=\"data.attributes.strength\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('ST').pointsSpent()}] ST:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute dexterity\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.DX).getMod()}\r\n      path=\"data.attributes.dexterity\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('DX').pointsSpent()}] DX:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute intelligence\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.IQ).getMod()}\r\n      path=\"data.attributes.intelligence\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute health\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.HT).getMod()}\r\n      path=\"data.attributes.health\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HT').pointsSpent()}] HT:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute move\">\r\n    <Input\r\n      path=\"data.attributes.move\"\r\n      type=\"number\"\r\n      basedOn={$GURPS\r\n        .getAttribute('Move')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.move')}>\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Move').pointsSpent()}] Move:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute speed\">\r\n    <Input\r\n      path=\"data.attributes.speed\"\r\n      step=\"0.25\"\r\n      min={0}\r\n      basedOn={$GURPS\r\n        .getAttribute('Speed')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.speed')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute will\">\r\n    <Input\r\n      let:value\r\n      path=\"data.attributes.will\"\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      min={0}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Will').pointsSpent()}] Will:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute perception\">\r\n    <Input\r\n      path=\"data.attributes.perception\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Per').pointsSpent()}] Per:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute hitpoints\">\r\n    <Input\r\n      path=\"data.attributes.hit_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.strength')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HP').pointsSpent()}] HP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute fatigue\">\r\n    <Input\r\n      path=\"data.attributes.fatigue_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.health')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('FP').pointsSpent()}] FP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".attributes.svelte-8mvyn2{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 75px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-8mvyn2{border:1px solid black}.attribute.svelte-8mvyn2 .GURPS-label input{max-width:50px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDc1cHgpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGdhcDogMnB4O1xyXG4gIH1cclxuICAuYXR0cmlidXRlIHtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuICAuYXR0cmlidXRlIDpnbG9iYWwoLkdVUlBTLWxhYmVsIGlucHV0KSB7XHJcbiAgICBtYXgtd2lkdGg6IDUwcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBpbnRlbGxpZ2VuY2VcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLklRKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSVEnKS5wb2ludHNTcGVudCgpfV0gSVE6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBoZWFsdGhcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFQnKS5wb2ludHNTcGVudCgpfV0gSFQ6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnV2lsbCcpLnBvaW50c1NwZW50KCl9XSBXaWxsOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGNBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxjQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx3QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDEwMHB4KTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBnYXA6IDJweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCBpbnB1dCkge1xyXG4gICAgbWF4LXdpZHRoOiA3NXB4O1xyXG4gIH1cclxuICAucm9sbC1pY28ge1xyXG4gICAgcGFkZGluZy1sZWZ0OiAzcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdTdHJlbmd0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdEZXh0ZXJpdHknLCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaW50ZWxsaWdlbmNlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5JUSkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0lRJykucG9pbnRzU3BlbnQoKX1dIElROlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnSW50ZWxsaWdlbmNlJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCkpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhlYWx0aFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSFQpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aFwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdIVCcpLnBvaW50c1NwZW50KCl9XSBIVDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gJGVudGl0eS5yb2xsU2tpbGwoJ0hlYWx0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbCkucG9pbnRzU3BlbnQoKX1dIFdpbGw6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdXaWxsJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnUGVyY2VwdGlvbicsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlBlcilcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGVBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FDdkMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxlQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx5QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBQ0QsU0FBUyxlQUFDLENBQUMsQUFDVCxZQUFZLENBQUUsR0FBRyxBQUNuQixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Attributes.svelte","webpack://src/svelte/Attributes.svelte.css"],"names":[],"mappings":"AAUE,2BAAa,YACE,CACb,qCAAsC,CACtC,sCAAuC,CACvC,oCAAqC,CACrC,OAAQ,CACT,0BACW,sBACa,CACxB,6CACuC,cACvB,CAChB,yBACU,gBACQ;ACvBrB,y3QAAy3Q","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { RichTextEditor, Input, FilePicker } from \"./form/form\";\r\n  import { Signature } from \"g4elogic\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n</script>\r\n\r\n<style>\r\n  .attributes {\r\n    display: grid;\r\n    grid-template-rows: repeat(auto, 60px);\r\n    grid-template-columns: repeat(1, 100px);\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    gap: 2px;\r\n  }\r\n  .attribute {\r\n    border: 1px solid black;\r\n  }\r\n  .attribute :global(.GURPS-label input) {\r\n    max-width: 75px;\r\n  }\r\n  .roll-ico {\r\n    padding-left: 3px;\r\n  }\r\n</style>\r\n\r\n<div class=\"attributes strength\">\r\n  <div class=\"attribute\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.ST).getMod()}\r\n      path=\"data.attributes.strength\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('ST').pointsSpent()}] ST:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Strength', $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute dexterity\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.DX).getMod()}\r\n      path=\"data.attributes.dexterity\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('DX').pointsSpent()}] DX:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Dexterity', $GURPS\r\n              .getAttribute(Signature.DX)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute intelligence\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.IQ).getMod()}\r\n      path=\"data.attributes.intelligence\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Intelligence', $GURPS\r\n              .getAttribute(Signature.IQ)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute health\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.HT).getMod()}\r\n      path=\"data.attributes.health\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HT').pointsSpent()}] HT:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Health', $GURPS\r\n              .getAttribute(Signature.HT)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute move\">\r\n    <Input\r\n      path=\"data.attributes.move\"\r\n      type=\"number\"\r\n      basedOn={$GURPS\r\n        .getAttribute('Move')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.move')}>\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Move').pointsSpent()}] Move:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute speed\">\r\n    <Input\r\n      path=\"data.attributes.speed\"\r\n      step=\"0.25\"\r\n      min={0}\r\n      basedOn={$GURPS\r\n        .getAttribute('Speed')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.speed')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute will\">\r\n    <Input\r\n      let:value\r\n      path=\"data.attributes.will\"\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      min={0}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute(Signature.Will).pointsSpent()}] Will:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Will', $GURPS\r\n              .getAttribute(Signature.Will)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute perception\">\r\n    <Input\r\n      path=\"data.attributes.perception\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Per').pointsSpent()}] Per:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Perception', $GURPS\r\n              .getAttribute(Signature.Per)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute hitpoints\">\r\n    <Input\r\n      path=\"data.attributes.hit_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.strength')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HP').pointsSpent()}] HP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute fatigue\">\r\n    <Input\r\n      path=\"data.attributes.fatigue_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.health')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('FP').pointsSpent()}] FP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDEwMHB4KTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBnYXA6IDJweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCBpbnB1dCkge1xyXG4gICAgbWF4LXdpZHRoOiA3NXB4O1xyXG4gIH1cclxuICAucm9sbC1pY28ge1xyXG4gICAgcGFkZGluZy1sZWZ0OiAzcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdTdHJlbmd0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdEZXh0ZXJpdHknLCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaW50ZWxsaWdlbmNlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5JUSkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0lRJykucG9pbnRzU3BlbnQoKX1dIElROlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnSW50ZWxsaWdlbmNlJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCkpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhlYWx0aFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSFQpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aFwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdIVCcpLnBvaW50c1NwZW50KCl9XSBIVDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gJGVudGl0eS5yb2xsU2tpbGwoJ0hlYWx0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbCkucG9pbnRzU3BlbnQoKX1dIFdpbGw6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdXaWxsJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnUGVyY2VwdGlvbicsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlBlcilcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGVBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FDdkMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxlQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx5QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBQ0QsU0FBUyxlQUFDLENBQUMsQUFDVCxZQUFZLENBQUUsR0FBRyxBQUNuQixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3053,7 +3053,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-4i8gl8{display:flex}.general.svelte-4i8gl8{position:relative;height:100%}.general-page.svelte-4i8gl8{margin-left:75px}.attribute-sidebar.svelte-4i8gl8{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNzVweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZS1zaWRlYmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkdlbmVyYWw8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PlRyYWl0czwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+QmlvL01pc2M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezN9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NH0+Q29tYmF0PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs1fT5JbnZlbnRvcnk8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezZ9PkdyaW1vaXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs3fT48aSBjbGFzcz1cImZhcyBmYS1jb2dzXCIgLz48L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cImdlbmVyYWxcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZS1zaWRlYmFyXCI+XHJcbiAgICAgICAgPEF0dHJpYnV0ZXMgLz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsLXBhZ2VcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiIC8+XHJcbiAgICAgICAgICA8ZGl2IHN0eWxlPVwiZmxleC1ncm93OiAxOyBwYWRkaW5nOiAwcHggNXB4IDBweCA1cHg7XCI+XHJcbiAgICAgICAgICAgIDxFbmN1bWJyYW5jZSAvPlxyXG4gICAgICAgICAgICA8UG9vbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZsZXgtY29sXCI+XHJcbiAgICAgICAgICAgIDxUb3RhbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDxkaXYgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1wiPlxyXG4gICAgICAgICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgXHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VHJhaXRMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8QmlvZ3JhcGh5IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U2tpbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8Q2hhcmFjdGVyQ29tYmF0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdpbnZlbnRvcnktdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9Pk1haW48L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PdGhlcjwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8RXF1aXBtZW50TGlzdCAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgbG9jYXRpb249XCJvdGhlclwiIC8+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICA8L1RhYnM+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U3BlbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdjb25maWctdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9PkF0dHJpYnV0ZXM8L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PcHRpb25zPC9UYWI+XHJcbiAgICAgIDwvVGFiTGlzdD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDx1bD5cclxuICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcygkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMnKSkgYXMgYXR0cmlidXRlLCBpfVxyXG4gICAgICAgICAgICA8bGk+e2F0dHJpYnV0ZVswXX0gfiB7YXR0cmlidXRlWzFdfTwvbGk+XHJcbiAgICAgICAgICB7L2VhY2h9XHJcbiAgICAgICAgPC91bD5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCRSxLQUFLLGNBQUMsQ0FBQyxBQUNMLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUtELFFBQVEsY0FBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsYUFBYSxjQUFDLENBQUMsQUFDYixXQUFXLENBQUUsSUFBSSxBQUNuQixDQUFDLEFBQ0Qsa0JBQWtCLGNBQUMsQ0FBQyxBQUNsQixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUNyQyxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsQ0FBQyxDQUNQLEdBQUcsQ0FBRSxDQUFDLENBQ04sTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Character.svelte","webpack://src/svelte/Character.svelte.css"],"names":[],"mappings":"AA6BE,oBAAO,YACQ,CACd,uBAKS,iBACU,CAClB,WAAY,CACb,4BACc,gBACI,CAClB,iCACmB,oCACmB,CACrC,iBAAkB,CAClB,MAAO,CACP,KAAM,CACN,WAAY;AC/ChB,ygMAAygM","sourcesContent":["<script>\r\n  import { Character } from \"../sheet\";\r\n  import { setContext } from \"svelte\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  import EquipmentList from \"./EquipmentList\";\r\n  import TraitList from \"./TraitList\";\r\n  import SkillList from \"./SkillList\";\r\n  import SpellList from \"./SpellList\";\r\n  import Encumbrance from \"./Encumbrance\";\r\n  import Totals from \"./Totals\";\r\n  import Armor from \"./Armor\";\r\n  import Attributes from \"./Attributes\";\r\n  import Pools from \"./Pools\";\r\n  import Biography from \"./Biography\";\r\n  import CharacterCombat from \"./CharacterCombat\";\r\n\r\n  import { RichTextEditor, Input, FilePicker, Textarea } from \"./form/form\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .column {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  .general {\r\n    position: relative;\r\n    height: 100%;\r\n  }\r\n  .general-page {\r\n    margin-left: 75px;\r\n  }\r\n  .attribute-sidebar {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>General</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Bio/Misc</Tab>\r\n    <Tab index={3}>Skills</Tab>\r\n    <Tab index={4}>Combat</Tab>\r\n    <Tab index={5}>Inventory</Tab>\r\n    <Tab index={6}>Grimoire</Tab>\r\n    <Tab index={7}><i class=\"fas fa-cogs\" /></Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div class=\"general\">\r\n      <div class=\"attribute-sidebar\">\r\n        <Attributes />\r\n      </div>\r\n      <div class=\"general-page\">\r\n        <div class=\"flex\" style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <div class=\"flex-col\" />\r\n          <div style=\"flex-grow: 1; padding: 0px 5px 0px 5px;\">\r\n            <Encumbrance />\r\n            <Pools />\r\n          </div>\r\n          <div class=\"flex-col\">\r\n            <Totals />\r\n          </div>\r\n        </div>\r\n        <div style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <Textarea path=\"data.notes\" label=\"Notes\" />\r\n        </div>\r\n        \r\n      </div>\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <TraitList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Biography />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SkillList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <CharacterCombat />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'inventory-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Main</Tab>\r\n        <Tab index={1}>Other</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <EquipmentList />\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <EquipmentList location=\"other\" />\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SpellList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'config-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Attributes</Tab>\r\n        <Tab index={1}>Options</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <ul>\r\n          {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}\r\n            <li>{attribute[0]} ~ {attribute[1]}</li>\r\n          {/each}\r\n        </ul>\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <h1>Under Construction</h1>\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n</Tabs>\r\n",".flex.svelte-4i8gl8{display:flex}.general.svelte-4i8gl8{position:relative;height:100%}.general-page.svelte-4i8gl8{margin-left:75px}.attribute-sidebar.svelte-4i8gl8{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNzVweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZS1zaWRlYmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkdlbmVyYWw8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PlRyYWl0czwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+QmlvL01pc2M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezN9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NH0+Q29tYmF0PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs1fT5JbnZlbnRvcnk8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezZ9PkdyaW1vaXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs3fT48aSBjbGFzcz1cImZhcyBmYS1jb2dzXCIgLz48L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cImdlbmVyYWxcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZS1zaWRlYmFyXCI+XHJcbiAgICAgICAgPEF0dHJpYnV0ZXMgLz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsLXBhZ2VcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiIC8+XHJcbiAgICAgICAgICA8ZGl2IHN0eWxlPVwiZmxleC1ncm93OiAxOyBwYWRkaW5nOiAwcHggNXB4IDBweCA1cHg7XCI+XHJcbiAgICAgICAgICAgIDxFbmN1bWJyYW5jZSAvPlxyXG4gICAgICAgICAgICA8UG9vbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZsZXgtY29sXCI+XHJcbiAgICAgICAgICAgIDxUb3RhbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDxkaXYgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1wiPlxyXG4gICAgICAgICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgXHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VHJhaXRMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8QmlvZ3JhcGh5IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U2tpbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8Q2hhcmFjdGVyQ29tYmF0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdpbnZlbnRvcnktdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9Pk1haW48L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PdGhlcjwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8RXF1aXBtZW50TGlzdCAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgbG9jYXRpb249XCJvdGhlclwiIC8+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICA8L1RhYnM+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U3BlbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdjb25maWctdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9PkF0dHJpYnV0ZXM8L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PcHRpb25zPC9UYWI+XHJcbiAgICAgIDwvVGFiTGlzdD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDx1bD5cclxuICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcygkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMnKSkgYXMgYXR0cmlidXRlLCBpfVxyXG4gICAgICAgICAgICA8bGk+e2F0dHJpYnV0ZVswXX0gfiB7YXR0cmlidXRlWzFdfTwvbGk+XHJcbiAgICAgICAgICB7L2VhY2h9XHJcbiAgICAgICAgPC91bD5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCRSxLQUFLLGNBQUMsQ0FBQyxBQUNMLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUtELFFBQVEsY0FBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsYUFBYSxjQUFDLENBQUMsQUFDYixXQUFXLENBQUUsSUFBSSxBQUNuQixDQUFDLEFBQ0Qsa0JBQWtCLGNBQUMsQ0FBQyxBQUNsQixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUNyQyxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsQ0FBQyxDQUNQLEdBQUcsQ0FBRSxDQUFDLENBQ04sTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogMTAwcHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUtc2lkZWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0YWInLCBlLmRldGFpbCk7XHJcbiAgfX0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5HZW5lcmFsPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PkJpby9NaXNjPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5Ta2lsbHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PkNvbWJhdDwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NX0+SW52ZW50b3J5PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs2fT5Hcmltb2lyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17N30+PGkgY2xhc3M9XCJmYXMgZmEtY29nc1wiIC8+PC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsXCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUtc2lkZWJhclwiPlxyXG4gICAgICAgIDxBdHRyaWJ1dGVzIC8+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiZ2VuZXJhbC1wYWdlXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImZsZXhcIiBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleC1jb2xcIiAvPlxyXG4gICAgICAgICAgPGRpdiBzdHlsZT1cImZsZXgtZ3JvdzogMTsgcGFkZGluZzogMHB4IDVweCAwcHggNXB4O1wiPlxyXG4gICAgICAgICAgICA8RW5jdW1icmFuY2UgLz5cclxuICAgICAgICAgICAgPFBvb2xzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiPlxyXG4gICAgICAgICAgICA8VG90YWxzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRyYWl0TGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPEJpb2dyYXBoeSAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNraWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPENoYXJhY3RlckNvbWJhdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2ludmVudG9yeS10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5NYWluPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3RoZXI8L1RhYj5cclxuICAgICAgPC9UYWJMaXN0PlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxFcXVpcG1lbnRMaXN0IGxvY2F0aW9uPVwib3RoZXJcIiAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNwZWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2NvbmZpZy10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5BdHRyaWJ1dGVzPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3B0aW9uczwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8dWw+XHJcbiAgICAgICAgICB7I2VhY2ggT2JqZWN0LmVudHJpZXMoJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzJykpIGFzIGF0dHJpYnV0ZSwgaX1cclxuICAgICAgICAgICAgPGxpPnthdHRyaWJ1dGVbMF19IH4ge2F0dHJpYnV0ZVsxXX08L2xpPlxyXG4gICAgICAgICAgey9lYWNofVxyXG4gICAgICAgIDwvdWw+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgIDwvVGFicz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyxjQUFDLENBQUMsQUFDTCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMsQUFLRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyxBQUNELGFBQWEsY0FBQyxDQUFDLEFBQ2IsV0FBVyxDQUFFLEtBQUssQUFDcEIsQ0FBQyxBQUNELGtCQUFrQixjQUFDLENBQUMsQUFDbEIsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLENBQUMsQ0FDUCxHQUFHLENBQUUsQ0FBQyxDQUNOLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/Character.svelte","webpack://src/svelte/Character.svelte.css"],"names":[],"mappings":"AA6BE,oBAAO,YACQ,CACd,uBAKS,iBACU,CAClB,WAAY,CACb,4BACc,iBACK,CACnB,iCACmB,oCACmB,CACrC,iBAAkB,CAClB,MAAO,CACP,KAAM,CACN,WAAY;AC/ChB,y/LAAy/L","sourcesContent":["<script>\r\n  import { Character } from \"../sheet\";\r\n  import { setContext } from \"svelte\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  import EquipmentList from \"./EquipmentList\";\r\n  import TraitList from \"./TraitList\";\r\n  import SkillList from \"./SkillList\";\r\n  import SpellList from \"./SpellList\";\r\n  import Encumbrance from \"./Encumbrance\";\r\n  import Totals from \"./Totals\";\r\n  import Armor from \"./Armor\";\r\n  import Attributes from \"./Attributes\";\r\n  import Pools from \"./Pools\";\r\n  import Biography from \"./Biography\";\r\n  import CharacterCombat from \"./CharacterCombat\";\r\n\r\n  import { RichTextEditor, Input, FilePicker, Textarea } from \"./form/form\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .column {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  .general {\r\n    position: relative;\r\n    height: 100%;\r\n  }\r\n  .general-page {\r\n    margin-left: 100px;\r\n  }\r\n  .attribute-sidebar {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>General</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Bio/Misc</Tab>\r\n    <Tab index={3}>Skills</Tab>\r\n    <Tab index={4}>Combat</Tab>\r\n    <Tab index={5}>Inventory</Tab>\r\n    <Tab index={6}>Grimoire</Tab>\r\n    <Tab index={7}><i class=\"fas fa-cogs\" /></Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div class=\"general\">\r\n      <div class=\"attribute-sidebar\">\r\n        <Attributes />\r\n      </div>\r\n      <div class=\"general-page\">\r\n        <div class=\"flex\" style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <div class=\"flex-col\" />\r\n          <div style=\"flex-grow: 1; padding: 0px 5px 0px 5px;\">\r\n            <Encumbrance />\r\n            <Pools />\r\n          </div>\r\n          <div class=\"flex-col\">\r\n            <Totals />\r\n          </div>\r\n        </div>\r\n        <div style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <Textarea path=\"data.notes\" label=\"Notes\" />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <TraitList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Biography />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SkillList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <CharacterCombat />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'inventory-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Main</Tab>\r\n        <Tab index={1}>Other</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <EquipmentList />\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <EquipmentList location=\"other\" />\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SpellList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'config-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Attributes</Tab>\r\n        <Tab index={1}>Options</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <ul>\r\n          {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}\r\n            <li>{attribute[0]} ~ {attribute[1]}</li>\r\n          {/each}\r\n        </ul>\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <h1>Under Construction</h1>\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n</Tabs>\r\n",".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogMTAwcHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUtc2lkZWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0YWInLCBlLmRldGFpbCk7XHJcbiAgfX0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5HZW5lcmFsPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PkJpby9NaXNjPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5Ta2lsbHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PkNvbWJhdDwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NX0+SW52ZW50b3J5PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs2fT5Hcmltb2lyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17N30+PGkgY2xhc3M9XCJmYXMgZmEtY29nc1wiIC8+PC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsXCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUtc2lkZWJhclwiPlxyXG4gICAgICAgIDxBdHRyaWJ1dGVzIC8+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiZ2VuZXJhbC1wYWdlXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImZsZXhcIiBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleC1jb2xcIiAvPlxyXG4gICAgICAgICAgPGRpdiBzdHlsZT1cImZsZXgtZ3JvdzogMTsgcGFkZGluZzogMHB4IDVweCAwcHggNXB4O1wiPlxyXG4gICAgICAgICAgICA8RW5jdW1icmFuY2UgLz5cclxuICAgICAgICAgICAgPFBvb2xzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiPlxyXG4gICAgICAgICAgICA8VG90YWxzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRyYWl0TGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPEJpb2dyYXBoeSAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNraWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPENoYXJhY3RlckNvbWJhdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2ludmVudG9yeS10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5NYWluPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3RoZXI8L1RhYj5cclxuICAgICAgPC9UYWJMaXN0PlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxFcXVpcG1lbnRMaXN0IGxvY2F0aW9uPVwib3RoZXJcIiAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNwZWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2NvbmZpZy10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5BdHRyaWJ1dGVzPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3B0aW9uczwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8dWw+XHJcbiAgICAgICAgICB7I2VhY2ggT2JqZWN0LmVudHJpZXMoJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzJykpIGFzIGF0dHJpYnV0ZSwgaX1cclxuICAgICAgICAgICAgPGxpPnthdHRyaWJ1dGVbMF19IH4ge2F0dHJpYnV0ZVsxXX08L2xpPlxyXG4gICAgICAgICAgey9lYWNofVxyXG4gICAgICAgIDwvdWw+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgIDwvVGFicz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyxjQUFDLENBQUMsQUFDTCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMsQUFLRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyxBQUNELGFBQWEsY0FBQyxDQUFDLEFBQ2IsV0FBVyxDQUFFLEtBQUssQUFDcEIsQ0FBQyxBQUNELGtCQUFrQixjQUFDLENBQUMsQUFDbEIsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLENBQUMsQ0FDUCxHQUFHLENBQUUsQ0FBQyxDQUNOLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3207,7 +3207,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0LWFmdGVyXCI+XHJcbiAgICAgICAgLyB7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5jYWxjdWxhdGVMZXZlbCgpfVxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZVwiPkZhdGlndWUgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImZhdGlndWUgdG90YWxcIj5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0LWFmdGVyXCI+XHJcbiAgICAgICAgLyB7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRlAnKS5jYWxjdWxhdGVMZXZlbCgpfVxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVlFLE9BQU8sNEJBQUMsQ0FBQyxBQUNQLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3JDLE9BQU8sQ0FBRSxJQUFJLENBQ2IscUJBQXFCLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FDOUIsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxrQkFBa0IsQUFBRSxDQUFDLEFBQ25DLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMsQUFFRCxtQ0FBTyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDN0IsT0FBTyxDQUFFLEdBQUcsQUFDZCxDQUFDLEFBRUQseUNBQWEsQ0FBQyxBQUFRLHdCQUF3QixBQUFFLENBQUMsQUFDL0MsS0FBSyxDQUFFLEtBQUssQUFDZCxDQUFDLEFBRUQsMkJBQWEsQ0FBQyxrQkFBa0IsY0FBQyxDQUFDLEFBQ2hDLFlBQVksQ0FBRSxJQUFJLEFBQ3BCLENBQUMsQUFFRCxNQUFNLDRCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsS0FBSyxDQUNqQixPQUFPLENBQUUsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN4QixDQUFDLEFBQ0QsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsV0FBVyxDQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQUFDekIsQ0FBQyxBQUVELGFBQWEsNEJBQUMsQ0FBQyxBQUNiLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLEtBQUssQ0FBRSxLQUFLLENBQ1osT0FBTyxDQUFFLEdBQUcsQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsUUFBUSw0QkFBQyxDQUFDLEFBQ1IsV0FBVyxDQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FDdkIsYUFBYSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQUFDN0MsQ0FBQyxBQUNELG1DQUFPLENBQ1AsTUFBTSw0QkFBQyxDQUFDLEFBQ04sS0FBSyxDQUFFLEtBQUssQ0FDWixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUNwQyxVQUFVLENBQUUsTUFBTSxDQUNsQixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,uDAEoC,cACpB,CAChB,iDAE8B,WACjB,CACb,mEAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,qzMAAqzM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.total}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.total} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0LWFmdGVyXCI+XHJcbiAgICAgICAgLyB7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5jYWxjdWxhdGVMZXZlbCgpfVxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZVwiPkZhdGlndWUgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImZhdGlndWUgdG90YWxcIj5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0LWFmdGVyXCI+XHJcbiAgICAgICAgLyB7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRlAnKS5jYWxjdWxhdGVMZXZlbCgpfVxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVlFLE9BQU8sNEJBQUMsQ0FBQyxBQUNQLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3JDLE9BQU8sQ0FBRSxJQUFJLENBQ2IscUJBQXFCLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FDOUIsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxrQkFBa0IsQUFBRSxDQUFDLEFBQ25DLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMsQUFFRCxtQ0FBTyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDN0IsT0FBTyxDQUFFLEdBQUcsQUFDZCxDQUFDLEFBRUQseUNBQWEsQ0FBQyxBQUFRLHdCQUF3QixBQUFFLENBQUMsQUFDL0MsS0FBSyxDQUFFLEtBQUssQUFDZCxDQUFDLEFBRUQsMkJBQWEsQ0FBQyxrQkFBa0IsY0FBQyxDQUFDLEFBQ2hDLFlBQVksQ0FBRSxJQUFJLEFBQ3BCLENBQUMsQUFFRCxNQUFNLDRCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsS0FBSyxDQUNqQixPQUFPLENBQUUsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN4QixDQUFDLEFBQ0QsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsV0FBVyxDQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQUFDekIsQ0FBQyxBQUVELGFBQWEsNEJBQUMsQ0FBQyxBQUNiLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLEtBQUssQ0FBRSxLQUFLLENBQ1osT0FBTyxDQUFFLEdBQUcsQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsUUFBUSw0QkFBQyxDQUFDLEFBQ1IsV0FBVyxDQUFFLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FDdkIsYUFBYSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQUFDN0MsQ0FBQyxBQUNELG1DQUFPLENBQ1AsTUFBTSw0QkFBQyxDQUFDLEFBQ04sS0FBSyxDQUFFLEtBQUssQ0FDWixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUNwQyxVQUFVLENBQUUsTUFBTSxDQUNsQixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,uDAEoC,cACpB,CAChB,iDAE8B,WACjB,CACb,mEAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,yyMAAyyM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.total}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.total} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -11138,7 +11138,7 @@ var Signature;
 /*! exports provided: attributes, locations, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"attributes\":[{\"signature\":\"ST\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"SS\",\"cost_per_level\":5},{\"signature\":\"LS\",\"cost_per_level\":3},{\"signature\":\"HP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('ST').calculateLevel()\"},{\"signature\":\"DX\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"IQ\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"HT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"FP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('HT').calculateLevel()\"},{\"signature\":\"QT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"siganture\":\"QP\",\"cost_per_level\":3,\"based_on\":\"return this.getAttribute('QP').calculateLevel()\"},{\"signature\":\"Speed\",\"cost_per_level\":20,\"increment\":0.25,\"based_on\":\"return (this.getAttribute('DX').calculateLevel() + this.getAttribute('HT').calculateLevel()) / 4\",\"can_be_signature\":true},{\"signature\":\"Move\",\"cost_per_level\":5,\"based_on\":\"return Math.floor(this.getAttribute('Speed').calculateLevel())\"},{\"signature\":\"Per\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true},{\"signature\":\"Will\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('ST').calculateLevel()\",\"can_be_signature\":true}],\"locations\":[{\"location\":\"Eyes\",\"hit_range\":[],\"hit_penalty\":-9,\"cripple_ratio\":10,\"cripples_on\":\"return damageTaken > maxHP / 10\"},{\"location\":\"Skull\",\"hit_range\":[3,4],\"hit_penalty\":-7},{\"location\":\"Face\",\"hit_range\":[5],\"hit_penalty\":-5},{\"location\":\"Right Leg\",\"hit_range\":[6,7],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Right Arm\",\"hit_range\":[8],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Torso\",\"hit_range\":[9,10],\"hit_penalty\":0},{\"location\":\"Groin\",\"hit_range\":[11],\"hit_penalty\":-3},{\"location\":\"Left Arm\",\"hit_range\":[12],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Left Leg\",\"hit_range\":[13,14],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Hand\",\"hit_range\":[15],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Foot\",\"hit_range\":[16],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Neck\",\"hit_range\":[17,18],\"hit_penalty\":-5},{\"location\":\"Vitals\",\"hit_range\":[],\"hit_penalty\":-3}]}");
+module.exports = JSON.parse("{\"attributes\":[{\"signature\":\"ST\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"SS\",\"cost_per_level\":5},{\"signature\":\"LS\",\"cost_per_level\":3},{\"signature\":\"HP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('ST').calculateLevel()\"},{\"signature\":\"DX\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"IQ\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"HT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"FP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('HT').calculateLevel()\"},{\"signature\":\"QT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"siganture\":\"QP\",\"cost_per_level\":3,\"based_on\":\"return this.getAttribute('QP').calculateLevel()\"},{\"signature\":\"Speed\",\"cost_per_level\":20,\"increment\":0.25,\"based_on\":\"return (this.getAttribute('DX').calculateLevel() + this.getAttribute('HT').calculateLevel()) / 4\",\"can_be_signature\":true},{\"signature\":\"Move\",\"cost_per_level\":5,\"based_on\":\"return Math.floor(this.getAttribute('Speed').calculateLevel())\"},{\"signature\":\"Per\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true},{\"signature\":\"Will\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true}],\"locations\":[{\"location\":\"Eyes\",\"hit_range\":[],\"hit_penalty\":-9,\"cripple_ratio\":10,\"cripples_on\":\"return damageTaken > maxHP / 10\"},{\"location\":\"Skull\",\"hit_range\":[3,4],\"hit_penalty\":-7},{\"location\":\"Face\",\"hit_range\":[5],\"hit_penalty\":-5},{\"location\":\"Right Leg\",\"hit_range\":[6,7],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Right Arm\",\"hit_range\":[8],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Torso\",\"hit_range\":[9,10],\"hit_penalty\":0},{\"location\":\"Groin\",\"hit_range\":[11],\"hit_penalty\":-3},{\"location\":\"Left Arm\",\"hit_range\":[12],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Left Leg\",\"hit_range\":[13,14],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Hand\",\"hit_range\":[15],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Foot\",\"hit_range\":[16],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Neck\",\"hit_range\":[17,18],\"hit_penalty\":-5},{\"location\":\"Vitals\",\"hit_range\":[],\"hit_penalty\":-3}]}");
 
 /***/ }),
 
@@ -21574,12 +21574,6 @@ const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/s
 __webpack_require__(/*! ./chat */ "./src/chat.ts");
 const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
 let _ItemSheet = class _ItemSheet extends ItemSheet {
-    get item() {
-        return this._item;
-    }
-    set item(value) {
-        this._item = value;
-    }
     static get defaultOptions() {
         return mergeObject(ItemSheet.defaultOptions, {
             classes: ["GURPSItem"],
@@ -21604,18 +21598,6 @@ let _Item = class _Item extends Item {
     constructor(data, options) {
         super(data, options);
         this._entity = store_1.writable(this);
-    }
-    get sheet() {
-        return this._sheet;
-    }
-    set sheet(value) {
-        this._sheet = value;
-    }
-    get actor() {
-        return this._actor;
-    }
-    set actor(value) {
-        this._actor = value;
     }
     openPDFReference() {
         const api = ui.PDFoundry;
@@ -21772,7 +21754,12 @@ let _Item = class _Item extends Item {
         });
     }
     getGURPSObject() {
-        return this.actor.GURPS.getElementById("foundryID", this._id);
+        try {
+            return this.actor.GURPS.getElementById("foundryID", this._id);
+        }
+        catch (err) {
+            return null;
+        }
     }
     getIndex() {
         return this.getFlag("GURPS", "index");
@@ -22012,14 +21999,9 @@ const SuccessRollRenderer_1 = __importDefault(__webpack_require__(/*! gurps-foun
 const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
 const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
 const AttackDialog_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/AttackDialog.svelte */ "./src/svelte/AttackDialog.svelte"));
+const ModifierPrompt_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte"));
 const dragdrop_1 = __webpack_require__(/*! ./dragdrop */ "./src/dragdrop.ts");
 let _ActorSheet = class _ActorSheet extends ActorSheet {
-    get actor() {
-        return this._actor;
-    }
-    set actor(value) {
-        this._actor = value;
-    }
     static get defaultOptions() {
         return mergeObject(ActorSheet.defaultOptions, {
             classes: ["GURPSActor"],
@@ -22105,12 +22087,6 @@ let _Actor = class _Actor extends Actor {
         this._GURPS = store_1.writable(this.GURPS);
         this.updateGURPS();
     }
-    get sheet() {
-        return this._sheet;
-    }
-    set sheet(value) {
-        this._sheet = value;
-    }
     prepareData() {
         super.prepareData();
         if (this.GURPS) {
@@ -22190,6 +22166,9 @@ let _Actor = class _Actor extends Actor {
     ownedItemsByType(...types) {
         return helpers_1.ownedItemsByType(this, ...types);
     }
+    getWildWeapons() {
+        return this.ownedItemsByType("melee attack");
+    }
     getWeapons() {
         const entity = this;
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
@@ -22231,11 +22210,8 @@ let _Actor = class _Actor extends Actor {
             melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
         };
     }
-    rollSkill(trait, level, modifiers = [], modType = "none", data = {}) {
+    rollSkill(trait, level, modifiers = [], modType = "", data = {}) {
         switch (modType) {
-            case "none":
-                this.rollAndRender(trait, level, helpers_1.formatModList(modifiers));
-                break;
             case "attack":
                 const modifierDialog = new AttackDialog_svelte_1.default({
                     target: document.body,
@@ -22249,11 +22225,24 @@ let _Actor = class _Actor extends Actor {
                 });
                 break;
             default:
+                const modifierPrompt = new ModifierPrompt_svelte_1.default({
+                    target: document.body,
+                });
+                modifierPrompt.$on("roll", (e) => {
+                    this.rollAndRender(trait, level, helpers_1.formatModList([e.detail]));
+                });
         }
     }
     rollAndRender(trait, level, modifiers) {
         try {
-            let roll = new SuccessRoll_1.default({ level, trait, modifiers });
+            let roll;
+            try {
+                roll = new SuccessRoll_1.default({ level, trait, modifiers });
+            }
+            catch (err) {
+                roll = new SuccessRoll_1.default({ level, trait, modifiers: null });
+                ui.notifications.warn("Your modifier is invalid");
+            }
             roll.roll();
             let renderer = new SuccessRollRenderer_1.default();
             renderer.render(roll).then((html) => {
@@ -23445,14 +23434,14 @@ function create_if_block(ctx) {
 	return {
 		c() {
 			select = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("select");
-			if (/*ammoSource*/ ctx[6] === void 0) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_render_callback"])(() => /*select_change_handler*/ ctx[14].call(select));
+			if (/*ammoSource*/ ctx[6] === void 0) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_render_callback"])(() => /*select_change_handler*/ ctx[13].call(select));
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, select, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*ammoSource*/ ctx[6]);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*select_change_handler*/ ctx[14]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*select_change_handler*/ ctx[13]);
 				mounted = true;
 			}
 		},
@@ -23469,7 +23458,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (38:0) <Dialog    on:close    title="Attck Roll"    {buttons}    overrideSubmit={true}    height={300}    width={200}>
+// (37:0) <Dialog    on:close    title="Attck Roll"    {buttons}    overrideSubmit={true}    height={300}    width={200}>
 function create_default_slot(ctx) {
 	let div;
 	let span0;
@@ -23566,11 +23555,11 @@ function create_default_slot(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input0, "input", /*input0_input_handler*/ ctx[9]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input1, "change", /*input1_change_handler*/ ctx[10]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input2, "input", /*input2_input_handler*/ ctx[11]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input3, "change", /*input3_change_handler*/ ctx[12]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input4, "input", /*input4_input_handler*/ ctx[13])
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input0, "input", /*input0_input_handler*/ ctx[8]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input1, "change", /*input1_change_handler*/ ctx[9]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input2, "input", /*input2_input_handler*/ ctx[10]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input3, "change", /*input3_change_handler*/ ctx[11]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input4, "input", /*input4_input_handler*/ ctx[12])
 				];
 
 				mounted = true;
@@ -23637,7 +23626,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	dialog.$on("close", /*close_handler*/ ctx[15]);
+	dialog.$on("close", /*close_handler*/ ctx[14]);
 
 	return {
 		c() {
@@ -23650,7 +23639,7 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const dialog_changes = {};
 
-			if (dirty & /*$$scope, ammoSource, weapon, otherMods, telegraphed, rapidStrikes, hasWeaponMaster, deceptiveAttacks*/ 262271) {
+			if (dirty & /*$$scope, ammoSource, weapon, otherMods, telegraphed, rapidStrikes, hasWeaponMaster, deceptiveAttacks*/ 131199) {
 				dialog_changes.$$scope = { dirty, ctx };
 			}
 
@@ -23673,7 +23662,6 @@ function create_fragment(ctx) {
 
 function instance($$self, $$props, $$invalidate) {
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_3__["createEventDispatcher"])();
-	let { type = null } = $$props;
 	let { weapon = null } = $$props;
 	let deceptiveAttacks = 0;
 	let telegraphed = false;
@@ -23734,7 +23722,6 @@ function instance($$self, $$props, $$invalidate) {
 	}
 
 	$$self.$$set = $$props => {
-		if ("type" in $$props) $$invalidate(8, type = $$props.type);
 		if ("weapon" in $$props) $$invalidate(0, weapon = $$props.weapon);
 	};
 
@@ -23747,7 +23734,6 @@ function instance($$self, $$props, $$invalidate) {
 		otherMods,
 		ammoSource,
 		buttons,
-		type,
 		input0_input_handler,
 		input1_change_handler,
 		input2_input_handler,
@@ -23761,7 +23747,7 @@ function instance($$self, $$props, $$invalidate) {
 class AttackDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { type: 8, weapon: 0 });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { weapon: 0 });
 	}
 }
 
@@ -23794,129 +23780,261 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function create_label_text_slot_9(ctx) {
-	let span;
+	let span0;
 	let t0;
 	let t1_value = /*$GURPS*/ ctx[1].getAttribute("ST").pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] ST:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler*/ ctx[4]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("ST").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (44:6) <span slot="label-text">
+// (31:4) <Input        mod={$GURPS.getAttribute(Signature.ST).getMod()}        path="data.attributes.strength"        min="0"        type="number">
+function create_default_slot_9(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (56:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_8(ctx) {
-	let span;
+	let span0;
 	let t0;
 	let t1_value = /*$GURPS*/ ctx[1].getAttribute("DX").pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] DX:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_1*/ ctx[5]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("DX").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (55:6) <span slot="label-text">
+// (48:4) <Input        mod={$GURPS.getAttribute(Signature.DX).getMod()}        path="data.attributes.dexterity"        min="0"        type="number">
+function create_default_slot_8(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (73:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_7(ctx) {
-	let span;
+	let span0;
 	let t0;
 	let t1_value = /*$GURPS*/ ctx[1].getAttribute("IQ").pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] IQ:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_2*/ ctx[6]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("IQ").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (66:6) <span slot="label-text">
+// (65:4) <Input        mod={$GURPS.getAttribute(Signature.IQ).getMod()}        path="data.attributes.intelligence"        min="0"        type="number">
+function create_default_slot_7(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (90:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_6(ctx) {
-	let span;
+	let span0;
 	let t0;
 	let t1_value = /*$GURPS*/ ctx[1].getAttribute("HT").pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] HT:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_3*/ ctx[7]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("HT").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (78:6) <span slot="label-text">
+// (82:4) <Input        mod={$GURPS.getAttribute(Signature.HT).getMod()}        path="data.attributes.health"        min="0"        type="number">
+function create_default_slot_6(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (105:6) <span slot="label-text">
 function create_label_text_slot_5(ctx) {
 	let span;
 	let t0;
@@ -23947,7 +24065,7 @@ function create_label_text_slot_5(ctx) {
 	};
 }
 
-// (92:6) <span slot="label-text">
+// (119:6) <span slot="label-text">
 function create_label_text_slot_4(ctx) {
 	let span;
 	let t0;
@@ -23978,69 +24096,135 @@ function create_label_text_slot_4(ctx) {
 	};
 }
 
-// (104:6) <span slot="label-text">
+// (134:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_3(ctx) {
-	let span;
+	let span0;
 	let t0;
-	let t1_value = /*$GURPS*/ ctx[1].getAttribute("Will").pointsSpent() + "";
+	let t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] Will:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_4*/ ctx[8]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("Will").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (115:6) <span slot="label-text">
+// (125:4) <Input        let:value        path="data.attributes.will"        basedOn={$entity.getProperty('data.attributes.intelligence')}        min={0}        type="number">
+function create_default_slot_3(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (151:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_2(ctx) {
-	let span;
+	let span0;
 	let t0;
 	let t1_value = /*$GURPS*/ ctx[1].getAttribute("Per").pointsSpent() + "";
 	let t1;
 	let t2;
+	let span1;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("[");
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t1_value);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("] Per:");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "label-text");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "label-text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico svelte-1tz8r8w");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_5*/ ctx[9]);
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
 			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute("Per").pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (126:6) <span slot="label-text">
+// (143:4) <Input        path="data.attributes.perception"        min={0}        basedOn={$entity.getProperty('data.attributes.intelligence')}        type="number">
+function create_default_slot_2(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (165:6) <span slot="label-text">
 function create_label_text_slot_1(ctx) {
 	let span;
 	let t0;
@@ -24071,7 +24255,7 @@ function create_label_text_slot_1(ctx) {
 	};
 }
 
-// (137:6) <span slot="label-text">
+// (176:6) <span slot="label-text">
 function create_label_text_slot(ctx) {
 	let span;
 	let t0;
@@ -24141,7 +24325,10 @@ function create_fragment(ctx) {
 				path: "data.attributes.strength",
 				min: "0",
 				type: "number",
-				$$slots: { "label-text": [create_label_text_slot_9] },
+				$$slots: {
+					default: [create_default_slot_9],
+					"label-text": [create_label_text_slot_9]
+				},
 				$$scope: { ctx }
 			}
 		});
@@ -24152,7 +24339,10 @@ function create_fragment(ctx) {
 				path: "data.attributes.dexterity",
 				min: "0",
 				type: "number",
-				$$slots: { "label-text": [create_label_text_slot_8] },
+				$$slots: {
+					default: [create_default_slot_8],
+					"label-text": [create_label_text_slot_8]
+				},
 				$$scope: { ctx }
 			}
 		});
@@ -24163,7 +24353,10 @@ function create_fragment(ctx) {
 				path: "data.attributes.intelligence",
 				min: "0",
 				type: "number",
-				$$slots: { "label-text": [create_label_text_slot_7] },
+				$$slots: {
+					default: [create_default_slot_7],
+					"label-text": [create_label_text_slot_7]
+				},
 				$$scope: { ctx }
 			}
 		});
@@ -24174,7 +24367,10 @@ function create_fragment(ctx) {
 				path: "data.attributes.health",
 				min: "0",
 				type: "number",
-				$$slots: { "label-text": [create_label_text_slot_6] },
+				$$slots: {
+					default: [create_default_slot_6],
+					"label-text": [create_label_text_slot_6]
+				},
 				$$scope: { ctx }
 			}
 		});
@@ -24208,10 +24404,15 @@ function create_fragment(ctx) {
 				min: 0,
 				type: "number",
 				$$slots: {
+					default: [
+						create_default_slot_3,
+						({ value }) => ({ 10: value }),
+						({ value }) => value ? 1024 : 0
+					],
 					"label-text": [
 						create_label_text_slot_3,
-						({ value }) => ({ 4: value }),
-						({ value }) => value ? 16 : 0
+						({ value }) => ({ 10: value }),
+						({ value }) => value ? 1024 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -24224,7 +24425,10 @@ function create_fragment(ctx) {
 				min: 0,
 				basedOn: /*$entity*/ ctx[2].getProperty("data.attributes.intelligence"),
 				type: "number",
-				$$slots: { "label-text": [create_label_text_slot_2] },
+				$$slots: {
+					default: [create_default_slot_2],
+					"label-text": [create_label_text_slot_2]
+				},
 				$$scope: { ctx }
 			}
 		});
@@ -24283,17 +24487,17 @@ function create_fragment(ctx) {
 			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input9.$$.fragment);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "attribute svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "attribute dexterity svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div2, "class", "attribute intelligence svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div3, "class", "attribute health svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div4, "class", "attribute move svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div5, "class", "attribute speed svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "attribute will svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div7, "class", "attribute perception svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div8, "class", "attribute hitpoints svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div9, "class", "attribute fatigue svelte-8mvyn2");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div10, "class", "attributes strength svelte-8mvyn2");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "attribute svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "attribute dexterity svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div2, "class", "attribute intelligence svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div3, "class", "attribute health svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div4, "class", "attribute move svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div5, "class", "attribute speed svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "attribute will svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div7, "class", "attribute perception svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div8, "class", "attribute hitpoints svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div9, "class", "attribute fatigue svelte-1tz8r8w");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div10, "class", "attributes strength svelte-1tz8r8w");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div10, anchor);
@@ -24332,7 +24536,7 @@ function create_fragment(ctx) {
 			const input0_changes = {};
 			if (dirty & /*$GURPS*/ 2) input0_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].ST).getMod();
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input0_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24340,7 +24544,7 @@ function create_fragment(ctx) {
 			const input1_changes = {};
 			if (dirty & /*$GURPS*/ 2) input1_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].DX).getMod();
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24348,7 +24552,7 @@ function create_fragment(ctx) {
 			const input2_changes = {};
 			if (dirty & /*$GURPS*/ 2) input2_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].IQ).getMod();
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input2_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24356,7 +24560,7 @@ function create_fragment(ctx) {
 			const input3_changes = {};
 			if (dirty & /*$GURPS*/ 2) input3_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].HT).getMod();
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input3_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24364,7 +24568,7 @@ function create_fragment(ctx) {
 			const input4_changes = {};
 			if (dirty & /*$GURPS, $entity*/ 6) input4_changes.basedOn = /*$GURPS*/ ctx[1].getAttribute("Move").calculateLevel() - /*$entity*/ ctx[2].getProperty("data.attributes.move");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $GURPS*/ 2050) {
 				input4_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24372,7 +24576,7 @@ function create_fragment(ctx) {
 			const input5_changes = {};
 			if (dirty & /*$GURPS, $entity*/ 6) input5_changes.basedOn = /*$GURPS*/ ctx[1].getAttribute("Speed").calculateLevel() - /*$entity*/ ctx[2].getProperty("data.attributes.speed");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $GURPS*/ 2050) {
 				input5_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24380,7 +24584,7 @@ function create_fragment(ctx) {
 			const input6_changes = {};
 			if (dirty & /*$entity*/ 4) input6_changes.basedOn = /*$entity*/ ctx[2].getProperty("data.attributes.intelligence");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input6_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24388,7 +24592,7 @@ function create_fragment(ctx) {
 			const input7_changes = {};
 			if (dirty & /*$entity*/ 4) input7_changes.basedOn = /*$entity*/ ctx[2].getProperty("data.attributes.intelligence");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input7_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24396,7 +24600,7 @@ function create_fragment(ctx) {
 			const input8_changes = {};
 			if (dirty & /*$entity*/ 4) input8_changes.basedOn = /*$entity*/ ctx[2].getProperty("data.attributes.strength");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $GURPS*/ 2050) {
 				input8_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24404,7 +24608,7 @@ function create_fragment(ctx) {
 			const input9_changes = {};
 			if (dirty & /*$entity*/ 4) input9_changes.basedOn = /*$entity*/ ctx[2].getProperty("data.attributes.health");
 
-			if (dirty & /*$$scope, $GURPS*/ 34) {
+			if (dirty & /*$$scope, $GURPS*/ 2050) {
 				input9_changes.$$scope = { dirty, ctx };
 			}
 
@@ -24465,12 +24669,29 @@ function instance($$self, $$props, $$invalidate) {
 	$$subscribe_entity();
 	const GURPS = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("GURPS");
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(1, $GURPS = value));
+	const click_handler = () => $entity.rollSkill("Strength", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].ST).calculateLevel());
+	const click_handler_1 = () => $entity.rollSkill("Dexterity", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].DX).calculateLevel());
+	const click_handler_2 = () => $entity.rollSkill("Intelligence", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].IQ).calculateLevel());
+	const click_handler_3 = () => $entity.rollSkill("Health", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].HT).calculateLevel());
+	const click_handler_4 = () => $entity.rollSkill("Will", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).calculateLevel());
+	const click_handler_5 = () => $entity.rollSkill("Perception", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Per).calculateLevel());
 
 	$$self.$$set = $$props => {
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(0, entity = $$props.entity));
 	};
 
-	return [entity, $GURPS, $entity, GURPS];
+	return [
+		entity,
+		$GURPS,
+		$entity,
+		GURPS,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4,
+		click_handler_5
+	];
 }
 
 class Attributes extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
@@ -26014,16 +26235,16 @@ function create_default_slot_20(ctx) {
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(textarea.$$.fragment);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "attribute-sidebar svelte-4i8gl8");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "attribute-sidebar svelte-zixl8z");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "flex-col");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div2, "flex-grow", "1");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div2, "padding", "0px 5px 0px 5px");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div3, "class", "flex-col");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div4, "class", "flex svelte-4i8gl8");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div4, "class", "flex svelte-zixl8z");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div4, "background-color", "rgba(0, 0, 0, 0.05)");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(div5, "background-color", "rgba(0, 0, 0, 0.05)");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "general-page svelte-4i8gl8");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div7, "class", "general svelte-4i8gl8");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "general-page svelte-zixl8z");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div7, "class", "general svelte-zixl8z");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div7, anchor);
@@ -26075,7 +26296,7 @@ function create_default_slot_20(ctx) {
 	};
 }
 
-// (91:2) <TabPanel>
+// (90:2) <TabPanel>
 function create_default_slot_19(ctx) {
 	let traitlist;
 	let current;
@@ -26104,7 +26325,7 @@ function create_default_slot_19(ctx) {
 	};
 }
 
-// (94:2) <TabPanel>
+// (93:2) <TabPanel>
 function create_default_slot_18(ctx) {
 	let biography;
 	let current;
@@ -26133,7 +26354,7 @@ function create_default_slot_18(ctx) {
 	};
 }
 
-// (97:2) <TabPanel>
+// (96:2) <TabPanel>
 function create_default_slot_17(ctx) {
 	let skilllist;
 	let current;
@@ -26162,7 +26383,7 @@ function create_default_slot_17(ctx) {
 	};
 }
 
-// (100:2) <TabPanel>
+// (99:2) <TabPanel>
 function create_default_slot_16(ctx) {
 	let charactercombat;
 	let current;
@@ -26191,7 +26412,7 @@ function create_default_slot_16(ctx) {
 	};
 }
 
-// (110:8) <Tab index={0}>
+// (109:8) <Tab index={0}>
 function create_default_slot_15(ctx) {
 	let t;
 
@@ -26208,7 +26429,7 @@ function create_default_slot_15(ctx) {
 	};
 }
 
-// (111:8) <Tab index={1}>
+// (110:8) <Tab index={1}>
 function create_default_slot_14(ctx) {
 	let t;
 
@@ -26225,7 +26446,7 @@ function create_default_slot_14(ctx) {
 	};
 }
 
-// (109:6) <TabList>
+// (108:6) <TabList>
 function create_default_slot_13(ctx) {
 	let tab0;
 	let t;
@@ -26295,7 +26516,7 @@ function create_default_slot_13(ctx) {
 	};
 }
 
-// (113:6) <TabPanel>
+// (112:6) <TabPanel>
 function create_default_slot_12(ctx) {
 	let equipmentlist;
 	let current;
@@ -26324,7 +26545,7 @@ function create_default_slot_12(ctx) {
 	};
 }
 
-// (116:6) <TabPanel>
+// (115:6) <TabPanel>
 function create_default_slot_11(ctx) {
 	let equipmentlist;
 	let current;
@@ -26354,7 +26575,7 @@ function create_default_slot_11(ctx) {
 	};
 }
 
-// (104:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'inventory-tab', e.detail);        }}>
+// (103:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'inventory-tab', e.detail);        }}>
 function create_default_slot_10(ctx) {
 	let tablist;
 	let t0;
@@ -26446,7 +26667,7 @@ function create_default_slot_10(ctx) {
 	};
 }
 
-// (103:2) <TabPanel>
+// (102:2) <TabPanel>
 function create_default_slot_9(ctx) {
 	let tabs;
 	let current;
@@ -26494,7 +26715,7 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (121:2) <TabPanel>
+// (120:2) <TabPanel>
 function create_default_slot_8(ctx) {
 	let spelllist;
 	let current;
@@ -26523,7 +26744,7 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (131:8) <Tab index={0}>
+// (130:8) <Tab index={0}>
 function create_default_slot_7(ctx) {
 	let t;
 
@@ -26540,7 +26761,7 @@ function create_default_slot_7(ctx) {
 	};
 }
 
-// (132:8) <Tab index={1}>
+// (131:8) <Tab index={1}>
 function create_default_slot_6(ctx) {
 	let t;
 
@@ -26557,7 +26778,7 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (130:6) <TabList>
+// (129:6) <TabList>
 function create_default_slot_5(ctx) {
 	let tab0;
 	let t;
@@ -26627,7 +26848,7 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (136:10) {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}
+// (135:10) {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}
 function create_each_block(ctx) {
 	let li;
 	let t0_value = /*attribute*/ ctx[8][0] + "";
@@ -26659,7 +26880,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (134:6) <TabPanel>
+// (133:6) <TabPanel>
 function create_default_slot_4(ctx) {
 	let ul;
 	let each_value = Object.entries(/*$entity*/ ctx[1].getProperty("data.attributes"));
@@ -26715,7 +26936,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (141:6) <TabPanel>
+// (140:6) <TabPanel>
 function create_default_slot_3(ctx) {
 	let h1;
 
@@ -26733,7 +26954,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (125:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'config-tab', e.detail);        }}>
+// (124:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'config-tab', e.detail);        }}>
 function create_default_slot_2(ctx) {
 	let tablist;
 	let t0;
@@ -26825,7 +27046,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (124:2) <TabPanel>
+// (123:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let tabs;
 	let current;
@@ -31554,7 +31775,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const contextmenu_handler = (technique, e) => {
-		$entity.rollSkill(technique.name, technique.calculateLevel(), [], "none");
+		$entity.rollSkill(technique.name, technique.calculateLevel(), []);
 		e.stopImmediatePropagation();
 		e.preventDefault();
 	};
@@ -31572,7 +31793,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const contextmenu_handler_1 = (skill, e) => {
-		$entity.rollSkill(skill.name, skill.calculateLevel(), [], "none");
+		$entity.rollSkill(skill.name, skill.calculateLevel(), []);
 		e.stopImmediatePropagation();
 		e.preventDefault();
 	};
@@ -32596,7 +32817,6 @@ function create_fragment(ctx) {
 			props: {
 				path: "data.pools.hit_points.value",
 				type: "number",
-				min: "0",
 				$$slots: {
 					"label-text-after": [create_label_text_after_slot_1]
 				},
@@ -35509,6 +35729,150 @@ class Clock extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponen
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Clock);
+
+/***/ }),
+
+/***/ "./src/svelte/dialogs/ModifierPrompt.svelte":
+/*!**************************************************!*\
+  !*** ./src/svelte/dialogs/ModifierPrompt.svelte ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Dialog */ "./src/svelte/Dialog.svelte");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../form/form */ "./src/svelte/form/form.ts");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* src\svelte\dialogs\ModifierPrompt.svelte generated by Svelte v3.25.0 */
+
+
+
+
+
+
+function create_default_slot(ctx) {
+	let label;
+	let t;
+	let input;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			label = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("label");
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("Modifiers: ");
+			input = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input, "type", "number");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, label, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(label, t);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(label, input);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input, /*modifier*/ ctx[0]);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input, "input", /*input_input_handler*/ ctx[2]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*modifier*/ 1 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input.value) !== /*modifier*/ ctx[0]) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input, /*modifier*/ ctx[0]);
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(label);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let dialog;
+	let current;
+
+	dialog = new _Dialog__WEBPACK_IMPORTED_MODULE_1__["default"]({
+			props: {
+				title: "Modifiers",
+				buttons: /*buttons*/ ctx[1],
+				height: 300,
+				width: 200,
+				overrideSubmit: true,
+				$$slots: { default: [create_default_slot] },
+				$$scope: { ctx }
+			}
+		});
+
+	dialog.$on("close", /*close_handler*/ ctx[3]);
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(dialog.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(dialog, target, anchor);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			const dialog_changes = {};
+
+			if (dirty & /*$$scope, modifier*/ 33) {
+				dialog_changes.$$scope = { dirty, ctx };
+			}
+
+			dialog.$set(dialog_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(dialog.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(dialog.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(dialog, detaching);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_3__["createEventDispatcher"])();
+	let modifier = [];
+
+	const buttons = {
+		submit: {
+			icon: "<i class=\"fas fa-check\"></i>",
+			label: "Roll",
+			callback: () => dispatch("roll", modifier)
+		}
+	};
+
+	function input_input_handler() {
+		modifier = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		$$invalidate(0, modifier);
+	}
+
+	function close_handler(event) {
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
+	}
+
+	return [modifier, buttons, input_input_handler, close_handler];
+}
+
+class ModifierPrompt extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {});
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ModifierPrompt);
 
 /***/ }),
 

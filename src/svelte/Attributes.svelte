@@ -11,7 +11,7 @@
   .attributes {
     display: grid;
     grid-template-rows: repeat(auto, 60px);
-    grid-template-columns: repeat(1, 75px);
+    grid-template-columns: repeat(1, 100px);
     background-color: rgba(0, 0, 0, 0.05);
     gap: 2px;
   }
@@ -19,7 +19,10 @@
     border: 1px solid black;
   }
   .attribute :global(.GURPS-label input) {
-    max-width: 50px;
+    max-width: 75px;
+  }
+  .roll-ico {
+    padding-left: 3px;
   }
 </style>
 
@@ -33,6 +36,12 @@
       <span slot="label-text">
         [{$GURPS.getAttribute('ST').pointsSpent()}] ST:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Strength', $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute dexterity">
@@ -44,6 +53,12 @@
       <span slot="label-text">
         [{$GURPS.getAttribute('DX').pointsSpent()}] DX:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Dexterity', $GURPS
+              .getAttribute(Signature.DX)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute intelligence">
@@ -55,6 +70,12 @@
       <span slot="label-text">
         [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Intelligence', $GURPS
+              .getAttribute(Signature.IQ)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute health">
@@ -66,6 +87,12 @@
       <span slot="label-text">
         [{$GURPS.getAttribute('HT').pointsSpent()}] HT:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Health', $GURPS
+              .getAttribute(Signature.HT)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute move">
@@ -102,8 +129,14 @@
       min={0}
       type="number">
       <span slot="label-text">
-        [{$GURPS.getAttribute('Will').pointsSpent()}] Will:
+        [{$GURPS.getAttribute(Signature.Will).pointsSpent()}] Will:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Will', $GURPS
+              .getAttribute(Signature.Will)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute perception">
@@ -115,6 +148,12 @@
       <span slot="label-text">
         [{$GURPS.getAttribute('Per').pointsSpent()}] Per:
       </span>
+      <span
+        slot="label-text"
+        class="fas fa-dice d6 roll-ico"
+        on:click={() => $entity.rollSkill('Perception', $GURPS
+              .getAttribute(Signature.Per)
+              .calculateLevel())} />
     </Input>
   </div>
   <div class="attribute hitpoints">

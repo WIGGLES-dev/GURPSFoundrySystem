@@ -39,7 +39,7 @@
     height: 100%;
   }
   .general-page {
-    margin-left: 75px;
+    margin-left: 100px;
   }
   .attribute-sidebar {
     background-color: rgba(0, 0, 0, 0.05);
@@ -84,7 +84,6 @@
         <div style="background-color: rgba(0, 0, 0, 0.05);">
           <Textarea path="data.notes" label="Notes" />
         </div>
-        
       </div>
     </div>
   </TabPanel>

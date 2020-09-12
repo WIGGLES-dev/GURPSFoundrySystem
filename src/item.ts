@@ -11,15 +11,8 @@ import { FeatureType, Signature } from "g4elogic";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
-    private _item: _Item;
-
-    public get item(): _Item {
-        return this._item;
-    }
-
-    public set item(value: _Item) {
-        this._item = value;
-    }
+    //@ts-ignore
+    item: _Item;
     app: Editor
 
     static get defaultOptions() {
@@ -47,21 +40,10 @@ export class _Item extends Item {
     GURPSUpdater: (store: any) => void
 
     _entity: Writable<Entity>
-    private _sheet: _ItemSheet;
-    public get sheet(): _ItemSheet {
-        return this._sheet;
-    }
-    public set sheet(value: _ItemSheet) {
-        this._sheet = value;
-    }
-    private _actor: _Actor;
-    public get actor(): _Actor {
-        return this._actor;
-    }
-    public set actor(value: _Actor) {
-        this._actor = value;
-    }
-
+    //@ts-ignore
+    sheet: _ItemSheet;
+    //@ts-ignore
+    actor: _Actor;
     constructor(data: any, options: any) {
         super(data, options);
         this._entity = writable(this);
@@ -223,7 +205,11 @@ export class _Item extends Item {
     }
 
     getGURPSObject() {
-        return this.actor.GURPS.getElementById("foundryID", this._id)
+        try {
+            return this.actor.GURPS.getElementById("foundryID", this._id)
+        } catch (err) {
+            return null
+        }
     }
 
     getIndex(): number {

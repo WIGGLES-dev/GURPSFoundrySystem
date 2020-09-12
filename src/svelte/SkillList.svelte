@@ -45,7 +45,7 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(technique.name, technique.calculateLevel(), [], 'none');
+            $entity.rollSkill(technique.name, technique.calculateLevel(), []);
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
@@ -137,7 +137,7 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(skill.name, skill.calculateLevel(), [], 'none');
+            $entity.rollSkill(skill.name, skill.calculateLevel(), []);
             e.stopImmediatePropagation();
             e.preventDefault();
           }}

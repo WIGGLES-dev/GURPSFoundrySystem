@@ -116,7 +116,7 @@
 
   <div class="hp">Hit Points</div>
   <div class="hp total">
-    <Input path="data.pools.hit_points.value" type="number" min="0">
+    <Input path="data.pools.hit_points.value" type="number">
       <span slot="label-text-after">
         / {$GURPS.getAttribute('HP').calculateLevel()}
       </span>
