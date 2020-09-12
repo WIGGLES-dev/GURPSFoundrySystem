@@ -132,6 +132,14 @@ export class _Item extends Item {
         }, { melee: [], ranged: [] })
     }
 
+    roll() {
+        switch (this.data.type) {
+            case "skill":
+
+            default:
+        }
+    }
+
     getFeatures() {
         return getProperty(this.data, "data.features") || []
     }

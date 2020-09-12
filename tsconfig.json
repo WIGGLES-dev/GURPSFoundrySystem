@@ -2,7 +2,7 @@
     "include": [
         "src/**/*",
         "src/node_modules",
-        "types"
+        "types", "types"
     ],
     "exclude": [
         "node_modules/*",

@@ -304,7 +304,7 @@ export class _Actor extends Actor {
             }
             roll.roll();
             let renderer = new SuccessRollRenderer();
-            renderer.render(roll).then((html) => {
+            renderer.render(roll, { template: "systems/GURPS/templates/GURPS-foundry-roll-templates/templates_roll.html" }).then((html) => {
                 ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
             });
         } catch (err) {

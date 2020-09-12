@@ -45,19 +45,6 @@
 </script>
 
 <style>
-  .message-header {
-    background-color: black;
-    padding: 3px;
-    border-radius: 3px;
-  }
-  .message-header > * {
-    color: white;
-  }
-  .message-avatar {
-    display: inline-block;
-    height: 20px;
-    background-color: black;
-  }
 </style>
 
 {#if isVisible}
@@ -70,23 +57,14 @@
     class:blind={message.data.blind}
     data-message-id={message._id}>
     <header class="message-header flexrow">
-      <!-- <img
-        class="message-avatar"
-        src={avatar}
-        alt="icons/svg/mystery-man.svg" /> -->
       <h4 class="message-sender">{message.alias}</h4>
       <span class="message-metadata">
         <time>{window.timeSince(message.data.timestamp)}</time>
-        <!-- svelte-ignore a11y-missing-attribute -->
         {#if window.game.user.isGM}
-          <a class="button message-delete">
-            <i class="fas fa-trash" />
-          </a>
+          <a class="button message-delete"> <i class="fas fa-trash" /> </a>
         {/if}
       </span>
-      {#if isWhisper}
-        <span class="whisper-to">{whisperTo}</span>
-      {/if}
+      {#if isWhisper}<span class="whisper-to">{whisperTo}</span>{/if}
       {#if message.data.flavor}
         <span class="flavor-text">{message.data.flavor}</span>
       {/if}

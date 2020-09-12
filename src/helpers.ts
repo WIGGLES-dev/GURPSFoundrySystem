@@ -212,7 +212,6 @@ export function getValue(entity, path, array: any = false) {
     } else {
         return entity.getProperty(path)
     }
-
 }
 
 function popperVirtualElement() {

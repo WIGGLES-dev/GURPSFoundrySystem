@@ -20,6 +20,7 @@
   export let label = "";
   export let step = null;
   export let type = "text";
+  export let value = null;
   export let defaultValue = type === "text" ? "" : type === "number" ? 0 : null;
   export let basedOn = null;
   export let mod = null;
@@ -58,12 +59,10 @@
     if (value === undefined || value === null) {
       value = defaultValue;
     } else {
-      if (type === "string") value = value;
+      if (type === "text") value = value;
       if (type === "number") value = value + basedOn + mod;
     }
   }
-
-  export let value = null;
 </script>
 
 <style>

@@ -3214,28 +3214,6 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{bac
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/svelte/chat/Message.svelte.css":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/svelte/chat/Message.svelte.css ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".message-header.svelte-6ao9h5.svelte-6ao9h5{background-color:black;padding:3px;border-radius:3px}.message-header.svelte-6ao9h5>.svelte-6ao9h5{color:white}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVzc2FnZS5zdmVsdGUiLCJzb3VyY2VzIjpbIk1lc3NhZ2Uuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcblxyXG4gIGltcG9ydCBEYW1hZ2UgZnJvbSBcIi4vRGFtYWdlXCI7XHJcbiAgaW1wb3J0IFNraWxsIGZyb20gXCIuL1NraWxsXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgbWVzc2FnZSA9IG51bGw7XHJcblxyXG4gIGxldCBzZW5kZXIgPSBnYW1lLnVzZXJzLmdldChtZXNzYWdlLmRhdGEudXNlcik7XHJcbiAgbGV0IHVzZXJBdmF0YXIgPSBzZW5kZXIuYXZhdGFyO1xyXG4gIGxldCBhbGlhc0F2YXRhciA9IHNlbmRlci5jaGFyYWN0ZXJcclxuICAgID8gc2VuZGVyLmNoYXJhY3Rlci5nZXRQcm9wZXJ0eShcImltZ1wiKVxyXG4gICAgOiBudWxsO1xyXG5cclxuICBsZXQgYXZhdGFyID0gYWxpYXNBdmF0YXIgfHwgdXNlckF2YXRhcjtcclxuXHJcbiAgbGV0IGlzV2hpc3BlciA9IGdldFByb3BlcnR5KG1lc3NhZ2UsIFwiZGF0YS53aGlzcGVyLmxlbmd0aFwiKTtcclxuICBsZXQgd2hpc3BlclRvID0gbWVzc2FnZS5kYXRhLndoaXNwZXIubWFwKCh1KSA9PiB7XHJcbiAgICBsZXQgdXNlciA9IGdhbWUudXNlcnMuZ2V0KHUpO1xyXG4gICAgcmV0dXJuIHVzZXIgPyB1c2VyLm5hbWUgOiBudWxsO1xyXG4gIH0pO1xyXG4gIGxldCBpc1Zpc2libGUgPSBtZXNzYWdlLmlzQ29udGVudFZpc2libGU7XHJcbiAgbGV0IGZsYXZvciA9IG51bGw7XHJcbiAgbGV0IGFsaWFzID0gbnVsbDtcclxuICBsZXQgYm9yZGVyQ29sb3IgPVxyXG4gICAgbWVzc2FnZS5kYXRhLnR5cGUgPT09IENPTlNULkNIQVRfTUVTU0FHRV9UWVBFUy5PT0NcclxuICAgICAgPyBtZXNzYWdlLnVzZXIuY29sb3JcclxuICAgICAgOiBudWxsO1xyXG4gIGlmICghaXNWaXNpYmxlKSB7XHJcbiAgICBpc1doaXNwZXIgPSBmYWxzZTtcclxuICAgIGZsYXZvciA9IGAke3RoaXMudXNlci5uYW1lfSBwcml2YXRlbHkgcm9sbGVkIHNvbWUgZGljZWA7XHJcbiAgICBhbGlhcyA9IG1lc3NhZ2UudXNlci5uYW1lO1xyXG4gIH1cclxuICBsZXQgaGFzSFRNTENvbnRlbnQgPSBtZXNzYWdlLmRhdGEuY29udGVudC5zdGFydHNXaXRoKFwiPFwiKTtcclxuXHJcbiAgZXhwb3J0IGxldCByb2xsQ29tcG9uZW50ID0gZmFsc2U7XHJcbiAgZXhwb3J0IGxldCByb2xsRGF0YSA9IG51bGw7XHJcblxyXG4gIGZ1bmN0aW9uIGdldFJvbGxDb21wb25lbnQodHlwZSkge1xyXG4gICAgc3dpdGNoICh0eXBlKSB7XHJcbiAgICAgIGNhc2UgXCJEYW1hZ2VcIjpcclxuICAgICAgICByZXR1cm4gRGFtYWdlO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLm1lc3NhZ2UtaGVhZGVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgcGFkZGluZzogM3B4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxuICAubWVzc2FnZS1oZWFkZXIgPiAqIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLm1lc3NhZ2UtYXZhdGFyIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIGhlaWdodDogMjBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbnsjaWYgaXNWaXNpYmxlfVxyXG4gIDxsaVxyXG4gICAgc3R5bGU9XCJib3JkZXItY29sb3I6IHtib3JkZXJDb2xvcn07XCJcclxuICAgIGNsYXNzPVwibWVzc2FnZSBmbGV4Y29sXCJcclxuICAgIGNsYXNzOmljPXt3aW5kb3cuQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLklDfVxyXG4gICAgY2xhc3M6ZW1vdGU9e3dpbmRvdy5DT05TVC5DSEFUX01FU1NBR0VfVFlQRVMuRU1PVEV9XHJcbiAgICBjbGFzczp3aGlzcGVyPXtpc1doaXNwZXJ9XHJcbiAgICBjbGFzczpibGluZD17bWVzc2FnZS5kYXRhLmJsaW5kfVxyXG4gICAgZGF0YS1tZXNzYWdlLWlkPXttZXNzYWdlLl9pZH0+XHJcbiAgICA8aGVhZGVyIGNsYXNzPVwibWVzc2FnZS1oZWFkZXIgZmxleHJvd1wiPlxyXG4gICAgICA8IS0tIDxpbWdcclxuICAgICAgICBjbGFzcz1cIm1lc3NhZ2UtYXZhdGFyXCJcclxuICAgICAgICBzcmM9e2F2YXRhcn1cclxuICAgICAgICBhbHQ9XCJpY29ucy9zdmcvbXlzdGVyeS1tYW4uc3ZnXCIgLz4gLS0+XHJcbiAgICAgIDxoNCBjbGFzcz1cIm1lc3NhZ2Utc2VuZGVyXCI+e21lc3NhZ2UuYWxpYXN9PC9oND5cclxuICAgICAgPHNwYW4gY2xhc3M9XCJtZXNzYWdlLW1ldGFkYXRhXCI+XHJcbiAgICAgICAgPHRpbWU+e3dpbmRvdy50aW1lU2luY2UobWVzc2FnZS5kYXRhLnRpbWVzdGFtcCl9PC90aW1lPlxyXG4gICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgIHsjaWYgd2luZG93LmdhbWUudXNlci5pc0dNfVxyXG4gICAgICAgICAgPGEgY2xhc3M9XCJidXR0b24gbWVzc2FnZS1kZWxldGVcIj5cclxuICAgICAgICAgICAgPGkgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIiAvPlxyXG4gICAgICAgICAgPC9hPlxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgeyNpZiBpc1doaXNwZXJ9XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJ3aGlzcGVyLXRvXCI+e3doaXNwZXJUb308L3NwYW4+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICAgIHsjaWYgbWVzc2FnZS5kYXRhLmZsYXZvcn1cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImZsYXZvci10ZXh0XCI+e21lc3NhZ2UuZGF0YS5mbGF2b3J9PC9zcGFuPlxyXG4gICAgICB7L2lmfVxyXG4gICAgPC9oZWFkZXI+XHJcbiAgICA8ZGl2IGNsYXNzPVwibWVzc2FnZS1jb250ZW50XCI+XHJcbiAgICAgIHsjaWYgbWVzc2FnZS5yb2xsVHlwZSgpfVxyXG4gICAgICAgIDxzdmVsdGU6Y29tcG9uZW50XHJcbiAgICAgICAgICB0aGlzPXtnZXRSb2xsQ29tcG9uZW50KG1lc3NhZ2Uucm9sbFR5cGUoKSl9XHJcbiAgICAgICAgICB7bWVzc2FnZX1cclxuICAgICAgICAgIHtyb2xsRGF0YX0gLz5cclxuICAgICAgezplbHNlIGlmIG1lc3NhZ2Uucm9sbH1cclxuICAgICAgICB7I2F3YWl0IG1lc3NhZ2Uucm9sbC5yZW5kZXIoKSB0aGVuIHJvbGx9XHJcbiAgICAgICAgICB7QGh0bWwgcm9sbH1cclxuICAgICAgICB7L2F3YWl0fVxyXG4gICAgICB7OmVsc2UgaWYgaGFzSFRNTENvbnRlbnQgfHwgKG1lc3NhZ2UuZGF0YS5jb250ZW50ICYmICFyb2xsQ29tcG9uZW50KX1cclxuICAgICAgICB7QGh0bWwgbWVzc2FnZS5kYXRhLmNvbnRlbnR9XHJcbiAgICAgIHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICA8L2xpPlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0NFLGVBQWUsNEJBQUMsQ0FBQyxBQUNmLGdCQUFnQixDQUFFLEtBQUssQ0FDdkIsT0FBTyxDQUFFLEdBQUcsQ0FDWixhQUFhLENBQUUsR0FBRyxBQUNwQixDQUFDLEFBQ0QsNkJBQWUsQ0FBRyxjQUFFLENBQUMsQUFDbkIsS0FBSyxDQUFFLEtBQUssQUFDZCxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/chat/Message.svelte","webpack://src/svelte/chat/Message.svelte.css"],"names":[],"mappings":"AA+CE,4CAAiB,sBACQ,CACvB,WAAY,CACZ,iBAAkB,CACnB,6CACoB,WACP;ACpDhB,itJAAitJ","sourcesContent":["<script>\r\n  import SuccessRoll from \"gurps-foundry-roll-lib/src/js/Roll/SuccessRoll\";\r\n\r\n  import Damage from \"./Damage\";\r\n  import Skill from \"./Skill\";\r\n\r\n  export let message = null;\r\n\r\n  let sender = game.users.get(message.data.user);\r\n  let userAvatar = sender.avatar;\r\n  let aliasAvatar = sender.character\r\n    ? sender.character.getProperty(\"img\")\r\n    : null;\r\n\r\n  let avatar = aliasAvatar || userAvatar;\r\n\r\n  let isWhisper = getProperty(message, \"data.whisper.length\");\r\n  let whisperTo = message.data.whisper.map((u) => {\r\n    let user = game.users.get(u);\r\n    return user ? user.name : null;\r\n  });\r\n  let isVisible = message.isContentVisible;\r\n  let flavor = null;\r\n  let alias = null;\r\n  let borderColor =\r\n    message.data.type === CONST.CHAT_MESSAGE_TYPES.OOC\r\n      ? message.user.color\r\n      : null;\r\n  if (!isVisible) {\r\n    isWhisper = false;\r\n    flavor = `${this.user.name} privately rolled some dice`;\r\n    alias = message.user.name;\r\n  }\r\n  let hasHTMLContent = message.data.content.startsWith(\"<\");\r\n\r\n  export let rollComponent = false;\r\n  export let rollData = null;\r\n\r\n  function getRollComponent(type) {\r\n    switch (type) {\r\n      case \"Damage\":\r\n        return Damage;\r\n    }\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .message-header {\r\n    background-color: black;\r\n    padding: 3px;\r\n    border-radius: 3px;\r\n  }\r\n  .message-header > * {\r\n    color: white;\r\n  }\r\n  .message-avatar {\r\n    display: inline-block;\r\n    height: 20px;\r\n    background-color: black;\r\n  }\r\n</style>\r\n\r\n{#if isVisible}\r\n  <li\r\n    style=\"border-color: {borderColor};\"\r\n    class=\"message flexcol\"\r\n    class:ic={window.CONST.CHAT_MESSAGE_TYPES.IC}\r\n    class:emote={window.CONST.CHAT_MESSAGE_TYPES.EMOTE}\r\n    class:whisper={isWhisper}\r\n    class:blind={message.data.blind}\r\n    data-message-id={message._id}>\r\n    <header class=\"message-header flexrow\">\r\n      <!-- <img\r\n        class=\"message-avatar\"\r\n        src={avatar}\r\n        alt=\"icons/svg/mystery-man.svg\" /> -->\r\n      <h4 class=\"message-sender\">{message.alias}</h4>\r\n      <span class=\"message-metadata\">\r\n        <time>{window.timeSince(message.data.timestamp)}</time>\r\n        <!-- svelte-ignore a11y-missing-attribute -->\r\n        {#if window.game.user.isGM}\r\n          <a class=\"button message-delete\">\r\n            <i class=\"fas fa-trash\" />\r\n          </a>\r\n        {/if}\r\n      </span>\r\n      {#if isWhisper}\r\n        <span class=\"whisper-to\">{whisperTo}</span>\r\n      {/if}\r\n      {#if message.data.flavor}\r\n        <span class=\"flavor-text\">{message.data.flavor}</span>\r\n      {/if}\r\n    </header>\r\n    <div class=\"message-content\">\r\n      {#if message.rollType()}\r\n        <svelte:component\r\n          this={getRollComponent(message.rollType())}\r\n          {message}\r\n          {rollData} />\r\n      {:else if message.roll}\r\n        {#await message.roll.render() then roll}\r\n          {@html roll}\r\n        {/await}\r\n      {:else if hasHTMLContent || (message.data.content && !rollComponent)}\r\n        {@html message.data.content}\r\n      {/if}\r\n    </div>\r\n  </li>\r\n{/if}\r\n",".message-header.svelte-6ao9h5.svelte-6ao9h5{background-color:black;padding:3px;border-radius:3px}.message-header.svelte-6ao9h5>.svelte-6ao9h5{color:white}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVzc2FnZS5zdmVsdGUiLCJzb3VyY2VzIjpbIk1lc3NhZ2Uuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcblxyXG4gIGltcG9ydCBEYW1hZ2UgZnJvbSBcIi4vRGFtYWdlXCI7XHJcbiAgaW1wb3J0IFNraWxsIGZyb20gXCIuL1NraWxsXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgbWVzc2FnZSA9IG51bGw7XHJcblxyXG4gIGxldCBzZW5kZXIgPSBnYW1lLnVzZXJzLmdldChtZXNzYWdlLmRhdGEudXNlcik7XHJcbiAgbGV0IHVzZXJBdmF0YXIgPSBzZW5kZXIuYXZhdGFyO1xyXG4gIGxldCBhbGlhc0F2YXRhciA9IHNlbmRlci5jaGFyYWN0ZXJcclxuICAgID8gc2VuZGVyLmNoYXJhY3Rlci5nZXRQcm9wZXJ0eShcImltZ1wiKVxyXG4gICAgOiBudWxsO1xyXG5cclxuICBsZXQgYXZhdGFyID0gYWxpYXNBdmF0YXIgfHwgdXNlckF2YXRhcjtcclxuXHJcbiAgbGV0IGlzV2hpc3BlciA9IGdldFByb3BlcnR5KG1lc3NhZ2UsIFwiZGF0YS53aGlzcGVyLmxlbmd0aFwiKTtcclxuICBsZXQgd2hpc3BlclRvID0gbWVzc2FnZS5kYXRhLndoaXNwZXIubWFwKCh1KSA9PiB7XHJcbiAgICBsZXQgdXNlciA9IGdhbWUudXNlcnMuZ2V0KHUpO1xyXG4gICAgcmV0dXJuIHVzZXIgPyB1c2VyLm5hbWUgOiBudWxsO1xyXG4gIH0pO1xyXG4gIGxldCBpc1Zpc2libGUgPSBtZXNzYWdlLmlzQ29udGVudFZpc2libGU7XHJcbiAgbGV0IGZsYXZvciA9IG51bGw7XHJcbiAgbGV0IGFsaWFzID0gbnVsbDtcclxuICBsZXQgYm9yZGVyQ29sb3IgPVxyXG4gICAgbWVzc2FnZS5kYXRhLnR5cGUgPT09IENPTlNULkNIQVRfTUVTU0FHRV9UWVBFUy5PT0NcclxuICAgICAgPyBtZXNzYWdlLnVzZXIuY29sb3JcclxuICAgICAgOiBudWxsO1xyXG4gIGlmICghaXNWaXNpYmxlKSB7XHJcbiAgICBpc1doaXNwZXIgPSBmYWxzZTtcclxuICAgIGZsYXZvciA9IGAke3RoaXMudXNlci5uYW1lfSBwcml2YXRlbHkgcm9sbGVkIHNvbWUgZGljZWA7XHJcbiAgICBhbGlhcyA9IG1lc3NhZ2UudXNlci5uYW1lO1xyXG4gIH1cclxuICBsZXQgaGFzSFRNTENvbnRlbnQgPSBtZXNzYWdlLmRhdGEuY29udGVudC5zdGFydHNXaXRoKFwiPFwiKTtcclxuXHJcbiAgZXhwb3J0IGxldCByb2xsQ29tcG9uZW50ID0gZmFsc2U7XHJcbiAgZXhwb3J0IGxldCByb2xsRGF0YSA9IG51bGw7XHJcblxyXG4gIGZ1bmN0aW9uIGdldFJvbGxDb21wb25lbnQodHlwZSkge1xyXG4gICAgc3dpdGNoICh0eXBlKSB7XHJcbiAgICAgIGNhc2UgXCJEYW1hZ2VcIjpcclxuICAgICAgICByZXR1cm4gRGFtYWdlO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLm1lc3NhZ2UtaGVhZGVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgcGFkZGluZzogM3B4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxuICAubWVzc2FnZS1oZWFkZXIgPiAqIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLm1lc3NhZ2UtYXZhdGFyIHtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIGhlaWdodDogMjBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbnsjaWYgaXNWaXNpYmxlfVxyXG4gIDxsaVxyXG4gICAgc3R5bGU9XCJib3JkZXItY29sb3I6IHtib3JkZXJDb2xvcn07XCJcclxuICAgIGNsYXNzPVwibWVzc2FnZSBmbGV4Y29sXCJcclxuICAgIGNsYXNzOmljPXt3aW5kb3cuQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLklDfVxyXG4gICAgY2xhc3M6ZW1vdGU9e3dpbmRvdy5DT05TVC5DSEFUX01FU1NBR0VfVFlQRVMuRU1PVEV9XHJcbiAgICBjbGFzczp3aGlzcGVyPXtpc1doaXNwZXJ9XHJcbiAgICBjbGFzczpibGluZD17bWVzc2FnZS5kYXRhLmJsaW5kfVxyXG4gICAgZGF0YS1tZXNzYWdlLWlkPXttZXNzYWdlLl9pZH0+XHJcbiAgICA8aGVhZGVyIGNsYXNzPVwibWVzc2FnZS1oZWFkZXIgZmxleHJvd1wiPlxyXG4gICAgICA8IS0tIDxpbWdcclxuICAgICAgICBjbGFzcz1cIm1lc3NhZ2UtYXZhdGFyXCJcclxuICAgICAgICBzcmM9e2F2YXRhcn1cclxuICAgICAgICBhbHQ9XCJpY29ucy9zdmcvbXlzdGVyeS1tYW4uc3ZnXCIgLz4gLS0+XHJcbiAgICAgIDxoNCBjbGFzcz1cIm1lc3NhZ2Utc2VuZGVyXCI+e21lc3NhZ2UuYWxpYXN9PC9oND5cclxuICAgICAgPHNwYW4gY2xhc3M9XCJtZXNzYWdlLW1ldGFkYXRhXCI+XHJcbiAgICAgICAgPHRpbWU+e3dpbmRvdy50aW1lU2luY2UobWVzc2FnZS5kYXRhLnRpbWVzdGFtcCl9PC90aW1lPlxyXG4gICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgIHsjaWYgd2luZG93LmdhbWUudXNlci5pc0dNfVxyXG4gICAgICAgICAgPGEgY2xhc3M9XCJidXR0b24gbWVzc2FnZS1kZWxldGVcIj5cclxuICAgICAgICAgICAgPGkgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIiAvPlxyXG4gICAgICAgICAgPC9hPlxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgeyNpZiBpc1doaXNwZXJ9XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJ3aGlzcGVyLXRvXCI+e3doaXNwZXJUb308L3NwYW4+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICAgIHsjaWYgbWVzc2FnZS5kYXRhLmZsYXZvcn1cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImZsYXZvci10ZXh0XCI+e21lc3NhZ2UuZGF0YS5mbGF2b3J9PC9zcGFuPlxyXG4gICAgICB7L2lmfVxyXG4gICAgPC9oZWFkZXI+XHJcbiAgICA8ZGl2IGNsYXNzPVwibWVzc2FnZS1jb250ZW50XCI+XHJcbiAgICAgIHsjaWYgbWVzc2FnZS5yb2xsVHlwZSgpfVxyXG4gICAgICAgIDxzdmVsdGU6Y29tcG9uZW50XHJcbiAgICAgICAgICB0aGlzPXtnZXRSb2xsQ29tcG9uZW50KG1lc3NhZ2Uucm9sbFR5cGUoKSl9XHJcbiAgICAgICAgICB7bWVzc2FnZX1cclxuICAgICAgICAgIHtyb2xsRGF0YX0gLz5cclxuICAgICAgezplbHNlIGlmIG1lc3NhZ2Uucm9sbH1cclxuICAgICAgICB7I2F3YWl0IG1lc3NhZ2Uucm9sbC5yZW5kZXIoKSB0aGVuIHJvbGx9XHJcbiAgICAgICAgICB7QGh0bWwgcm9sbH1cclxuICAgICAgICB7L2F3YWl0fVxyXG4gICAgICB7OmVsc2UgaWYgaGFzSFRNTENvbnRlbnQgfHwgKG1lc3NhZ2UuZGF0YS5jb250ZW50ICYmICFyb2xsQ29tcG9uZW50KX1cclxuICAgICAgICB7QGh0bWwgbWVzc2FnZS5kYXRhLmNvbnRlbnR9XHJcbiAgICAgIHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICA8L2xpPlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0NFLGVBQWUsNEJBQUMsQ0FBQyxBQUNmLGdCQUFnQixDQUFFLEtBQUssQ0FDdkIsT0FBTyxDQUFFLEdBQUcsQ0FDWixhQUFhLENBQUUsR0FBRyxBQUNwQixDQUFDLEFBQ0QsNkJBQWUsQ0FBRyxjQUFFLENBQUMsQUFDbkIsS0FBSyxDQUFFLEtBQUssQUFDZCxDQUFDIn0=*/"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/svelte/editors/Equipment.svelte.css":
 /*!***************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/svelte/editors/Equipment.svelte.css ***!
@@ -3383,7 +3361,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInN0cmluZ1wiKSB2YWx1ZSA9IHZhbHVlO1xyXG4gICAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikgdmFsdWUgPSB2YWx1ZSArIGJhc2VkT24gKyBtb2Q7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUVFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/form/Input.svelte","webpack://src/svelte/form/Input.svelte.css"],"names":[],"mappings":"AAqEE,6BAAgB,oBACO,CACrB,UAAW;ACtEf,64IAA64I","sourcesContent":["<script>\r\n  import { createEventDispatcher, getContext, tick, onMount } from \"svelte\";\r\n  import { getValue, createTooltip } from \"../../helpers.ts\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let inputElem;\r\n\r\n  /**\r\n   *  Foundry specific inputs\r\n   **/\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let path = null;\r\n  export let array = false;\r\n  export let alsoUpdate = null;\r\n\r\n  export let min = null;\r\n  export let disabled = null;\r\n  export let name = null;\r\n  export let autocomplete = \"off\";\r\n  export let label = \"\";\r\n  export let step = null;\r\n  export let type = \"text\";\r\n  export let defaultValue = type === \"text\" ? \"\" : type === \"number\" ? 0 : null;\r\n  export let basedOn = null;\r\n  export let mod = null;\r\n  export let tooltipText = null;\r\n  export let classList = \"\";\r\n  export let placeholder = null;\r\n\r\n  export let config = {\r\n    clickToEdit: false,\r\n  };\r\n\r\n  $: clickedToEdit = false;\r\n\r\n  async function update(e) {\r\n    let target = e.target;\r\n    let tValue = e.target.value;\r\n\r\n    if (type === \"number\") {\r\n      tValue = +target.value - basedOn - mod;\r\n      if (+target.value < min && min !== null) tValue = min - basedOn - mod;\r\n    }\r\n\r\n    let update = await game.gurps4e.customUpdate({\r\n      entity: $entity,\r\n      value: tValue,\r\n      path,\r\n      array,\r\n      alsoUpdate,\r\n    });\r\n\r\n    dispatch(\"update\", { entity: update, change: tValue });\r\n  }\r\n\r\n  $: {\r\n    value = getValue($entity, path, array);\r\n    if (value === undefined || value === null) {\r\n      value = defaultValue;\r\n    } else {\r\n      if (type === \"string\") value = value;\r\n      if (type === \"number\") value = value + basedOn + mod;\r\n    }\r\n  }\r\n\r\n  export let value = null;\r\n</script>\r\n\r\n<style>\r\n  .click-to-edit {\r\n    display: inline-block;\r\n    width: 100%;\r\n  }\r\n</style>\r\n\r\n{#if !config.clickToEdit || clickedToEdit}\r\n  <label\r\n    use:createTooltip={{ tooltipText }}\r\n    class:click-to-edit={config.clickToEdit}\r\n    for={name}\r\n    class=\"GURPS-label {classList}\"\r\n    data-label={Boolean(label)}>\r\n    {#if label}\r\n      <span>{label}</span>\r\n    {:else}\r\n      <slot name=\"label-text\" {value} />\r\n    {/if}\r\n    <input\r\n      on:dragstart|preventDefault|stopPropagation\r\n      {placeholder}\r\n      data-path={path}\r\n      class={classList}\r\n      draggable={true}\r\n      bind:this={inputElem}\r\n      {step}\r\n      autocomplete={autocomplete === 'off' ? 'off' : null}\r\n      {name}\r\n      {disabled}\r\n      {min}\r\n      {type}\r\n      on:blur={() => (clickedToEdit = false)}\r\n      on:change={update}\r\n      {value} />\r\n    <slot name=\"label-text-after\" {value} />\r\n  </label>\r\n{:else}\r\n  <div\r\n    class=\"click-to-edit\"\r\n    on:dblclick={async () => {\r\n      clickedToEdit = true;\r\n      await tick();\r\n      inputElem.focus();\r\n    }}>\r\n    {#if !value}&nbsp;{/if}\r\n    <slot name=\"no-edit\" {value} />\r\n  </div>\r\n{/if}\r\n",".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInN0cmluZ1wiKSB2YWx1ZSA9IHZhbHVlO1xyXG4gICAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikgdmFsdWUgPSB2YWx1ZSArIGJhc2VkT24gKyBtb2Q7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUVFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/form/Input.svelte","webpack://src/svelte/form/Input.svelte.css"],"names":[],"mappings":"AAoEE,6BAAgB,oBACO,CACrB,UAAW;ACrEf,q4IAAq4I","sourcesContent":["<script>\r\n  import { createEventDispatcher, getContext, tick, onMount } from \"svelte\";\r\n  import { getValue, createTooltip } from \"../../helpers.ts\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let inputElem;\r\n\r\n  /**\r\n   *  Foundry specific inputs\r\n   **/\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let path = null;\r\n  export let array = false;\r\n  export let alsoUpdate = null;\r\n\r\n  export let min = null;\r\n  export let disabled = null;\r\n  export let name = null;\r\n  export let autocomplete = \"off\";\r\n  export let label = \"\";\r\n  export let step = null;\r\n  export let type = \"text\";\r\n  export let value = null;\r\n  export let defaultValue = type === \"text\" ? \"\" : type === \"number\" ? 0 : null;\r\n  export let basedOn = null;\r\n  export let mod = null;\r\n  export let tooltipText = null;\r\n  export let classList = \"\";\r\n  export let placeholder = null;\r\n\r\n  export let config = {\r\n    clickToEdit: false,\r\n  };\r\n\r\n  $: clickedToEdit = false;\r\n\r\n  async function update(e) {\r\n    let target = e.target;\r\n    let tValue = e.target.value;\r\n\r\n    if (type === \"number\") {\r\n      tValue = +target.value - basedOn - mod;\r\n      if (+target.value < min && min !== null) tValue = min - basedOn - mod;\r\n    }\r\n\r\n    let update = await game.gurps4e.customUpdate({\r\n      entity: $entity,\r\n      value: tValue,\r\n      path,\r\n      array,\r\n      alsoUpdate,\r\n    });\r\n\r\n    dispatch(\"update\", { entity: update, change: tValue });\r\n  }\r\n\r\n  $: {\r\n    value = getValue($entity, path, array);\r\n    if (value === undefined || value === null) {\r\n      value = defaultValue;\r\n    } else {\r\n      if (type === \"text\") value = value;\r\n      if (type === \"number\") value = value + basedOn + mod;\r\n    }\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .click-to-edit {\r\n    display: inline-block;\r\n    width: 100%;\r\n  }\r\n</style>\r\n\r\n{#if !config.clickToEdit || clickedToEdit}\r\n  <label\r\n    use:createTooltip={{ tooltipText }}\r\n    class:click-to-edit={config.clickToEdit}\r\n    for={name}\r\n    class=\"GURPS-label {classList}\"\r\n    data-label={Boolean(label)}>\r\n    {#if label}\r\n      <span>{label}</span>\r\n    {:else}\r\n      <slot name=\"label-text\" {value} />\r\n    {/if}\r\n    <input\r\n      on:dragstart|preventDefault|stopPropagation\r\n      {placeholder}\r\n      data-path={path}\r\n      class={classList}\r\n      draggable={true}\r\n      bind:this={inputElem}\r\n      {step}\r\n      autocomplete={autocomplete === 'off' ? 'off' : null}\r\n      {name}\r\n      {disabled}\r\n      {min}\r\n      {type}\r\n      on:blur={() => (clickedToEdit = false)}\r\n      on:change={update}\r\n      {value} />\r\n    <slot name=\"label-text-after\" {value} />\r\n  </label>\r\n{:else}\r\n  <div\r\n    class=\"click-to-edit\"\r\n    on:dblclick={async () => {\r\n      clickedToEdit = true;\r\n      await tick();\r\n      inputElem.focus();\r\n    }}>\r\n    {#if !value}&nbsp;{/if}\r\n    <slot name=\"no-edit\" {value} />\r\n  </div>\r\n{/if}\r\n",".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3471,7 +3449,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".hovered.svelte-3eflit,tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}.focused.svelte-3eflit{background-color:#ff6400}.dragover.svelte-3eflit{background-color:#ff6400}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICAkOiBHVVJQUyA9IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEdVUlBTT2JqZWN0XHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEdVUlBTT2JqZWN0KClcclxuICAgIDoge307XHJcblxyXG4gIGxldCByb3dIVE1MRWxlbWVudDtcclxuICAkOiBpID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaW5kZXhcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5ob3ZlcmVkLFxyXG4gIHRyOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgfVxyXG4gIC5ub3RlcyB7XHJcbiAgICBwYWRkaW5nOiAwcHg7XHJcbiAgfVxyXG4gIC5jb250YWluZXIge1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgfVxyXG4gIC5mb2N1c2VkIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIC5kcmFnb3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmY2NDAwO1xyXG4gIH1cclxuICB0ciA+IDpnbG9iYWwodGQpIHtcclxuICAgIHBhZGRpbmc6IDNweCAwcHggM3B4IDBweDtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48dHJcclxuICBjbGFzczppcy1yb3ctbGFiZWw9e2lzUm93TGFiZWx9XHJcbiAgYmluZDp0aGlzPXtyb3dIVE1MRWxlbWVudH1cclxuICBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHtjb2xvcnMuYmFja2dyb3VuZENvbG9yfTsgY29sb3I6IHtjb2xvcnMudGV4dENvbG9yfVwiXHJcbiAgY2xhc3M6c3RyaWtldGhyb3VnaD17ZGlzYWJsZWR9XHJcbiAgZGF0YS1jb250YWluZXI9e2NvbnRhaW5lcn1cclxuICBkYXRhLWluZGV4PXtpfVxyXG4gIGRhdGEtZW50aXR5LWlkPXtpZH1cclxuICBkYXRhLWxpc3R0eXBlPXt0eXBlfVxyXG4gIGRhdGEtY29udGV4dG1lbnU9e3NlbGVjdG9yfVxyXG4gIHVzZTpjcmVhdGVDb250ZXh0TWVudT17eyBtZW51SXRlbXMsIHNlbGVjdG9yIH19XHJcbiAgY2xhc3M6Y29udGFpbmVyXHJcbiAgY2xhc3M6Zm9jdXNlZD17JGZvY3VzZWQuaW5jbHVkZXMoaSkgJiYgY29uZmlnLmZvY3VzYWJsZX1cclxuICBjbGFzczpkcmFnb3Zlcj17JGRyYWdvdmVyID09PSBpfVxyXG4gIGNsYXNzOmhvdmVyZWQ9eyRob3ZlcmVkID09PSBpICYmIGNvbmZpZy5oaWdobGlnaHRIb3Zlcn1cclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQoaSk7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGkpO1xyXG4gICAgfVxyXG4gICAgZGlzcGF0Y2goJ21vdXNlZW50ZXInKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlZG93bj17KGUpID0+IHtcclxuICAgIGlmIChlLndoaWNoID09IDEgJiYgZS5zaGlmdEtleSAmJiBjb25maWcuZm9jdXNhYmxlKSB7XHJcbiAgICAgIHNldEZvY3VzZWQoaSwgdHJ1ZSwgZS50aW1lc3RhbXApO1xyXG4gICAgfSBlbHNlIGlmIChlLndoaWNoID09IDEgJiYgZS5zaGlmdEtleSAmJiBjb25maWcpIHtcclxuICAgICAgZm9jdXNlZC5zZXQoW2ldKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWRvd24nKTtcclxuICB9fVxyXG4gIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2NsaWNrJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZW91dD17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdtb3VzZW91dCcpO1xyXG4gIH19XHJcbiAgb246bW91c2VsZWF2ZT17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17JGhvdmVyZWQgPT09IGl9IC8+XHJcbiAgPHRkIGNsYXNzPVwic2hvdy13aGVuLWxhYmVsXCI+XHJcbiAgICB7I2lmIGNvbmZpZy5kZWxldGVCdXR0b259XHJcbiAgICAgIHsjaWYgY29udGFpbmVyfVxyXG4gICAgICAgIDwhLS0gPGkgY2xhc3M9XCJmYXMgZmEtYm94XCIgLz4gLS0+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICAgIDxpXHJcbiAgICAgICAgY2xhc3M6bm8tc2hvdz17ISgkaG92ZXJlZCA9PT0gaSAmJiAkZHJhZ292ZXIgIT09IGkpfVxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4ge1xyXG4gICAgICAgICAgZGlzcGF0Y2goJ2RlbGV0ZScsIHsgZW50aXR5OiBnZXRJdGVtKCRlbnRpdHksIGlkKSB9KTtcclxuICAgICAgICB9fSAvPlxyXG4gICAgey9pZn1cclxuICA8L3RkPlxyXG48L3RyPlxyXG5cclxueyNpZiAhaGlkZU5vdGVzfVxyXG4gIDx0ZCBjbGFzcz1cIm5vdGVzXCIge2NvbHNwYW59PlxyXG4gICAgPHNsb3QgbmFtZT1cIm5vdGVzXCIge0dVUlBTfSB7aWR9IC8+XHJcbiAgPC90ZD5cclxuey9pZn1cclxuXHJcbnsjaWYgY29udGFpbmVyICYmIGl0ZW1Jc09wZW4oaWQpfVxyXG4gIHsjZWFjaCBnYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGNoaWxkcmVuKSBhcyBjaGlsZCwgaSAoY2hpbGQuZm91bmRyeUlEKX1cclxuICAgIDxzdmVsdGU6c2VsZlxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRkUsc0JBQVEsQ0FDUixnQkFBRSxNQUFNLEFBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEFBQ3ZDLENBQUMsQUFDRCxNQUFNLGNBQUMsQ0FBQyxBQUNOLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsY0FBQyxDQUFDLEFBQ1YsS0FBSyxDQUFFLEtBQUssQ0FDWixnQkFBZ0IsQ0FBRSxLQUFLLEFBQ3pCLENBQUMsQUFDRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLE9BQU8sQUFDM0IsQ0FBQyxBQUNELFNBQVMsY0FBQyxDQUFDLEFBQ1QsZ0JBQWdCLENBQUUsT0FBTyxBQUMzQixDQUFDLEFBQ0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/list/Row.svelte","webpack://src/svelte/list/Row.svelte.css"],"names":[],"mappings":"AAoFE,8CACU,oCAC6B,CACtC,qBACO,WACM,CACb,yBACW,WACE,CACZ,sBAAuB,CACxB,uBACS,wBACiB,CAC1B,wBACU,wBACgB,CAC1B,oBACiB,uBACQ,CACxB,6BAA8B;ACtGlC,qkSAAqkS","sourcesContent":["<script>\r\n  import { ROWS } from \"./List.svelte\";\r\n  import { createContextMenu, indexSort } from \"../../helpers\";\r\n  import { get_current_component } from \"svelte/internal\";\r\n  import { slide, fade } from \"svelte/transition\";\r\n\r\n  import {\r\n    getContext,\r\n    setContext,\r\n    onDestroy,\r\n    onMount,\r\n    createEventDispatcher,\r\n    tick,\r\n  } from \"svelte\";\r\n\r\n  const dispatch = createEventDispatcher();\r\n  const { setFocused, hovered, focused, dragover, type } = getContext(ROWS);\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n\r\n  export let colspan;\r\n\r\n  export let container = null;\r\n  // export let i = null;\r\n  export let depth = 0;\r\n  export let id = null;\r\n\r\n  export let hideNotes = true;\r\n  export let disabled = false;\r\n\r\n  export let config = {};\r\n\r\n  const defaultConfig = {\r\n    draggable: false,\r\n    highlightHover: true,\r\n    deleteButton: true,\r\n    toggle: false,\r\n    focusable: true,\r\n  };\r\n\r\n  $: config = Object.assign({}, defaultConfig, config);\r\n\r\n  export let children = [];\r\n\r\n  const getItem = (entity) => {\r\n    return entity.getOwnedItem ? entity.getOwnedItem(id) || entity : entity;\r\n  };\r\n\r\n  $: itemIsOpen = (id) => {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (!ownedItem) return true;\r\n    return !ownedItem.getFlag(\"GURPS\", \"container_closed\");\r\n  };\r\n\r\n  $: isRowLabel = getItem($entity, id)\r\n    ? getItem($entity).getFlag(\"GURPS\", \"is_label\") || false\r\n    : false;\r\n\r\n  $: colors = {\r\n    textColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"text_color\") || \"\"\r\n      : \"\",\r\n    backgroundColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"background_color\") || \"\"\r\n      : \"\",\r\n  };\r\n\r\n  export let menuItems = getItem($entity, id)\r\n    ? getItem($entity, id).getMenuItems\r\n      ? getItem($entity, id).getMenuItems()\r\n      : () => []\r\n    : () => [];\r\n\r\n  export let selector = \"contextmenu\";\r\n\r\n  $: GURPS = getItem($entity, id).getGURPSObject\r\n    ? getItem($entity, id).getGURPSObject()\r\n    : {};\r\n\r\n  let rowHTMLElement;\r\n  $: i = getItem($entity, id).getFlag(\"GURPS\", \"index\");\r\n</script>\r\n\r\n<style>\r\n  .hovered,\r\n  tr:hover {\r\n    background-color: rgba(0, 0, 0, 0.25);\r\n  }\r\n  .notes {\r\n    padding: 0px;\r\n  }\r\n  .container {\r\n    color: black;\r\n    background-color: white;\r\n  }\r\n  .focused {\r\n    background-color: #ff6400;\r\n  }\r\n  .dragover {\r\n    background-color: #ff6400;\r\n  }\r\n  tr > :global(td) {\r\n    padding: 3px 0px 3px 0px;\r\n    border-bottom: 1px solid black;\r\n  }\r\n</style>\r\n\r\n<tr\r\n  class:is-row-label={isRowLabel}\r\n  bind:this={rowHTMLElement}\r\n  style=\"background-color: {colors.backgroundColor}; color: {colors.textColor}\"\r\n  class:strikethrough={disabled}\r\n  data-container={container}\r\n  data-index={i}\r\n  data-entity-id={id}\r\n  data-listtype={type}\r\n  data-contextmenu={selector}\r\n  use:createContextMenu={{ menuItems, selector }}\r\n  class:container\r\n  class:focused={$focused.includes(i) && config.focusable}\r\n  class:dragover={$dragover === i}\r\n  class:hovered={$hovered === i && config.highlightHover}\r\n  on:mouseover={(e) => {\r\n    dispatch('mouseover');\r\n  }}\r\n  on:mouseenter={(e) => {\r\n    hovered.set(i);\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i);\r\n    }\r\n    dispatch('mouseenter');\r\n  }}\r\n  on:mousedown={(e) => {\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i, true, e.timestamp);\r\n    } else if (e.which == 1 && e.shiftKey && config) {\r\n      focused.set([i]);\r\n    }\r\n    dispatch('mousedown');\r\n  }}\r\n  on:click={(e) => {\r\n    dispatch('click');\r\n  }}\r\n  on:mouseout={(e) => {\r\n    dispatch('mouseout');\r\n  }}\r\n  on:mouseleave={(e) => {\r\n    dispatch('mouseleave');\r\n  }}\r\n  on:auxclick={(e) => {\r\n    if (e.button === 1) {\r\n      dispatch('middleclick');\r\n    }\r\n  }}\r\n  on:dblclick={(e) => {\r\n    dispatch('dblclick');\r\n  }}\r\n  on:drop={(e) => {\r\n    hovered.set(null);\r\n    dispatch('drop');\r\n  }}\r\n  on:dragstart={(e) => {\r\n    dispatch('dragstart');\r\n  }}\r\n  on:dragenter={(e) => {\r\n    dispatch('dragenter');\r\n  }}\r\n  on:dragleave={(e) => {\r\n    dispatch('dragleave');\r\n  }}\r\n  on:dragover={(e) => {\r\n    dragover.set(i);\r\n    dispatch('dragover');\r\n  }}\r\n  on:dragend={(e) => {\r\n    dragover.set(null);\r\n    dispatch('dragend');\r\n  }}>\r\n  <td\r\n    on:dragenter={(e) => (hideNotes = false)}\r\n    on:click={(e) => {\r\n      if (!config.toggle) return;\r\n      hideNotes = !hideNotes;\r\n    }}>\r\n    {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}\r\n  </td>\r\n  <slot\r\n    item={GURPS}\r\n    open={itemIsOpen(id)}\r\n    {depth}\r\n    {id}\r\n    ownedItem={getItem($entity, id)}\r\n    hovered={$hovered === i} />\r\n  <td class=\"show-when-label\">\r\n    {#if config.deleteButton}\r\n      {#if container}\r\n        <!-- <i class=\"fas fa-box\" /> -->\r\n      {/if}\r\n      <i\r\n        class:no-show={!($hovered === i && $dragover !== i)}\r\n        class=\"fas fa-trash\"\r\n        on:click={() => {\r\n          dispatch('delete', { entity: getItem($entity, id) });\r\n        }} />\r\n    {/if}\r\n  </td>\r\n</tr>\r\n\r\n{#if !hideNotes}\r\n  <td class=\"notes\" {colspan}>\r\n    <slot name=\"notes\" {GURPS} {id} />\r\n  </td>\r\n{/if}\r\n\r\n{#if container && itemIsOpen(id)}\r\n  {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}\r\n    <svelte:self\r\n      let:id\r\n      let:ownedItem\r\n      let:depth\r\n      let:open\r\n      let:item={child}\r\n      {entity}\r\n      id={child.foundryID}\r\n      i={i + 1}\r\n      {config}\r\n      {colspan}\r\n      container={child.canContainChildren}\r\n      children={Array.from(child.children)}\r\n      open={itemIsOpen(id)}>\r\n      <slot\r\n        open={itemIsOpen(id)}\r\n        item={child}\r\n        depth={depth + 1}\r\n        id={child.foundryID}\r\n        ownedItem={$entity.getOwnedItem(child.foundryID)} />\r\n    </svelte:self>\r\n  {/each}\r\n{/if}\r\n",".hovered.svelte-3eflit,tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}.focused.svelte-3eflit{background-color:#ff6400}.dragover.svelte-3eflit{background-color:#ff6400}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICAkOiBHVVJQUyA9IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEdVUlBTT2JqZWN0XHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEdVUlBTT2JqZWN0KClcclxuICAgIDoge307XHJcblxyXG4gIGxldCByb3dIVE1MRWxlbWVudDtcclxuICAkOiBpID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaW5kZXhcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5ob3ZlcmVkLFxyXG4gIHRyOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbiAgfVxyXG4gIC5ub3RlcyB7XHJcbiAgICBwYWRkaW5nOiAwcHg7XHJcbiAgfVxyXG4gIC5jb250YWluZXIge1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgfVxyXG4gIC5mb2N1c2VkIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIC5kcmFnb3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmY2NDAwO1xyXG4gIH1cclxuICB0ciA+IDpnbG9iYWwodGQpIHtcclxuICAgIHBhZGRpbmc6IDNweCAwcHggM3B4IDBweDtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48dHJcclxuICBjbGFzczppcy1yb3ctbGFiZWw9e2lzUm93TGFiZWx9XHJcbiAgYmluZDp0aGlzPXtyb3dIVE1MRWxlbWVudH1cclxuICBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHtjb2xvcnMuYmFja2dyb3VuZENvbG9yfTsgY29sb3I6IHtjb2xvcnMudGV4dENvbG9yfVwiXHJcbiAgY2xhc3M6c3RyaWtldGhyb3VnaD17ZGlzYWJsZWR9XHJcbiAgZGF0YS1jb250YWluZXI9e2NvbnRhaW5lcn1cclxuICBkYXRhLWluZGV4PXtpfVxyXG4gIGRhdGEtZW50aXR5LWlkPXtpZH1cclxuICBkYXRhLWxpc3R0eXBlPXt0eXBlfVxyXG4gIGRhdGEtY29udGV4dG1lbnU9e3NlbGVjdG9yfVxyXG4gIHVzZTpjcmVhdGVDb250ZXh0TWVudT17eyBtZW51SXRlbXMsIHNlbGVjdG9yIH19XHJcbiAgY2xhc3M6Y29udGFpbmVyXHJcbiAgY2xhc3M6Zm9jdXNlZD17JGZvY3VzZWQuaW5jbHVkZXMoaSkgJiYgY29uZmlnLmZvY3VzYWJsZX1cclxuICBjbGFzczpkcmFnb3Zlcj17JGRyYWdvdmVyID09PSBpfVxyXG4gIGNsYXNzOmhvdmVyZWQ9eyRob3ZlcmVkID09PSBpICYmIGNvbmZpZy5oaWdobGlnaHRIb3Zlcn1cclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQoaSk7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGkpO1xyXG4gICAgfVxyXG4gICAgZGlzcGF0Y2goJ21vdXNlZW50ZXInKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlZG93bj17KGUpID0+IHtcclxuICAgIGlmIChlLndoaWNoID09IDEgJiYgZS5zaGlmdEtleSAmJiBjb25maWcuZm9jdXNhYmxlKSB7XHJcbiAgICAgIHNldEZvY3VzZWQoaSwgdHJ1ZSwgZS50aW1lc3RhbXApO1xyXG4gICAgfSBlbHNlIGlmIChlLndoaWNoID09IDEgJiYgZS5zaGlmdEtleSAmJiBjb25maWcpIHtcclxuICAgICAgZm9jdXNlZC5zZXQoW2ldKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWRvd24nKTtcclxuICB9fVxyXG4gIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2NsaWNrJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZW91dD17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdtb3VzZW91dCcpO1xyXG4gIH19XHJcbiAgb246bW91c2VsZWF2ZT17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17JGhvdmVyZWQgPT09IGl9IC8+XHJcbiAgPHRkIGNsYXNzPVwic2hvdy13aGVuLWxhYmVsXCI+XHJcbiAgICB7I2lmIGNvbmZpZy5kZWxldGVCdXR0b259XHJcbiAgICAgIHsjaWYgY29udGFpbmVyfVxyXG4gICAgICAgIDwhLS0gPGkgY2xhc3M9XCJmYXMgZmEtYm94XCIgLz4gLS0+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICAgIDxpXHJcbiAgICAgICAgY2xhc3M6bm8tc2hvdz17ISgkaG92ZXJlZCA9PT0gaSAmJiAkZHJhZ292ZXIgIT09IGkpfVxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4ge1xyXG4gICAgICAgICAgZGlzcGF0Y2goJ2RlbGV0ZScsIHsgZW50aXR5OiBnZXRJdGVtKCRlbnRpdHksIGlkKSB9KTtcclxuICAgICAgICB9fSAvPlxyXG4gICAgey9pZn1cclxuICA8L3RkPlxyXG48L3RyPlxyXG5cclxueyNpZiAhaGlkZU5vdGVzfVxyXG4gIDx0ZCBjbGFzcz1cIm5vdGVzXCIge2NvbHNwYW59PlxyXG4gICAgPHNsb3QgbmFtZT1cIm5vdGVzXCIge0dVUlBTfSB7aWR9IC8+XHJcbiAgPC90ZD5cclxuey9pZn1cclxuXHJcbnsjaWYgY29udGFpbmVyICYmIGl0ZW1Jc09wZW4oaWQpfVxyXG4gIHsjZWFjaCBnYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGNoaWxkcmVuKSBhcyBjaGlsZCwgaSAoY2hpbGQuZm91bmRyeUlEKX1cclxuICAgIDxzdmVsdGU6c2VsZlxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvRkUsc0JBQVEsQ0FDUixnQkFBRSxNQUFNLEFBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEFBQ3ZDLENBQUMsQUFDRCxNQUFNLGNBQUMsQ0FBQyxBQUNOLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsY0FBQyxDQUFDLEFBQ1YsS0FBSyxDQUFFLEtBQUssQ0FDWixnQkFBZ0IsQ0FBRSxLQUFLLEFBQ3pCLENBQUMsQUFDRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLE9BQU8sQUFDM0IsQ0FBQyxBQUNELFNBQVMsY0FBQyxDQUFDLEFBQ1QsZ0JBQWdCLENBQUUsT0FBTyxBQUMzQixDQUFDLEFBQ0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17aXNIb3ZlcmVkfSAvPlxyXG4gIDx0ZCBjbGFzcz1cInNob3ctd2hlbi1sYWJlbFwiPlxyXG4gICAgeyNpZiBjb25maWcuZGVsZXRlQnV0dG9ufVxyXG4gICAgICB7I2lmIGNvbnRhaW5lcn1cclxuICAgICAgICA8IS0tIDxpIGNsYXNzPVwiZmFzIGZhLWJveFwiIC8+IC0tPlxyXG4gICAgICB7L2lmfVxyXG4gICAgICA8aVxyXG4gICAgICAgIGNsYXNzOm5vLXNob3c9eyFpc0hvdmVyZWR9XHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICBkaXNwYXRjaCgnZGVsZXRlJywgeyBlbnRpdHk6IGdldEl0ZW0oJGVudGl0eSwgaWQpIH0pO1xyXG4gICAgICAgIH19IC8+XHJcbiAgICB7L2lmfVxyXG4gIDwvdGQ+XHJcbjwvdHI+XHJcblxyXG57I2lmICFoaWRlTm90ZXN9XHJcbiAgPHRkIGNsYXNzPVwibm90ZXNcIiB7Y29sc3Bhbn0+XHJcbiAgICA8c2xvdCBuYW1lPVwibm90ZXNcIiB7R1VSUFN9IHtpZH0gLz5cclxuICA8L3RkPlxyXG57L2lmfVxyXG5cclxueyNpZiBjb250YWluZXIgJiYgaXRlbUlzT3BlbihpZCl9XHJcbiAgeyNlYWNoIGdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoY2hpbGRyZW4pIGFzIGNoaWxkLCBpIChjaGlsZC5mb3VuZHJ5SUQpfVxyXG4gICAgPHN2ZWx0ZTpzZWxmXHJcbiAgICAgIG9uOmRlbGV0ZVxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RkUsZ0JBQUUsTUFBTSxBQUFDLENBQUMsQUFDUixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxBQUN2QyxDQUFDLEFBQ0QsTUFBTSxjQUFDLENBQUMsQUFDTixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFDRCxVQUFVLGNBQUMsQ0FBQyxBQUNWLEtBQUssQ0FBRSxLQUFLLENBQ1osZ0JBQWdCLENBQUUsS0FBSyxBQUN6QixDQUFDLEFBT0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/list/Row.svelte","webpack://src/svelte/list/Row.svelte.css"],"names":[],"mappings":"AAuFE,uBAAU,oCAC6B,CACtC,qBACO,WACM,CACb,yBACW,WACE,CACZ,sBAAuB,CACxB,oBAOiB,uBACQ,CACxB,6BAA8B;ACxGlC,izRAAizR","sourcesContent":["<script>\r\n  import { ROWS } from \"./List.svelte\";\r\n  import { createContextMenu, indexSort } from \"../../helpers\";\r\n  import { get_current_component } from \"svelte/internal\";\r\n  import { slide, fade } from \"svelte/transition\";\r\n\r\n  import {\r\n    getContext,\r\n    setContext,\r\n    onDestroy,\r\n    onMount,\r\n    createEventDispatcher,\r\n    tick,\r\n  } from \"svelte\";\r\n\r\n  const dispatch = createEventDispatcher();\r\n  const { setFocused, hovered, focused, dragover, type } = getContext(ROWS);\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n\r\n  export let colspan;\r\n\r\n  export let container = null;\r\n  // export let i = null;\r\n  export let depth = 0;\r\n  export let id = null;\r\n\r\n  export let hideNotes = true;\r\n  export let disabled = false;\r\n\r\n  export let config = {};\r\n\r\n  const defaultConfig = {\r\n    draggable: false,\r\n    highlightHover: true,\r\n    deleteButton: true,\r\n    toggle: false,\r\n    focusable: true,\r\n  };\r\n\r\n  $: config = Object.assign({}, defaultConfig, config);\r\n\r\n  export let children = [];\r\n\r\n  const getItem = (entity) => {\r\n    return entity.getOwnedItem ? entity.getOwnedItem(id) || entity : entity;\r\n  };\r\n\r\n  $: itemIsOpen = (id) => {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (!ownedItem) return true;\r\n    return !ownedItem.getFlag(\"GURPS\", \"container_closed\");\r\n  };\r\n\r\n  $: isRowLabel = getItem($entity, id)\r\n    ? getItem($entity).getFlag(\"GURPS\", \"is_label\") || false\r\n    : false;\r\n\r\n  $: colors = {\r\n    textColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"text_color\") || \"\"\r\n      : \"\",\r\n    backgroundColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"background_color\") || \"\"\r\n      : \"\",\r\n  };\r\n\r\n  export let menuItems = getItem($entity, id)\r\n    ? getItem($entity, id).getMenuItems\r\n      ? getItem($entity, id).getMenuItems()\r\n      : () => []\r\n    : () => [];\r\n\r\n  export let selector = \"contextmenu\";\r\n\r\n  let isHovered = false;\r\n\r\n  $: GURPS = getItem($entity, id).getGURPSObject\r\n    ? getItem($entity, id).getGURPSObject()\r\n    : {};\r\n\r\n  let rowHTMLElement;\r\n  $: i = getItem($entity, id).getFlag(\"GURPS\", \"index\");\r\n</script>\r\n\r\n<style>\r\n  .hovered,\r\n  tr:hover {\r\n    background-color: rgba(0, 0, 0, 0.25);\r\n  }\r\n  .notes {\r\n    padding: 0px;\r\n  }\r\n  .container {\r\n    color: black;\r\n    background-color: white;\r\n  }\r\n  .focused {\r\n    background-color: #ff6400;\r\n  }\r\n  .dragover {\r\n    background-color: #ff6400;\r\n  }\r\n  tr > :global(td) {\r\n    padding: 3px 0px 3px 0px;\r\n    border-bottom: 1px solid black;\r\n  }\r\n</style>\r\n\r\n<tr\r\n  class:is-row-label={isRowLabel}\r\n  bind:this={rowHTMLElement}\r\n  style=\"background-color: {colors.backgroundColor}; color: {colors.textColor}\"\r\n  class:strikethrough={disabled}\r\n  data-container={container}\r\n  data-index={i}\r\n  data-entity-id={id}\r\n  data-listtype={type}\r\n  data-contextmenu={selector}\r\n  use:createContextMenu={{ menuItems, selector }}\r\n  class:container\r\n  on:mouseover={(e) => {\r\n    dispatch('mouseover');\r\n  }}\r\n  on:mouseenter={(e) => {\r\n    isHovered = true;\r\n    hovered.set(i);\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i);\r\n    }\r\n    dispatch('mouseenter');\r\n  }}\r\n  on:mousedown={(e) => {\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i, true, e.timestamp);\r\n    } else if (e.which == 1 && e.shiftKey && config) {\r\n      focused.set([i]);\r\n    }\r\n    dispatch('mousedown');\r\n  }}\r\n  on:click={(e) => {\r\n    dispatch('click');\r\n  }}\r\n  on:mouseout={(e) => {\r\n    dispatch('mouseout');\r\n  }}\r\n  on:mouseleave={(e) => {\r\n    isHovered = false;\r\n    dispatch('mouseleave');\r\n  }}\r\n  on:auxclick={(e) => {\r\n    if (e.button === 1) {\r\n      dispatch('middleclick');\r\n    }\r\n  }}\r\n  on:dblclick={(e) => {\r\n    dispatch('dblclick');\r\n  }}\r\n  on:drop={(e) => {\r\n    hovered.set(null);\r\n    dispatch('drop');\r\n  }}\r\n  on:dragstart={(e) => {\r\n    dispatch('dragstart');\r\n  }}\r\n  on:dragenter={(e) => {\r\n    dispatch('dragenter');\r\n  }}\r\n  on:dragleave={(e) => {\r\n    dispatch('dragleave');\r\n  }}\r\n  on:dragover={(e) => {\r\n    dragover.set(i);\r\n    dispatch('dragover');\r\n  }}\r\n  on:dragend={(e) => {\r\n    dragover.set(null);\r\n    dispatch('dragend');\r\n  }}>\r\n  <td\r\n    on:dragenter={(e) => (hideNotes = false)}\r\n    on:click={(e) => {\r\n      if (!config.toggle) return;\r\n      hideNotes = !hideNotes;\r\n    }}>\r\n    {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}\r\n  </td>\r\n  <slot\r\n    item={GURPS}\r\n    open={itemIsOpen(id)}\r\n    {depth}\r\n    {id}\r\n    ownedItem={getItem($entity, id)}\r\n    hovered={isHovered} />\r\n  <td class=\"show-when-label\">\r\n    {#if config.deleteButton}\r\n      {#if container}\r\n        <!-- <i class=\"fas fa-box\" /> -->\r\n      {/if}\r\n      <i\r\n        class:no-show={!isHovered}\r\n        class=\"fas fa-trash\"\r\n        on:click={() => {\r\n          dispatch('delete', { entity: getItem($entity, id) });\r\n        }} />\r\n    {/if}\r\n  </td>\r\n</tr>\r\n\r\n{#if !hideNotes}\r\n  <td class=\"notes\" {colspan}>\r\n    <slot name=\"notes\" {GURPS} {id} />\r\n  </td>\r\n{/if}\r\n\r\n{#if container && itemIsOpen(id)}\r\n  {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}\r\n    <svelte:self\r\n      on:delete\r\n      let:id\r\n      let:ownedItem\r\n      let:depth\r\n      let:open\r\n      let:item={child}\r\n      {entity}\r\n      id={child.foundryID}\r\n      i={i + 1}\r\n      {config}\r\n      {colspan}\r\n      container={child.canContainChildren}\r\n      children={Array.from(child.children)}\r\n      open={itemIsOpen(id)}>\r\n      <slot\r\n        open={itemIsOpen(id)}\r\n        item={child}\r\n        depth={depth + 1}\r\n        id={child.foundryID}\r\n        ownedItem={$entity.getOwnedItem(child.foundryID)} />\r\n    </svelte:self>\r\n  {/each}\r\n{/if}\r\n","tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17aXNIb3ZlcmVkfSAvPlxyXG4gIDx0ZCBjbGFzcz1cInNob3ctd2hlbi1sYWJlbFwiPlxyXG4gICAgeyNpZiBjb25maWcuZGVsZXRlQnV0dG9ufVxyXG4gICAgICB7I2lmIGNvbnRhaW5lcn1cclxuICAgICAgICA8IS0tIDxpIGNsYXNzPVwiZmFzIGZhLWJveFwiIC8+IC0tPlxyXG4gICAgICB7L2lmfVxyXG4gICAgICA8aVxyXG4gICAgICAgIGNsYXNzOm5vLXNob3c9eyFpc0hvdmVyZWR9XHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICBkaXNwYXRjaCgnZGVsZXRlJywgeyBlbnRpdHk6IGdldEl0ZW0oJGVudGl0eSwgaWQpIH0pO1xyXG4gICAgICAgIH19IC8+XHJcbiAgICB7L2lmfVxyXG4gIDwvdGQ+XHJcbjwvdHI+XHJcblxyXG57I2lmICFoaWRlTm90ZXN9XHJcbiAgPHRkIGNsYXNzPVwibm90ZXNcIiB7Y29sc3Bhbn0+XHJcbiAgICA8c2xvdCBuYW1lPVwibm90ZXNcIiB7R1VSUFN9IHtpZH0gLz5cclxuICA8L3RkPlxyXG57L2lmfVxyXG5cclxueyNpZiBjb250YWluZXIgJiYgaXRlbUlzT3BlbihpZCl9XHJcbiAgeyNlYWNoIGdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoY2hpbGRyZW4pIGFzIGNoaWxkLCBpIChjaGlsZC5mb3VuZHJ5SUQpfVxyXG4gICAgPHN2ZWx0ZTpzZWxmXHJcbiAgICAgIG9uOmRlbGV0ZVxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RkUsZ0JBQUUsTUFBTSxBQUFDLENBQUMsQUFDUixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxBQUN2QyxDQUFDLEFBQ0QsTUFBTSxjQUFDLENBQUMsQUFDTixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFDRCxVQUFVLGNBQUMsQ0FBQyxBQUNWLEtBQUssQ0FBRSxLQUFLLENBQ1osZ0JBQWdCLENBQUUsS0FBSyxBQUN6QixDQUFDLEFBT0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3647,7 +3625,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24ucGFycnl9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsUGFycnkoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24ucGFycnkgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmJsb2NrfVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbEJsb2NrKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLmJsb2NrIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5kYW1hZ2V9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsRGFtYWdlKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLmRhbWFnZSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5yZWFjaCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsRUFBRSxBQUNWLENBQUMsQUFDRCxFQUFFLGVBQUMsQ0FBQyxBQUNGLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/MeleeWeapons.svelte","webpack://src/svelte/weapon-list/MeleeWeapons.svelte.css"],"names":[],"mappings":"AAmBE,mBAAK,iBACe,CAClB,OAAQ,CACT,kBACG,iBACgB;ACvBtB,y1GAAy1G","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    position: relative;\r\n    left: 10;\r\n  }\r\n  td {\r\n    position: relative;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Melee Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Parry</th>\r\n  <th slot=\"header\">Block</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Reach</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().melee as weapon, i}\r\n    <Row\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name}</td>\r\n      <td>{weapon.usage}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n          {weapon.skillLevel() || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.parry}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollParry()} />\r\n          {weapon.parry || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.block}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollBlock()} />\r\n          {weapon.block || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n          {weapon.damage || ''}\r\n        {/if}\r\n      </td>\r\n      <td>{weapon.reach || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24ucGFycnl9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsUGFycnkoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24ucGFycnkgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmJsb2NrfVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbEJsb2NrKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLmJsb2NrIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5kYW1hZ2V9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsRGFtYWdlKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLmRhbWFnZSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5yZWFjaCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFtQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsRUFBRSxBQUNWLENBQUMsQUFDRCxFQUFFLGVBQUMsQ0FBQyxBQUNGLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSBcIm51bWJlclwifVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFBhcnJ5KCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnBhcnJ5IHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHR5cGVvZiB3ZWFwb24uYmxvY2sgPT09IFwibnVtYmVyXCJ9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsQmxvY2soKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uYmxvY2sgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uZGFtYWdlIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlYWNoIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnN0cmVuZ3RoIHx8ICcnfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CRSxHQUFHLGVBQUMsQ0FBQyxBQUNILFFBQVEsQ0FBRSxRQUFRLENBQ2xCLElBQUksQ0FBRSxFQUFFLEFBQ1YsQ0FBQyxBQUNELEVBQUUsZUFBQyxDQUFDLEFBQ0YsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/MeleeWeapons.svelte","webpack://src/svelte/weapon-list/MeleeWeapons.svelte.css"],"names":[],"mappings":"AAmBE,mBAAK,iBACe,CAClB,OAAQ,CACT,kBACG,iBACgB;ACvBtB,i5GAAi5G","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    position: relative;\r\n    left: 10;\r\n  }\r\n  td {\r\n    position: relative;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Melee Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Parry</th>\r\n  <th slot=\"header\">Block</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Reach</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().melee as weapon, i}\r\n    <Row\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name}</td>\r\n      <td>{weapon.usage}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n          {weapon.skillLevel() || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.parry === \"number\"}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollParry()} />\r\n          {weapon.parry || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.block === \"number\"}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollBlock()} />\r\n          {weapon.block || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n          {weapon.damage || ''}\r\n        {/if}\r\n      </td>\r\n      <td>{weapon.reach || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSBcIm51bWJlclwifVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFBhcnJ5KCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnBhcnJ5IHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHR5cGVvZiB3ZWFwb24uYmxvY2sgPT09IFwibnVtYmVyXCJ9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsQmxvY2soKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uYmxvY2sgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uZGFtYWdlIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlYWNoIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnN0cmVuZ3RoIHx8ICcnfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CRSxHQUFHLGVBQUMsQ0FBQyxBQUNILFFBQVEsQ0FBRSxRQUFRLENBQ2xCLElBQUksQ0FBRSxFQUFFLEFBQ1YsQ0FBQyxBQUNELEVBQUUsZUFBQyxDQUFDLEFBQ0YsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3670,6 +3648,28 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/RangedWeapons.svelte","webpack://src/svelte/weapon-list/RangedWeapons.svelte.css"],"names":[],"mappings":"AAoBE,mBAAK,UACQ;ACpBf,imGAAimG","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    float: left;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Ranged Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Acc</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Range</th>\r\n  <th slot=\"header\">RoF</th>\r\n  <th slot=\"header\">Shots</th>\r\n  <th slot=\"header\">Bulk</th>\r\n  <th slot=\"header\">Rcl</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().ranged as weapon, i}\r\n    <Row\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name || ''}</td>\r\n      <td>{weapon.usage || ''}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n        {/if}\r\n        <span>{weapon.skillLevel() || ''}</span>\r\n      </td>\r\n      <td>{weapon.accuracy || ''}</td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n        {/if}\r\n        <span>{weapon.damage || ''}</span>\r\n      </td>\r\n      <td>{weapon.range || ''}</td>\r\n      <td>{weapon.rateOfFire || ''}</td>\r\n      <td>{weapon.shots || ''}</td>\r\n      <td>{weapon.bulk || ''}</td>\r\n      <td>{weapon.recoil || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".mouseover-anchor {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n}\n\n.mouseover-anchor .mouseover-container {\n    visibility: hidden;\n    width: 100%;\n    text-align: center;\n\n    /* Position the mouseover text */\n    position: absolute;\n    z-index: 1;\n    bottom: 125%;\n    left: 0;\n\n    /* Fade in mouseover */\n    opacity: 0;\n    transition: opacity 0.3s;\n}\n\n.mouseover {\n    display: inline-block;\n    background-color: #555;\n    color: #fff;\n    padding: 5px;\n    border-radius: 6px;\n}\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: #555 transparent transparent transparent;\n}\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n    visibility: visible;\n    opacity: 1;\n}", "",{"version":3,"sources":["webpack://src/templates/GURPS-foundry-roll-templates/templates_roll.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,qBAAqB;IACrB,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,kBAAkB;;IAElB,gCAAgC;IAChC,kBAAkB;IAClB,UAAU;IACV,YAAY;IACZ,OAAO;;IAEP,sBAAsB;IACtB,UAAU;IACV,wBAAwB;AAC5B;;AAEA;IACI,qBAAqB;IACrB,sBAAsB;IACtB,WAAW;IACX,YAAY;IACZ,kBAAkB;AACtB;;AAEA,oBAAoB;AACpB;IACI,WAAW;IACX,kBAAkB;IAClB,SAAS;IACT,SAAS;IACT,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;IACnB,sDAAsD;AAC1D;;AAEA,wEAAwE;AACxE;IACI,mBAAmB;IACnB,UAAU;AACd","sourcesContent":[".mouseover-anchor {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n}\n\n.mouseover-anchor .mouseover-container {\n    visibility: hidden;\n    width: 100%;\n    text-align: center;\n\n    /* Position the mouseover text */\n    position: absolute;\n    z-index: 1;\n    bottom: 125%;\n    left: 0;\n\n    /* Fade in mouseover */\n    opacity: 0;\n    transition: opacity 0.3s;\n}\n\n.mouseover {\n    display: inline-block;\n    background-color: #555;\n    color: #fff;\n    padding: 5px;\n    border-radius: 6px;\n}\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: #555 transparent transparent transparent;\n}\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n    visibility: visible;\n    opacity: 1;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -10839,7 +10839,7 @@ class Attribute extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterEle
     }
     pointsSpent() { return this.levelsIncreased() * this.costPerLevel; }
     levelsIncreased() { return this.level - this.defaultLevel; }
-    calculateLevel() { return this.level + this.getMod() || 0 + this.basedOn(); }
+    calculateLevel() { return this.level + (this.getMod() || 0) + this.basedOn(); }
     get displayLevel() { return this.calculateLevel(); }
     set displayLevel(level) {
         const mod = this.getMod();
@@ -21503,6 +21503,7 @@ const foundry_actor_1 = __webpack_require__(/*! ./foundry_actor */ "./src/foundr
 const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
 const json_query_1 = __importDefault(__webpack_require__(/*! json-query */ "./node_modules/json-query/index.js"));
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
+__webpack_require__(/*! ./templates/GURPS-foundry-roll-templates/templates_roll.css */ "./src/templates/GURPS-foundry-roll-templates/templates_roll.css");
 Hooks.once('init', init);
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -21675,6 +21676,12 @@ let _Item = class _Item extends Item {
             }
             return prev;
         }, { melee: [], ranged: [] });
+    }
+    roll() {
+        switch (this.data.type) {
+            case "skill":
+            default:
+        }
     }
     getFeatures() {
         return getProperty(this.data, "data.features") || [];
@@ -22249,7 +22256,7 @@ let _Actor = class _Actor extends Actor {
             }
             roll.roll();
             let renderer = new SuccessRollRenderer_1.default();
-            renderer.render(roll).then((html) => {
+            renderer.render(roll, { template: "systems/GURPS/templates/GURPS-foundry-roll-templates/templates_roll.html" }).then((html) => {
                 ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER });
             });
         }
@@ -34912,8 +34919,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gurps_foundry_roll_lib_src_js_Roll_SuccessRoll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
 /* harmony import */ var _Damage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Damage */ "./src/svelte/chat/Damage.svelte");
 /* harmony import */ var _Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Skill */ "./src/svelte/chat/Skill.svelte");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_chat_Message_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/chat/Message.svelte.css */ "./src/svelte/chat/Message.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_chat_Message_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_chat_Message_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
 /* src\svelte\chat\Message.svelte generated by Svelte v3.25.0 */
 
 
@@ -34979,12 +34984,12 @@ function create_if_block(ctx) {
 			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			if (if_block3) if_block3.c();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(h4, "class", "message-sender svelte-6ao9h5");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "message-metadata svelte-6ao9h5");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(header, "class", "message-header flexrow svelte-6ao9h5");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(h4, "class", "message-sender");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "message-metadata");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(header, "class", "message-header flexrow");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "message-content");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(li, "border-color", /*borderColor*/ ctx[6]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "class", "message flexcol svelte-6ao9h5");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "class", "message flexcol");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value = /*message*/ ctx[0]._id);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
@@ -35120,7 +35125,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (81:8) {#if window.game.user.isGM}
+// (63:8) {#if window.game.user.isGM}
 function create_if_block_6(ctx) {
 	let a;
 
@@ -35139,7 +35144,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (87:6) {#if isWhisper}
+// (67:6) {#if isWhisper}
 function create_if_block_5(ctx) {
 	let span;
 
@@ -35147,7 +35152,7 @@ function create_if_block_5(ctx) {
 		c() {
 			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			span.textContent = `${/*whisperTo*/ ctx[4]}`;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "whisper-to svelte-6ao9h5");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "whisper-to");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
@@ -35159,7 +35164,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (90:6) {#if message.data.flavor}
+// (68:6) {#if message.data.flavor}
 function create_if_block_4(ctx) {
 	let span;
 	let t_value = /*message*/ ctx[0].data.flavor + "";
@@ -35169,7 +35174,7 @@ function create_if_block_4(ctx) {
 		c() {
 			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "flavor-text svelte-6ao9h5");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "flavor-text");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
@@ -35184,7 +35189,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (104:75) 
+// (82:75) 
 function create_if_block_3(ctx) {
 	let html_tag;
 	let raw_value = /*message*/ ctx[0].data.content + "";
@@ -35211,7 +35216,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (100:29) 
+// (78:29) 
 function create_if_block_2(ctx) {
 	let await_block_anchor;
 	let promise;
@@ -35263,7 +35268,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (95:6) {#if message.rollType()}
+// (73:6) {#if message.rollType()}
 function create_if_block_1(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -35346,7 +35351,7 @@ function create_catch_block(ctx) {
 	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
 }
 
-// (101:48)             {@html roll}
+// (79:48)             {@html roll}
 function create_then_block(ctx) {
 	let html_tag;
 	let raw_value = /*roll*/ ctx[15] + "";
@@ -35484,37 +35489,6 @@ class Message extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompon
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Message);
-
-
-
-/***/ }),
-
-/***/ "./src/svelte/chat/Message.svelte.css":
-/*!********************************************!*\
-  !*** ./src/svelte/chat/Message.svelte.css ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Message.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/svelte/chat/Message.svelte.css");
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
 
 /***/ }),
 
@@ -43730,7 +43704,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (81:52) 
+// (83:52) 
 function create_if_block_1(ctx) {
 	let input0;
 	let t0;
@@ -43887,6 +43861,7 @@ function create_if_block(ctx) {
 	input1 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				entity: /*entity*/ ctx[1],
+				type: "number",
 				path: "data.weapons",
 				array: { index: /*i*/ ctx[4], property: "parry" },
 				label: "Parry"
@@ -43897,6 +43872,7 @@ function create_if_block(ctx) {
 			props: {
 				entity: /*entity*/ ctx[1],
 				path: "data.weapons",
+				type: "number",
 				array: { index: /*i*/ ctx[4], property: "block" },
 				label: "Block"
 			}
@@ -43969,8 +43945,7 @@ function create_default_slot_3(ctx) {
 	let show_if_1;
 	let current_block_type_index;
 	let if_block;
-	let t5;
-	let input4;
+	let if_block_anchor;
 	let current;
 
 	select = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Select"]({
@@ -44041,18 +44016,6 @@ function create_default_slot_3(ctx) {
 		if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 	}
 
-	input4 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
-			props: {
-				entity: /*entity*/ ctx[1],
-				label: "Weapon Skill Bonus",
-				path: "data.weapons",
-				array: {
-					index: /*i*/ ctx[4],
-					property: "weapon_skill_mod"
-				}
-			}
-		});
-
 	return {
 		c() {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select.$$.fragment);
@@ -44067,8 +44030,7 @@ function create_default_slot_3(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input3.$$.fragment);
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			if (if_block) if_block.c();
-			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input4.$$.fragment);
+			if_block_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "flex");
 		},
 		m(target, anchor) {
@@ -44088,8 +44050,7 @@ function create_default_slot_3(ctx) {
 				if_blocks[current_block_type_index].m(target, anchor);
 			}
 
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t5, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input4, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, if_block_anchor, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -44140,15 +44101,11 @@ function create_default_slot_3(ctx) {
 					}
 
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block, 1);
-					if_block.m(t5.parentNode, t5);
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
 				} else {
 					if_block = null;
 				}
 			}
-
-			const input4_changes = {};
-			if (dirty & /*entity*/ 2) input4_changes.entity = /*entity*/ ctx[1];
-			input4.$set(input4_changes);
 		},
 		i(local) {
 			if (current) return;
@@ -44158,7 +44115,6 @@ function create_default_slot_3(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input3.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input4.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -44168,7 +44124,6 @@ function create_default_slot_3(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input3.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input4.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -44187,13 +44142,12 @@ function create_default_slot_3(ctx) {
 				if_blocks[current_block_type_index].d(detaching);
 			}
 
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input4, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(if_block_anchor);
 		}
 	};
 }
 
-// (114:4) <TabPanel>
+// (116:4) <TabPanel>
 function create_default_slot_2(ctx) {
 	let skilldefaults;
 	let current;
@@ -49350,7 +49304,7 @@ const get_label_text_after_slot_context = ctx => ({ value: /*value*/ ctx[0] });
 const get_label_text_slot_changes = dirty => ({ value: dirty & /*value*/ 1 });
 const get_label_text_slot_context = ctx => ({ value: /*value*/ ctx[0] });
 
-// (106:0) {:else}
+// (105:0) {:else}
 function create_else_block_1(ctx) {
 	let div;
 	let t;
@@ -49424,7 +49378,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (76:0) {#if !config.clickToEdit || clickedToEdit}
+// (75:0) {#if !config.clickToEdit || clickedToEdit}
 function create_if_block(ctx) {
 	let label_1;
 	let current_block_type_index;
@@ -49614,7 +49568,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (114:4) {#if !value}
+// (113:4) {#if !value}
 function create_if_block_2(ctx) {
 	let t;
 
@@ -49631,7 +49585,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (85:4) {:else}
+// (84:4) {:else}
 function create_else_block(ctx) {
 	let current;
 	const label_text_slot_template = /*#slots*/ ctx[23]["label-text"];
@@ -49670,7 +49624,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (83:4) {#if label}
+// (82:4) {#if label}
 function create_if_block_1(ctx) {
 	let span;
 	let t;
@@ -49783,6 +49737,7 @@ function instance($$self, $$props, $$invalidate) {
 	let { label = "" } = $$props;
 	let { step = null } = $$props;
 	let { type = "text" } = $$props;
+	let { value = null } = $$props;
 	let { defaultValue = type === "text" ? "" : type === "number" ? 0 : null } = $$props;
 	let { basedOn = null } = $$props;
 	let { mod = null } = $$props;
@@ -49810,8 +49765,6 @@ function instance($$self, $$props, $$invalidate) {
 
 		dispatch("update", { entity: update, change: tValue });
 	}
-
-	let { value = null } = $$props;
 
 	function dragstart_handler(event) {
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
@@ -49844,6 +49797,7 @@ function instance($$self, $$props, $$invalidate) {
 		if ("label" in $$props) $$invalidate(7, label = $$props.label);
 		if ("step" in $$props) $$invalidate(8, step = $$props.step);
 		if ("type" in $$props) $$invalidate(9, type = $$props.type);
+		if ("value" in $$props) $$invalidate(0, value = $$props.value);
 		if ("defaultValue" in $$props) $$invalidate(19, defaultValue = $$props.defaultValue);
 		if ("basedOn" in $$props) $$invalidate(20, basedOn = $$props.basedOn);
 		if ("mod" in $$props) $$invalidate(21, mod = $$props.mod);
@@ -49851,7 +49805,6 @@ function instance($$self, $$props, $$invalidate) {
 		if ("classList" in $$props) $$invalidate(11, classList = $$props.classList);
 		if ("placeholder" in $$props) $$invalidate(12, placeholder = $$props.placeholder);
 		if ("config" in $$props) $$invalidate(13, config = $$props.config);
-		if ("value" in $$props) $$invalidate(0, value = $$props.value);
 		if ("$$scope" in $$props) $$invalidate(22, $$scope = $$props.$$scope);
 	};
 
@@ -49865,7 +49818,7 @@ function instance($$self, $$props, $$invalidate) {
 				if (value === undefined || value === null) {
 					$$invalidate(0, value = defaultValue);
 				} else {
-					if (type === "string") ((((((($$invalidate(0, value), $$invalidate(28, $entity)), $$invalidate(2, path)), $$invalidate(17, array)), $$invalidate(19, defaultValue)), $$invalidate(9, type)), $$invalidate(20, basedOn)), $$invalidate(21, mod));
+					if (type === "text") ((((((($$invalidate(0, value), $$invalidate(28, $entity)), $$invalidate(2, path)), $$invalidate(17, array)), $$invalidate(19, defaultValue)), $$invalidate(9, type)), $$invalidate(20, basedOn)), $$invalidate(21, mod));
 					if (type === "number") $$invalidate(0, value = value + basedOn + mod);
 				}
 			}
@@ -49922,14 +49875,14 @@ class Input extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponen
 			label: 7,
 			step: 8,
 			type: 9,
+			value: 0,
 			defaultValue: 19,
 			basedOn: 20,
 			mod: 21,
 			tooltipText: 10,
 			classList: 11,
 			placeholder: 12,
-			config: 13,
-			value: 0
+			config: 13
 		});
 	}
 }
@@ -51744,67 +51697,67 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const get_default_slot_changes_1 = dirty => ({
-	open: dirty[0] & /*itemIsOpen, id*/ 5120,
-	item: dirty[1] & /*child*/ 262144,
+	open: dirty[0] & /*itemIsOpen, id*/ 9216,
+	item: dirty[1] & /*child*/ 131072,
 	depth: dirty[0] & /*depth*/ 512,
-	id: dirty[1] & /*child*/ 262144,
-	ownedItem: dirty[0] & /*$entity*/ 8192 | dirty[1] & /*child*/ 262144
+	id: dirty[1] & /*child*/ 131072,
+	ownedItem: dirty[0] & /*$entity*/ 16384 | dirty[1] & /*child*/ 131072
 });
 
 const get_default_slot_context_1 = ctx => ({
-	open: /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]),
-	item: /*child*/ ctx[49],
+	open: /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]),
+	item: /*child*/ ctx[48],
 	depth: /*depth*/ ctx[9] + 1,
-	id: /*child*/ ctx[49].foundryID,
-	ownedItem: /*$entity*/ ctx[13].getOwnedItem(/*child*/ ctx[49].foundryID)
+	id: /*child*/ ctx[48].foundryID,
+	ownedItem: /*$entity*/ ctx[14].getOwnedItem(/*child*/ ctx[48].foundryID)
 });
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[49] = list[i];
-	child_ctx[20] = i;
+	child_ctx[48] = list[i];
+	child_ctx[18] = i;
 	return child_ctx;
 }
 
 const get_notes_slot_changes = dirty => ({
-	GURPS: dirty[0] & /*GURPS*/ 65536,
+	GURPS: dirty[0] & /*GURPS*/ 131072,
 	id: dirty[0] & /*id*/ 1024,
-	item: dirty[0] & /*GURPS*/ 65536,
-	open: dirty[0] & /*itemIsOpen, id*/ 5120,
+	item: dirty[0] & /*GURPS*/ 131072,
+	open: dirty[0] & /*itemIsOpen, id*/ 9216,
 	depth: dirty[0] & /*depth*/ 512,
-	ownedItem: dirty[0] & /*$entity, id*/ 9216,
-	hovered: dirty[0] & /*$hovered, i*/ 1572864
+	ownedItem: dirty[0] & /*$entity, id*/ 17408,
+	hovered: dirty[0] & /*isHovered*/ 2048
 });
 
 const get_notes_slot_context = ctx => ({
-	GURPS: /*GURPS*/ ctx[16],
+	GURPS: /*GURPS*/ ctx[17],
 	id: /*id*/ ctx[10],
-	item: /*GURPS*/ ctx[16],
-	open: /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]),
+	item: /*GURPS*/ ctx[17],
+	open: /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]),
 	depth: /*depth*/ ctx[9],
-	ownedItem: /*getItem*/ ctx[27](/*$entity*/ ctx[13], /*id*/ ctx[10]),
-	hovered: /*$hovered*/ ctx[19] === /*i*/ ctx[20]
+	ownedItem: /*getItem*/ ctx[25](/*$entity*/ ctx[14], /*id*/ ctx[10]),
+	hovered: /*isHovered*/ ctx[11]
 });
 
 const get_default_slot_changes = dirty => ({
-	item: dirty[0] & /*GURPS*/ 65536,
-	open: dirty[0] & /*itemIsOpen, id*/ 5120,
+	item: dirty[0] & /*GURPS*/ 131072,
+	open: dirty[0] & /*itemIsOpen, id*/ 9216,
 	depth: dirty[0] & /*depth*/ 512,
 	id: dirty[0] & /*id*/ 1024,
-	ownedItem: dirty[0] & /*$entity, id*/ 9216,
-	hovered: dirty[0] & /*$hovered, i*/ 1572864
+	ownedItem: dirty[0] & /*$entity, id*/ 17408,
+	hovered: dirty[0] & /*isHovered*/ 2048
 });
 
 const get_default_slot_context = ctx => ({
-	item: /*GURPS*/ ctx[16],
-	open: /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]),
+	item: /*GURPS*/ ctx[17],
+	open: /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]),
 	depth: /*depth*/ ctx[9],
 	id: /*id*/ ctx[10],
-	ownedItem: /*getItem*/ ctx[27](/*$entity*/ ctx[13], /*id*/ ctx[10]),
-	hovered: /*$hovered*/ ctx[19] === /*i*/ ctx[20]
+	ownedItem: /*getItem*/ ctx[25](/*$entity*/ ctx[14], /*id*/ ctx[10]),
+	hovered: /*isHovered*/ ctx[11]
 });
 
-// (185:4) {#if config.toggle}
+// (186:4) {#if config.toggle}
 function create_if_block_4(ctx) {
 	let t_value = (/*hideNotes*/ ctx[0] ? ">" : "∨") + "";
 	let t;
@@ -51825,7 +51778,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (195:4) {#if config.deleteButton}
+// (196:4) {#if config.deleteButton}
 function create_if_block_2(ctx) {
 	let t;
 	let i_1;
@@ -51839,7 +51792,7 @@ function create_if_block_2(ctx) {
 			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			i_1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i_1, "class", "fas fa-trash");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(i_1, "no-show", !(/*$hovered*/ ctx[19] === /*i*/ ctx[20] && /*$dragover*/ ctx[18] !== /*i*/ ctx[20]));
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(i_1, "no-show", !/*isHovered*/ ctx[11]);
 		},
 		m(target, anchor) {
 			if (if_block) if_block.m(target, anchor);
@@ -51847,7 +51800,7 @@ function create_if_block_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, i_1, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(i_1, "click", /*click_handler_1*/ ctx[31]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(i_1, "click", /*click_handler_1*/ ctx[29]);
 				mounted = true;
 			}
 		},
@@ -51865,8 +51818,8 @@ function create_if_block_2(ctx) {
 				if_block = null;
 			}
 
-			if (dirty[0] & /*$hovered, i, $dragover*/ 1835008) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(i_1, "no-show", !(/*$hovered*/ ctx[19] === /*i*/ ctx[20] && /*$dragover*/ ctx[18] !== /*i*/ ctx[20]));
+			if (dirty[0] & /*isHovered*/ 2048) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(i_1, "no-show", !/*isHovered*/ ctx[11]);
 			}
 		},
 		d(detaching) {
@@ -51879,17 +51832,17 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (196:6) {#if container}
+// (197:6) {#if container}
 function create_if_block_3(ctx) {
 	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
 }
 
-// (209:0) {#if !hideNotes}
+// (210:0) {#if !hideNotes}
 function create_if_block_1(ctx) {
 	let td;
 	let current;
-	const notes_slot_template = /*#slots*/ ctx[28].notes;
-	const notes_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(notes_slot_template, ctx, /*$$scope*/ ctx[47], get_notes_slot_context);
+	const notes_slot_template = /*#slots*/ ctx[26].notes;
+	const notes_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(notes_slot_template, ctx, /*$$scope*/ ctx[46], get_notes_slot_context);
 
 	return {
 		c() {
@@ -51909,8 +51862,8 @@ function create_if_block_1(ctx) {
 		},
 		p(ctx, dirty) {
 			if (notes_slot) {
-				if (notes_slot.p && dirty[0] & /*GURPS, id, itemIsOpen, depth, $entity, $hovered, i*/ 1652224 | dirty[1] & /*$$scope*/ 65536) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(notes_slot, notes_slot_template, ctx, /*$$scope*/ ctx[47], dirty, get_notes_slot_changes, get_notes_slot_context);
+				if (notes_slot.p && dirty[0] & /*GURPS, id, itemIsOpen, depth, $entity, isHovered*/ 159232 | dirty[1] & /*$$scope*/ 32768) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(notes_slot, notes_slot_template, ctx, /*$$scope*/ ctx[46], dirty, get_notes_slot_changes, get_notes_slot_context);
 				}
 			}
 
@@ -51934,14 +51887,14 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (215:0) {#if container && itemIsOpen(id)}
+// (216:0) {#if container && itemIsOpen(id)}
 function create_if_block(ctx) {
 	let each_blocks = [];
 	let each_1_lookup = new Map();
 	let each_1_anchor;
 	let current;
 	let each_value = game.gurps4e.indexSort(/*children*/ ctx[6]);
-	const get_key = ctx => /*child*/ ctx[49].foundryID;
+	const get_key = ctx => /*child*/ ctx[48].foundryID;
 
 	for (let i = 0; i < each_value.length; i += 1) {
 		let child_ctx = get_each_context(ctx, each_value, i);
@@ -51966,7 +51919,7 @@ function create_if_block(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*entity, children, config, colspan, itemIsOpen, id, depth, $entity*/ 13902 | dirty[1] & /*$$scope, child*/ 327680) {
+			if (dirty[0] & /*entity, children, config, colspan, itemIsOpen, id, depth, $entity*/ 26190 | dirty[1] & /*$$scope, child*/ 163840) {
 				const each_value = game.gurps4e.indexSort(/*children*/ ctx[6]);
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block, each_1_anchor, get_each_context);
@@ -51999,12 +51952,12 @@ function create_if_block(ctx) {
 	};
 }
 
-// (217:4) <svelte:self        let:id        let:ownedItem        let:depth        let:open        let:item={child}        {entity}        id={child.foundryID}        i={i + 1}        {config}        {colspan}        container={child.canContainChildren}        children={Array.from(child.children)}        open={itemIsOpen(id)}>
+// (218:4) <svelte:self        on:delete        let:id        let:ownedItem        let:depth        let:open        let:item={child}        {entity}        id={child.foundryID}        i={i + 1}        {config}        {colspan}        container={child.canContainChildren}        children={Array.from(child.children)}        open={itemIsOpen(id)}>
 function create_default_slot(ctx) {
 	let t;
 	let current;
-	const default_slot_template = /*#slots*/ ctx[28].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[47], get_default_slot_context_1);
+	const default_slot_template = /*#slots*/ ctx[26].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[46], get_default_slot_context_1);
 
 	return {
 		c() {
@@ -52021,8 +51974,8 @@ function create_default_slot(ctx) {
 		},
 		p(ctx, dirty) {
 			if (default_slot) {
-				if (default_slot.p && dirty[0] & /*itemIsOpen, id, depth, $entity*/ 13824 | dirty[1] & /*$$scope, child*/ 327680) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[47], dirty, get_default_slot_changes_1, get_default_slot_context_1);
+				if (default_slot.p && dirty[0] & /*itemIsOpen, id, depth, $entity*/ 26112 | dirty[1] & /*$$scope, child*/ 163840) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[46], dirty, get_default_slot_changes_1, get_default_slot_context_1);
 				}
 			}
 		},
@@ -52042,7 +51995,7 @@ function create_default_slot(ctx) {
 	};
 }
 
-// (216:2) {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
+// (217:2) {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
@@ -52051,32 +52004,34 @@ function create_each_block(key_1, ctx) {
 	row = new Row({
 			props: {
 				entity: /*entity*/ ctx[2],
-				id: /*child*/ ctx[49].foundryID,
-				i: /*i*/ ctx[20] + 1,
+				id: /*child*/ ctx[48].foundryID,
+				i: /*i*/ ctx[18] + 1,
 				config: /*config*/ ctx[1],
 				colspan: /*colspan*/ ctx[3],
-				container: /*child*/ ctx[49].canContainChildren,
-				children: Array.from(/*child*/ ctx[49].children),
-				open: /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]),
+				container: /*child*/ ctx[48].canContainChildren,
+				children: Array.from(/*child*/ ctx[48].children),
+				open: /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]),
 				$$slots: {
 					default: [
 						create_default_slot,
 						({ id, ownedItem, depth, open, item: child }) => ({
 							10: id,
-							51: ownedItem,
+							50: ownedItem,
 							9: depth,
-							52: open,
-							49: child
+							51: open,
+							48: child
 						}),
 						({ id, ownedItem, depth, open, item: child }) => [
 							(id ? 1024 : 0) | (depth ? 512 : 0),
-							(ownedItem ? 1048576 : 0) | (open ? 2097152 : 0) | (child ? 262144 : 0)
+							(ownedItem ? 524288 : 0) | (open ? 1048576 : 0) | (child ? 131072 : 0)
 						]
 					]
 				},
 				$$scope: { ctx }
 			}
 		});
+
+	row.$on("delete", /*delete_handler*/ ctx[45]);
 
 	return {
 		key: key_1,
@@ -52094,15 +52049,15 @@ function create_each_block(key_1, ctx) {
 		p(ctx, dirty) {
 			const row_changes = {};
 			if (dirty[0] & /*entity*/ 4) row_changes.entity = /*entity*/ ctx[2];
-			if (dirty[0] & /*children*/ 64) row_changes.id = /*child*/ ctx[49].foundryID;
-			if (dirty[0] & /*children*/ 64) row_changes.i = /*i*/ ctx[20] + 1;
+			if (dirty[0] & /*children*/ 64) row_changes.id = /*child*/ ctx[48].foundryID;
+			if (dirty[0] & /*children*/ 64) row_changes.i = /*i*/ ctx[18] + 1;
 			if (dirty[0] & /*config*/ 2) row_changes.config = /*config*/ ctx[1];
 			if (dirty[0] & /*colspan*/ 8) row_changes.colspan = /*colspan*/ ctx[3];
-			if (dirty[0] & /*children*/ 64) row_changes.container = /*child*/ ctx[49].canContainChildren;
-			if (dirty[0] & /*children*/ 64) row_changes.children = Array.from(/*child*/ ctx[49].children);
-			if (dirty[0] & /*itemIsOpen, id*/ 5120) row_changes.open = /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]);
+			if (dirty[0] & /*children*/ 64) row_changes.container = /*child*/ ctx[48].canContainChildren;
+			if (dirty[0] & /*children*/ 64) row_changes.children = Array.from(/*child*/ ctx[48].children);
+			if (dirty[0] & /*itemIsOpen, id*/ 9216) row_changes.open = /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]);
 
-			if (dirty[0] & /*itemIsOpen, id, depth, $entity*/ 13824 | dirty[1] & /*$$scope, child*/ 327680) {
+			if (dirty[0] & /*itemIsOpen, id, depth, $entity*/ 26112 | dirty[1] & /*$$scope, child*/ 163840) {
 				row_changes.$$scope = { dirty, ctx };
 			}
 
@@ -52133,14 +52088,14 @@ function create_fragment(ctx) {
 	let createContextMenu_action;
 	let t2;
 	let t3;
-	let show_if = /*container*/ ctx[4] && /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]);
+	let show_if = /*container*/ ctx[4] && /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]);
 	let if_block3_anchor;
 	let current;
 	let mounted;
 	let dispose;
 	let if_block0 = /*config*/ ctx[1].toggle && create_if_block_4(ctx);
-	const default_slot_template = /*#slots*/ ctx[28].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[47], get_default_slot_context);
+	const default_slot_template = /*#slots*/ ctx[26].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[46], get_default_slot_context);
 	let if_block1 = /*config*/ ctx[1].deleteButton && create_if_block_2(ctx);
 	let if_block2 = !/*hideNotes*/ ctx[0] && create_if_block_1(ctx);
 	let if_block3 = show_if && create_if_block(ctx);
@@ -52161,20 +52116,17 @@ function create_fragment(ctx) {
 			if (if_block3) if_block3.c();
 			if_block3_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(td1, "class", "show-when-label");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "background-color", /*colors*/ ctx[15].backgroundColor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "color", /*colors*/ ctx[15].textColor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "background-color", /*colors*/ ctx[16].backgroundColor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "color", /*colors*/ ctx[16].textColor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-container", /*container*/ ctx[4]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-index", /*i*/ ctx[20]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-index", /*i*/ ctx[18]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-entity-id", /*id*/ ctx[10]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-listtype", /*type*/ ctx[26]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-listtype", /*type*/ ctx[24]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-contextmenu", /*selector*/ ctx[8]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "class", "svelte-3eflit");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "is-row-label", /*isRowLabel*/ ctx[14]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "is-row-label", /*isRowLabel*/ ctx[15]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "strikethrough", /*disabled*/ ctx[5]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "container", /*container*/ ctx[4]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "focused", /*$focused*/ ctx[17].includes(/*i*/ ctx[20]) && /*config*/ ctx[1].focusable);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "dragover", /*$dragover*/ ctx[18] === /*i*/ ctx[20]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "hovered", /*$hovered*/ ctx[19] === /*i*/ ctx[20] && /*config*/ ctx[1].highlightHover);
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, tr, anchor);
@@ -52189,7 +52141,7 @@ function create_fragment(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(tr, t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(tr, td1);
 			if (if_block1) if_block1.m(td1, null);
-			/*tr_binding*/ ctx[32](tr);
+			/*tr_binding*/ ctx[30](tr);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
 			if (if_block2) if_block2.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
@@ -52199,26 +52151,26 @@ function create_fragment(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(td0, "dragenter", /*dragenter_handler*/ ctx[29]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(td0, "click", /*click_handler*/ ctx[30]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(td0, "dragenter", /*dragenter_handler*/ ctx[27]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(td0, "click", /*click_handler*/ ctx[28]),
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(createContextMenu_action = _helpers__WEBPACK_IMPORTED_MODULE_2__["createContextMenu"].call(null, tr, {
 						menuItems: /*menuItems*/ ctx[7],
 						selector: /*selector*/ ctx[8]
 					})),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseover", /*mouseover_handler*/ ctx[33]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseenter", /*mouseenter_handler*/ ctx[34]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mousedown", /*mousedown_handler*/ ctx[35]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "click", /*click_handler_2*/ ctx[36]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseout", /*mouseout_handler*/ ctx[37]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseleave", /*mouseleave_handler*/ ctx[38]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "auxclick", /*auxclick_handler*/ ctx[39]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dblclick", /*dblclick_handler*/ ctx[40]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "drop", /*drop_handler*/ ctx[41]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragstart", /*dragstart_handler*/ ctx[42]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragenter", /*dragenter_handler_1*/ ctx[43]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragleave", /*dragleave_handler*/ ctx[44]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragover", /*dragover_handler*/ ctx[45]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragend", /*dragend_handler*/ ctx[46])
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseover", /*mouseover_handler*/ ctx[31]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseenter", /*mouseenter_handler*/ ctx[32]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mousedown", /*mousedown_handler*/ ctx[33]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "click", /*click_handler_2*/ ctx[34]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseout", /*mouseout_handler*/ ctx[35]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "mouseleave", /*mouseleave_handler*/ ctx[36]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "auxclick", /*auxclick_handler*/ ctx[37]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dblclick", /*dblclick_handler*/ ctx[38]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "drop", /*drop_handler*/ ctx[39]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragstart", /*dragstart_handler*/ ctx[40]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragenter", /*dragenter_handler_1*/ ctx[41]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragleave", /*dragleave_handler*/ ctx[42]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragover", /*dragover_handler*/ ctx[43]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(tr, "dragend", /*dragend_handler*/ ctx[44])
 				];
 
 				mounted = true;
@@ -52239,8 +52191,8 @@ function create_fragment(ctx) {
 			}
 
 			if (default_slot) {
-				if (default_slot.p && dirty[0] & /*GURPS, itemIsOpen, id, depth, $entity, $hovered, i*/ 1652224 | dirty[1] & /*$$scope*/ 65536) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[47], dirty, get_default_slot_changes, get_default_slot_context);
+				if (default_slot.p && dirty[0] & /*GURPS, itemIsOpen, id, depth, $entity, isHovered*/ 159232 | dirty[1] & /*$$scope*/ 32768) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[46], dirty, get_default_slot_changes, get_default_slot_context);
 				}
 			}
 
@@ -52257,20 +52209,20 @@ function create_fragment(ctx) {
 				if_block1 = null;
 			}
 
-			if (!current || dirty[0] & /*colors*/ 32768) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "background-color", /*colors*/ ctx[15].backgroundColor);
+			if (!current || dirty[0] & /*colors*/ 65536) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "background-color", /*colors*/ ctx[16].backgroundColor);
 			}
 
-			if (!current || dirty[0] & /*colors*/ 32768) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "color", /*colors*/ ctx[15].textColor);
+			if (!current || dirty[0] & /*colors*/ 65536) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(tr, "color", /*colors*/ ctx[16].textColor);
 			}
 
 			if (!current || dirty[0] & /*container*/ 16) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-container", /*container*/ ctx[4]);
 			}
 
-			if (!current || dirty[0] & /*i*/ 1048576) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-index", /*i*/ ctx[20]);
+			if (!current || dirty[0] & /*i*/ 262144) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(tr, "data-index", /*i*/ ctx[18]);
 			}
 
 			if (!current || dirty[0] & /*id*/ 1024) {
@@ -52286,8 +52238,8 @@ function create_fragment(ctx) {
 				selector: /*selector*/ ctx[8]
 			});
 
-			if (dirty[0] & /*isRowLabel*/ 16384) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "is-row-label", /*isRowLabel*/ ctx[14]);
+			if (dirty[0] & /*isRowLabel*/ 32768) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "is-row-label", /*isRowLabel*/ ctx[15]);
 			}
 
 			if (dirty[0] & /*disabled*/ 32) {
@@ -52296,18 +52248,6 @@ function create_fragment(ctx) {
 
 			if (dirty[0] & /*container*/ 16) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "container", /*container*/ ctx[4]);
-			}
-
-			if (dirty[0] & /*$focused, i, config*/ 1179650) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "focused", /*$focused*/ ctx[17].includes(/*i*/ ctx[20]) && /*config*/ ctx[1].focusable);
-			}
-
-			if (dirty[0] & /*$dragover, i*/ 1310720) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "dragover", /*$dragover*/ ctx[18] === /*i*/ ctx[20]);
-			}
-
-			if (dirty[0] & /*$hovered, i, config*/ 1572866) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(tr, "hovered", /*$hovered*/ ctx[19] === /*i*/ ctx[20] && /*config*/ ctx[1].highlightHover);
 			}
 
 			if (!/*hideNotes*/ ctx[0]) {
@@ -52333,13 +52273,13 @@ function create_fragment(ctx) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
 			}
 
-			if (dirty[0] & /*container, itemIsOpen, id*/ 5136) show_if = /*container*/ ctx[4] && /*itemIsOpen*/ ctx[12](/*id*/ ctx[10]);
+			if (dirty[0] & /*container, itemIsOpen, id*/ 9232) show_if = /*container*/ ctx[4] && /*itemIsOpen*/ ctx[13](/*id*/ ctx[10]);
 
 			if (show_if) {
 				if (if_block3) {
 					if_block3.p(ctx, dirty);
 
-					if (dirty[0] & /*container, itemIsOpen, id*/ 5136) {
+					if (dirty[0] & /*container, itemIsOpen, id*/ 9232) {
 						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
 					}
 				} else {
@@ -52376,7 +52316,7 @@ function create_fragment(ctx) {
 			if (if_block0) if_block0.d();
 			if (default_slot) default_slot.d(detaching);
 			if (if_block1) if_block1.d();
-			/*tr_binding*/ ctx[32](null);
+			/*tr_binding*/ ctx[30](null);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
 			if (if_block2) if_block2.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
@@ -52391,18 +52331,12 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let $entity,
 		$$unsubscribe_entity = svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(13, $entity = $$value)), entity);
+		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(14, $entity = $$value)), entity);
 
-	let $focused;
-	let $dragover;
-	let $hovered;
 	$$self.$$.on_destroy.push(() => $$unsubscribe_entity());
 	let { $$slots: slots = {}, $$scope } = $$props;
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_4__["createEventDispatcher"])();
 	const { setFocused, hovered, focused, dragover, type } = Object(svelte__WEBPACK_IMPORTED_MODULE_4__["getContext"])(_List_svelte__WEBPACK_IMPORTED_MODULE_1__["ROWS"]);
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, hovered, value => $$invalidate(19, $hovered = value));
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, focused, value => $$invalidate(17, $focused = value));
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, dragover, value => $$invalidate(18, $dragover = value));
 	let { entity = Object(svelte__WEBPACK_IMPORTED_MODULE_4__["getContext"])("entity") || null } = $$props;
 	$$subscribe_entity();
 	let { colspan } = $$props;
@@ -52436,6 +52370,7 @@ function instance($$self, $$props, $$invalidate) {
 	: () => [] } = $$props;
 
 	let { selector = "contextmenu" } = $$props;
+	let isHovered = false;
 	let rowHTMLElement;
 	const dragenter_handler = e => $$invalidate(0, hideNotes = false);
 
@@ -52451,7 +52386,7 @@ function instance($$self, $$props, $$invalidate) {
 	function tr_binding($$value) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"][$$value ? "unshift" : "push"](() => {
 			rowHTMLElement = $$value;
-			$$invalidate(11, rowHTMLElement);
+			$$invalidate(12, rowHTMLElement);
 		});
 	}
 
@@ -52460,6 +52395,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const mouseenter_handler = e => {
+		$$invalidate(11, isHovered = true);
 		hovered.set(i);
 
 		if (e.which == 1 && e.shiftKey && config.focusable) {
@@ -52488,6 +52424,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const mouseleave_handler = e => {
+		$$invalidate(11, isHovered = false);
 		dispatch("mouseleave");
 	};
 
@@ -52528,6 +52465,10 @@ function instance($$self, $$props, $$invalidate) {
 		dispatch("dragend");
 	};
 
+	function delete_handler(event) {
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
+	}
+
 	$$self.$$set = $$props => {
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(2, entity = $$props.entity));
 		if ("colspan" in $$props) $$invalidate(3, colspan = $$props.colspan);
@@ -52540,7 +52481,7 @@ function instance($$self, $$props, $$invalidate) {
 		if ("children" in $$props) $$invalidate(6, children = $$props.children);
 		if ("menuItems" in $$props) $$invalidate(7, menuItems = $$props.menuItems);
 		if ("selector" in $$props) $$invalidate(8, selector = $$props.selector);
-		if ("$$scope" in $$props) $$invalidate(47, $$scope = $$props.$$scope);
+		if ("$$scope" in $$props) $$invalidate(46, $$scope = $$props.$$scope);
 	};
 
 	let itemIsOpen;
@@ -52554,22 +52495,22 @@ function instance($$self, $$props, $$invalidate) {
 			$: $$invalidate(1, config = Object.assign({}, defaultConfig, config));
 		}
 
-		if ($$self.$$.dirty[0] & /*$entity*/ 8192) {
-			$: $$invalidate(12, itemIsOpen = id => {
+		if ($$self.$$.dirty[0] & /*$entity*/ 16384) {
+			$: $$invalidate(13, itemIsOpen = id => {
 				let ownedItem = $entity.getOwnedItem(id);
 				if (!ownedItem) return true;
 				return !ownedItem.getFlag("GURPS", "container_closed");
 			});
 		}
 
-		if ($$self.$$.dirty[0] & /*$entity, id*/ 9216) {
-			$: $$invalidate(14, isRowLabel = getItem($entity, id)
+		if ($$self.$$.dirty[0] & /*$entity, id*/ 17408) {
+			$: $$invalidate(15, isRowLabel = getItem($entity, id)
 			? getItem($entity).getFlag("GURPS", "is_label") || false
 			: false);
 		}
 
-		if ($$self.$$.dirty[0] & /*$entity, id*/ 9216) {
-			$: $$invalidate(15, colors = {
+		if ($$self.$$.dirty[0] & /*$entity, id*/ 17408) {
+			$: $$invalidate(16, colors = {
 				textColor: getItem($entity, id)
 				? getItem($entity, id).getFlag("GURPS", "text_color") || ""
 				: "",
@@ -52579,14 +52520,14 @@ function instance($$self, $$props, $$invalidate) {
 			});
 		}
 
-		if ($$self.$$.dirty[0] & /*$entity, id*/ 9216) {
-			$: $$invalidate(16, GURPS = getItem($entity, id).getGURPSObject
+		if ($$self.$$.dirty[0] & /*$entity, id*/ 17408) {
+			$: $$invalidate(17, GURPS = getItem($entity, id).getGURPSObject
 			? getItem($entity, id).getGURPSObject()
 			: {});
 		}
 
-		if ($$self.$$.dirty[0] & /*$entity, id*/ 9216) {
-			$: $$invalidate(20, i = getItem($entity, id).getFlag("GURPS", "index"));
+		if ($$self.$$.dirty[0] & /*$entity, id*/ 17408) {
+			$: $$invalidate(18, i = getItem($entity, id).getFlag("GURPS", "index"));
 		}
 	};
 
@@ -52602,15 +52543,13 @@ function instance($$self, $$props, $$invalidate) {
 		selector,
 		depth,
 		id,
+		isHovered,
 		rowHTMLElement,
 		itemIsOpen,
 		$entity,
 		isRowLabel,
 		colors,
 		GURPS,
-		$focused,
-		$dragover,
-		$hovered,
 		i,
 		dispatch,
 		setFocused,
@@ -52638,6 +52577,7 @@ function instance($$self, $$props, $$invalidate) {
 		dragleave_handler,
 		dragover_handler,
 		dragend_handler,
+		delete_handler,
 		$$scope
 	];
 }
@@ -56047,7 +55987,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (53:8) {#if weapon.parry}
+// (53:8) {#if typeof weapon.parry === "number"}
 function create_if_block_2(ctx) {
 	let span;
 	let t0;
@@ -56091,7 +56031,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (59:8) {#if weapon.block}
+// (59:8) {#if typeof weapon.block === "number"}
 function create_if_block_1(ctx) {
 	let span;
 	let t0;
@@ -56207,8 +56147,8 @@ function create_default_slot_1(ctx) {
 	let t10;
 	let t11;
 	let if_block0 = show_if && create_if_block_3(ctx);
-	let if_block1 = /*weapon*/ ctx[9].parry && create_if_block_2(ctx);
-	let if_block2 = /*weapon*/ ctx[9].block && create_if_block_1(ctx);
+	let if_block1 = typeof /*weapon*/ ctx[9].parry === "number" && create_if_block_2(ctx);
+	let if_block2 = typeof /*weapon*/ ctx[9].block === "number" && create_if_block_1(ctx);
 	let if_block3 = /*weapon*/ ctx[9].damage && create_if_block(ctx);
 
 	return {
@@ -56290,7 +56230,7 @@ function create_default_slot_1(ctx) {
 				if_block0 = null;
 			}
 
-			if (/*weapon*/ ctx[9].parry) {
+			if (typeof /*weapon*/ ctx[9].parry === "number") {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
@@ -56303,7 +56243,7 @@ function create_default_slot_1(ctx) {
 				if_block1 = null;
 			}
 
-			if (/*weapon*/ ctx[9].block) {
+			if (typeof /*weapon*/ ctx[9].block === "number") {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 				} else {
@@ -57316,6 +57256,35 @@ class RangedWeapons extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["Svelte
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./RangedWeapons.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/svelte/weapon-list/RangedWeapons.svelte.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/templates/GURPS-foundry-roll-templates/templates_roll.css":
+/*!***********************************************************************!*\
+  !*** ./src/templates/GURPS-foundry-roll-templates/templates_roll.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./templates_roll.css */ "./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css");
 
             content = content.__esModule ? content.default : content;
 

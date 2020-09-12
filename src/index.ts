@@ -7,6 +7,7 @@ import { registerSerializer, GCSJSON } from "g4elogic";
 import jsonQuery from "json-query";
 
 import "./styles/global.scss";
+import "./templates/GURPS-foundry-roll-templates/templates_roll.css";
 
 Hooks.once('init', init);
 

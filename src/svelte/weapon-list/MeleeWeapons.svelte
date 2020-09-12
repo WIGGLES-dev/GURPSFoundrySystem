@@ -50,13 +50,13 @@
         {/if}
       </td>
       <td>
-        {#if weapon.parry}
+        {#if typeof weapon.parry === "number"}
           <span class="fas fa-shield-alt" on:click={() => weapon.rollParry()} />
           {weapon.parry || ''}
         {/if}
       </td>
       <td>
-        {#if weapon.block}
+        {#if typeof weapon.block === "number"}
           <span class="fas fa-shield-alt" on:click={() => weapon.rollBlock()} />
           {weapon.block || ''}
         {/if}

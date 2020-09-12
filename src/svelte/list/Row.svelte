@@ -73,6 +73,8 @@
 
   export let selector = "contextmenu";
 
+  let isHovered = false;
+
   $: GURPS = getItem($entity, id).getGURPSObject
     ? getItem($entity, id).getGURPSObject()
     : {};
@@ -117,13 +119,11 @@
   data-contextmenu={selector}
   use:createContextMenu={{ menuItems, selector }}
   class:container
-  class:focused={$focused.includes(i) && config.focusable}
-  class:dragover={$dragover === i}
-  class:hovered={$hovered === i && config.highlightHover}
   on:mouseover={(e) => {
     dispatch('mouseover');
   }}
   on:mouseenter={(e) => {
+    isHovered = true;
     hovered.set(i);
     if (e.which == 1 && e.shiftKey && config.focusable) {
       setFocused(i);
@@ -145,6 +145,7 @@
     dispatch('mouseout');
   }}
   on:mouseleave={(e) => {
+    isHovered = false;
     dispatch('mouseleave');
   }}
   on:auxclick={(e) => {
@@ -190,14 +191,14 @@
     {depth}
     {id}
     ownedItem={getItem($entity, id)}
-    hovered={$hovered === i} />
+    hovered={isHovered} />
   <td class="show-when-label">
     {#if config.deleteButton}
       {#if container}
         <!-- <i class="fas fa-box" /> -->
       {/if}
       <i
-        class:no-show={!($hovered === i && $dragover !== i)}
+        class:no-show={!isHovered}
         class="fas fa-trash"
         on:click={() => {
           dispatch('delete', { entity: getItem($entity, id) });
@@ -215,6 +216,7 @@
 {#if container && itemIsOpen(id)}
   {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
     <svelte:self
+      on:delete
       let:id
       let:ownedItem
       let:depth

@@ -70,12 +70,14 @@
           label="Reach" />
         <Input
           {entity}
+          type="number"
           path="data.weapons"
           array={{ index: i, property: 'parry' }}
           label="Parry" />
         <Input
           {entity}
           path="data.weapons"
+          type="number"
           array={{ index: i, property: 'block' }}
           label="Block" />
       {:else if getWeaponType() === 'ranged_weapon'}
@@ -105,11 +107,11 @@
           array={{ index: i, property: 'bulk' }}
           label="Bulk" />
       {/if}
-      <Input
+      <!-- <Input
         {entity}
         label="Weapon Skill Bonus"
         path="data.weapons"
-        array={{ index: i, property: 'weapon_skill_mod' }} />
+        array={{ index: i, property: 'weapon_skill_mod' }} /> -->
     </TabPanel>
     <TabPanel>
       <SkillDefaults
