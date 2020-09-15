@@ -110,7 +110,7 @@
       await tick();
       inputElem.focus();
     }}>
-    {#if !value}&nbsp;{/if}
+    {#if value === ''}&nbsp;{/if}
     <slot name="no-edit" {value} />
   </div>
 {/if}

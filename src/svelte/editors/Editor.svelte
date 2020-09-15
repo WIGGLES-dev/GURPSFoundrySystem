@@ -7,6 +7,7 @@
   import Modifier from "./Modifier";
   import EquipmentModifier from "./EquipmentModifier";
   import Spell from "./Spell";
+  import Ritual from "./Ritual";
 
   export let entity = null;
   setContext("entity", entity);
@@ -19,14 +20,16 @@
         return Trait;
       case "item":
         return Equipment;
-      case "modifier":
+      case "trait modifier":
         return Modifier;
-      case "eqp_modifier":
+      case "equipment modifier":
         return EquipmentModifier;
       case "spell":
         return Spell;
       case "technique":
-        return Technique
+        return Technique;
+      case "ritual":
+        return Ritual;
       default:
         return false;
     }
@@ -34,7 +37,6 @@
 </script>
 
 <style>
-  
 </style>
 
 <svelte:component this={getEditorComponent($entity)} />

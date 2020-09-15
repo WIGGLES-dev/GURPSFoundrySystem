@@ -1,36 +1,34 @@
-import _Sheet from "./svelte/Sheet.svelte";
-import GCSImportDialog from "./svelte/GCSImportDialog.svelte";
+import _Sheet from "../svelte/Sheet.svelte";
+import GCSImportDialog from "../svelte/GCSImportDialog.svelte";
 import { _Item } from "./item";
 import { Character as GURPSCharacter, Skill, Weapon, Signature } from "g4elogic";
 import { writable, Writable } from "svelte/store";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
-import { injectHelpers, svelte, ownedItemsByType, formatModList } from "./helpers";
-import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
-import AttackDialog from "./svelte/AttackDialog.svelte";
-import ModifierPrompt from "./svelte/dialogs/ModifierPrompt.svelte";
-import { getDragContext } from "./dragdrop";
+import { injectHelpers, svelte, ownedItemsByType, formatModList } from "../helpers";
+import WeaponEditor from "../svelte/editors/WeaponEditor.svelte";
+import AttackDialog from "../svelte/AttackDialog.svelte";
+import ModifierPrompt from "../svelte/dialogs/ModifierPrompt.svelte";
+import { getDragContext } from "../dragdrop";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
     //@ts-ignore
     actor: _Actor;
-    app: _Sheet
+    svelteApp: _Sheet
 
     static get defaultOptions() {
         return mergeObject(ActorSheet.defaultOptions, {
             classes: ["GURPSActor"],
-            template: "systems/GURPS/holder.html",
+            template: "systems/GURPS/assets/templates/holder.html",
             width: 700,
             height: 900,
             submitOnChange: false
         })
     }
-
     activateListeners(html: JQuery<HTMLElement>) {
         return super.activateListeners(html);
     }
-
     async _onDrop(e: DragEvent) {
 
         async function attemptToAddPartyMember(id, entity) {
@@ -59,48 +57,38 @@ export class _ActorSheet extends ActorSheet {
         //@ts-ignore
         return super._onDrop(e);
     }
-
     submit(): null {
         return null
     }
-
     loadGCSFile() {
         const dialog = new GCSImportDialog({
             target: document.body,
         });
-
-        dialog.$on("File Loaded", async (e) => {
+        dialog.$on("Load", async (e) => {
             const files = e.detail;
-            if (files.length === 1) {
+            if (files.length > 0) {
                 let file = files[0];
-                let character = new GURPSCharacter("GCSJSON").load(JSON.parse(await file.text()), "GCSJSON");
-
-                console.log(character);
-                character.save("foundry", this.actor);
-            } else if (files.length > 1) {
-
+                let character;
+                try {
+                    character = new GURPSCharacter().load(JSON.parse(await file.text()), "GCSJSON");
+                    console.log(character);
+                    character.save("foundry", this.actor);
+                } catch (err) {
+                    ui.notifications.warn("Your GCS File was unable to load, check the logs for more information");
+                    console.log(err);
+                }
+            } else {
+                ui.notifications.warn("Please upload a valid GCS File in JSON format.")
             }
         });
     }
-
     customHeaderButtons() {
-        return [
-            // {
-            //     label: "Popout",
-            //     class: "popout",
-            //     icon: "fas fa-external-link-alt",
-            //     onclick: (e: Event) => {
-            //         const getter = `game.${(this.entity.collection.name as string).toLowerCase()}.get("${this.entity.id}")`
-            //         Popout.onPopoutClicked(e, this, getter)
-            //     }
-            // },
-            {
-                label: "LoadGCS",
-                class: "load",
-                icon: "fas fa-file-import",
-                onclick: (e: Event) => this.loadGCSFile()
-            }
-        ]
+        return [{
+            label: "LoadGCS",
+            class: "load",
+            icon: "fas fa-file-import",
+            onclick: (e: Event) => this.loadGCSFile()
+        }]
     }
 }
 
@@ -124,15 +112,12 @@ export class _Actor extends Actor {
 
     prepareData() {
         super.prepareData();
-
         if (this.GURPS) {
             this.updateGURPS();
         }
-
         this.determineInitiative();
         this.setPools();
     }
-
     private determineInitiative() {
         const speed = this.getProperty("data.attributes.speed");
         const dexterity = this.getProperty("data.attributes.dexterity");
@@ -148,15 +133,14 @@ export class _Actor extends Actor {
             })
         }
     }
-
     private setPools() {
         const ST = this.getProperty("data.attributes.strength") || 10;
         const HT = this.getProperty("data.attributes.health") || 10;
         const hp = this.getProperty("data.attributes.hit_points") || 0;
         const fp = this.getProperty("data.attributes.fatigue_points") || 0;
 
-        const hpValue = this.getProperty("data.pools.hit_points.value");
-        const fpValue = this.getProperty("data.pools.fatigue_points.value");
+        const hpValue = this.getProperty("data.pools.hit_points.value") || 10;
+        const fpValue = this.getProperty("data.pools.fatigue_points.value") || 10;
 
         if (this.data.type === "character") {
             mergeObject(this.data.data, {
@@ -173,13 +157,24 @@ export class _Actor extends Actor {
             });
         }
     }
-
     _onUpdateEmbeddedEntity(type: string, doc: any, update: any, options: any, userId: string) {
         (this.getOwnedItem(doc._id) as _Item).embeddedUpdate();
         this.updateGURPS();
         super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
     }
-
+    setupSheet() {
+        const {
+            useMultiplicateModifiers = false,
+            showTooltips = true,
+            useModifyingDiceAdds = false,
+            baseWillAndPerceptionOn10 = false,
+            useKYOS = false,
+            useReducedSwing = false,
+            useThrustEqualsSwingMinus2 = false,
+            diceIcon = "fas fa-dice d6 roll-ico",
+            
+        } = this.getProperty("data.config");
+    }
     updateGURPS() {
         try {
             const update = this.GURPS.load(this, "foundry");
@@ -189,7 +184,6 @@ export class _Actor extends Actor {
             console.log(e);
         }
     }
-
     async sortList(type: string, sortPropPath: string) {
         const list = this.ownedItemsByType(type)
         const toUpdate = list
@@ -204,15 +198,12 @@ export class _Actor extends Actor {
             });
         return this.updateEmbeddedEntity("OwnedItem", toUpdate);
     }
-
     ownedItemsByType(...types: string[]): _Item[] {
         return ownedItemsByType(this, ...types) as _Item[];
     }
-
     getWildWeapons() {
         return this.ownedItemsByType("melee attack");
     }
-
     getWeapons() {
         const entity = this
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
@@ -227,7 +218,6 @@ export class _Actor extends Actor {
             },
             skillLevel: () => {
                 let level = weapon.getBestAttackLevel();
-                console.log(level);
                 return level
             },
             rollParry() {
@@ -268,7 +258,6 @@ export class _Actor extends Actor {
             melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
         }
     }
-
     rollSkill(trait: string, level: number, modifiers: number[] = [], modType = "", data: any = {}) {
         switch (modType) {
             case "attack":
@@ -292,7 +281,6 @@ export class _Actor extends Actor {
                 })
         }
     }
-
     private rollAndRender(trait: string, level: number, modifiers: string) {
         try {
             let roll;
@@ -304,23 +292,17 @@ export class _Actor extends Actor {
             }
             roll.roll();
             let renderer = new SuccessRollRenderer();
-            renderer.render(roll, { template: "systems/GURPS/templates/GURPS-foundry-roll-templates/templates_roll.html" }).then((html) => {
+            renderer.render(roll, { template: "systems/GURPS/assets/templates/templates_roll.html" }).then((html) => {
                 ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
             });
         } catch (err) {
             ui.notifications.error(err)
         }
     }
-
     dodge() {
-        let roll = new SuccessRoll({ level: Math.floor(this.GURPS.getAttribute(Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3), modifiers: prompt(), trait: "Dodge" })
-        roll.roll();
-        let renderer = new SuccessRollRenderer();
-        renderer.render(roll).then(html => {
-            ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
-        });
+        let dodgeScore = Math.floor(this.GURPS.getAttribute(Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3);
+        this.rollSkill("Dodge", dodgeScore);
     }
-
     async rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
         const swing = this.GURPS.getSwingDamage();
         const thrust = this.GURPS.getThrustDamage();
@@ -344,14 +326,4 @@ export class _Actor extends Actor {
             ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed")
         }
     }
-
-    // static getBase64Image(img: HTMLImageElement) {
-    //     const canvas = document.createElement("canvas");
-    //     canvas.width = img.width;
-    //     canvas.height = img.height;
-    //     const ctx = canvas.getContext("2d");
-    //     ctx.drawImage(img, 0, 0);
-    //     const dataURL = canvas.toDataURL("imgage/png");
-    //     return dataURL.replace("/^data:image/\(png|jpg);base64,/", "")
-    // }
 }

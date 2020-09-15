@@ -1,10 +1,11 @@
 {
     "spell": {
         "templates": [
-            "skill_like",
-            "notable"
+            "skill-like",
+            "notable",
+            "list item"
         ],
-        "type": "skill",
+        "type": "spell",
         "tech_level": "",
         "specialization": "",
         "encumbrance_penalty_multiplier": 1,

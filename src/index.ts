@@ -1,19 +1,20 @@
-import { _ActorSheet, _Actor } from "./sheet";
-import { _ItemSheet, _Item } from "./item";
+import { _ActorSheet, _Actor } from "./foundry-GURPS/sheet";
+import { _ItemSheet, _Item } from "./foundry-GURPS/item";
 import { customUpdate, getEntity, indexSort } from "./helpers";
-import { _ChatMessage, _ChatLog } from "./chat";
+import { CustomChatMessage, CustomChatLog } from "./modules/custom-chat/chat";
 import { FoundryEntity } from "./foundry_actor";
 import { registerSerializer, GCSJSON } from "g4elogic";
+import WelcomeDialog from "@components/WelcomeDialog.svelte";
 import jsonQuery from "json-query";
 
 import "./styles/global.scss";
-import "./templates/GURPS-foundry-roll-templates/templates_roll.css";
 
 Hooks.once('init', init);
+Hooks.once('ready', ready)
 
-async function init() {
-
+function init() {
     game.gurps4e = {
+        oldVersion: "1.2.1",
         customUpdate,
         getEntity,
         indexSort,
@@ -29,8 +30,8 @@ async function init() {
     CONFIG.Item.entityClass = _Item;
     //CONFIG.Item.sheetClass = _ItemSheet;
 
-    CONFIG.ChatMessage.entityClass = _ChatMessage;
-    CONFIG.ui.chat = _ChatLog;
+    CONFIG.ChatMessage.entityClass = CustomChatMessage;
+    CONFIG.ui.chat = CustomChatLog;
     CONFIG.Combat.initiative = {
         decimals: 2,
         formula: "@initiative"
@@ -41,4 +42,20 @@ async function init() {
 
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("GURPS", _ItemSheet, { makeDefault: true });
+
+
+}
+
+function ready() {
+    if (isNewVersion()) {
+        alert("New Version");
+    }
+    new WelcomeDialog({
+        target: document.body,
+        props: {}
+    });
+}
+
+export function isNewVersion() {
+    return isNewerVersion(game.gurps4e.oldVersion, game.system.data.version)
 }

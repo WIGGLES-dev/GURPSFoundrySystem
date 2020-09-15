@@ -27,17 +27,15 @@ import {
     RangedWeapon,
     MeleeWeapon
 } from "g4elogic";
-import { _Actor as FoundryActor } from "./sheet";
-import { _Item } from "./item";
-import { getContainedBy } from "./container";
+import { _Actor as FoundryActor } from "./foundry-GURPS/sheet";
+import { _Item } from "./foundry-GURPS/item";
+import { getContainedBy } from "./modules/lists/container";
 
 export class FoundryEntity extends Serializer {
     static scope = "foundry"
-
     constructor() {
         super();
     }
-
     init() {
         this.
             register(SkillDefault, {
@@ -81,11 +79,10 @@ export class FoundryEntity extends Serializer {
                 load: this.mapWeapon
             })
     }
-
     private static mapListItem(listItem: ListItem<any>, entity?: _Item) {
+        listItem.foundryID = entity.id;
         listItem.listIndex = entity.getIndex() || listItem.list.length + 1
     }
-
     private static saveListItem(listItem: ListItem<any>) {
         try {
             return {
@@ -95,7 +92,6 @@ export class FoundryEntity extends Serializer {
 
         }
     }
-
     private static mapSkillLike(skillLike: SkillLike<any>, entity?: _Item) {
         const data = entity.data;
         skillLike.foundryID = entity.id;
@@ -105,7 +101,6 @@ export class FoundryEntity extends Serializer {
         skillLike.reference = getProperty(data, "data.reference");
         skillLike.gMod = getProperty(data, "data.global_mod");
     }
-
     private static saveSkillLike(skillLike: SkillLike<any>) {
         try {
             return {
@@ -119,7 +114,6 @@ export class FoundryEntity extends Serializer {
 
         }
     }
-
     static mapSkillDefault(skillDefault: SkillDefault<any>, data: any) {
         skillDefault.foundryID = data._id;
         //@ts-ignore
@@ -129,10 +123,6 @@ export class FoundryEntity extends Serializer {
         skillDefault.modifier = data.modifier;
         skillDefault.specialization = data.specialization;
         skillDefault.name = data.name;
-
-        if (skillDefault.getClass() instanceof SkillDefault) {
-
-        }
     }
     static saveSkillDefault(skillDefault: SkillDefault<any>) {
         return {
@@ -143,15 +133,11 @@ export class FoundryEntity extends Serializer {
             name: skillDefault.name
         }
     }
-
     mapSkill(skill: Skill, entity?: _Item) {
         const data = entity.data;
-        skill.foundryID = entity.id;
-
         FoundryEntity.mapListItem(skill, entity);
         FoundryEntity.mapSkillLike(skill, entity);
 
-        skill.difficulty = getProperty(data, "data.difficulty") as Difficulty;
         skill.signature = getProperty(data, "data.signature") as Signature;
         skill.techLevel = getProperty(data, "data.tech_level");
         skill.specialization = getProperty(data, "data.specialization");
@@ -175,23 +161,27 @@ export class FoundryEntity extends Serializer {
     }
     saveSkill(skill: Skill) {
         try {
-            return Object.assign(FoundryEntity.saveSkillLike(skill), {
-                type: skill.tag,
-                difficulty: skill.difficulty,
-                signature: skill.signature,
-                tech_level: skill.techLevel,
-                encumbrance_penalty_multiplier: skill.encumbrancePenaltyMultiple,
-                reference: skill.reference,
-                notes: skill.notes,
-                defaults: Array.from(skill.defaults).map(skillDefault => skillDefault.save())
-            })
+            return {
+                type: "skill",
+                name: skill.name || "Skill",
+                flags: {},
+                data: Object.assign(FoundryEntity.saveSkillLike(skill), {
+                    type: skill.tag,
+                    difficulty: skill.difficulty,
+                    signature: skill.signature,
+                    tech_level: skill.techLevel,
+                    encumbrance_penalty_multiplier: skill.encumbrancePenaltyMultiple,
+                    reference: skill.reference,
+                    notes: skill.notes,
+                    defaults: Array.from(skill.defaults).map(skillDefault => skillDefault.save({}))
+                })
+            }
         } catch (err) {
 
         }
     }
     mapTechnique(technique: Technique, entity?: _Item) {
         const data = entity.data;
-        technique.foundryID = entity.id;
         FoundryEntity.mapListItem(technique, entity);
         FoundryEntity.mapSkillLike(technique, entity);
 
@@ -209,20 +199,21 @@ export class FoundryEntity extends Serializer {
         });
     }
     saveTechnique(technique: Technique) {
-        return Object.assign({}, {
-            points: technique.points,
-            difficulty: technique.difficulty,
-            limit: technique.limit,
-            global_mod: technique.gMod,
-            tech_level: technique.techLevel,
-            default: technique.default.save()
-        })
+        return {
+            name: technique.name || "Technique",
+            flags: {},
+            data: {
+                points: technique.points,
+                difficulty: technique.difficulty,
+                limit: technique.limit,
+                global_mod: technique.gMod,
+                tech_level: technique.techLevel,
+                default: technique.default.save()
+            }
+        }
     }
     mapSpell(spell: Spell, entity?: _Item) {
         const data = entity.data
-
-        spell.foundryID = entity.id
-
         FoundryEntity.mapListItem(spell, entity);
         FoundryEntity.mapSkillLike(spell, entity);
 
@@ -247,21 +238,26 @@ export class FoundryEntity extends Serializer {
     }
     saveSpell(spell: Spell) {
         try {
-            return Object.assign({}, {
-                name: spell.name,
-                college: spell.college,
-                power_source: spell.powerSource,
-                class: spell.spellClass,
-                casting_cost: spell.castingCost,
-                maintenance_cost: spell.maintenanceCost,
-                casting_time: spell.castingTime,
-                duration: spell.duration,
-                reference: spell.reference,
+            return {
+                name: spell.name || "Spell",
+                type: "spell",
+                flags: {},
+                data: {
+                    name: spell.name,
+                    college: spell.college,
+                    power_source: spell.powerSource,
+                    class: spell.spellClass,
+                    casting_cost: spell.castingCost,
+                    maintenance_cost: spell.maintenanceCost,
+                    casting_time: spell.castingTime,
+                    duration: spell.duration,
+                    reference: spell.reference,
 
-                points: spell.points,
-                difficulty: spell.difficulty,
-                signature: spell.signature
-            })
+                    points: spell.points,
+                    difficulty: spell.difficulty,
+                    signature: spell.signature
+                }
+            }
         } catch (err) {
 
         }
@@ -269,8 +265,6 @@ export class FoundryEntity extends Serializer {
     mapEquipment(equipment: Equipment, entity?: _Item) {
         try {
             const data = entity.data;
-
-            equipment.foundryID = entity.id
             FoundryEntity.mapListItem(equipment, entity);
 
             equipment.foundryID = entity.id;
@@ -296,13 +290,16 @@ export class FoundryEntity extends Serializer {
             });
 
             getProperty(data, "data.features")?.forEach((feature: json) => {
+                if (!feature) return
                 Feature.loadFeature<Equipment>(equipment, feature.type)?.load(feature)
             });
 
             if (!entity.GURPSUpdater) {
                 entity.GURPSUpdater = equipment.subscribe(async (item: Equipment) => {
-                    //let update = await entity.update({ data: item.save() }, {});
-                });
+                    //let update = await entity.update(item.save({}), {});
+                    //console.log(update);
+                    // console.log(item);
+                }).unsubscribe;
             }
 
             if (getProperty(data, "data.type")?.includes("_container") || entity.getFlag("GURPS", "children")?.length > 0) {
@@ -312,37 +309,46 @@ export class FoundryEntity extends Serializer {
             }
 
         } catch (err) {
+            console.log(entity, equipment);
             console.log(err);
         }
     }
     saveEquipment(equipment: Equipment) {
         try {
-            return Object.assign({}, {
-                type: equipment.tag,
-                equipped: equipment.equipped,
-                description: equipment.description,
-                quantity: equipment.quantity,
-                value: equipment.value,
-                weight: equipment.weight,
-                tech_level: equipment.techLevel,
-                legality_class: equipment.legalityClass,
-
-                weapons: Array.from(equipment.weapons).map(weapon => weapon.save())
-            })
+            return {
+                name: equipment.description || "Item",
+                type: "item",
+                flags: {
+                    // GURPS: {
+                    //     contained_by: equipment?.containedBy?.foundryID ?? null,
+                    //     children: (Array.from(equipment.children) || []).map(child => child.foundryID)
+                    // }
+                },
+                data: {
+                    type: equipment.tag,
+                    equipped: equipment.equipped,
+                    description: equipment.description,
+                    quantity: equipment.quantity,
+                    value: equipment.value,
+                    weight: equipment.weight,
+                    tech_level: equipment.techLevel,
+                    legality_class: equipment.legalityClass,
+                    reference: equipment.reference,
+                    
+                    weapons: Array.from(equipment.weapons).map(weapon => weapon.save({})),
+                    features: Array.from(equipment.features).map(feature => feature.save({}))
+                }
+            }
         } catch (err) {
             console.log(err);
         }
     }
     mapTrait(trait: Trait, entity?: _Item) {
         const data = entity.data;
-        trait.foundryID = entity.id;
-
         FoundryEntity.mapListItem(trait, entity);
 
         trait.name = getProperty(data, "data.name");
-
         trait.disabled = !getProperty(data, "data.enabled");
-
         getProperty(data, "data.modifiers")?.forEach((modifier: any) => trait.modifiers.add(new TraitModifier(trait).load(modifier)));
         trait.basePoints = parseInt(getProperty(data, "data.base_points"));
         trait.hasLevels = getProperty(data, "data.has_levels");
@@ -350,8 +356,7 @@ export class FoundryEntity extends Serializer {
         trait.allowHalfLevels = getProperty(data, "data.allow_half_levels");
         trait.hasHalfLevel = getProperty(data, "data.has_half_level");
         trait.roundDown = getProperty(data, "data.round_down");
-        trait.controlRating = getProperty(data, "data.cr");
-
+        trait.controlRating = getProperty(data, "data.cr").toString();
         trait.pointsPerLevel = parseInt(getProperty(data, "data.points_per_level"));
         trait.reference = getProperty(data, "data.reference");
         trait.notes = getProperty(data, "data.notes");
@@ -361,6 +366,7 @@ export class FoundryEntity extends Serializer {
         });
 
         getProperty(data, "data.features")?.forEach((feature: json) => {
+            if (!feature) return
             Feature.loadFeature<Trait>(trait, feature.type)?.load(feature)
         });
 
@@ -375,36 +381,40 @@ export class FoundryEntity extends Serializer {
     }
     saveTrait(trait: Trait) {
         try {
-            return Object.assign({}, {
-                type: trait.tag,
-                name: trait.name,
-                enabled: !trait.disabled,
-                base_points: trait.basePoints,
-                levels: trait.levels,
-                allow_half_levels: trait.allowHalfLevels,
-                has_half_level: trait.hasHalfLevel,
-                round_down: trait.roundDown,
-                cr: trait.controlRating,
-                points_per_level: trait.pointsPerLevel,
+            return {
+                name: trait.name || "Trait",
+                type: "trait",
+                flags: {},
+                data: {
+                    type: trait.tag,
+                    name: trait.name,
+                    enabled: !trait.disabled,
+                    base_points: trait.basePoints,
+                    has_levels: trait.hasLevels,
+                    levels: trait.levels,
+                    allow_half_levels: trait.allowHalfLevels,
+                    has_half_level: trait.hasHalfLevel,
+                    round_down: trait.roundDown,
+                    cr: trait.controlRating,
+                    points_per_level: trait.pointsPerLevel,
 
-                reference: trait.reference,
-                categories: Array.from(trait.categories),
-                notes: trait.notes,
+                    reference: trait.reference,
+                    categories: Array.from(trait.categories),
+                    notes: trait.notes,
 
-                features: Array.from(trait.features).map(feature => feature.save()),
-                weapons: Array.from(trait.weapons).map(weapon => weapon.save())
-            })
+                    features: Array.from(trait.features).map(feature => feature.save({})),
+                    weapons: Array.from(trait.weapons).map(weapon => weapon.save({}))
+                }
+            }
         } catch (err) {
 
         }
     }
     mapFeature(feature: Feature<Featurable>, data: any) {
         feature.type = data.type;
-
         feature.leveled = data.per_level;
         feature.limitation = data.limitation;
         feature.amount = data.amount;
-
         switch (data.type) {
             case FeatureType.attributeBonus:
                 if (feature instanceof AttributeBonus) {
@@ -439,6 +449,7 @@ export class FoundryEntity extends Serializer {
     }
     saveFeature(feature: Feature<Featurable>) {
         let base = {
+            per_level: feature.leveled,
             type: feature.type,
             leveled: feature.leveled,
             limitation: feature.limitation,
@@ -447,7 +458,7 @@ export class FoundryEntity extends Serializer {
         switch (feature.type) {
             case FeatureType.attributeBonus:
                 return Object.assign(base, {
-                    attribute: feature.attribtue
+                    attribute: feature.attribute
                 })
             case FeatureType.damageResistanceBonus:
                 break
@@ -497,17 +508,19 @@ export class FoundryEntity extends Serializer {
             let proxy = weapon.addDefault();
             FoundryEntity.mapSkillDefault(proxy, weaponDefault);
         });
-
         weapon.subscribe((weapon) => {
             //owner.update({ "data.weapons": [] }, {})
         });
-
         return weapon
     }
     saveWeapon(weapon: Weapon) {
+        let damageBase = weapon?.damageBase?.replaceAll(new RegExp(/\d+d/, "g"), (match) => `${match}6`) ?? "";
+        damageBase = damageBase?.replace(/dx/, "d*") ?? "";
         const getDamage = () => {
-            const base = weapon.damageStrength === "sw" || weapon.damageStrength === "thr" ? `@${weapon.damageStrength}` : weapon.damageBase || "";
-            return `${base}${weapon.damageBase}`
+            const base = (weapon.damageStrength === "sw" || weapon.damageStrength === "thr") ?
+                `(@${weapon.damageStrength})${damageBase}` :
+                damageBase || "";
+            return base
         }
         try {
             return {
@@ -551,7 +564,6 @@ export class FoundryEntity extends Serializer {
     }
 
     load(character: Character, actor: FoundryActor, config: any): Character {
-
         const data = actor.data;
         character.getAttribute(Signature.DX).setLevel(getProperty(data, "data.attributes.dexterity"));
         const ST = character.getAttribute(Signature.ST).setLevel(getProperty(data, "data.attributes.strength"));
@@ -595,25 +607,28 @@ export class FoundryEntity extends Serializer {
         await actor.deleteEmbeddedEntity("OwnedItem", remove)
 
         const create = [
-            ...character.skillList.iter(),
-            ...character.techniqueList.iter(),
-            ...character.traitList.iter(),
-            ...character.equipmentList.iter(),
-            ...character.otherEquipmentList.iter(),
-            ...character.spellList.iter()
-        ].filter(item => !item.tag.includes("container")).map((item: ListItem<any>) => {
-            return {
-                name: item.name || "???",
-                type: this.determineType(item.tag),
-                data: item.save()
-            }
-        });
-
-        await actor.createEmbeddedEntity("OwnedItem", duplicate(create));
-
+            ...character.equipmentList.iter().map(item => {
+                return Object.assign(item.save({}))
+            }),
+            ...character.otherEquipmentList.iter().map(item => {
+                return Object.assign(item.save({}))
+            }),
+            ...[
+                ...character.skillList.iter(),
+                ...character.techniqueList.iter(),
+                ...character.traitList.iter(),
+                ...character.spellList.iter()
+            ].map((item: ListItem<any>) => {
+                return Object.assign(item.save({}))
+            })];
+        let creations = await actor.createEmbeddedEntity("OwnedItem", duplicate(create));
+        console.log(character.profile.portrait);
         await actor.update({
             "name": character?.profile?.name || "???",
-            "img": character?.profile?.portrait ? this.prependBase64(character.profile.portrait) : null,
+            "img": this.prependBase64(character?.profile?.portrait),
+            "data.point_total": character.totalPoints,
+            "data.pools.hit_points.value": character.getAttribute(Signature.ST).calculateLevel() - character.missingHP,
+            "data.pools.fatigue_points.value": character.getAttribute(Signature.FP).calculateLevel() - character.missingFP,
             "data.attributes": {
                 strength: character.getAttribute(Signature.ST).level,
                 dexterity: character.getAttribute(Signature.DX).level,
@@ -626,19 +641,14 @@ export class FoundryEntity extends Serializer {
                 fatigue_points: character.getAttribute(Signature.FP).level,
                 hit_points: character.getAttribute(Signature.HP).level
             }
-        })
+        });
 
         return actor
     }
 
     private prependBase64(base64: string) {
+        if (!base64) return null
         if (base64.startsWith("data:image/png;base64")) return base64
         return "data:image/png;base64," + base64
-    }
-
-    private determineType(tag: string) {
-        if (tag === "equipment") return "item"
-        if (tag === "technique") return "skill"
-        return tag
     }
 }

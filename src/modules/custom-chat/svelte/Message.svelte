@@ -1,8 +1,8 @@
 <script>
   import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 
-  import Damage from "./Damage";
-  import Skill from "./Skill";
+  import Damage from "@components/chat/Damage";
+  import Skill from "@components/chat/Skill";
 
   export let message = null;
 
@@ -59,12 +59,15 @@
     <header class="message-header flexrow">
       <h4 class="message-sender">{message.alias}</h4>
       <span class="message-metadata">
-        <time>{window.timeSince(message.data.timestamp)}</time>
+        <time
+          class="message-timestamp">{window.timeSince(message.data.timestamp)}</time>
         {#if window.game.user.isGM}
-          <a class="button message-delete"> <i class="fas fa-trash" /> </a>
+          <a class="button message-delete"> <i class="fas fa-trash" /></a>
         {/if}
       </span>
-      {#if isWhisper}<span class="whisper-to">{whisperTo}</span>{/if}
+      {#if isWhisper}
+        <span class="whisper-to">{game.i18n.localize('CHAT.To')}: {whisperTo}</span>
+      {/if}
       {#if message.data.flavor}
         <span class="flavor-text">{message.data.flavor}</span>
       {/if}

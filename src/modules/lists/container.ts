@@ -1,7 +1,12 @@
-import { arrayMove, ownedItemsByType } from "./helpers";
+import { arrayMove, ownedItemsByType } from "../../helpers";
 
 export function getContainedBy(item: Item) {
-    return item.actor.getOwnedItem(item.getFlag("GURPS", "contained_by"))
+    try {
+        return item.actor?.getOwnedItem(item.getFlag("GURPS", "contained_by"))
+    } catch (err) {
+        console.log(err);
+        return null
+    }
 }
 
 export function getChildren(item: Item): Item[] {
@@ -147,3 +152,6 @@ export function nest(actor: Actor, types: string[], nesting?: Item[]): Item[] {
     }, []);
 }
 
+export function validateAndFixLists(actor: Actor) {
+    
+}

@@ -4,13 +4,14 @@ import * as utils from "./system-builder";
 import CopyPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import sveltePreprocess from "svelte-preprocess";
+import { TsConfigPathsPlugin } from "awesome-typescript-loader";
 
 type mode = "development" | "production" | "none"
 const mode = process.argv[process.argv.indexOf("--mode") >= 0 ? process.argv.indexOf("--mode") + 1 : null] as mode || "development";
 const prod = mode === 'production';
 
 let output
-//output = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
+// output = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
 
 const config: webpack.Configuration = {
     entry: {
@@ -19,6 +20,9 @@ const config: webpack.Configuration = {
     },
     externals: {},
     resolve: {
+        plugins: [
+            new TsConfigPathsPlugin({ configFileName: "tsconfig.json", })
+        ],
         extensions: ['.mjs', '.ts', '.js', '.wasm', '.svelte', '.json'],
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
@@ -29,9 +33,20 @@ const config: webpack.Configuration = {
     module: {
         rules: [
             {
+                test: /\.md$/i,
+                use: [
+                    { loader: "html-loader" },
+                    {
+                        loader: "markdown-loader",
+                        options: {}
+                    }
+                ]
+            },
+            {
                 test: /\.(ts|tsx)$/i,
+                exclude: /node_modules/,
                 use: {
-                    loader: 'ts-loader',
+                    loader: 'awesome-typescript-loader',
                 }
             },
             {
@@ -78,8 +93,7 @@ const config: webpack.Configuration = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: 'src/images', to: "./images" },
-                { from: 'src/templates', to: './templates' },
+                { from: 'src/assets', to: "./assets" },
                 {
                     from: 'src/system.json',
                     transform(content, path) {
@@ -91,8 +105,7 @@ const config: webpack.Configuration = {
                     transform(content, path) {
                         return utils.buildTemplate(content, path)
                     }
-                },
-                { from: 'src/holder.html' }
+                }
             ]
         })
     ],

@@ -86,6 +86,34 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./CHANGELOG.md":
+/*!**********************!*\
+  !*** ./CHANGELOG.md ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Module
+var code = "<h2 id=\"122\">[1.2.2]</h2>\n<h2 id=\"added\">Added</h2>\n<ul>\n<li>changelog section</li>\n<li>project info section</li>\n<li>quick roll against disadvantage control rating</li>\n</ul>\n<h2 id=\"fixed\">Fixed</h2>\n<ul>\n<li>Bug that prevented the removal of equipment</li>\n<li>GCS Importer</li>\n</ul>\n";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./INFO.md":
+/*!*****************!*\
+  !*** ./INFO.md ***!
+  \*****************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Module
+var code = "<h2 id=\"get-in-touch\">Get In Touch</h2>\n<p>The easiest way to get in touch with me is on the GURPS discord server handle WIGGLES#9429.</p>\n<h2 id=\"bug-reports\">Bug Reports</h2>\n<p>If you encounter a bug please report the issue to me on the <a href=\"https://github.com/WIGGLES-dev/GURPSFoundrySystem\">project github page</a>.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<h3 id=\"gcs-importing\">GCS Importing</h3>\n<ul>\n<li>Cannot load nested data structure, GCS lists will be flattened and containers will retain their container status.</li>\n<li>Modifiers have not been implemented yet, therefore some traits and equipment may not reflect their values as they do in GCS.</li>\n<li>Not all features have been implemented, the only ones currently available are skill bonuses and attribute bonuses.</li>\n</ul>\n<h2 id=\"know-devops\">Know Devops?</h2>\n<p>If you are familiar with web technologies I appreciate all the help I can get. The project is written mainly in TypeScript and uses Svelte to render UI components. Most of the GURPS related logic has been extracted <a href=\"https://www.npmjs.com/package/g4elogic?activeTab=readme\">into my g4elogic NPM package</a>.</p>\n<h3 id=\"current-contributors\">Current Contributors</h3>\n<ul>\n<li>Ian Bell (Wiggles)</li>\n</ul>\n<h2 id=\"buy-me-a-coffee\">Buy Me A Coffee</h2>\n<p>If you wish to buy a me a coffee: <a href=\"https://www.patreon.com/wigglesdev\">https://www.patreon.com/wigglesdev</a></p>\n<h2 id=\"legal\"><a href=\"http://www.sjgames.com/general/online_policy.html\">Legal</a></h2>\n<p>GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. This game aid is the original creation of Ian Bell and is released for free distribution, and not for resale, under the permissions granted in the Steve Jackson Games Online Policy.</p>\n";
+// Exports
+module.exports = code;
+
+/***/ }),
+
 /***/ "./node_modules/@popperjs/core/lib/dom-utils/contains.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/dom-utils/contains.js ***!
@@ -2952,7 +2980,7 @@ function within(min, value, max) {
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/styles/global.scss":
 /*!***********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ref--7-2!./src/styles/global.scss ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/styles/global.scss ***!
   \***********************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2965,7 +2993,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "input[type=\"number\"] {\n  background: rgba(0, 0, 0, 0.05);\n  padding: 1px 3px;\n  margin: 0px;\n  height: 24px;\n  color: #191813;\n  font-family: inherit;\n  font-size: inherit;\n  text-align: inherit;\n  line-height: inherit;\n  border: 1px solid #7a7971;\n  border-radius: 3px; }\n\nh2 {\n  min-height: 26px; }\n\n.flex {\n  display: flex; }\n\n.flex-col {\n  display: flex;\n  flex-direction: column; }\n\n.fas.fa-trash:hover {\n  color: red; }\n\n.GURPS-label {\n  box-sizing: border-box;\n  padding: 7px; }\n  .GURPS-label[data-label=\"true\"] span::after {\n    content: \":\"; }\n  .GURPS-label:hover {\n    background-color: #7a7971;\n    color: white; }\n    .GURPS-label:hover input,\n    .GURPS-label:hover textarea {\n      color: white; }\n\n.GURPSActor .no-show {\n  display: none; }\n\n.GURPSActor .is-row-label > td:not(.show-when-label):not(.main-list-col) {\n  opacity: 0; }\n\n.GURPSActor .main-list-col {\n  width: 100%; }\n\n.GURPSActor .click-to-edit {\n  padding: 0; }\n\n.GURPSActor tr.strikethrough td {\n  position: relative; }\n  .GURPSActor tr.strikethrough td:before {\n    content: \" \";\n    position: absolute;\n    top: 50%;\n    left: 0;\n    border-bottom: 1px solid red;\n    width: 100%; }\n\n.GURPSActor .roll-ico {\n  border: none; }\n  .GURPSActor .roll-ico:hover {\n    box-shadow: 0 0 8px red; }\n", "",{"version":3,"sources":["webpack://src/styles/global.scss"],"names":[],"mappings":"AAAA;EACI,+BAA+B;EAC/B,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,cAAc;EACd,oBAAoB;EACpB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,yBAAyB;EACzB,kBAAkB,EAAA;;AAGtB;EACI,gBAAgB,EAAA;;AAGpB;EACI,aAAa,EAAA;;AAGjB;EACI,aAAa;EACb,sBAAsB,EAAA;;AAG1B;EACI,UAAU,EAAA;;AAGd;EAKI,sBAAsB;EAWtB,YAAY,EAAA;EAhBhB;IAEQ,YACJ,EAAA;EAHJ;IAQQ,yBAAoC;IACpC,YAAY,EAAA;IATpB;;MAYY,YAAY,EAAA;;AAOxB;EAIQ,aAAa,EAAA;;AAJrB;EAQQ,UAAU,EAAA;;AARlB;EAYQ,WAAW,EAAA;;AAZnB;EAgBQ,UAAU,EAAA;;AAhBlB;EAqBY,kBAAkB,EAAA;EArB9B;IAwBgB,YAAY;IACZ,kBAAkB;IAClB,QAAQ;IACR,OAAO;IACP,4BAA4B;IAC5B,WAAW,EAAA;;AA7B3B;EAuCQ,YAAY,EAAA;EAvCpB;IAoCY,uBAAuB,EAAA","sourcesContent":["input[type=\"number\"] {\r\n    background: rgba(0, 0, 0, 0.05);\r\n    padding: 1px 3px;\r\n    margin: 0px;\r\n    height: 24px;\r\n    color: #191813;\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n    text-align: inherit;\r\n    line-height: inherit;\r\n    border: 1px solid #7a7971;\r\n    border-radius: 3px;\r\n}\r\n\r\nh2 {\r\n    min-height: 26px;\r\n}\r\n\r\n.flex {\r\n    display: flex;\r\n}\r\n\r\n.flex-col {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.fas.fa-trash:hover {\r\n    color: red;\r\n}\r\n\r\n.GURPS-label {\r\n    &[data-label=\"true\"] span::after {\r\n        content: \":\"\r\n    }\r\n\r\n    box-sizing: border-box;\r\n\r\n    &:hover {\r\n        background-color: rgb(122, 121, 113);\r\n        color: white;\r\n        input,\r\n        textarea {\r\n            color: white;\r\n        }\r\n    }\r\n\r\n    padding: 7px;\r\n}\r\n\r\n.GURPSActor {\r\n\r\n\r\n    .no-show {\r\n        display: none;\r\n    }\r\n\r\n    .is-row-label>td:not(.show-when-label):not(.main-list-col) {\r\n        opacity: 0;\r\n    }\r\n\r\n    .main-list-col {\r\n        width: 100%;\r\n    }\r\n\r\n    .click-to-edit {\r\n        padding: 0;\r\n    }\r\n\r\n    tr.strikethrough {\r\n        td {\r\n            position: relative;\r\n\r\n            &:before {\r\n                content: \" \";\r\n                position: absolute;\r\n                top: 50%;\r\n                left: 0;\r\n                border-bottom: 1px solid red;\r\n                width: 100%;\r\n            }\r\n        }\r\n    }\r\n\r\n    .roll-ico {\r\n        &:hover {\r\n            box-shadow: 0 0 8px red;\r\n        }\r\n\r\n        border: none;\r\n    }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "@use \"./templates_roll\";\ninput[type=\"number\"] {\n  background: rgba(0, 0, 0, 0.05);\n  padding: 1px 3px;\n  margin: 0px;\n  height: 24px;\n  color: #191813;\n  font-family: inherit;\n  font-size: inherit;\n  text-align: inherit;\n  line-height: inherit;\n  border: 1px solid #7a7971;\n  border-radius: 3px; }\n\nh2 {\n  min-height: 26px; }\n\n.flex {\n  display: flex; }\n\n.flex-col {\n  display: flex;\n  flex-direction: column; }\n\n.fas.fa-trash:hover {\n  color: red; }\n\n.GURPS-label {\n  box-sizing: border-box;\n  padding: 7px; }\n  .GURPS-label[data-label=\"true\"] span::after {\n    content: \":\"; }\n  .GURPS-label:hover {\n    background-color: #7a7971;\n    color: white; }\n    .GURPS-label:hover input,\n    .GURPS-label:hover textarea {\n      color: white; }\n\n.GURPSActor .relative {\n  position: relative; }\n\n.GURPSActor .no-show {\n  display: none; }\n\n.GURPSActor .is-row-label > td:not(.show-when-label):not(.main-list-col) {\n  opacity: 0; }\n\n.GURPSActor .main-list-col {\n  width: 100%; }\n\n.GURPSActor .click-to-edit {\n  padding: 0; }\n\n.GURPSActor tr.strikethrough td {\n  position: relative; }\n  .GURPSActor tr.strikethrough td:before {\n    content: \" \";\n    position: absolute;\n    top: 50%;\n    left: 0;\n    border-bottom: 1px solid red;\n    width: 100%; }\n\n.GURPSActor .roll-ico {\n  border: none; }\n  .GURPSActor .roll-ico:hover {\n    box-shadow: 0 0 8px red; }\n", "",{"version":3,"sources":["webpack://src/styles/global.scss"],"names":[],"mappings":"AAAA,uBAAI;AAEJ;EACI,+BAA+B;EAC/B,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,cAAc;EACd,oBAAoB;EACpB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,yBAAyB;EACzB,kBAAkB,EAAA;;AAGtB;EACI,gBAAgB,EAAA;;AAGpB;EACI,aAAa,EAAA;;AAGjB;EACI,aAAa;EACb,sBAAsB,EAAA;;AAG1B;EACI,UAAU,EAAA;;AAGd;EAKI,sBAAsB;EAYtB,YAAY,EAAA;EAjBhB;IAEQ,YACJ,EAAA;EAHJ;IAQQ,yBAAoC;IACpC,YAAY,EAAA;IATpB;;MAaY,YAAY,EAAA;;AAOxB;EAEQ,kBAAkB,EAAA;;AAF1B;EAMQ,aAAa,EAAA;;AANrB;EAUQ,UAAU,EAAA;;AAVlB;EAcQ,WAAW,EAAA;;AAdnB;EAkBQ,UAAU,EAAA;;AAlBlB;EAuBY,kBAAkB,EAAA;EAvB9B;IA0BgB,YAAY;IACZ,kBAAkB;IAClB,QAAQ;IACR,OAAO;IACP,4BAA4B;IAC5B,WAAW,EAAA;;AA/B3B;EAyCQ,YAAY,EAAA;EAzCpB;IAsCY,uBAAuB,EAAA","sourcesContent":["@use \"./templates_roll\";\r\n\r\ninput[type=\"number\"] {\r\n    background: rgba(0, 0, 0, 0.05);\r\n    padding: 1px 3px;\r\n    margin: 0px;\r\n    height: 24px;\r\n    color: #191813;\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n    text-align: inherit;\r\n    line-height: inherit;\r\n    border: 1px solid #7a7971;\r\n    border-radius: 3px;\r\n}\r\n\r\nh2 {\r\n    min-height: 26px;\r\n}\r\n\r\n.flex {\r\n    display: flex;\r\n}\r\n\r\n.flex-col {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.fas.fa-trash:hover {\r\n    color: red;\r\n}\r\n\r\n.GURPS-label {\r\n    &[data-label=\"true\"] span::after {\r\n        content: \":\"\r\n    }\r\n\r\n    box-sizing: border-box;\r\n\r\n    &:hover {\r\n        background-color: rgb(122, 121, 113);\r\n        color: white;\r\n\r\n        input,\r\n        textarea {\r\n            color: white;\r\n        }\r\n    }\r\n\r\n    padding: 7px;\r\n}\r\n\r\n.GURPSActor {\r\n    .relative {\r\n        position: relative;\r\n    }\r\n\r\n    .no-show {\r\n        display: none;\r\n    }\r\n\r\n    .is-row-label>td:not(.show-when-label):not(.main-list-col) {\r\n        opacity: 0;\r\n    }\r\n\r\n    .main-list-col {\r\n        width: 100%;\r\n    }\r\n\r\n    .click-to-edit {\r\n        padding: 0;\r\n    }\r\n\r\n    tr.strikethrough {\r\n        td {\r\n            position: relative;\r\n\r\n            &:before {\r\n                content: \" \";\r\n                position: absolute;\r\n                top: 50%;\r\n                left: 0;\r\n                border-bottom: 1px solid red;\r\n                width: 100%;\r\n            }\r\n        }\r\n    }\r\n\r\n    .roll-ico {\r\n        &:hover {\r\n            box-shadow: 0 0 8px red;\r\n        }\r\n\r\n        border: none;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3053,7 +3081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogMTAwcHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUtc2lkZWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0YWInLCBlLmRldGFpbCk7XHJcbiAgfX0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5HZW5lcmFsPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PkJpby9NaXNjPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5Ta2lsbHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PkNvbWJhdDwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NX0+SW52ZW50b3J5PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs2fT5Hcmltb2lyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17N30+PGkgY2xhc3M9XCJmYXMgZmEtY29nc1wiIC8+PC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsXCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUtc2lkZWJhclwiPlxyXG4gICAgICAgIDxBdHRyaWJ1dGVzIC8+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiZ2VuZXJhbC1wYWdlXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImZsZXhcIiBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleC1jb2xcIiAvPlxyXG4gICAgICAgICAgPGRpdiBzdHlsZT1cImZsZXgtZ3JvdzogMTsgcGFkZGluZzogMHB4IDVweCAwcHggNXB4O1wiPlxyXG4gICAgICAgICAgICA8RW5jdW1icmFuY2UgLz5cclxuICAgICAgICAgICAgPFBvb2xzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiPlxyXG4gICAgICAgICAgICA8VG90YWxzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRyYWl0TGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPEJpb2dyYXBoeSAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNraWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPENoYXJhY3RlckNvbWJhdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2ludmVudG9yeS10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5NYWluPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3RoZXI8L1RhYj5cclxuICAgICAgPC9UYWJMaXN0PlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxFcXVpcG1lbnRMaXN0IGxvY2F0aW9uPVwib3RoZXJcIiAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNwZWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2NvbmZpZy10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5BdHRyaWJ1dGVzPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3B0aW9uczwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8dWw+XHJcbiAgICAgICAgICB7I2VhY2ggT2JqZWN0LmVudHJpZXMoJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzJykpIGFzIGF0dHJpYnV0ZSwgaX1cclxuICAgICAgICAgICAgPGxpPnthdHRyaWJ1dGVbMF19IH4ge2F0dHJpYnV0ZVsxXX08L2xpPlxyXG4gICAgICAgICAgey9lYWNofVxyXG4gICAgICAgIDwvdWw+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgIDwvVGFicz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyxjQUFDLENBQUMsQUFDTCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMsQUFLRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyxBQUNELGFBQWEsY0FBQyxDQUFDLEFBQ2IsV0FBVyxDQUFFLEtBQUssQUFDcEIsQ0FBQyxBQUNELGtCQUFrQixjQUFDLENBQUMsQUFDbEIsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLENBQUMsQ0FDUCxHQUFHLENBQUUsQ0FBQyxDQUNOLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/Character.svelte","webpack://src/svelte/Character.svelte.css"],"names":[],"mappings":"AA6BE,oBAAO,YACQ,CACd,uBAKS,iBACU,CAClB,WAAY,CACb,4BACc,iBACK,CACnB,iCACmB,oCACmB,CACrC,iBAAkB,CAClB,MAAO,CACP,KAAM,CACN,WAAY;AC/ChB,y/LAAy/L","sourcesContent":["<script>\r\n  import { Character } from \"../sheet\";\r\n  import { setContext } from \"svelte\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  import EquipmentList from \"./EquipmentList\";\r\n  import TraitList from \"./TraitList\";\r\n  import SkillList from \"./SkillList\";\r\n  import SpellList from \"./SpellList\";\r\n  import Encumbrance from \"./Encumbrance\";\r\n  import Totals from \"./Totals\";\r\n  import Armor from \"./Armor\";\r\n  import Attributes from \"./Attributes\";\r\n  import Pools from \"./Pools\";\r\n  import Biography from \"./Biography\";\r\n  import CharacterCombat from \"./CharacterCombat\";\r\n\r\n  import { RichTextEditor, Input, FilePicker, Textarea } from \"./form/form\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .column {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  .general {\r\n    position: relative;\r\n    height: 100%;\r\n  }\r\n  .general-page {\r\n    margin-left: 100px;\r\n  }\r\n  .attribute-sidebar {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>General</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Bio/Misc</Tab>\r\n    <Tab index={3}>Skills</Tab>\r\n    <Tab index={4}>Combat</Tab>\r\n    <Tab index={5}>Inventory</Tab>\r\n    <Tab index={6}>Grimoire</Tab>\r\n    <Tab index={7}><i class=\"fas fa-cogs\" /></Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div class=\"general\">\r\n      <div class=\"attribute-sidebar\">\r\n        <Attributes />\r\n      </div>\r\n      <div class=\"general-page\">\r\n        <div class=\"flex\" style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <div class=\"flex-col\" />\r\n          <div style=\"flex-grow: 1; padding: 0px 5px 0px 5px;\">\r\n            <Encumbrance />\r\n            <Pools />\r\n          </div>\r\n          <div class=\"flex-col\">\r\n            <Totals />\r\n          </div>\r\n        </div>\r\n        <div style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <Textarea path=\"data.notes\" label=\"Notes\" />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <TraitList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Biography />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SkillList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <CharacterCombat />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'inventory-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Main</Tab>\r\n        <Tab index={1}>Other</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <EquipmentList />\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <EquipmentList location=\"other\" />\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SpellList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'config-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Attributes</Tab>\r\n        <Tab index={1}>Options</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <ul>\r\n          {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}\r\n            <li>{attribute[0]} ~ {attribute[1]}</li>\r\n          {/each}\r\n        </ul>\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <h1>Under Construction</h1>\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n</Tabs>\r\n",".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9zaGVldFwiO1xyXG4gIGltcG9ydCB7IHNldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGFicywgVGFiTGlzdCwgVGFiUGFuZWwsIFRhYiB9IGZyb20gXCIuL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRXF1aXBtZW50TGlzdCBmcm9tIFwiLi9FcXVpcG1lbnRMaXN0XCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi9UcmFpdExpc3RcIjtcclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuL1NraWxsTGlzdFwiO1xyXG4gIGltcG9ydCBTcGVsbExpc3QgZnJvbSBcIi4vU3BlbGxMaXN0XCI7XHJcbiAgaW1wb3J0IEVuY3VtYnJhbmNlIGZyb20gXCIuL0VuY3VtYnJhbmNlXCI7XHJcbiAgaW1wb3J0IFRvdGFscyBmcm9tIFwiLi9Ub3RhbHNcIjtcclxuICBpbXBvcnQgQXJtb3IgZnJvbSBcIi4vQXJtb3JcIjtcclxuICBpbXBvcnQgQXR0cmlidXRlcyBmcm9tIFwiLi9BdHRyaWJ1dGVzXCI7XHJcbiAgaW1wb3J0IFBvb2xzIGZyb20gXCIuL1Bvb2xzXCI7XHJcbiAgaW1wb3J0IEJpb2dyYXBoeSBmcm9tIFwiLi9CaW9ncmFwaHlcIjtcclxuICBpbXBvcnQgQ2hhcmFjdGVyQ29tYmF0IGZyb20gXCIuL0NoYXJhY3RlckNvbWJhdFwiO1xyXG5cclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIsIFRleHRhcmVhIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gbnVsbDtcclxuICBjb25zdCBHVVJQUyA9ICRlbnRpdHkuX0dVUlBTO1xyXG5cclxuICBzZXRDb250ZXh0KFwiR1VSUFNcIiwgR1VSUFMpO1xyXG4gIHNldENvbnRleHQoXCJlbnRpdHlcIiwgZW50aXR5KTtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb2x1bW4ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG4gIC5nZW5lcmFsIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbiAgLmdlbmVyYWwtcGFnZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogMTAwcHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUtc2lkZWJhciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0YWInLCBlLmRldGFpbCk7XHJcbiAgfX0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5HZW5lcmFsPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PkJpby9NaXNjPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5Ta2lsbHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PkNvbWJhdDwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NX0+SW52ZW50b3J5PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs2fT5Hcmltb2lyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17N30+PGkgY2xhc3M9XCJmYXMgZmEtY29nc1wiIC8+PC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsXCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUtc2lkZWJhclwiPlxyXG4gICAgICAgIDxBdHRyaWJ1dGVzIC8+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiZ2VuZXJhbC1wYWdlXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImZsZXhcIiBzdHlsZT1cImJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleC1jb2xcIiAvPlxyXG4gICAgICAgICAgPGRpdiBzdHlsZT1cImZsZXgtZ3JvdzogMTsgcGFkZGluZzogMHB4IDVweCAwcHggNXB4O1wiPlxyXG4gICAgICAgICAgICA8RW5jdW1icmFuY2UgLz5cclxuICAgICAgICAgICAgPFBvb2xzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiPlxyXG4gICAgICAgICAgICA8VG90YWxzIC8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRyYWl0TGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPEJpb2dyYXBoeSAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNraWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPENoYXJhY3RlckNvbWJhdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2ludmVudG9yeS10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5NYWluPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3RoZXI8L1RhYj5cclxuICAgICAgPC9UYWJMaXN0PlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxFcXVpcG1lbnRMaXN0IGxvY2F0aW9uPVwib3RoZXJcIiAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFNwZWxsTGlzdCAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFRhYnNcclxuICAgICAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicpIHx8IDB9XHJcbiAgICAgIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ2NvbmZpZy10YWInLCBlLmRldGFpbCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8VGFiTGlzdD5cclxuICAgICAgICA8VGFiIGluZGV4PXswfT5BdHRyaWJ1dGVzPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17MX0+T3B0aW9uczwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8dWw+XHJcbiAgICAgICAgICB7I2VhY2ggT2JqZWN0LmVudHJpZXMoJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzJykpIGFzIGF0dHJpYnV0ZSwgaX1cclxuICAgICAgICAgICAgPGxpPnthdHRyaWJ1dGVbMF19IH4ge2F0dHJpYnV0ZVsxXX08L2xpPlxyXG4gICAgICAgICAgey9lYWNofVxyXG4gICAgICAgIDwvdWw+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgIDwvVGFicz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyxjQUFDLENBQUMsQUFDTCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMsQUFLRCxRQUFRLGNBQUMsQ0FBQyxBQUNSLFFBQVEsQ0FBRSxRQUFRLENBQ2xCLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyxBQUNELGFBQWEsY0FBQyxDQUFDLEFBQ2IsV0FBVyxDQUFFLEtBQUssQUFDcEIsQ0FBQyxBQUNELGtCQUFrQixjQUFDLENBQUMsQUFDbEIsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLENBQUMsQ0FDUCxHQUFHLENBQUUsQ0FBQyxDQUNOLE1BQU0sQ0FBRSxJQUFJLEFBQ2QsQ0FBQyJ9*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9mb3VuZHJ5LUdVUlBTL3NoZWV0XCI7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4vdGFicy90YWJzXCI7XHJcblxyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuL0VxdWlwbWVudExpc3RcIjtcclxuICBpbXBvcnQgVHJhaXRMaXN0IGZyb20gXCIuL1RyYWl0TGlzdFwiO1xyXG4gIGltcG9ydCBTa2lsbExpc3QgZnJvbSBcIi4vU2tpbGxMaXN0XCI7XHJcbiAgaW1wb3J0IFNwZWxsTGlzdCBmcm9tIFwiLi9TcGVsbExpc3RcIjtcclxuICBpbXBvcnQgRW5jdW1icmFuY2UgZnJvbSBcIi4vRW5jdW1icmFuY2VcIjtcclxuICBpbXBvcnQgVG90YWxzIGZyb20gXCIuL1RvdGFsc1wiO1xyXG4gIGltcG9ydCBBcm1vciBmcm9tIFwiLi9Bcm1vclwiO1xyXG4gIGltcG9ydCBBdHRyaWJ1dGVzIGZyb20gXCIuL0F0dHJpYnV0ZXNcIjtcclxuICBpbXBvcnQgUG9vbHMgZnJvbSBcIi4vUG9vbHNcIjtcclxuICBpbXBvcnQgQmlvZ3JhcGh5IGZyb20gXCIuL0Jpb2dyYXBoeVwiO1xyXG4gIGltcG9ydCBDaGFyYWN0ZXJDb21iYXQgZnJvbSBcIi4vQ2hhcmFjdGVyQ29tYmF0XCI7XHJcblxyXG4gIGltcG9ydCBDaGFuZ2VMb2cgZnJvbSBcIi4uLy4uL0NIQU5HRUxPRy5tZFwiO1xyXG4gIGltcG9ydCBJbmZvIGZyb20gXCIuLi8uLi9JTkZPLm1kXCI7XHJcblxyXG4gIGltcG9ydCB7IFJpY2hUZXh0RWRpdG9yLCBJbnB1dCwgRmlsZVBpY2tlciwgVGV4dGFyZWEgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gJGVudGl0eS5fR1VSUFM7XHJcblxyXG4gIHNldENvbnRleHQoXCJHVVJQU1wiLCBHVVJQUyk7XHJcbiAgc2V0Q29udGV4dChcImVudGl0eVwiLCBlbnRpdHkpO1xyXG5cclxuICAkOiB0b3RhbHMgPSAkR1VSUFMucG9pbnRUb3RhbHMoKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmZsZXgge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICB9XHJcbiAgLmNvbHVtbiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB9XHJcbiAgLmdlbmVyYWwge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuICAuZ2VuZXJhbC1wYWdlIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMDBweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZS1zaWRlYmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkdlbmVyYWw8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PlRyYWl0czwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+QmlvL01pc2M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezN9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NH0+Q29tYmF0PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs1fT5JbnZlbnRvcnk8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezZ9PkdyaW1vaXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs3fT48aSBjbGFzcz1cImZhcyBmYS1jb2dzXCIgLz48L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cImdlbmVyYWxcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZS1zaWRlYmFyXCI+XHJcbiAgICAgICAgPEF0dHJpYnV0ZXMgLz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsLXBhZ2VcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiIC8+XHJcbiAgICAgICAgICA8ZGl2IHN0eWxlPVwiZmxleC1ncm93OiAxOyBwYWRkaW5nOiAwcHggNXB4IDBweCA1cHg7XCI+XHJcbiAgICAgICAgICAgIDxFbmN1bWJyYW5jZSAvPlxyXG4gICAgICAgICAgICA8UG9vbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZsZXgtY29sXCI+XHJcbiAgICAgICAgICAgIDxUb3RhbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDxkaXYgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1wiPlxyXG4gICAgICAgICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VHJhaXRMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8QmlvZ3JhcGh5IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U2tpbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8Q2hhcmFjdGVyQ29tYmF0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdpbnZlbnRvcnktdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9Pk1haW48L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PdGhlcjwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8RXF1aXBtZW50TGlzdCAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgbG9jYXRpb249XCJvdGhlclwiIC8+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICA8L1RhYnM+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U3BlbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdjb25maWctdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9PkF0dHJpYnV0ZXM8L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PcHRpb25zPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17Mn0+Q2hhbmdlbG9nPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17M30+UHJvamVjdCBJbmZvPC9UYWI+XHJcbiAgICAgIDwvVGFiTGlzdD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDx1bD5cclxuICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcygkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMnKSkgYXMgYXR0cmlidXRlLCBpfVxyXG4gICAgICAgICAgICA8bGk+e2F0dHJpYnV0ZVswXX0gfiB7YXR0cmlidXRlWzFdfTwvbGk+XHJcbiAgICAgICAgICB7L2VhY2h9XHJcbiAgICAgICAgPC91bD5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAge0BodG1sIENoYW5nZUxvZ31cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIHtAaHRtbCBJbmZvfVxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdDRSxLQUFLLGNBQUMsQ0FBQyxBQUNMLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUtELFFBQVEsY0FBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsYUFBYSxjQUFDLENBQUMsQUFDYixXQUFXLENBQUUsS0FBSyxBQUNwQixDQUFDLEFBQ0Qsa0JBQWtCLGNBQUMsQ0FBQyxBQUNsQixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUNyQyxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsQ0FBQyxDQUNQLEdBQUcsQ0FBRSxDQUFDLENBQ04sTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Character.svelte","webpack://src/svelte/Character.svelte.css"],"names":[],"mappings":"AAgCE,oBAAO,YACQ,CACd,uBAKS,iBACU,CAClB,WAAY,CACb,4BACc,iBACK,CACnB,iCACmB,oCACmB,CACrC,iBAAkB,CAClB,MAAO,CACP,KAAM,CACN,WAAY;AClDhB,q7MAAq7M","sourcesContent":["<script>\r\n  import { Character } from \"../foundry-GURPS/sheet\";\r\n  import { setContext } from \"svelte\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  import EquipmentList from \"./EquipmentList\";\r\n  import TraitList from \"./TraitList\";\r\n  import SkillList from \"./SkillList\";\r\n  import SpellList from \"./SpellList\";\r\n  import Encumbrance from \"./Encumbrance\";\r\n  import Totals from \"./Totals\";\r\n  import Armor from \"./Armor\";\r\n  import Attributes from \"./Attributes\";\r\n  import Pools from \"./Pools\";\r\n  import Biography from \"./Biography\";\r\n  import CharacterCombat from \"./CharacterCombat\";\r\n\r\n  import ChangeLog from \"../../CHANGELOG.md\";\r\n  import Info from \"../../INFO.md\";\r\n\r\n  import { RichTextEditor, Input, FilePicker, Textarea } from \"./form/form\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .column {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  .general {\r\n    position: relative;\r\n    height: 100%;\r\n  }\r\n  .general-page {\r\n    margin-left: 100px;\r\n  }\r\n  .attribute-sidebar {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>General</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Bio/Misc</Tab>\r\n    <Tab index={3}>Skills</Tab>\r\n    <Tab index={4}>Combat</Tab>\r\n    <Tab index={5}>Inventory</Tab>\r\n    <Tab index={6}>Grimoire</Tab>\r\n    <Tab index={7}><i class=\"fas fa-cogs\" /></Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div class=\"general\">\r\n      <div class=\"attribute-sidebar\">\r\n        <Attributes />\r\n      </div>\r\n      <div class=\"general-page\">\r\n        <div class=\"flex\" style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <div class=\"flex-col\" />\r\n          <div style=\"flex-grow: 1; padding: 0px 5px 0px 5px;\">\r\n            <Encumbrance />\r\n            <Pools />\r\n          </div>\r\n          <div class=\"flex-col\">\r\n            <Totals />\r\n          </div>\r\n        </div>\r\n        <div style=\"background-color: rgba(0, 0, 0, 0.05);\">\r\n          <Textarea path=\"data.notes\" label=\"Notes\" />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <TraitList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Biography />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SkillList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <CharacterCombat />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'inventory-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Main</Tab>\r\n        <Tab index={1}>Other</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <EquipmentList />\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <EquipmentList location=\"other\" />\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <SpellList />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Tabs\r\n      tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}\r\n      on:tabchange={(e) => {\r\n        $entity.setFlag('GURPS', 'config-tab', e.detail);\r\n      }}>\r\n      <TabList>\r\n        <Tab index={0}>Attributes</Tab>\r\n        <Tab index={1}>Options</Tab>\r\n        <Tab index={2}>Changelog</Tab>\r\n        <Tab index={3}>Project Info</Tab>\r\n      </TabList>\r\n      <TabPanel>\r\n        <ul>\r\n          {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}\r\n            <li>{attribute[0]} ~ {attribute[1]}</li>\r\n          {/each}\r\n        </ul>\r\n      </TabPanel>\r\n      <TabPanel>\r\n        <h1>Under Construction</h1>\r\n      </TabPanel>\r\n      <TabPanel>\r\n        {@html ChangeLog}\r\n      </TabPanel>\r\n      <TabPanel>\r\n        {@html Info}\r\n      </TabPanel>\r\n    </Tabs>\r\n  </TabPanel>\r\n</Tabs>\r\n",".flex.svelte-zixl8z{display:flex}.general.svelte-zixl8z{position:relative;height:100%}.general-page.svelte-zixl8z{margin-left:100px}.attribute-sidebar.svelte-zixl8z{background-color:rgba(0, 0, 0, 0.05);position:absolute;left:0;top:0;height:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQ2hhcmFjdGVyLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IENoYXJhY3RlciB9IGZyb20gXCIuLi9mb3VuZHJ5LUdVUlBTL3NoZWV0XCI7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4vdGFicy90YWJzXCI7XHJcblxyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuL0VxdWlwbWVudExpc3RcIjtcclxuICBpbXBvcnQgVHJhaXRMaXN0IGZyb20gXCIuL1RyYWl0TGlzdFwiO1xyXG4gIGltcG9ydCBTa2lsbExpc3QgZnJvbSBcIi4vU2tpbGxMaXN0XCI7XHJcbiAgaW1wb3J0IFNwZWxsTGlzdCBmcm9tIFwiLi9TcGVsbExpc3RcIjtcclxuICBpbXBvcnQgRW5jdW1icmFuY2UgZnJvbSBcIi4vRW5jdW1icmFuY2VcIjtcclxuICBpbXBvcnQgVG90YWxzIGZyb20gXCIuL1RvdGFsc1wiO1xyXG4gIGltcG9ydCBBcm1vciBmcm9tIFwiLi9Bcm1vclwiO1xyXG4gIGltcG9ydCBBdHRyaWJ1dGVzIGZyb20gXCIuL0F0dHJpYnV0ZXNcIjtcclxuICBpbXBvcnQgUG9vbHMgZnJvbSBcIi4vUG9vbHNcIjtcclxuICBpbXBvcnQgQmlvZ3JhcGh5IGZyb20gXCIuL0Jpb2dyYXBoeVwiO1xyXG4gIGltcG9ydCBDaGFyYWN0ZXJDb21iYXQgZnJvbSBcIi4vQ2hhcmFjdGVyQ29tYmF0XCI7XHJcblxyXG4gIGltcG9ydCBDaGFuZ2VMb2cgZnJvbSBcIi4uLy4uL0NIQU5HRUxPRy5tZFwiO1xyXG4gIGltcG9ydCBJbmZvIGZyb20gXCIuLi8uLi9JTkZPLm1kXCI7XHJcblxyXG4gIGltcG9ydCB7IFJpY2hUZXh0RWRpdG9yLCBJbnB1dCwgRmlsZVBpY2tlciwgVGV4dGFyZWEgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gJGVudGl0eS5fR1VSUFM7XHJcblxyXG4gIHNldENvbnRleHQoXCJHVVJQU1wiLCBHVVJQUyk7XHJcbiAgc2V0Q29udGV4dChcImVudGl0eVwiLCBlbnRpdHkpO1xyXG5cclxuICAkOiB0b3RhbHMgPSAkR1VSUFMucG9pbnRUb3RhbHMoKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmZsZXgge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICB9XHJcbiAgLmNvbHVtbiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICB9XHJcbiAgLmdlbmVyYWwge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuICAuZ2VuZXJhbC1wYWdlIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMDBweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZS1zaWRlYmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkdlbmVyYWw8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PlRyYWl0czwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+QmlvL01pc2M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezN9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17NH0+Q29tYmF0PC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs1fT5JbnZlbnRvcnk8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezZ9PkdyaW1vaXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXs3fT48aSBjbGFzcz1cImZhcyBmYS1jb2dzXCIgLz48L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cImdlbmVyYWxcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZS1zaWRlYmFyXCI+XHJcbiAgICAgICAgPEF0dHJpYnV0ZXMgLz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJnZW5lcmFsLXBhZ2VcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcIj5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWNvbFwiIC8+XHJcbiAgICAgICAgICA8ZGl2IHN0eWxlPVwiZmxleC1ncm93OiAxOyBwYWRkaW5nOiAwcHggNXB4IDBweCA1cHg7XCI+XHJcbiAgICAgICAgICAgIDxFbmN1bWJyYW5jZSAvPlxyXG4gICAgICAgICAgICA8UG9vbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZsZXgtY29sXCI+XHJcbiAgICAgICAgICAgIDxUb3RhbHMgLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDxkaXYgc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1wiPlxyXG4gICAgICAgICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VHJhaXRMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8QmlvZ3JhcGh5IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U2tpbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8Q2hhcmFjdGVyQ29tYmF0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdpbnZlbnRvcnktdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnaW52ZW50b3J5LXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9Pk1haW48L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PdGhlcjwvVGFiPlxyXG4gICAgICA8L1RhYkxpc3Q+XHJcbiAgICAgIDxUYWJQYW5lbD5cclxuICAgICAgICA8RXF1aXBtZW50TGlzdCAvPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAgPEVxdWlwbWVudExpc3QgbG9jYXRpb249XCJvdGhlclwiIC8+XHJcbiAgICAgIDwvVGFiUGFuZWw+XHJcbiAgICA8L1RhYnM+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8U3BlbGxMaXN0IC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8VGFic1xyXG4gICAgICB0YWJJbmRleD17JGVudGl0eS5nZXRGbGFnKCdHVVJQUycsICdjb25maWctdGFiJykgfHwgMH1cclxuICAgICAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAnY29uZmlnLXRhYicsIGUuZGV0YWlsKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDxUYWJMaXN0PlxyXG4gICAgICAgIDxUYWIgaW5kZXg9ezB9PkF0dHJpYnV0ZXM8L1RhYj5cclxuICAgICAgICA8VGFiIGluZGV4PXsxfT5PcHRpb25zPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17Mn0+Q2hhbmdlbG9nPC9UYWI+XHJcbiAgICAgICAgPFRhYiBpbmRleD17M30+UHJvamVjdCBJbmZvPC9UYWI+XHJcbiAgICAgIDwvVGFiTGlzdD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDx1bD5cclxuICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcygkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMnKSkgYXMgYXR0cmlidXRlLCBpfVxyXG4gICAgICAgICAgICA8bGk+e2F0dHJpYnV0ZVswXX0gfiB7YXR0cmlidXRlWzFdfTwvbGk+XHJcbiAgICAgICAgICB7L2VhY2h9XHJcbiAgICAgICAgPC91bD5cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgICA8VGFiUGFuZWw+XHJcbiAgICAgICAge0BodG1sIENoYW5nZUxvZ31cclxuICAgICAgPC9UYWJQYW5lbD5cclxuICAgICAgPFRhYlBhbmVsPlxyXG4gICAgICAgIHtAaHRtbCBJbmZvfVxyXG4gICAgICA8L1RhYlBhbmVsPlxyXG4gICAgPC9UYWJzPlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdDRSxLQUFLLGNBQUMsQ0FBQyxBQUNMLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUtELFFBQVEsY0FBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsYUFBYSxjQUFDLENBQUMsQUFDYixXQUFXLENBQUUsS0FBSyxBQUNwQixDQUFDLEFBQ0Qsa0JBQWtCLGNBQUMsQ0FBQyxBQUNsQixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUNyQyxRQUFRLENBQUUsUUFBUSxDQUNsQixJQUFJLENBQUUsQ0FBQyxDQUNQLEdBQUcsQ0FBRSxDQUFDLENBQ04sTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3075,7 +3103,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Dialog.svelte","webpack://src/svelte/Dialog.svelte.css"],"names":[],"mappings":"AA2DE,uBAAS,YACM;AC3DjB,y2EAAy2E","sourcesContent":["<script>\r\n  import { onMount, createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let dialogOpen = false;\r\n  let content;\r\n\r\n  export let height = 800;\r\n  export let width = 800;\r\n  export let title = \"???\";\r\n  export let buttons = {};\r\n  export let defaultButton = null;\r\n  export let onClose = new Function();\r\n  export let overrideSubmit = false;\r\n\r\n  function _onClose() {\r\n    let close = onClose();\r\n    dispatch(\"close\", close);\r\n    dialogOpen = false;\r\n  }\r\n\r\n  async function launchDialog(node, parameters) {\r\n    const dialog = new Dialog(\r\n      {\r\n        title,\r\n        buttons,\r\n        close: _onClose,\r\n        default: defaultButton,\r\n      },\r\n      {\r\n        width,\r\n        height,\r\n      }\r\n    );\r\n\r\n    if (overrideSubmit)\r\n      dialog.submit = (button) => {\r\n        try {\r\n          if (button.callback) button.callback();\r\n          dialog.close();\r\n        } catch (err) {\r\n          console.log(err);\r\n        }\r\n      };\r\n\r\n    await dialog._render(true);\r\n    dialog.element.get(0).querySelector(\".dialog-content\").appendChild(node);\r\n    dialogOpen = true;\r\n    dispatch(\"opened\");\r\n\r\n    return () => {\r\n      return {\r\n        destroy: () => {},\r\n      };\r\n    };\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .hidden {\r\n    display: none;\r\n  }\r\n</style>\r\n\r\n<div\r\n  class:hidden={!dialogOpen}\r\n  class=\"svelte-dialog\"\r\n  bind:this={content}\r\n  use:launchDialog>\r\n  <slot />\r\n</div>\r\n",".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IFwic3VibWl0XCI7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Dialog.svelte","webpack://src/svelte/Dialog.svelte.css"],"names":[],"mappings":"AA2DE,uBAAS,YACM;AC3DjB,i3EAAi3E","sourcesContent":["<script>\r\n  import { onMount, createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let dialogOpen = false;\r\n  let content;\r\n\r\n  export let height = 800;\r\n  export let width = 800;\r\n  export let title = \"???\";\r\n  export let buttons = {};\r\n  export let defaultButton = \"submit\";\r\n  export let onClose = new Function();\r\n  export let overrideSubmit = false;\r\n\r\n  function _onClose() {\r\n    let close = onClose();\r\n    dispatch(\"close\", close);\r\n    dialogOpen = false;\r\n  }\r\n\r\n  async function launchDialog(node, parameters) {\r\n    const dialog = new Dialog(\r\n      {\r\n        title,\r\n        buttons,\r\n        close: _onClose,\r\n        default: defaultButton,\r\n      },\r\n      {\r\n        width,\r\n        height,\r\n      }\r\n    );\r\n\r\n    if (overrideSubmit)\r\n      dialog.submit = (button) => {\r\n        try {\r\n          if (button.callback) button.callback();\r\n          dialog.close();\r\n        } catch (err) {\r\n          console.log(err);\r\n        }\r\n      };\r\n\r\n    await dialog._render(true);\r\n    dialog.element.get(0).querySelector(\".dialog-content\").appendChild(node);\r\n    dialogOpen = true;\r\n    dispatch(\"opened\");\r\n\r\n    return () => {\r\n      return {\r\n        destroy: () => {},\r\n      };\r\n    };\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .hidden {\r\n    display: none;\r\n  }\r\n</style>\r\n\r\n<div\r\n  class:hidden={!dialogOpen}\r\n  class=\"svelte-dialog\"\r\n  bind:this={content}\r\n  use:launchDialog>\r\n  <slot />\r\n</div>\r\n",".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IFwic3VibWl0XCI7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3119,7 +3147,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "th.svelte-1g6so58{padding:0 5px 0 5px}.main-list-col.svelte-1g6so58{text-align:left}.container-toggle.svelte-1g6so58{position:relative}.toggle.svelte-1g6so58{position:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50TGlzdC5zdmVsdGUiLCJzb3VyY2VzIjpbIkVxdWlwbWVudExpc3Quc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCwgb25Nb3VudCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IGxvY2F0aW9uID0gXCJjYXJyaWVkXCI7XHJcblxyXG4gIGltcG9ydCBJbnB1dCBmcm9tIFwiLi9mb3JtL0lucHV0XCI7XHJcbiAgaW1wb3J0IHsgZml4ZWQ2IH0gZnJvbSBcIi4uL2hlbHBlcnMudHNcIjtcclxuICBpbXBvcnQgeyBmaXhJbmRleGVzIH0gZnJvbSBcIi4uL2NvbnRhaW5lci50c1wiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdFwiO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIGZpeEluZGV4ZXMoJGVudGl0eSwgW1wiaXRlbVwiXSk7XHJcbiAgfSk7XHJcblxyXG4gIGFzeW5jIGZ1bmN0aW9uIHRvZ2dsZUl0ZW1PcGVuKGlkKSB7XHJcbiAgICBsZXQgb3duZWRJdGVtID0gJGVudGl0eS5nZXRPd25lZEl0ZW0oaWQpO1xyXG4gICAgaWYgKG93bmVkSXRlbSkge1xyXG4gICAgICBvd25lZEl0ZW0uc2V0RmxhZyhcclxuICAgICAgICBcIkdVUlBTXCIsXHJcbiAgICAgICAgXCJjb250YWluZXJfY2xvc2VkXCIsXHJcbiAgICAgICAgIW93bmVkSXRlbS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJjb250YWluZXJfY2xvc2VkXCIpXHJcbiAgICAgICk7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBjb25zdCBtZW51SXRlbXMgPSAoKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiQWRkIEl0ZW1cIixcclxuICAgICAgaWNvbjogXCJcIixcclxuICAgICAgY29uZGl0aW9uOiAoKSA9PiB0cnVlLFxyXG4gICAgICBjYWxsYmFjazogYXN5bmMgKCkgPT4ge1xyXG4gICAgICAgIGxldCB1cGRhdGUgPSBhd2FpdCAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiBcIj8/P1wiLFxyXG4gICAgICAgICAgdHlwZTogXCJpdGVtXCIsXHJcbiAgICAgICAgfSk7XHJcbiAgICAgICAgJGVudGl0eS5nZXRPd25lZEl0ZW0odXBkYXRlLl9pZCkudXBkYXRlKHsgXCJkYXRhLmxvY2F0aW9uXCI6IGxvY2F0aW9uIH0pO1xyXG4gICAgICB9LFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJBZGQgQ29udGFpbmVyXCIsXHJcbiAgICAgIGljb246IFwiXCIsXHJcbiAgICAgIGNvbmRpdGlvbjogKCkgPT4gdHJ1ZSxcclxuICAgICAgY2FsbGJhY2s6IGFzeW5jICgpID0+IHtcclxuICAgICAgICBsZXQgdXBkYXRlID0gYXdhaXQgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogXCI/Pz9cIixcclxuICAgICAgICAgIHR5cGU6IFwiaXRlbVwiLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICB0eXBlOiBcImVxdWlwbWVudF9jb250YWluZXJcIixcclxuICAgICAgICAgIH0sXHJcbiAgICAgICAgfSk7XHJcbiAgICAgICAgJGVudGl0eS5nZXRPd25lZEl0ZW0odXBkYXRlLl9pZCkudXBkYXRlKHsgXCJkYXRhLmxvY2F0aW9uXCI6IGxvY2F0aW9uIH0pO1xyXG4gICAgICB9LFxyXG4gICAgfSxcclxuICBdO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICB0aCB7XHJcbiAgICBwYWRkaW5nOiAwIDVweCAwIDVweDtcclxuICB9XHJcbiAgLm5vLXNob3cge1xyXG4gICAgLyogY29sb3I6IHRyYW5zcGFyZW50OyAqL1xyXG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gIH1cclxuICAubWFpbi1saXN0LWNvbCB7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gIH1cclxuICAuY29udGFpbmVyLXRvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC50b2dnbGUge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbnsjaWYgbG9jYXRpb24gPT09ICdjYXJyaWVkJ31cclxuICA8aDM+XHJcbiAgICBUb3RhbCBJbnZlbnRvcnkgV2VpZ2h0OiA8Yj4ge2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFdlaWdodCgpKX0gbGIgL1xyXG4gICAgICB7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsV2VpZ2h0KHsgY2FycmllZE9ubHk6IGZhbHNlIH0pKX0gbGIgPC9iPlxyXG4gIDwvaDM+XHJcbiAgPGgzPlxyXG4gICAgVG90YWwgSW52ZW50b3J5IFZhbHVlOiA8Yj4gJHtmaXhlZDYoJEdVUlBTLmVxdWlwbWVudExpc3QudG90YWxWYWx1ZSgpKX0gLyAke2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFZhbHVlKHsgY2FycmllZE9ubHk6IGZhbHNlIH0pKX0gPC9iPlxyXG4gIDwvaDM+XHJcbnsvaWZ9XHJcbjxMaXN0IHRpdGxlPVwie2xvY2F0aW9ufSBJdGVtc1wiIHR5cGU9XCJpdGVtXCIgYWRkTGlzdEl0ZW1NZW51PXttZW51SXRlbXN9PlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+RTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5RdHk8L3RoPlxyXG4gIDx0aFxyXG4gICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgJGVudGl0eS5zb3J0TGlzdCgnaXRlbScsICdkYXRhLmRlc2NyaXB0aW9uJyk7XHJcbiAgICB9fT5cclxuICAgIERlc2NyaXB0aW9uIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gIDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2VzPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPiQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+V2VpZ2h0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRvdGFsIFdlaWdodDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Ub3RhbCAkPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgeyNlYWNoIHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGxvY2F0aW9uID09PSAnb3RoZXInID8gJEdVUlBTLm90aGVyRXF1aXBtZW50TGlzdC5pdGVyVG9wKCkgOiAkR1VSUFMuZXF1aXBtZW50TGlzdC5pdGVyVG9wKCkpIGFzIGVxdWlwbWVudCwgaSAoZXF1aXBtZW50LmZvdW5kcnlJRCl9XHJcbiAgICA8Um93XHJcbiAgICAgIGxldDppdGVtXHJcbiAgICAgIGxldDpkZXB0aFxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6aG92ZXJlZFxyXG4gICAgICBsZXQ6b3BlblxyXG4gICAgICBpZD17ZXF1aXBtZW50LmZvdW5kcnlJRH1cclxuICAgICAgb246ZGVsZXRlPXthc3luYyAoZSkgPT4ge1xyXG4gICAgICAgIGF3YWl0IGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgfX1cclxuICAgICAge2l9XHJcbiAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgY29sc3Bhbj17MTB9XHJcbiAgICAgIGNoaWxkcmVuPXtBcnJheS5mcm9tKGVxdWlwbWVudC5jaGlsZHJlbil9XHJcbiAgICAgIGNvbnRhaW5lcj17ZXF1aXBtZW50LmNhbkNvbnRhaW5DaGlsZHJlbn0+XHJcbiAgICAgIDx0ZFxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eVxyXG4gICAgICAgICAgICAuZ2V0T3duZWRJdGVtKGlkKVxyXG4gICAgICAgICAgICAudXBkYXRlKHsgJ2RhdGEuZXF1aXBwZWQnOiAhQm9vbGVhbihpdGVtLmVxdWlwcGVkKSB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICB7I2lmIGl0ZW0uZXF1aXBwZWR9PGkgY2xhc3M9XCJmYXMgZmEtY2hlY2tcIiAvPnsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtLl9lbnRpdHl9XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLnF1YW50aXR5XCJcclxuICAgICAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cIm5vLWVkaXRcIiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgPC9JbnB1dD5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkXHJcbiAgICAgICAgY2xhc3M9XCJtYWluLWxpc3QtY29sIGNvbnRhaW5lci10b2dnbGVcIlxyXG4gICAgICAgIHN0eWxlPVwicGFkZGluZy1sZWZ0OntkZXB0aCAqIDMwICsgMzB9cHhcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgc3R5bGU9XCJsZWZ0OnsxNSArIGRlcHRoICogMzB9cHg7XCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB0b2dnbGVJdGVtT3BlbihpZCl9XHJcbiAgICAgICAgICBjbGFzcz1cInRvZ2dsZSBmYXNcIlxyXG4gICAgICAgICAgY2xhc3M6ZmEtYW5nbGUtZG93bj17b3BlbiAmJiBpdGVtLmNhbkNvbnRhaW5DaGlsZHJlbn1cclxuICAgICAgICAgIGNsYXNzOmZhLWFuZ2xlLXJpZ2h0PXshb3BlbiAmJiBpdGVtLmNhbkNvbnRhaW5DaGlsZHJlbn0gLz5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtLl9lbnRpdHl9XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLmRlc2NyaXB0aW9uXCJcclxuICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwibm8tZWRpdFwiIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICA8L0lucHV0PlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS52YWx1ZSl9PC90ZD5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS53ZWlnaHQpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0uZXh0ZW5kZWRXZWlnaHQoKSl9PC90ZD5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS5leHRlbmRlZFZhbHVlKCkpfTwvdGQ+XHJcbiAgICAgIDx0ZD57aXRlbS5yZWZlcmVuY2V9PC90ZD5cclxuICAgIDwvUm93PlxyXG4gIHsvZWFjaH1cclxuPC9MaXN0PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBMERFLEVBQUUsZUFBQyxDQUFDLEFBQ0YsT0FBTyxDQUFFLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQUFDdEIsQ0FBQyxBQUtELGNBQWMsZUFBQyxDQUFDLEFBQ2QsVUFBVSxDQUFFLElBQUksQUFDbEIsQ0FBQyxBQUNELGlCQUFpQixlQUFDLENBQUMsQUFDakIsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyxBQUNELE9BQU8sZUFBQyxDQUFDLEFBQ1AsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/EquipmentList.svelte","webpack://src/svelte/EquipmentList.svelte.css"],"names":[],"mappings":"AA0DE,kBAAI,mBACkB,CACrB,8BAKe,eACE,CACjB,iCACkB,iBACC,CACnB,uBACQ,iBACW;ACvEtB,qlOAAqlO","sourcesContent":["<script>\r\n  import { getContext, onMount } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let location = \"carried\";\r\n\r\n  import Input from \"./form/Input\";\r\n  import { fixed6 } from \"../helpers.ts\";\r\n  import { fixIndexes } from \"../container.ts\";\r\n  import { List, Row } from \"./list/list\";\r\n\r\n  onMount(() => {\r\n    fixIndexes($entity, [\"item\"]);\r\n  });\r\n\r\n  async function toggleItemOpen(id) {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (ownedItem) {\r\n      ownedItem.setFlag(\r\n        \"GURPS\",\r\n        \"container_closed\",\r\n        !ownedItem.getFlag(\"GURPS\", \"container_closed\")\r\n      );\r\n    }\r\n  }\r\n\r\n  const menuItems = () => [\r\n    {\r\n      name: \"Add Item\",\r\n      icon: \"\",\r\n      condition: () => true,\r\n      callback: async () => {\r\n        let update = await $entity.createOwnedItem({\r\n          name: \"???\",\r\n          type: \"item\",\r\n        });\r\n        $entity.getOwnedItem(update._id).update({ \"data.location\": location });\r\n      },\r\n    },\r\n    {\r\n      name: \"Add Container\",\r\n      icon: \"\",\r\n      condition: () => true,\r\n      callback: async () => {\r\n        let update = await $entity.createOwnedItem({\r\n          name: \"???\",\r\n          type: \"item\",\r\n          data: {\r\n            type: \"equipment_container\",\r\n          },\r\n        });\r\n        $entity.getOwnedItem(update._id).update({ \"data.location\": location });\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  th {\r\n    padding: 0 5px 0 5px;\r\n  }\r\n  .no-show {\r\n    /* color: transparent; */\r\n    visibility: hidden;\r\n  }\r\n  .main-list-col {\r\n    text-align: left;\r\n  }\r\n  .container-toggle {\r\n    position: relative;\r\n  }\r\n  .toggle {\r\n    position: absolute;\r\n  }\r\n</style>\r\n\r\n{#if location === 'carried'}\r\n  <h3>\r\n    Total Inventory Weight: <b> {fixed6($GURPS.equipmentList.totalWeight())} lb /\r\n      {fixed6($GURPS.equipmentList.totalWeight({ carriedOnly: false }))} lb </b>\r\n  </h3>\r\n  <h3>\r\n    Total Inventory Value: <b> ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))} </b>\r\n  </h3>\r\n{/if}\r\n<List title=\"{location} Items\" type=\"item\" addListItemMenu={menuItems}>\r\n  <th slot=\"header\">E</th>\r\n  <th slot=\"header\">Qty</th>\r\n  <th\r\n    slot=\"header\"\r\n    on:dblclick={(e) => {\r\n      $entity.sortList('item', 'data.description');\r\n    }}>\r\n    Description <i class=\"fas fa-sort\" />\r\n  </th>\r\n  <th slot=\"header\">Uses</th>\r\n  <th slot=\"header\">$</th>\r\n  <th slot=\"header\">Weight</th>\r\n  <th slot=\"header\">Total Weight</th>\r\n  <th slot=\"header\">Total $</th>\r\n  <th slot=\"header\">Ref</th>\r\n  {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}\r\n    <Row\r\n      let:item\r\n      let:depth\r\n      let:id\r\n      let:ownedItem\r\n      let:hovered\r\n      let:open\r\n      id={equipment.foundryID}\r\n      on:delete={async (e) => {\r\n        await e.detail.entity.delete();\r\n      }}\r\n      {i}\r\n      draggable={true}\r\n      colspan={10}\r\n      children={Array.from(equipment.children)}\r\n      container={equipment.canContainChildren}>\r\n      <td\r\n        on:dblclick={(e) => {\r\n          $entity\r\n            .getOwnedItem(id)\r\n            .update({ 'data.equipped': !Boolean(item.equipped) });\r\n        }}>\r\n        {#if item.equipped}<i class=\"fas fa-check\" />{/if}\r\n      </td>\r\n      <td>\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          config={{ clickToEdit: true }}\r\n          path=\"data.quantity\"\r\n          type=\"number\"\r\n          min=\"0\"\r\n          let:value>\r\n          <span class=\"no-edit\" slot=\"no-edit\">{value}</span>\r\n        </Input>\r\n      </td>\r\n      <td\r\n        class=\"main-list-col container-toggle\"\r\n        style=\"padding-left:{depth * 30 + 30}px\">\r\n        <span\r\n          style=\"left:{15 + depth * 30}px;\"\r\n          on:click={() => toggleItemOpen(id)}\r\n          class=\"toggle fas\"\r\n          class:fa-angle-down={open && item.canContainChildren}\r\n          class:fa-angle-right={!open && item.canContainChildren} />\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          config={{ clickToEdit: true }}\r\n          path=\"data.description\"\r\n          let:value>\r\n          <span class=\"no-edit\" slot=\"no-edit\">{value}</span>\r\n        </Input>\r\n      </td>\r\n      <td />\r\n      <td>{fixed6(item.value)}</td>\r\n      <td>{fixed6(item.weight)}</td>\r\n      <td>{fixed6(item.extendedWeight())}</td>\r\n      <td>{fixed6(item.extendedValue())}</td>\r\n      <td>{item.reference}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n","th.svelte-1g6so58{padding:0 5px 0 5px}.main-list-col.svelte-1g6so58{text-align:left}.container-toggle.svelte-1g6so58{position:relative}.toggle.svelte-1g6so58{position:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50TGlzdC5zdmVsdGUiLCJzb3VyY2VzIjpbIkVxdWlwbWVudExpc3Quc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCwgb25Nb3VudCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IGxvY2F0aW9uID0gXCJjYXJyaWVkXCI7XHJcblxyXG4gIGltcG9ydCBJbnB1dCBmcm9tIFwiLi9mb3JtL0lucHV0XCI7XHJcbiAgaW1wb3J0IHsgZml4ZWQ2IH0gZnJvbSBcIi4uL2hlbHBlcnMudHNcIjtcclxuICBpbXBvcnQgeyBmaXhJbmRleGVzIH0gZnJvbSBcIi4uL2NvbnRhaW5lci50c1wiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdFwiO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIGZpeEluZGV4ZXMoJGVudGl0eSwgW1wiaXRlbVwiXSk7XHJcbiAgfSk7XHJcblxyXG4gIGFzeW5jIGZ1bmN0aW9uIHRvZ2dsZUl0ZW1PcGVuKGlkKSB7XHJcbiAgICBsZXQgb3duZWRJdGVtID0gJGVudGl0eS5nZXRPd25lZEl0ZW0oaWQpO1xyXG4gICAgaWYgKG93bmVkSXRlbSkge1xyXG4gICAgICBvd25lZEl0ZW0uc2V0RmxhZyhcclxuICAgICAgICBcIkdVUlBTXCIsXHJcbiAgICAgICAgXCJjb250YWluZXJfY2xvc2VkXCIsXHJcbiAgICAgICAgIW93bmVkSXRlbS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJjb250YWluZXJfY2xvc2VkXCIpXHJcbiAgICAgICk7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBjb25zdCBtZW51SXRlbXMgPSAoKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiQWRkIEl0ZW1cIixcclxuICAgICAgaWNvbjogXCJcIixcclxuICAgICAgY29uZGl0aW9uOiAoKSA9PiB0cnVlLFxyXG4gICAgICBjYWxsYmFjazogYXN5bmMgKCkgPT4ge1xyXG4gICAgICAgIGxldCB1cGRhdGUgPSBhd2FpdCAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiBcIj8/P1wiLFxyXG4gICAgICAgICAgdHlwZTogXCJpdGVtXCIsXHJcbiAgICAgICAgfSk7XHJcbiAgICAgICAgJGVudGl0eS5nZXRPd25lZEl0ZW0odXBkYXRlLl9pZCkudXBkYXRlKHsgXCJkYXRhLmxvY2F0aW9uXCI6IGxvY2F0aW9uIH0pO1xyXG4gICAgICB9LFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJBZGQgQ29udGFpbmVyXCIsXHJcbiAgICAgIGljb246IFwiXCIsXHJcbiAgICAgIGNvbmRpdGlvbjogKCkgPT4gdHJ1ZSxcclxuICAgICAgY2FsbGJhY2s6IGFzeW5jICgpID0+IHtcclxuICAgICAgICBsZXQgdXBkYXRlID0gYXdhaXQgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogXCI/Pz9cIixcclxuICAgICAgICAgIHR5cGU6IFwiaXRlbVwiLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICB0eXBlOiBcImVxdWlwbWVudF9jb250YWluZXJcIixcclxuICAgICAgICAgIH0sXHJcbiAgICAgICAgfSk7XHJcbiAgICAgICAgJGVudGl0eS5nZXRPd25lZEl0ZW0odXBkYXRlLl9pZCkudXBkYXRlKHsgXCJkYXRhLmxvY2F0aW9uXCI6IGxvY2F0aW9uIH0pO1xyXG4gICAgICB9LFxyXG4gICAgfSxcclxuICBdO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICB0aCB7XHJcbiAgICBwYWRkaW5nOiAwIDVweCAwIDVweDtcclxuICB9XHJcbiAgLm5vLXNob3cge1xyXG4gICAgLyogY29sb3I6IHRyYW5zcGFyZW50OyAqL1xyXG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xyXG4gIH1cclxuICAubWFpbi1saXN0LWNvbCB7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gIH1cclxuICAuY29udGFpbmVyLXRvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC50b2dnbGUge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbnsjaWYgbG9jYXRpb24gPT09ICdjYXJyaWVkJ31cclxuICA8aDM+XHJcbiAgICBUb3RhbCBJbnZlbnRvcnkgV2VpZ2h0OiA8Yj4ge2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFdlaWdodCgpKX0gbGIgL1xyXG4gICAgICB7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsV2VpZ2h0KHsgY2FycmllZE9ubHk6IGZhbHNlIH0pKX0gbGIgPC9iPlxyXG4gIDwvaDM+XHJcbiAgPGgzPlxyXG4gICAgVG90YWwgSW52ZW50b3J5IFZhbHVlOiA8Yj4gJHtmaXhlZDYoJEdVUlBTLmVxdWlwbWVudExpc3QudG90YWxWYWx1ZSgpKX0gLyAke2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFZhbHVlKHsgY2FycmllZE9ubHk6IGZhbHNlIH0pKX0gPC9iPlxyXG4gIDwvaDM+XHJcbnsvaWZ9XHJcbjxMaXN0IHRpdGxlPVwie2xvY2F0aW9ufSBJdGVtc1wiIHR5cGU9XCJpdGVtXCIgYWRkTGlzdEl0ZW1NZW51PXttZW51SXRlbXN9PlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+RTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5RdHk8L3RoPlxyXG4gIDx0aFxyXG4gICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgJGVudGl0eS5zb3J0TGlzdCgnaXRlbScsICdkYXRhLmRlc2NyaXB0aW9uJyk7XHJcbiAgICB9fT5cclxuICAgIERlc2NyaXB0aW9uIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gIDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2VzPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPiQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+V2VpZ2h0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRvdGFsIFdlaWdodDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Ub3RhbCAkPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgeyNlYWNoIHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGxvY2F0aW9uID09PSAnb3RoZXInID8gJEdVUlBTLm90aGVyRXF1aXBtZW50TGlzdC5pdGVyVG9wKCkgOiAkR1VSUFMuZXF1aXBtZW50TGlzdC5pdGVyVG9wKCkpIGFzIGVxdWlwbWVudCwgaSAoZXF1aXBtZW50LmZvdW5kcnlJRCl9XHJcbiAgICA8Um93XHJcbiAgICAgIGxldDppdGVtXHJcbiAgICAgIGxldDpkZXB0aFxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6aG92ZXJlZFxyXG4gICAgICBsZXQ6b3BlblxyXG4gICAgICBpZD17ZXF1aXBtZW50LmZvdW5kcnlJRH1cclxuICAgICAgb246ZGVsZXRlPXthc3luYyAoZSkgPT4ge1xyXG4gICAgICAgIGF3YWl0IGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgfX1cclxuICAgICAge2l9XHJcbiAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgY29sc3Bhbj17MTB9XHJcbiAgICAgIGNoaWxkcmVuPXtBcnJheS5mcm9tKGVxdWlwbWVudC5jaGlsZHJlbil9XHJcbiAgICAgIGNvbnRhaW5lcj17ZXF1aXBtZW50LmNhbkNvbnRhaW5DaGlsZHJlbn0+XHJcbiAgICAgIDx0ZFxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eVxyXG4gICAgICAgICAgICAuZ2V0T3duZWRJdGVtKGlkKVxyXG4gICAgICAgICAgICAudXBkYXRlKHsgJ2RhdGEuZXF1aXBwZWQnOiAhQm9vbGVhbihpdGVtLmVxdWlwcGVkKSB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICB7I2lmIGl0ZW0uZXF1aXBwZWR9PGkgY2xhc3M9XCJmYXMgZmEtY2hlY2tcIiAvPnsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtLl9lbnRpdHl9XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLnF1YW50aXR5XCJcclxuICAgICAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cIm5vLWVkaXRcIiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgPC9JbnB1dD5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkXHJcbiAgICAgICAgY2xhc3M9XCJtYWluLWxpc3QtY29sIGNvbnRhaW5lci10b2dnbGVcIlxyXG4gICAgICAgIHN0eWxlPVwicGFkZGluZy1sZWZ0OntkZXB0aCAqIDMwICsgMzB9cHhcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgc3R5bGU9XCJsZWZ0OnsxNSArIGRlcHRoICogMzB9cHg7XCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB0b2dnbGVJdGVtT3BlbihpZCl9XHJcbiAgICAgICAgICBjbGFzcz1cInRvZ2dsZSBmYXNcIlxyXG4gICAgICAgICAgY2xhc3M6ZmEtYW5nbGUtZG93bj17b3BlbiAmJiBpdGVtLmNhbkNvbnRhaW5DaGlsZHJlbn1cclxuICAgICAgICAgIGNsYXNzOmZhLWFuZ2xlLXJpZ2h0PXshb3BlbiAmJiBpdGVtLmNhbkNvbnRhaW5DaGlsZHJlbn0gLz5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtLl9lbnRpdHl9XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLmRlc2NyaXB0aW9uXCJcclxuICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwibm8tZWRpdFwiIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICA8L0lucHV0PlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS52YWx1ZSl9PC90ZD5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS53ZWlnaHQpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0uZXh0ZW5kZWRXZWlnaHQoKSl9PC90ZD5cclxuICAgICAgPHRkPntmaXhlZDYoaXRlbS5leHRlbmRlZFZhbHVlKCkpfTwvdGQ+XHJcbiAgICAgIDx0ZD57aXRlbS5yZWZlcmVuY2V9PC90ZD5cclxuICAgIDwvUm93PlxyXG4gIHsvZWFjaH1cclxuPC9MaXN0PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBMERFLEVBQUUsZUFBQyxDQUFDLEFBQ0YsT0FBTyxDQUFFLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQUFDdEIsQ0FBQyxBQUtELGNBQWMsZUFBQyxDQUFDLEFBQ2QsVUFBVSxDQUFFLElBQUksQUFDbEIsQ0FBQyxBQUNELGlCQUFpQixlQUFDLENBQUMsQUFDakIsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyxBQUNELE9BQU8sZUFBQyxDQUFDLEFBQ1AsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "th.svelte-1g6so58{padding:0 5px 0 5px}.main-list-col.svelte-1g6so58{text-align:left}.container-toggle.svelte-1g6so58{position:relative}.toggle.svelte-1g6so58{position:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50TGlzdC5zdmVsdGUiLCJzb3VyY2VzIjpbIkVxdWlwbWVudExpc3Quc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCwgb25Nb3VudCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IGxvY2F0aW9uID0gXCJjYXJyaWVkXCI7XHJcblxyXG4gIGltcG9ydCBJbnB1dCBmcm9tIFwiLi9mb3JtL0lucHV0XCI7XHJcbiAgaW1wb3J0IHsgZml4ZWQ2IH0gZnJvbSBcIi4uL2hlbHBlcnMudHNcIjtcclxuICBpbXBvcnQgeyBmaXhJbmRleGVzIH0gZnJvbSBcIi4uL21vZHVsZXMvbGlzdHMvY29udGFpbmVyLnRzXCI7XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4vbGlzdC9saXN0XCI7XHJcbiAgaW1wb3J0IEVxdWlwbWVudCBmcm9tIFwiLi9jaGFyYWN0ZXItbGlzdHMvRXF1aXBtZW50XCI7XHJcblxyXG4gIG9uTW91bnQoKCkgPT4ge1xyXG4gICAgZml4SW5kZXhlcygkZW50aXR5LCBbXCJpdGVtXCJdKTtcclxuICB9KTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdG9nZ2xlSXRlbU9wZW4oaWQpIHtcclxuICAgIGxldCBvd25lZEl0ZW0gPSAkZW50aXR5LmdldE93bmVkSXRlbShpZCk7XHJcbiAgICBpZiAob3duZWRJdGVtKSB7XHJcbiAgICAgIG93bmVkSXRlbS5zZXRGbGFnKFxyXG4gICAgICAgIFwiR1VSUFNcIixcclxuICAgICAgICBcImNvbnRhaW5lcl9jbG9zZWRcIixcclxuICAgICAgICAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIilcclxuICAgICAgKTtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIGNvbnN0IG1lbnVJdGVtcyA9ICgpID0+IFtcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJBZGQgSXRlbVwiLFxyXG4gICAgICBpY29uOiBcIlwiLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrOiBhc3luYyAoKSA9PiB7XHJcbiAgICAgICAgbGV0IHVwZGF0ZSA9IGF3YWl0ICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHtcclxuICAgICAgICAgIG5hbWU6IFwiPz8/XCIsXHJcbiAgICAgICAgICB0eXBlOiBcIml0ZW1cIixcclxuICAgICAgICB9KTtcclxuICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh1cGRhdGUuX2lkKS51cGRhdGUoeyBcImRhdGEubG9jYXRpb25cIjogbG9jYXRpb24gfSk7XHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICBuYW1lOiBcIkFkZCBDb250YWluZXJcIixcclxuICAgICAgaWNvbjogXCJcIixcclxuICAgICAgY29uZGl0aW9uOiAoKSA9PiB0cnVlLFxyXG4gICAgICBjYWxsYmFjazogYXN5bmMgKCkgPT4ge1xyXG4gICAgICAgIGxldCB1cGRhdGUgPSBhd2FpdCAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiBcIj8/P1wiLFxyXG4gICAgICAgICAgdHlwZTogXCJpdGVtXCIsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIHR5cGU6IFwiZXF1aXBtZW50X2NvbnRhaW5lclwiLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh1cGRhdGUuX2lkKS51cGRhdGUoeyBcImRhdGEubG9jYXRpb25cIjogbG9jYXRpb24gfSk7XHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gIF07XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRoIHtcclxuICAgIHBhZGRpbmc6IDAgNXB4IDAgNXB4O1xyXG4gIH1cclxuICAubm8tc2hvdyB7XHJcbiAgICAvKiBjb2xvcjogdHJhbnNwYXJlbnQ7ICovXHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgfVxyXG4gIC5tYWluLWxpc3QtY29sIHtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG4gIC5jb250YWluZXItdG9nZ2xlIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLnRvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiBsb2NhdGlvbiA9PT0gJ2NhcnJpZWQnfVxyXG4gIDxoMz5cclxuICAgIFRvdGFsIEludmVudG9yeSBXZWlnaHQ6IDxiPiB7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsV2VpZ2h0KCkpfSBsYiAvXHJcbiAgICAgIHtmaXhlZDYoJEdVUlBTLmVxdWlwbWVudExpc3QudG90YWxXZWlnaHQoeyBjYXJyaWVkT25seTogZmFsc2UgfSkpfSBsYiA8L2I+XHJcbiAgPC9oMz5cclxuICA8aDM+XHJcbiAgICBUb3RhbCBJbnZlbnRvcnkgVmFsdWU6IDxiPiAke2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFZhbHVlKCkpfSAvICR7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsVmFsdWUoeyBjYXJyaWVkT25seTogZmFsc2UgfSkpfSA8L2I+XHJcbiAgPC9oMz5cclxuey9pZn1cclxuPExpc3QgdGl0bGU9XCJ7bG9jYXRpb259IEl0ZW1zXCIgdHlwZT1cIml0ZW1cIiBhZGRMaXN0SXRlbU1lbnU9e21lbnVJdGVtc30+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5FPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlF0eTwvdGg+XHJcbiAgPHRoXHJcbiAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAkZW50aXR5LnNvcnRMaXN0KCdpdGVtJywgJ2RhdGEuZGVzY3JpcHRpb24nKTtcclxuICAgIH19PlxyXG4gICAgRGVzY3JpcHRpb24gPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlVzZXM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+JDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5XZWlnaHQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VG90YWwgV2VpZ2h0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRvdGFsICQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICB7I2VhY2ggd2luZG93LmdhbWUuZ3VycHM0ZS5pbmRleFNvcnQobG9jYXRpb24gPT09ICdvdGhlcicgPyAkR1VSUFMub3RoZXJFcXVpcG1lbnRMaXN0Lml0ZXJUb3AoKSA6ICRHVVJQUy5lcXVpcG1lbnRMaXN0Lml0ZXJUb3AoKSkgYXMgZXF1aXBtZW50LCBpIChlcXVpcG1lbnQuZm91bmRyeUlEKX1cclxuICAgIDwhLS0gPEVxdWlwbWVudCBpdGVtPXtlcXVpcG1lbnR9IC8+IC0tPlxyXG4gICAgPFJvd1xyXG4gICAgICBsZXQ6aXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0OmlkXHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmhvdmVyZWRcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgaWQ9e2VxdWlwbWVudC5mb3VuZHJ5SUR9XHJcbiAgICAgIG9uOmRlbGV0ZT17YXN5bmMgKGUpID0+IHtcclxuICAgICAgICBhd2FpdCBlLmRldGFpbC5lbnRpdHkuZGVsZXRlKCk7XHJcbiAgICAgIH19XHJcbiAgICAgIHtpfVxyXG4gICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgIGNvbHNwYW49ezEwfVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShlcXVpcG1lbnQuY2hpbGRyZW4pfVxyXG4gICAgICBjb250YWluZXI9e2VxdWlwbWVudC5jYW5Db250YWluQ2hpbGRyZW59PlxyXG4gICAgICA8dGRcclxuICAgICAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICRlbnRpdHlcclxuICAgICAgICAgICAgLmdldE93bmVkSXRlbShpZClcclxuICAgICAgICAgICAgLnVwZGF0ZSh7ICdkYXRhLmVxdWlwcGVkJzogIUJvb2xlYW4oaXRlbS5lcXVpcHBlZCkgfSk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgeyNpZiBpdGVtLmVxdWlwcGVkfTxpIGNsYXNzPVwiZmFzIGZhLWNoZWNrXCIgLz57L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5xdWFudGl0eVwiXHJcbiAgICAgICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgICAgIG1pbj1cIjBcIlxyXG4gICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJuby1lZGl0XCIgc2xvdD1cIm5vLWVkaXRcIj57dmFsdWV9PC9zcGFuPlxyXG4gICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZFxyXG4gICAgICAgIGNsYXNzPVwibWFpbi1saXN0LWNvbCBjb250YWluZXItdG9nZ2xlXCJcclxuICAgICAgICBzdHlsZT1cInBhZGRpbmctbGVmdDp7ZGVwdGggKiAzMCArIDMwfXB4XCI+XHJcbiAgICAgICAgPHNwYW5cclxuICAgICAgICAgIHN0eWxlPVwibGVmdDp7MTUgKyBkZXB0aCAqIDMwfXB4O1wiXHJcbiAgICAgICAgICBvbjpjbGljaz17KCkgPT4gdG9nZ2xlSXRlbU9wZW4oaWQpfVxyXG4gICAgICAgICAgY2xhc3M9XCJ0b2dnbGUgZmFzXCJcclxuICAgICAgICAgIGNsYXNzOmZhLWFuZ2xlLWRvd249e29wZW4gJiYgaXRlbS5jYW5Db250YWluQ2hpbGRyZW59XHJcbiAgICAgICAgICBjbGFzczpmYS1hbmdsZS1yaWdodD17IW9wZW4gJiYgaXRlbS5jYW5Db250YWluQ2hpbGRyZW59IC8+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5kZXNjcmlwdGlvblwiXHJcbiAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cIm5vLWVkaXRcIiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgPC9JbnB1dD5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0udmFsdWUpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0ud2VpZ2h0KX08L3RkPlxyXG4gICAgICA8dGQ+e2ZpeGVkNihpdGVtLmV4dGVuZGVkV2VpZ2h0KCkpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0uZXh0ZW5kZWRWYWx1ZSgpKX08L3RkPlxyXG4gICAgICA8dGQ+e2l0ZW0ucmVmZXJlbmNlfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJERSxFQUFFLGVBQUMsQ0FBQyxBQUNGLE9BQU8sQ0FBRSxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLEFBQ3RCLENBQUMsQUFLRCxjQUFjLGVBQUMsQ0FBQyxBQUNkLFVBQVUsQ0FBRSxJQUFJLEFBQ2xCLENBQUMsQUFDRCxpQkFBaUIsZUFBQyxDQUFDLEFBQ2pCLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMsQUFDRCxPQUFPLGVBQUMsQ0FBQyxBQUNQLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/EquipmentList.svelte","webpack://src/svelte/EquipmentList.svelte.css"],"names":[],"mappings":"AA2DE,kBAAI,mBACkB,CACrB,8BAKe,eACE,CACjB,iCACkB,iBACC,CACnB,uBACQ,iBACW;ACxEtB,yvOAAyvO","sourcesContent":["<script>\r\n  import { getContext, onMount } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let location = \"carried\";\r\n\r\n  import Input from \"./form/Input\";\r\n  import { fixed6 } from \"../helpers.ts\";\r\n  import { fixIndexes } from \"../modules/lists/container.ts\";\r\n  import { List, Row } from \"./list/list\";\r\n  import Equipment from \"./character-lists/Equipment\";\r\n\r\n  onMount(() => {\r\n    fixIndexes($entity, [\"item\"]);\r\n  });\r\n\r\n  async function toggleItemOpen(id) {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (ownedItem) {\r\n      ownedItem.setFlag(\r\n        \"GURPS\",\r\n        \"container_closed\",\r\n        !ownedItem.getFlag(\"GURPS\", \"container_closed\")\r\n      );\r\n    }\r\n  }\r\n\r\n  const menuItems = () => [\r\n    {\r\n      name: \"Add Item\",\r\n      icon: \"\",\r\n      condition: () => true,\r\n      callback: async () => {\r\n        let update = await $entity.createOwnedItem({\r\n          name: \"???\",\r\n          type: \"item\",\r\n        });\r\n        $entity.getOwnedItem(update._id).update({ \"data.location\": location });\r\n      },\r\n    },\r\n    {\r\n      name: \"Add Container\",\r\n      icon: \"\",\r\n      condition: () => true,\r\n      callback: async () => {\r\n        let update = await $entity.createOwnedItem({\r\n          name: \"???\",\r\n          type: \"item\",\r\n          data: {\r\n            type: \"equipment_container\",\r\n          },\r\n        });\r\n        $entity.getOwnedItem(update._id).update({ \"data.location\": location });\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  th {\r\n    padding: 0 5px 0 5px;\r\n  }\r\n  .no-show {\r\n    /* color: transparent; */\r\n    visibility: hidden;\r\n  }\r\n  .main-list-col {\r\n    text-align: left;\r\n  }\r\n  .container-toggle {\r\n    position: relative;\r\n  }\r\n  .toggle {\r\n    position: absolute;\r\n  }\r\n</style>\r\n\r\n{#if location === 'carried'}\r\n  <h3>\r\n    Total Inventory Weight: <b> {fixed6($GURPS.equipmentList.totalWeight())} lb /\r\n      {fixed6($GURPS.equipmentList.totalWeight({ carriedOnly: false }))} lb </b>\r\n  </h3>\r\n  <h3>\r\n    Total Inventory Value: <b> ${fixed6($GURPS.equipmentList.totalValue())} / ${fixed6($GURPS.equipmentList.totalValue({ carriedOnly: false }))} </b>\r\n  </h3>\r\n{/if}\r\n<List title=\"{location} Items\" type=\"item\" addListItemMenu={menuItems}>\r\n  <th slot=\"header\">E</th>\r\n  <th slot=\"header\">Qty</th>\r\n  <th\r\n    slot=\"header\"\r\n    on:dblclick={(e) => {\r\n      $entity.sortList('item', 'data.description');\r\n    }}>\r\n    Description <i class=\"fas fa-sort\" />\r\n  </th>\r\n  <th slot=\"header\">Uses</th>\r\n  <th slot=\"header\">$</th>\r\n  <th slot=\"header\">Weight</th>\r\n  <th slot=\"header\">Total Weight</th>\r\n  <th slot=\"header\">Total $</th>\r\n  <th slot=\"header\">Ref</th>\r\n  {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}\r\n    <!-- <Equipment item={equipment} /> -->\r\n    <Row\r\n      let:item\r\n      let:depth\r\n      let:id\r\n      let:ownedItem\r\n      let:hovered\r\n      let:open\r\n      id={equipment.foundryID}\r\n      on:delete={async (e) => {\r\n        await e.detail.entity.delete();\r\n      }}\r\n      {i}\r\n      draggable={true}\r\n      colspan={10}\r\n      children={Array.from(equipment.children)}\r\n      container={equipment.canContainChildren}>\r\n      <td\r\n        on:dblclick={(e) => {\r\n          $entity\r\n            .getOwnedItem(id)\r\n            .update({ 'data.equipped': !Boolean(item.equipped) });\r\n        }}>\r\n        {#if item.equipped}<i class=\"fas fa-check\" />{/if}\r\n      </td>\r\n      <td>\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          config={{ clickToEdit: true }}\r\n          path=\"data.quantity\"\r\n          type=\"number\"\r\n          min=\"0\"\r\n          let:value>\r\n          <span class=\"no-edit\" slot=\"no-edit\">{value}</span>\r\n        </Input>\r\n      </td>\r\n      <td\r\n        class=\"main-list-col container-toggle\"\r\n        style=\"padding-left:{depth * 30 + 30}px\">\r\n        <span\r\n          style=\"left:{15 + depth * 30}px;\"\r\n          on:click={() => toggleItemOpen(id)}\r\n          class=\"toggle fas\"\r\n          class:fa-angle-down={open && item.canContainChildren}\r\n          class:fa-angle-right={!open && item.canContainChildren} />\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          config={{ clickToEdit: true }}\r\n          path=\"data.description\"\r\n          let:value>\r\n          <span class=\"no-edit\" slot=\"no-edit\">{value}</span>\r\n        </Input>\r\n      </td>\r\n      <td />\r\n      <td>{fixed6(item.value)}</td>\r\n      <td>{fixed6(item.weight)}</td>\r\n      <td>{fixed6(item.extendedWeight())}</td>\r\n      <td>{fixed6(item.extendedValue())}</td>\r\n      <td>{item.reference}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n","th.svelte-1g6so58{padding:0 5px 0 5px}.main-list-col.svelte-1g6so58{text-align:left}.container-toggle.svelte-1g6so58{position:relative}.toggle.svelte-1g6so58{position:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50TGlzdC5zdmVsdGUiLCJzb3VyY2VzIjpbIkVxdWlwbWVudExpc3Quc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCwgb25Nb3VudCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IGxvY2F0aW9uID0gXCJjYXJyaWVkXCI7XHJcblxyXG4gIGltcG9ydCBJbnB1dCBmcm9tIFwiLi9mb3JtL0lucHV0XCI7XHJcbiAgaW1wb3J0IHsgZml4ZWQ2IH0gZnJvbSBcIi4uL2hlbHBlcnMudHNcIjtcclxuICBpbXBvcnQgeyBmaXhJbmRleGVzIH0gZnJvbSBcIi4uL21vZHVsZXMvbGlzdHMvY29udGFpbmVyLnRzXCI7XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4vbGlzdC9saXN0XCI7XHJcbiAgaW1wb3J0IEVxdWlwbWVudCBmcm9tIFwiLi9jaGFyYWN0ZXItbGlzdHMvRXF1aXBtZW50XCI7XHJcblxyXG4gIG9uTW91bnQoKCkgPT4ge1xyXG4gICAgZml4SW5kZXhlcygkZW50aXR5LCBbXCJpdGVtXCJdKTtcclxuICB9KTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdG9nZ2xlSXRlbU9wZW4oaWQpIHtcclxuICAgIGxldCBvd25lZEl0ZW0gPSAkZW50aXR5LmdldE93bmVkSXRlbShpZCk7XHJcbiAgICBpZiAob3duZWRJdGVtKSB7XHJcbiAgICAgIG93bmVkSXRlbS5zZXRGbGFnKFxyXG4gICAgICAgIFwiR1VSUFNcIixcclxuICAgICAgICBcImNvbnRhaW5lcl9jbG9zZWRcIixcclxuICAgICAgICAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIilcclxuICAgICAgKTtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIGNvbnN0IG1lbnVJdGVtcyA9ICgpID0+IFtcclxuICAgIHtcclxuICAgICAgbmFtZTogXCJBZGQgSXRlbVwiLFxyXG4gICAgICBpY29uOiBcIlwiLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrOiBhc3luYyAoKSA9PiB7XHJcbiAgICAgICAgbGV0IHVwZGF0ZSA9IGF3YWl0ICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHtcclxuICAgICAgICAgIG5hbWU6IFwiPz8/XCIsXHJcbiAgICAgICAgICB0eXBlOiBcIml0ZW1cIixcclxuICAgICAgICB9KTtcclxuICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh1cGRhdGUuX2lkKS51cGRhdGUoeyBcImRhdGEubG9jYXRpb25cIjogbG9jYXRpb24gfSk7XHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICBuYW1lOiBcIkFkZCBDb250YWluZXJcIixcclxuICAgICAgaWNvbjogXCJcIixcclxuICAgICAgY29uZGl0aW9uOiAoKSA9PiB0cnVlLFxyXG4gICAgICBjYWxsYmFjazogYXN5bmMgKCkgPT4ge1xyXG4gICAgICAgIGxldCB1cGRhdGUgPSBhd2FpdCAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiBcIj8/P1wiLFxyXG4gICAgICAgICAgdHlwZTogXCJpdGVtXCIsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIHR5cGU6IFwiZXF1aXBtZW50X2NvbnRhaW5lclwiLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh1cGRhdGUuX2lkKS51cGRhdGUoeyBcImRhdGEubG9jYXRpb25cIjogbG9jYXRpb24gfSk7XHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gIF07XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRoIHtcclxuICAgIHBhZGRpbmc6IDAgNXB4IDAgNXB4O1xyXG4gIH1cclxuICAubm8tc2hvdyB7XHJcbiAgICAvKiBjb2xvcjogdHJhbnNwYXJlbnQ7ICovXHJcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgfVxyXG4gIC5tYWluLWxpc3QtY29sIHtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG4gIC5jb250YWluZXItdG9nZ2xlIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLnRvZ2dsZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiBsb2NhdGlvbiA9PT0gJ2NhcnJpZWQnfVxyXG4gIDxoMz5cclxuICAgIFRvdGFsIEludmVudG9yeSBXZWlnaHQ6IDxiPiB7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsV2VpZ2h0KCkpfSBsYiAvXHJcbiAgICAgIHtmaXhlZDYoJEdVUlBTLmVxdWlwbWVudExpc3QudG90YWxXZWlnaHQoeyBjYXJyaWVkT25seTogZmFsc2UgfSkpfSBsYiA8L2I+XHJcbiAgPC9oMz5cclxuICA8aDM+XHJcbiAgICBUb3RhbCBJbnZlbnRvcnkgVmFsdWU6IDxiPiAke2ZpeGVkNigkR1VSUFMuZXF1aXBtZW50TGlzdC50b3RhbFZhbHVlKCkpfSAvICR7Zml4ZWQ2KCRHVVJQUy5lcXVpcG1lbnRMaXN0LnRvdGFsVmFsdWUoeyBjYXJyaWVkT25seTogZmFsc2UgfSkpfSA8L2I+XHJcbiAgPC9oMz5cclxuey9pZn1cclxuPExpc3QgdGl0bGU9XCJ7bG9jYXRpb259IEl0ZW1zXCIgdHlwZT1cIml0ZW1cIiBhZGRMaXN0SXRlbU1lbnU9e21lbnVJdGVtc30+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5FPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlF0eTwvdGg+XHJcbiAgPHRoXHJcbiAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAkZW50aXR5LnNvcnRMaXN0KCdpdGVtJywgJ2RhdGEuZGVzY3JpcHRpb24nKTtcclxuICAgIH19PlxyXG4gICAgRGVzY3JpcHRpb24gPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlVzZXM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+JDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5XZWlnaHQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VG90YWwgV2VpZ2h0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRvdGFsICQ8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICB7I2VhY2ggd2luZG93LmdhbWUuZ3VycHM0ZS5pbmRleFNvcnQobG9jYXRpb24gPT09ICdvdGhlcicgPyAkR1VSUFMub3RoZXJFcXVpcG1lbnRMaXN0Lml0ZXJUb3AoKSA6ICRHVVJQUy5lcXVpcG1lbnRMaXN0Lml0ZXJUb3AoKSkgYXMgZXF1aXBtZW50LCBpIChlcXVpcG1lbnQuZm91bmRyeUlEKX1cclxuICAgIDwhLS0gPEVxdWlwbWVudCBpdGVtPXtlcXVpcG1lbnR9IC8+IC0tPlxyXG4gICAgPFJvd1xyXG4gICAgICBsZXQ6aXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0OmlkXHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmhvdmVyZWRcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgaWQ9e2VxdWlwbWVudC5mb3VuZHJ5SUR9XHJcbiAgICAgIG9uOmRlbGV0ZT17YXN5bmMgKGUpID0+IHtcclxuICAgICAgICBhd2FpdCBlLmRldGFpbC5lbnRpdHkuZGVsZXRlKCk7XHJcbiAgICAgIH19XHJcbiAgICAgIHtpfVxyXG4gICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgIGNvbHNwYW49ezEwfVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShlcXVpcG1lbnQuY2hpbGRyZW4pfVxyXG4gICAgICBjb250YWluZXI9e2VxdWlwbWVudC5jYW5Db250YWluQ2hpbGRyZW59PlxyXG4gICAgICA8dGRcclxuICAgICAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICRlbnRpdHlcclxuICAgICAgICAgICAgLmdldE93bmVkSXRlbShpZClcclxuICAgICAgICAgICAgLnVwZGF0ZSh7ICdkYXRhLmVxdWlwcGVkJzogIUJvb2xlYW4oaXRlbS5lcXVpcHBlZCkgfSk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgeyNpZiBpdGVtLmVxdWlwcGVkfTxpIGNsYXNzPVwiZmFzIGZhLWNoZWNrXCIgLz57L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5xdWFudGl0eVwiXHJcbiAgICAgICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgICAgIG1pbj1cIjBcIlxyXG4gICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJuby1lZGl0XCIgc2xvdD1cIm5vLWVkaXRcIj57dmFsdWV9PC9zcGFuPlxyXG4gICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZFxyXG4gICAgICAgIGNsYXNzPVwibWFpbi1saXN0LWNvbCBjb250YWluZXItdG9nZ2xlXCJcclxuICAgICAgICBzdHlsZT1cInBhZGRpbmctbGVmdDp7ZGVwdGggKiAzMCArIDMwfXB4XCI+XHJcbiAgICAgICAgPHNwYW5cclxuICAgICAgICAgIHN0eWxlPVwibGVmdDp7MTUgKyBkZXB0aCAqIDMwfXB4O1wiXHJcbiAgICAgICAgICBvbjpjbGljaz17KCkgPT4gdG9nZ2xlSXRlbU9wZW4oaWQpfVxyXG4gICAgICAgICAgY2xhc3M9XCJ0b2dnbGUgZmFzXCJcclxuICAgICAgICAgIGNsYXNzOmZhLWFuZ2xlLWRvd249e29wZW4gJiYgaXRlbS5jYW5Db250YWluQ2hpbGRyZW59XHJcbiAgICAgICAgICBjbGFzczpmYS1hbmdsZS1yaWdodD17IW9wZW4gJiYgaXRlbS5jYW5Db250YWluQ2hpbGRyZW59IC8+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5kZXNjcmlwdGlvblwiXHJcbiAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cIm5vLWVkaXRcIiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgPC9JbnB1dD5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0udmFsdWUpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0ud2VpZ2h0KX08L3RkPlxyXG4gICAgICA8dGQ+e2ZpeGVkNihpdGVtLmV4dGVuZGVkV2VpZ2h0KCkpfTwvdGQ+XHJcbiAgICAgIDx0ZD57Zml4ZWQ2KGl0ZW0uZXh0ZW5kZWRWYWx1ZSgpKX08L3RkPlxyXG4gICAgICA8dGQ+e2l0ZW0ucmVmZXJlbmNlfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJERSxFQUFFLGVBQUMsQ0FBQyxBQUNGLE9BQU8sQ0FBRSxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxHQUFHLEFBQ3RCLENBQUMsQUFLRCxjQUFjLGVBQUMsQ0FBQyxBQUNkLFVBQVUsQ0FBRSxJQUFJLEFBQ2xCLENBQUMsQUFDRCxpQkFBaUIsZUFBQyxDQUFDLEFBQ2pCLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMsQUFDRCxPQUFPLGVBQUMsQ0FBQyxBQUNQLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3207,7 +3235,29 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,uDAEoC,cACpB,CAChB,iDAE8B,WACjB,CACb,mEAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,yyMAAyyM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.total}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.total} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy50b3RhbH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMudG90YWx9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,uDAEoC,cACpB,CAChB,iDAE8B,WACjB,CACb,mEAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,yyMAAyyM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.spent}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.spent} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/svelte/TraitList.svelte.css":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/svelte/TraitList.svelte.css ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4vZm9ybS9JbnB1dFwiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IFRhYnMsIFRhYkxpc3QsIFRhYlBhbmVsLCBUYWIgfSBmcm9tIFwiLi90YWJzL3RhYnNcIjtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgW10uY29uY2F0KFxyXG4gICAgICAkR1VSUFMudHJhaXRMaXN0LnNwbGl0QnlUeXBlKCkuZGlzYWR2YW50YWdlcyxcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLnF1aXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgIFtdLmNvbmNhdChcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLmFkdmFudGFnZXMsXHJcbiAgICAgICRHVVJQUy50cmFpdExpc3Quc3BsaXRCeVR5cGUoKS5wZXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gIGZ1bmN0aW9uIHJvbGxDcih0cmFpdCkge1xyXG4gICAgbGV0IHJvbGxBZ2FpbnN0ID0gdHJhaXQuY29udHJvbFJhdGluZyA9PT0gXCJub25lXCIgPyAwIDogK3RyYWl0LmNvbnRyb2xSYXRpbmc7XHJcbiAgICAkZW50aXR5LnJvbGxTa2lsbChgJHt0cmFpdC5uYW1lfWAsIHJvbGxBZ2FpbnN0KTtcclxuICB9XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5jci1yb2xsIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0cmFpdHMtdGFiJywgZS5kZXRhaWwpO1xyXG4gIH19PlxyXG4gIDxUYWJMaXN0PlxyXG4gICAgPFRhYiBpbmRleD17MH0+RGlzYWR2YW50YWdlcyAmIFF1aXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17MX0+QWR2YW50YWdlcyAmIFBlcmtzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsyfT5MYW5ndWFnZXMgJiBDdWx0dXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5SYWNpYWwgVHJhaXRzPC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0Rpc2FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgRGlzYWR2YW50YWdlcyAmIFF1aXJrcyA8aSBjbGFzcz1cImZhcyBmYS1zb3J0XCIgLz5cclxuICAgICAgPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgICAgIHsjZWFjaCBkaXNhZHZhbnRhZ2VzIGFzIHRyYWl0LCBpICh0cmFpdC5mb3VuZHJ5SUQpfVxyXG4gICAgICAgIDxSb3dcclxuICAgICAgICAgIGRpc2FibGVkPXt0cmFpdC5kaXNhYmxlZH1cclxuICAgICAgICAgIGNvbHNwYW49XCI1XCJcclxuICAgICAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgICAgIHtpfVxyXG4gICAgICAgICAgaWQ9e3RyYWl0LmZvdW5kcnlJRH1cclxuICAgICAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICAgICAgZS5kZXRhaWwuZW50aXR5LmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sIHJlbGF0aXZlXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgICAgICBjbGFzczpuby1zaG93PXt0cmFpdC5jb250cm9sUmF0aW5nID09PSAnbi9hJ31cclxuICAgICAgICAgICAgICAgIHNsb3Q9XCJuby1lZGl0XCJcclxuICAgICAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY28gY3Itcm9sbFwiXHJcbiAgICAgICAgICAgICAgICBvbjpjbGljaz17cm9sbENyKHRyYWl0KX0+XHJcbiAgICAgICAgICAgICAgICAmbmJzcDt7dHJhaXQuY29udHJvbFJhdGluZ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPExpc3RcclxuICAgICAgdHlwZT1cInRyYWl0XCJcclxuICAgICAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiAnPz8/JyxcclxuICAgICAgICAgIHR5cGU6ICd0cmFpdCcsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIGNhdGVnb3JpZXM6IFsnQWR2YW50YWdlJ10sXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgIH0pO1xyXG4gICAgICB9fT5cclxuICAgICAgPHRoXHJcbiAgICAgICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICAgICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LnNvcnRMaXN0KCd0cmFpdCcsICdkYXRhLm5hbWUnKTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZHZhbnRhZ2VzICYgUGVya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHRyYWl0LmZvdW5kcnlJRCkuZGVsZXRlKCk7XHJcbiAgICAgICAgICB9fT5cclxuICAgICAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0gPyBvd25lZEl0ZW0uX2VudGl0eSA6IG51bGx9XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQubmFtZX1cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5oYXNMZXZlbHMgPyB0cmFpdC5sZXZlbHMgOiAnJ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUErQkUsUUFBUSxlQUFDLENBQUMsQUFDUixRQUFRLENBQUUsUUFBUSxDQUNsQixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/TraitList.svelte","webpack://src/svelte/TraitList.svelte.css"],"names":[],"mappings":"AA+BE,wBAAU,iBACU,CAClB,UAAW;AChCf,yoPAAyoP","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n\r\n  import Input from \"./form/Input\";\r\n  import { List, Row } from \"./list/list.ts\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  $: disadvantages = window.game.gurps4e.indexSort(\r\n    [].concat(\r\n      $GURPS.traitList.splitByType().disadvantages,\r\n      $GURPS.traitList.splitByType().quirks\r\n    )\r\n  );\r\n\r\n  $: advantages = window.game.gurps4e.indexSort(\r\n    [].concat(\r\n      $GURPS.traitList.splitByType().advantages,\r\n      $GURPS.traitList.splitByType().perks\r\n    )\r\n  );\r\n\r\n  function rollCr(trait) {\r\n    let rollAgainst = trait.controlRating === \"none\" ? 0 : +trait.controlRating;\r\n    $entity.rollSkill(`${trait.name}`, rollAgainst);\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .cr-roll {\r\n    position: absolute;\r\n    right: 10px;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'traits-tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>Disadvantages & Quirks</Tab>\r\n    <Tab index={1}>Advantages & Perks</Tab>\r\n    <Tab index={2}>Languages & Culture</Tab>\r\n    <Tab index={3}>Racial Traits</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Disadvantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Disadvantages & Quirks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each disadvantages as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            e.detail.entity.delete();\r\n          }}>\r\n          <td class=\"main-list-col relative\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n              <span\r\n                class:no-show={trait.controlRating === 'n/a'}\r\n                slot=\"no-edit\"\r\n                class=\"fas fa-dice d6 roll-ico cr-roll\"\r\n                on:click={rollCr(trait)}>\r\n                &nbsp;{trait.controlRating}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Advantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Advantages & Perks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each advantages as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            $entity.getOwnedItem(trait.foundryID).delete();\r\n          }}>\r\n          <td class=\"main-list-col\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n</Tabs>\r\n",".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4vZm9ybS9JbnB1dFwiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IFRhYnMsIFRhYkxpc3QsIFRhYlBhbmVsLCBUYWIgfSBmcm9tIFwiLi90YWJzL3RhYnNcIjtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgW10uY29uY2F0KFxyXG4gICAgICAkR1VSUFMudHJhaXRMaXN0LnNwbGl0QnlUeXBlKCkuZGlzYWR2YW50YWdlcyxcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLnF1aXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgIFtdLmNvbmNhdChcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLmFkdmFudGFnZXMsXHJcbiAgICAgICRHVVJQUy50cmFpdExpc3Quc3BsaXRCeVR5cGUoKS5wZXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gIGZ1bmN0aW9uIHJvbGxDcih0cmFpdCkge1xyXG4gICAgbGV0IHJvbGxBZ2FpbnN0ID0gdHJhaXQuY29udHJvbFJhdGluZyA9PT0gXCJub25lXCIgPyAwIDogK3RyYWl0LmNvbnRyb2xSYXRpbmc7XHJcbiAgICAkZW50aXR5LnJvbGxTa2lsbChgJHt0cmFpdC5uYW1lfWAsIHJvbGxBZ2FpbnN0KTtcclxuICB9XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5jci1yb2xsIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0cmFpdHMtdGFiJywgZS5kZXRhaWwpO1xyXG4gIH19PlxyXG4gIDxUYWJMaXN0PlxyXG4gICAgPFRhYiBpbmRleD17MH0+RGlzYWR2YW50YWdlcyAmIFF1aXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17MX0+QWR2YW50YWdlcyAmIFBlcmtzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsyfT5MYW5ndWFnZXMgJiBDdWx0dXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5SYWNpYWwgVHJhaXRzPC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0Rpc2FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgRGlzYWR2YW50YWdlcyAmIFF1aXJrcyA8aSBjbGFzcz1cImZhcyBmYS1zb3J0XCIgLz5cclxuICAgICAgPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgICAgIHsjZWFjaCBkaXNhZHZhbnRhZ2VzIGFzIHRyYWl0LCBpICh0cmFpdC5mb3VuZHJ5SUQpfVxyXG4gICAgICAgIDxSb3dcclxuICAgICAgICAgIGRpc2FibGVkPXt0cmFpdC5kaXNhYmxlZH1cclxuICAgICAgICAgIGNvbHNwYW49XCI1XCJcclxuICAgICAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgICAgIHtpfVxyXG4gICAgICAgICAgaWQ9e3RyYWl0LmZvdW5kcnlJRH1cclxuICAgICAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICAgICAgZS5kZXRhaWwuZW50aXR5LmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sIHJlbGF0aXZlXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgICAgICBjbGFzczpuby1zaG93PXt0cmFpdC5jb250cm9sUmF0aW5nID09PSAnbi9hJ31cclxuICAgICAgICAgICAgICAgIHNsb3Q9XCJuby1lZGl0XCJcclxuICAgICAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY28gY3Itcm9sbFwiXHJcbiAgICAgICAgICAgICAgICBvbjpjbGljaz17cm9sbENyKHRyYWl0KX0+XHJcbiAgICAgICAgICAgICAgICAmbmJzcDt7dHJhaXQuY29udHJvbFJhdGluZ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPExpc3RcclxuICAgICAgdHlwZT1cInRyYWl0XCJcclxuICAgICAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiAnPz8/JyxcclxuICAgICAgICAgIHR5cGU6ICd0cmFpdCcsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIGNhdGVnb3JpZXM6IFsnQWR2YW50YWdlJ10sXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgIH0pO1xyXG4gICAgICB9fT5cclxuICAgICAgPHRoXHJcbiAgICAgICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICAgICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LnNvcnRMaXN0KCd0cmFpdCcsICdkYXRhLm5hbWUnKTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZHZhbnRhZ2VzICYgUGVya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHRyYWl0LmZvdW5kcnlJRCkuZGVsZXRlKCk7XHJcbiAgICAgICAgICB9fT5cclxuICAgICAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0gPyBvd25lZEl0ZW0uX2VudGl0eSA6IG51bGx9XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQubmFtZX1cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5oYXNMZXZlbHMgPyB0cmFpdC5sZXZlbHMgOiAnJ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUErQkUsUUFBUSxlQUFDLENBQUMsQUFDUixRQUFRLENBQUUsUUFBUSxDQUNsQixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3295,7 +3345,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".features-list.svelte-p102j8{position:relative}.features-list.svelte-p102j8 .GURPS-label{padding:2px 5px 2px 5px}.flex.svelte-p102j8:not(.topmost){margin-left:45px}.feature.svelte-p102j8{padding-bottom:20px;position:relative}.list-interface.svelte-p102j8{position:absolute;top:15px;right:15px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmVhdHVyZXMuc3ZlbHRlIiwic291cmNlcyI6WyJGZWF0dXJlcy5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IFNlbGVjdCwgT3B0aW9uLCBJbnB1dCB9IGZyb20gXCIuLi8uLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBGZWF0dXJlVHlwZSB9IGZyb20gXCJnNGVsb2dpY1wiO1xyXG4gIGltcG9ydCB7IGZlYXR1cmVzIH0gZnJvbSBcInByb2Nlc3NcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mZWF0dXJlcy1saXN0IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLmZlYXR1cmVzLWxpc3QgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDJweCA1cHggMnB4IDVweDtcclxuICB9XHJcbiAgLmZsZXg6bm90KC50b3Btb3N0KSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNDVweDtcclxuICB9XHJcbiAgLmZlYXR1cmUge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC5saXN0LWludGVyZmFjZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDE1cHg7XHJcbiAgICByaWdodDogMTVweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwiZmVhdHVyZXMtbGlzdFwiPlxyXG4gIHsjaWYgJGVudGl0eS5nZXRGZWF0dXJlcygpLmxlbmd0aCA9PT0gMH1cclxuICAgIDxzcGFuXHJcbiAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlIGxpc3QtaW50ZXJmYWNlXCJcclxuICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gIHsvaWZ9XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0RmVhdHVyZXMoKSBhcyBmZWF0dXJlLCBpIChmZWF0dXJlLl9pZCl9XHJcbiAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwibGlzdC1pbnRlcmZhY2VcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtbWludXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJlbW92ZUJ5UGF0aCgnZGF0YS5mZWF0dXJlcycsIGZlYXR1cmUuX2lkKX0gLz5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtcGx1cy1zcXVhcmVcIlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdiBjbGFzcz1cImZsZXggdG9wbW9zdFwiPlxyXG4gICAgICAgIDxTZWxlY3QgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICd0eXBlJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYW4gYXR0cmlidXRlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30+XHJcbiAgICAgICAgICAgIEdpdmVzIGEgRFIgYm9udXMgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT17RmVhdHVyZVR5cGUucmVhY3Rpb25Cb251c30gZGlzYWJsZWQ9e3RydWV9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIHJlYWN0aW9uIG1vZGlmaWVyIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLnNraWxsQm9udXN9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIHNraWxsIGxldmVsIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gZGlzYWJsZWQ9e3RydWV9PkdpdmVzIGEgc2tpbGwgcG9pbnQgYm9udXMgb2Y8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLlNwZWxsQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgc3BlbGwgbGV2ZWwgYm9udXMgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiBkaXNhYmxlZD17dHJ1ZX0+R2l2ZXMgYSBzcGVsbCBwb2ludCBib251cyBvZjwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT17RmVhdHVyZVR5cGUud2VhcG9uRGFtYWdlQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSB3ZWFwb24gZGFtYWdlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmNvc3RSZWR1Y3Rpb259IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgUmVkdWNlcyB0aGUgYXR0cmlidXRlIGNvc3Qgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdhbW91bnQnIH19IC8+XHJcbiAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncGVyX2xldmVsJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJmYWxzZVwiIC8+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwidHJ1ZVwiPnBlciBsZXZlbDwvT3B0aW9uPlxyXG4gICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgeyNpZiBmZWF0dXJlLnR5cGUgPT09IEZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnYXR0cmlidXRlJyB9fT5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNUXCI+dG8gU1Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkRYXCI+dG8gRFg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIklRXCI+dG8gSVE8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkhUXCI+dG8gSFQ8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgeyNpZiBbJ1NUJywgJ1NTJywgJ1NMJ10uaW5jbHVkZXMoZmVhdHVyZS5hdHRyaWJ1dGUpfVxyXG4gICAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ2F0dHJpYnV0ZScgfX0+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNUXCIgLz5cclxuICAgICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiTFNcIj5mb3IgbGlmdGluZyBvbmx5PC9PcHRpb24+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNTXCI+Zm9yIHN0cmlraW5nIG9ubHk8L09wdGlvbj5cclxuICAgICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICB7L2lmfVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB7OmVsc2UgaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5za2lsbEJvbnVzfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgPE9wdGlvbj50byBza2lsbHMgd2hvc2UgbmFtZTwvT3B0aW9uPlxyXG4gICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cImlzXCJcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICduYW1lX2NvbXBhcmVfdHlwZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19hbnl0aGluZ1wiPmlzIGFueXRoaW5nPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc1wiPmlzPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19ub3RcIj5pcyBub3Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImNvbnRhaW5zXCI+Y29udGFpbnM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2NvbnRhaW5cIj5kb2VzIG5vdCBjb250YWluPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJzdGFydHNfd2l0aFwiPnN0YXJ0cyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9zdGFydF93aXRoXCI+ZG9lcyBub3Qgc3RhcnQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZW5kc193aXRoXCI+ZW5kcyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9lbmRfd2l0aFwiPmRvZXMgbm90IGVuZCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ25hbWUnIH19IC8+XHJcbiAgICAgICAgPC9kaXY+XHJcblxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cImlzXCJcclxuICAgICAgICAgICAgb3B0aW9uUHJlZmFjZT1cImFuZCBzcGVjaWFsaXphdGlvblwiXHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnc3BlY2lhbGl6YXRpb25fY29tcGFyZV90eXBlJyB9fT5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzX2FueXRoaW5nXCI+aXMgYW55dGhpbmc8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzXCI+aXM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzX25vdFwiPmlzIG5vdDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiY29udGFpbnNcIj5jb250YWluczwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3RfY29udGFpblwiPmRvZXMgbm90IGNvbnRhaW48L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cInN0YXJ0c193aXRoXCI+c3RhcnRzIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X3N0YXJ0X3dpdGhcIj5kb2VzIG5vdCBzdGFydCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJlbmRzX3dpdGhcIj5lbmRzIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2VuZF93aXRoXCI+ZG9lcyBub3QgZW5kIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnc3BlY2lhbGl6YXRpb24nIH19IC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHs6ZWxzZSBpZiBmZWF0dXJlLnR5cGUgPT09IEZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30xMHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICB7L2VhY2h9XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVUUsY0FBYyxjQUFDLENBQUMsQUFDZCxRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDLEFBQ0QsNEJBQWMsQ0FBQyxBQUFRLFlBQVksQUFBRSxDQUFDLEFBQ3BDLE9BQU8sQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQzFCLENBQUMsQUFDRCxtQkFBSyxLQUFLLFFBQVEsQ0FBQyxBQUFDLENBQUMsQUFDbkIsV0FBVyxDQUFFLElBQUksQUFDbkIsQ0FBQyxBQUNELFFBQVEsY0FBQyxDQUFDLEFBQ1IsY0FBYyxDQUFFLElBQUksQ0FDcEIsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyxBQUNELGVBQWUsY0FBQyxDQUFDLEFBQ2YsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsR0FBRyxDQUFFLElBQUksQ0FDVCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/editors/panels/Features.svelte","webpack://src/svelte/editors/panels/Features.svelte.css"],"names":[],"mappings":"AAUE,6BAAgB,iBACI,CACnB,0CACqC,uBACZ,CACzB,kCACoB,gBACF,CAClB,uBACS,mBACY,CACpB,iBAAkB,CACnB,8BACgB,iBACG,CAClB,QAAS,CACT,UAAW;ACzBf,igRAAigR","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { Select, Option, Input } from \"../../form/form\";\r\n  import { FeatureType } from \"g4elogic\";\r\n  import { features } from \"process\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n</script>\r\n\r\n<style>\r\n  .features-list {\r\n    position: relative;\r\n  }\r\n  .features-list :global(.GURPS-label) {\r\n    padding: 2px 5px 2px 5px;\r\n  }\r\n  .flex:not(.topmost) {\r\n    margin-left: 45px;\r\n  }\r\n  .feature {\r\n    padding-bottom: 20px;\r\n    position: relative;\r\n  }\r\n  .list-interface {\r\n    position: absolute;\r\n    top: 15px;\r\n    right: 15px;\r\n  }\r\n</style>\r\n\r\n<div class=\"features-list\">\r\n  {#if $entity.getFeatures().length === 0}\r\n    <span\r\n      class=\"fas fa-plus-square list-interface\"\r\n      on:click={() => $entity.addFeature()} />\r\n  {/if}\r\n  {#each $entity.getFeatures() as feature, i (feature._id)}\r\n    <div class=\"feature\">\r\n      <div class=\"list-interface\">\r\n        <span\r\n          class=\"fas fa-minus-square\"\r\n          on:click={() => $entity.removeByPath('data.features', feature._id)} />\r\n        <span\r\n          class=\"fas fa-plus-square\"\r\n          on:click={() => $entity.addFeature()} />\r\n      </div>\r\n      <div class=\"flex topmost\">\r\n        <Select path=\"data.features\" array={{ index: i, property: 'type' }}>\r\n          <Option value={FeatureType.attributeBonus}>\r\n            Gives an attribute bonus of\r\n          </Option>\r\n          <Option value={FeatureType.damageResistanceBonus}>\r\n            Gives a DR bonus of\r\n          </Option>\r\n          <Option value={FeatureType.reactionBonus} disabled={true}>\r\n            Gives a reaction modifier of\r\n          </Option>\r\n          <Option value={FeatureType.skillBonus}>\r\n            Gives a skill level bonus of\r\n          </Option>\r\n          <Option disabled={true}>Gives a skill point bonus of</Option>\r\n          <Option value={FeatureType.SpellBonus} disabled={true}>\r\n            Gives spell level bonus of\r\n          </Option>\r\n          <Option disabled={true}>Gives a spell point bonus of</Option>\r\n          <Option value={FeatureType.weaponDamageBonus} disabled={true}>\r\n            Gives a weapon damage bonus of\r\n          </Option>\r\n          <Option value={FeatureType.costReduction} disabled={true}>\r\n            Reduces the attribute cost of\r\n          </Option>\r\n        </Select>\r\n        <Input\r\n          type=\"number\"\r\n          path=\"data.features\"\r\n          array={{ index: i, property: 'amount' }} />\r\n        <Select\r\n          path=\"data.features\"\r\n          array={{ index: i, property: 'per_level' }}>\r\n          <Option value=\"false\" />\r\n          <Option value=\"true\">per level</Option>\r\n        </Select>\r\n      </div>\r\n      {#if feature.type === FeatureType.attributeBonus}\r\n        <div class=\"flex\">\r\n          <Select\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'attribute' }}>\r\n            <Option value=\"ST\">to ST</Option>\r\n            <Option value=\"DX\">to DX</Option>\r\n            <Option value=\"IQ\">to IQ</Option>\r\n            <Option value=\"HT\">to HT</Option>\r\n          </Select>\r\n          {#if ['ST', 'SS', 'SL'].includes(feature.attribute)}\r\n            <Select\r\n              path=\"data.features\"\r\n              array={{ index: i, property: 'attribute' }}>\r\n              <Option value=\"ST\" />\r\n              <Option value=\"LS\">for lifting only</Option>\r\n              <Option value=\"SS\">for striking only</Option>\r\n            </Select>\r\n          {/if}\r\n        </div>\r\n      {:else if feature.type === FeatureType.skillBonus}\r\n        <div class=\"flex\">\r\n          <Select disabled={true}>\r\n            <Option>to skills whose name</Option>\r\n          </Select>\r\n          <Select\r\n            defaultValue=\"is\"\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'name_compare_type' }}>\r\n            <Option value=\"is_anything\">is anything</Option>\r\n            <Option value=\"is\">is</Option>\r\n            <Option value=\"is_not\">is not</Option>\r\n            <Option value=\"contains\">contains</Option>\r\n            <Option value=\"does_not_contain\">does not contain</Option>\r\n            <Option value=\"starts_with\">starts with</Option>\r\n            <Option value=\"does_not_start_with\">does not start with</Option>\r\n            <Option value=\"ends_with\">ends with</Option>\r\n            <Option value=\"does_not_end_with\">does not end with</Option>\r\n          </Select>\r\n          <Input path=\"data.features\" array={{ index: i, property: 'name' }} />\r\n        </div>\r\n\r\n        <div class=\"flex\">\r\n          <Select\r\n            defaultValue=\"is\"\r\n            optionPreface=\"and specialization\"\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'specialization_compare_type' }}>\r\n            <Option value=\"is_anything\">is anything</Option>\r\n            <Option value=\"is\">is</Option>\r\n            <Option value=\"is_not\">is not</Option>\r\n            <Option value=\"contains\">contains</Option>\r\n            <Option value=\"does_not_contain\">does not contain</Option>\r\n            <Option value=\"starts_with\">starts with</Option>\r\n            <Option value=\"does_not_start_with\">does not start with</Option>\r\n            <Option value=\"ends_with\">ends with</Option>\r\n            <Option value=\"does_not_end_with\">does not end with</Option>\r\n          </Select>\r\n          <Input\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'specialization' }} />\r\n        </div>\r\n      {:else if feature.type === FeatureType.damageResistanceBonus}10{/if}\r\n    </div>\r\n  {/each}\r\n</div>\r\n",".features-list.svelte-p102j8{position:relative}.features-list.svelte-p102j8 .GURPS-label{padding:2px 5px 2px 5px}.flex.svelte-p102j8:not(.topmost){margin-left:45px}.feature.svelte-p102j8{padding-bottom:20px;position:relative}.list-interface.svelte-p102j8{position:absolute;top:15px;right:15px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmVhdHVyZXMuc3ZlbHRlIiwic291cmNlcyI6WyJGZWF0dXJlcy5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IFNlbGVjdCwgT3B0aW9uLCBJbnB1dCB9IGZyb20gXCIuLi8uLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBGZWF0dXJlVHlwZSB9IGZyb20gXCJnNGVsb2dpY1wiO1xyXG4gIGltcG9ydCB7IGZlYXR1cmVzIH0gZnJvbSBcInByb2Nlc3NcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mZWF0dXJlcy1saXN0IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLmZlYXR1cmVzLWxpc3QgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDJweCA1cHggMnB4IDVweDtcclxuICB9XHJcbiAgLmZsZXg6bm90KC50b3Btb3N0KSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNDVweDtcclxuICB9XHJcbiAgLmZlYXR1cmUge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC5saXN0LWludGVyZmFjZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDE1cHg7XHJcbiAgICByaWdodDogMTVweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwiZmVhdHVyZXMtbGlzdFwiPlxyXG4gIHsjaWYgJGVudGl0eS5nZXRGZWF0dXJlcygpLmxlbmd0aCA9PT0gMH1cclxuICAgIDxzcGFuXHJcbiAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlIGxpc3QtaW50ZXJmYWNlXCJcclxuICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gIHsvaWZ9XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0RmVhdHVyZXMoKSBhcyBmZWF0dXJlLCBpIChmZWF0dXJlLl9pZCl9XHJcbiAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwibGlzdC1pbnRlcmZhY2VcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtbWludXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJlbW92ZUJ5UGF0aCgnZGF0YS5mZWF0dXJlcycsIGZlYXR1cmUuX2lkKX0gLz5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtcGx1cy1zcXVhcmVcIlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdiBjbGFzcz1cImZsZXggdG9wbW9zdFwiPlxyXG4gICAgICAgIDxTZWxlY3QgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICd0eXBlJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYW4gYXR0cmlidXRlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30+XHJcbiAgICAgICAgICAgIEdpdmVzIGEgRFIgYm9udXMgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT17RmVhdHVyZVR5cGUucmVhY3Rpb25Cb251c30gZGlzYWJsZWQ9e3RydWV9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIHJlYWN0aW9uIG1vZGlmaWVyIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLnNraWxsQm9udXN9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIHNraWxsIGxldmVsIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gZGlzYWJsZWQ9e3RydWV9PkdpdmVzIGEgc2tpbGwgcG9pbnQgYm9udXMgb2Y8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLlNwZWxsQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgc3BlbGwgbGV2ZWwgYm9udXMgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiBkaXNhYmxlZD17dHJ1ZX0+R2l2ZXMgYSBzcGVsbCBwb2ludCBib251cyBvZjwvT3B0aW9uPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT17RmVhdHVyZVR5cGUud2VhcG9uRGFtYWdlQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSB3ZWFwb24gZGFtYWdlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmNvc3RSZWR1Y3Rpb259IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgUmVkdWNlcyB0aGUgYXR0cmlidXRlIGNvc3Qgb2ZcclxuICAgICAgICAgIDwvT3B0aW9uPlxyXG4gICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdhbW91bnQnIH19IC8+XHJcbiAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncGVyX2xldmVsJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJmYWxzZVwiIC8+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwidHJ1ZVwiPnBlciBsZXZlbDwvT3B0aW9uPlxyXG4gICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgeyNpZiBmZWF0dXJlLnR5cGUgPT09IEZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnYXR0cmlidXRlJyB9fT5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNUXCI+dG8gU1Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkRYXCI+dG8gRFg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIklRXCI+dG8gSVE8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkhUXCI+dG8gSFQ8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgeyNpZiBbJ1NUJywgJ1NTJywgJ1NMJ10uaW5jbHVkZXMoZmVhdHVyZS5hdHRyaWJ1dGUpfVxyXG4gICAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ2F0dHJpYnV0ZScgfX0+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNUXCIgLz5cclxuICAgICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiTFNcIj5mb3IgbGlmdGluZyBvbmx5PC9PcHRpb24+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIlNTXCI+Zm9yIHN0cmlraW5nIG9ubHk8L09wdGlvbj5cclxuICAgICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICB7L2lmfVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB7OmVsc2UgaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5za2lsbEJvbnVzfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgPE9wdGlvbj50byBza2lsbHMgd2hvc2UgbmFtZTwvT3B0aW9uPlxyXG4gICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cImlzXCJcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICduYW1lX2NvbXBhcmVfdHlwZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19hbnl0aGluZ1wiPmlzIGFueXRoaW5nPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc1wiPmlzPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19ub3RcIj5pcyBub3Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImNvbnRhaW5zXCI+Y29udGFpbnM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2NvbnRhaW5cIj5kb2VzIG5vdCBjb250YWluPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJzdGFydHNfd2l0aFwiPnN0YXJ0cyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9zdGFydF93aXRoXCI+ZG9lcyBub3Qgc3RhcnQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZW5kc193aXRoXCI+ZW5kcyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9lbmRfd2l0aFwiPmRvZXMgbm90IGVuZCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ25hbWUnIH19IC8+XHJcbiAgICAgICAgPC9kaXY+XHJcblxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4XCI+XHJcbiAgICAgICAgICA8U2VsZWN0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cImlzXCJcclxuICAgICAgICAgICAgb3B0aW9uUHJlZmFjZT1cImFuZCBzcGVjaWFsaXphdGlvblwiXHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnc3BlY2lhbGl6YXRpb25fY29tcGFyZV90eXBlJyB9fT5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzX2FueXRoaW5nXCI+aXMgYW55dGhpbmc8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzXCI+aXM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImlzX25vdFwiPmlzIG5vdDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiY29udGFpbnNcIj5jb250YWluczwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3RfY29udGFpblwiPmRvZXMgbm90IGNvbnRhaW48L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cInN0YXJ0c193aXRoXCI+c3RhcnRzIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X3N0YXJ0X3dpdGhcIj5kb2VzIG5vdCBzdGFydCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJlbmRzX3dpdGhcIj5lbmRzIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2VuZF93aXRoXCI+ZG9lcyBub3QgZW5kIHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnc3BlY2lhbGl6YXRpb24nIH19IC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHs6ZWxzZSBpZiBmZWF0dXJlLnR5cGUgPT09IEZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30xMHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICB7L2VhY2h9XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVUUsY0FBYyxjQUFDLENBQUMsQUFDZCxRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDLEFBQ0QsNEJBQWMsQ0FBQyxBQUFRLFlBQVksQUFBRSxDQUFDLEFBQ3BDLE9BQU8sQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQzFCLENBQUMsQUFDRCxtQkFBSyxLQUFLLFFBQVEsQ0FBQyxBQUFDLENBQUMsQUFDbkIsV0FBVyxDQUFFLElBQUksQUFDbkIsQ0FBQyxBQUNELFFBQVEsY0FBQyxDQUFDLEFBQ1IsY0FBYyxDQUFFLElBQUksQ0FDcEIsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyxBQUNELGVBQWUsY0FBQyxDQUFDLEFBQ2YsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsR0FBRyxDQUFFLElBQUksQ0FDVCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".features-list.svelte-p102j8{position:relative}.features-list.svelte-p102j8 .GURPS-label{padding:2px 5px 2px 5px}.flex.svelte-p102j8:not(.topmost){margin-left:45px}.feature.svelte-p102j8{padding-bottom:20px;position:relative}.list-interface.svelte-p102j8{position:absolute;top:15px;right:15px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmVhdHVyZXMuc3ZlbHRlIiwic291cmNlcyI6WyJGZWF0dXJlcy5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IFNlbGVjdCwgT3B0aW9uLCBJbnB1dCB9IGZyb20gXCIuLi8uLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBGZWF0dXJlVHlwZSB9IGZyb20gXCJnNGVsb2dpY1wiO1xyXG4gIGltcG9ydCB7IGZlYXR1cmVzIH0gZnJvbSBcInByb2Nlc3NcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mZWF0dXJlcy1saXN0IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLmZlYXR1cmVzLWxpc3QgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDJweCA1cHggMnB4IDVweDtcclxuICB9XHJcbiAgLmZsZXg6bm90KC50b3Btb3N0KSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNDVweDtcclxuICB9XHJcbiAgLmZlYXR1cmUge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC5saXN0LWludGVyZmFjZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDE1cHg7XHJcbiAgICByaWdodDogMTVweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwiZmVhdHVyZXMtbGlzdFwiPlxyXG4gIHsjaWYgJGVudGl0eS5nZXRGZWF0dXJlcygpLmxlbmd0aCA9PT0gMH1cclxuICAgIDxzcGFuXHJcbiAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlIGxpc3QtaW50ZXJmYWNlXCJcclxuICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gIHsvaWZ9XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0RmVhdHVyZXMoKSBhcyBmZWF0dXJlLCBpIChmZWF0dXJlLl9pZCl9XHJcbiAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwibGlzdC1pbnRlcmZhY2VcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtbWludXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJlbW92ZUJ5UGF0aCgnZGF0YS5mZWF0dXJlcycsIGZlYXR1cmUuX2lkKX0gLz5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtcGx1cy1zcXVhcmVcIlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdiBjbGFzcz1cImZsZXggdG9wbW9zdFwiPlxyXG4gICAgICAgIDxTZWxlY3QgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICd0eXBlJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYW4gYXR0cmlidXRlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30gZGlzYWJsZWQ9e3RydWV9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIERSIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLnJlYWN0aW9uQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSByZWFjdGlvbiBtb2RpZmllciBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5za2lsbEJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSBza2lsbCBsZXZlbCBib251cyBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIGRpc2FibGVkPXt0cnVlfT5HaXZlcyBhIHNraWxsIHBvaW50IGJvbnVzIG9mPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5TcGVsbEJvbnVzfSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIEdpdmVzIHNwZWxsIGxldmVsIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gZGlzYWJsZWQ9e3RydWV9PkdpdmVzIGEgc3BlbGwgcG9pbnQgYm9udXMgb2Y8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLndlYXBvbkRhbWFnZUJvbnVzfSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIEdpdmVzIGEgd2VhcG9uIGRhbWFnZSBib251cyBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5jb3N0UmVkdWN0aW9ufSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIFJlZHVjZXMgdGhlIGF0dHJpYnV0ZSBjb3N0IG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnYW1vdW50JyB9fSAvPlxyXG4gICAgICAgIDxTZWxlY3RcclxuICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3Blcl9sZXZlbCcgfX0+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZmFsc2VcIiAvPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cInRydWVcIj5wZXIgbGV2ZWw8L09wdGlvbj5cclxuICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIHsjaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5hdHRyaWJ1dGVCb251c31cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ2F0dHJpYnV0ZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTVFwiPnRvIFNUPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJEWFwiPnRvIERYPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJJUVwiPnRvIElRPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJIVFwiPnRvIEhUPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIHsjaWYgWydTVCcsICdTUycsICdTTCddLmluY2x1ZGVzKGZlYXR1cmUuYXR0cmlidXRlKX1cclxuICAgICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdhdHRyaWJ1dGUnIH19PlxyXG4gICAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTVFwiIC8+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkxTXCI+Zm9yIGxpZnRpbmcgb25seTwvT3B0aW9uPlxyXG4gICAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTU1wiPmZvciBzdHJpa2luZyBvbmx5PC9PcHRpb24+XHJcbiAgICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgey9pZn1cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgezplbHNlIGlmIGZlYXR1cmUudHlwZSA9PT0gRmVhdHVyZVR5cGUuc2tpbGxCb251c31cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdCBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24+dG8gc2tpbGxzIHdob3NlIG5hbWU8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBkZWZhdWx0VmFsdWU9XCJpc1wiXHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnbmFtZV9jb21wYXJlX3R5cGUnIH19PlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNfYW55dGhpbmdcIj5pcyBhbnl0aGluZzwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNcIj5pczwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNfbm90XCI+aXMgbm90PC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJjb250YWluc1wiPmNvbnRhaW5zPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9jb250YWluXCI+ZG9lcyBub3QgY29udGFpbjwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwic3RhcnRzX3dpdGhcIj5zdGFydHMgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3Rfc3RhcnRfd2l0aFwiPmRvZXMgbm90IHN0YXJ0IHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImVuZHNfd2l0aFwiPmVuZHMgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3RfZW5kX3dpdGhcIj5kb2VzIG5vdCBlbmQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICduYW1lJyB9fSAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBkZWZhdWx0VmFsdWU9XCJpc1wiXHJcbiAgICAgICAgICAgIG9wdGlvblByZWZhY2U9XCJhbmQgc3BlY2lhbGl6YXRpb25cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3NwZWNpYWxpemF0aW9uX2NvbXBhcmVfdHlwZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19hbnl0aGluZ1wiPmlzIGFueXRoaW5nPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc1wiPmlzPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19ub3RcIj5pcyBub3Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImNvbnRhaW5zXCI+Y29udGFpbnM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2NvbnRhaW5cIj5kb2VzIG5vdCBjb250YWluPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJzdGFydHNfd2l0aFwiPnN0YXJ0cyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9zdGFydF93aXRoXCI+ZG9lcyBub3Qgc3RhcnQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZW5kc193aXRoXCI+ZW5kcyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9lbmRfd2l0aFwiPmRvZXMgbm90IGVuZCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3NwZWNpYWxpemF0aW9uJyB9fSAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB7OmVsc2UgaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5kYW1hZ2VSZXNpc3RhbmNlQm9udXN9ey9pZn1cclxuICAgIDwvZGl2PlxyXG4gIHsvZWFjaH1cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxjQUFjLGNBQUMsQ0FBQyxBQUNkLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMsQUFDRCw0QkFBYyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDcEMsT0FBTyxDQUFFLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQUFDMUIsQ0FBQyxBQUNELG1CQUFLLEtBQUssUUFBUSxDQUFDLEFBQUMsQ0FBQyxBQUNuQixXQUFXLENBQUUsSUFBSSxBQUNuQixDQUFDLEFBQ0QsUUFBUSxjQUFDLENBQUMsQUFDUixjQUFjLENBQUUsSUFBSSxDQUNwQixRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDLEFBQ0QsZUFBZSxjQUFDLENBQUMsQUFDZixRQUFRLENBQUUsUUFBUSxDQUNsQixHQUFHLENBQUUsSUFBSSxDQUNULEtBQUssQ0FBRSxJQUFJLEFBQ2IsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/editors/panels/Features.svelte","webpack://src/svelte/editors/panels/Features.svelte.css"],"names":[],"mappings":"AAUE,6BAAgB,iBACI,CACnB,0CACqC,uBACZ,CACzB,kCACoB,gBACF,CAClB,uBACS,mBACY,CACpB,iBAAkB,CACnB,8BACgB,iBACG,CAClB,QAAS,CACT,UAAW;ACzBf,ihRAAihR","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { Select, Option, Input } from \"../../form/form\";\r\n  import { FeatureType } from \"g4elogic\";\r\n  import { features } from \"process\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n</script>\r\n\r\n<style>\r\n  .features-list {\r\n    position: relative;\r\n  }\r\n  .features-list :global(.GURPS-label) {\r\n    padding: 2px 5px 2px 5px;\r\n  }\r\n  .flex:not(.topmost) {\r\n    margin-left: 45px;\r\n  }\r\n  .feature {\r\n    padding-bottom: 20px;\r\n    position: relative;\r\n  }\r\n  .list-interface {\r\n    position: absolute;\r\n    top: 15px;\r\n    right: 15px;\r\n  }\r\n</style>\r\n\r\n<div class=\"features-list\">\r\n  {#if $entity.getFeatures().length === 0}\r\n    <span\r\n      class=\"fas fa-plus-square list-interface\"\r\n      on:click={() => $entity.addFeature()} />\r\n  {/if}\r\n  {#each $entity.getFeatures() as feature, i (feature._id)}\r\n    <div class=\"feature\">\r\n      <div class=\"list-interface\">\r\n        <span\r\n          class=\"fas fa-minus-square\"\r\n          on:click={() => $entity.removeByPath('data.features', feature._id)} />\r\n        <span\r\n          class=\"fas fa-plus-square\"\r\n          on:click={() => $entity.addFeature()} />\r\n      </div>\r\n      <div class=\"flex topmost\">\r\n        <Select path=\"data.features\" array={{ index: i, property: 'type' }}>\r\n          <Option value={FeatureType.attributeBonus}>\r\n            Gives an attribute bonus of\r\n          </Option>\r\n          <Option value={FeatureType.damageResistanceBonus} disabled={true}>\r\n            Gives a DR bonus of\r\n          </Option>\r\n          <Option value={FeatureType.reactionBonus} disabled={true}>\r\n            Gives a reaction modifier of\r\n          </Option>\r\n          <Option value={FeatureType.skillBonus}>\r\n            Gives a skill level bonus of\r\n          </Option>\r\n          <Option disabled={true}>Gives a skill point bonus of</Option>\r\n          <Option value={FeatureType.SpellBonus} disabled={true}>\r\n            Gives spell level bonus of\r\n          </Option>\r\n          <Option disabled={true}>Gives a spell point bonus of</Option>\r\n          <Option value={FeatureType.weaponDamageBonus} disabled={true}>\r\n            Gives a weapon damage bonus of\r\n          </Option>\r\n          <Option value={FeatureType.costReduction} disabled={true}>\r\n            Reduces the attribute cost of\r\n          </Option>\r\n        </Select>\r\n        <Input\r\n          type=\"number\"\r\n          path=\"data.features\"\r\n          array={{ index: i, property: 'amount' }} />\r\n        <Select\r\n          path=\"data.features\"\r\n          array={{ index: i, property: 'per_level' }}>\r\n          <Option value=\"false\" />\r\n          <Option value=\"true\">per level</Option>\r\n        </Select>\r\n      </div>\r\n      {#if feature.type === FeatureType.attributeBonus}\r\n        <div class=\"flex\">\r\n          <Select\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'attribute' }}>\r\n            <Option value=\"ST\">to ST</Option>\r\n            <Option value=\"DX\">to DX</Option>\r\n            <Option value=\"IQ\">to IQ</Option>\r\n            <Option value=\"HT\">to HT</Option>\r\n          </Select>\r\n          {#if ['ST', 'SS', 'SL'].includes(feature.attribute)}\r\n            <Select\r\n              path=\"data.features\"\r\n              array={{ index: i, property: 'attribute' }}>\r\n              <Option value=\"ST\" />\r\n              <Option value=\"LS\">for lifting only</Option>\r\n              <Option value=\"SS\">for striking only</Option>\r\n            </Select>\r\n          {/if}\r\n        </div>\r\n      {:else if feature.type === FeatureType.skillBonus}\r\n        <div class=\"flex\">\r\n          <Select disabled={true}>\r\n            <Option>to skills whose name</Option>\r\n          </Select>\r\n          <Select\r\n            defaultValue=\"is\"\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'name_compare_type' }}>\r\n            <Option value=\"is_anything\">is anything</Option>\r\n            <Option value=\"is\">is</Option>\r\n            <Option value=\"is_not\">is not</Option>\r\n            <Option value=\"contains\">contains</Option>\r\n            <Option value=\"does_not_contain\">does not contain</Option>\r\n            <Option value=\"starts_with\">starts with</Option>\r\n            <Option value=\"does_not_start_with\">does not start with</Option>\r\n            <Option value=\"ends_with\">ends with</Option>\r\n            <Option value=\"does_not_end_with\">does not end with</Option>\r\n          </Select>\r\n          <Input path=\"data.features\" array={{ index: i, property: 'name' }} />\r\n        </div>\r\n\r\n        <div class=\"flex\">\r\n          <Select\r\n            defaultValue=\"is\"\r\n            optionPreface=\"and specialization\"\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'specialization_compare_type' }}>\r\n            <Option value=\"is_anything\">is anything</Option>\r\n            <Option value=\"is\">is</Option>\r\n            <Option value=\"is_not\">is not</Option>\r\n            <Option value=\"contains\">contains</Option>\r\n            <Option value=\"does_not_contain\">does not contain</Option>\r\n            <Option value=\"starts_with\">starts with</Option>\r\n            <Option value=\"does_not_start_with\">does not start with</Option>\r\n            <Option value=\"ends_with\">ends with</Option>\r\n            <Option value=\"does_not_end_with\">does not end with</Option>\r\n          </Select>\r\n          <Input\r\n            path=\"data.features\"\r\n            array={{ index: i, property: 'specialization' }} />\r\n        </div>\r\n      {:else if feature.type === FeatureType.damageResistanceBonus}{/if}\r\n    </div>\r\n  {/each}\r\n</div>\r\n",".features-list.svelte-p102j8{position:relative}.features-list.svelte-p102j8 .GURPS-label{padding:2px 5px 2px 5px}.flex.svelte-p102j8:not(.topmost){margin-left:45px}.feature.svelte-p102j8{padding-bottom:20px;position:relative}.list-interface.svelte-p102j8{position:absolute;top:15px;right:15px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmVhdHVyZXMuc3ZlbHRlIiwic291cmNlcyI6WyJGZWF0dXJlcy5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IFNlbGVjdCwgT3B0aW9uLCBJbnB1dCB9IGZyb20gXCIuLi8uLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBGZWF0dXJlVHlwZSB9IGZyb20gXCJnNGVsb2dpY1wiO1xyXG4gIGltcG9ydCB7IGZlYXR1cmVzIH0gZnJvbSBcInByb2Nlc3NcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mZWF0dXJlcy1saXN0IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgLmZlYXR1cmVzLWxpc3QgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDJweCA1cHggMnB4IDVweDtcclxuICB9XHJcbiAgLmZsZXg6bm90KC50b3Btb3N0KSB7XHJcbiAgICBtYXJnaW4tbGVmdDogNDVweDtcclxuICB9XHJcbiAgLmZlYXR1cmUge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG4gIC5saXN0LWludGVyZmFjZSB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDE1cHg7XHJcbiAgICByaWdodDogMTVweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwiZmVhdHVyZXMtbGlzdFwiPlxyXG4gIHsjaWYgJGVudGl0eS5nZXRGZWF0dXJlcygpLmxlbmd0aCA9PT0gMH1cclxuICAgIDxzcGFuXHJcbiAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlIGxpc3QtaW50ZXJmYWNlXCJcclxuICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gIHsvaWZ9XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0RmVhdHVyZXMoKSBhcyBmZWF0dXJlLCBpIChmZWF0dXJlLl9pZCl9XHJcbiAgICA8ZGl2IGNsYXNzPVwiZmVhdHVyZVwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwibGlzdC1pbnRlcmZhY2VcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtbWludXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJlbW92ZUJ5UGF0aCgnZGF0YS5mZWF0dXJlcycsIGZlYXR1cmUuX2lkKX0gLz5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M9XCJmYXMgZmEtcGx1cy1zcXVhcmVcIlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkuYWRkRmVhdHVyZSgpfSAvPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdiBjbGFzcz1cImZsZXggdG9wbW9zdFwiPlxyXG4gICAgICAgIDxTZWxlY3QgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICd0eXBlJyB9fT5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmF0dHJpYnV0ZUJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYW4gYXR0cmlidXRlIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLmRhbWFnZVJlc2lzdGFuY2VCb251c30gZGlzYWJsZWQ9e3RydWV9PlxyXG4gICAgICAgICAgICBHaXZlcyBhIERSIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLnJlYWN0aW9uQm9udXN9IGRpc2FibGVkPXt0cnVlfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSByZWFjdGlvbiBtb2RpZmllciBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5za2lsbEJvbnVzfT5cclxuICAgICAgICAgICAgR2l2ZXMgYSBza2lsbCBsZXZlbCBib251cyBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIGRpc2FibGVkPXt0cnVlfT5HaXZlcyBhIHNraWxsIHBvaW50IGJvbnVzIG9mPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5TcGVsbEJvbnVzfSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIEdpdmVzIHNwZWxsIGxldmVsIGJvbnVzIG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gZGlzYWJsZWQ9e3RydWV9PkdpdmVzIGEgc3BlbGwgcG9pbnQgYm9udXMgb2Y8L09wdGlvbj5cclxuICAgICAgICAgIDxPcHRpb24gdmFsdWU9e0ZlYXR1cmVUeXBlLndlYXBvbkRhbWFnZUJvbnVzfSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIEdpdmVzIGEgd2VhcG9uIGRhbWFnZSBib251cyBvZlxyXG4gICAgICAgICAgPC9PcHRpb24+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPXtGZWF0dXJlVHlwZS5jb3N0UmVkdWN0aW9ufSBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIFJlZHVjZXMgdGhlIGF0dHJpYnV0ZSBjb3N0IG9mXHJcbiAgICAgICAgICA8L09wdGlvbj5cclxuICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICA8SW5wdXRcclxuICAgICAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICAgICAgcGF0aD1cImRhdGEuZmVhdHVyZXNcIlxyXG4gICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnYW1vdW50JyB9fSAvPlxyXG4gICAgICAgIDxTZWxlY3RcclxuICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3Blcl9sZXZlbCcgfX0+XHJcbiAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZmFsc2VcIiAvPlxyXG4gICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cInRydWVcIj5wZXIgbGV2ZWw8L09wdGlvbj5cclxuICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIHsjaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5hdHRyaWJ1dGVCb251c31cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ2F0dHJpYnV0ZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTVFwiPnRvIFNUPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJEWFwiPnRvIERYPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJJUVwiPnRvIElRPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJIVFwiPnRvIEhUPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIHsjaWYgWydTVCcsICdTUycsICdTTCddLmluY2x1ZGVzKGZlYXR1cmUuYXR0cmlidXRlKX1cclxuICAgICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdhdHRyaWJ1dGUnIH19PlxyXG4gICAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTVFwiIC8+XHJcbiAgICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cIkxTXCI+Zm9yIGxpZnRpbmcgb25seTwvT3B0aW9uPlxyXG4gICAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJTU1wiPmZvciBzdHJpa2luZyBvbmx5PC9PcHRpb24+XHJcbiAgICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgey9pZn1cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgezplbHNlIGlmIGZlYXR1cmUudHlwZSA9PT0gRmVhdHVyZVR5cGUuc2tpbGxCb251c31cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdCBkaXNhYmxlZD17dHJ1ZX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24+dG8gc2tpbGxzIHdob3NlIG5hbWU8L09wdGlvbj5cclxuICAgICAgICAgIDwvU2VsZWN0PlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBkZWZhdWx0VmFsdWU9XCJpc1wiXHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmZlYXR1cmVzXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnbmFtZV9jb21wYXJlX3R5cGUnIH19PlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNfYW55dGhpbmdcIj5pcyBhbnl0aGluZzwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNcIj5pczwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiaXNfbm90XCI+aXMgbm90PC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJjb250YWluc1wiPmNvbnRhaW5zPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9jb250YWluXCI+ZG9lcyBub3QgY29udGFpbjwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwic3RhcnRzX3dpdGhcIj5zdGFydHMgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3Rfc3RhcnRfd2l0aFwiPmRvZXMgbm90IHN0YXJ0IHdpdGg8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImVuZHNfd2l0aFwiPmVuZHMgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZG9lc19ub3RfZW5kX3dpdGhcIj5kb2VzIG5vdCBlbmQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgPC9TZWxlY3Q+XHJcbiAgICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEuZmVhdHVyZXNcIiBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICduYW1lJyB9fSAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZmxleFwiPlxyXG4gICAgICAgICAgPFNlbGVjdFxyXG4gICAgICAgICAgICBkZWZhdWx0VmFsdWU9XCJpc1wiXHJcbiAgICAgICAgICAgIG9wdGlvblByZWZhY2U9XCJhbmQgc3BlY2lhbGl6YXRpb25cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3NwZWNpYWxpemF0aW9uX2NvbXBhcmVfdHlwZScgfX0+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19hbnl0aGluZ1wiPmlzIGFueXRoaW5nPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc1wiPmlzPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJpc19ub3RcIj5pcyBub3Q8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImNvbnRhaW5zXCI+Y29udGFpbnM8L09wdGlvbj5cclxuICAgICAgICAgICAgPE9wdGlvbiB2YWx1ZT1cImRvZXNfbm90X2NvbnRhaW5cIj5kb2VzIG5vdCBjb250YWluPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJzdGFydHNfd2l0aFwiPnN0YXJ0cyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9zdGFydF93aXRoXCI+ZG9lcyBub3Qgc3RhcnQgd2l0aDwvT3B0aW9uPlxyXG4gICAgICAgICAgICA8T3B0aW9uIHZhbHVlPVwiZW5kc193aXRoXCI+ZW5kcyB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICAgIDxPcHRpb24gdmFsdWU9XCJkb2VzX25vdF9lbmRfd2l0aFwiPmRvZXMgbm90IGVuZCB3aXRoPC9PcHRpb24+XHJcbiAgICAgICAgICA8L1NlbGVjdD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5mZWF0dXJlc1wiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3NwZWNpYWxpemF0aW9uJyB9fSAvPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICB7OmVsc2UgaWYgZmVhdHVyZS50eXBlID09PSBGZWF0dXJlVHlwZS5kYW1hZ2VSZXNpc3RhbmNlQm9udXN9ey9pZn1cclxuICAgIDwvZGl2PlxyXG4gIHsvZWFjaH1cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxjQUFjLGNBQUMsQ0FBQyxBQUNkLFFBQVEsQ0FBRSxRQUFRLEFBQ3BCLENBQUMsQUFDRCw0QkFBYyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDcEMsT0FBTyxDQUFFLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQUFDMUIsQ0FBQyxBQUNELG1CQUFLLEtBQUssUUFBUSxDQUFDLEFBQUMsQ0FBQyxBQUNuQixXQUFXLENBQUUsSUFBSSxBQUNuQixDQUFDLEFBQ0QsUUFBUSxjQUFDLENBQUMsQUFDUixjQUFjLENBQUUsSUFBSSxDQUNwQixRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDLEFBQ0QsZUFBZSxjQUFDLENBQUMsQUFDZixRQUFRLENBQUUsUUFBUSxDQUNsQixHQUFHLENBQUUsSUFBSSxDQUNULEtBQUssQ0FBRSxJQUFJLEFBQ2IsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3361,7 +3411,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/form/Input.svelte","webpack://src/svelte/form/Input.svelte.css"],"names":[],"mappings":"AAoEE,6BAAgB,oBACO,CACrB,UAAW;ACrEf,q4IAAq4I","sourcesContent":["<script>\r\n  import { createEventDispatcher, getContext, tick, onMount } from \"svelte\";\r\n  import { getValue, createTooltip } from \"../../helpers.ts\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let inputElem;\r\n\r\n  /**\r\n   *  Foundry specific inputs\r\n   **/\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let path = null;\r\n  export let array = false;\r\n  export let alsoUpdate = null;\r\n\r\n  export let min = null;\r\n  export let disabled = null;\r\n  export let name = null;\r\n  export let autocomplete = \"off\";\r\n  export let label = \"\";\r\n  export let step = null;\r\n  export let type = \"text\";\r\n  export let value = null;\r\n  export let defaultValue = type === \"text\" ? \"\" : type === \"number\" ? 0 : null;\r\n  export let basedOn = null;\r\n  export let mod = null;\r\n  export let tooltipText = null;\r\n  export let classList = \"\";\r\n  export let placeholder = null;\r\n\r\n  export let config = {\r\n    clickToEdit: false,\r\n  };\r\n\r\n  $: clickedToEdit = false;\r\n\r\n  async function update(e) {\r\n    let target = e.target;\r\n    let tValue = e.target.value;\r\n\r\n    if (type === \"number\") {\r\n      tValue = +target.value - basedOn - mod;\r\n      if (+target.value < min && min !== null) tValue = min - basedOn - mod;\r\n    }\r\n\r\n    let update = await game.gurps4e.customUpdate({\r\n      entity: $entity,\r\n      value: tValue,\r\n      path,\r\n      array,\r\n      alsoUpdate,\r\n    });\r\n\r\n    dispatch(\"update\", { entity: update, change: tValue });\r\n  }\r\n\r\n  $: {\r\n    value = getValue($entity, path, array);\r\n    if (value === undefined || value === null) {\r\n      value = defaultValue;\r\n    } else {\r\n      if (type === \"text\") value = value;\r\n      if (type === \"number\") value = value + basedOn + mod;\r\n    }\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .click-to-edit {\r\n    display: inline-block;\r\n    width: 100%;\r\n  }\r\n</style>\r\n\r\n{#if !config.clickToEdit || clickedToEdit}\r\n  <label\r\n    use:createTooltip={{ tooltipText }}\r\n    class:click-to-edit={config.clickToEdit}\r\n    for={name}\r\n    class=\"GURPS-label {classList}\"\r\n    data-label={Boolean(label)}>\r\n    {#if label}\r\n      <span>{label}</span>\r\n    {:else}\r\n      <slot name=\"label-text\" {value} />\r\n    {/if}\r\n    <input\r\n      on:dragstart|preventDefault|stopPropagation\r\n      {placeholder}\r\n      data-path={path}\r\n      class={classList}\r\n      draggable={true}\r\n      bind:this={inputElem}\r\n      {step}\r\n      autocomplete={autocomplete === 'off' ? 'off' : null}\r\n      {name}\r\n      {disabled}\r\n      {min}\r\n      {type}\r\n      on:blur={() => (clickedToEdit = false)}\r\n      on:change={update}\r\n      {value} />\r\n    <slot name=\"label-text-after\" {value} />\r\n  </label>\r\n{:else}\r\n  <div\r\n    class=\"click-to-edit\"\r\n    on:dblclick={async () => {\r\n      clickedToEdit = true;\r\n      await tick();\r\n      inputElem.focus();\r\n    }}>\r\n    {#if !value}&nbsp;{/if}\r\n    <slot name=\"no-edit\" {value} />\r\n  </div>\r\n{/if}\r\n",".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiAhdmFsdWV9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiB2YWx1ZSA9PT0gJyd9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/form/Input.svelte","webpack://src/svelte/form/Input.svelte.css"],"names":[],"mappings":"AAoEE,6BAAgB,oBACO,CACrB,UAAW;ACrEf,64IAA64I","sourcesContent":["<script>\r\n  import { createEventDispatcher, getContext, tick, onMount } from \"svelte\";\r\n  import { getValue, createTooltip } from \"../../helpers.ts\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let inputElem;\r\n\r\n  /**\r\n   *  Foundry specific inputs\r\n   **/\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let path = null;\r\n  export let array = false;\r\n  export let alsoUpdate = null;\r\n\r\n  export let min = null;\r\n  export let disabled = null;\r\n  export let name = null;\r\n  export let autocomplete = \"off\";\r\n  export let label = \"\";\r\n  export let step = null;\r\n  export let type = \"text\";\r\n  export let value = null;\r\n  export let defaultValue = type === \"text\" ? \"\" : type === \"number\" ? 0 : null;\r\n  export let basedOn = null;\r\n  export let mod = null;\r\n  export let tooltipText = null;\r\n  export let classList = \"\";\r\n  export let placeholder = null;\r\n\r\n  export let config = {\r\n    clickToEdit: false,\r\n  };\r\n\r\n  $: clickedToEdit = false;\r\n\r\n  async function update(e) {\r\n    let target = e.target;\r\n    let tValue = e.target.value;\r\n\r\n    if (type === \"number\") {\r\n      tValue = +target.value - basedOn - mod;\r\n      if (+target.value < min && min !== null) tValue = min - basedOn - mod;\r\n    }\r\n\r\n    let update = await game.gurps4e.customUpdate({\r\n      entity: $entity,\r\n      value: tValue,\r\n      path,\r\n      array,\r\n      alsoUpdate,\r\n    });\r\n\r\n    dispatch(\"update\", { entity: update, change: tValue });\r\n  }\r\n\r\n  $: {\r\n    value = getValue($entity, path, array);\r\n    if (value === undefined || value === null) {\r\n      value = defaultValue;\r\n    } else {\r\n      if (type === \"text\") value = value;\r\n      if (type === \"number\") value = value + basedOn + mod;\r\n    }\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .click-to-edit {\r\n    display: inline-block;\r\n    width: 100%;\r\n  }\r\n</style>\r\n\r\n{#if !config.clickToEdit || clickedToEdit}\r\n  <label\r\n    use:createTooltip={{ tooltipText }}\r\n    class:click-to-edit={config.clickToEdit}\r\n    for={name}\r\n    class=\"GURPS-label {classList}\"\r\n    data-label={Boolean(label)}>\r\n    {#if label}\r\n      <span>{label}</span>\r\n    {:else}\r\n      <slot name=\"label-text\" {value} />\r\n    {/if}\r\n    <input\r\n      on:dragstart|preventDefault|stopPropagation\r\n      {placeholder}\r\n      data-path={path}\r\n      class={classList}\r\n      draggable={true}\r\n      bind:this={inputElem}\r\n      {step}\r\n      autocomplete={autocomplete === 'off' ? 'off' : null}\r\n      {name}\r\n      {disabled}\r\n      {min}\r\n      {type}\r\n      on:blur={() => (clickedToEdit = false)}\r\n      on:change={update}\r\n      {value} />\r\n    <slot name=\"label-text-after\" {value} />\r\n  </label>\r\n{:else}\r\n  <div\r\n    class=\"click-to-edit\"\r\n    on:dblclick={async () => {\r\n      clickedToEdit = true;\r\n      await tick();\r\n      inputElem.focus();\r\n    }}>\r\n    {#if value === ''}&nbsp;{/if}\r\n    <slot name=\"no-edit\" {value} />\r\n  </div>\r\n{/if}\r\n",".click-to-edit.svelte-n64x65{display:inline-block;width:100%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5wdXQuc3ZlbHRlIiwic291cmNlcyI6WyJJbnB1dC5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIsIGdldENvbnRleHQsIHRpY2ssIG9uTW91bnQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgZ2V0VmFsdWUsIGNyZWF0ZVRvb2x0aXAgfSBmcm9tIFwiLi4vLi4vaGVscGVycy50c1wiO1xyXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XHJcblxyXG4gIGxldCBpbnB1dEVsZW07XHJcblxyXG4gIC8qKlxyXG4gICAqICBGb3VuZHJ5IHNwZWNpZmljIGlucHV0c1xyXG4gICAqKi9cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IHBhdGggPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgYXJyYXkgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IGFsc29VcGRhdGUgPSBudWxsO1xyXG5cclxuICBleHBvcnQgbGV0IG1pbiA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBkaXNhYmxlZCA9IG51bGw7XHJcbiAgZXhwb3J0IGxldCBuYW1lID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGF1dG9jb21wbGV0ZSA9IFwib2ZmXCI7XHJcbiAgZXhwb3J0IGxldCBsYWJlbCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBzdGVwID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHR5cGUgPSBcInRleHRcIjtcclxuICBleHBvcnQgbGV0IHZhbHVlID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlZmF1bHRWYWx1ZSA9IHR5cGUgPT09IFwidGV4dFwiID8gXCJcIiA6IHR5cGUgPT09IFwibnVtYmVyXCIgPyAwIDogbnVsbDtcclxuICBleHBvcnQgbGV0IGJhc2VkT24gPSBudWxsO1xyXG4gIGV4cG9ydCBsZXQgbW9kID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHRvb2x0aXBUZXh0ID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGNsYXNzTGlzdCA9IFwiXCI7XHJcbiAgZXhwb3J0IGxldCBwbGFjZWhvbGRlciA9IG51bGw7XHJcblxyXG4gIGV4cG9ydCBsZXQgY29uZmlnID0ge1xyXG4gICAgY2xpY2tUb0VkaXQ6IGZhbHNlLFxyXG4gIH07XHJcblxyXG4gICQ6IGNsaWNrZWRUb0VkaXQgPSBmYWxzZTtcclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gdXBkYXRlKGUpIHtcclxuICAgIGxldCB0YXJnZXQgPSBlLnRhcmdldDtcclxuICAgIGxldCB0VmFsdWUgPSBlLnRhcmdldC52YWx1ZTtcclxuXHJcbiAgICBpZiAodHlwZSA9PT0gXCJudW1iZXJcIikge1xyXG4gICAgICB0VmFsdWUgPSArdGFyZ2V0LnZhbHVlIC0gYmFzZWRPbiAtIG1vZDtcclxuICAgICAgaWYgKCt0YXJnZXQudmFsdWUgPCBtaW4gJiYgbWluICE9PSBudWxsKSB0VmFsdWUgPSBtaW4gLSBiYXNlZE9uIC0gbW9kO1xyXG4gICAgfVxyXG5cclxuICAgIGxldCB1cGRhdGUgPSBhd2FpdCBnYW1lLmd1cnBzNGUuY3VzdG9tVXBkYXRlKHtcclxuICAgICAgZW50aXR5OiAkZW50aXR5LFxyXG4gICAgICB2YWx1ZTogdFZhbHVlLFxyXG4gICAgICBwYXRoLFxyXG4gICAgICBhcnJheSxcclxuICAgICAgYWxzb1VwZGF0ZSxcclxuICAgIH0pO1xyXG5cclxuICAgIGRpc3BhdGNoKFwidXBkYXRlXCIsIHsgZW50aXR5OiB1cGRhdGUsIGNoYW5nZTogdFZhbHVlIH0pO1xyXG4gIH1cclxuXHJcbiAgJDoge1xyXG4gICAgdmFsdWUgPSBnZXRWYWx1ZSgkZW50aXR5LCBwYXRoLCBhcnJheSk7XHJcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCB8fCB2YWx1ZSA9PT0gbnVsbCkge1xyXG4gICAgICB2YWx1ZSA9IGRlZmF1bHRWYWx1ZTtcclxuICAgIH0gZWxzZSB7XHJcbiAgICAgIGlmICh0eXBlID09PSBcInRleHRcIikgdmFsdWUgPSB2YWx1ZTtcclxuICAgICAgaWYgKHR5cGUgPT09IFwibnVtYmVyXCIpIHZhbHVlID0gdmFsdWUgKyBiYXNlZE9uICsgbW9kO1xyXG4gICAgfVxyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmNsaWNrLXRvLWVkaXQge1xyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxueyNpZiAhY29uZmlnLmNsaWNrVG9FZGl0IHx8IGNsaWNrZWRUb0VkaXR9XHJcbiAgPGxhYmVsXHJcbiAgICB1c2U6Y3JlYXRlVG9vbHRpcD17eyB0b29sdGlwVGV4dCB9fVxyXG4gICAgY2xhc3M6Y2xpY2stdG8tZWRpdD17Y29uZmlnLmNsaWNrVG9FZGl0fVxyXG4gICAgZm9yPXtuYW1lfVxyXG4gICAgY2xhc3M9XCJHVVJQUy1sYWJlbCB7Y2xhc3NMaXN0fVwiXHJcbiAgICBkYXRhLWxhYmVsPXtCb29sZWFuKGxhYmVsKX0+XHJcbiAgICB7I2lmIGxhYmVsfVxyXG4gICAgICA8c3Bhbj57bGFiZWx9PC9zcGFuPlxyXG4gICAgezplbHNlfVxyXG4gICAgICA8c2xvdCBuYW1lPVwibGFiZWwtdGV4dFwiIHt2YWx1ZX0gLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8aW5wdXRcclxuICAgICAgb246ZHJhZ3N0YXJ0fHByZXZlbnREZWZhdWx0fHN0b3BQcm9wYWdhdGlvblxyXG4gICAgICB7cGxhY2Vob2xkZXJ9XHJcbiAgICAgIGRhdGEtcGF0aD17cGF0aH1cclxuICAgICAgY2xhc3M9e2NsYXNzTGlzdH1cclxuICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICBiaW5kOnRoaXM9e2lucHV0RWxlbX1cclxuICAgICAge3N0ZXB9XHJcbiAgICAgIGF1dG9jb21wbGV0ZT17YXV0b2NvbXBsZXRlID09PSAnb2ZmJyA/ICdvZmYnIDogbnVsbH1cclxuICAgICAge25hbWV9XHJcbiAgICAgIHtkaXNhYmxlZH1cclxuICAgICAge21pbn1cclxuICAgICAge3R5cGV9XHJcbiAgICAgIG9uOmJsdXI9eygpID0+IChjbGlja2VkVG9FZGl0ID0gZmFsc2UpfVxyXG4gICAgICBvbjpjaGFuZ2U9e3VwZGF0ZX1cclxuICAgICAge3ZhbHVlfSAvPlxyXG4gICAgPHNsb3QgbmFtZT1cImxhYmVsLXRleHQtYWZ0ZXJcIiB7dmFsdWV9IC8+XHJcbiAgPC9sYWJlbD5cclxuezplbHNlfVxyXG4gIDxkaXZcclxuICAgIGNsYXNzPVwiY2xpY2stdG8tZWRpdFwiXHJcbiAgICBvbjpkYmxjbGljaz17YXN5bmMgKCkgPT4ge1xyXG4gICAgICBjbGlja2VkVG9FZGl0ID0gdHJ1ZTtcclxuICAgICAgYXdhaXQgdGljaygpO1xyXG4gICAgICBpbnB1dEVsZW0uZm9jdXMoKTtcclxuICAgIH19PlxyXG4gICAgeyNpZiB2YWx1ZSA9PT0gJyd9Jm5ic3A7ey9pZn1cclxuICAgIDxzbG90IG5hbWU9XCJuby1lZGl0XCIge3ZhbHVlfSAvPlxyXG4gIDwvZGl2PlxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0VFLGNBQWMsY0FBQyxDQUFDLEFBQ2QsT0FBTyxDQUFFLFlBQVksQ0FDckIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3449,7 +3499,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17aXNIb3ZlcmVkfSAvPlxyXG4gIDx0ZCBjbGFzcz1cInNob3ctd2hlbi1sYWJlbFwiPlxyXG4gICAgeyNpZiBjb25maWcuZGVsZXRlQnV0dG9ufVxyXG4gICAgICB7I2lmIGNvbnRhaW5lcn1cclxuICAgICAgICA8IS0tIDxpIGNsYXNzPVwiZmFzIGZhLWJveFwiIC8+IC0tPlxyXG4gICAgICB7L2lmfVxyXG4gICAgICA8aVxyXG4gICAgICAgIGNsYXNzOm5vLXNob3c9eyFpc0hvdmVyZWR9XHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICBkaXNwYXRjaCgnZGVsZXRlJywgeyBlbnRpdHk6IGdldEl0ZW0oJGVudGl0eSwgaWQpIH0pO1xyXG4gICAgICAgIH19IC8+XHJcbiAgICB7L2lmfVxyXG4gIDwvdGQ+XHJcbjwvdHI+XHJcblxyXG57I2lmICFoaWRlTm90ZXN9XHJcbiAgPHRkIGNsYXNzPVwibm90ZXNcIiB7Y29sc3Bhbn0+XHJcbiAgICA8c2xvdCBuYW1lPVwibm90ZXNcIiB7R1VSUFN9IHtpZH0gLz5cclxuICA8L3RkPlxyXG57L2lmfVxyXG5cclxueyNpZiBjb250YWluZXIgJiYgaXRlbUlzT3BlbihpZCl9XHJcbiAgeyNlYWNoIGdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoY2hpbGRyZW4pIGFzIGNoaWxkLCBpIChjaGlsZC5mb3VuZHJ5SUQpfVxyXG4gICAgPHN2ZWx0ZTpzZWxmXHJcbiAgICAgIG9uOmRlbGV0ZVxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RkUsZ0JBQUUsTUFBTSxBQUFDLENBQUMsQUFDUixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxBQUN2QyxDQUFDLEFBQ0QsTUFBTSxjQUFDLENBQUMsQUFDTixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFDRCxVQUFVLGNBQUMsQ0FBQyxBQUNWLEtBQUssQ0FBRSxLQUFLLENBQ1osZ0JBQWdCLENBQUUsS0FBSyxBQUN6QixDQUFDLEFBT0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/list/Row.svelte","webpack://src/svelte/list/Row.svelte.css"],"names":[],"mappings":"AAuFE,uBAAU,oCAC6B,CACtC,qBACO,WACM,CACb,yBACW,WACE,CACZ,sBAAuB,CACxB,oBAOiB,uBACQ,CACxB,6BAA8B;ACxGlC,izRAAizR","sourcesContent":["<script>\r\n  import { ROWS } from \"./List.svelte\";\r\n  import { createContextMenu, indexSort } from \"../../helpers\";\r\n  import { get_current_component } from \"svelte/internal\";\r\n  import { slide, fade } from \"svelte/transition\";\r\n\r\n  import {\r\n    getContext,\r\n    setContext,\r\n    onDestroy,\r\n    onMount,\r\n    createEventDispatcher,\r\n    tick,\r\n  } from \"svelte\";\r\n\r\n  const dispatch = createEventDispatcher();\r\n  const { setFocused, hovered, focused, dragover, type } = getContext(ROWS);\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n\r\n  export let colspan;\r\n\r\n  export let container = null;\r\n  // export let i = null;\r\n  export let depth = 0;\r\n  export let id = null;\r\n\r\n  export let hideNotes = true;\r\n  export let disabled = false;\r\n\r\n  export let config = {};\r\n\r\n  const defaultConfig = {\r\n    draggable: false,\r\n    highlightHover: true,\r\n    deleteButton: true,\r\n    toggle: false,\r\n    focusable: true,\r\n  };\r\n\r\n  $: config = Object.assign({}, defaultConfig, config);\r\n\r\n  export let children = [];\r\n\r\n  const getItem = (entity) => {\r\n    return entity.getOwnedItem ? entity.getOwnedItem(id) || entity : entity;\r\n  };\r\n\r\n  $: itemIsOpen = (id) => {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (!ownedItem) return true;\r\n    return !ownedItem.getFlag(\"GURPS\", \"container_closed\");\r\n  };\r\n\r\n  $: isRowLabel = getItem($entity, id)\r\n    ? getItem($entity).getFlag(\"GURPS\", \"is_label\") || false\r\n    : false;\r\n\r\n  $: colors = {\r\n    textColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"text_color\") || \"\"\r\n      : \"\",\r\n    backgroundColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"background_color\") || \"\"\r\n      : \"\",\r\n  };\r\n\r\n  export let menuItems = getItem($entity, id)\r\n    ? getItem($entity, id).getMenuItems\r\n      ? getItem($entity, id).getMenuItems()\r\n      : () => []\r\n    : () => [];\r\n\r\n  export let selector = \"contextmenu\";\r\n\r\n  let isHovered = false;\r\n\r\n  $: GURPS = getItem($entity, id).getGURPSObject\r\n    ? getItem($entity, id).getGURPSObject()\r\n    : {};\r\n\r\n  let rowHTMLElement;\r\n  $: i = getItem($entity, id).getFlag(\"GURPS\", \"index\");\r\n</script>\r\n\r\n<style>\r\n  .hovered,\r\n  tr:hover {\r\n    background-color: rgba(0, 0, 0, 0.25);\r\n  }\r\n  .notes {\r\n    padding: 0px;\r\n  }\r\n  .container {\r\n    color: black;\r\n    background-color: white;\r\n  }\r\n  .focused {\r\n    background-color: #ff6400;\r\n  }\r\n  .dragover {\r\n    background-color: #ff6400;\r\n  }\r\n  tr > :global(td) {\r\n    padding: 3px 0px 3px 0px;\r\n    border-bottom: 1px solid black;\r\n  }\r\n</style>\r\n\r\n<tr\r\n  class:is-row-label={isRowLabel}\r\n  bind:this={rowHTMLElement}\r\n  style=\"background-color: {colors.backgroundColor}; color: {colors.textColor}\"\r\n  class:strikethrough={disabled}\r\n  data-container={container}\r\n  data-index={i}\r\n  data-entity-id={id}\r\n  data-listtype={type}\r\n  data-contextmenu={selector}\r\n  use:createContextMenu={{ menuItems, selector }}\r\n  class:container\r\n  on:mouseover={(e) => {\r\n    dispatch('mouseover');\r\n  }}\r\n  on:mouseenter={(e) => {\r\n    isHovered = true;\r\n    hovered.set(i);\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i);\r\n    }\r\n    dispatch('mouseenter');\r\n  }}\r\n  on:mousedown={(e) => {\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i, true, e.timestamp);\r\n    } else if (e.which == 1 && e.shiftKey && config) {\r\n      focused.set([i]);\r\n    }\r\n    dispatch('mousedown');\r\n  }}\r\n  on:click={(e) => {\r\n    dispatch('click');\r\n  }}\r\n  on:mouseout={(e) => {\r\n    dispatch('mouseout');\r\n  }}\r\n  on:mouseleave={(e) => {\r\n    isHovered = false;\r\n    dispatch('mouseleave');\r\n  }}\r\n  on:auxclick={(e) => {\r\n    if (e.button === 1) {\r\n      dispatch('middleclick');\r\n    }\r\n  }}\r\n  on:dblclick={(e) => {\r\n    dispatch('dblclick');\r\n  }}\r\n  on:drop={(e) => {\r\n    hovered.set(null);\r\n    dispatch('drop');\r\n  }}\r\n  on:dragstart={(e) => {\r\n    dispatch('dragstart');\r\n  }}\r\n  on:dragenter={(e) => {\r\n    dispatch('dragenter');\r\n  }}\r\n  on:dragleave={(e) => {\r\n    dispatch('dragleave');\r\n  }}\r\n  on:dragover={(e) => {\r\n    dragover.set(i);\r\n    dispatch('dragover');\r\n  }}\r\n  on:dragend={(e) => {\r\n    dragover.set(null);\r\n    dispatch('dragend');\r\n  }}>\r\n  <td\r\n    on:dragenter={(e) => (hideNotes = false)}\r\n    on:click={(e) => {\r\n      if (!config.toggle) return;\r\n      hideNotes = !hideNotes;\r\n    }}>\r\n    {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}\r\n  </td>\r\n  <slot\r\n    item={GURPS}\r\n    open={itemIsOpen(id)}\r\n    {depth}\r\n    {id}\r\n    ownedItem={getItem($entity, id)}\r\n    hovered={isHovered} />\r\n  <td class=\"show-when-label\">\r\n    {#if config.deleteButton}\r\n      {#if container}\r\n        <!-- <i class=\"fas fa-box\" /> -->\r\n      {/if}\r\n      <i\r\n        class:no-show={!isHovered}\r\n        class=\"fas fa-trash\"\r\n        on:click={() => {\r\n          dispatch('delete', { entity: getItem($entity, id) });\r\n        }} />\r\n    {/if}\r\n  </td>\r\n</tr>\r\n\r\n{#if !hideNotes}\r\n  <td class=\"notes\" {colspan}>\r\n    <slot name=\"notes\" {GURPS} {id} />\r\n  </td>\r\n{/if}\r\n\r\n{#if container && itemIsOpen(id)}\r\n  {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}\r\n    <svelte:self\r\n      on:delete\r\n      let:id\r\n      let:ownedItem\r\n      let:depth\r\n      let:open\r\n      let:item={child}\r\n      {entity}\r\n      id={child.foundryID}\r\n      i={i + 1}\r\n      {config}\r\n      {colspan}\r\n      container={child.canContainChildren}\r\n      children={Array.from(child.children)}\r\n      open={itemIsOpen(id)}>\r\n      <slot\r\n        open={itemIsOpen(id)}\r\n        item={child}\r\n        depth={depth + 1}\r\n        id={child.foundryID}\r\n        ownedItem={$entity.getOwnedItem(child.foundryID)} />\r\n    </svelte:self>\r\n  {/each}\r\n{/if}\r\n","tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdsZWF2ZScpO1xyXG4gIH19XHJcbiAgb246ZHJhZ292ZXI9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQoaSk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ292ZXInKTtcclxuICB9fVxyXG4gIG9uOmRyYWdlbmQ9eyhlKSA9PiB7XHJcbiAgICBkcmFnb3Zlci5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2VuZCcpO1xyXG4gIH19PlxyXG4gIDx0ZFxyXG4gICAgb246ZHJhZ2VudGVyPXsoZSkgPT4gKGhpZGVOb3RlcyA9IGZhbHNlKX1cclxuICAgIG9uOmNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICBpZiAoIWNvbmZpZy50b2dnbGUpIHJldHVybjtcclxuICAgICAgaGlkZU5vdGVzID0gIWhpZGVOb3RlcztcclxuICAgIH19PlxyXG4gICAgeyNpZiBjb25maWcudG9nZ2xlfXtoaWRlTm90ZXMgPyAnPicgOiAn4oioJ317L2lmfVxyXG4gIDwvdGQ+XHJcbiAgPHNsb3RcclxuICAgIGl0ZW09e0dVUlBTfVxyXG4gICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICB7ZGVwdGh9XHJcbiAgICB7aWR9XHJcbiAgICBvd25lZEl0ZW09e2dldEl0ZW0oJGVudGl0eSwgaWQpfVxyXG4gICAgaG92ZXJlZD17aXNIb3ZlcmVkfSAvPlxyXG4gIDx0ZCBjbGFzcz1cInNob3ctd2hlbi1sYWJlbFwiPlxyXG4gICAgeyNpZiBjb25maWcuZGVsZXRlQnV0dG9ufVxyXG4gICAgICB7I2lmIGNvbnRhaW5lcn1cclxuICAgICAgICA8IS0tIDxpIGNsYXNzPVwiZmFzIGZhLWJveFwiIC8+IC0tPlxyXG4gICAgICB7L2lmfVxyXG4gICAgICA8aVxyXG4gICAgICAgIGNsYXNzOm5vLXNob3c9eyFpc0hvdmVyZWR9XHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtdHJhc2hcIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICBkaXNwYXRjaCgnZGVsZXRlJywgeyBlbnRpdHk6IGdldEl0ZW0oJGVudGl0eSwgaWQpIH0pO1xyXG4gICAgICAgIH19IC8+XHJcbiAgICB7L2lmfVxyXG4gIDwvdGQ+XHJcbjwvdHI+XHJcblxyXG57I2lmICFoaWRlTm90ZXN9XHJcbiAgPHRkIGNsYXNzPVwibm90ZXNcIiB7Y29sc3Bhbn0+XHJcbiAgICA8c2xvdCBuYW1lPVwibm90ZXNcIiB7R1VSUFN9IHtpZH0gLz5cclxuICA8L3RkPlxyXG57L2lmfVxyXG5cclxueyNpZiBjb250YWluZXIgJiYgaXRlbUlzT3BlbihpZCl9XHJcbiAgeyNlYWNoIGdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoY2hpbGRyZW4pIGFzIGNoaWxkLCBpIChjaGlsZC5mb3VuZHJ5SUQpfVxyXG4gICAgPHN2ZWx0ZTpzZWxmXHJcbiAgICAgIG9uOmRlbGV0ZVxyXG4gICAgICBsZXQ6aWRcclxuICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICBsZXQ6ZGVwdGhcclxuICAgICAgbGV0Om9wZW5cclxuICAgICAgbGV0Oml0ZW09e2NoaWxkfVxyXG4gICAgICB7ZW50aXR5fVxyXG4gICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICBpPXtpICsgMX1cclxuICAgICAge2NvbmZpZ31cclxuICAgICAge2NvbHNwYW59XHJcbiAgICAgIGNvbnRhaW5lcj17Y2hpbGQuY2FuQ29udGFpbkNoaWxkcmVufVxyXG4gICAgICBjaGlsZHJlbj17QXJyYXkuZnJvbShjaGlsZC5jaGlsZHJlbil9XHJcbiAgICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfT5cclxuICAgICAgPHNsb3RcclxuICAgICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX1cclxuICAgICAgICBpdGVtPXtjaGlsZH1cclxuICAgICAgICBkZXB0aD17ZGVwdGggKyAxfVxyXG4gICAgICAgIGlkPXtjaGlsZC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgb3duZWRJdGVtPXskZW50aXR5LmdldE93bmVkSXRlbShjaGlsZC5mb3VuZHJ5SUQpfSAvPlxyXG4gICAgPC9zdmVsdGU6c2VsZj5cclxuICB7L2VhY2h9XHJcbnsvaWZ9XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1RkUsZ0JBQUUsTUFBTSxBQUFDLENBQUMsQUFDUixnQkFBZ0IsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxBQUN2QyxDQUFDLEFBQ0QsTUFBTSxjQUFDLENBQUMsQUFDTixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFDRCxVQUFVLGNBQUMsQ0FBQyxBQUNWLEtBQUssQ0FBRSxLQUFLLENBQ1osZ0JBQWdCLENBQUUsS0FBSyxBQUN6QixDQUFDLEFBT0QsZ0JBQUUsQ0FBVyxFQUFFLEFBQUUsQ0FBQyxBQUNoQixPQUFPLENBQUUsR0FBRyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUN4QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ2hDLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gZmFsc2U7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2xlYXZlJyk7XHJcbiAgfX1cclxuICBvbjpkcmFnb3Zlcj17KGUpID0+IHtcclxuICAgIGlzSG92ZXJlZCA9IGZhbHNlO1xyXG4gICAgZHJhZ292ZXIuc2V0KGkpO1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdvdmVyJyk7XHJcbiAgfX1cclxuICBvbjpkcmFnZW5kPXsoZSkgPT4ge1xyXG4gICAgZHJhZ292ZXIuc2V0KG51bGwpO1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbmQnKTtcclxuICB9fT5cclxuICA8dGRcclxuICAgIG9uOmRyYWdlbnRlcj17KGUpID0+IChoaWRlTm90ZXMgPSBmYWxzZSl9XHJcbiAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgaWYgKCFjb25maWcudG9nZ2xlKSByZXR1cm47XHJcbiAgICAgIGhpZGVOb3RlcyA9ICFoaWRlTm90ZXM7XHJcbiAgICB9fT5cclxuICAgIHsjaWYgY29uZmlnLnRvZ2dsZX17aGlkZU5vdGVzID8gJz4nIDogJ+KIqCd9ey9pZn1cclxuICA8L3RkPlxyXG4gIDxzbG90XHJcbiAgICBpdGVtPXtHVVJQU31cclxuICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfVxyXG4gICAge2RlcHRofVxyXG4gICAge2lkfVxyXG4gICAgb3duZWRJdGVtPXtnZXRJdGVtKCRlbnRpdHksIGlkKX1cclxuICAgIGhvdmVyZWQ9e2lzSG92ZXJlZH0gLz5cclxuICA8dGQgY2xhc3M9XCJzaG93LXdoZW4tbGFiZWxcIj5cclxuICAgIHsjaWYgY29uZmlnLmRlbGV0ZUJ1dHRvbn1cclxuICAgICAgeyNpZiBjb250YWluZXJ9XHJcbiAgICAgICAgPCEtLSA8aSBjbGFzcz1cImZhcyBmYS1ib3hcIiAvPiAtLT5cclxuICAgICAgey9pZn1cclxuICAgICAgPGlcclxuICAgICAgICBjbGFzczpuby1zaG93PXshaXNIb3ZlcmVkfVxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4ge1xyXG4gICAgICAgICAgZGlzcGF0Y2goJ2RlbGV0ZScsIHsgZW50aXR5OiBnZXRJdGVtKCRlbnRpdHksIGlkKSB9KTtcclxuICAgICAgICB9fSAvPlxyXG4gICAgey9pZn1cclxuICA8L3RkPlxyXG48L3RyPlxyXG5cclxueyNpZiAhaGlkZU5vdGVzfVxyXG4gIDx0ZCBjbGFzcz1cIm5vdGVzXCIge2NvbHNwYW59PlxyXG4gICAgPHNsb3QgbmFtZT1cIm5vdGVzXCIge0dVUlBTfSB7aWR9IC8+XHJcbiAgPC90ZD5cclxuey9pZn1cclxuXHJcbnsjaWYgY29udGFpbmVyICYmIGl0ZW1Jc09wZW4oaWQpfVxyXG4gIHsjZWFjaCBnYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGNoaWxkcmVuKSBhcyBjaGlsZCwgaSAoY2hpbGQuZm91bmRyeUlEKX1cclxuICAgIDxzdmVsdGU6c2VsZlxyXG4gICAgICBvbjpkZWxldGVcclxuICAgICAgbGV0OmlkXHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmRlcHRoXHJcbiAgICAgIGxldDpvcGVuXHJcbiAgICAgIGxldDppdGVtPXtjaGlsZH1cclxuICAgICAge2VudGl0eX1cclxuICAgICAgaWQ9e2NoaWxkLmZvdW5kcnlJRH1cclxuICAgICAgaT17aSArIDF9XHJcbiAgICAgIHtjb25maWd9XHJcbiAgICAgIHtjb2xzcGFufVxyXG4gICAgICBjb250YWluZXI9e2NoaWxkLmNhbkNvbnRhaW5DaGlsZHJlbn1cclxuICAgICAgY2hpbGRyZW49e0FycmF5LmZyb20oY2hpbGQuY2hpbGRyZW4pfVxyXG4gICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX0+XHJcbiAgICAgIDxzbG90XHJcbiAgICAgICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICAgICAgaXRlbT17Y2hpbGR9XHJcbiAgICAgICAgZGVwdGg9e2RlcHRoICsgMX1cclxuICAgICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICAgIG93bmVkSXRlbT17JGVudGl0eS5nZXRPd25lZEl0ZW0oY2hpbGQuZm91bmRyeUlEKX0gLz5cclxuICAgIDwvc3ZlbHRlOnNlbGY+XHJcbiAgey9lYWNofVxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUZFLGdCQUFFLE1BQU0sQUFBQyxDQUFDLEFBQ1IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQUFDdkMsQ0FBQyxBQUNELE1BQU0sY0FBQyxDQUFDLEFBQ04sT0FBTyxDQUFFLEdBQUcsQUFDZCxDQUFDLEFBQ0QsVUFBVSxjQUFDLENBQUMsQUFDVixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQUFDekIsQ0FBQyxBQU9ELGdCQUFFLENBQVcsRUFBRSxBQUFFLENBQUMsQUFDaEIsT0FBTyxDQUFFLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDeEIsYUFBYSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxBQUNoQyxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/list/Row.svelte","webpack://src/svelte/list/Row.svelte.css"],"names":[],"mappings":"AAuFE,uBAAU,oCAC6B,CACtC,qBACO,WACM,CACb,yBACW,WACE,CACZ,sBAAuB,CACxB,oBAOiB,uBACQ,CACxB,6BAA8B;ACxGlC,q3RAAq3R","sourcesContent":["<script>\r\n  import { ROWS } from \"./List.svelte\";\r\n  import { createContextMenu, indexSort } from \"../../helpers\";\r\n  import { get_current_component } from \"svelte/internal\";\r\n  import { slide, fade } from \"svelte/transition\";\r\n\r\n  import {\r\n    getContext,\r\n    setContext,\r\n    onDestroy,\r\n    onMount,\r\n    createEventDispatcher,\r\n    tick,\r\n  } from \"svelte\";\r\n\r\n  const dispatch = createEventDispatcher();\r\n  const { setFocused, hovered, focused, dragover, type } = getContext(ROWS);\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n\r\n  export let colspan;\r\n\r\n  export let container = null;\r\n  // export let i = null;\r\n  export let depth = 0;\r\n  export let id = null;\r\n\r\n  export let hideNotes = true;\r\n  export let disabled = false;\r\n\r\n  export let config = {};\r\n\r\n  const defaultConfig = {\r\n    draggable: false,\r\n    highlightHover: true,\r\n    deleteButton: true,\r\n    toggle: false,\r\n    focusable: true,\r\n  };\r\n\r\n  $: config = Object.assign({}, defaultConfig, config);\r\n\r\n  export let children = [];\r\n\r\n  const getItem = (entity) => {\r\n    return entity.getOwnedItem ? entity.getOwnedItem(id) || entity : entity;\r\n  };\r\n\r\n  $: itemIsOpen = (id) => {\r\n    let ownedItem = $entity.getOwnedItem(id);\r\n    if (!ownedItem) return true;\r\n    return !ownedItem.getFlag(\"GURPS\", \"container_closed\");\r\n  };\r\n\r\n  $: isRowLabel = getItem($entity, id)\r\n    ? getItem($entity).getFlag(\"GURPS\", \"is_label\") || false\r\n    : false;\r\n\r\n  $: colors = {\r\n    textColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"text_color\") || \"\"\r\n      : \"\",\r\n    backgroundColor: getItem($entity, id)\r\n      ? getItem($entity, id).getFlag(\"GURPS\", \"background_color\") || \"\"\r\n      : \"\",\r\n  };\r\n\r\n  export let menuItems = getItem($entity, id)\r\n    ? getItem($entity, id).getMenuItems\r\n      ? getItem($entity, id).getMenuItems()\r\n      : () => []\r\n    : () => [];\r\n\r\n  export let selector = \"contextmenu\";\r\n\r\n  let isHovered = false;\r\n\r\n  $: GURPS = getItem($entity, id).getGURPSObject\r\n    ? getItem($entity, id).getGURPSObject()\r\n    : {};\r\n\r\n  let rowHTMLElement;\r\n  $: i = getItem($entity, id).getFlag(\"GURPS\", \"index\");\r\n</script>\r\n\r\n<style>\r\n  .hovered,\r\n  tr:hover {\r\n    background-color: rgba(0, 0, 0, 0.25);\r\n  }\r\n  .notes {\r\n    padding: 0px;\r\n  }\r\n  .container {\r\n    color: black;\r\n    background-color: white;\r\n  }\r\n  .focused {\r\n    background-color: #ff6400;\r\n  }\r\n  .dragover {\r\n    background-color: #ff6400;\r\n  }\r\n  tr > :global(td) {\r\n    padding: 3px 0px 3px 0px;\r\n    border-bottom: 1px solid black;\r\n  }\r\n</style>\r\n\r\n<tr\r\n  class:is-row-label={isRowLabel}\r\n  bind:this={rowHTMLElement}\r\n  style=\"background-color: {colors.backgroundColor}; color: {colors.textColor}\"\r\n  class:strikethrough={disabled}\r\n  data-container={container}\r\n  data-index={i}\r\n  data-entity-id={id}\r\n  data-listtype={type}\r\n  data-contextmenu={selector}\r\n  use:createContextMenu={{ menuItems, selector }}\r\n  class:container\r\n  on:mouseover={(e) => {\r\n    dispatch('mouseover');\r\n  }}\r\n  on:mouseenter={(e) => {\r\n    isHovered = true;\r\n    hovered.set(i);\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i);\r\n    }\r\n    dispatch('mouseenter');\r\n  }}\r\n  on:mousedown={(e) => {\r\n    if (e.which == 1 && e.shiftKey && config.focusable) {\r\n      setFocused(i, true, e.timestamp);\r\n    } else if (e.which == 1 && e.shiftKey && config) {\r\n      focused.set([i]);\r\n    }\r\n    dispatch('mousedown');\r\n  }}\r\n  on:click={(e) => {\r\n    dispatch('click');\r\n  }}\r\n  on:mouseout={(e) => {\r\n    dispatch('mouseout');\r\n  }}\r\n  on:mouseleave={(e) => {\r\n    isHovered = false;\r\n    dispatch('mouseleave');\r\n  }}\r\n  on:auxclick={(e) => {\r\n    if (e.button === 1) {\r\n      dispatch('middleclick');\r\n    }\r\n  }}\r\n  on:dblclick={(e) => {\r\n    dispatch('dblclick');\r\n  }}\r\n  on:drop={(e) => {\r\n    hovered.set(null);\r\n    dispatch('drop');\r\n  }}\r\n  on:dragstart={(e) => {\r\n    dispatch('dragstart');\r\n  }}\r\n  on:dragenter={(e) => {\r\n    dispatch('dragenter');\r\n  }}\r\n  on:dragleave={(e) => {\r\n    isHovered = false;\r\n    dispatch('dragleave');\r\n  }}\r\n  on:dragover={(e) => {\r\n    isHovered = false;\r\n    dragover.set(i);\r\n    dispatch('dragover');\r\n  }}\r\n  on:dragend={(e) => {\r\n    dragover.set(null);\r\n    dispatch('dragend');\r\n  }}>\r\n  <td\r\n    on:dragenter={(e) => (hideNotes = false)}\r\n    on:click={(e) => {\r\n      if (!config.toggle) return;\r\n      hideNotes = !hideNotes;\r\n    }}>\r\n    {#if config.toggle}{hideNotes ? '>' : '∨'}{/if}\r\n  </td>\r\n  <slot\r\n    item={GURPS}\r\n    open={itemIsOpen(id)}\r\n    {depth}\r\n    {id}\r\n    ownedItem={getItem($entity, id)}\r\n    hovered={isHovered} />\r\n  <td class=\"show-when-label\">\r\n    {#if config.deleteButton}\r\n      {#if container}\r\n        <!-- <i class=\"fas fa-box\" /> -->\r\n      {/if}\r\n      <i\r\n        class:no-show={!isHovered}\r\n        class=\"fas fa-trash\"\r\n        on:click={() => {\r\n          dispatch('delete', { entity: getItem($entity, id) });\r\n        }} />\r\n    {/if}\r\n  </td>\r\n</tr>\r\n\r\n{#if !hideNotes}\r\n  <td class=\"notes\" {colspan}>\r\n    <slot name=\"notes\" {GURPS} {id} />\r\n  </td>\r\n{/if}\r\n\r\n{#if container && itemIsOpen(id)}\r\n  {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}\r\n    <svelte:self\r\n      on:delete\r\n      let:id\r\n      let:ownedItem\r\n      let:depth\r\n      let:open\r\n      let:item={child}\r\n      {entity}\r\n      id={child.foundryID}\r\n      i={i + 1}\r\n      {config}\r\n      {colspan}\r\n      container={child.canContainChildren}\r\n      children={Array.from(child.children)}\r\n      open={itemIsOpen(id)}>\r\n      <slot\r\n        open={itemIsOpen(id)}\r\n        item={child}\r\n        depth={depth + 1}\r\n        id={child.foundryID}\r\n        ownedItem={$entity.getOwnedItem(child.foundryID)} />\r\n    </svelte:self>\r\n  {/each}\r\n{/if}\r\n","tr.svelte-3eflit:hover{background-color:rgba(0, 0, 0, 0.25)}.notes.svelte-3eflit{padding:0px}.container.svelte-3eflit{color:black;background-color:white}tr.svelte-3eflit>td{padding:3px 0px 3px 0px;border-bottom:1px solid black}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm93LnN2ZWx0ZSIsInNvdXJjZXMiOlsiUm93LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IFJPV1MgfSBmcm9tIFwiLi9MaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IGNyZWF0ZUNvbnRleHRNZW51LCBpbmRleFNvcnQgfSBmcm9tIFwiLi4vLi4vaGVscGVyc1wiO1xyXG4gIGltcG9ydCB7IGdldF9jdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcclxuICBpbXBvcnQgeyBzbGlkZSwgZmFkZSB9IGZyb20gXCJzdmVsdGUvdHJhbnNpdGlvblwiO1xyXG5cclxuICBpbXBvcnQge1xyXG4gICAgZ2V0Q29udGV4dCxcclxuICAgIHNldENvbnRleHQsXHJcbiAgICBvbkRlc3Ryb3ksXHJcbiAgICBvbk1vdW50LFxyXG4gICAgY3JlYXRlRXZlbnREaXNwYXRjaGVyLFxyXG4gICAgdGljayxcclxuICB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuICBjb25zdCB7IHNldEZvY3VzZWQsIGhvdmVyZWQsIGZvY3VzZWQsIGRyYWdvdmVyLCB0eXBlIH0gPSBnZXRDb250ZXh0KFJPV1MpO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBjb2xzcGFuO1xyXG5cclxuICBleHBvcnQgbGV0IGNvbnRhaW5lciA9IG51bGw7XHJcbiAgLy8gZXhwb3J0IGxldCBpID0gbnVsbDtcclxuICBleHBvcnQgbGV0IGRlcHRoID0gMDtcclxuICBleHBvcnQgbGV0IGlkID0gbnVsbDtcclxuXHJcbiAgZXhwb3J0IGxldCBoaWRlTm90ZXMgPSB0cnVlO1xyXG4gIGV4cG9ydCBsZXQgZGlzYWJsZWQgPSBmYWxzZTtcclxuXHJcbiAgZXhwb3J0IGxldCBjb25maWcgPSB7fTtcclxuXHJcbiAgY29uc3QgZGVmYXVsdENvbmZpZyA9IHtcclxuICAgIGRyYWdnYWJsZTogZmFsc2UsXHJcbiAgICBoaWdobGlnaHRIb3ZlcjogdHJ1ZSxcclxuICAgIGRlbGV0ZUJ1dHRvbjogdHJ1ZSxcclxuICAgIHRvZ2dsZTogZmFsc2UsXHJcbiAgICBmb2N1c2FibGU6IHRydWUsXHJcbiAgfTtcclxuXHJcbiAgJDogY29uZmlnID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdENvbmZpZywgY29uZmlnKTtcclxuXHJcbiAgZXhwb3J0IGxldCBjaGlsZHJlbiA9IFtdO1xyXG5cclxuICBjb25zdCBnZXRJdGVtID0gKGVudGl0eSkgPT4ge1xyXG4gICAgcmV0dXJuIGVudGl0eS5nZXRPd25lZEl0ZW0gPyBlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKSB8fCBlbnRpdHkgOiBlbnRpdHk7XHJcbiAgfTtcclxuXHJcbiAgJDogaXRlbUlzT3BlbiA9IChpZCkgPT4ge1xyXG4gICAgbGV0IG93bmVkSXRlbSA9ICRlbnRpdHkuZ2V0T3duZWRJdGVtKGlkKTtcclxuICAgIGlmICghb3duZWRJdGVtKSByZXR1cm4gdHJ1ZTtcclxuICAgIHJldHVybiAhb3duZWRJdGVtLmdldEZsYWcoXCJHVVJQU1wiLCBcImNvbnRhaW5lcl9jbG9zZWRcIik7XHJcbiAgfTtcclxuXHJcbiAgJDogaXNSb3dMYWJlbCA9IGdldEl0ZW0oJGVudGl0eSwgaWQpXHJcbiAgICA/IGdldEl0ZW0oJGVudGl0eSkuZ2V0RmxhZyhcIkdVUlBTXCIsIFwiaXNfbGFiZWxcIikgfHwgZmFsc2VcclxuICAgIDogZmFsc2U7XHJcblxyXG4gICQ6IGNvbG9ycyA9IHtcclxuICAgIHRleHRDb2xvcjogZ2V0SXRlbSgkZW50aXR5LCBpZClcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJ0ZXh0X2NvbG9yXCIpIHx8IFwiXCJcclxuICAgICAgOiBcIlwiLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgICA/IGdldEl0ZW0oJGVudGl0eSwgaWQpLmdldEZsYWcoXCJHVVJQU1wiLCBcImJhY2tncm91bmRfY29sb3JcIikgfHwgXCJcIlxyXG4gICAgICA6IFwiXCIsXHJcbiAgfTtcclxuXHJcbiAgZXhwb3J0IGxldCBtZW51SXRlbXMgPSBnZXRJdGVtKCRlbnRpdHksIGlkKVxyXG4gICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXNcclxuICAgICAgPyBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRNZW51SXRlbXMoKVxyXG4gICAgICA6ICgpID0+IFtdXHJcbiAgICA6ICgpID0+IFtdO1xyXG5cclxuICBleHBvcnQgbGV0IHNlbGVjdG9yID0gXCJjb250ZXh0bWVudVwiO1xyXG5cclxuICBsZXQgaXNIb3ZlcmVkID0gZmFsc2U7XHJcblxyXG4gICQ6IEdVUlBTID0gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3RcclxuICAgID8gZ2V0SXRlbSgkZW50aXR5LCBpZCkuZ2V0R1VSUFNPYmplY3QoKVxyXG4gICAgOiB7fTtcclxuXHJcbiAgbGV0IHJvd0hUTUxFbGVtZW50O1xyXG4gICQ6IGkgPSBnZXRJdGVtKCRlbnRpdHksIGlkKS5nZXRGbGFnKFwiR1VSUFNcIiwgXCJpbmRleFwiKTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhvdmVyZWQsXHJcbiAgdHI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxuICB9XHJcbiAgLm5vdGVzIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbiAgLmNvbnRhaW5lciB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmZvY3VzZWQge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjQwMDtcclxuICB9XHJcbiAgLmRyYWdvdmVyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjY0MDA7XHJcbiAgfVxyXG4gIHRyID4gOmdsb2JhbCh0ZCkge1xyXG4gICAgcGFkZGluZzogM3B4IDBweCAzcHggMHB4O1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjx0clxyXG4gIGNsYXNzOmlzLXJvdy1sYWJlbD17aXNSb3dMYWJlbH1cclxuICBiaW5kOnRoaXM9e3Jvd0hUTUxFbGVtZW50fVxyXG4gIHN0eWxlPVwiYmFja2dyb3VuZC1jb2xvcjoge2NvbG9ycy5iYWNrZ3JvdW5kQ29sb3J9OyBjb2xvcjoge2NvbG9ycy50ZXh0Q29sb3J9XCJcclxuICBjbGFzczpzdHJpa2V0aHJvdWdoPXtkaXNhYmxlZH1cclxuICBkYXRhLWNvbnRhaW5lcj17Y29udGFpbmVyfVxyXG4gIGRhdGEtaW5kZXg9e2l9XHJcbiAgZGF0YS1lbnRpdHktaWQ9e2lkfVxyXG4gIGRhdGEtbGlzdHR5cGU9e3R5cGV9XHJcbiAgZGF0YS1jb250ZXh0bWVudT17c2VsZWN0b3J9XHJcbiAgdXNlOmNyZWF0ZUNvbnRleHRNZW51PXt7IG1lbnVJdGVtcywgc2VsZWN0b3IgfX1cclxuICBjbGFzczpjb250YWluZXJcclxuICBvbjptb3VzZW92ZXI9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdmVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWVudGVyPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gdHJ1ZTtcclxuICAgIGhvdmVyZWQuc2V0KGkpO1xyXG4gICAgaWYgKGUud2hpY2ggPT0gMSAmJiBlLnNoaWZ0S2V5ICYmIGNvbmZpZy5mb2N1c2FibGUpIHtcclxuICAgICAgc2V0Rm9jdXNlZChpKTtcclxuICAgIH1cclxuICAgIGRpc3BhdGNoKCdtb3VzZWVudGVyJyk7XHJcbiAgfX1cclxuICBvbjptb3VzZWRvd249eyhlKSA9PiB7XHJcbiAgICBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnLmZvY3VzYWJsZSkge1xyXG4gICAgICBzZXRGb2N1c2VkKGksIHRydWUsIGUudGltZXN0YW1wKTtcclxuICAgIH0gZWxzZSBpZiAoZS53aGljaCA9PSAxICYmIGUuc2hpZnRLZXkgJiYgY29uZmlnKSB7XHJcbiAgICAgIGZvY3VzZWQuc2V0KFtpXSk7XHJcbiAgICB9XHJcbiAgICBkaXNwYXRjaCgnbW91c2Vkb3duJyk7XHJcbiAgfX1cclxuICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgIGRpc3BhdGNoKCdjbGljaycpO1xyXG4gIH19XHJcbiAgb246bW91c2VvdXQ9eyhlKSA9PiB7XHJcbiAgICBkaXNwYXRjaCgnbW91c2VvdXQnKTtcclxuICB9fVxyXG4gIG9uOm1vdXNlbGVhdmU9eyhlKSA9PiB7XHJcbiAgICBpc0hvdmVyZWQgPSBmYWxzZTtcclxuICAgIGRpc3BhdGNoKCdtb3VzZWxlYXZlJyk7XHJcbiAgfX1cclxuICBvbjphdXhjbGljaz17KGUpID0+IHtcclxuICAgIGlmIChlLmJ1dHRvbiA9PT0gMSkge1xyXG4gICAgICBkaXNwYXRjaCgnbWlkZGxlY2xpY2snKTtcclxuICAgIH1cclxuICB9fVxyXG4gIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RibGNsaWNrJyk7XHJcbiAgfX1cclxuICBvbjpkcm9wPXsoZSkgPT4ge1xyXG4gICAgaG92ZXJlZC5zZXQobnVsbCk7XHJcbiAgICBkaXNwYXRjaCgnZHJvcCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ3N0YXJ0PXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdzdGFydCcpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2VudGVyPXsoZSkgPT4ge1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbnRlcicpO1xyXG4gIH19XHJcbiAgb246ZHJhZ2xlYXZlPXsoZSkgPT4ge1xyXG4gICAgaXNIb3ZlcmVkID0gZmFsc2U7XHJcbiAgICBkaXNwYXRjaCgnZHJhZ2xlYXZlJyk7XHJcbiAgfX1cclxuICBvbjpkcmFnb3Zlcj17KGUpID0+IHtcclxuICAgIGlzSG92ZXJlZCA9IGZhbHNlO1xyXG4gICAgZHJhZ292ZXIuc2V0KGkpO1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdvdmVyJyk7XHJcbiAgfX1cclxuICBvbjpkcmFnZW5kPXsoZSkgPT4ge1xyXG4gICAgZHJhZ292ZXIuc2V0KG51bGwpO1xyXG4gICAgZGlzcGF0Y2goJ2RyYWdlbmQnKTtcclxuICB9fT5cclxuICA8dGRcclxuICAgIG9uOmRyYWdlbnRlcj17KGUpID0+IChoaWRlTm90ZXMgPSBmYWxzZSl9XHJcbiAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgaWYgKCFjb25maWcudG9nZ2xlKSByZXR1cm47XHJcbiAgICAgIGhpZGVOb3RlcyA9ICFoaWRlTm90ZXM7XHJcbiAgICB9fT5cclxuICAgIHsjaWYgY29uZmlnLnRvZ2dsZX17aGlkZU5vdGVzID8gJz4nIDogJ+KIqCd9ey9pZn1cclxuICA8L3RkPlxyXG4gIDxzbG90XHJcbiAgICBpdGVtPXtHVVJQU31cclxuICAgIG9wZW49e2l0ZW1Jc09wZW4oaWQpfVxyXG4gICAge2RlcHRofVxyXG4gICAge2lkfVxyXG4gICAgb3duZWRJdGVtPXtnZXRJdGVtKCRlbnRpdHksIGlkKX1cclxuICAgIGhvdmVyZWQ9e2lzSG92ZXJlZH0gLz5cclxuICA8dGQgY2xhc3M9XCJzaG93LXdoZW4tbGFiZWxcIj5cclxuICAgIHsjaWYgY29uZmlnLmRlbGV0ZUJ1dHRvbn1cclxuICAgICAgeyNpZiBjb250YWluZXJ9XHJcbiAgICAgICAgPCEtLSA8aSBjbGFzcz1cImZhcyBmYS1ib3hcIiAvPiAtLT5cclxuICAgICAgey9pZn1cclxuICAgICAgPGlcclxuICAgICAgICBjbGFzczpuby1zaG93PXshaXNIb3ZlcmVkfVxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4ge1xyXG4gICAgICAgICAgZGlzcGF0Y2goJ2RlbGV0ZScsIHsgZW50aXR5OiBnZXRJdGVtKCRlbnRpdHksIGlkKSB9KTtcclxuICAgICAgICB9fSAvPlxyXG4gICAgey9pZn1cclxuICA8L3RkPlxyXG48L3RyPlxyXG5cclxueyNpZiAhaGlkZU5vdGVzfVxyXG4gIDx0ZCBjbGFzcz1cIm5vdGVzXCIge2NvbHNwYW59PlxyXG4gICAgPHNsb3QgbmFtZT1cIm5vdGVzXCIge0dVUlBTfSB7aWR9IC8+XHJcbiAgPC90ZD5cclxuey9pZn1cclxuXHJcbnsjaWYgY29udGFpbmVyICYmIGl0ZW1Jc09wZW4oaWQpfVxyXG4gIHsjZWFjaCBnYW1lLmd1cnBzNGUuaW5kZXhTb3J0KGNoaWxkcmVuKSBhcyBjaGlsZCwgaSAoY2hpbGQuZm91bmRyeUlEKX1cclxuICAgIDxzdmVsdGU6c2VsZlxyXG4gICAgICBvbjpkZWxldGVcclxuICAgICAgbGV0OmlkXHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmRlcHRoXHJcbiAgICAgIGxldDpvcGVuXHJcbiAgICAgIGxldDppdGVtPXtjaGlsZH1cclxuICAgICAge2VudGl0eX1cclxuICAgICAgaWQ9e2NoaWxkLmZvdW5kcnlJRH1cclxuICAgICAgaT17aSArIDF9XHJcbiAgICAgIHtjb25maWd9XHJcbiAgICAgIHtjb2xzcGFufVxyXG4gICAgICBjb250YWluZXI9e2NoaWxkLmNhbkNvbnRhaW5DaGlsZHJlbn1cclxuICAgICAgY2hpbGRyZW49e0FycmF5LmZyb20oY2hpbGQuY2hpbGRyZW4pfVxyXG4gICAgICBvcGVuPXtpdGVtSXNPcGVuKGlkKX0+XHJcbiAgICAgIDxzbG90XHJcbiAgICAgICAgb3Blbj17aXRlbUlzT3BlbihpZCl9XHJcbiAgICAgICAgaXRlbT17Y2hpbGR9XHJcbiAgICAgICAgZGVwdGg9e2RlcHRoICsgMX1cclxuICAgICAgICBpZD17Y2hpbGQuZm91bmRyeUlEfVxyXG4gICAgICAgIG93bmVkSXRlbT17JGVudGl0eS5nZXRPd25lZEl0ZW0oY2hpbGQuZm91bmRyeUlEKX0gLz5cclxuICAgIDwvc3ZlbHRlOnNlbGY+XHJcbiAgey9lYWNofVxyXG57L2lmfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUZFLGdCQUFFLE1BQU0sQUFBQyxDQUFDLEFBQ1IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQUFDdkMsQ0FBQyxBQUNELE1BQU0sY0FBQyxDQUFDLEFBQ04sT0FBTyxDQUFFLEdBQUcsQUFDZCxDQUFDLEFBQ0QsVUFBVSxjQUFDLENBQUMsQUFDVixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQUFDekIsQ0FBQyxBQU9ELGdCQUFFLENBQVcsRUFBRSxBQUFFLENBQUMsQUFDaEIsT0FBTyxDQUFFLEdBQUcsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDeEIsYUFBYSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxBQUNoQyxDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3603,7 +3653,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "div.svelte-1cqra7v{display:flex;flex-direction:column;flex-grow:1}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFicy5zdmVsdGUiLCJzb3VyY2VzIjpbIlRhYnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQgY29udGV4dD1cIm1vZHVsZVwiPlxyXG4gIGV4cG9ydCBjb25zdCBUQUJTID0ge307XHJcbjwvc2NyaXB0PlxyXG5cclxuPHNjcmlwdD5cclxuICBleHBvcnQgbGV0IHRhYkluZGV4ID0gJHNlbGVjdGVkVGFiIHx8IDA7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCwgb25EZXN0cm95LCBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IHdyaXRhYmxlIH0gZnJvbSBcInN2ZWx0ZS9zdG9yZVwiO1xyXG5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuXHJcbiAgY29uc3QgdGFicyA9IFtdO1xyXG4gIGNvbnN0IHBhbmVscyA9IFtdO1xyXG4gIGNvbnN0IHNlbGVjdGVkVGFiID0gd3JpdGFibGUobnVsbCk7XHJcbiAgY29uc3Qgc2VsZWN0ZWRQYW5lbCA9IHdyaXRhYmxlKG51bGwpO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIHNlbGVjdGVkVGFiLnNldCh0YWJzW3RhYkluZGV4XSk7XHJcbiAgICBzZWxlY3RlZFBhbmVsLnNldChwYW5lbHNbdGFiSW5kZXhdKTtcclxuICB9KTtcclxuXHJcbiAgc2V0Q29udGV4dChUQUJTLCB7XHJcbiAgICByZWdpc3RlclRhYjogKHRhYikgPT4ge1xyXG4gICAgICB0YWJzLnB1c2godGFiKTtcclxuICAgICAgc2VsZWN0ZWRUYWIudXBkYXRlKChjdXJyZW50KSA9PiBjdXJyZW50IHx8IHRhYik7XHJcblxyXG4gICAgICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgICAgIGNvbnN0IGkgPSB0YWJzLmluZGV4T2YodGFiKTtcclxuICAgICAgICB0YWJzLnNwbGljZShpLCAxKTtcclxuICAgICAgICBzZWxlY3RlZFRhYi51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSB0YWIgPyB0YWJzW2ldIHx8IHRhYnNbdGFicy5sZW5ndGggLSAxXSA6IGN1cnJlbnRcclxuICAgICAgICApO1xyXG4gICAgICB9KTtcclxuICAgIH0sXHJcblxyXG4gICAgcmVnaXN0ZXJQYW5lbDogKHBhbmVsKSA9PiB7XHJcbiAgICAgIHBhbmVscy5wdXNoKHBhbmVsKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+IGN1cnJlbnQgfHwgcGFuZWwpO1xyXG5cclxuICAgICAgb25EZXN0cm95KCgpID0+IHtcclxuICAgICAgICBjb25zdCBpID0gcGFuZWxzLmluZGV4T2YocGFuZWwpO1xyXG4gICAgICAgIHBhbmVscy5zcGxpY2UoaSwgMSk7XHJcbiAgICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSBwYW5lbCA/IHBhbmVsc1tpXSB8fCBwYW5lbHNbcGFuZWxzLmxlbmd0aCAtIDFdIDogY3VycmVudFxyXG4gICAgICAgICk7XHJcbiAgICAgIH0pO1xyXG4gICAgfSxcclxuXHJcbiAgICBzZWxlY3RUYWI6ICh0YWIpID0+IHtcclxuICAgICAgY29uc3QgaSA9IHRhYnMuaW5kZXhPZih0YWIpO1xyXG4gICAgICBzZWxlY3RlZFRhYi5zZXQodGFiKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC5zZXQocGFuZWxzW2ldKTtcclxuICAgICAgZGlzcGF0Y2goXCJ0YWJjaGFuZ2VcIiwgdGFiLmluZGV4KTtcclxuICAgIH0sXHJcblxyXG4gICAgc2VsZWN0ZWRUYWIsXHJcbiAgICBzZWxlY3RlZFBhbmVsLFxyXG4gIH0pO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICBkaXYge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdj5cclxuICA8c2xvdCAvPlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThERSxHQUFHLGVBQUMsQ0FBQyxBQUNILE9BQU8sQ0FBRSxJQUFJLENBQ2IsY0FBYyxDQUFFLE1BQU0sQ0FDdEIsU0FBUyxDQUFFLENBQUMsQUFDZCxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/tabs/Tabs.svelte","webpack://src/svelte/tabs/Tabs.svelte.css"],"names":[],"mappings":"AA8DE,mBAAK,YACU,CACb,qBAAsB,CACtB,WAAY;AChEhB,ysFAAysF","sourcesContent":["<script context=\"module\">\r\n  export const TABS = {};\r\n</script>\r\n\r\n<script>\r\n  export let tabIndex = $selectedTab || 0;\r\n  import { setContext, onDestroy, onMount } from \"svelte\";\r\n  import { writable } from \"svelte/store\";\r\n\r\n  import { createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  const tabs = [];\r\n  const panels = [];\r\n  const selectedTab = writable(null);\r\n  const selectedPanel = writable(null);\r\n\r\n  onMount(() => {\r\n    selectedTab.set(tabs[tabIndex]);\r\n    selectedPanel.set(panels[tabIndex]);\r\n  });\r\n\r\n  setContext(TABS, {\r\n    registerTab: (tab) => {\r\n      tabs.push(tab);\r\n      selectedTab.update((current) => current || tab);\r\n\r\n      onDestroy(() => {\r\n        const i = tabs.indexOf(tab);\r\n        tabs.splice(i, 1);\r\n        selectedTab.update((current) =>\r\n          current === tab ? tabs[i] || tabs[tabs.length - 1] : current\r\n        );\r\n      });\r\n    },\r\n\r\n    registerPanel: (panel) => {\r\n      panels.push(panel);\r\n      selectedPanel.update((current) => current || panel);\r\n\r\n      onDestroy(() => {\r\n        const i = panels.indexOf(panel);\r\n        panels.splice(i, 1);\r\n        selectedPanel.update((current) =>\r\n          current === panel ? panels[i] || panels[panels.length - 1] : current\r\n        );\r\n      });\r\n    },\r\n\r\n    selectTab: (tab) => {\r\n      const i = tabs.indexOf(tab);\r\n      selectedTab.set(tab);\r\n      selectedPanel.set(panels[i]);\r\n      dispatch(\"tabchange\", tab.index);\r\n    },\r\n\r\n    selectedTab,\r\n    selectedPanel,\r\n  });\r\n</script>\r\n\r\n<style>\r\n  div {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-grow: 1;\r\n  }\r\n</style>\r\n\r\n<div>\r\n  <slot />\r\n</div>\r\n","div.svelte-1cqra7v{display:flex;flex-direction:column;flex-grow:1}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFicy5zdmVsdGUiLCJzb3VyY2VzIjpbIlRhYnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQgY29udGV4dD1cIm1vZHVsZVwiPlxyXG4gIGV4cG9ydCBjb25zdCBUQUJTID0ge307XHJcbjwvc2NyaXB0PlxyXG5cclxuPHNjcmlwdD5cclxuICBleHBvcnQgbGV0IHRhYkluZGV4ID0gJHNlbGVjdGVkVGFiIHx8IDA7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCwgb25EZXN0cm95LCBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IHdyaXRhYmxlIH0gZnJvbSBcInN2ZWx0ZS9zdG9yZVwiO1xyXG5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuXHJcbiAgY29uc3QgdGFicyA9IFtdO1xyXG4gIGNvbnN0IHBhbmVscyA9IFtdO1xyXG4gIGNvbnN0IHNlbGVjdGVkVGFiID0gd3JpdGFibGUobnVsbCk7XHJcbiAgY29uc3Qgc2VsZWN0ZWRQYW5lbCA9IHdyaXRhYmxlKG51bGwpO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIHNlbGVjdGVkVGFiLnNldCh0YWJzW3RhYkluZGV4XSk7XHJcbiAgICBzZWxlY3RlZFBhbmVsLnNldChwYW5lbHNbdGFiSW5kZXhdKTtcclxuICB9KTtcclxuXHJcbiAgc2V0Q29udGV4dChUQUJTLCB7XHJcbiAgICByZWdpc3RlclRhYjogKHRhYikgPT4ge1xyXG4gICAgICB0YWJzLnB1c2godGFiKTtcclxuICAgICAgc2VsZWN0ZWRUYWIudXBkYXRlKChjdXJyZW50KSA9PiBjdXJyZW50IHx8IHRhYik7XHJcblxyXG4gICAgICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgICAgIGNvbnN0IGkgPSB0YWJzLmluZGV4T2YodGFiKTtcclxuICAgICAgICB0YWJzLnNwbGljZShpLCAxKTtcclxuICAgICAgICBzZWxlY3RlZFRhYi51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSB0YWIgPyB0YWJzW2ldIHx8IHRhYnNbdGFicy5sZW5ndGggLSAxXSA6IGN1cnJlbnRcclxuICAgICAgICApO1xyXG4gICAgICB9KTtcclxuICAgIH0sXHJcblxyXG4gICAgcmVnaXN0ZXJQYW5lbDogKHBhbmVsKSA9PiB7XHJcbiAgICAgIHBhbmVscy5wdXNoKHBhbmVsKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+IGN1cnJlbnQgfHwgcGFuZWwpO1xyXG5cclxuICAgICAgb25EZXN0cm95KCgpID0+IHtcclxuICAgICAgICBjb25zdCBpID0gcGFuZWxzLmluZGV4T2YocGFuZWwpO1xyXG4gICAgICAgIHBhbmVscy5zcGxpY2UoaSwgMSk7XHJcbiAgICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSBwYW5lbCA/IHBhbmVsc1tpXSB8fCBwYW5lbHNbcGFuZWxzLmxlbmd0aCAtIDFdIDogY3VycmVudFxyXG4gICAgICAgICk7XHJcbiAgICAgIH0pO1xyXG4gICAgfSxcclxuXHJcbiAgICBzZWxlY3RUYWI6ICh0YWIpID0+IHtcclxuICAgICAgY29uc3QgaSA9IHRhYnMuaW5kZXhPZih0YWIpO1xyXG4gICAgICBzZWxlY3RlZFRhYi5zZXQodGFiKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC5zZXQocGFuZWxzW2ldKTtcclxuICAgICAgZGlzcGF0Y2goXCJ0YWJjaGFuZ2VcIiwgdGFiLmluZGV4KTtcclxuICAgIH0sXHJcblxyXG4gICAgc2VsZWN0ZWRUYWIsXHJcbiAgICBzZWxlY3RlZFBhbmVsLFxyXG4gIH0pO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICBkaXYge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdj5cclxuICA8c2xvdCAvPlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThERSxHQUFHLGVBQUMsQ0FBQyxBQUNILE9BQU8sQ0FBRSxJQUFJLENBQ2IsY0FBYyxDQUFFLE1BQU0sQ0FDdEIsU0FBUyxDQUFFLENBQUMsQUFDZCxDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "div.svelte-1cqra7v{display:flex;flex-direction:column;flex-grow:1}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFicy5zdmVsdGUiLCJzb3VyY2VzIjpbIlRhYnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQgY29udGV4dD1cIm1vZHVsZVwiPlxyXG4gIGV4cG9ydCBjb25zdCBUQUJTID0ge307XHJcbjwvc2NyaXB0PlxyXG5cclxuPHNjcmlwdD5cclxuICBleHBvcnQgbGV0IHRhYkluZGV4ID0gJHNlbGVjdGVkVGFiIHx8IDA7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCwgb25EZXN0cm95LCBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IHdyaXRhYmxlIH0gZnJvbSBcInN2ZWx0ZS9zdG9yZVwiO1xyXG5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuXHJcbiAgY29uc3QgdGFicyA9IFtdO1xyXG4gIGNvbnN0IHBhbmVscyA9IFtdO1xyXG4gIGNvbnN0IHNlbGVjdGVkVGFiID0gd3JpdGFibGUobnVsbCk7XHJcbiAgY29uc3Qgc2VsZWN0ZWRQYW5lbCA9IHdyaXRhYmxlKG51bGwpO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIHNlbGVjdGVkVGFiLnNldCh0YWJzW3RhYkluZGV4XSk7XHJcbiAgICBzZWxlY3RlZFBhbmVsLnNldChwYW5lbHNbdGFiSW5kZXhdKTtcclxuICB9KTtcclxuXHJcbiAgc2V0Q29udGV4dChUQUJTLCB7XHJcbiAgICByZWdpc3RlclRhYjogKHRhYikgPT4ge1xyXG4gICAgICB0YWJzLnB1c2godGFiKTtcclxuICAgICAgc2VsZWN0ZWRUYWIudXBkYXRlKChjdXJyZW50KSA9PiBjdXJyZW50IHx8IHRhYik7XHJcblxyXG4gICAgICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgICAgIGNvbnN0IGkgPSB0YWJzLmluZGV4T2YodGFiKTtcclxuICAgICAgICB0YWJzLnNwbGljZShpLCAxKTtcclxuICAgICAgICBzZWxlY3RlZFRhYi51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSB0YWIgPyB0YWJzW2ldIHx8IHRhYnNbdGFicy5sZW5ndGggLSAxXSA6IGN1cnJlbnRcclxuICAgICAgICApO1xyXG4gICAgICB9KTtcclxuICAgIH0sXHJcblxyXG4gICAgcmVnaXN0ZXJQYW5lbDogKHBhbmVsKSA9PiB7XHJcbiAgICAgIHBhbmVscy5wdXNoKHBhbmVsKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+IGN1cnJlbnQgfHwgcGFuZWwpO1xyXG5cclxuICAgICAgb25EZXN0cm95KCgpID0+IHtcclxuICAgICAgICBjb25zdCBpID0gcGFuZWxzLmluZGV4T2YocGFuZWwpO1xyXG4gICAgICAgIHBhbmVscy5zcGxpY2UoaSwgMSk7XHJcbiAgICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSBwYW5lbCA/IHBhbmVsc1tpXSB8fCBwYW5lbHNbcGFuZWxzLmxlbmd0aCAtIDFdIDogY3VycmVudFxyXG4gICAgICAgICk7XHJcbiAgICAgIH0pO1xyXG4gICAgfSxcclxuXHJcbiAgICBzZWxlY3RUYWI6ICh0YWIpID0+IHtcclxuICAgICAgY29uc3QgaSA9IHRhYnMuaW5kZXhPZih0YWIpO1xyXG4gICAgICBzZWxlY3RlZFRhYi5zZXQodGFiKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC5zZXQocGFuZWxzW2ldKTtcclxuICAgICAgZGlzcGF0Y2goXCJ0YWJjaGFuZ2VcIiwgdGFiLmluZGV4KTtcclxuICAgIH0sXHJcblxyXG4gICAgc2VsZWN0ZWRUYWIsXHJcbiAgICBzZWxlY3RlZFBhbmVsLFxyXG4gIH0pO1xyXG5cclxuICBleHBvcnQgZnVuY3Rpb24gc2VsZWN0VGFiKCkge1xyXG4gICAgXHJcbiAgfVxyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICBkaXYge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdj5cclxuICA8c2xvdCAvPlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtFRSxHQUFHLGVBQUMsQ0FBQyxBQUNILE9BQU8sQ0FBRSxJQUFJLENBQ2IsY0FBYyxDQUFFLE1BQU0sQ0FDdEIsU0FBUyxDQUFFLENBQUMsQUFDZCxDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/tabs/Tabs.svelte","webpack://src/svelte/tabs/Tabs.svelte.css"],"names":[],"mappings":"AAkEE,mBAAK,YACU,CACb,qBAAsB,CACtB,WAAY;ACpEhB,ixFAAixF","sourcesContent":["<script context=\"module\">\r\n  export const TABS = {};\r\n</script>\r\n\r\n<script>\r\n  export let tabIndex = $selectedTab || 0;\r\n  import { setContext, onDestroy, onMount } from \"svelte\";\r\n  import { writable } from \"svelte/store\";\r\n\r\n  import { createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  const tabs = [];\r\n  const panels = [];\r\n  const selectedTab = writable(null);\r\n  const selectedPanel = writable(null);\r\n\r\n  onMount(() => {\r\n    selectedTab.set(tabs[tabIndex]);\r\n    selectedPanel.set(panels[tabIndex]);\r\n  });\r\n\r\n  setContext(TABS, {\r\n    registerTab: (tab) => {\r\n      tabs.push(tab);\r\n      selectedTab.update((current) => current || tab);\r\n\r\n      onDestroy(() => {\r\n        const i = tabs.indexOf(tab);\r\n        tabs.splice(i, 1);\r\n        selectedTab.update((current) =>\r\n          current === tab ? tabs[i] || tabs[tabs.length - 1] : current\r\n        );\r\n      });\r\n    },\r\n\r\n    registerPanel: (panel) => {\r\n      panels.push(panel);\r\n      selectedPanel.update((current) => current || panel);\r\n\r\n      onDestroy(() => {\r\n        const i = panels.indexOf(panel);\r\n        panels.splice(i, 1);\r\n        selectedPanel.update((current) =>\r\n          current === panel ? panels[i] || panels[panels.length - 1] : current\r\n        );\r\n      });\r\n    },\r\n\r\n    selectTab: (tab) => {\r\n      const i = tabs.indexOf(tab);\r\n      selectedTab.set(tab);\r\n      selectedPanel.set(panels[i]);\r\n      dispatch(\"tabchange\", tab.index);\r\n    },\r\n\r\n    selectedTab,\r\n    selectedPanel,\r\n  });\r\n\r\n  export function selectTab() {\r\n    \r\n  }\r\n</script>\r\n\r\n<style>\r\n  div {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-grow: 1;\r\n  }\r\n</style>\r\n\r\n<div>\r\n  <slot />\r\n</div>\r\n","div.svelte-1cqra7v{display:flex;flex-direction:column;flex-grow:1}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFicy5zdmVsdGUiLCJzb3VyY2VzIjpbIlRhYnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQgY29udGV4dD1cIm1vZHVsZVwiPlxyXG4gIGV4cG9ydCBjb25zdCBUQUJTID0ge307XHJcbjwvc2NyaXB0PlxyXG5cclxuPHNjcmlwdD5cclxuICBleHBvcnQgbGV0IHRhYkluZGV4ID0gJHNlbGVjdGVkVGFiIHx8IDA7XHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCwgb25EZXN0cm95LCBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCB7IHdyaXRhYmxlIH0gZnJvbSBcInN2ZWx0ZS9zdG9yZVwiO1xyXG5cclxuICBpbXBvcnQgeyBjcmVhdGVFdmVudERpc3BhdGNoZXIgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcclxuXHJcbiAgY29uc3QgdGFicyA9IFtdO1xyXG4gIGNvbnN0IHBhbmVscyA9IFtdO1xyXG4gIGNvbnN0IHNlbGVjdGVkVGFiID0gd3JpdGFibGUobnVsbCk7XHJcbiAgY29uc3Qgc2VsZWN0ZWRQYW5lbCA9IHdyaXRhYmxlKG51bGwpO1xyXG5cclxuICBvbk1vdW50KCgpID0+IHtcclxuICAgIHNlbGVjdGVkVGFiLnNldCh0YWJzW3RhYkluZGV4XSk7XHJcbiAgICBzZWxlY3RlZFBhbmVsLnNldChwYW5lbHNbdGFiSW5kZXhdKTtcclxuICB9KTtcclxuXHJcbiAgc2V0Q29udGV4dChUQUJTLCB7XHJcbiAgICByZWdpc3RlclRhYjogKHRhYikgPT4ge1xyXG4gICAgICB0YWJzLnB1c2godGFiKTtcclxuICAgICAgc2VsZWN0ZWRUYWIudXBkYXRlKChjdXJyZW50KSA9PiBjdXJyZW50IHx8IHRhYik7XHJcblxyXG4gICAgICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgICAgIGNvbnN0IGkgPSB0YWJzLmluZGV4T2YodGFiKTtcclxuICAgICAgICB0YWJzLnNwbGljZShpLCAxKTtcclxuICAgICAgICBzZWxlY3RlZFRhYi51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSB0YWIgPyB0YWJzW2ldIHx8IHRhYnNbdGFicy5sZW5ndGggLSAxXSA6IGN1cnJlbnRcclxuICAgICAgICApO1xyXG4gICAgICB9KTtcclxuICAgIH0sXHJcblxyXG4gICAgcmVnaXN0ZXJQYW5lbDogKHBhbmVsKSA9PiB7XHJcbiAgICAgIHBhbmVscy5wdXNoKHBhbmVsKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+IGN1cnJlbnQgfHwgcGFuZWwpO1xyXG5cclxuICAgICAgb25EZXN0cm95KCgpID0+IHtcclxuICAgICAgICBjb25zdCBpID0gcGFuZWxzLmluZGV4T2YocGFuZWwpO1xyXG4gICAgICAgIHBhbmVscy5zcGxpY2UoaSwgMSk7XHJcbiAgICAgICAgc2VsZWN0ZWRQYW5lbC51cGRhdGUoKGN1cnJlbnQpID0+XHJcbiAgICAgICAgICBjdXJyZW50ID09PSBwYW5lbCA/IHBhbmVsc1tpXSB8fCBwYW5lbHNbcGFuZWxzLmxlbmd0aCAtIDFdIDogY3VycmVudFxyXG4gICAgICAgICk7XHJcbiAgICAgIH0pO1xyXG4gICAgfSxcclxuXHJcbiAgICBzZWxlY3RUYWI6ICh0YWIpID0+IHtcclxuICAgICAgY29uc3QgaSA9IHRhYnMuaW5kZXhPZih0YWIpO1xyXG4gICAgICBzZWxlY3RlZFRhYi5zZXQodGFiKTtcclxuICAgICAgc2VsZWN0ZWRQYW5lbC5zZXQocGFuZWxzW2ldKTtcclxuICAgICAgZGlzcGF0Y2goXCJ0YWJjaGFuZ2VcIiwgdGFiLmluZGV4KTtcclxuICAgIH0sXHJcblxyXG4gICAgc2VsZWN0ZWRUYWIsXHJcbiAgICBzZWxlY3RlZFBhbmVsLFxyXG4gIH0pO1xyXG5cclxuICBleHBvcnQgZnVuY3Rpb24gc2VsZWN0VGFiKCkge1xyXG4gICAgXHJcbiAgfVxyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICBkaXYge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdj5cclxuICA8c2xvdCAvPlxyXG48L2Rpdj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtFRSxHQUFHLGVBQUMsQ0FBQyxBQUNILE9BQU8sQ0FBRSxJQUFJLENBQ2IsY0FBYyxDQUFFLE1BQU0sQ0FDdEIsU0FBUyxDQUFFLENBQUMsQUFDZCxDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3625,7 +3675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSBcIm51bWJlclwifVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFBhcnJ5KCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnBhcnJ5IHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHR5cGVvZiB3ZWFwb24uYmxvY2sgPT09IFwibnVtYmVyXCJ9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsQmxvY2soKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uYmxvY2sgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uZGFtYWdlIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlYWNoIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnN0cmVuZ3RoIHx8ICcnfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CRSxHQUFHLGVBQUMsQ0FBQyxBQUNILFFBQVEsQ0FBRSxRQUFRLENBQ2xCLElBQUksQ0FBRSxFQUFFLEFBQ1YsQ0FBQyxBQUNELEVBQUUsZUFBQyxDQUFDLEFBQ0YsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/MeleeWeapons.svelte","webpack://src/svelte/weapon-list/MeleeWeapons.svelte.css"],"names":[],"mappings":"AAmBE,mBAAK,iBACe,CAClB,OAAQ,CACT,kBACG,iBACgB;ACvBtB,i5GAAi5G","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    position: relative;\r\n    left: 10;\r\n  }\r\n  td {\r\n    position: relative;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Melee Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Parry</th>\r\n  <th slot=\"header\">Block</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Reach</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().melee as weapon, i}\r\n    <Row\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name}</td>\r\n      <td>{weapon.usage}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n          {weapon.skillLevel() || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.parry === \"number\"}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollParry()} />\r\n          {weapon.parry || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.block === \"number\"}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollBlock()} />\r\n          {weapon.block || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n          {weapon.damage || ''}\r\n        {/if}\r\n      </td>\r\n      <td>{weapon.reach || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSBcIm51bWJlclwifVxyXG4gICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtc2hpZWxkLWFsdFwiIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFBhcnJ5KCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnBhcnJ5IHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHR5cGVvZiB3ZWFwb24uYmxvY2sgPT09IFwibnVtYmVyXCJ9XHJcbiAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1zaGllbGQtYWx0XCIgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsQmxvY2soKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uYmxvY2sgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICAgIHt3ZWFwb24uZGFtYWdlIHx8ICcnfVxyXG4gICAgICAgIHsvaWZ9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlYWNoIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnN0cmVuZ3RoIHx8ICcnfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CRSxHQUFHLGVBQUMsQ0FBQyxBQUNILFFBQVEsQ0FBRSxRQUFRLENBQ2xCLElBQUksQ0FBRSxFQUFFLEFBQ1YsQ0FBQyxBQUNELEVBQUUsZUFBQyxDQUFDLEFBQ0YsUUFBUSxDQUFFLFFBQVEsQUFDcEIsQ0FBQyJ9*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgZGlzYWJsZWQ9eyF3ZWFwb24ub3duZXIuaXNBY3RpdmUoKX1cclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSAnbnVtYmVyJ31cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFzIGZhLXNoaWVsZC1hbHRcIiBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxQYXJyeSgpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5wYXJyeSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLmJsb2NrID09PSAnbnVtYmVyJ31cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFzIGZhLXNoaWVsZC1hbHRcIiBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxCbG9jaygpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5ibG9jayB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uZGFtYWdlfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbERhbWFnZSgpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5kYW1hZ2UgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmVhY2ggfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uc3RyZW5ndGggfHwgJyd9PC90ZD5cclxuICAgIDwvUm93PlxyXG4gIHsvZWFjaH1cclxuPC9MaXN0PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUJFLEdBQUcsZUFBQyxDQUFDLEFBQ0gsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLEVBQUUsQUFDVixDQUFDLEFBQ0QsRUFBRSxlQUFDLENBQUMsQUFDRixRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/MeleeWeapons.svelte","webpack://src/svelte/weapon-list/MeleeWeapons.svelte.css"],"names":[],"mappings":"AAmBE,mBAAK,iBACe,CAClB,OAAQ,CACT,kBACG,iBACgB;ACvBtB,y8GAAy8G","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    position: relative;\r\n    left: 10;\r\n  }\r\n  td {\r\n    position: relative;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Melee Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Parry</th>\r\n  <th slot=\"header\">Block</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Reach</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().melee as weapon, i}\r\n    <Row\r\n      disabled={!weapon.owner.isActive()}\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name}</td>\r\n      <td>{weapon.usage}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n          {weapon.skillLevel() || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.parry === 'number'}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollParry()} />\r\n          {weapon.parry || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if typeof weapon.block === 'number'}\r\n          <span class=\"fas fa-shield-alt\" on:click={() => weapon.rollBlock()} />\r\n          {weapon.block || ''}\r\n        {/if}\r\n      </td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n          {weapon.damage || ''}\r\n        {/if}\r\n      </td>\r\n      <td>{weapon.reach || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-18iyoqy{position:relative;left:10}td.svelte-18iyoqy{position:relative}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWVsZWVXZWFwb25zLnN2ZWx0ZSIsInNvdXJjZXMiOlsiTWVsZWVXZWFwb25zLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuLi9saXN0L2xpc3RcIjtcclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGxlZnQ6IDEwO1xyXG4gIH1cclxuICB0ZCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPExpc3QgY29uZmlnPXt7IGFkZExpc3RJdGVtQnV0dG9uOiBmYWxzZSB9fT5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1lbGVlIFdlYXBvbnM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+VXNhZ2U8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+THZsPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlBhcnJ5PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkJsb2NrPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWFjaDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5TVDwvdGg+XHJcbiAgeyNlYWNoICRlbnRpdHkuZ2V0V2VhcG9ucygpLm1lbGVlIGFzIHdlYXBvbiwgaX1cclxuICAgIDxSb3dcclxuICAgICAgZGlzYWJsZWQ9eyF3ZWFwb24ub3duZXIuaXNBY3RpdmUoKX1cclxuICAgICAgbWVudUl0ZW1zPXsoKSA9PiB3ZWFwb25NZW51SXRlbXMod2VhcG9uLCBpLCB3ZWFwb24ub3duZXIuZm91bmRyeUlEKX1cclxuICAgICAgY29uZmlnPXt7IGhpZ2hsaWdodEhvdmVyOiBmYWxzZSwgZGVsZXRlQnV0dG9uOiBmYWxzZSwgZm9jdXNhYmxlOiBmYWxzZSB9fT5cclxuICAgICAgPHRkPnt3ZWFwb24ub3duZXIubmFtZX08L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi51c2FnZX08L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uc2tpbGxMZXZlbCgpfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbFNraWxsKCl9IC8+XHJcbiAgICAgICAgICB7d2VhcG9uLnNraWxsTGV2ZWwoKSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLnBhcnJ5ID09PSAnbnVtYmVyJ31cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFzIGZhLXNoaWVsZC1hbHRcIiBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxQYXJyeSgpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5wYXJyeSB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB0eXBlb2Ygd2VhcG9uLmJsb2NrID09PSAnbnVtYmVyJ31cclxuICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFzIGZhLXNoaWVsZC1hbHRcIiBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxCbG9jaygpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5ibG9jayB8fCAnJ31cclxuICAgICAgICB7L2lmfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgeyNpZiB3ZWFwb24uZGFtYWdlfVxyXG4gICAgICAgICAgPHNwYW5cclxuICAgICAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB3ZWFwb24ucm9sbERhbWFnZSgpfSAvPlxyXG4gICAgICAgICAge3dlYXBvbi5kYW1hZ2UgfHwgJyd9XHJcbiAgICAgICAgey9pZn1cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmVhY2ggfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uc3RyZW5ndGggfHwgJyd9PC90ZD5cclxuICAgIDwvUm93PlxyXG4gIHsvZWFjaH1cclxuPC9MaXN0PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUJFLEdBQUcsZUFBQyxDQUFDLEFBQ0gsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsSUFBSSxDQUFFLEVBQUUsQUFDVixDQUFDLEFBQ0QsRUFBRSxlQUFDLENBQUMsQUFDRixRQUFRLENBQUUsUUFBUSxBQUNwQixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3647,29 +3697,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/RangedWeapons.svelte","webpack://src/svelte/weapon-list/RangedWeapons.svelte.css"],"names":[],"mappings":"AAoBE,mBAAK,UACQ;ACpBf,imGAAimG","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    float: left;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Ranged Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Acc</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Range</th>\r\n  <th slot=\"header\">RoF</th>\r\n  <th slot=\"header\">Shots</th>\r\n  <th slot=\"header\">Bulk</th>\r\n  <th slot=\"header\">Rcl</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().ranged as weapon, i}\r\n    <Row\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name || ''}</td>\r\n      <td>{weapon.usage || ''}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n        {/if}\r\n        <span>{weapon.skillLevel() || ''}</span>\r\n      </td>\r\n      <td>{weapon.accuracy || ''}</td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n        {/if}\r\n        <span>{weapon.damage || ''}</span>\r\n      </td>\r\n      <td>{weapon.range || ''}</td>\r\n      <td>{weapon.rateOfFire || ''}</td>\r\n      <td>{weapon.shots || ''}</td>\r\n      <td>{weapon.bulk || ''}</td>\r\n      <td>{weapon.recoil || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css ***!
-  \*************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".mouseover-anchor {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n}\n\n.mouseover-anchor .mouseover-container {\n    visibility: hidden;\n    width: 100%;\n    text-align: center;\n\n    /* Position the mouseover text */\n    position: absolute;\n    z-index: 1;\n    bottom: 125%;\n    left: 0;\n\n    /* Fade in mouseover */\n    opacity: 0;\n    transition: opacity 0.3s;\n}\n\n.mouseover {\n    display: inline-block;\n    background-color: #555;\n    color: #fff;\n    padding: 5px;\n    border-radius: 6px;\n}\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: #555 transparent transparent transparent;\n}\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n    visibility: visible;\n    opacity: 1;\n}", "",{"version":3,"sources":["webpack://src/templates/GURPS-foundry-roll-templates/templates_roll.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,qBAAqB;IACrB,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,kBAAkB;;IAElB,gCAAgC;IAChC,kBAAkB;IAClB,UAAU;IACV,YAAY;IACZ,OAAO;;IAEP,sBAAsB;IACtB,UAAU;IACV,wBAAwB;AAC5B;;AAEA;IACI,qBAAqB;IACrB,sBAAsB;IACtB,WAAW;IACX,YAAY;IACZ,kBAAkB;AACtB;;AAEA,oBAAoB;AACpB;IACI,WAAW;IACX,kBAAkB;IAClB,SAAS;IACT,SAAS;IACT,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;IACnB,sDAAsD;AAC1D;;AAEA,wEAAwE;AACxE;IACI,mBAAmB;IACnB,UAAU;AACd","sourcesContent":[".mouseover-anchor {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n}\n\n.mouseover-anchor .mouseover-container {\n    visibility: hidden;\n    width: 100%;\n    text-align: center;\n\n    /* Position the mouseover text */\n    position: absolute;\n    z-index: 1;\n    bottom: 125%;\n    left: 0;\n\n    /* Fade in mouseover */\n    opacity: 0;\n    transition: opacity 0.3s;\n}\n\n.mouseover {\n    display: inline-block;\n    background-color: #555;\n    color: #fff;\n    padding: 5px;\n    border-radius: 6px;\n}\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: #555 transparent transparent transparent;\n}\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n    visibility: visible;\n    opacity: 1;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBkaXNhYmxlZD17IXdlYXBvbi5vd25lci5pc0FjdGl2ZSgpfVxyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/weapon-list/RangedWeapons.svelte","webpack://src/svelte/weapon-list/RangedWeapons.svelte.css"],"names":[],"mappings":"AAoBE,mBAAK,UACQ;ACpBf,6pGAA6pG","sourcesContent":["<script>\r\n  import { List, Row } from \"../list/list\";\r\n  import { getContext } from \"svelte\";\r\n\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  const weaponMenuItems = (weapon, i, id) => [\r\n    {\r\n      name: \"Edit\",\r\n      icon: '<i class=\"fas fa-edit\"></i>',\r\n      condition: () => true,\r\n      callback() {\r\n        $entity.getOwnedItem(weapon.owner.foundryID).sheet.render(true);\r\n      },\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .d6 {\r\n    float: left;\r\n  }\r\n</style>\r\n\r\n<List config={{ addListItemButton: false }}>\r\n  <th slot=\"header\">Ranged Weapons</th>\r\n  <th slot=\"header\">Usage</th>\r\n  <th slot=\"header\">Lvl</th>\r\n  <th slot=\"header\">Acc</th>\r\n  <th slot=\"header\">Damage</th>\r\n  <th slot=\"header\">Range</th>\r\n  <th slot=\"header\">RoF</th>\r\n  <th slot=\"header\">Shots</th>\r\n  <th slot=\"header\">Bulk</th>\r\n  <th slot=\"header\">Rcl</th>\r\n  <th slot=\"header\">ST</th>\r\n  {#each $entity.getWeapons().ranged as weapon, i}\r\n    <Row\r\n      disabled={!weapon.owner.isActive()}\r\n      menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}\r\n      config={{ highlightHover: false, deleteButton: false, focusable: false }}>\r\n      <td>{weapon.owner.name || ''}</td>\r\n      <td>{weapon.usage || ''}</td>\r\n      <td>\r\n        {#if weapon.skillLevel()}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollSkill()} />\r\n        {/if}\r\n        <span>{weapon.skillLevel() || ''}</span>\r\n      </td>\r\n      <td>{weapon.accuracy || ''}</td>\r\n      <td>\r\n        {#if weapon.damage}\r\n          <span\r\n            class=\"fas fa-dice d6 roll-ico\"\r\n            on:click={() => weapon.rollDamage()} />\r\n        {/if}\r\n        <span>{weapon.damage || ''}</span>\r\n      </td>\r\n      <td>{weapon.range || ''}</td>\r\n      <td>{weapon.rateOfFire || ''}</td>\r\n      <td>{weapon.shots || ''}</td>\r\n      <td>{weapon.bulk || ''}</td>\r\n      <td>{weapon.recoil || ''}</td>\r\n      <td>{weapon.strength || ''}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".d6.svelte-117tss7{float:left}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmFuZ2VkV2VhcG9ucy5zdmVsdGUiLCJzb3VyY2VzIjpbIlJhbmdlZFdlYXBvbnMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gIGNvbnN0IHdlYXBvbk1lbnVJdGVtcyA9ICh3ZWFwb24sIGksIGlkKSA9PiBbXHJcbiAgICB7XHJcbiAgICAgIG5hbWU6IFwiRWRpdFwiLFxyXG4gICAgICBpY29uOiAnPGkgY2xhc3M9XCJmYXMgZmEtZWRpdFwiPjwvaT4nLFxyXG4gICAgICBjb25kaXRpb246ICgpID0+IHRydWUsXHJcbiAgICAgIGNhbGxiYWNrKCkge1xyXG4gICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpLnNoZWV0LnJlbmRlcih0cnVlKTtcclxuICAgICAgfSxcclxuICAgIH0sXHJcbiAgXTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmQ2IHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxMaXN0IGNvbmZpZz17eyBhZGRMaXN0SXRlbUJ1dHRvbjogZmFsc2UgfX0+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZWQgV2VhcG9uczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Vc2FnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Mdmw8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QWNjPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkRhbWFnZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SYW5nZTwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Sb0Y8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U2hvdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+QnVsazwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SY2w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U1Q8L3RoPlxyXG4gIHsjZWFjaCAkZW50aXR5LmdldFdlYXBvbnMoKS5yYW5nZWQgYXMgd2VhcG9uLCBpfVxyXG4gICAgPFJvd1xyXG4gICAgICBkaXNhYmxlZD17IXdlYXBvbi5vd25lci5pc0FjdGl2ZSgpfVxyXG4gICAgICBtZW51SXRlbXM9eygpID0+IHdlYXBvbk1lbnVJdGVtcyh3ZWFwb24sIGksIHdlYXBvbi5vd25lci5mb3VuZHJ5SUQpfVxyXG4gICAgICBjb25maWc9e3sgaGlnaGxpZ2h0SG92ZXI6IGZhbHNlLCBkZWxldGVCdXR0b246IGZhbHNlLCBmb2N1c2FibGU6IGZhbHNlIH19PlxyXG4gICAgICA8dGQ+e3dlYXBvbi5vd25lci5uYW1lIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnVzYWdlIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICB7I2lmIHdlYXBvbi5za2lsbExldmVsKCl9XHJcbiAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHdlYXBvbi5yb2xsU2tpbGwoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uc2tpbGxMZXZlbCgpIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24uYWNjdXJhY3kgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHsjaWYgd2VhcG9uLmRhbWFnZX1cclxuICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgICBvbjpjbGljaz17KCkgPT4gd2VhcG9uLnJvbGxEYW1hZ2UoKX0gLz5cclxuICAgICAgICB7L2lmfVxyXG4gICAgICAgIDxzcGFuPnt3ZWFwb24uZGFtYWdlIHx8ICcnfTwvc3Bhbj5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmFuZ2UgfHwgJyd9PC90ZD5cclxuICAgICAgPHRkPnt3ZWFwb24ucmF0ZU9mRmlyZSB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zaG90cyB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5idWxrIHx8ICcnfTwvdGQ+XHJcbiAgICAgIDx0ZD57d2VhcG9uLnJlY29pbCB8fCAnJ308L3RkPlxyXG4gICAgICA8dGQ+e3dlYXBvbi5zdHJlbmd0aCB8fCAnJ308L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFvQkUsR0FBRyxlQUFDLENBQUMsQUFDSCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3880,6 +3908,827 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./node_modules/json-query/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/json-query/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var State = __webpack_require__(/*! ./lib/state */ "./node_modules/json-query/lib/state.js")
+var tokenize = __webpack_require__(/*! ./lib/tokenize */ "./node_modules/json-query/lib/tokenize.js")
+
+var tokenizedCache = {}
+
+module.exports = function jsonQuery (query, options) {
+
+  // extract params for ['test[param=?]', 'value'] type queries
+  var params = options && options.params || null
+  if (Array.isArray(query)) {
+    params = query.slice(1)
+    query = query[0]
+  }
+
+  if (!tokenizedCache[query]) {
+    tokenizedCache[query] = tokenize(query, true)
+  }
+
+  return handleQuery(tokenizedCache[query], options, params)
+}
+
+
+module.exports.lastParent = function (query) {
+  var last = query.parents[query.parents.length - 1]
+  if (last) {
+    return last.value
+  } else {
+    return null
+  }
+}
+
+
+function handleQuery (tokens, options, params) {
+  var state = new State(options, params, handleQuery)
+
+  for (var i = 0; i < tokens.length; i++) {
+    if (handleToken(tokens[i], state)) {
+      break
+    }
+  }
+
+  // flush
+  handleToken(null, state)
+
+  // set databind hooks
+  if (state.currentItem instanceof Object) {
+    state.addReference(state.currentItem)
+  } else {
+    var parentObject = getLastParentObject(state.currentParents)
+    if (parentObject) {
+      state.addReference(parentObject)
+    }
+  }
+
+  return {
+    value: state.currentItem,
+    key: state.currentKey,
+    references: state.currentReferences,
+    parents: state.currentParents
+  }
+}
+
+function handleToken (token, state) {
+  // state: setCurrent, getValue, getValues, resetCurrent, deepQuery, rootContext, currentItem, currentKey, options, filters
+
+  if (token == null) {
+    // process end of query
+    if (!state.currentItem && state.options.force) {
+      state.force(state.options.force)
+    }
+  } else if (token.values) {
+    if (state.currentItem) {
+      var keys = Object.keys(state.currentItem)
+      var values = []
+      keys.forEach(function (key) {
+        if (token.deep && Array.isArray(state.currentItem[key])) {
+          state.currentItem[key].forEach(function (item) {
+            values.push(item)
+          })
+        } else {
+          values.push(state.currentItem[key])
+        }
+      })
+      state.setCurrent(keys, values)
+    } else {
+      state.setCurrent(keys, [])
+    }
+  } else if (token.get) {
+    var key = state.getValue(token.get)
+    if (shouldOverride(state, key)) {
+      state.setCurrent(key, state.override[key])
+    } else {
+      if (state.currentItem || (state.options.force && state.force({}))) {
+        if (isDeepAccessor(state.currentItem, key) || token.multiple) {
+          var values = state.currentItem.map(function (item) {
+            return item[key]
+          }).filter(isDefined)
+
+          values = Array.prototype.concat.apply([], values) // flatten
+
+          state.setCurrent(key, values)
+        } else {
+          state.setCurrent(key, state.currentItem[key])
+        }
+      } else {
+        state.setCurrent(key, null)
+      }
+    }
+  } else if (token.select) {
+    if (Array.isArray(state.currentItem) || (state.options.force && state.force([]))) {
+      var match = (token.boolean ? token.select : [token]).map(function (part) {
+        if (part.op === ':') {
+          var key = state.getValue(part.select[0])
+          return {
+            func: function (item) {
+              if (key) {
+                item = item[key]
+              }
+              return state.getValueFrom(part.select[1], item)
+            },
+            negate: part.negate,
+            booleanOp: part.booleanOp
+          }
+        } else {
+          var selector = state.getValues(part.select)
+          if (!state.options.allowRegexp && part.op === '~' && selector[1] instanceof RegExp) throw new Error('options.allowRegexp is not enabled.')
+          return {
+            key: selector[0],
+            value: selector[1],
+            negate: part.negate,
+            booleanOp: part.booleanOp,
+            op: part.op
+          }
+        }
+      })
+
+      if (token.multiple) {
+        var keys = []
+        var value = []
+        state.currentItem.forEach(function (item, i) {
+          if (matches(item, match)) {
+            keys.push(i)
+            value.push(item)
+          }
+        })
+        state.setCurrent(keys, value)
+      } else {
+        if (!state.currentItem.some(function (item, i) {
+          if (matches(item, match)) {
+            state.setCurrent(i, item)
+            return true
+          }
+        })) {
+          state.setCurrent(null, null)
+        }
+      }
+    } else {
+      state.setCurrent(null, null)
+    }
+  } else if (token.root) {
+    state.resetCurrent()
+    if (token.args && token.args.length) {
+      state.setCurrent(null, state.getValue(token.args[0]))
+    } else {
+      state.setCurrent(null, state.rootContext)
+    }
+  } else if (token.parent) {
+    state.resetCurrent()
+    state.setCurrent(null, state.options.parent)
+  } else if (token.or) {
+    if (state.currentItem) {
+      return true
+    } else {
+      state.resetCurrent()
+      state.setCurrent(null, state.context)
+    }
+  } else if (token.filter) {
+    var helper = state.getLocal(token.filter) || state.getGlobal(token.filter)
+    if (typeof helper === 'function') {
+      // function(input, args...)
+      var values = state.getValues(token.args || [])
+      var result = helper.apply(state.options, [state.currentItem].concat(values))
+      state.setCurrent(null, result)
+    } else {
+      // fallback to old filters
+      var filter = state.getFilter(token.filter)
+      if (typeof filter === 'function') {
+        var values = state.getValues(token.args || [])
+        var result = filter.call(state.options, state.currentItem, {args: values, state: state, data: state.rootContext})
+        state.setCurrent(null, result)
+      }
+    }
+  } else if (token.deep) {
+    if (state.currentItem) {
+      if (token.deep.length === 0) {
+        return
+      }
+
+      var result = state.deepQuery(state.currentItem, token.deep, state.options)
+      if (result) {
+        state.setCurrent(result.key, result.value)
+        for (var i = 0; i < result.parents.length; i++) {
+          state.currentParents.push(result.parents[i])
+        }
+      } else {
+        state.setCurrent(null, null)
+      }
+    } else {
+      state.currentItem = null
+    }
+  }
+}
+
+function matches (item, parts) {
+  var result = false
+  for (var i = 0; i < parts.length; i++) {
+    var opts = parts[i]
+    var r = false
+    if (opts.func) {
+      r = opts.func(item)
+    } else if (opts.op === '~') {
+      if (opts.value instanceof RegExp) {
+        r = item[opts.key] && !!item[opts.key].match(opts.value)
+      } else {
+        r = item[opts.key] && !!~item[opts.key].indexOf(opts.value)
+      }
+    } else if (opts.op === '=') {
+      if ((item[opts.key] === true && opts.value === 'true') || (item[opts.key] === false && opts.value === 'false')) {
+        r = true
+      } else {
+        r = item[opts.key] == opts.value
+      }
+    } else if (opts.op === '>') {
+      r = item[opts.key] > opts.value
+    } else if (opts.op === '<') {
+      r = item[opts.key] < opts.value
+    } else if (opts.op === '>=') {
+      r = item[opts.key] >= opts.value
+    } else if (opts.op === '<=') {
+      r = item[opts.key] <= opts.value
+    }
+
+    if (opts.negate) {
+      r = !r
+    }
+    if (opts.booleanOp === '&') {
+      result = result && r
+    } else if (opts.booleanOp === '|') {
+      result = result || r
+    } else {
+      result = r
+    }
+  }
+
+  return result
+}
+
+function isDefined(value) {
+  return typeof value !== 'undefined'
+}
+
+function shouldOverride (state, key) {
+  return state.override && state.currentItem === state.rootContext && state.override[key] !== undefined
+}
+
+function isDeepAccessor (currentItem, key) {
+  return currentItem instanceof Array && parseInt(key) != key
+}
+
+function getLastParentObject (parents) {
+  for (var i = 0; i < parents.length; i++) {
+    if (!(parents[i + 1]) || !(parents[i + 1].value instanceof Object)) {
+      return parents[i].value
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/json-query/lib/depth-split.js":
+/*!****************************************************!*\
+  !*** ./node_modules/json-query/lib/depth-split.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = depthSplit
+
+function depthSplit (text, delimiter, opts) {
+  var max = opts && opts.max || Infinity
+  var includeDelimiters = opts && opts.includeDelimiters || false
+
+  var depth = 0
+  var start = 0
+  var result = []
+  var zones = []
+
+  text.replace(/([\[\(\{])|([\]\)\}])/g, function (current, open, close, offset) {
+    if (open) {
+      if (depth === 0) {
+        zones.push([start, offset])
+      }
+      depth += 1
+    } else if (close) {
+      depth -= 1
+      if (depth === 0) {
+        start = offset + current.length
+      }
+    }
+  })
+
+  if (depth === 0 && start < text.length) {
+    zones.push([start, text.length])
+  }
+
+  start = 0
+
+  for (var i = 0; i < zones.length && max > 0; i++) {
+    for (
+      var pos = zones[i][0], match = delimiter.exec(text.slice(pos, zones[i][1]));
+      match && max > 1;
+      pos += match.index + match[0].length, start = pos, match = delimiter.exec(text.slice(pos, zones[i][1]))
+    ) {
+      result.push(text.slice(start, match.index + pos))
+      if (includeDelimiters) {
+        result.push(match[0])
+      }
+      max -= 1
+    }
+  }
+
+  if (start < text.length) {
+    result.push(text.slice(start))
+  }
+
+  return result
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/json-query/lib/state.js":
+/*!**********************************************!*\
+  !*** ./node_modules/json-query/lib/state.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = State
+
+function State(options, params, handleQuery){
+
+  options = options || {}
+
+  //this.options = options
+  this.handleQuery = handleQuery
+  this.options = options
+  this.locals = this.options.locals || {}
+  this.globals = this.options.globals || {}
+  this.rootContext = firstNonNull(options.data, options.rootContext, options.context, options.source)
+  this.parent = options.parent
+  this.override = options.override
+  this.filters = options.filters || {}
+  this.params = params || options.params || []
+  this.context = firstNonNull(options.currentItem, options.context, options.source)
+  this.currentItem = firstNonNull(this.context, options.rootContext, options.data)
+  this.currentKey = null
+  this.currentReferences = []
+  this.currentParents = []
+}
+
+State.prototype = {
+
+  // current manipulation
+  setCurrent: function(key, value){
+    if (this.currentItem || this.currentKey || this.currentParents.length>0){
+      this.currentParents.push({key: this.currentKey, value: this.currentItem})
+    }
+    this.currentItem = value
+    this.currentKey = key
+  },
+
+  resetCurrent: function(){
+    this.currentItem = null
+    this.currentKey = null
+    this.currentParents = []
+  },
+
+  force: function(def){
+    var parent = this.currentParents[this.currentParents.length-1]
+    if (!this.currentItem && parent && (this.currentKey != null)){
+      this.currentItem = def || {}
+      parent.value[this.currentKey] = this.currentItem
+    }
+    return !!this.currentItem
+  },
+
+  getLocal: function(localName){
+    if (~localName.indexOf('/')){
+      var result = null
+      var parts = localName.split('/')
+
+      for (var i=0;i<parts.length;i++){
+        var part = parts[i]
+        if (i == 0){
+          result = this.locals[part]
+        } else if (result && result[part]){
+          result = result[part]
+        }
+      }
+
+      return result
+    } else {
+      return this.locals[localName]
+    }
+  },
+
+  getGlobal: function(globalName){
+    if (~globalName.indexOf('/')){
+      var result = null
+      var parts = globalName.split('/')
+
+      for (var i=0;i<parts.length;i++){
+        var part = parts[i]
+        if (i == 0){
+          result = this.globals[part]
+        } else if (result && result[part]){
+          result = result[part]
+        }
+      }
+
+      return result
+    } else {
+      return this.globals[globalName]
+    }
+  },
+
+  getFilter: function(filterName){
+    if (~filterName.indexOf('/')){
+      var result = null
+      var filterParts = filterName.split('/')
+
+      for (var i=0;i<filterParts.length;i++){
+        var part = filterParts[i]
+        if (i == 0){
+          result = this.filters[part]
+        } else if (result && result[part]){
+          result = result[part]
+        }
+      }
+
+      return result
+    } else {
+      return this.filters[filterName]
+    }
+  },
+
+  addReferences: function(references){
+    if (references){
+      references.forEach(this.addReference, this)
+    }
+  },
+
+  addReference: function(ref){
+    if (ref instanceof Object && !~this.currentReferences.indexOf(ref)){
+      this.currentReferences.push(ref)
+    }
+  },
+
+  // helper functions
+  getValues: function(values, callback){
+    return values.map(this.getValue, this)
+  },
+
+  getValue: function (value) {
+    return this.getValueFrom(value, null)
+  },
+
+  getValueFrom: function (value, item) {
+    if (value._param != null){
+      return this.params[value._param]
+    } else if (value._sub){
+
+      var options = copy(this.options)
+      options.force = null
+      options.currentItem = item
+
+      var result = this.handleQuery(value._sub, options, this.params)
+      this.addReferences(result.references)
+      return result.value
+
+    } else {
+      return value
+    }
+  },
+
+  deepQuery: function(source, tokens, options, callback){
+    var keys = Object.keys(source)
+
+    for (var key in source){
+      if (key in source){
+
+        var options = copy(this.options)
+        options.currentItem = source[key]
+
+        var result = this.handleQuery(tokens, options, this.params)
+
+        if (result.value){
+          return result
+        }
+      }
+    }
+
+    return null
+  }
+
+}
+
+function firstNonNull(args){
+  for (var i=0;i<arguments.length;i++){
+    if (arguments[i] != null){
+      return arguments[i]
+    }
+  }
+}
+
+function copy(obj){
+  var result = {}
+  if (obj){
+    for (var key in obj){
+      if (key in obj){
+        result[key] = obj[key]
+      }
+    }
+  }
+  return result
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/json-query/lib/tokenize.js":
+/*!*************************************************!*\
+  !*** ./node_modules/json-query/lib/tokenize.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// todo: syntax checking
+// todo: test handle args
+var depthSplit = __webpack_require__(/*! ./depth-split */ "./node_modules/json-query/lib/depth-split.js")
+
+module.exports = function(query, shouldAssignParamIds){
+  if (!query) return []
+
+  var result = []
+    , prevChar, char
+    , nextChar = query.charAt(0)
+    , bStart = 0
+    , bEnd = 0
+    , partOffset = 0
+    , pos = 0
+    , depth = 0
+    , mode = 'get'
+    , deepQuery = null
+
+  // if query contains params then number them
+  if (shouldAssignParamIds){
+    query = assignParamIds(query)
+  }
+
+  var tokens = {
+    '.': {mode: 'get'},
+    ':': {mode: 'filter'},
+    '|': {handle: 'or'},
+    '[': {open: 'select'},
+    ']': {close: 'select'},
+    '{': {open: 'meta'},
+    '}': {close: 'meta'},
+    '(': {open: 'args'},
+    ')': {close: 'args'}
+  }
+
+  function push(item){
+    if (deepQuery){
+      deepQuery.push(item)
+    } else {
+      result.push(item)
+    }
+  }
+
+  var handlers = {
+    get: function(buffer){
+      var trimmed = typeof buffer === 'string' ? buffer.trim() : null
+      if (trimmed){
+        push({get:trimmed})
+      }
+    },
+    select: function(buffer){
+      if (buffer){
+        push(tokenizeSelect(buffer))
+      } else {
+        // deep query override
+        var x = {deep: []}
+        result.push(x)
+        deepQuery = x.deep
+      }
+    },
+    filter: function(buffer){
+      if (buffer){
+        push({filter:buffer.trim()})
+      }
+    },
+    or: function(){
+      deepQuery = null
+      result.push({or:true})
+      partOffset = i + 1
+    },
+    args: function(buffer){
+      var args = tokenizeArgs(buffer)
+      result[result.length-1].args = args
+    }
+  }
+
+  function handleBuffer(){
+    var buffer = query.slice(bStart, bEnd)
+    if (handlers[mode]){
+      handlers[mode](buffer)
+    }
+    mode = 'get'
+    bStart = bEnd + 1
+  }
+
+  for (var i = 0;i < query.length;i++){
+
+    // update char values
+    prevChar = char; char = nextChar; nextChar = query.charAt(i + 1);
+    pos = i - partOffset
+
+    // root query check
+    if (pos === 0 && (char !== ':' && char !== '.')){
+      result.push({root:true})
+    }
+
+    // parent query check
+    if (pos === 0 && (char === '.' && nextChar === '.')){
+      result.push({parent:true})
+    }
+
+    var token = tokens[char]
+    if (token){
+
+      // set mode
+      if (depth === 0 && (token.mode || token.open)){
+        handleBuffer()
+        mode = token.mode || token.open
+      }
+
+      if (depth === 0 && token.handle){
+        handleBuffer()
+        handlers[token.handle]()
+      }
+
+      if (token.open){
+        depth += 1
+      } else if (token.close){
+        depth -= 1
+      }
+
+      // reset mode to get
+      if (depth === 0 && token.close){
+        handleBuffer()
+      }
+
+    }
+
+    bEnd = i + 1
+
+  }
+
+  handleBuffer()
+  return result
+}
+
+function tokenizeArgs(argsQuery){
+  if (argsQuery === ',') return [',']
+  return depthSplit(argsQuery, /,/).map(function(s){
+    return handleSelectPart(s.trim())
+  })
+}
+
+function tokenizeSelect (selectQuery) {
+  if (selectQuery === '*') {
+    return {
+      values: true
+    }
+  } else if (selectQuery === '**') {
+    return {
+      values: true,
+      deep: true
+    }
+  }
+
+  var multiple = false
+  if (selectQuery.charAt(0) === '*') {
+    multiple = true
+    selectQuery = selectQuery.slice(1)
+  }
+
+  var booleanParts = depthSplit(selectQuery, /&|\|/, { includeDelimiters: true })
+  if (booleanParts.length > 1) {
+    var result = [
+      getSelectPart(booleanParts[0].trim())
+    ]
+    for (var i = 1; i < booleanParts.length; i += 2) {
+      var part = getSelectPart(booleanParts[i + 1].trim())
+      if (part) {
+        part.booleanOp = booleanParts[i]
+        result.push(part)
+      }
+    }
+    return {
+      multiple: multiple,
+      boolean: true,
+      select: result
+    }
+  } else {
+    var result = getSelectPart(selectQuery.trim())
+    if (!result) {
+      return {
+        get: handleSelectPart(selectQuery.trim())
+      }
+    } else {
+      if (multiple) {
+        result.multiple = true
+      }
+      return result
+    }
+  }
+}
+
+function getSelectPart (selectQuery) {
+  var parts = depthSplit(selectQuery, /(!)?(=|~|\:|<=|>=|<|>)/, { max: 2, includeDelimiters: true })
+  if (parts.length === 3) {
+    var negate = parts[1].charAt(0) === '!'
+    var key = handleSelectPart(parts[0].trim())
+    var result = {
+      negate: negate,
+      op: negate ? parts[1].slice(1) : parts[1]
+    }
+    if (result.op === ':') {
+      result.select = [key, {_sub: module.exports(':' + parts[2].trim())}]
+    } else if (result.op === '~') {
+      var value = handleSelectPart(parts[2].trim())
+      if (typeof value === 'string') {
+        var reDef = parts[2].trim().match(/^\/(.*)\/([a-z]?)$/)
+        if (reDef) {
+          result.select = [key, new RegExp(reDef[1], reDef[2])]
+        } else {
+          result.select = [key, value]
+        }
+      } else {
+        result.select = [key, value]
+      }
+    } else {
+      result.select = [key, handleSelectPart(parts[2].trim())]
+    }
+    return result
+  }
+}
+
+function isInnerQuery (text) {
+  return text.charAt(0) === '{' && text.charAt(text.length-1) === '}'
+}
+
+function handleSelectPart(part){
+  if (isInnerQuery(part)){
+    var innerQuery = part.slice(1, -1)
+    return {_sub: module.exports(innerQuery)}
+  } else {
+    return paramToken(part)
+  }
+}
+
+function paramToken(text){
+  if (text.charAt(0) === '?'){
+    var num = parseInt(text.slice(1))
+    if (!isNaN(num)){
+      return {_param: num}
+    } else {
+      return text
+    }
+  } else {
+    return text
+  }
+}
+
+
+
+function assignParamIds(query){
+  var index = 0
+  return query.replace(/\?/g, function(match){
+    return match + (index++)
+  })
+}
+
+function last (array) {
+  return array[array.length - 1]
+}
+
+
+/***/ }),
 
 /***/ "./node_modules/jsonpath/jsonpath.js":
 /*!*******************************************!*\
@@ -10779,16 +11628,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Attribute", function() { return Attribute; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AttributeBonus", function() { return AttributeBonus; });
 /* harmony import */ var _misc_feature__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./misc/feature */ "./src/character/misc/feature.ts");
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony import */ var _misc_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./misc/element */ "./src/character/misc/element.ts");
-/* harmony import */ var _misc_collection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./misc/collection */ "./src/character/misc/collection.ts");
-
+/* harmony import */ var _misc_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./misc/element */ "./src/character/misc/element.ts");
+/* harmony import */ var _misc_collection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./misc/collection */ "./src/character/misc/collection.ts");
 
 
 
 class AttributeList {
     constructor(character, keys = []) {
-        this.attributes = new _misc_collection__WEBPACK_IMPORTED_MODULE_3__["Collection"];
+        this.attributes = new _misc_collection__WEBPACK_IMPORTED_MODULE_2__["Collection"];
         this.character = character;
         this.configureAttributes();
         this.character.hooks.on("reconfigure", this.configureAttributes);
@@ -10819,7 +11666,7 @@ class AttributeList {
     }
 }
 AttributeList.keys = [];
-class Attribute extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterElement"] {
+class Attribute extends _misc_element__WEBPACK_IMPORTED_MODULE_1__["CharacterElement"] {
     constructor(name, character, costPerLevel, { defaultLevel = 0, basedOn = () => null }, keys = []) {
         super(character, [...keys, ...Attribute.keys]);
         this.name = name;
@@ -10835,7 +11682,7 @@ class Attribute extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterEle
     getMod() { return this.getModList().reduce((prev, cur) => prev + cur.getBonus(), 0); }
     getModList() {
         const attributeName = this.name;
-        return this.character.featureList.getFeaturesByType(_gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].attributeBonus).filter(feature => feature instanceof AttributeBonus && feature.ownerIsActive() && feature.attribute.toLowerCase() === attributeName.toLowerCase());
+        return this.character.featureList.getFeaturesByType(_misc_feature__WEBPACK_IMPORTED_MODULE_0__["FeatureType"].attributeBonus).filter(feature => feature instanceof AttributeBonus && feature.ownerIsActive() && feature.attribute.toLowerCase() === attributeName.toLowerCase());
     }
     pointsSpent() { return this.levelsIncreased() * this.costPerLevel; }
     levelsIncreased() { return this.level - this.defaultLevel; }
@@ -10857,7 +11704,7 @@ class AttributeBonus extends _misc_feature__WEBPACK_IMPORTED_MODULE_0__["Feature
         super(owner, [...keys, ...AttributeBonus.keys]);
     }
 }
-AttributeBonus.type = _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].attributeBonus;
+AttributeBonus.type = _misc_feature__WEBPACK_IMPORTED_MODULE_0__["FeatureType"].attributeBonus;
 AttributeBonus.keys = ["attribute"];
 
 
@@ -10867,12 +11714,13 @@ AttributeBonus.keys = ["attribute"];
 /*!************************************!*\
   !*** ./src/character/character.ts ***!
   \************************************/
-/*! exports provided: Sheet, Character, Signature */
+/*! exports provided: Sheet, SheetData, Character, Signature */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sheet", function() { return Sheet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SheetData", function() { return SheetData; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Character", function() { return Character; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Signature", function() { return Signature; });
 /* harmony import */ var _attribute__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./attribute */ "./src/character/attribute.ts");
@@ -10882,13 +11730,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _misc_feature__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./misc/feature */ "./src/character/misc/feature.ts");
 /* harmony import */ var _profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./profile */ "./src/character/profile.ts");
 /* harmony import */ var _spell__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./spell */ "./src/character/spell.ts");
-/* harmony import */ var _serialization_serializer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./serialization/serializer */ "./src/character/serialization/serializer.ts");
+/* harmony import */ var _externals_serializer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../externals/serializer */ "./src/externals/serializer.ts");
 /* harmony import */ var _locations__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./locations */ "./src/character/locations.ts");
 /* harmony import */ var _hooks_hooks__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../hooks/hooks */ "./src/hooks/hooks.ts");
 /* harmony import */ var _damage_damage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../damage/damage */ "./src/damage/damage.ts");
 /* harmony import */ var _technique__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./technique */ "./src/character/technique.ts");
 /* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./config.json */ "./src/character/config.json");
 var _config_json__WEBPACK_IMPORTED_MODULE_12___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./config.json */ "./src/character/config.json", 1);
+/* harmony import */ var json_query__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! json-query */ "./node_modules/json-query/index.js");
+/* harmony import */ var json_query__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(json_query__WEBPACK_IMPORTED_MODULE_13__);
 var __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || function (receiver, privateMap) {
     if (!privateMap.has(receiver)) {
         throw new TypeError("attempted to get private field on non-instance");
@@ -10916,22 +11766,27 @@ var _currentScope, _elements;
 
 
 
+
 class Sheet {
     constructor(config) {
         this.hooks = new _hooks_hooks__WEBPACK_IMPORTED_MODULE_9__["Hooks"]();
-        this.serializer = _serialization_serializer__WEBPACK_IMPORTED_MODULE_7__["Serializer"];
+        this.serializer = _externals_serializer__WEBPACK_IMPORTED_MODULE_7__["Serializer"];
         _currentScope.set(this, "GCSJSON");
         _elements.set(this, new Set());
         this.defaultConfig = _config_json__WEBPACK_IMPORTED_MODULE_12__;
         this.config = config || _config_json__WEBPACK_IMPORTED_MODULE_12__;
         this.hooks.callAll("init", this);
     }
+    registerPlugin(scope, plugin) {
+        this.plugins.set(scope, plugin.init(this));
+    }
     static registerSerializer(serializer) {
-        Object(_serialization_serializer__WEBPACK_IMPORTED_MODULE_7__["registerSerializer"])(serializer);
+        Object(_externals_serializer__WEBPACK_IMPORTED_MODULE_7__["registerSerializer"])(serializer);
     }
     void() {
         this.hooks.callAll("before void sheet", this);
         __classPrivateFieldGet(this, _elements).clear();
+        this.hooks.callAll("after void sheet", this);
         return this;
     }
     getSerializer(scope) {
@@ -10961,12 +11816,25 @@ class Sheet {
         });
         return result || null;
     }
+    defaultQueryLocals() {
+        return {};
+    }
+    query(query, locals = {}) {
+        return json_query__WEBPACK_IMPORTED_MODULE_13___default()(query, {
+            data: this,
+            locals: Object.assign(this.defaultQueryLocals(), locals)
+        });
+    }
     reconfigure(config) {
         this.config = config;
         this.hooks.callAll("reconfigure", this);
     }
 }
 _currentScope = new WeakMap(), _elements = new WeakMap();
+class SheetData {
+    constructor() {
+    }
+}
 class Character extends Sheet {
     constructor(config) {
         super(config);
@@ -11013,6 +11881,7 @@ class Character extends Sheet {
         return this.attributeList.getAttribute(attribute);
     }
     pointTotals() {
+        const totalPoints = this.totalPoints;
         const racialPoints = this.traitList.sumRacials();
         const attributePoints = this.totalAttributesCost();
         const advantages = this.traitList.sumAdvantages();
@@ -11028,7 +11897,8 @@ class Character extends Sheet {
             quirks,
             skills,
             spells,
-            total: racialPoints + attributePoints + advantages + disadvantages + quirks + skills + spells
+            spent: racialPoints + attributePoints + advantages + disadvantages + quirks + skills + spells,
+            total: totalPoints
         };
     }
     allItems() {
@@ -11082,16 +11952,16 @@ class Character extends Sheet {
                 return Math.floor(this.dodgeScore() * .2);
         }
     }
-    load(data, scope) {
+    load(data, scope, ...args) {
         this.hooks.callAll("before unload", this);
         this.void();
-        this.getSerializer(scope).load(this, data);
+        this.getSerializer(scope).load(this, data, ...args);
         this.hooks.callAll("after load", this);
         return this;
     }
-    save(scope, target) {
+    save(scope, target, ...args) {
         this.hooks.callAll("before save", this);
-        this.getSerializer(scope).save(this, target);
+        this.getSerializer(scope).save(this, target, ...args);
         this.hooks.callAll("after save", this);
         return this;
     }
@@ -11135,10 +12005,10 @@ var Signature;
 /*!***********************************!*\
   !*** ./src/character/config.json ***!
   \***********************************/
-/*! exports provided: attributes, locations, default */
+/*! exports provided: use_multiplicative_modifiers, use_knowing_your_own_strength, use_reduced_swing_damage, use_no_school_grognard_reduced_swing_damage, attributes, locations, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"attributes\":[{\"signature\":\"ST\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"SS\",\"cost_per_level\":5},{\"signature\":\"LS\",\"cost_per_level\":3},{\"signature\":\"HP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('ST').calculateLevel()\"},{\"signature\":\"DX\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"IQ\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"HT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"FP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('HT').calculateLevel()\"},{\"signature\":\"QT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"siganture\":\"QP\",\"cost_per_level\":3,\"based_on\":\"return this.getAttribute('QP').calculateLevel()\"},{\"signature\":\"Speed\",\"cost_per_level\":20,\"increment\":0.25,\"based_on\":\"return (this.getAttribute('DX').calculateLevel() + this.getAttribute('HT').calculateLevel()) / 4\",\"can_be_signature\":true},{\"signature\":\"Move\",\"cost_per_level\":5,\"based_on\":\"return Math.floor(this.getAttribute('Speed').calculateLevel())\"},{\"signature\":\"Per\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true},{\"signature\":\"Will\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true}],\"locations\":[{\"location\":\"Eyes\",\"hit_range\":[],\"hit_penalty\":-9,\"cripple_ratio\":10,\"cripples_on\":\"return damageTaken > maxHP / 10\"},{\"location\":\"Skull\",\"hit_range\":[3,4],\"hit_penalty\":-7},{\"location\":\"Face\",\"hit_range\":[5],\"hit_penalty\":-5},{\"location\":\"Right Leg\",\"hit_range\":[6,7],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Right Arm\",\"hit_range\":[8],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Torso\",\"hit_range\":[9,10],\"hit_penalty\":0},{\"location\":\"Groin\",\"hit_range\":[11],\"hit_penalty\":-3},{\"location\":\"Left Arm\",\"hit_range\":[12],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Left Leg\",\"hit_range\":[13,14],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Hand\",\"hit_range\":[15],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Foot\",\"hit_range\":[16],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Neck\",\"hit_range\":[17,18],\"hit_penalty\":-5},{\"location\":\"Vitals\",\"hit_range\":[],\"hit_penalty\":-3}]}");
+module.exports = JSON.parse("{\"use_multiplicative_modifiers\":false,\"use_knowing_your_own_strength\":false,\"use_reduced_swing_damage\":false,\"use_no_school_grognard_reduced_swing_damage\":false,\"attributes\":[{\"signature\":\"ST\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"SS\",\"cost_per_level\":5},{\"signature\":\"LS\",\"cost_per_level\":3},{\"signature\":\"HP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('ST').calculateLevel()\"},{\"signature\":\"DX\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"IQ\",\"cost_per_level\":20,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"HT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"signature\":\"FP\",\"cost_per_level\":2,\"based_on\":\"return this.getAttribute('HT').calculateLevel()\"},{\"signature\":\"QT\",\"cost_per_level\":10,\"default_level\":10,\"can_be_signature\":true},{\"siganture\":\"QP\",\"cost_per_level\":3,\"based_on\":\"return this.getAttribute('QP').calculateLevel()\"},{\"signature\":\"Speed\",\"cost_per_level\":20,\"increment\":0.25,\"based_on\":\"return (this.getAttribute('DX').calculateLevel() + this.getAttribute('HT').calculateLevel()) / 4\",\"can_be_signature\":true},{\"signature\":\"Move\",\"cost_per_level\":5,\"based_on\":\"return Math.floor(this.getAttribute('Speed').calculateLevel())\"},{\"signature\":\"Per\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true},{\"signature\":\"Will\",\"cost_per_level\":5,\"based_on\":\"return this.getAttribute('IQ').calculateLevel()\",\"can_be_signature\":true}],\"locations\":[{\"location\":\"Eyes\",\"hit_range\":[],\"hit_penalty\":-9,\"cripple_ratio\":10,\"cripples_on\":\"return damageTaken > maxHP / 10\"},{\"location\":\"Skull\",\"hit_range\":[3,4],\"hit_penalty\":-7},{\"location\":\"Face\",\"hit_range\":[5],\"hit_penalty\":-5},{\"location\":\"Right Leg\",\"hit_range\":[6,7],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Right Arm\",\"hit_range\":[8],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Torso\",\"hit_range\":[9,10],\"hit_penalty\":0},{\"location\":\"Groin\",\"hit_range\":[11],\"hit_penalty\":-3},{\"location\":\"Left Arm\",\"hit_range\":[12],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Left Leg\",\"hit_range\":[13,14],\"hit_penalty\":-2,\"cripple_ratio\":2,\"cripples_on\":\"return damageTaken > maxHP / 2\"},{\"location\":\"Hand\",\"hit_range\":[15],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Foot\",\"hit_range\":[16],\"hit_penalty\":-4,\"cripple_ratio\":3,\"cripples_on\":\"return damageTaken > maxHP / 3\"},{\"location\":\"Neck\",\"hit_range\":[17,18],\"hit_penalty\":-5},{\"location\":\"Vitals\",\"hit_range\":[],\"hit_penalty\":-3}]}");
 
 /***/ }),
 
@@ -11218,6 +12088,7 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
         return modifier;
     }
     get name() { return this.description; }
+    set name(name) { this.description = name; }
     isActive() { return this.equipped; }
     getLevel() { return null; }
     getAmmoSources() {
@@ -11227,14 +12098,6 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
             }
             return prev;
         }, []);
-    }
-    childrenWeight() {
-        return Array.from(this.children).reduce((prev, cur) => {
-            return prev += cur.findSelf().extendedWeight();
-        }, 0);
-    }
-    childrenValue() {
-        return 0;
     }
     reduceContainedWeight(weight) {
         var _a;
@@ -11254,22 +12117,19 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
     extendedWeight() {
         const adjustedWeight = this.adjustedWeight();
         if (this.isContainer()) {
-            return this.childrenWeight() + this.weight;
-            return this.reduceContainedWeight((this.childrenWeight() + adjustedWeight));
+            return Array.from(this.getRecursiveChildren()).reduce((prev, cur) => prev + cur.weight * cur.quantity, 0) + this.weight;
         }
         else {
             return this.weight * this.quantity;
-            return adjustedWeight * this.quantity;
         }
     }
     extendedValue() {
         const adjustedValue = this.adjustedValue();
         if (this.isContainer()) {
-            return this.childrenValue();
+            return Array.from(this.getRecursiveChildren()).reduce((prev, cur) => prev + cur.value * cur.quantity, 0) + this.value;
         }
         else {
             return this.value * this.quantity;
-            return adjustedValue * this.quantity;
         }
     }
     getModifiers() { }
@@ -11470,17 +12330,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HitLocation", function() { return HitLocation; });
 /* harmony import */ var _character__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./character */ "./src/character/character.ts");
 /* harmony import */ var _misc_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./misc/element */ "./src/character/misc/element.ts");
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony import */ var _misc_collection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./misc/collection */ "./src/character/misc/collection.ts");
-/* harmony import */ var _misc_feature__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./misc/feature */ "./src/character/misc/feature.ts");
-
+/* harmony import */ var _misc_collection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./misc/collection */ "./src/character/misc/collection.ts");
+/* harmony import */ var _misc_feature__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./misc/feature */ "./src/character/misc/feature.ts");
 
 
 
 
 class LocationList {
     constructor(character) {
-        this.locations = new _misc_collection__WEBPACK_IMPORTED_MODULE_3__["Collection"]();
+        this.locations = new _misc_collection__WEBPACK_IMPORTED_MODULE_2__["Collection"]();
         this.character = character;
         this.configureLocations();
         this.character.hooks.on("reconfigure", this.configureLocations);
@@ -11509,7 +12367,7 @@ class LocationList {
     }
     addLocation({ location, crippleRatio = null, hitsOn = [], hitPenalty = 0, cripplesOn = (damageTaken, maxHP) => false }) {
         const hitLocation = new HitLocation(this.character, location, crippleRatio, hitPenalty, hitsOn, cripplesOn);
-        this.locations.set(location.name, hitLocation);
+        this.locations.set(location, hitLocation);
     }
 }
 class HitLocation extends _misc_element__WEBPACK_IMPORTED_MODULE_1__["CharacterElement"] {
@@ -11539,7 +12397,7 @@ class HitLocation extends _misc_element__WEBPACK_IMPORTED_MODULE_1__["CharacterE
     }
     armorValue() {
         return this.getArmorFeatures().reduce((prev, cur) => {
-            if (cur instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_4__["DRBonus"]) {
+            if (cur instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_3__["DRBonus"]) {
                 if (cur.location.toLowerCase() === this.name.toLowerCase())
                     prev += cur.getBonus();
             }
@@ -11547,8 +12405,8 @@ class HitLocation extends _misc_element__WEBPACK_IMPORTED_MODULE_1__["CharacterE
         }, 0);
     }
     getArmorFeatures() {
-        return this.character.featureList.getFeaturesByType(_gcs_gcs__WEBPACK_IMPORTED_MODULE_2__["FeatureType"].damageResistanceBonus).filter(feature => {
-            if (feature instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_4__["DRBonus"]) {
+        return this.character.featureList.getFeaturesByType(_misc_feature__WEBPACK_IMPORTED_MODULE_3__["FeatureType"].damageResistanceBonus).filter(feature => {
+            if (feature instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_3__["DRBonus"]) {
                 if (feature.location.toLowerCase() === this.name.toLowerCase())
                     return true;
             }
@@ -11740,14 +12598,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CharacterElement", function() { return CharacterElement; });
 /* harmony import */ var _utils_2R20__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utils/2R20 */ "./src/utils/2R20.ts");
 /* harmony import */ var _collection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./collection */ "./src/character/misc/collection.ts");
+var __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _data;
 
 
 class CharacterElement {
     constructor(character, keys) {
         this.subscriptions = new Set();
+        _data.set(this, {
+            local: {}
+        });
         this.uuid = Object(_utils_2R20__WEBPACK_IMPORTED_MODULE_0__["generateUUID"])().toString();
-        this.createDataAccessors([...keys, ...CharacterElement.keys]);
-        this.data = this.proxy();
+        this.watching = [...keys, ...CharacterElement.keys];
+        this.createDataAccessors(this.watching);
         this.character = character;
         this.character.registerElement(this);
         this.reference = "";
@@ -11755,39 +12623,77 @@ class CharacterElement {
         this.notes = "";
         this.categories = new _collection__WEBPACK_IMPORTED_MODULE_1__["Collection"]();
     }
-    proxy() {
-        const _this = this;
-        return new Proxy({}, {
-            get(target, prop, receiver) {
-                if (target[prop] instanceof _collection__WEBPACK_IMPORTED_MODULE_1__["Collection"]) {
-                }
-                return target[prop];
-            },
-            set(target, prop, value, receiver) {
-                if (target[prop] === undefined) {
-                    target[prop] = value;
-                    return true;
-                }
-                if (target[prop] instanceof _collection__WEBPACK_IMPORTED_MODULE_1__["Collection"]) {
-                    target[prop] = value;
-                }
-                else if (target[prop] === value) {
-                }
-                else if (target[prop] !== value) {
-                    target[prop] = value;
-                    _this.dispatch();
-                }
-                return true;
+    setFlag(scope, prop, value) {
+        __classPrivateFieldGet(this, _data)[scope] = { prop: value };
+        return this;
+    }
+    getFlag(scope, prop) {
+        try {
+            return __classPrivateFieldGet(this, _data)[scope][prop];
+        }
+        catch (err) {
+            return null;
+        }
+    }
+    delete() {
+        this.character.removeElement(this);
+    }
+    getSerializer(scope) { return this.character.getSerializer(scope); }
+    subscribe(subscription) {
+        this.subscriptions.add(subscription);
+        return {
+            unsubscribe: () => this.unsubscribe(subscription),
+            update: this.update,
+            set: this.set
+        };
+    }
+    update(updater) {
+        updater(this);
+    }
+    set(value) {
+        let constructor = this.constructor;
+        if (value instanceof constructor) {
+            this.setValue(value);
+        }
+        else {
+        }
+    }
+    setValue(value) {
+        Object.entries(value).forEach(value => {
+            if (value[0] in this.watching) {
+                this[value[0]] = value[1];
             }
         });
     }
+    dispatch() {
+        this.subscriptions.forEach(subscription => {
+            subscription(this);
+        });
+    }
+    unsubscribe(subscribtion) {
+        this.subscriptions.delete(subscribtion);
+    }
     createDataAccessors(keys) {
+        const _this = this;
+        const data = __classPrivateFieldGet(this, _data).local;
         const props = keys.reduce((prev, cur) => {
             if (!prev[cur]) {
                 prev[cur] = {
                     set(val) {
                         try {
-                            this.data[cur] = val;
+                            if (data[cur] === undefined) {
+                                data[cur] = val;
+                            }
+                            if (typeof data[cur] !== typeof val)
+                                return true;
+                            if (data[cur] === val) {
+                            }
+                            else if (data[cur] !== val) {
+                                data[cur] = val;
+                                _this.dispatch();
+                            }
+                            data[cur] = val;
+                            return true;
                         }
                         catch (err) {
                             console.log(err);
@@ -11795,15 +12701,15 @@ class CharacterElement {
                     },
                     get() {
                         try {
-                            return this.data[cur];
+                            return data[cur];
                         }
-                        catch (err) {
-                            console.log(err);
+                        catch (err1) {
                             try {
                                 return this[cur];
                             }
-                            catch (err) {
-                                console.log(err);
+                            catch (err2) {
+                                console.log(err1);
+                                console.log(err2);
                                 return undefined;
                             }
                         }
@@ -11814,26 +12720,8 @@ class CharacterElement {
         }, {});
         Object.defineProperties(this, props);
     }
-    getClass() { return this.constructor; }
-    delete() {
-        this.character.removeElement(this);
-    }
-    getSerializer(scope) { return this.character.getSerializer(scope); }
-    dispatch() {
-        this.subscriptions.forEach(subscription => {
-            subscription(this);
-        });
-    }
-    unsubscribe(subscribtion) {
-        this.subscriptions.delete(subscribtion);
-    }
-    subscribe(subscription) {
-        this.subscriptions.add(subscription);
-        return () => this.unsubscribe(subscription);
-    }
-    update(updater) {
-    }
 }
+_data = new WeakMap();
 CharacterElement.keys = ["reference", "userDescription", "notes", "categories"];
 
 
@@ -11843,29 +12731,39 @@ CharacterElement.keys = ["reference", "userDescription", "notes", "categories"];
 /*!***************************************!*\
   !*** ./src/character/misc/feature.ts ***!
   \***************************************/
-/*! exports provided: FeatureList, Feature, SkillBonus, DRBonus */
+/*! exports provided: FeatureType, FeatureList, Feature, SkillBonus, DRBonus */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeatureType", function() { return FeatureType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeatureList", function() { return FeatureList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Feature", function() { return Feature; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillBonus", function() { return SkillBonus; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DRBonus", function() { return DRBonus; });
 /* harmony import */ var _element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./element */ "./src/character/misc/element.ts");
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony import */ var _character_attribute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @character/attribute */ "./src/character/attribute.ts");
-/* harmony import */ var _utils_string_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @utils/string_utils */ "./src/utils/string_utils.ts");
-/* harmony import */ var _collection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./collection */ "./src/character/misc/collection.ts");
+/* harmony import */ var _character_attribute__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @character/attribute */ "./src/character/attribute.ts");
+/* harmony import */ var _utils_string_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @utils/string_utils */ "./src/utils/string_utils.ts");
+/* harmony import */ var _collection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./collection */ "./src/character/misc/collection.ts");
 
 
 
 
-
+var FeatureType;
+(function (FeatureType) {
+    FeatureType["attributeBonus"] = "attribute_bonus";
+    FeatureType["damageResistanceBonus"] = "dr_bonus";
+    FeatureType["skillBonus"] = "skill_bonus";
+    FeatureType["weaponDamageBonus"] = "weapon_bonus";
+    FeatureType["reactionBonus"] = "reaction_bonus";
+    FeatureType["spellBonus"] = "spell_bonus";
+    FeatureType["containedWeightReduction"] = "contained_weight_reduction";
+    FeatureType["costReduction"] = "cost_reduction";
+})(FeatureType || (FeatureType = {}));
 class FeatureList {
     constructor(character) {
-        this.features = new _collection__WEBPACK_IMPORTED_MODULE_4__["Collection"]();
-        this.weapons = new _collection__WEBPACK_IMPORTED_MODULE_4__["Collection"]();
+        this.features = new _collection__WEBPACK_IMPORTED_MODULE_3__["Collection"]();
+        this.weapons = new _collection__WEBPACK_IMPORTED_MODULE_3__["Collection"]();
         this.character = character;
     }
     registerFeature(feature) {
@@ -11916,29 +12814,29 @@ class Feature extends _element__WEBPACK_IMPORTED_MODULE_0__["CharacterElement"] 
     unregister() {
         this.owner.list.character.featureList.removeFeature(this.uuid);
     }
-    save(...args) {
-        return this.getSerializer().transformers.get(this.tag).save(this, ...args);
-    }
     load(data, ...args) {
-        return this.getSerializer().transformers.get(this.tag).load(this, data, ...args);
+        return this.getSerializer().transform(this.tag, "load")(this, data, ...args);
+    }
+    save(data, ...args) {
+        return this.getSerializer().transform(this.tag, "save")(this, data, ...args);
     }
     static loadFeature(owner, featureType) {
         switch (featureType) {
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].attributeBonus:
-                return new _character_attribute__WEBPACK_IMPORTED_MODULE_2__["AttributeBonus"](owner);
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].containedWeightReduction:
+            case FeatureType.attributeBonus:
+                return new _character_attribute__WEBPACK_IMPORTED_MODULE_1__["AttributeBonus"](owner);
+            case FeatureType.containedWeightReduction:
                 break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].costReduction:
+            case FeatureType.costReduction:
                 break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].damageResistanceBonus:
+            case FeatureType.damageResistanceBonus:
                 return new DRBonus(owner);
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].reactionBonus:
+            case FeatureType.reactionBonus:
                 break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].skillBonus:
+            case FeatureType.skillBonus:
                 return new SkillBonus(owner);
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].spellBonus:
+            case FeatureType.spellBonus:
                 break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].weaponDamageBonus:
+            case FeatureType.weaponDamageBonus:
                 break;
             default:
                 return null;
@@ -11958,21 +12856,21 @@ class SkillBonus extends Feature {
         let specializationCompare = true;
         let categoryCompare = true;
         if (this.nameCompareType)
-            nameCompare = Object(_utils_string_utils__WEBPACK_IMPORTED_MODULE_3__["stringCompare"])(this.name, skill.name, this.nameCompareType);
+            nameCompare = Object(_utils_string_utils__WEBPACK_IMPORTED_MODULE_2__["stringCompare"])(this.name, skill.name, this.nameCompareType);
         if (this.specializationCompareType)
-            specializationCompare = Object(_utils_string_utils__WEBPACK_IMPORTED_MODULE_3__["stringCompare"])(this.specialization, skill.specialization, this.specializationCompareType);
+            specializationCompare = Object(_utils_string_utils__WEBPACK_IMPORTED_MODULE_2__["stringCompare"])(this.specialization, skill.specialization, this.specializationCompareType);
         return nameCompare && specializationCompare && categoryCompare;
     }
 }
 SkillBonus.keys = [];
-SkillBonus.type = _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].skillBonus;
+SkillBonus.type = FeatureType.skillBonus;
 class DRBonus extends Feature {
     constructor(owner, keys = []) {
         super(owner, [...keys, ...DRBonus.keys]);
     }
 }
 DRBonus.keys = ["location"];
-DRBonus.type = _gcs_gcs__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].damageResistanceBonus;
+DRBonus.type = FeatureType.damageResistanceBonus;
 
 
 /***/ }),
@@ -11997,18 +12895,19 @@ var __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || 
     }
     return privateMap.get(receiver);
 };
-var _contents, _childIDs, _containedByID;
+var _contents, _revoke, _childIDs, _containedByID;
 
 
 
 class List {
     constructor(character) {
         _contents.set(this, new _collection__WEBPACK_IMPORTED_MODULE_2__["Collection"]());
+        _revoke.set(this, void 0);
         this.contents = new Set();
         this.character = character;
     }
     get length() { return __classPrivateFieldGet(this, _contents).size; }
-    get [(_contents = new WeakMap(), Symbol.iterator)]() { return __classPrivateFieldGet(this, _contents)[Symbol.iterator]; }
+    get [(_contents = new WeakMap(), _revoke = new WeakMap(), Symbol.iterator)]() { return __classPrivateFieldGet(this, _contents)[Symbol.iterator]; }
     generate() {
         this.contents.clear();
         this.iter().reduce((prev, cur) => {
@@ -12033,9 +12932,7 @@ class List {
         __classPrivateFieldGet(this, _contents).delete(item.uuid);
         this.generate();
     }
-    getByIndex(index) { return Array.from(this.contents.values())[index]; }
     getByUUID(uuid) { return __classPrivateFieldGet(this, _contents).get(uuid); }
-    getSize() { return __classPrivateFieldGet(this, _contents).size; }
     iter() {
         const contents = __classPrivateFieldGet(this, _contents).iter();
         return contents;
@@ -12044,10 +12941,10 @@ class List {
         this.generate();
         return Array.from(this.contents);
     }
-    keys() { return Array.from(this.contents.keys()); }
-    save() { return this.character.getSerializer().saveList(this); }
-    load(data) {
-        this.character.getSerializer().loadList(this, data);
+    keys() { return Array.from(__classPrivateFieldGet(this, _contents).keys()); }
+    save(...args) { return this.character.getSerializer().saveList(this, ...args); }
+    load(...args) {
+        this.character.getSerializer().loadList(this, ...args);
         this.generate();
         return this;
     }
@@ -12084,31 +12981,21 @@ class ListItem extends _element__WEBPACK_IMPORTED_MODULE_0__["CharacterElement"]
     }
     getCharacter() { return this.list.character; }
     isContainer() { return this.canContainChildren; }
-    iterChildren() { return Array.from(this.children); }
-    addChild(child) {
-        if (this.isContainer()) {
-            if (child) {
-                child.containedBy.children.delete(child);
-                child.containedBy = this.findSelf();
-            }
-            else {
-                child = this.list.addListItem();
-                child.containedBy = this.findSelf();
-            }
+    setContainedBy(child) {
+        const containedBy = child.containedBy;
+        if (containedBy) {
+            containedBy.removeChild(child);
         }
-        return child;
+        this.addChild(child);
     }
-    removeChild(child) {
-        if (typeof child === "string") {
-            child = this.list.getByUUID(child);
+    addChild(child) {
+        if (!this.isContainer())
+            return null;
+        if (!(child instanceof ListItem)) {
+            child = this.list.addListItem();
         }
-        if (child.containedBy === this) {
-            this.children.delete(child);
-        }
-        else {
-            child.containedBy.children.delete(child);
-        }
-        child.delete();
+        child.containedBy = this;
+        return child;
     }
     getRecursiveChildren(collection = new Set()) {
         if (!this.canContainChildren)
@@ -12129,35 +13016,41 @@ class ListItem extends _element__WEBPACK_IMPORTED_MODULE_0__["CharacterElement"]
         }
         return collection;
     }
+    iterChildren() { return Array.from(this.children); }
     findSelf() { return this.list.getByUUID(this.uuid); }
     delete() {
+        var _a;
+        (_a = this.containedBy) === null || _a === void 0 ? void 0 : _a.children.delete(this);
         this.children.forEach(child => {
             child.delete();
             this.children.delete(child);
         });
-        this.containedBy.removeChild(this);
         this.list.removeListItem(this.findSelf());
         super.delete();
+        this.list.generate();
+        return this.list;
     }
     loadChildren(children, parent, ...args) {
         children.forEach(child => {
             const subElement = parent.list.addListItem();
-            ;
             subElement.containedBy = parent;
             parent.children.add(subElement);
             subElement.load(child, ...args);
         });
     }
     load(data, ...args) {
-        const loader = this.getSerializer().transformers.get(this.constructor).load;
+        const loader = this.getSerializer().transform(this.constructor, "load");
         const children = loader(this.findSelf(), data, ...args);
         if (children && children.length > 0) {
+            if (data.type === "skill") {
+                console.log(data);
+            }
             this.canContainChildren = true;
             this.loadChildren(children, this.findSelf(), ...args);
         }
         return this.findSelf();
     }
-    save(...args) { return this.getSerializer().transformers.get(this.constructor).save(this, ...args); }
+    save(data, ...args) { return this.getSerializer().transform(this.constructor, "save")(this, data, ...args); }
 }
 _childIDs = new WeakMap(), _containedByID = new WeakMap();
 ListItem.keys = [];
@@ -12183,11 +13076,11 @@ class Modifier extends _element__WEBPACK_IMPORTED_MODULE_0__["CharacterElement"]
         this.enabled = true;
         this.owner = owner;
     }
-    save() {
-        return this.getSerializer().transformers.get(this.constructor).save(this);
+    load(data, ...args) {
+        return this.getSerializer().transform(this.constructor, "load")(this, data, ...args);
     }
-    load(data) {
-        return this.getSerializer().transformers.get(this.constructor).load(this, data);
+    save(data, ...args) {
+        return this.getSerializer().transform(this.constructor, "save")(this, data, ...args);
     }
     static extractValue(value) {
         if (typeof value === "string") {
@@ -12271,493 +13164,10 @@ class Profile {
         this.race = (_m = object === null || object === void 0 ? void 0 : object.race) !== null && _m !== void 0 ? _m : "";
         this.bodyType = (_o = object === null || object === void 0 ? void 0 : object.bodyType) !== null && _o !== void 0 ? _o : "";
         this.age = (_p = object === null || object === void 0 ? void 0 : object.age) !== null && _p !== void 0 ? _p : "";
-        this.portrait = (_q = object === null || object === void 0 ? void 0 : object.portait) !== null && _q !== void 0 ? _q : "";
+        this.portrait = (_q = object === null || object === void 0 ? void 0 : object.portrait) !== null && _q !== void 0 ? _q : "";
         return this;
     }
 }
-
-
-/***/ }),
-
-/***/ "./src/character/serialization/gcs_json.ts":
-/*!*************************************************!*\
-  !*** ./src/character/serialization/gcs_json.ts ***!
-  \*************************************************/
-/*! exports provided: GCSJSON */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GCSJSON", function() { return GCSJSON; });
-/* harmony import */ var _serializer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./serializer */ "./src/character/serialization/serializer.ts");
-/* harmony import */ var _character_skill_skill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../character/skill/skill */ "./src/character/skill/skill.ts");
-/* harmony import */ var _character_spell__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../character/spell */ "./src/character/spell.ts");
-/* harmony import */ var _equipment_equipment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../equipment/equipment */ "./src/character/equipment/equipment.ts");
-/* harmony import */ var _trait_trait__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../trait/trait */ "./src/character/trait/trait.ts");
-/* harmony import */ var _utils_json_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @utils/json_utils */ "./src/utils/json_utils.ts");
-/* harmony import */ var _character_character__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @character/character */ "./src/character/character.ts");
-/* harmony import */ var _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @character/misc/feature */ "./src/character/misc/feature.ts");
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony import */ var _character_attribute__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @character/attribute */ "./src/character/attribute.ts");
-/* harmony import */ var _weapon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../weapon */ "./src/character/weapon.ts");
-/* harmony import */ var _character_technique__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @character/technique */ "./src/character/technique.ts");
-/* harmony import */ var jsonpath__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! jsonpath */ "./node_modules/jsonpath/jsonpath.js");
-/* harmony import */ var jsonpath__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(jsonpath__WEBPACK_IMPORTED_MODULE_12__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-class GCSJSON extends _serializer__WEBPACK_IMPORTED_MODULE_0__["Serializer"] {
-    constructor() {
-        super();
-    }
-    init() {
-        this.
-            register(_character_skill_skill__WEBPACK_IMPORTED_MODULE_1__["SkillDefault"], {
-            save: this.saveSkillDefault,
-            load: this.mapSkillDefault
-        })
-            .register(_character_skill_skill__WEBPACK_IMPORTED_MODULE_1__["Skill"], {
-            save: this.saveSkill,
-            load: GCSJSON.mapSkill
-        })
-            .register(_character_technique__WEBPACK_IMPORTED_MODULE_11__["Technique"], {
-            save: this.saveTechnique,
-            load: this.mapTechnique
-        })
-            .register(_character_spell__WEBPACK_IMPORTED_MODULE_2__["Spell"], {
-            save: this.saveSpell,
-            load: this.mapSpell
-        })
-            .register(_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["Equipment"], {
-            save: this.saveEquipment,
-            load: this.mapEquipment
-        })
-            .register(_trait_trait__WEBPACK_IMPORTED_MODULE_4__["Trait"], {
-            save: this.saveTrait,
-            load: this.mapTrait
-        })
-            .register("feature", {
-            save: this.saveFeature,
-            load: this.mapFeature
-        })
-            .register(_trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"], {
-            save: this.saveModifier,
-            load: this.mapModifier
-        })
-            .register(_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"], {
-            save: this.saveModifier,
-            load: this.mapModifier
-        })
-            .register("weapon", {
-            save: this.saveWeapon,
-            load: this.mapWeapon
-        });
-    }
-    static saveListLike(listLike, data) {
-        data.children = Array.from(listLike.children).map(listLike => listLike.save());
-        data.categories = Array.from(listLike.categories);
-        data.reference = listLike.reference;
-        data.notes = listLike.notes;
-        return data;
-    }
-    static mapSkillLike(skillLike, data) {
-        skillLike.name = data.name;
-        skillLike.difficulty = data.difficulty;
-        skillLike.points = data.points;
-        skillLike.reference = data.reference;
-    }
-    mapSkillDefault(skillDefault, data) {
-        skillDefault.type = data.type;
-        skillDefault.modifier = data.modifier;
-        skillDefault.specialization = data.specialization;
-        skillDefault.name = data.name;
-        return skillDefault;
-    }
-    saveSkillDefault(skillDefault) {
-        let data = {};
-        return data;
-    }
-    static mapSkill(skill, data) {
-        var _a, _b, _c, _d, _e, _f;
-        GCSJSON.mapSkillLike(skill, data);
-        skill.difficulty = (_a = data.difficulty) === null || _a === void 0 ? void 0 : _a.split("/")[1];
-        skill.signature = (_b = data.difficulty) === null || _b === void 0 ? void 0 : _b.split("/")[0];
-        skill.techLevel = (_c = data.tech_level) !== null && _c !== void 0 ? _c : "";
-        skill.specialization = data.specialization;
-        if (data.encumbrance_penalty_multiplier)
-            skill.encumbrancePenaltyMultiple = data.encumbrance_penalty_multiplier;
-        (_d = data.defaults) === null || _d === void 0 ? void 0 : _d.forEach((skillDefault) => skill.addDefault().load(skillDefault));
-        (_e = data.weapons) === null || _e === void 0 ? void 0 : _e.forEach((weapon) => {
-            skill.addWeapon(weapon.type).load(weapon);
-        });
-        if (data && ((_f = data.type) === null || _f === void 0 ? void 0 : _f.includes("_container"))) {
-            return data.children;
-        }
-    }
-    saveSkill(skill) {
-        let data = {
-            type: "skill",
-            version: 1,
-            name: skill.name,
-            difficulty: skill.difficulty,
-            points: skill.points,
-        };
-        GCSJSON.saveListLike(skill, data);
-        return data;
-    }
-    mapTechnique(technique, data) {
-        var _a;
-        GCSJSON.mapSkill(technique, data);
-        technique.limit = data.limit;
-        technique.difficulty = data.difficulty;
-        technique.default.load(data.default);
-        (_a = data.weapons) === null || _a === void 0 ? void 0 : _a.forEach((weapon) => {
-            technique.addWeapon(weapon.type).load(weapon);
-        });
-        return null;
-    }
-    saveTechnique(technique) {
-    }
-    mapSpell(spell, data) {
-        var _a, _b;
-        GCSJSON.mapSkillLike(spell, data);
-        spell.college = data.college;
-        spell.powerSource = data.power_source;
-        spell.spellClass = data.spell_class;
-        spell.castingCost = data.casting_cost;
-        spell.maintenanceCost = data.maintenance_cost;
-        spell.castingTime = data.casting_time;
-        spell.duration = data.duration;
-        (_a = data.weapons) === null || _a === void 0 ? void 0 : _a.forEach((weapon) => {
-            spell.addWeapon(weapon.type).load(weapon);
-        });
-        if (data && ((_b = data.type) === null || _b === void 0 ? void 0 : _b.includes("_container"))) {
-            return data.children;
-        }
-    }
-    saveSpell(spell) {
-    }
-    mapEquipment(equipment, data) {
-        var _a, _b, _c, _d, _e;
-        equipment.description = data.description;
-        equipment.equipped = data.equipped;
-        equipment.quantity = data.quantity || 1;
-        equipment.value = parseFloat(data === null || data === void 0 ? void 0 : data.value);
-        equipment.weight = parseFloat((_b = (_a = data === null || data === void 0 ? void 0 : data.weight) === null || _a === void 0 ? void 0 : _a.split(" ")[0]) !== null && _b !== void 0 ? _b : "0");
-        equipment.techLevel = data.tech_level;
-        equipment.legalityClass = data.legality_class;
-        equipment.reference = data.reference;
-        (_c = data.features) === null || _c === void 0 ? void 0 : _c.forEach((feature) => {
-            var _a;
-            (_a = _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["Feature"].loadFeature(equipment, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
-        });
-        (_d = data.weapons) === null || _d === void 0 ? void 0 : _d.forEach((weapon) => {
-            equipment.addWeapon(weapon.type).load(weapon);
-        });
-        if (data && ((_e = data.type) === null || _e === void 0 ? void 0 : _e.includes("_container"))) {
-            return (data === null || data === void 0 ? void 0 : data.children) || null;
-        }
-    }
-    saveEquipment(equipment) {
-        let data = {
-            type: "equipment",
-            version: 1,
-            equipped: equipment.equipped,
-            quantity: equipment.quantity,
-            description: equipment.description,
-            value: equipment.toString(),
-            weight: `${equipment.weight} lb`,
-            reference: equipment.reference,
-            notes: equipment.notes,
-            categories: Array.from(equipment.categories)
-        };
-        GCSJSON.saveListLike(equipment, data);
-        return data;
-    }
-    mapTrait(trait, data) {
-        var _a, _b, _c, _d, _e, _f;
-        trait.name = data.name;
-        (_a = data.modifiers) === null || _a === void 0 ? void 0 : _a.forEach((modifier) => trait.addModifier().load(modifier));
-        trait.basePoints = data.base_points;
-        trait.levels = (_b = parseInt(data === null || data === void 0 ? void 0 : data.levels)) !== null && _b !== void 0 ? _b : null;
-        trait.allowHalfLevels = data.allow_half_levels;
-        trait.hasHalfLevel = data.has_half_level;
-        trait.roundDown = data.round_down;
-        trait.controlRating = data.cr;
-        trait.pointsPerLevel = data.points_per_level;
-        trait.disabled = data.disabled;
-        trait.hasLevels = trait.levels ? true : false;
-        trait.reference = data.reference;
-        (_c = data.features) === null || _c === void 0 ? void 0 : _c.forEach((feature) => {
-            var _a;
-            (_a = _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["Feature"].loadFeature(trait, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
-        });
-        (_d = data.weapons) === null || _d === void 0 ? void 0 : _d.forEach((weapon) => {
-            trait.addWeapon(weapon.type).load(weapon);
-        });
-        (_e = data.categories) === null || _e === void 0 ? void 0 : _e.forEach((category) => {
-            trait.categories.add(category);
-        });
-        if (data && ((_f = data.type) === null || _f === void 0 ? void 0 : _f.includes("_container"))) {
-            return data.children;
-        }
-    }
-    saveTrait(trait) {
-        let data = {
-            type: "advantage",
-            version: 1,
-            name: trait.name,
-            base_points: trait.basePoints,
-            reference: trait.reference,
-            categories: Array.from(trait.categories),
-            modifiers: Array.from(trait.modifiers).map(trait => trait.save())
-        };
-        GCSJSON.saveListLike(trait, data);
-        return data;
-    }
-    mapFeature(feature, data) {
-        var _a, _b, _c, _d, _e, _f;
-        feature.type = data.type;
-        feature.leveled = data.per_level;
-        feature.limitation = data.limitation;
-        feature.amount = data.amount;
-        switch (data.type) {
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].attributeBonus:
-                if (feature instanceof _character_attribute__WEBPACK_IMPORTED_MODULE_9__["AttributeBonus"]) {
-                    feature.attribute = data.attribute;
-                }
-                break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].damageResistanceBonus:
-                if (feature instanceof _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["DRBonus"]) {
-                    feature.location = data.location;
-                }
-                break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].reactionBonus:
-                break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].skillBonus:
-                if (feature instanceof _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["SkillBonus"]) {
-                    feature.selectionType = data.selection_type;
-                    feature.nameCompareType = (_a = data.name) === null || _a === void 0 ? void 0 : _a.compare;
-                    feature.name = (_b = data.name) === null || _b === void 0 ? void 0 : _b.qualifier;
-                    feature.specializationCompareType = (_c = data.specialization) === null || _c === void 0 ? void 0 : _c.compare;
-                    feature.specialization = (_d = data.specialization) === null || _d === void 0 ? void 0 : _d.qualifier;
-                    feature.categoryCompareType = (_e = data === null || data === void 0 ? void 0 : data.category) === null || _e === void 0 ? void 0 : _e.compare;
-                    feature.category = (_f = data === null || data === void 0 ? void 0 : data.category) === null || _f === void 0 ? void 0 : _f.qualifier;
-                }
-                break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].spellBonus:
-                break;
-            case _gcs_gcs__WEBPACK_IMPORTED_MODULE_8__["FeatureType"].weaponDamageBonus:
-                break;
-            default:
-        }
-        return feature;
-    }
-    saveFeature(feature) {
-        let data = {};
-        switch (feature.type) {
-        }
-        return data;
-    }
-    mapModifier(modifier, data) {
-        modifier.enabled = data.enabled;
-        modifier.name = data.name;
-        modifier.notes = data.notes;
-        modifier.reference = data.reference;
-        switch (modifier.tag) {
-            case "modifier":
-                if (modifier instanceof _trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"]) {
-                    modifier.cost = data.cost;
-                    modifier.type = data.type;
-                    modifier.affects = data.affects;
-                    modifier.levels = data.levels;
-                }
-            case "eqp_modifier":
-                if (modifier instanceof _equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"]) {
-                    modifier.cost = data.cost;
-                    modifier.weight = data.weight;
-                    modifier.costType = data.cost_type;
-                    modifier.weightType = data.weight_type;
-                }
-        }
-        return modifier;
-    }
-    saveModifier(modifier) {
-        let data = {
-            enabled: modifier.enabled,
-            name: modifier.name
-        };
-        switch (modifier.tag) {
-            case "modifier":
-                if (modifier instanceof _trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"]) {
-                    Object.assign(data, {
-                        cost: modifier.cost,
-                        type: modifier.type,
-                        affects: modifier.affects,
-                        levels: modifier.levels
-                    });
-                }
-            case "eqp_modifier":
-                if (modifier instanceof _equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"]) {
-                    Object.assign(data, {
-                        cost: modifier.cost,
-                        weight: modifier.weight,
-                        cost_type: modifier.costType,
-                        weight_type: modifier.weightType
-                    });
-                }
-        }
-        return data;
-    }
-    mapWeapon(weapon, data) {
-        var _a, _b, _c;
-        weapon.usage = data.usage;
-        weapon.strength = data.strength;
-        weapon.damageStrength = (_a = data === null || data === void 0 ? void 0 : data.damage) === null || _a === void 0 ? void 0 : _a.st;
-        weapon.damageBase = (_b = data === null || data === void 0 ? void 0 : data.damage) === null || _b === void 0 ? void 0 : _b.base;
-        weapon.damageType = (_c = data === null || data === void 0 ? void 0 : data.damage) === null || _c === void 0 ? void 0 : _c.type;
-        switch (weapon.getType()) {
-            case "melee_weapon":
-                if (weapon instanceof _weapon__WEBPACK_IMPORTED_MODULE_10__["MeleeWeapon"]) {
-                    weapon.reach = data.reach;
-                    weapon.parry = data.parry;
-                    weapon.block = data.block;
-                }
-            case "ranged_weapon":
-                if (weapon instanceof _weapon__WEBPACK_IMPORTED_MODULE_10__["RangedWeapon"]) {
-                    weapon.accuracy = data.accurage;
-                    weapon.range = data.range;
-                    weapon.rateOfFire = data.rate_of_fire;
-                    weapon.shots = data.shots;
-                    weapon.bulk = data.bulk;
-                }
-        }
-        return weapon;
-    }
-    saveWeapon() {
-    }
-    loadList(list, data) {
-        data = Object(_utils_json_utils__WEBPACK_IMPORTED_MODULE_5__["objectify"])(data);
-        if (data) {
-            data.forEach(listItem => {
-                const item = list.populator(data);
-                item.load(listItem);
-            });
-        }
-        list.generate();
-        return list;
-    }
-    saveList(list) {
-        return list.iterTop().map(root => root.save());
-    }
-    load(character, data) {
-        var _a, _b;
-        console.log(data);
-        data = Object(_utils_json_utils__WEBPACK_IMPORTED_MODULE_5__["objectify"])(data);
-        character.gCalcID = data.id;
-        character.profile.load(data.profile);
-        character.equipmentList.load(data.equipment);
-        character.otherEquipmentList.load(data.other_equipment);
-        const skills = jsonpath__WEBPACK_IMPORTED_MODULE_12___default.a.query(data, `$.skills..*[?(@.type=="skill")]`);
-        character.skillList.load(skills);
-        const techniques = jsonpath__WEBPACK_IMPORTED_MODULE_12___default.a.query(data, `$.skills..*[?(@.type=="technique")]`);
-        character.techniqueList.load(techniques);
-        character.traitList.load(data.advantages);
-        character.spellList.load(data.spells);
-        character.missingHP = (_a = data === null || data === void 0 ? void 0 : data.hp_damage) !== null && _a !== void 0 ? _a : 0;
-        character.missingFP = (_b = data === null || data === void 0 ? void 0 : data.fp_damage) !== null && _b !== void 0 ? _b : 0;
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].DX).setLevel(data.DX);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].FP).setLevel(data.fp_adj);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HP).setLevel(data.hp_adj);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HT).setLevel(data.HT);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].IQ).setLevel(data.IQ);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Move).setLevel(data.move_adj);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Per).setLevel(data.per_adj);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].ST).setLevel(data.ST);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Speed).setLevel(data.speed_adj);
-        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Will).setLevel(data.will_adj);
-        return character;
-    }
-    save(character, target) {
-        let output = {
-            DX: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].DX).level,
-            fp_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].FP).level,
-            hp_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HP).level,
-            HT: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HT).level,
-            IQ: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].IQ).level,
-            move_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Move).level,
-            per_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Per).level,
-            ST: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].ST).level,
-            speed_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Speed).level,
-            will_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Will).level,
-            hp_damage: character.missingHP,
-            fp_damage: character.missingFP,
-            profile: character.profile.save(),
-            equipment: character.equipmentList.save(),
-            other_equipment: character.otherEquipmentList.save(),
-            skills: character.skillList.save(),
-            advantages: character.traitList.save()
-        };
-        GCSJSON.purgeObject(output);
-        return JSON.stringify(output);
-    }
-}
-GCSJSON.scope = "GCSJSON";
-
-
-/***/ }),
-
-/***/ "./src/character/serialization/serializer.ts":
-/*!***************************************************!*\
-  !*** ./src/character/serialization/serializer.ts ***!
-  \***************************************************/
-/*! exports provided: registerSerializer, Serializer */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "registerSerializer", function() { return registerSerializer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Serializer", function() { return Serializer; });
-function registerSerializer(serializer) {
-    Serializer.serializers.set(serializer.scope, new serializer());
-    return serializer;
-}
-class Serializer {
-    constructor() {
-        this.transformers = new Map();
-        this.init();
-    }
-    static purgeObject(object) {
-        object.keys.forEach(key => {
-            const data = object[key];
-            if (data === undefined || data === null)
-                delete object[key];
-            if (Array.isArray(data))
-                data.forEach(data => Serializer.purgeObject(data));
-            if (Object.keys(data).length > 0)
-                Serializer.purgeObject(data);
-        });
-        return object;
-    }
-    register(key, transformer) {
-        this.transformers.set(key, transformer);
-        return this;
-    }
-    static reverseMap(input) {
-        Object.keys(input);
-    }
-}
-Serializer.serializers = new Map();
 
 
 /***/ }),
@@ -12856,9 +13266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _misc_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../misc/list */ "./src/character/misc/list.ts");
 /* harmony import */ var _misc_feature__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../misc/feature */ "./src/character/misc/feature.ts");
 /* harmony import */ var _misc_default__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../misc/default */ "./src/character/misc/default.ts");
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony import */ var _logic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./logic */ "./src/character/skill/logic.ts");
-
+/* harmony import */ var _logic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logic */ "./src/character/skill/logic.ts");
 
 
 
@@ -12868,7 +13276,7 @@ class SkillList extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["List"] {
         super(character);
     }
     populator() {
-        return new Skill(this, []);
+        return new Skill(this);
     }
     sumSkills() {
         return this.iter().reduce((prev, cur) => {
@@ -12895,16 +13303,16 @@ class SkillLike extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
         catch (err) {
         }
     }
-    getBaseRelativeLevel() { return Object(_logic__WEBPACK_IMPORTED_MODULE_4__["getBaseRelativeLevel"])(this.difficulty); }
+    getBaseRelativeLevel() { return Object(_logic__WEBPACK_IMPORTED_MODULE_3__["getBaseRelativeLevel"])(this.difficulty); }
     calculateRelativeLevel(relativeLevel) {
         if (!relativeLevel)
             relativeLevel = this.list.character.getAttribute(this.signature).calculateLevel();
-        return Object(_logic__WEBPACK_IMPORTED_MODULE_4__["calculateRelativeLevel"])(this.points, relativeLevel);
+        return Object(_logic__WEBPACK_IMPORTED_MODULE_3__["calculateRelativeLevel"])(this.points, relativeLevel);
     }
     calculateLevel({ withBonuses = true, considerDefaults = true, buyLevelFromDefault = false } = {}) {
         if (this.isContainer())
             return null;
-        return Object(_logic__WEBPACK_IMPORTED_MODULE_4__["calculateSkillLevel"])(buyLevelFromDefault, this.difficulty, this.points, this.list.character.getAttribute(this.signature).calculateLevel(), considerDefaults ?
+        return Object(_logic__WEBPACK_IMPORTED_MODULE_3__["calculateSkillLevel"])(buyLevelFromDefault, this.difficulty, this.points, this.list.character.getAttribute(this.signature).calculateLevel(), considerDefaults ?
             this.getBestDefaultWithPoints()
             : undefined, withBonuses ? this.getBonus() : 0, this.list.character.encumbranceLevel({ forSkillEncumbrance: true }), this.encumbrancePenaltyMultiple, withBonuses ? this.gMod : 0);
     }
@@ -13031,7 +13439,7 @@ class Skill extends SkillLike {
     getBonus() { return this.getModList().reduce((prev, cur) => prev + cur.getBonus(), 0); }
     getModList() {
         const skill = this;
-        return this.list.character.featureList.getFeaturesByType(_gcs_gcs__WEBPACK_IMPORTED_MODULE_3__["FeatureType"].skillBonus).filter(bonus => bonus instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_1__["SkillBonus"] && bonus.type === _gcs_gcs__WEBPACK_IMPORTED_MODULE_3__["FeatureType"].skillBonus && bonus.isApplicableTo(skill) && bonus.ownerIsActive());
+        return this.list.character.featureList.getFeaturesByType(_misc_feature__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].skillBonus).filter(bonus => bonus instanceof _misc_feature__WEBPACK_IMPORTED_MODULE_1__["SkillBonus"] && bonus.type === _misc_feature__WEBPACK_IMPORTED_MODULE_1__["FeatureType"].skillBonus && bonus.isApplicableTo(skill) && bonus.ownerIsActive());
     }
     addDefault() {
         const newDefault = new SkillDefault(this);
@@ -13049,8 +13457,8 @@ class SkillDefault extends _misc_default__WEBPACK_IMPORTED_MODULE_2__["Default"]
         this.owner.defaults.add(this);
     }
     getLookupList() { return this.owner.list.character.skillList; }
-    save(...args) { return this.getSerializer().transformers.get(this.constructor).save(this, ...args); }
-    load(data, ...args) { return this.getSerializer().transformers.get(this.constructor).load(this, data, ...args); }
+    load(data, ...args) { return this.getSerializer().transform(this.constructor, "load")(this, data, ...args); }
+    save(data, ...args) { return this.getSerializer().transform(this.constructor, "save")(this, data, ...args); }
 }
 SkillDefault.keys = ["level", "adjustedLevel", "points"];
 var Difficulty;
@@ -13241,16 +13649,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAdjustedPoints", function() { return getAdjustedPoints; });
 /* harmony import */ var _trait__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./trait */ "./src/character/trait/trait.ts");
 
-function getAdjustedPoints(modifiers = new Set(), basePoints = 0, hasLevels = false, hasHalfLevel = false, pointsPerLevel = 0, levels = 0, roundDown = false) {
+function getAdjustedPoints(modifiers = new Set(), basePoints = 0, hasLevels = false, hasHalfLevel = false, pointsPerLevel = 0, levels = 0, roundDown = false, controlMultipler = 1) {
     let baseEnh = 0;
     let levelEnh = 0;
     let baseLim = 0;
     let levelLim = 0;
-    let multiplier = 1;
+    let multiplier = controlMultipler;
     modifiers === null || modifiers === void 0 ? void 0 : modifiers.forEach(modifier => {
         if (modifier.enabled) {
             let mod = modifier.costModifier();
-            console.log(mod);
             switch (modifier.type) {
                 case _trait__WEBPACK_IMPORTED_MODULE_0__["TraitModifierType"].percentage:
                 default:
@@ -13303,7 +13710,9 @@ function getAdjustedPoints(modifiers = new Set(), basePoints = 0, hasLevels = fa
         }
     });
     let modifiedBasePoints = basePoints;
-    let leveledPoints = pointsPerLevel * (levels + (hasHalfLevel ? .5 : 0)) || 0;
+    let leveledPoints = hasLevels ?
+        pointsPerLevel * (levels + (hasHalfLevel ? .5 : 0)) || 0
+        : 0;
     if (baseEnh !== 0 || baseLim !== 0 || levelEnh !== 0 || levelLim !== 0) {
         if (false) {}
         else {
@@ -13440,6 +13849,7 @@ class Trait extends _misc_list__WEBPACK_IMPORTED_MODULE_1__["ListItem"] {
         this.levels = 0;
         this.allowHalfLevels = false;
         this.hasHalfLevel = false;
+        this.controlRating = ControlRollMultiplier.noneRequired;
         this.types = new Set();
         this.disabled = false;
         this.modifiers = new Set();
@@ -13483,7 +13893,7 @@ class Trait extends _misc_list__WEBPACK_IMPORTED_MODULE_1__["ListItem"] {
             return 0;
         }
         else {
-            return Object(_logic__WEBPACK_IMPORTED_MODULE_2__["getAdjustedPoints"])(this.modifiers, this.basePoints, this.hasLevels, this.hasHalfLevel, this.pointsPerLevel, this.levels, this.roundDown);
+            return Object(_logic__WEBPACK_IMPORTED_MODULE_2__["getAdjustedPoints"])(this.modifiers, this.basePoints, this.hasLevels, this.hasHalfLevel, this.pointsPerLevel, this.levels, this.roundDown, Trait.getCRMultipland(this.controlRating));
         }
     }
     disable() { this.disabled = true; }
@@ -13537,12 +13947,12 @@ var TraitType;
 })(TraitType || (TraitType = {}));
 var ControlRollMultiplier;
 (function (ControlRollMultiplier) {
-    ControlRollMultiplier["cannotResist"] = "0";
+    ControlRollMultiplier["cannotResist"] = "none";
     ControlRollMultiplier["resistRarely"] = "6";
     ControlRollMultiplier["resistFairlyOften"] = "9";
     ControlRollMultiplier["resistQuiteOften"] = "12";
     ControlRollMultiplier["resistAlmostAlway"] = "15";
-    ControlRollMultiplier["noneRequired"] = "";
+    ControlRollMultiplier["noneRequired"] = "n/a";
 })(ControlRollMultiplier || (ControlRollMultiplier = {}));
 
 
@@ -13594,8 +14004,8 @@ class Weapon extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterElemen
     getType() {
         return this.constructor.type;
     }
-    load(data, ...args) { return this.getSerializer().transformers.get(this.tag).load(this, data, ...args); }
-    save(...args) { return this.getSerializer().transformers.get(this.tag).save(this, ...args); }
+    load(data, ...args) { return this.getSerializer().transform(this.tag, "load")(this, data, ...args); }
+    save(data, ...args) { return this.getSerializer().transform(this.tag, "save")(this, data, ...args); }
     onDestroy() {
         this.owner.getCharacter().featureList.removeWeapon(this.uuid);
     }
@@ -13764,27 +14174,487 @@ function diceString(count, modifier = 0, sides = 6, multiplier = 1) {
 
 /***/ }),
 
-/***/ "./src/gcs/gcs.ts":
-/*!************************!*\
-  !*** ./src/gcs/gcs.ts ***!
-  \************************/
-/*! exports provided: FeatureType */
+/***/ "./src/externals/gcs_json.ts":
+/*!***********************************!*\
+  !*** ./src/externals/gcs_json.ts ***!
+  \***********************************/
+/*! exports provided: GCSJSON */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeatureType", function() { return FeatureType; });
-var FeatureType;
-(function (FeatureType) {
-    FeatureType["attributeBonus"] = "attribute_bonus";
-    FeatureType["damageResistanceBonus"] = "dr_bonus";
-    FeatureType["skillBonus"] = "skill_bonus";
-    FeatureType["weaponDamageBonus"] = "weapon_bonus";
-    FeatureType["reactionBonus"] = "reaction_bonus";
-    FeatureType["spellBonus"] = "spell_bonus";
-    FeatureType["containedWeightReduction"] = "contained_weight_reduction";
-    FeatureType["costReduction"] = "cost_reduction";
-})(FeatureType || (FeatureType = {}));
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GCSJSON", function() { return GCSJSON; });
+/* harmony import */ var _serializer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./serializer */ "./src/externals/serializer.ts");
+/* harmony import */ var _character_skill_skill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @character/skill/skill */ "./src/character/skill/skill.ts");
+/* harmony import */ var _character_spell__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @character/spell */ "./src/character/spell.ts");
+/* harmony import */ var _character_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @character/equipment/equipment */ "./src/character/equipment/equipment.ts");
+/* harmony import */ var _character_trait_trait__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @character/trait/trait */ "./src/character/trait/trait.ts");
+/* harmony import */ var _utils_json_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @utils/json_utils */ "./src/utils/json_utils.ts");
+/* harmony import */ var _character_character__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @character/character */ "./src/character/character.ts");
+/* harmony import */ var _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @character/misc/feature */ "./src/character/misc/feature.ts");
+/* harmony import */ var _character_attribute__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @character/attribute */ "./src/character/attribute.ts");
+/* harmony import */ var _character_weapon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @character/weapon */ "./src/character/weapon.ts");
+/* harmony import */ var _character_technique__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @character/technique */ "./src/character/technique.ts");
+/* harmony import */ var jsonpath__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! jsonpath */ "./node_modules/jsonpath/jsonpath.js");
+/* harmony import */ var jsonpath__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(jsonpath__WEBPACK_IMPORTED_MODULE_11__);
+
+
+
+
+
+
+
+
+
+
+
+
+class GCSJSON extends _serializer__WEBPACK_IMPORTED_MODULE_0__["Serializer"] {
+    constructor() {
+        super();
+    }
+    init() {
+        this.
+            register(_character_skill_skill__WEBPACK_IMPORTED_MODULE_1__["SkillDefault"], {
+            save: this.saveSkillDefault,
+            load: this.mapSkillDefault
+        })
+            .register(_character_skill_skill__WEBPACK_IMPORTED_MODULE_1__["Skill"], {
+            save: this.saveSkill,
+            load: GCSJSON.mapSkill
+        })
+            .register(_character_technique__WEBPACK_IMPORTED_MODULE_10__["Technique"], {
+            save: this.saveTechnique,
+            load: this.mapTechnique
+        })
+            .register(_character_spell__WEBPACK_IMPORTED_MODULE_2__["Spell"], {
+            save: this.saveSpell,
+            load: this.mapSpell
+        })
+            .register(_character_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["Equipment"], {
+            save: this.saveEquipment,
+            load: this.mapEquipment
+        })
+            .register(_character_trait_trait__WEBPACK_IMPORTED_MODULE_4__["Trait"], {
+            save: this.saveTrait,
+            load: this.mapTrait
+        })
+            .register("feature", {
+            save: this.saveFeature,
+            load: this.mapFeature
+        })
+            .register(_character_trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"], {
+            save: this.saveModifier,
+            load: this.mapModifier
+        })
+            .register(_character_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"], {
+            save: this.saveModifier,
+            load: this.mapModifier
+        })
+            .register("weapon", {
+            save: this.saveWeapon,
+            load: this.mapWeapon
+        });
+    }
+    static saveListLike(listLike, data) {
+        data.children = Array.from(listLike.children).map(listLike => listLike.save(data));
+        data.categories = Array.from(listLike.categories);
+        data.reference = listLike.reference;
+        data.notes = listLike.notes;
+        return data;
+    }
+    static mapSkillLike(skillLike, data) {
+        var _a;
+        skillLike.name = data.name;
+        skillLike.difficulty = data.difficulty;
+        skillLike.points = data.points;
+        skillLike.reference = data.reference;
+        (_a = data.weapons) === null || _a === void 0 ? void 0 : _a.forEach((weapon) => {
+            skillLike.addWeapon(weapon.type).load(weapon);
+        });
+    }
+    mapSkillDefault(skillDefault, data) {
+        skillDefault.type = data.type;
+        skillDefault.modifier = data.modifier;
+        skillDefault.specialization = data.specialization;
+        skillDefault.name = data.name;
+        return skillDefault;
+    }
+    saveSkillDefault() {
+        let data = {};
+        return data;
+    }
+    static mapSkill(skill, data) {
+        var _a, _b, _c, _d, _e;
+        GCSJSON.mapSkillLike(skill, data);
+        skill.difficulty = (_a = data.difficulty) === null || _a === void 0 ? void 0 : _a.split("/")[1];
+        skill.signature = (_b = data.difficulty) === null || _b === void 0 ? void 0 : _b.split("/")[0];
+        skill.techLevel = (_c = data.tech_level) !== null && _c !== void 0 ? _c : "";
+        skill.specialization = data.specialization;
+        if (data.encumbrance_penalty_multiplier)
+            skill.encumbrancePenaltyMultiple = data.encumbrance_penalty_multiplier;
+        (_d = data.defaults) === null || _d === void 0 ? void 0 : _d.forEach((skillDefault) => skill.addDefault().load(skillDefault));
+        if (data && ((_e = data.type) === null || _e === void 0 ? void 0 : _e.includes("_container"))) {
+            return data.children;
+        }
+    }
+    saveSkill(skill) {
+        let data = {
+            type: "skill",
+            version: 1,
+            name: skill.name,
+            difficulty: skill.difficulty,
+            points: skill.points,
+        };
+        GCSJSON.saveListLike(skill, data);
+        return data;
+    }
+    mapTechnique(technique, data) {
+        var _a;
+        GCSJSON.mapSkill(technique, data);
+        technique.limit = data.limit;
+        technique.difficulty = data.difficulty;
+        technique.default.load(data.default);
+        (_a = data.weapons) === null || _a === void 0 ? void 0 : _a.forEach((weapon) => {
+            technique.addWeapon(weapon.type).load(weapon);
+        });
+        return null;
+    }
+    saveTechnique() {
+    }
+    mapSpell(spell, data) {
+        var _a, _b;
+        GCSJSON.mapSkillLike(spell, data);
+        spell.college = data.college;
+        spell.powerSource = data.power_source;
+        spell.spellClass = data.spell_class;
+        spell.castingCost = data.casting_cost;
+        spell.maintenanceCost = data.maintenance_cost;
+        spell.castingTime = data.casting_time;
+        spell.duration = data.duration;
+        (_a = data.weapons) === null || _a === void 0 ? void 0 : _a.forEach((weapon) => {
+            spell.addWeapon(weapon.type).load(weapon);
+        });
+        if (data && ((_b = data.type) === null || _b === void 0 ? void 0 : _b.includes("_container"))) {
+            return data.children;
+        }
+    }
+    saveSpell() {
+    }
+    mapEquipment(equipment, data) {
+        var _a, _b, _c, _d, _e;
+        equipment.description = data.description;
+        equipment.equipped = data.equipped;
+        equipment.quantity = data.quantity || 1;
+        equipment.value = parseFloat(data === null || data === void 0 ? void 0 : data.value);
+        equipment.weight = parseFloat((_b = (_a = data === null || data === void 0 ? void 0 : data.weight) === null || _a === void 0 ? void 0 : _a.split(" ")[0]) !== null && _b !== void 0 ? _b : "0");
+        equipment.techLevel = data.tech_level;
+        equipment.legalityClass = data.legality_class;
+        equipment.reference = data.reference;
+        (_c = data.features) === null || _c === void 0 ? void 0 : _c.forEach((feature) => {
+            var _a;
+            (_a = _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["Feature"].loadFeature(equipment, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
+        });
+        (_d = data.weapons) === null || _d === void 0 ? void 0 : _d.forEach((weapon) => {
+            equipment.addWeapon(weapon.type).load(weapon);
+        });
+        if (data && ((_e = data.type) === null || _e === void 0 ? void 0 : _e.includes("_container"))) {
+            return (data === null || data === void 0 ? void 0 : data.children) || null;
+        }
+    }
+    saveEquipment(equipment) {
+        let data = {
+            type: "equipment",
+            version: 1,
+            equipped: equipment.equipped,
+            quantity: equipment.quantity,
+            description: equipment.description,
+            value: equipment.toString(),
+            weight: `${equipment.weight} lb`,
+            reference: equipment.reference,
+            notes: equipment.notes,
+            categories: Array.from(equipment.categories)
+        };
+        GCSJSON.saveListLike(equipment, data);
+        return data;
+    }
+    mapTrait(trait, data) {
+        var _a, _b, _c, _d, _e, _f, _g, _h;
+        trait.name = data.name;
+        (_a = data.modifiers) === null || _a === void 0 ? void 0 : _a.forEach((modifier) => trait.addModifier().load(modifier));
+        trait.basePoints = data.base_points;
+        trait.levels = (_b = parseInt(data === null || data === void 0 ? void 0 : data.levels)) !== null && _b !== void 0 ? _b : null;
+        trait.allowHalfLevels = data.allow_half_levels;
+        trait.hasHalfLevel = data.has_half_level;
+        trait.roundDown = data.round_down;
+        trait.controlRating = data.cr === 0 ? "none" : (_d = (_c = data === null || data === void 0 ? void 0 : data.cr) === null || _c === void 0 ? void 0 : _c.toString()) !== null && _d !== void 0 ? _d : "n/a";
+        trait.pointsPerLevel = data.points_per_level;
+        trait.disabled = data.disabled;
+        trait.hasLevels = trait.levels !== undefined;
+        trait.reference = data.reference;
+        (_e = data.features) === null || _e === void 0 ? void 0 : _e.forEach((feature) => {
+            var _a;
+            (_a = _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["Feature"].loadFeature(trait, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
+        });
+        (_f = data.weapons) === null || _f === void 0 ? void 0 : _f.forEach((weapon) => {
+            trait.addWeapon(weapon.type).load(weapon);
+        });
+        (_g = data.categories) === null || _g === void 0 ? void 0 : _g.forEach((category) => {
+            trait.categories.add(category);
+        });
+        if (data && ((_h = data.type) === null || _h === void 0 ? void 0 : _h.includes("_container"))) {
+            return data.children;
+        }
+    }
+    saveTrait(trait) {
+        let data = {
+            type: "advantage",
+            version: 1,
+            name: trait.name,
+            base_points: trait.basePoints,
+            reference: trait.reference,
+            categories: Array.from(trait.categories),
+            modifiers: Array.from(trait.modifiers).map(modifier => modifier.save({}))
+        };
+        GCSJSON.saveListLike(trait, data);
+        return data;
+    }
+    mapFeature(feature, data) {
+        var _a, _b, _c, _d, _e, _f;
+        feature.type = data.type;
+        feature.leveled = data.per_level;
+        feature.limitation = data.limitation;
+        feature.amount = data.amount;
+        switch (data.type) {
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].attributeBonus:
+                if (feature instanceof _character_attribute__WEBPACK_IMPORTED_MODULE_8__["AttributeBonus"]) {
+                    feature.attribute = data.attribute;
+                }
+                break;
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].damageResistanceBonus:
+                if (feature instanceof _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["DRBonus"]) {
+                    feature.location = data.location;
+                }
+                break;
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].reactionBonus:
+                break;
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].skillBonus:
+                if (feature instanceof _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["SkillBonus"]) {
+                    feature.selectionType = data.selection_type;
+                    feature.nameCompareType = (_a = data.name) === null || _a === void 0 ? void 0 : _a.compare;
+                    feature.name = (_b = data.name) === null || _b === void 0 ? void 0 : _b.qualifier;
+                    feature.specializationCompareType = (_c = data.specialization) === null || _c === void 0 ? void 0 : _c.compare;
+                    feature.specialization = (_d = data.specialization) === null || _d === void 0 ? void 0 : _d.qualifier;
+                    feature.categoryCompareType = (_e = data === null || data === void 0 ? void 0 : data.category) === null || _e === void 0 ? void 0 : _e.compare;
+                    feature.category = (_f = data === null || data === void 0 ? void 0 : data.category) === null || _f === void 0 ? void 0 : _f.qualifier;
+                }
+                break;
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].spellBonus:
+                break;
+            case _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"].weaponDamageBonus:
+                break;
+            default:
+        }
+        return feature;
+    }
+    saveFeature(feature) {
+    }
+    mapModifier(modifier, data) {
+        modifier.enabled = data.enabled;
+        modifier.name = data.name;
+        modifier.notes = data.notes;
+        modifier.reference = data.reference;
+        switch (modifier.tag) {
+            case "modifier":
+                if (modifier instanceof _character_trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"]) {
+                    modifier.cost = data.cost;
+                    modifier.type = data.type;
+                    modifier.affects = data.affects;
+                    modifier.levels = data.levels;
+                }
+            case "eqp_modifier":
+                if (modifier instanceof _character_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"]) {
+                    modifier.cost = data.cost;
+                    modifier.weight = data.weight;
+                    modifier.costType = data.cost_type;
+                    modifier.weightType = data.weight_type;
+                }
+        }
+        return modifier;
+    }
+    saveModifier(modifier) {
+        let data = {
+            enabled: modifier.enabled,
+            name: modifier.name
+        };
+        switch (modifier.tag) {
+            case "modifier":
+                if (modifier instanceof _character_trait_trait__WEBPACK_IMPORTED_MODULE_4__["TraitModifier"]) {
+                    Object.assign(data, {
+                        cost: modifier.cost,
+                        type: modifier.type,
+                        affects: modifier.affects,
+                        levels: modifier.levels
+                    });
+                }
+            case "eqp_modifier":
+                if (modifier instanceof _character_equipment_equipment__WEBPACK_IMPORTED_MODULE_3__["EquipmentModifier"]) {
+                    Object.assign(data, {
+                        cost: modifier.cost,
+                        weight: modifier.weight,
+                        cost_type: modifier.costType,
+                        weight_type: modifier.weightType
+                    });
+                }
+        }
+        return data;
+    }
+    mapWeapon(weapon, data) {
+        var _a, _b, _c, _d;
+        weapon.usage = data.usage;
+        weapon.strength = data.strength;
+        weapon.damageStrength = (_a = data === null || data === void 0 ? void 0 : data.damage) === null || _a === void 0 ? void 0 : _a.st;
+        weapon.damageBase = (_b = data === null || data === void 0 ? void 0 : data.damage) === null || _b === void 0 ? void 0 : _b.base;
+        weapon.damageType = (_c = data === null || data === void 0 ? void 0 : data.damage) === null || _c === void 0 ? void 0 : _c.type;
+        switch (weapon.getType()) {
+            case "melee_weapon":
+                if (weapon instanceof _character_weapon__WEBPACK_IMPORTED_MODULE_9__["MeleeWeapon"]) {
+                    weapon.reach = data.reach;
+                    weapon.parry = data.parry;
+                    weapon.block = data.block;
+                }
+            case "ranged_weapon":
+                if (weapon instanceof _character_weapon__WEBPACK_IMPORTED_MODULE_9__["RangedWeapon"]) {
+                    weapon.accuracy = data.accurage;
+                    weapon.range = data.range;
+                    weapon.rateOfFire = data.rate_of_fire;
+                    weapon.shots = data.shots;
+                    weapon.bulk = data.bulk;
+                }
+        }
+        (_d = data.defaults) === null || _d === void 0 ? void 0 : _d.forEach(weaponDefault => {
+            let proxy = weapon.addDefault();
+            this.mapSkillDefault(proxy, weaponDefault);
+        });
+        return weapon;
+    }
+    saveWeapon() {
+    }
+    loadList(list, data) {
+        data = Object(_utils_json_utils__WEBPACK_IMPORTED_MODULE_5__["objectify"])(data);
+        if (data) {
+            data === null || data === void 0 ? void 0 : data.forEach(listItem => {
+                const item = list.populator(data);
+                item.load(listItem);
+            });
+        }
+        list.generate();
+        return list;
+    }
+    saveList(list, data) {
+        return list.iterTop().map(root => root.save(data));
+    }
+    load(character, data) {
+        var _a, _b;
+        data = Object(_utils_json_utils__WEBPACK_IMPORTED_MODULE_5__["objectify"])(data);
+        character.gCalcID = data.id;
+        character.totalPoints = data.total_points;
+        character.profile.load(data.profile);
+        character.equipmentList.load(data.equipment);
+        character.otherEquipmentList.load(data.other_equipment);
+        const skills = jsonpath__WEBPACK_IMPORTED_MODULE_11___default.a.query(data, `$.skills..[?(@.type=='skill')]`);
+        character.skillList.load(skills);
+        const techniques = jsonpath__WEBPACK_IMPORTED_MODULE_11___default.a.query(data, `$.skills..[?(@.type=="technique")]`);
+        character.techniqueList.load(techniques);
+        character.traitList.load(data.advantages);
+        character.spellList.load(data.spells);
+        character.missingHP = (_a = data === null || data === void 0 ? void 0 : data.hp_damage) !== null && _a !== void 0 ? _a : 0;
+        character.missingFP = (_b = data === null || data === void 0 ? void 0 : data.fp_damage) !== null && _b !== void 0 ? _b : 0;
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].DX).setLevel(data.DX);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].FP).setLevel(data.fp_adj);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HP).setLevel(data.hp_adj);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HT).setLevel(data.HT);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].IQ).setLevel(data.IQ);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Move).setLevel(data.move_adj);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Per).setLevel(data.per_adj);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].ST).setLevel(data.ST);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Speed).setLevel(data.speed_adj);
+        character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Will).setLevel(data.will_adj);
+        return character;
+    }
+    save(character, target) {
+        let output = {
+            DX: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].DX).level,
+            fp_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].FP).level,
+            hp_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HP).level,
+            HT: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].HT).level,
+            IQ: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].IQ).level,
+            move_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Move).level,
+            per_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Per).level,
+            ST: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].ST).level,
+            speed_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Speed).level,
+            will_adj: character.getAttribute(_character_character__WEBPACK_IMPORTED_MODULE_6__["Signature"].Will).level,
+            hp_damage: character.missingHP,
+            fp_damage: character.missingFP,
+            profile: character.profile.save(),
+            equipment: character.equipmentList.save(),
+            other_equipment: character.otherEquipmentList.save(),
+            skills: character.skillList.save(),
+            advantages: character.traitList.save()
+        };
+        return JSON.stringify(output);
+    }
+}
+GCSJSON.scope = "GCSJSON";
+
+
+/***/ }),
+
+/***/ "./src/externals/serializer.ts":
+/*!*************************************!*\
+  !*** ./src/externals/serializer.ts ***!
+  \*************************************/
+/*! exports provided: registerSerializer, Serializer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "registerSerializer", function() { return registerSerializer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Serializer", function() { return Serializer; });
+var __classPrivateFieldSet = (undefined && undefined.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _transformers;
+function registerSerializer(serializer) {
+    Serializer.serializers.set(serializer.scope, new serializer());
+    return serializer;
+}
+class Serializer {
+    constructor() {
+        _transformers.set(this, void 0);
+        __classPrivateFieldSet(this, _transformers, new Map());
+        this.init();
+    }
+    register(key, transformer) {
+        __classPrivateFieldGet(this, _transformers).set(key, transformer);
+        return this;
+    }
+    transform(transformer, operation) {
+        return __classPrivateFieldGet(this, _transformers).get(transformer)[operation].bind(this);
+    }
+}
+_transformers = new WeakMap();
+Serializer.serializers = new Map();
 
 
 /***/ }),
@@ -13918,10 +14788,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "EquipmentModifier", function() { return _character_equipment_equipment__WEBPACK_IMPORTED_MODULE_4__["EquipmentModifier"]; });
 
-/* harmony import */ var _character_serialization_serializer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./character/serialization/serializer */ "./src/character/serialization/serializer.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Serializer", function() { return _character_serialization_serializer__WEBPACK_IMPORTED_MODULE_5__["Serializer"]; });
+/* harmony import */ var _externals_serializer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./externals/serializer */ "./src/externals/serializer.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Serializer", function() { return _externals_serializer__WEBPACK_IMPORTED_MODULE_5__["Serializer"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "registerSerializer", function() { return _character_serialization_serializer__WEBPACK_IMPORTED_MODULE_5__["registerSerializer"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "registerSerializer", function() { return _externals_serializer__WEBPACK_IMPORTED_MODULE_5__["registerSerializer"]; });
 
 /* harmony import */ var _utils_json_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @utils/json_utils */ "./src/utils/json_utils.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return _utils_json_utils__WEBPACK_IMPORTED_MODULE_6__["isArray"]; });
@@ -13950,18 +14820,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AttributeBonus", function() { return _character_attribute__WEBPACK_IMPORTED_MODULE_10__["AttributeBonus"]; });
 
-/* harmony import */ var _gcs_gcs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @gcs/gcs */ "./src/gcs/gcs.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FeatureType", function() { return _gcs_gcs__WEBPACK_IMPORTED_MODULE_11__["FeatureType"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FeatureType", function() { return _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["FeatureType"]; });
 
-/* harmony import */ var _character_serialization_gcs_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @character/serialization/gcs_json */ "./src/character/serialization/gcs_json.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GCSJSON", function() { return _character_serialization_gcs_json__WEBPACK_IMPORTED_MODULE_12__["GCSJSON"]; });
+/* harmony import */ var _externals_gcs_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./externals/gcs_json */ "./src/externals/gcs_json.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GCSJSON", function() { return _externals_gcs_json__WEBPACK_IMPORTED_MODULE_11__["GCSJSON"]; });
 
-/* harmony import */ var _character_technique__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @character/technique */ "./src/character/technique.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Technique", function() { return _character_technique__WEBPACK_IMPORTED_MODULE_13__["Technique"]; });
+/* harmony import */ var _character_technique__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @character/technique */ "./src/character/technique.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Technique", function() { return _character_technique__WEBPACK_IMPORTED_MODULE_12__["Technique"]; });
 
-/* harmony import */ var _character_config_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @character/config.json */ "./src/character/config.json");
-var _character_config_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! @character/config.json */ "./src/character/config.json", 1);
-/* harmony reexport (default from named exports) */ __webpack_require__.d(__webpack_exports__, "defaultConfig", function() { return _character_config_json__WEBPACK_IMPORTED_MODULE_14__; });
+/* harmony import */ var _character_config_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @character/config.json */ "./src/character/config.json");
+var _character_config_json__WEBPACK_IMPORTED_MODULE_13___namespace = /*#__PURE__*/__webpack_require__.t(/*! @character/config.json */ "./src/character/config.json", 1);
+/* harmony reexport (default from named exports) */ __webpack_require__.d(__webpack_exports__, "defaultConfig", function() { return _character_config_json__WEBPACK_IMPORTED_MODULE_13__; });
 
 
 
@@ -19274,1091 +20143,6 @@ function crossfade(_a) {
 
 /***/ }),
 
-/***/ "./node_modules/util/node_modules/inherits/inherits_browser.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/util/node_modules/inherits/inherits_browser.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/util/support/isBufferBrowser.js":
-/*!******************************************************!*\
-  !*** ./node_modules/util/support/isBufferBrowser.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function isBuffer(arg) {
-  return arg && typeof arg === 'object'
-    && typeof arg.copy === 'function'
-    && typeof arg.fill === 'function'
-    && typeof arg.readUInt8 === 'function';
-}
-
-/***/ }),
-
-/***/ "./node_modules/util/util.js":
-/*!***********************************!*\
-  !*** ./node_modules/util/util.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var getOwnPropertyDescriptors = Object.getOwnPropertyDescriptors ||
-  function getOwnPropertyDescriptors(obj) {
-    var keys = Object.keys(obj);
-    var descriptors = {};
-    for (var i = 0; i < keys.length; i++) {
-      descriptors[keys[i]] = Object.getOwnPropertyDescriptor(obj, keys[i]);
-    }
-    return descriptors;
-  };
-
-var formatRegExp = /%[sdj%]/g;
-exports.format = function(f) {
-  if (!isString(f)) {
-    var objects = [];
-    for (var i = 0; i < arguments.length; i++) {
-      objects.push(inspect(arguments[i]));
-    }
-    return objects.join(' ');
-  }
-
-  var i = 1;
-  var args = arguments;
-  var len = args.length;
-  var str = String(f).replace(formatRegExp, function(x) {
-    if (x === '%%') return '%';
-    if (i >= len) return x;
-    switch (x) {
-      case '%s': return String(args[i++]);
-      case '%d': return Number(args[i++]);
-      case '%j':
-        try {
-          return JSON.stringify(args[i++]);
-        } catch (_) {
-          return '[Circular]';
-        }
-      default:
-        return x;
-    }
-  });
-  for (var x = args[i]; i < len; x = args[++i]) {
-    if (isNull(x) || !isObject(x)) {
-      str += ' ' + x;
-    } else {
-      str += ' ' + inspect(x);
-    }
-  }
-  return str;
-};
-
-
-// Mark that a method should not be used.
-// Returns a modified function which warns once by default.
-// If --no-deprecation is set, then it is a no-op.
-exports.deprecate = function(fn, msg) {
-  if (typeof process !== 'undefined' && process.noDeprecation === true) {
-    return fn;
-  }
-
-  // Allow for deprecating things in the process of starting up.
-  if (typeof process === 'undefined') {
-    return function() {
-      return exports.deprecate(fn, msg).apply(this, arguments);
-    };
-  }
-
-  var warned = false;
-  function deprecated() {
-    if (!warned) {
-      if (process.throwDeprecation) {
-        throw new Error(msg);
-      } else if (process.traceDeprecation) {
-        console.trace(msg);
-      } else {
-        console.error(msg);
-      }
-      warned = true;
-    }
-    return fn.apply(this, arguments);
-  }
-
-  return deprecated;
-};
-
-
-var debugs = {};
-var debugEnviron;
-exports.debuglog = function(set) {
-  if (isUndefined(debugEnviron))
-    debugEnviron = process.env.NODE_DEBUG || '';
-  set = set.toUpperCase();
-  if (!debugs[set]) {
-    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
-      var pid = process.pid;
-      debugs[set] = function() {
-        var msg = exports.format.apply(exports, arguments);
-        console.error('%s %d: %s', set, pid, msg);
-      };
-    } else {
-      debugs[set] = function() {};
-    }
-  }
-  return debugs[set];
-};
-
-
-/**
- * Echos the value of a value. Trys to print the value out
- * in the best way possible given the different types.
- *
- * @param {Object} obj The object to print out.
- * @param {Object} opts Optional options object that alters the output.
- */
-/* legacy: obj, showHidden, depth, colors*/
-function inspect(obj, opts) {
-  // default options
-  var ctx = {
-    seen: [],
-    stylize: stylizeNoColor
-  };
-  // legacy...
-  if (arguments.length >= 3) ctx.depth = arguments[2];
-  if (arguments.length >= 4) ctx.colors = arguments[3];
-  if (isBoolean(opts)) {
-    // legacy...
-    ctx.showHidden = opts;
-  } else if (opts) {
-    // got an "options" object
-    exports._extend(ctx, opts);
-  }
-  // set default options
-  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
-  if (isUndefined(ctx.depth)) ctx.depth = 2;
-  if (isUndefined(ctx.colors)) ctx.colors = false;
-  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
-  if (ctx.colors) ctx.stylize = stylizeWithColor;
-  return formatValue(ctx, obj, ctx.depth);
-}
-exports.inspect = inspect;
-
-
-// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
-inspect.colors = {
-  'bold' : [1, 22],
-  'italic' : [3, 23],
-  'underline' : [4, 24],
-  'inverse' : [7, 27],
-  'white' : [37, 39],
-  'grey' : [90, 39],
-  'black' : [30, 39],
-  'blue' : [34, 39],
-  'cyan' : [36, 39],
-  'green' : [32, 39],
-  'magenta' : [35, 39],
-  'red' : [31, 39],
-  'yellow' : [33, 39]
-};
-
-// Don't use 'blue' not visible on cmd.exe
-inspect.styles = {
-  'special': 'cyan',
-  'number': 'yellow',
-  'boolean': 'yellow',
-  'undefined': 'grey',
-  'null': 'bold',
-  'string': 'green',
-  'date': 'magenta',
-  // "name": intentionally not styling
-  'regexp': 'red'
-};
-
-
-function stylizeWithColor(str, styleType) {
-  var style = inspect.styles[styleType];
-
-  if (style) {
-    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
-           '\u001b[' + inspect.colors[style][1] + 'm';
-  } else {
-    return str;
-  }
-}
-
-
-function stylizeNoColor(str, styleType) {
-  return str;
-}
-
-
-function arrayToHash(array) {
-  var hash = {};
-
-  array.forEach(function(val, idx) {
-    hash[val] = true;
-  });
-
-  return hash;
-}
-
-
-function formatValue(ctx, value, recurseTimes) {
-  // Provide a hook for user-specified inspect functions.
-  // Check that value is an object with an inspect function on it
-  if (ctx.customInspect &&
-      value &&
-      isFunction(value.inspect) &&
-      // Filter out the util module, it's inspect function is special
-      value.inspect !== exports.inspect &&
-      // Also filter out any prototype objects using the circular check.
-      !(value.constructor && value.constructor.prototype === value)) {
-    var ret = value.inspect(recurseTimes, ctx);
-    if (!isString(ret)) {
-      ret = formatValue(ctx, ret, recurseTimes);
-    }
-    return ret;
-  }
-
-  // Primitive types cannot have properties
-  var primitive = formatPrimitive(ctx, value);
-  if (primitive) {
-    return primitive;
-  }
-
-  // Look up the keys of the object.
-  var keys = Object.keys(value);
-  var visibleKeys = arrayToHash(keys);
-
-  if (ctx.showHidden) {
-    keys = Object.getOwnPropertyNames(value);
-  }
-
-  // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
-  if (isError(value)
-      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
-    return formatError(value);
-  }
-
-  // Some type of object without properties can be shortcutted.
-  if (keys.length === 0) {
-    if (isFunction(value)) {
-      var name = value.name ? ': ' + value.name : '';
-      return ctx.stylize('[Function' + name + ']', 'special');
-    }
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    }
-    if (isDate(value)) {
-      return ctx.stylize(Date.prototype.toString.call(value), 'date');
-    }
-    if (isError(value)) {
-      return formatError(value);
-    }
-  }
-
-  var base = '', array = false, braces = ['{', '}'];
-
-  // Make Array say that they are Array
-  if (isArray(value)) {
-    array = true;
-    braces = ['[', ']'];
-  }
-
-  // Make functions say that they are functions
-  if (isFunction(value)) {
-    var n = value.name ? ': ' + value.name : '';
-    base = ' [Function' + n + ']';
-  }
-
-  // Make RegExps say that they are RegExps
-  if (isRegExp(value)) {
-    base = ' ' + RegExp.prototype.toString.call(value);
-  }
-
-  // Make dates with properties first say the date
-  if (isDate(value)) {
-    base = ' ' + Date.prototype.toUTCString.call(value);
-  }
-
-  // Make error with message first say the error
-  if (isError(value)) {
-    base = ' ' + formatError(value);
-  }
-
-  if (keys.length === 0 && (!array || value.length == 0)) {
-    return braces[0] + base + braces[1];
-  }
-
-  if (recurseTimes < 0) {
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    } else {
-      return ctx.stylize('[Object]', 'special');
-    }
-  }
-
-  ctx.seen.push(value);
-
-  var output;
-  if (array) {
-    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
-  } else {
-    output = keys.map(function(key) {
-      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
-    });
-  }
-
-  ctx.seen.pop();
-
-  return reduceToSingleString(output, base, braces);
-}
-
-
-function formatPrimitive(ctx, value) {
-  if (isUndefined(value))
-    return ctx.stylize('undefined', 'undefined');
-  if (isString(value)) {
-    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
-                                             .replace(/'/g, "\\'")
-                                             .replace(/\\"/g, '"') + '\'';
-    return ctx.stylize(simple, 'string');
-  }
-  if (isNumber(value))
-    return ctx.stylize('' + value, 'number');
-  if (isBoolean(value))
-    return ctx.stylize('' + value, 'boolean');
-  // For some reason typeof null is "object", so special case here.
-  if (isNull(value))
-    return ctx.stylize('null', 'null');
-}
-
-
-function formatError(value) {
-  return '[' + Error.prototype.toString.call(value) + ']';
-}
-
-
-function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
-  var output = [];
-  for (var i = 0, l = value.length; i < l; ++i) {
-    if (hasOwnProperty(value, String(i))) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          String(i), true));
-    } else {
-      output.push('');
-    }
-  }
-  keys.forEach(function(key) {
-    if (!key.match(/^\d+$/)) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          key, true));
-    }
-  });
-  return output;
-}
-
-
-function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
-  var name, str, desc;
-  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
-  if (desc.get) {
-    if (desc.set) {
-      str = ctx.stylize('[Getter/Setter]', 'special');
-    } else {
-      str = ctx.stylize('[Getter]', 'special');
-    }
-  } else {
-    if (desc.set) {
-      str = ctx.stylize('[Setter]', 'special');
-    }
-  }
-  if (!hasOwnProperty(visibleKeys, key)) {
-    name = '[' + key + ']';
-  }
-  if (!str) {
-    if (ctx.seen.indexOf(desc.value) < 0) {
-      if (isNull(recurseTimes)) {
-        str = formatValue(ctx, desc.value, null);
-      } else {
-        str = formatValue(ctx, desc.value, recurseTimes - 1);
-      }
-      if (str.indexOf('\n') > -1) {
-        if (array) {
-          str = str.split('\n').map(function(line) {
-            return '  ' + line;
-          }).join('\n').substr(2);
-        } else {
-          str = '\n' + str.split('\n').map(function(line) {
-            return '   ' + line;
-          }).join('\n');
-        }
-      }
-    } else {
-      str = ctx.stylize('[Circular]', 'special');
-    }
-  }
-  if (isUndefined(name)) {
-    if (array && key.match(/^\d+$/)) {
-      return str;
-    }
-    name = JSON.stringify('' + key);
-    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
-      name = name.substr(1, name.length - 2);
-      name = ctx.stylize(name, 'name');
-    } else {
-      name = name.replace(/'/g, "\\'")
-                 .replace(/\\"/g, '"')
-                 .replace(/(^"|"$)/g, "'");
-      name = ctx.stylize(name, 'string');
-    }
-  }
-
-  return name + ': ' + str;
-}
-
-
-function reduceToSingleString(output, base, braces) {
-  var numLinesEst = 0;
-  var length = output.reduce(function(prev, cur) {
-    numLinesEst++;
-    if (cur.indexOf('\n') >= 0) numLinesEst++;
-    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
-  }, 0);
-
-  if (length > 60) {
-    return braces[0] +
-           (base === '' ? '' : base + '\n ') +
-           ' ' +
-           output.join(',\n  ') +
-           ' ' +
-           braces[1];
-  }
-
-  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
-}
-
-
-// NOTE: These type checking functions intentionally don't use `instanceof`
-// because it is fragile and can be easily faked with `Object.create()`.
-function isArray(ar) {
-  return Array.isArray(ar);
-}
-exports.isArray = isArray;
-
-function isBoolean(arg) {
-  return typeof arg === 'boolean';
-}
-exports.isBoolean = isBoolean;
-
-function isNull(arg) {
-  return arg === null;
-}
-exports.isNull = isNull;
-
-function isNullOrUndefined(arg) {
-  return arg == null;
-}
-exports.isNullOrUndefined = isNullOrUndefined;
-
-function isNumber(arg) {
-  return typeof arg === 'number';
-}
-exports.isNumber = isNumber;
-
-function isString(arg) {
-  return typeof arg === 'string';
-}
-exports.isString = isString;
-
-function isSymbol(arg) {
-  return typeof arg === 'symbol';
-}
-exports.isSymbol = isSymbol;
-
-function isUndefined(arg) {
-  return arg === void 0;
-}
-exports.isUndefined = isUndefined;
-
-function isRegExp(re) {
-  return isObject(re) && objectToString(re) === '[object RegExp]';
-}
-exports.isRegExp = isRegExp;
-
-function isObject(arg) {
-  return typeof arg === 'object' && arg !== null;
-}
-exports.isObject = isObject;
-
-function isDate(d) {
-  return isObject(d) && objectToString(d) === '[object Date]';
-}
-exports.isDate = isDate;
-
-function isError(e) {
-  return isObject(e) &&
-      (objectToString(e) === '[object Error]' || e instanceof Error);
-}
-exports.isError = isError;
-
-function isFunction(arg) {
-  return typeof arg === 'function';
-}
-exports.isFunction = isFunction;
-
-function isPrimitive(arg) {
-  return arg === null ||
-         typeof arg === 'boolean' ||
-         typeof arg === 'number' ||
-         typeof arg === 'string' ||
-         typeof arg === 'symbol' ||  // ES6 symbol
-         typeof arg === 'undefined';
-}
-exports.isPrimitive = isPrimitive;
-
-exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ "./node_modules/util/support/isBufferBrowser.js");
-
-function objectToString(o) {
-  return Object.prototype.toString.call(o);
-}
-
-
-function pad(n) {
-  return n < 10 ? '0' + n.toString(10) : n.toString(10);
-}
-
-
-var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-              'Oct', 'Nov', 'Dec'];
-
-// 26 Feb 16:19:34
-function timestamp() {
-  var d = new Date();
-  var time = [pad(d.getHours()),
-              pad(d.getMinutes()),
-              pad(d.getSeconds())].join(':');
-  return [d.getDate(), months[d.getMonth()], time].join(' ');
-}
-
-
-// log is just a thin wrapper to console.log that prepends a timestamp
-exports.log = function() {
-  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
-};
-
-
-/**
- * Inherit the prototype methods from one constructor into another.
- *
- * The Function.prototype.inherits from lang.js rewritten as a standalone
- * function (not on Function.prototype). NOTE: If this file is to be loaded
- * during bootstrapping this function needs to be rewritten using some native
- * functions as prototype setup using normal JavaScript does not work as
- * expected during bootstrapping (see mirror.js in r114903).
- *
- * @param {function} ctor Constructor function which needs to inherit the
- *     prototype.
- * @param {function} superCtor Constructor function to inherit prototype from.
- */
-exports.inherits = __webpack_require__(/*! inherits */ "./node_modules/util/node_modules/inherits/inherits_browser.js");
-
-exports._extend = function(origin, add) {
-  // Don't do anything if add isn't an object
-  if (!add || !isObject(add)) return origin;
-
-  var keys = Object.keys(add);
-  var i = keys.length;
-  while (i--) {
-    origin[keys[i]] = add[keys[i]];
-  }
-  return origin;
-};
-
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-var kCustomPromisifiedSymbol = typeof Symbol !== 'undefined' ? Symbol('util.promisify.custom') : undefined;
-
-exports.promisify = function promisify(original) {
-  if (typeof original !== 'function')
-    throw new TypeError('The "original" argument must be of type Function');
-
-  if (kCustomPromisifiedSymbol && original[kCustomPromisifiedSymbol]) {
-    var fn = original[kCustomPromisifiedSymbol];
-    if (typeof fn !== 'function') {
-      throw new TypeError('The "util.promisify.custom" argument must be of type Function');
-    }
-    Object.defineProperty(fn, kCustomPromisifiedSymbol, {
-      value: fn, enumerable: false, writable: false, configurable: true
-    });
-    return fn;
-  }
-
-  function fn() {
-    var promiseResolve, promiseReject;
-    var promise = new Promise(function (resolve, reject) {
-      promiseResolve = resolve;
-      promiseReject = reject;
-    });
-
-    var args = [];
-    for (var i = 0; i < arguments.length; i++) {
-      args.push(arguments[i]);
-    }
-    args.push(function (err, value) {
-      if (err) {
-        promiseReject(err);
-      } else {
-        promiseResolve(value);
-      }
-    });
-
-    try {
-      original.apply(this, args);
-    } catch (err) {
-      promiseReject(err);
-    }
-
-    return promise;
-  }
-
-  Object.setPrototypeOf(fn, Object.getPrototypeOf(original));
-
-  if (kCustomPromisifiedSymbol) Object.defineProperty(fn, kCustomPromisifiedSymbol, {
-    value: fn, enumerable: false, writable: false, configurable: true
-  });
-  return Object.defineProperties(
-    fn,
-    getOwnPropertyDescriptors(original)
-  );
-}
-
-exports.promisify.custom = kCustomPromisifiedSymbol
-
-function callbackifyOnRejected(reason, cb) {
-  // `!reason` guard inspired by bluebird (Ref: https://goo.gl/t5IS6M).
-  // Because `null` is a special error value in callbacks which means "no error
-  // occurred", we error-wrap so the callback consumer can distinguish between
-  // "the promise rejected with null" or "the promise fulfilled with undefined".
-  if (!reason) {
-    var newReason = new Error('Promise was rejected with a falsy value');
-    newReason.reason = reason;
-    reason = newReason;
-  }
-  return cb(reason);
-}
-
-function callbackify(original) {
-  if (typeof original !== 'function') {
-    throw new TypeError('The "original" argument must be of type Function');
-  }
-
-  // We DO NOT return the promise as it gives the user a false sense that
-  // the promise is actually somehow related to the callback's execution
-  // and that the callback throwing will reject the promise.
-  function callbackified() {
-    var args = [];
-    for (var i = 0; i < arguments.length; i++) {
-      args.push(arguments[i]);
-    }
-
-    var maybeCb = args.pop();
-    if (typeof maybeCb !== 'function') {
-      throw new TypeError('The last argument must be of type Function');
-    }
-    var self = this;
-    var cb = function() {
-      return maybeCb.apply(self, arguments);
-    };
-    // In true node style we process the callback on `nextTick` with all the
-    // implications (stack, `uncaughtException`, `async_hooks`)
-    original.apply(this, args)
-      .then(function(ret) { process.nextTick(cb, null, ret) },
-            function(rej) { process.nextTick(callbackifyOnRejected, rej, cb) });
-  }
-
-  Object.setPrototypeOf(callbackified, Object.getPrototypeOf(original));
-  Object.defineProperties(callbackified,
-                          getOwnPropertyDescriptors(original));
-  return callbackified;
-}
-exports.callbackify = callbackify;
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./src/chat.ts":
-/*!*********************!*\
-  !*** ./src/chat.ts ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports._ChatLog = exports._ChatMessage = void 0;
-const Message_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/chat/Message.svelte */ "./src/svelte/chat/Message.svelte"));
-__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
-class _ChatMessage extends ChatMessage {
-    constructor(data, options) {
-        super(data, options);
-    }
-    static create(data, options) {
-        const _super = Object.create(null, {
-            create: { get: () => super.create }
-        });
-        return __awaiter(this, void 0, void 0, function* () {
-            let message = yield _super.create.call(this, data, options);
-            if (message instanceof _ChatMessage) {
-                yield message.setFlag("GURPS", "roll_data", data.GURPSRollData || {});
-                yield message.setFlag("GURPS", "type", data.GURPSRollType);
-            }
-            return message;
-        });
-    }
-    rollType() { return this.getFlag("GURPS", "type"); }
-}
-exports._ChatMessage = _ChatMessage;
-class _ChatLog extends ChatLog {
-    constructor(options) {
-        super(options);
-    }
-    postOne(message, notify = false) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (!message.visible)
-                return;
-            if (!this._lastId)
-                this._lastId = message.id;
-            const target = this.element.find("#chat-log").get(0);
-            const app = new Message_svelte_1.default({
-                target,
-                props: {
-                    message
-                }
-            });
-            _ChatLog.apps.set(message.id, app);
-            this.scrollBottom();
-            if (notify)
-                this.notify(message);
-        });
-    }
-    _renderBatch(size) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (!this.rendered)
-                return;
-            this._state = Application.RENDER_STATES.RENDERING;
-            const messages = game.messages.entities;
-            const log = this.element.find("#chat-log");
-            let lastIdx = messages.findIndex(m => m._id === this._lastId);
-            lastIdx = lastIdx !== -1 ? lastIdx : messages.length;
-            let targetIdx = Math.max((lastIdx - size) || 0, 0);
-            let m = null;
-            if (lastIdx !== 0) {
-                let html = [];
-                for (let i = targetIdx; i < lastIdx; i++) {
-                    m = messages[i];
-                    if (!m.visible)
-                        continue;
-                    try {
-                        if (_ChatLog.apps.has(m._id)) {
-                            _ChatLog.apps.get(m._id).$set({ message: m });
-                        }
-                        else {
-                            html.push(m);
-                        }
-                    }
-                    catch (err) {
-                        console.error(`Chat message ${m.id} failed to render.\n${err})`);
-                    }
-                }
-                html.forEach(message => {
-                    const app = new Message_svelte_1.default({
-                        target: log.get(0),
-                        props: { message }
-                    });
-                    _ChatLog.apps.set(message._id, app);
-                });
-                this._lastId = messages[targetIdx].id;
-            }
-            this._state = Application.RENDER_STATES.RENDERED;
-        });
-    }
-    updateMessage(message) {
-        _ChatLog.apps.get(message.id).$set({ message });
-    }
-    updateTimestamps() {
-        game.messages.entities.forEach(message => {
-            _ChatLog.apps.get(message._id).$set({ message });
-        });
-    }
-}
-exports._ChatLog = _ChatLog;
-_ChatLog.apps = new Map();
-
-
-/***/ }),
-
-/***/ "./src/container.ts":
-/*!**************************!*\
-  !*** ./src/container.ts ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.nest = exports.moveToIndex = exports.fixIndexes = exports.getIndex = exports.setIndex = exports.clearAllChildren = exports.deleteDeep = exports.addReferencesToChildren = exports.removeReferenceFromParent = exports.setContainedBy = exports.allDescendants = exports.allAncestors = exports.getChildren = exports.getContainedBy = void 0;
-const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
-function getContainedBy(item) {
-    return item.actor.getOwnedItem(item.getFlag("GURPS", "contained_by"));
-}
-exports.getContainedBy = getContainedBy;
-function getChildren(item) {
-    const childIDs = item.getFlag("GURPS", "children") || [];
-    return childIDs.map(id => item.actor.getOwnedItem(id));
-}
-exports.getChildren = getChildren;
-function allAncestors(item, collection = new Set()) {
-    const containedBy = getContainedBy(item);
-    if (!containedBy)
-        return collection;
-    collection.add(containedBy);
-    allAncestors(containedBy, collection);
-    return collection;
-}
-exports.allAncestors = allAncestors;
-function allDescendants(item, collection = new Set()) {
-    getChildren(item).forEach((child) => {
-        allDescendants(child, collection);
-    });
-    return collection;
-}
-exports.allDescendants = allDescendants;
-function setContainedBy(child, parent) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (!parent) {
-            removeReferenceFromParent(child);
-            return;
-        }
-        let containedBy = getContainedBy(child);
-        let isAlreadyChild = getChildren(parent).map(item => { var _a; return (_a = item === null || item === void 0 ? void 0 : item.id) !== null && _a !== void 0 ? _a : null; }).includes(child.id);
-        if (parent.actor && parent.actor !== child.actor) {
-            let toTransfer = Array.from(allDescendants(child).add(child));
-            yield parent.actor.createEmbeddedEntity("OwnedItem", duplicate(toTransfer.map((item) => item.data)));
-            return;
-        }
-        if (child === parent)
-            return this;
-        if (allAncestors(parent).has(child))
-            return child;
-        if (isAlreadyChild) {
-            setContainedBy(child, getContainedBy(parent));
-            return child;
-        }
-        if (containedBy)
-            removeReferenceFromParent(child);
-        yield addReferencesToChildren(parent, [child.id]);
-        yield child.setFlag("GURPS", "contained_by", parent.id);
-        return child;
-    });
-}
-exports.setContainedBy = setContainedBy;
-function removeReferenceFromParent(item) {
-    var _a;
-    return __awaiter(this, void 0, void 0, function* () {
-        const containedBy = getContainedBy(item);
-        if (!containedBy)
-            return item;
-        let newReferences = (_a = containedBy.getFlag("GURPS", "children")) === null || _a === void 0 ? void 0 : _a.filter(id => id !== item.id);
-        yield containedBy.setFlag("GURPS", "children", duplicate(newReferences));
-        yield item.setFlag("GURPS", "contained_by", null);
-        return item;
-    });
-}
-exports.removeReferenceFromParent = removeReferenceFromParent;
-function addReferencesToChildren(item, references) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const children = item.getFlag("GURPS", "children") || [];
-        let newReferences = [].concat(children, references).reduce((prev, cur) => {
-            return !prev.includes(cur) ? [...prev, cur] : prev;
-        }, []);
-        yield item.setFlag("GURPS", "children", duplicate(newReferences));
-        return item;
-    });
-}
-exports.addReferencesToChildren = addReferencesToChildren;
-function deleteDeep(item, options) {
-    var _a, _b, _c;
-    return __awaiter(this, void 0, void 0, function* () {
-        if (!item.actor)
-            return item;
-        let targetDeletes = (_b = (_a = getChildren(item)) === null || _a === void 0 ? void 0 : _a.map(child => child._id)) !== null && _b !== void 0 ? _b : [];
-        (_c = getChildren(item)) === null || _c === void 0 ? void 0 : _c.forEach(child => {
-            try {
-                deleteDeep(child, options);
-            }
-            catch (err) {
-                clearAllChildren(item);
-            }
-        });
-        return item.actor.deleteEmbeddedEntity("OwnedItem", targetDeletes, options);
-    });
-}
-exports.deleteDeep = deleteDeep;
-function clearAllChildren(item) {
-    return __awaiter(this, void 0, void 0, function* () {
-        yield item.setFlag("GURPS", "children", []);
-        return item;
-    });
-}
-exports.clearAllChildren = clearAllChildren;
-function setIndex(item, index) {
-    return __awaiter(this, void 0, void 0, function* () {
-        yield item.setFlag("GURPS", "index", index);
-        return item;
-    });
-}
-exports.setIndex = setIndex;
-function getIndex(item) {
-    return item.getFlag("GURPS", "index");
-}
-exports.getIndex = getIndex;
-function fixIndexes(actor, types) {
-    return __awaiter(this, void 0, void 0, function* () {
-        let array = helpers_1.ownedItemsByType(actor, ...types);
-        let newArray = array.sort((a, b) => getIndex(a) - getIndex(b));
-        let count = 0;
-        const updates = newArray.map((item, i) => {
-            if (item) {
-                return {
-                    _id: item.id,
-                    flags: {
-                        "GURPS": {
-                            "index": count++ + 1
-                        }
-                    }
-                };
-            }
-        });
-        return actor.updateEmbeddedEntity("OwnedItem", updates);
-    });
-}
-exports.fixIndexes = fixIndexes;
-function moveToIndex(item, from, to, types) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const actor = item.actor;
-        if (!actor)
-            return item;
-        yield fixIndexes(actor, types);
-        let array = helpers_1.ownedItemsByType(item.actor, ...types).sort((a, b) => getIndex(a) - getIndex(b));
-        helpers_1.arrayMove(array, from, to);
-        let count = 0;
-        const updates = array.map((item, i) => {
-            if (item) {
-                return {
-                    _id: item.id,
-                    flags: {
-                        "GURPS": {
-                            "index": count++ + 1
-                        }
-                    }
-                };
-            }
-        });
-        return actor.updateEmbeddedEntity("OwnedItem", updates);
-    });
-}
-exports.moveToIndex = moveToIndex;
-function nest(actor, types, nesting) {
-    let array = nesting || helpers_1.ownedItemsByType(actor, ...types);
-    return array.reduce((prev, cur) => {
-        const containedBy = getContainedBy(cur);
-        if (containedBy) {
-            return prev;
-        }
-        return [...prev, nest(actor, types, getChildren(cur))];
-    }, []);
-}
-exports.nest = nest;
-
-
-/***/ }),
-
 /***/ "./src/dragdrop.ts":
 /*!*************************!*\
   !*** ./src/dragdrop.ts ***!
@@ -20380,8 +20164,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getDragContext = exports.setDragData = exports.GURPSDragDrop = void 0;
 const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
-__webpack_require__(/*! ./item */ "./src/item.ts");
-const container_1 = __webpack_require__(/*! ./container */ "./src/container.ts");
+__webpack_require__(/*! ./foundry-GURPS/item */ "./src/foundry-GURPS/item.ts");
+const container_1 = __webpack_require__(/*! ./modules/lists/container */ "./src/modules/lists/container.ts");
 class GURPSDragDrop {
     static dropOnHotbar() {
         const dragSelector = "";
@@ -20486,6 +20270,781 @@ exports.getDragContext = getDragContext;
 
 /***/ }),
 
+/***/ "./src/foundry-GURPS/item.ts":
+/*!***********************************!*\
+  !*** ./src/foundry-GURPS/item.ts ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports._Item = exports._ItemSheet = void 0;
+const Editor_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/editors/Editor.svelte */ "./src/svelte/editors/Editor.svelte"));
+const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
+const ColorPicker_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/ColorPicker.svelte */ "./src/svelte/ColorPicker.svelte"));
+__webpack_require__(/*! ./sheet */ "./src/foundry-GURPS/sheet.ts");
+const container_1 = __webpack_require__(/*! ../modules/lists/container */ "./src/modules/lists/container.ts");
+const helpers_1 = __webpack_require__(/*! ../helpers */ "./src/helpers.ts");
+const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
+__webpack_require__(/*! @modules/custom-chat/chat */ "./src/modules/custom-chat/chat.ts");
+const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
+let _ItemSheet = class _ItemSheet extends ItemSheet {
+    static get defaultOptions() {
+        return mergeObject(ItemSheet.defaultOptions, {
+            classes: ["GURPSItem"],
+            template: "systems/GURPS/assets/templates/holder.html",
+            width: 700,
+            height: 900,
+            submitOnChange: false
+        });
+    }
+    activateListeners(html) {
+        return super.activateListeners(html);
+    }
+    submit() {
+        return null;
+    }
+};
+_ItemSheet = __decorate([
+    helpers_1.svelte(Editor_svelte_1.default)
+], _ItemSheet);
+exports._ItemSheet = _ItemSheet;
+let _Item = class _Item extends Item {
+    constructor(data, options) {
+        super(data, options);
+        this._entity = store_1.writable(this);
+    }
+    openPDFReference() {
+        const api = ui.PDFoundry;
+        if (!api) {
+            ui.notifications.warn("You must install and configure the PDFoundry module in order to open PDFReferences");
+            return;
+        }
+        let ref = this.getProperty("data.reference");
+        try {
+            ref = /( )/.test(ref) ? ref.split(" ")[0] : ref;
+            ref = /,/.test(ref) ? ref.split(",")[0] : ref;
+            ref = /\//.test(ref) ? ref.split("/")[0] : ref;
+            const meta = ref.includes(":") ? ref.split(":") : [ref.split(/[0-9]+/)[0], ref.split(/^[^0-9]+/)[1]];
+            api.openPDFByCode(meta[0], { page: +meta[1] });
+        }
+        catch (err) {
+            ui.notifications.info("Unable to open page reference. Make sure that you've properly recorded it in the reference field.");
+        }
+    }
+    embeddedUpdate() {
+        this._entity.set(this);
+    }
+    getWeapons() {
+        var _a;
+        const weapons = (_a = getProperty(this.data, "data.weapons")) !== null && _a !== void 0 ? _a : [];
+        return weapons.reduce((prev, cur) => {
+            const GURPS = this.actor ? this.getGURPSObject().list.character.getElementById("foundryID", cur._id) : null;
+            const { type, damage, usage, reach, parry, block, accuracy, range, rate_of_fire, shots, bulk } = cur;
+            switch (cur.type) {
+                case "melee_weapon":
+                    prev.melee.push({
+                        _id: cur._id,
+                        GURPS,
+                        type,
+                        damage,
+                        usage,
+                        reach,
+                        parry,
+                        block,
+                        edit: () => {
+                            new WeaponEditor_svelte_1.default({
+                                target: document.body,
+                                props: {
+                                    entity: this._entity,
+                                    weapon: { foundryID: cur._id }
+                                }
+                            });
+                        }
+                    });
+                    break;
+                case "ranged_weapon":
+                    prev.ranged.push({
+                        _id: cur._id,
+                        GURPS,
+                        type,
+                        damage,
+                        usage,
+                        accuracy,
+                        range,
+                        rate_of_fire,
+                        shots,
+                        bulk,
+                        edit: () => {
+                            new WeaponEditor_svelte_1.default({
+                                target: document.body,
+                                props: {
+                                    entity: this._entity,
+                                    weapon: { foundryID: cur._id }
+                                }
+                            });
+                        }
+                    });
+                    break;
+                default:
+            }
+            return prev;
+        }, { melee: [], ranged: [] });
+    }
+    roll() {
+        switch (this.data.type) {
+            case "skill":
+            default:
+        }
+    }
+    getFeatures() {
+        return getProperty(this.data, "data.features") || [];
+    }
+    getModifiers() {
+        return getProperty(this.data, "data.modifiers") || [];
+    }
+    getDefaults(path) {
+        return this.getProperty(path) || [];
+    }
+    addWeapon(data = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            data = Object.assign({
+                type: "melee_weapon",
+                usage: "",
+                strength_requirement: "10",
+                damage: "1d6",
+                damage_type: "cut",
+                reach: "",
+                parry: 0,
+                block: false,
+                accuracy: 0,
+                range: "10/100",
+                rate_of_fire: 1,
+                bulk: -2,
+                shots: "1"
+            }, data);
+            const weapons = this.getProperty("data.weapons") || [];
+            weapons.push(Object.assign(data, {
+                _id: randomID()
+            }));
+            yield this.update({ "data.weapons": duplicate(weapons) }, null);
+        });
+    }
+    addFeature(data = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!["trait", "skill", "item"].includes(this.data.type))
+                return false;
+            const features = this.getFeatures();
+            features.push(Object.assign({
+                type: g4elogic_1.FeatureType.skillBonus,
+                attribute: g4elogic_1.Signature.ST,
+                name_compare_type: "is",
+                specialization_compare_type: "is"
+            }, data, {
+                _id: randomID()
+            }));
+            return this.update({ "data.features": duplicate(features) }, null);
+        });
+    }
+    addModifier(data = {}, path) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (this.data.type !== "trait")
+                return false;
+            const modifiers = this.getModifiers();
+            modifiers.push(Object.assign({}, data, {
+                _id: randomID()
+            }));
+            return this.update({ "data.modifiers": duplicate(modifiers) }, null);
+        });
+    }
+    addDefault(data = {}, path = "data.defaults") {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (this.data.type !== "skill" && !path)
+                return false;
+            const defaults = this.getDefaults(path);
+            defaults.push(Object.assign({
+                type: "DX",
+                modifier: 0
+            }, data, {
+                _id: randomID()
+            }));
+            return this.update({ [path]: duplicate(defaults) }, null);
+        });
+    }
+    removeByPath(path, id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let list = this.getProperty(path);
+            list = list.filter((item) => item._id !== id);
+            return this.update({ [path]: duplicate(list) }, null);
+        });
+    }
+    getGURPSObject() {
+        try {
+            return this.actor.GURPS.getElementById("foundryID", this._id);
+        }
+        catch (err) {
+            return null;
+        }
+    }
+    getIndex() {
+        return this.getFlag("GURPS", "index");
+    }
+    setIndex(index) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return this.update({ "flags.GURPS.index": index }, null);
+        });
+    }
+    isLabel() { return this.getFlag("GURPS", "is_label"); }
+    moveToIndex(from, to, types) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let array = this.actor.ownedItemsByType(...types).sort((a, b) => a.getIndex() - b.getIndex());
+            if (typeof from === "number") {
+                helpers_1.arrayMove(array, from, to);
+            }
+            else {
+            }
+            let correction = 0;
+            const updates = array.map((item, i, array) => {
+                if (item) {
+                    return {
+                        _id: item.id,
+                        flags: {
+                            GURPS: {
+                                ["index"]: i + 1 - correction
+                            }
+                        }
+                    };
+                }
+                else {
+                    correction++;
+                }
+            }).filter(update => update !== undefined);
+            return this.actor.updateEmbeddedEntity("OwnedItem", updates);
+        });
+    }
+    getMenuItems() {
+        return () => {
+            const entity = this;
+            const isLabel = this.isLabel();
+            const getBaseMenu = () => {
+                return [
+                    {
+                        name: `Edit`,
+                        icon: '<i class="fas fa-edit"></i>',
+                        condition: () => !isLabel,
+                        callback() {
+                            entity.sheet.render(true);
+                        }
+                    },
+                    {
+                        name: `Move to ${(entity.getProperty("data.location") || "carried") === "carried" ? "Other" : "Carried"} Equipment`,
+                        icon: "",
+                        condition: entity.data.type === "item",
+                        callback() {
+                            return __awaiter(this, void 0, void 0, function* () {
+                                const containedBy = container_1.getContainedBy(entity);
+                                const location = entity.getProperty("data.location");
+                                const toUpdate = [entity, ...container_1.getChildren(entity)];
+                                if (containedBy && location) {
+                                    yield container_1.setContainedBy(entity, null);
+                                }
+                                entity.actor.updateEmbeddedEntity("OwnedItem", toUpdate.map(item => {
+                                    return {
+                                        _id: item._id,
+                                        "data.location": location === "carried" ? "other" : "carried"
+                                    };
+                                }));
+                            });
+                        }
+                    },
+                    {
+                        name: `Set As ${isLabel ? "Item" : "Label"}`,
+                        icon: `<i class="fas fa-tags"></i>`,
+                        condition: () => {
+                            return ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type);
+                        },
+                        callback() {
+                            return __awaiter(this, void 0, void 0, function* () {
+                                entity.setFlag("GURPS", "is_label", !isLabel);
+                            });
+                        }
+                    },
+                    {
+                        name: "Change Color",
+                        icon: `<i class="fas fa-eye-dropper"></i>`,
+                        condition: () => ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type),
+                        callback() {
+                            new ColorPicker_svelte_1.default({
+                                target: document.body,
+                                props: { entity: entity._entity }
+                            });
+                        }
+                    },
+                    {
+                        name: `Roll`,
+                        icon: '<i class="fas fa-dice-d6"></i>',
+                        condition: () => !isLabel && ["skill", "technique", "spell"].includes(entity.data.type),
+                        callback() {
+                            let skillike = entity.getGURPSObject();
+                            if (skillike.isTechnique) {
+                                ui.notifications.warn("Please roll from the skill list for now");
+                                return false;
+                            }
+                            entity.actor.rollSkill(skillike.name, skillike.calculateLevel());
+                        }
+                    },
+                    {
+                        name: `Open PDF`,
+                        icon: '<i class="fas fa-file-pdf"></i>',
+                        condition: () => !isLabel,
+                        callback() {
+                            entity.openPDFReference();
+                        }
+                    },
+                    {
+                        name: `Copy ID`,
+                        icon: `<i class="fas fa-copy"></i>`,
+                        condition: () => this._id,
+                        callback() {
+                            return __awaiter(this, void 0, void 0, function* () {
+                                try {
+                                    yield navigator.clipboard.writeText(entity._id);
+                                }
+                                catch (err) {
+                                    ui.notifications.info("Your browser does not support clipboard operations");
+                                }
+                            });
+                        }
+                    },
+                    {
+                        name: `Delete`,
+                        icon: '<i class="fas fa-trash"></i>',
+                        condition: () => true,
+                        callback() {
+                            return __awaiter(this, void 0, void 0, function* () {
+                                entity.delete();
+                            });
+                        }
+                    },
+                ];
+            };
+            let options = getBaseMenu();
+            switch (this.data.type) {
+                case "weapon":
+                    return [{
+                            name: "Add Weapon",
+                            icon: `<i class="fas fa-add"></i>`,
+                            condition: () => true,
+                            callback() {
+                                return __awaiter(this, void 0, void 0, function* () {
+                                    yield entity.addWeapon();
+                                });
+                            }
+                        },
+                        {
+                            name: "Delete",
+                            icon: '<i class="fas fa-trash"></i>',
+                            condition: () => true,
+                            callback() {
+                                return __awaiter(this, void 0, void 0, function* () {
+                                    yield entity.delete();
+                                });
+                            }
+                        }
+                    ];
+                case "item":
+                    break;
+                case "skill":
+                    break;
+                case "spell":
+                    break;
+                case "trait":
+                    break;
+                case "melee_weapon":
+                    break;
+                case "ranged_weapon":
+                    break;
+                default:
+            }
+            return options;
+        };
+    }
+};
+_Item = __decorate([
+    helpers_1.injectHelpers,
+    __metadata("design:paramtypes", [Object, Object])
+], _Item);
+exports._Item = _Item;
+
+
+/***/ }),
+
+/***/ "./src/foundry-GURPS/sheet.ts":
+/*!************************************!*\
+  !*** ./src/foundry-GURPS/sheet.ts ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports._Actor = exports._ActorSheet = void 0;
+const Sheet_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/Sheet.svelte */ "./src/svelte/Sheet.svelte"));
+const GCSImportDialog_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/GCSImportDialog.svelte */ "./src/svelte/GCSImportDialog.svelte"));
+__webpack_require__(/*! ./item */ "./src/foundry-GURPS/item.ts");
+const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
+const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
+const SuccessRoll_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js"));
+const SuccessRollRenderer_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer */ "./node_modules/gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer.js"));
+const helpers_1 = __webpack_require__(/*! ../helpers */ "./src/helpers.ts");
+const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
+const AttackDialog_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/AttackDialog.svelte */ "./src/svelte/AttackDialog.svelte"));
+const ModifierPrompt_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte"));
+const dragdrop_1 = __webpack_require__(/*! ../dragdrop */ "./src/dragdrop.ts");
+let _ActorSheet = class _ActorSheet extends ActorSheet {
+    static get defaultOptions() {
+        return mergeObject(ActorSheet.defaultOptions, {
+            classes: ["GURPSActor"],
+            template: "systems/GURPS/assets/templates/holder.html",
+            width: 700,
+            height: 900,
+            submitOnChange: false
+        });
+    }
+    activateListeners(html) {
+        return super.activateListeners(html);
+    }
+    _onDrop(e) {
+        const _super = Object.create(null, {
+            _onDrop: { get: () => super._onDrop }
+        });
+        var _a, _b;
+        return __awaiter(this, void 0, void 0, function* () {
+            function attemptToAddPartyMember(id, entity) {
+                return __awaiter(this, void 0, void 0, function* () {
+                    let roster = entity.getProperty("data.members") || [];
+                    if (!roster.includes(id)) {
+                        roster.push(id);
+                        return entity.update({ "data.members": duplicate(roster) }, { diff: false });
+                    }
+                });
+            }
+            if (((_b = (_a = this === null || this === void 0 ? void 0 : this.actor) === null || _a === void 0 ? void 0 : _a.data) === null || _b === void 0 ? void 0 : _b.type) === "party") {
+                try {
+                    const { origin } = dragdrop_1.getDragContext(e, "actor");
+                    if (origin && origin.data.type === "character") {
+                        return attemptToAddPartyMember(origin.id, this.actor);
+                    }
+                }
+                catch (err) {
+                    console.log(err);
+                    return false;
+                }
+                return false;
+            }
+            return _super._onDrop.call(this, e);
+        });
+    }
+    submit() {
+        return null;
+    }
+    loadGCSFile() {
+        const dialog = new GCSImportDialog_svelte_1.default({
+            target: document.body,
+        });
+        dialog.$on("Load", (e) => __awaiter(this, void 0, void 0, function* () {
+            const files = e.detail;
+            if (files.length > 0) {
+                let file = files[0];
+                let character;
+                try {
+                    character = new g4elogic_1.Character().load(JSON.parse(yield file.text()), "GCSJSON");
+                    console.log(character);
+                    character.save("foundry", this.actor);
+                }
+                catch (err) {
+                    ui.notifications.warn("Your GCS File was unable to load, check the logs for more information");
+                    console.log(err);
+                }
+            }
+            else {
+                ui.notifications.warn("Please upload a valid GCS File in JSON format.");
+            }
+        }));
+    }
+    customHeaderButtons() {
+        return [{
+                label: "LoadGCS",
+                class: "load",
+                icon: "fas fa-file-import",
+                onclick: (e) => this.loadGCSFile()
+            }];
+    }
+};
+_ActorSheet = __decorate([
+    helpers_1.svelte(Sheet_svelte_1.default)
+], _ActorSheet);
+exports._ActorSheet = _ActorSheet;
+let _Actor = class _Actor extends Actor {
+    constructor(data, options) {
+        super(data, options);
+        this._entity = store_1.writable(this);
+        this.GURPS = new g4elogic_1.Character();
+        this._GURPS = store_1.writable(this.GURPS);
+        this.updateGURPS();
+    }
+    prepareData() {
+        super.prepareData();
+        if (this.GURPS) {
+            this.updateGURPS();
+        }
+        this.determineInitiative();
+        this.setPools();
+    }
+    determineInitiative() {
+        const speed = this.getProperty("data.attributes.speed");
+        const dexterity = this.getProperty("data.attributes.dexterity");
+        const health = this.getProperty("data.attributes.health");
+        if (this.data.type === "character") {
+            mergeObject(this.data.data, {
+                initiative: speed + (dexterity + health) / 4
+            });
+        }
+        else if (this.data.type === "monster") {
+            mergeObject(this.data.data, {
+                initiative: speed
+            });
+        }
+    }
+    setPools() {
+        const ST = this.getProperty("data.attributes.strength") || 10;
+        const HT = this.getProperty("data.attributes.health") || 10;
+        const hp = this.getProperty("data.attributes.hit_points") || 0;
+        const fp = this.getProperty("data.attributes.fatigue_points") || 0;
+        const hpValue = this.getProperty("data.pools.hit_points.value") || 10;
+        const fpValue = this.getProperty("data.pools.fatigue_points.value") || 10;
+        if (this.data.type === "character") {
+            mergeObject(this.data.data, {
+                pools: {
+                    fatigue_points: {
+                        max: HT + fp,
+                        value: fpValue
+                    },
+                    hit_points: {
+                        max: ST + hp,
+                        value: hpValue
+                    }
+                }
+            });
+        }
+    }
+    _onUpdateEmbeddedEntity(type, doc, update, options, userId) {
+        this.getOwnedItem(doc._id).embeddedUpdate();
+        this.updateGURPS();
+        super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
+    }
+    setupSheet() {
+        const { useMultiplicateModifiers = false, showTooltips = true, useModifyingDiceAdds = false, baseWillAndPerceptionOn10 = false, useKYOS = false, useReducedSwing = false, useThrustEqualsSwingMinus2 = false, diceIcon = "fas fa-dice d6 roll-ico", } = this.getProperty("data.config");
+    }
+    updateGURPS() {
+        try {
+            const update = this.GURPS.load(this, "foundry");
+            this._GURPS.set(update);
+            this._entity.set(this);
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+    sortList(type, sortPropPath) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const list = this.ownedItemsByType(type);
+            const toUpdate = list
+                .map((item, i) => { return { original: i, sortProp: item.getProperty(sortPropPath) }; })
+                .sort((a, b) => a.sortProp - b.sortProp)
+                .map(item => list[item.original])
+                .map((item, i) => {
+                return {
+                    _id: item.id,
+                    "flags.GURPS.index": i + 1
+                };
+            });
+            return this.updateEmbeddedEntity("OwnedItem", toUpdate);
+        });
+    }
+    ownedItemsByType(...types) {
+        return helpers_1.ownedItemsByType(this, ...types);
+    }
+    getWildWeapons() {
+        return this.ownedItemsByType("melee attack");
+    }
+    getWeapons() {
+        const entity = this;
+        const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
+            edit(entity) {
+                new WeaponEditor_svelte_1.default({
+                    target: document.body,
+                    props: {
+                        entity,
+                        weapon
+                    }
+                });
+            },
+            skillLevel: () => {
+                let level = weapon.getBestAttackLevel();
+                return level;
+            },
+            rollParry() {
+                entity.rollSkill(`Parry With ${weapon.owner.name}`, weapon.getParryLevel(), [+weapon.parry]);
+            },
+            rollBlock() {
+                entity.rollSkill(`Block With ${this.owner.name}`, weapon.getBlockLevel(), [+weapon.block]);
+            },
+            rollSkill() {
+                entity.rollSkill(`${weapon.owner.name} ${weapon.usage}`, this.skillLevel(), [weapon.skillMod || 0], "attack", { weapon });
+            },
+            rollDamage: () => {
+                this.rollDamage({
+                    damage: weapon.damage,
+                    damageType: weapon.damageType,
+                    type: weapon.getType(),
+                    weaponName: weapon.owner.name,
+                    weaponUsage: weapon.usage
+                });
+            },
+        }));
+        return {
+            ranged: weapons.filter(weapon => weapon.getType() === "ranged_weapon"),
+            melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
+        };
+    }
+    rollSkill(trait, level, modifiers = [], modType = "", data = {}) {
+        switch (modType) {
+            case "attack":
+                const modifierDialog = new AttackDialog_svelte_1.default({
+                    target: document.body,
+                    props: {
+                        type: "attack",
+                        weapon: data.weapon ? data.weapon : null
+                    }
+                });
+                modifierDialog.$on("roll", (e) => {
+                    this.rollAndRender(trait, level, helpers_1.formatModList([...e.detail, ...modifiers]));
+                });
+                break;
+            default:
+                const modifierPrompt = new ModifierPrompt_svelte_1.default({
+                    target: document.body,
+                });
+                modifierPrompt.$on("roll", (e) => {
+                    this.rollAndRender(trait, level, helpers_1.formatModList([e.detail]));
+                });
+        }
+    }
+    rollAndRender(trait, level, modifiers) {
+        try {
+            let roll;
+            try {
+                roll = new SuccessRoll_1.default({ level, trait, modifiers });
+            }
+            catch (err) {
+                roll = new SuccessRoll_1.default({ level, trait, modifiers: null });
+                ui.notifications.warn("Your modifier is invalid");
+            }
+            roll.roll();
+            let renderer = new SuccessRollRenderer_1.default();
+            renderer.render(roll, { template: "systems/GURPS/assets/templates/templates_roll.html" }).then((html) => {
+                ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER });
+            });
+        }
+        catch (err) {
+            ui.notifications.error(err);
+        }
+    }
+    dodge() {
+        let dodgeScore = Math.floor(this.GURPS.getAttribute(g4elogic_1.Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3);
+        this.rollSkill("Dodge", dodgeScore);
+    }
+    rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const swing = this.GURPS.getSwingDamage();
+            const thrust = this.GURPS.getThrustDamage();
+            try {
+                const roll = new Roll(damage, {
+                    swing,
+                    sw: swing,
+                    thrust,
+                    thr: thrust
+                });
+                return roll.toMessage({
+                    GURPSRollType: "Damage", GURPSRollData: {
+                        type,
+                        damageType,
+                        weaponUsage,
+                        weaponName
+                    }
+                });
+            }
+            catch (err) {
+                ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed");
+            }
+        });
+    }
+};
+_Actor = __decorate([
+    helpers_1.injectHelpers,
+    __metadata("design:paramtypes", [Object, Object])
+], _Actor);
+exports._Actor = _Actor;
+
+
+/***/ }),
+
 /***/ "./src/foundry_actor.ts":
 /*!******************************!*\
   !*** ./src/foundry_actor.ts ***!
@@ -20507,9 +21066,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FoundryEntity = void 0;
 const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
-__webpack_require__(/*! ./sheet */ "./src/sheet.ts");
-__webpack_require__(/*! ./item */ "./src/item.ts");
-const container_1 = __webpack_require__(/*! ./container */ "./src/container.ts");
+__webpack_require__(/*! ./foundry-GURPS/sheet */ "./src/foundry-GURPS/sheet.ts");
+__webpack_require__(/*! ./foundry-GURPS/item */ "./src/foundry-GURPS/item.ts");
+const container_1 = __webpack_require__(/*! ./modules/lists/container */ "./src/modules/lists/container.ts");
 class FoundryEntity extends g4elogic_1.Serializer {
     constructor() {
         super();
@@ -20558,6 +21117,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
         });
     }
     static mapListItem(listItem, entity) {
+        listItem.foundryID = entity.id;
         listItem.listIndex = entity.getIndex() || listItem.list.length + 1;
     }
     static saveListItem(listItem) {
@@ -20596,8 +21156,6 @@ class FoundryEntity extends g4elogic_1.Serializer {
         skillDefault.modifier = data.modifier;
         skillDefault.specialization = data.specialization;
         skillDefault.name = data.name;
-        if (skillDefault.getClass() instanceof g4elogic_1.SkillDefault) {
-        }
     }
     static saveSkillDefault(skillDefault) {
         return {
@@ -20611,10 +21169,8 @@ class FoundryEntity extends g4elogic_1.Serializer {
     mapSkill(skill, entity) {
         var _a, _b, _c, _d;
         const data = entity.data;
-        skill.foundryID = entity.id;
         FoundryEntity.mapListItem(skill, entity);
         FoundryEntity.mapSkillLike(skill, entity);
-        skill.difficulty = getProperty(data, "data.difficulty");
         skill.signature = getProperty(data, "data.signature");
         skill.techLevel = getProperty(data, "data.tech_level");
         skill.specialization = getProperty(data, "data.specialization");
@@ -20634,16 +21190,21 @@ class FoundryEntity extends g4elogic_1.Serializer {
     }
     saveSkill(skill) {
         try {
-            return Object.assign(FoundryEntity.saveSkillLike(skill), {
-                type: skill.tag,
-                difficulty: skill.difficulty,
-                signature: skill.signature,
-                tech_level: skill.techLevel,
-                encumbrance_penalty_multiplier: skill.encumbrancePenaltyMultiple,
-                reference: skill.reference,
-                notes: skill.notes,
-                defaults: Array.from(skill.defaults).map(skillDefault => skillDefault.save())
-            });
+            return {
+                type: "skill",
+                name: skill.name || "Skill",
+                flags: {},
+                data: Object.assign(FoundryEntity.saveSkillLike(skill), {
+                    type: skill.tag,
+                    difficulty: skill.difficulty,
+                    signature: skill.signature,
+                    tech_level: skill.techLevel,
+                    encumbrance_penalty_multiplier: skill.encumbrancePenaltyMultiple,
+                    reference: skill.reference,
+                    notes: skill.notes,
+                    defaults: Array.from(skill.defaults).map(skillDefault => skillDefault.save({}))
+                })
+            };
         }
         catch (err) {
         }
@@ -20651,7 +21212,6 @@ class FoundryEntity extends g4elogic_1.Serializer {
     mapTechnique(technique, entity) {
         var _a;
         const data = entity.data;
-        technique.foundryID = entity.id;
         FoundryEntity.mapListItem(technique, entity);
         FoundryEntity.mapSkillLike(technique, entity);
         technique.name = getProperty(data, "data.name");
@@ -20667,19 +21227,22 @@ class FoundryEntity extends g4elogic_1.Serializer {
         });
     }
     saveTechnique(technique) {
-        return Object.assign({}, {
-            points: technique.points,
-            difficulty: technique.difficulty,
-            limit: technique.limit,
-            global_mod: technique.gMod,
-            tech_level: technique.techLevel,
-            default: technique.default.save()
-        });
+        return {
+            name: technique.name || "Technique",
+            flags: {},
+            data: {
+                points: technique.points,
+                difficulty: technique.difficulty,
+                limit: technique.limit,
+                global_mod: technique.gMod,
+                tech_level: technique.techLevel,
+                default: technique.default.save()
+            }
+        };
     }
     mapSpell(spell, entity) {
         var _a, _b, _c;
         const data = entity.data;
-        spell.foundryID = entity.id;
         FoundryEntity.mapListItem(spell, entity);
         FoundryEntity.mapSkillLike(spell, entity);
         spell.college = getProperty(data, "data.college");
@@ -20700,20 +21263,25 @@ class FoundryEntity extends g4elogic_1.Serializer {
     }
     saveSpell(spell) {
         try {
-            return Object.assign({}, {
-                name: spell.name,
-                college: spell.college,
-                power_source: spell.powerSource,
-                class: spell.spellClass,
-                casting_cost: spell.castingCost,
-                maintenance_cost: spell.maintenanceCost,
-                casting_time: spell.castingTime,
-                duration: spell.duration,
-                reference: spell.reference,
-                points: spell.points,
-                difficulty: spell.difficulty,
-                signature: spell.signature
-            });
+            return {
+                name: spell.name || "Spell",
+                type: "spell",
+                flags: {},
+                data: {
+                    name: spell.name,
+                    college: spell.college,
+                    power_source: spell.powerSource,
+                    class: spell.spellClass,
+                    casting_cost: spell.castingCost,
+                    maintenance_cost: spell.maintenanceCost,
+                    casting_time: spell.castingTime,
+                    duration: spell.duration,
+                    reference: spell.reference,
+                    points: spell.points,
+                    difficulty: spell.difficulty,
+                    signature: spell.signature
+                }
+            };
         }
         catch (err) {
         }
@@ -20722,7 +21290,6 @@ class FoundryEntity extends g4elogic_1.Serializer {
         var _a, _b, _c, _d, _e, _f, _g, _h;
         try {
             const data = entity.data;
-            equipment.foundryID = entity.id;
             FoundryEntity.mapListItem(equipment, entity);
             equipment.foundryID = entity.id;
             equipment.canContainChildren = (_b = (_a = getProperty(data, "data.type")) === null || _a === void 0 ? void 0 : _a.includes("_container")) !== null && _b !== void 0 ? _b : false;
@@ -20740,11 +21307,13 @@ class FoundryEntity extends g4elogic_1.Serializer {
             });
             (_d = getProperty(data, "data.features")) === null || _d === void 0 ? void 0 : _d.forEach((feature) => {
                 var _a;
+                if (!feature)
+                    return;
                 (_a = g4elogic_1.Feature.loadFeature(equipment, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
             });
             if (!entity.GURPSUpdater) {
                 entity.GURPSUpdater = equipment.subscribe((item) => __awaiter(this, void 0, void 0, function* () {
-                }));
+                })).unsubscribe;
             }
             if (((_e = getProperty(data, "data.type")) === null || _e === void 0 ? void 0 : _e.includes("_container")) || ((_f = entity.getFlag("GURPS", "children")) === null || _f === void 0 ? void 0 : _f.length) > 0) {
                 const children = (_h = (_g = entity.getFlag("GURPS", "children")) === null || _g === void 0 ? void 0 : _g.map((itemID) => { var _a; return (_a = entity === null || entity === void 0 ? void 0 : entity.actor) === null || _a === void 0 ? void 0 : _a.getOwnedItem(itemID); })) === null || _h === void 0 ? void 0 : _h.filter(item => Boolean(item));
@@ -20753,22 +21322,30 @@ class FoundryEntity extends g4elogic_1.Serializer {
             }
         }
         catch (err) {
+            console.log(entity, equipment);
             console.log(err);
         }
     }
     saveEquipment(equipment) {
         try {
-            return Object.assign({}, {
-                type: equipment.tag,
-                equipped: equipment.equipped,
-                description: equipment.description,
-                quantity: equipment.quantity,
-                value: equipment.value,
-                weight: equipment.weight,
-                tech_level: equipment.techLevel,
-                legality_class: equipment.legalityClass,
-                weapons: Array.from(equipment.weapons).map(weapon => weapon.save())
-            });
+            return {
+                name: equipment.description || "Item",
+                type: "item",
+                flags: {},
+                data: {
+                    type: equipment.tag,
+                    equipped: equipment.equipped,
+                    description: equipment.description,
+                    quantity: equipment.quantity,
+                    value: equipment.value,
+                    weight: equipment.weight,
+                    tech_level: equipment.techLevel,
+                    legality_class: equipment.legalityClass,
+                    reference: equipment.reference,
+                    weapons: Array.from(equipment.weapons).map(weapon => weapon.save({})),
+                    features: Array.from(equipment.features).map(feature => feature.save({}))
+                }
+            };
         }
         catch (err) {
             console.log(err);
@@ -20777,7 +21354,6 @@ class FoundryEntity extends g4elogic_1.Serializer {
     mapTrait(trait, entity) {
         var _a, _b, _c, _d, _e, _f, _g;
         const data = entity.data;
-        trait.foundryID = entity.id;
         FoundryEntity.mapListItem(trait, entity);
         trait.name = getProperty(data, "data.name");
         trait.disabled = !getProperty(data, "data.enabled");
@@ -20788,7 +21364,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
         trait.allowHalfLevels = getProperty(data, "data.allow_half_levels");
         trait.hasHalfLevel = getProperty(data, "data.has_half_level");
         trait.roundDown = getProperty(data, "data.round_down");
-        trait.controlRating = getProperty(data, "data.cr");
+        trait.controlRating = getProperty(data, "data.cr").toString();
         trait.pointsPerLevel = parseInt(getProperty(data, "data.points_per_level"));
         trait.reference = getProperty(data, "data.reference");
         trait.notes = getProperty(data, "data.notes");
@@ -20797,6 +21373,8 @@ class FoundryEntity extends g4elogic_1.Serializer {
         });
         (_d = getProperty(data, "data.features")) === null || _d === void 0 ? void 0 : _d.forEach((feature) => {
             var _a;
+            if (!feature)
+                return;
             (_a = g4elogic_1.Feature.loadFeature(trait, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
         });
         (_e = getProperty(data, "data.weapons")) === null || _e === void 0 ? void 0 : _e.forEach((weapon) => {
@@ -20809,23 +21387,29 @@ class FoundryEntity extends g4elogic_1.Serializer {
     }
     saveTrait(trait) {
         try {
-            return Object.assign({}, {
-                type: trait.tag,
-                name: trait.name,
-                enabled: !trait.disabled,
-                base_points: trait.basePoints,
-                levels: trait.levels,
-                allow_half_levels: trait.allowHalfLevels,
-                has_half_level: trait.hasHalfLevel,
-                round_down: trait.roundDown,
-                cr: trait.controlRating,
-                points_per_level: trait.pointsPerLevel,
-                reference: trait.reference,
-                categories: Array.from(trait.categories),
-                notes: trait.notes,
-                features: Array.from(trait.features).map(feature => feature.save()),
-                weapons: Array.from(trait.weapons).map(weapon => weapon.save())
-            });
+            return {
+                name: trait.name || "Trait",
+                type: "trait",
+                flags: {},
+                data: {
+                    type: trait.tag,
+                    name: trait.name,
+                    enabled: !trait.disabled,
+                    base_points: trait.basePoints,
+                    has_levels: trait.hasLevels,
+                    levels: trait.levels,
+                    allow_half_levels: trait.allowHalfLevels,
+                    has_half_level: trait.hasHalfLevel,
+                    round_down: trait.roundDown,
+                    cr: trait.controlRating,
+                    points_per_level: trait.pointsPerLevel,
+                    reference: trait.reference,
+                    categories: Array.from(trait.categories),
+                    notes: trait.notes,
+                    features: Array.from(trait.features).map(feature => feature.save({})),
+                    weapons: Array.from(trait.weapons).map(weapon => weapon.save({}))
+                }
+            };
         }
         catch (err) {
         }
@@ -20869,6 +21453,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
     }
     saveFeature(feature) {
         let base = {
+            per_level: feature.leveled,
             type: feature.type,
             leveled: feature.leveled,
             limitation: feature.limitation,
@@ -20877,7 +21462,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
         switch (feature.type) {
             case g4elogic_1.FeatureType.attributeBonus:
                 return Object.assign(base, {
-                    attribute: feature.attribtue
+                    attribute: feature.attribute
                 });
             case g4elogic_1.FeatureType.damageResistanceBonus:
                 break;
@@ -20929,9 +21514,14 @@ class FoundryEntity extends g4elogic_1.Serializer {
         return weapon;
     }
     saveWeapon(weapon) {
+        var _a, _b, _c;
+        let damageBase = (_b = (_a = weapon === null || weapon === void 0 ? void 0 : weapon.damageBase) === null || _a === void 0 ? void 0 : _a.replaceAll(new RegExp(/\d+d/, "g"), (match) => `${match}6`)) !== null && _b !== void 0 ? _b : "";
+        damageBase = (_c = damageBase === null || damageBase === void 0 ? void 0 : damageBase.replace(/dx/, "d*")) !== null && _c !== void 0 ? _c : "";
         const getDamage = () => {
-            const base = weapon.damageStrength === "sw" || weapon.damageStrength === "thr" ? `@${weapon.damageStrength}` : weapon.damageBase || "";
-            return `${base}${weapon.damageBase}`;
+            const base = (weapon.damageStrength === "sw" || weapon.damageStrength === "thr") ?
+                `(@${weapon.damageStrength})${damageBase}` :
+                damageBase || "";
+            return base;
         };
         try {
             return {
@@ -21006,23 +21596,29 @@ class FoundryEntity extends g4elogic_1.Serializer {
             const remove = actor.items.map(item => item._id);
             yield actor.deleteEmbeddedEntity("OwnedItem", remove);
             const create = [
-                ...character.skillList.iter(),
-                ...character.techniqueList.iter(),
-                ...character.traitList.iter(),
-                ...character.equipmentList.iter(),
-                ...character.otherEquipmentList.iter(),
-                ...character.spellList.iter()
-            ].filter(item => !item.tag.includes("container")).map((item) => {
-                return {
-                    name: item.name || "???",
-                    type: this.determineType(item.tag),
-                    data: item.save()
-                };
-            });
-            yield actor.createEmbeddedEntity("OwnedItem", duplicate(create));
+                ...character.equipmentList.iter().map(item => {
+                    return Object.assign(item.save({}));
+                }),
+                ...character.otherEquipmentList.iter().map(item => {
+                    return Object.assign(item.save({}));
+                }),
+                ...[
+                    ...character.skillList.iter(),
+                    ...character.techniqueList.iter(),
+                    ...character.traitList.iter(),
+                    ...character.spellList.iter()
+                ].map((item) => {
+                    return Object.assign(item.save({}));
+                })
+            ];
+            let creations = yield actor.createEmbeddedEntity("OwnedItem", duplicate(create));
+            console.log(character.profile.portrait);
             yield actor.update({
                 "name": ((_a = character === null || character === void 0 ? void 0 : character.profile) === null || _a === void 0 ? void 0 : _a.name) || "???",
-                "img": ((_b = character === null || character === void 0 ? void 0 : character.profile) === null || _b === void 0 ? void 0 : _b.portrait) ? this.prependBase64(character.profile.portrait) : null,
+                "img": this.prependBase64((_b = character === null || character === void 0 ? void 0 : character.profile) === null || _b === void 0 ? void 0 : _b.portrait),
+                "data.point_total": character.totalPoints,
+                "data.pools.hit_points.value": character.getAttribute(g4elogic_1.Signature.ST).calculateLevel() - character.missingHP,
+                "data.pools.fatigue_points.value": character.getAttribute(g4elogic_1.Signature.FP).calculateLevel() - character.missingFP,
                 "data.attributes": {
                     strength: character.getAttribute(g4elogic_1.Signature.ST).level,
                     dexterity: character.getAttribute(g4elogic_1.Signature.DX).level,
@@ -21040,16 +21636,11 @@ class FoundryEntity extends g4elogic_1.Serializer {
         });
     }
     prependBase64(base64) {
+        if (!base64)
+            return null;
         if (base64.startsWith("data:image/png;base64"))
             return base64;
         return "data:image/png;base64," + base64;
-    }
-    determineType(tag) {
-        if (tag === "equipment")
-            return "item";
-        if (tag === "technique")
-            return "skill";
-        return tag;
     }
 }
 exports.FoundryEntity = FoundryEntity;
@@ -21083,8 +21674,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.injectHelpers = exports.svelte = exports.createContextMenu = exports.createTooltip = exports.getValue = exports.coerce = exports.customUpdate = exports.getEntity = exports.arrayMove = exports.indexSort = exports.ownedItemsByType = exports.formatEquipment = exports.formatTrait = exports.formatSkill = exports.formatModList = exports.fixed6 = void 0;
 const core_1 = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/popper.js");
 const json_query_1 = __importDefault(__webpack_require__(/*! json-query */ "./node_modules/json-query/index.js"));
-const container_1 = __webpack_require__(/*! ./container */ "./src/container.ts");
-__webpack_require__(/*! util */ "./node_modules/util/util.js");
+const container_1 = __webpack_require__(/*! ./modules/lists/container */ "./src/modules/lists/container.ts");
 function fixed6(number) {
     let ifString;
     let ifNumber;
@@ -21382,23 +21972,6 @@ function svelte(app) {
             constructor(...args) {
                 super(...args);
             }
-            _renderInner(data, options) {
-                const _super = Object.create(null, {
-                    _renderInner: { get: () => super._renderInner }
-                });
-                var _a, _b, _c, _d, _e, _f;
-                return __awaiter(this, void 0, void 0, function* () {
-                    let html = yield _super._renderInner.call(this, data, options);
-                    this.app = new app({
-                        target: html.get(0),
-                        props: {
-                            entity: (_d = (_b = (_a = this === null || this === void 0 ? void 0 : this.item) === null || _a === void 0 ? void 0 : _a._entity) !== null && _b !== void 0 ? _b : (_c = this === null || this === void 0 ? void 0 : this.actor) === null || _c === void 0 ? void 0 : _c._entity) !== null && _d !== void 0 ? _d : null,
-                            GURPS: (_f = (_e = this === null || this === void 0 ? void 0 : this.actor) === null || _e === void 0 ? void 0 : _e.GURPS) !== null && _f !== void 0 ? _f : null
-                        }
-                    });
-                    return html;
-                });
-            }
             _getHeaderButtons() {
                 return [].concat(this.customHeaderButtons(), super._getHeaderButtons());
             }
@@ -21410,6 +21983,23 @@ function svelte(app) {
                     return [];
                 }
             }
+            _renderInner(data, options) {
+                const _super = Object.create(null, {
+                    _renderInner: { get: () => super._renderInner }
+                });
+                var _a, _b, _c, _d, _e, _f;
+                return __awaiter(this, void 0, void 0, function* () {
+                    let html = yield _super._renderInner.call(this, data, options);
+                    this.svelteApp = new app({
+                        target: html.get(0),
+                        props: {
+                            entity: (_d = (_b = (_a = this === null || this === void 0 ? void 0 : this.item) === null || _a === void 0 ? void 0 : _a._entity) !== null && _b !== void 0 ? _b : (_c = this === null || this === void 0 ? void 0 : this.actor) === null || _c === void 0 ? void 0 : _c._entity) !== null && _d !== void 0 ? _d : null,
+                            GURPS: (_f = (_e = this === null || this === void 0 ? void 0 : this.actor) === null || _e === void 0 ? void 0 : _e.GURPS) !== null && _f !== void 0 ? _f : null
+                        }
+                    });
+                    return html;
+                });
+            }
             render(force = false, options) {
                 var _a;
                 if (!this.rendered)
@@ -21419,7 +22009,7 @@ function svelte(app) {
                 const entity = (this.item || this.actor);
                 entity._entity.set(entity);
                 actor === null || actor === void 0 ? void 0 : actor.updateGURPS();
-                this.app.$set({ entity: entity._entity });
+                this.svelteApp.$set({ entity: entity._entity });
                 Hooks.call(`render${this.options.baseApplication}`, this, this.element, {});
                 const sheet = this.element.get(0);
                 try {
@@ -21482,75 +22072,71 @@ exports.injectHelpers = injectHelpers;
 
 "use strict";
 
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const sheet_1 = __webpack_require__(/*! ./sheet */ "./src/sheet.ts");
-const item_1 = __webpack_require__(/*! ./item */ "./src/item.ts");
+exports.isNewVersion = void 0;
+const sheet_1 = __webpack_require__(/*! ./foundry-GURPS/sheet */ "./src/foundry-GURPS/sheet.ts");
+const item_1 = __webpack_require__(/*! ./foundry-GURPS/item */ "./src/foundry-GURPS/item.ts");
 const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
-const chat_1 = __webpack_require__(/*! ./chat */ "./src/chat.ts");
+const chat_1 = __webpack_require__(/*! ./modules/custom-chat/chat */ "./src/modules/custom-chat/chat.ts");
 const foundry_actor_1 = __webpack_require__(/*! ./foundry_actor */ "./src/foundry_actor.ts");
 const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
+const WelcomeDialog_svelte_1 = __importDefault(__webpack_require__(/*! @components/WelcomeDialog.svelte */ "./src/svelte/WelcomeDialog.svelte"));
 const json_query_1 = __importDefault(__webpack_require__(/*! json-query */ "./node_modules/json-query/index.js"));
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
-__webpack_require__(/*! ./templates/GURPS-foundry-roll-templates/templates_roll.css */ "./src/templates/GURPS-foundry-roll-templates/templates_roll.css");
 Hooks.once('init', init);
+Hooks.once('ready', ready);
 function init() {
-    return __awaiter(this, void 0, void 0, function* () {
-        game.gurps4e = {
-            customUpdate: helpers_1.customUpdate,
-            getEntity: helpers_1.getEntity,
-            indexSort: helpers_1.indexSort,
-            jsonQuery: json_query_1.default
-        };
-        g4elogic_1.registerSerializer(g4elogic_1.GCSJSON);
-        g4elogic_1.registerSerializer(foundry_actor_1.FoundryEntity);
-        CONFIG.Actor.entityClass = sheet_1._Actor;
-        CONFIG.Item.entityClass = item_1._Item;
-        CONFIG.ChatMessage.entityClass = chat_1._ChatMessage;
-        CONFIG.ui.chat = chat_1._ChatLog;
-        CONFIG.Combat.initiative = {
-            decimals: 2,
-            formula: "@initiative"
-        };
-        Actors.unregisterSheet("core", ActorSheet);
-        Actors.registerSheet("GURPS", sheet_1._ActorSheet, { makeDefault: true });
-        Items.unregisterSheet("core", ItemSheet);
-        Items.registerSheet("GURPS", item_1._ItemSheet, { makeDefault: true });
+    game.gurps4e = {
+        oldVersion: "1.2.1",
+        customUpdate: helpers_1.customUpdate,
+        getEntity: helpers_1.getEntity,
+        indexSort: helpers_1.indexSort,
+        jsonQuery: json_query_1.default
+    };
+    g4elogic_1.registerSerializer(g4elogic_1.GCSJSON);
+    g4elogic_1.registerSerializer(foundry_actor_1.FoundryEntity);
+    CONFIG.Actor.entityClass = sheet_1._Actor;
+    CONFIG.Item.entityClass = item_1._Item;
+    CONFIG.ChatMessage.entityClass = chat_1.CustomChatMessage;
+    CONFIG.ui.chat = chat_1.CustomChatLog;
+    CONFIG.Combat.initiative = {
+        decimals: 2,
+        formula: "@initiative"
+    };
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("GURPS", sheet_1._ActorSheet, { makeDefault: true });
+    Items.unregisterSheet("core", ItemSheet);
+    Items.registerSheet("GURPS", item_1._ItemSheet, { makeDefault: true });
+}
+function ready() {
+    if (isNewVersion()) {
+        alert("New Version");
+    }
+    new WelcomeDialog_svelte_1.default({
+        target: document.body,
+        props: {}
     });
 }
+function isNewVersion() {
+    return isNewerVersion(game.gurps4e.oldVersion, game.system.data.version);
+}
+exports.isNewVersion = isNewVersion;
 
 
 /***/ }),
 
-/***/ "./src/item.ts":
-/*!*********************!*\
-  !*** ./src/item.ts ***!
-  \*********************/
+/***/ "./src/modules/custom-chat/chat.ts":
+/*!*****************************************!*\
+  !*** ./src/modules/custom-chat/chat.ts ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -21564,745 +22150,1296 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports._Item = exports._ItemSheet = void 0;
-const Editor_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/editors/Editor.svelte */ "./src/svelte/editors/Editor.svelte"));
-const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
-const ColorPicker_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/ColorPicker.svelte */ "./src/svelte/ColorPicker.svelte"));
-__webpack_require__(/*! ./sheet */ "./src/sheet.ts");
-const container_1 = __webpack_require__(/*! ./container */ "./src/container.ts");
-const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
-const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-__webpack_require__(/*! ./chat */ "./src/chat.ts");
-const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
-let _ItemSheet = class _ItemSheet extends ItemSheet {
-    static get defaultOptions() {
-        return mergeObject(ItemSheet.defaultOptions, {
-            classes: ["GURPSItem"],
-            template: "systems/GURPS/holder.html",
-            width: 700,
-            height: 900,
-            submitOnChange: false
-        });
-    }
-    activateListeners(html) {
-        return super.activateListeners(html);
-    }
-    submit() {
-        return null;
-    }
-};
-_ItemSheet = __decorate([
-    helpers_1.svelte(Editor_svelte_1.default)
-], _ItemSheet);
-exports._ItemSheet = _ItemSheet;
-let _Item = class _Item extends Item {
+exports.CustomChatLog = exports.CustomChatMessage = void 0;
+__webpack_require__(/*! ./svelte/Message.svelte */ "./src/modules/custom-chat/svelte/Message.svelte");
+const ChatLog_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/ChatLog.svelte */ "./src/modules/custom-chat/svelte/ChatLog.svelte"));
+__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
+__webpack_require__(/*! helpers */ "./src/helpers.ts");
+class CustomChatMessage extends ChatMessage {
     constructor(data, options) {
         super(data, options);
-        this._entity = store_1.writable(this);
     }
-    openPDFReference() {
-        const api = ui.PDFoundry;
-        if (!api) {
-            ui.notifications.warn("You must install and configure the PDFoundry module in order to open PDFReferences");
+    static create(data, options) {
+        const _super = Object.create(null, {
+            create: { get: () => super.create }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+            let message = yield _super.create.call(this, data, options);
+            if (message instanceof CustomChatMessage) {
+                yield message.setFlag("GURPS", "roll_data", data.GURPSRollData || {});
+                yield message.setFlag("GURPS", "type", data.GURPSRollType);
+            }
+            return message;
+        });
+    }
+    rollType() { return this.getFlag("GURPS", "type"); }
+}
+exports.CustomChatMessage = CustomChatMessage;
+class CustomChatLog extends ChatLog {
+    constructor(options) {
+        super(options);
+    }
+    _renderInner(data) {
+        const _super = Object.create(null, {
+            _renderInner: { get: () => super._renderInner }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+            let html = yield _super._renderInner.call(this, data);
+            this.svelteApp = new ChatLog_svelte_1.default({
+                target: html.get(0),
+                props: {
+                    ChatLog: this,
+                },
+            });
+            return jQuery(this.svelteApp.chatPanel);
+        });
+    }
+    postOne(message, notify = false) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!message.visible)
+                return;
+            if (!this._lastId)
+                this._lastId = message.id;
+            this.svelteApp.$set({ messages: [...this.svelteApp.messages, message] });
+            this.scrollBottom();
+            if (notify)
+                this.notify(message);
+        });
+    }
+    _renderBatch(size) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!this.rendered)
+                return;
+            this._state = Application.RENDER_STATES.RENDERING;
+            const messages = game.messages.entities;
+            const log = this.element.find("#chat-log");
+            let lastIdx = messages.findIndex(m => m._id === this._lastId);
+            lastIdx = lastIdx !== -1 ? lastIdx : messages.length;
+            let targetIdx = Math.max((lastIdx - size) || 0, 0);
+            let m = null;
+            if (lastIdx !== 0) {
+                let html = [];
+                for (let i = targetIdx; i < lastIdx; i++) {
+                    m = messages[i];
+                    if (!m.visible)
+                        continue;
+                    try {
+                        html.push(m);
+                    }
+                    catch (err) {
+                        console.error(`Chat message ${m.id} failed to render.\n${err})`);
+                    }
+                }
+                this.svelteApp.$set({ ChatLog: this, messages: html });
+                this._lastId = messages[targetIdx].id;
+            }
+            this._state = Application.RENDER_STATES.RENDERED;
+        });
+    }
+    updateMessage(message, notify = false) {
+        return super.updateMessage(message, notify);
+    }
+    updateTimestamps() {
+        return super.updateTimestamps();
+    }
+}
+exports.CustomChatLog = CustomChatLog;
+
+
+/***/ }),
+
+/***/ "./src/modules/custom-chat/svelte/ChatLog.svelte":
+/*!*******************************************************!*\
+  !*** ./src/modules/custom-chat/svelte/ChatLog.svelte ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Message */ "./src/modules/custom-chat/svelte/Message.svelte");
+/* src\modules\custom-chat\svelte\ChatLog.svelte generated by Svelte v3.25.0 */
+
+
+
+
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[4] = list[i][0];
+	child_ctx[5] = list[i][1];
+	child_ctx[7] = i;
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[8] = list[i];
+	child_ctx[7] = i;
+	return child_ctx;
+}
+
+// (30:4) {#each messages as message, i (message.id)}
+function create_each_block_1(key_1, ctx) {
+	let first;
+	let message;
+	let current;
+	message = new _Message__WEBPACK_IMPORTED_MODULE_2__["default"]({ props: { message: /*message*/ ctx[8] } });
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			first = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(message.$$.fragment);
+			this.first = first;
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, first, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(message, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const message_changes = {};
+			if (dirty & /*messages*/ 4) message_changes.message = /*message*/ ctx[8];
+			message.$set(message_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(message.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(message.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(first);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(message, detaching);
+		}
+	};
+}
+
+// (35:2) {#if !!!ChatLog.options.stream}
+function create_if_block(ctx) {
+	let div1;
+	let div0;
+	let label;
+	let t0;
+	let select;
+	let optgroup;
+	let optgroup_label_value;
+	let select_value_value;
+	let t1;
+	let t2;
+	let form;
+	let each_value = Object.entries(CONFIG.Dice.rollModes);
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	let if_block = game.user.isGM && create_if_block_1(ctx);
+
+	return {
+		c() {
+			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			label = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("label");
+			label.innerHTML = `<i class="fas fa-dice-d20"></i>`;
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			select = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("select");
+			optgroup = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("optgroup");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block) if_block.c();
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			form = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("form");
+			form.innerHTML = `<textarea id="chat-message" autocomplete="nope"></textarea>`;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(optgroup, "label", optgroup_label_value = game.i18n.localize("CHAT.RollDefault"));
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(select, "name", "rollMode");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "roll-type-select");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "id", "chat-controls");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "flexrow");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(form, "id", "chat-form");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, div0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, label);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, select);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(select, optgroup);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(optgroup, null);
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, game.settings.get("core", "rollMode"));
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div1, t1);
+			if (if_block) if_block.m(div1, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, form, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*Object, CONFIG, game*/ 0) {
+				each_value = Object.entries(CONFIG.Dice.rollModes);
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(optgroup, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
+			if (game.user.isGM) if_block.p(ctx, dirty);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_each"])(each_blocks, detaching);
+			if (if_block) if_block.d();
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(form);
+		}
+	};
+}
+
+// (43:12) {#each Object.entries(CONFIG.Dice.rollModes) as [name, rt], i}
+function create_each_block(ctx) {
+	let option;
+	let t_value = game.i18n.localize(/*rt*/ ctx[5]) + "";
+	let t;
+	let option_value_value;
+
+	return {
+		c() {
+			option = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("option");
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
+			option.__value = option_value_value = /*name*/ ctx[4];
+			option.value = option.__value;
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, option, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(option, t);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(option);
+		}
+	};
+}
+
+// (49:6) {#if game.user.isGM}
+function create_if_block_1(ctx) {
+	let div;
+	let a0;
+	let i0;
+	let a0_title_value;
+	let t;
+	let a1;
+	let i1;
+	let a1_title_value;
+
+	return {
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			a0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("a");
+			i0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			a1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("a");
+			i1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("i");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i0, "class", "fas fa-save");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a0, "class", "button export-log");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a0, "title", a0_title_value = game.i18n.localize("CHAT.Export"));
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(i1, "class", "fas fa-trash");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a1, "class", "delete button chat-flush");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a1, "title", a1_title_value = game.i18n.localize("CHAT.Clear"));
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "control-buttons");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, a0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(a0, i0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, a1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(a1, i1);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let section;
+	let ol;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t;
+	let current;
+	let each_value_1 = /*messages*/ ctx[2];
+	const get_key = ctx => /*message*/ ctx[8].id;
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		let child_ctx = get_each_context_1(ctx, each_value_1, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
+	}
+
+	let if_block = !!!/*ChatLog*/ ctx[1].options.stream && create_if_block(ctx);
+
+	return {
+		c() {
+			section = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("section");
+			ol = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("ol");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block) if_block.c();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(ol, "id", "chat-log");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "class", "active sidebar-tab tab flexcol");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "id", "chat");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "data-tab", "chat");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, section, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, ol);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(ol, null);
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, t);
+			if (if_block) if_block.m(section, null);
+			/*section_binding*/ ctx[3](section);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*messages*/ 4) {
+				const each_value_1 = /*messages*/ ctx[2];
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, ol, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block_1, null, get_each_context_1);
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			}
+
+			if (!!!/*ChatLog*/ ctx[1].options.stream) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(section, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i(local) {
+			if (current) return;
+
+			for (let i = 0; i < each_value_1.length; i += 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(each_blocks[i]);
+			}
+
+			current = true;
+		},
+		o(local) {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(each_blocks[i]);
+			}
+
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(section);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (if_block) if_block.d();
+			/*section_binding*/ ctx[3](null);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { ChatLog = null } = $$props;
+	let { messages = [] } = $$props;
+	let { chatPanel } = $$props;
+
+	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onMount"])(() => {
+		
+	}); //ChatLog.activateListeners(jQuery(chatPanel));
+
+	function section_binding($$value) {
+		svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"][$$value ? "unshift" : "push"](() => {
+			chatPanel = $$value;
+			$$invalidate(0, chatPanel);
+		});
+	}
+
+	$$self.$$set = $$props => {
+		if ("ChatLog" in $$props) $$invalidate(1, ChatLog = $$props.ChatLog);
+		if ("messages" in $$props) $$invalidate(2, messages = $$props.messages);
+		if ("chatPanel" in $$props) $$invalidate(0, chatPanel = $$props.chatPanel);
+	};
+
+	return [chatPanel, ChatLog, messages, section_binding];
+}
+
+class ChatLog_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { ChatLog: 1, messages: 2, chatPanel: 0 });
+	}
+
+	get ChatLog() {
+		return this.$$.ctx[1];
+	}
+
+	set ChatLog(ChatLog) {
+		this.$set({ ChatLog });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["flush"])();
+	}
+
+	get messages() {
+		return this.$$.ctx[2];
+	}
+
+	set messages(messages) {
+		this.$set({ messages });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["flush"])();
+	}
+
+	get chatPanel() {
+		return this.$$.ctx[0];
+	}
+
+	set chatPanel(chatPanel) {
+		this.$set({ chatPanel });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["flush"])();
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ChatLog_1);
+
+/***/ }),
+
+/***/ "./src/modules/custom-chat/svelte/Message.svelte":
+/*!*******************************************************!*\
+  !*** ./src/modules/custom-chat/svelte/Message.svelte ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var gurps_foundry_roll_lib_src_js_Roll_SuccessRoll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
+/* harmony import */ var _components_chat_Damage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/chat/Damage */ "./src/svelte/chat/Damage.svelte");
+/* harmony import */ var _components_chat_Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/chat/Skill */ "./src/svelte/chat/Skill.svelte");
+/* src\modules\custom-chat\svelte\Message.svelte generated by Svelte v3.25.0 */
+
+
+
+
+
+
+function create_if_block(ctx) {
+	let li;
+	let header;
+	let h4;
+	let t0_value = /*message*/ ctx[0].alias + "";
+	let t0;
+	let t1;
+	let span;
+	let time;
+	let t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "";
+	let t2;
+	let t3;
+	let t4;
+	let t5;
+	let t6;
+	let div;
+	let show_if;
+	let current_block_type_index;
+	let if_block3;
+	let li_data_message_id_value;
+	let current;
+	let if_block0 = window.game.user.isGM && create_if_block_6(ctx);
+	let if_block1 = /*isWhisper*/ ctx[3] && create_if_block_5(ctx);
+	let if_block2 = /*message*/ ctx[0].data.flavor && create_if_block_4(ctx);
+	const if_block_creators = [create_if_block_1, create_if_block_2, create_if_block_3];
+	const if_blocks = [];
+
+	function select_block_type(ctx, dirty) {
+		if (dirty & /*message*/ 1) show_if = !!/*message*/ ctx[0].rollType();
+		if (show_if) return 0;
+		if (/*message*/ ctx[0].roll) return 1;
+		if (/*hasHTMLContent*/ ctx[7] || /*message*/ ctx[0].data.content && !/*rollComponent*/ ctx[1]) return 2;
+		return -1;
+	}
+
+	if (~(current_block_type_index = select_block_type(ctx, -1))) {
+		if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+	}
+
+	return {
+		c() {
+			li = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("li");
+			header = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("header");
+			h4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("h4");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			time = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("time");
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t2_value);
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block0) if_block0.c();
+			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block1) if_block1.c();
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block2) if_block2.c();
+			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			if (if_block3) if_block3.c();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(h4, "class", "message-sender");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(time, "class", "message-timestamp");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "message-metadata");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(header, "class", "message-header flexrow");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "message-content");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(li, "border-color", /*borderColor*/ ctx[6]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "class", "message flexcol");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value = /*message*/ ctx[0]._id);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "blind", /*message*/ ctx[0].data.blind);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, li, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, header);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, h4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(h4, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, span);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, time);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(time, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t3);
+			if (if_block0) if_block0.m(span, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t4);
+			if (if_block1) if_block1.m(header, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t5);
+			if (if_block2) if_block2.m(header, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, t6);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, div);
+
+			if (~current_block_type_index) {
+				if_blocks[current_block_type_index].m(div, null);
+			}
+
+			current = true;
+		},
+		p(ctx, dirty) {
+			if ((!current || dirty & /*message*/ 1) && t0_value !== (t0_value = /*message*/ ctx[0].alias + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			if ((!current || dirty & /*message*/ 1) && t2_value !== (t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
+
+			if (/*isWhisper*/ ctx[3]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_5(ctx);
+					if_block1.c();
+					if_block1.m(header, t5);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (/*message*/ ctx[0].data.flavor) {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+				} else {
+					if_block2 = create_if_block_4(ctx);
+					if_block2.c();
+					if_block2.m(header, null);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
+			}
+
+			let previous_block_index = current_block_type_index;
+			current_block_type_index = select_block_type(ctx, dirty);
+
+			if (current_block_type_index === previous_block_index) {
+				if (~current_block_type_index) {
+					if_blocks[current_block_type_index].p(ctx, dirty);
+				}
+			} else {
+				if (if_block3) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_blocks[previous_block_index], 1, 1, () => {
+						if_blocks[previous_block_index] = null;
+					});
+
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+				}
+
+				if (~current_block_type_index) {
+					if_block3 = if_blocks[current_block_type_index];
+
+					if (!if_block3) {
+						if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+						if_block3.c();
+					}
+
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
+					if_block3.m(div, null);
+				} else {
+					if_block3 = null;
+				}
+			}
+
+			if (!current || dirty & /*message*/ 1 && li_data_message_id_value !== (li_data_message_id_value = /*message*/ ctx[0]._id)) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value);
+			}
+
+			if (dirty & /*window*/ 0) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
+			}
+
+			if (dirty & /*window*/ 0) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
+			}
+
+			if (dirty & /*isWhisper*/ 8) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
+			}
+
+			if (dirty & /*message*/ 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "blind", /*message*/ ctx[0].data.blind);
+			}
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block3);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(li);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+			if (if_block2) if_block2.d();
+
+			if (~current_block_type_index) {
+				if_blocks[current_block_type_index].d();
+			}
+		}
+	};
+}
+
+// (64:8) {#if window.game.user.isGM}
+function create_if_block_6(ctx) {
+	let a;
+
+	return {
+		c() {
+			a = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("a");
+			a.innerHTML = `<i class="fas fa-trash"></i>`;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a, "class", "button message-delete");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, a, anchor);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(a);
+		}
+	};
+}
+
+// (68:6) {#if isWhisper}
+function create_if_block_5(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span.textContent = `${game.i18n.localize("CHAT.To")}: ${/*whisperTo*/ ctx[4]}`;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "whisper-to");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+		}
+	};
+}
+
+// (71:6) {#if message.data.flavor}
+function create_if_block_4(ctx) {
+	let span;
+	let t_value = /*message*/ ctx[0].data.flavor + "";
+	let t;
+
+	return {
+		c() {
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "flavor-text");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*message*/ 1 && t_value !== (t_value = /*message*/ ctx[0].data.flavor + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+		}
+	};
+}
+
+// (85:75) 
+function create_if_block_3(ctx) {
+	let html_tag;
+	let raw_value = /*message*/ ctx[0].data.content + "";
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(raw_value, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*message*/ ctx[0].data.content + "")) html_tag.p(raw_value);
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (81:29) 
+function create_if_block_2(ctx) {
+	let await_block_anchor;
+	let promise;
+
+	let info = {
+		ctx,
+		current: null,
+		token: null,
+		hasCatch: false,
+		pending: create_pending_block,
+		then: create_then_block,
+		catch: create_catch_block,
+		value: 15
+	};
+
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["handle_promise"])(promise = /*message*/ ctx[0].roll.render(), info);
+
+	return {
+		c() {
+			await_block_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			info.block.c();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, await_block_anchor, anchor);
+			info.block.m(target, info.anchor = anchor);
+			info.mount = () => await_block_anchor.parentNode;
+			info.anchor = await_block_anchor;
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			info.ctx = ctx;
+
+			if (dirty & /*message*/ 1 && promise !== (promise = /*message*/ ctx[0].roll.render()) && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["handle_promise"])(promise, info)) {
+				
+			} else {
+				const child_ctx = ctx.slice();
+				child_ctx[15] = info.resolved;
+				info.block.p(child_ctx, dirty);
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(await_block_anchor);
+			info.block.d(detaching);
+			info.token = null;
+			info = null;
+		}
+	};
+}
+
+// (76:6) {#if message.rollType()}
+function create_if_block_1(ctx) {
+	let switch_instance;
+	let switch_instance_anchor;
+	let current;
+	var switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType());
+
+	function switch_props(ctx) {
+		return {
+			props: {
+				message: /*message*/ ctx[0],
+				rollData: /*rollData*/ ctx[2]
+			}
+		};
+	}
+
+	if (switch_value) {
+		switch_instance = new switch_value(switch_props(ctx));
+	}
+
+	return {
+		c() {
+			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(switch_instance.$$.fragment);
+			switch_instance_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+		},
+		m(target, anchor) {
+			if (switch_instance) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(switch_instance, target, anchor);
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, switch_instance_anchor, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const switch_instance_changes = {};
+			if (dirty & /*message*/ 1) switch_instance_changes.message = /*message*/ ctx[0];
+			if (dirty & /*rollData*/ 4) switch_instance_changes.rollData = /*rollData*/ ctx[2];
+
+			if (switch_value !== (switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType()))) {
+				if (switch_instance) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+					const old_component = switch_instance;
+
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(old_component.$$.fragment, 1, 0, () => {
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(old_component, 1);
+					});
+
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+				}
+
+				if (switch_value) {
+					switch_instance = new switch_value(switch_props(ctx));
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(switch_instance.$$.fragment);
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(switch_instance.$$.fragment, 1);
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(switch_instance, switch_instance_anchor.parentNode, switch_instance_anchor);
+				} else {
+					switch_instance = null;
+				}
+			} else if (switch_value) {
+				switch_instance.$set(switch_instance_changes);
+			}
+		},
+		i(local) {
+			if (current) return;
+			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(switch_instance.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(switch_instance.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(switch_instance_anchor);
+			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(switch_instance, detaching);
+		}
+	};
+}
+
+// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "@components/chat/Damage";    import Skill from "@components/chat/Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
+function create_catch_block(ctx) {
+	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
+}
+
+// (82:48)             {@html roll}
+function create_then_block(ctx) {
+	let html_tag;
+	let raw_value = /*roll*/ ctx[15] + "";
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(raw_value, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*roll*/ ctx[15] + "")) html_tag.p(raw_value);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "@components/chat/Damage";    import Skill from "@components/chat/Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
+function create_pending_block(ctx) {
+	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
+}
+
+function create_fragment(ctx) {
+	let if_block_anchor;
+	let current;
+	let if_block = /*isVisible*/ ctx[5] && create_if_block(ctx);
+
+	return {
+		c() {
+			if (if_block) if_block.c();
+			if_block_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+		},
+		m(target, anchor) {
+			if (if_block) if_block.m(target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, if_block_anchor, anchor);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			if (/*isVisible*/ ctx[5]) if_block.p(ctx, dirty);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block);
+			current = false;
+		},
+		d(detaching) {
+			if (if_block) if_block.d(detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(if_block_anchor);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { message = null } = $$props;
+	let sender = game.users.get(message.data.user);
+	let userAvatar = sender.avatar;
+
+	let aliasAvatar = sender.character
+	? sender.character.getProperty("img")
+	: null;
+
+	let avatar = aliasAvatar || userAvatar;
+	let isWhisper = getProperty(message, "data.whisper.length");
+
+	let whisperTo = message.data.whisper.map(u => {
+		let user = game.users.get(u);
+		return user ? user.name : null;
+	});
+
+	let isVisible = message.isContentVisible;
+	let flavor = null;
+	let alias = null;
+
+	let borderColor = message.data.type === CONST.CHAT_MESSAGE_TYPES.OOC
+	? message.user.color
+	: null;
+
+	if (!isVisible) {
+		isWhisper = false;
+		flavor = `${this.user.name} privately rolled some dice`;
+		alias = message.user.name;
+	}
+
+	let hasHTMLContent = message.data.content.startsWith("<");
+	let { rollComponent = false } = $$props;
+	let { rollData = null } = $$props;
+
+	function getRollComponent(type) {
+		switch (type) {
+			case "Damage":
+				return _components_chat_Damage__WEBPACK_IMPORTED_MODULE_2__["default"];
+		}
+	}
+
+	$$self.$$set = $$props => {
+		if ("message" in $$props) $$invalidate(0, message = $$props.message);
+		if ("rollComponent" in $$props) $$invalidate(1, rollComponent = $$props.rollComponent);
+		if ("rollData" in $$props) $$invalidate(2, rollData = $$props.rollData);
+	};
+
+	return [
+		message,
+		rollComponent,
+		rollData,
+		isWhisper,
+		whisperTo,
+		isVisible,
+		borderColor,
+		hasHTMLContent,
+		getRollComponent
+	];
+}
+
+class Message extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
+			message: 0,
+			rollComponent: 1,
+			rollData: 2
+		});
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Message);
+
+/***/ }),
+
+/***/ "./src/modules/lists/container.ts":
+/*!****************************************!*\
+  !*** ./src/modules/lists/container.ts ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.validateAndFixLists = exports.nest = exports.moveToIndex = exports.fixIndexes = exports.getIndex = exports.setIndex = exports.clearAllChildren = exports.deleteDeep = exports.addReferencesToChildren = exports.removeReferenceFromParent = exports.setContainedBy = exports.allDescendants = exports.allAncestors = exports.getChildren = exports.getContainedBy = void 0;
+const helpers_1 = __webpack_require__(/*! ../../helpers */ "./src/helpers.ts");
+function getContainedBy(item) {
+    var _a;
+    try {
+        return (_a = item.actor) === null || _a === void 0 ? void 0 : _a.getOwnedItem(item.getFlag("GURPS", "contained_by"));
+    }
+    catch (err) {
+        console.log(err);
+        return null;
+    }
+}
+exports.getContainedBy = getContainedBy;
+function getChildren(item) {
+    const childIDs = item.getFlag("GURPS", "children") || [];
+    return childIDs.map(id => item.actor.getOwnedItem(id));
+}
+exports.getChildren = getChildren;
+function allAncestors(item, collection = new Set()) {
+    const containedBy = getContainedBy(item);
+    if (!containedBy)
+        return collection;
+    collection.add(containedBy);
+    allAncestors(containedBy, collection);
+    return collection;
+}
+exports.allAncestors = allAncestors;
+function allDescendants(item, collection = new Set()) {
+    getChildren(item).forEach((child) => {
+        allDescendants(child, collection);
+    });
+    return collection;
+}
+exports.allDescendants = allDescendants;
+function setContainedBy(child, parent) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (!parent) {
+            removeReferenceFromParent(child);
             return;
         }
-        let ref = this.getProperty("data.reference");
-        try {
-            ref = /( )/.test(ref) ? ref.split(" ")[0] : ref;
-            ref = /,/.test(ref) ? ref.split(",")[0] : ref;
-            ref = /\//.test(ref) ? ref.split("/")[0] : ref;
-            const meta = ref.includes(":") ? ref.split(":") : [ref.split(/[0-9]+/)[0], ref.split(/^[^0-9]+/)[1]];
-            api.openPDFByCode(meta[0], { page: +meta[1] });
+        let containedBy = getContainedBy(child);
+        let isAlreadyChild = getChildren(parent).map(item => { var _a; return (_a = item === null || item === void 0 ? void 0 : item.id) !== null && _a !== void 0 ? _a : null; }).includes(child.id);
+        if (parent.actor && parent.actor !== child.actor) {
+            let toTransfer = Array.from(allDescendants(child).add(child));
+            yield parent.actor.createEmbeddedEntity("OwnedItem", duplicate(toTransfer.map((item) => item.data)));
+            return;
         }
-        catch (err) {
-            ui.notifications.info("Unable to open page reference. Make sure that you've properly recorded it in the reference field.");
+        if (child === parent)
+            return this;
+        if (allAncestors(parent).has(child))
+            return child;
+        if (isAlreadyChild) {
+            setContainedBy(child, getContainedBy(parent));
+            return child;
         }
-    }
-    embeddedUpdate() {
-        this._entity.set(this);
-    }
-    getWeapons() {
-        var _a;
-        const weapons = (_a = getProperty(this.data, "data.weapons")) !== null && _a !== void 0 ? _a : [];
-        return weapons.reduce((prev, cur) => {
-            const GURPS = this.actor ? this.getGURPSObject().list.character.getElementById("foundryID", cur._id) : null;
-            const { type, damage, usage, reach, parry, block, accuracy, range, rate_of_fire, shots, bulk } = cur;
-            switch (cur.type) {
-                case "melee_weapon":
-                    prev.melee.push({
-                        _id: cur._id,
-                        GURPS,
-                        type,
-                        damage,
-                        usage,
-                        reach,
-                        parry,
-                        block,
-                        edit: () => {
-                            new WeaponEditor_svelte_1.default({
-                                target: document.body,
-                                props: {
-                                    entity: this._entity,
-                                    weapon: { foundryID: cur._id }
-                                }
-                            });
-                        }
-                    });
-                    break;
-                case "ranged_weapon":
-                    prev.ranged.push({
-                        _id: cur._id,
-                        GURPS,
-                        type,
-                        damage,
-                        usage,
-                        accuracy,
-                        range,
-                        rate_of_fire,
-                        shots,
-                        bulk,
-                        edit: () => {
-                            new WeaponEditor_svelte_1.default({
-                                target: document.body,
-                                props: {
-                                    entity: this._entity,
-                                    weapon: { foundryID: cur._id }
-                                }
-                            });
-                        }
-                    });
-                    break;
-                default:
-            }
-            return prev;
-        }, { melee: [], ranged: [] });
-    }
-    roll() {
-        switch (this.data.type) {
-            case "skill":
-            default:
-        }
-    }
-    getFeatures() {
-        return getProperty(this.data, "data.features") || [];
-    }
-    getModifiers() {
-        return getProperty(this.data, "data.modifiers") || [];
-    }
-    getDefaults(path) {
-        return this.getProperty(path) || [];
-    }
-    addWeapon(data = {}) {
-        return __awaiter(this, void 0, void 0, function* () {
-            data = Object.assign({
-                type: "melee_weapon",
-                usage: "",
-                strength_requirement: "10",
-                damage: "1d6",
-                damage_type: "cut",
-                reach: "",
-                parry: 0,
-                block: false,
-                accuracy: 0,
-                range: "10/100",
-                rate_of_fire: 1,
-                bulk: -2,
-                shots: "1"
-            }, data);
-            const weapons = this.getProperty("data.weapons") || [];
-            weapons.push(Object.assign(data, {
-                _id: randomID()
-            }));
-            yield this.update({ "data.weapons": duplicate(weapons) }, null);
-        });
-    }
-    addFeature(data = {}) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (!["trait", "skill", "item"].includes(this.data.type))
-                return false;
-            const features = this.getFeatures();
-            features.push(Object.assign({
-                type: g4elogic_1.FeatureType.skillBonus,
-                attribute: g4elogic_1.Signature.ST,
-                name_compare_type: "is",
-                specialization_compare_type: "is"
-            }, data, {
-                _id: randomID()
-            }));
-            return this.update({ "data.features": duplicate(features) }, null);
-        });
-    }
-    addModifier(data = {}, path) {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (this.data.type !== "trait")
-                return false;
-            const modifiers = this.getModifiers();
-            modifiers.push(Object.assign({}, data, {
-                _id: randomID()
-            }));
-            return this.update({ "data.modifiers": duplicate(modifiers) }, null);
-        });
-    }
-    addDefault(data = {}, path = "data.defaults") {
-        return __awaiter(this, void 0, void 0, function* () {
-            if (this.data.type !== "skill" && !path)
-                return false;
-            const defaults = this.getDefaults(path);
-            defaults.push(Object.assign({
-                type: "DX",
-                modifier: 0
-            }, data, {
-                _id: randomID()
-            }));
-            return this.update({ [path]: duplicate(defaults) }, null);
-        });
-    }
-    removeByPath(path, id) {
-        return __awaiter(this, void 0, void 0, function* () {
-            let list = this.getProperty(path);
-            list = list.filter((item) => item._id !== id);
-            return this.update({ [path]: duplicate(list) }, null);
-        });
-    }
-    getGURPSObject() {
-        try {
-            return this.actor.GURPS.getElementById("foundryID", this._id);
-        }
-        catch (err) {
-            return null;
-        }
-    }
-    getIndex() {
-        return this.getFlag("GURPS", "index");
-    }
-    setIndex(index) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return this.update({ "flags.GURPS.index": index }, null);
-        });
-    }
-    isLabel() { return this.getFlag("GURPS", "is_label"); }
-    moveToIndex(from, to, types) {
-        return __awaiter(this, void 0, void 0, function* () {
-            let array = this.actor.ownedItemsByType(...types).sort((a, b) => a.getIndex() - b.getIndex());
-            if (typeof from === "number") {
-                helpers_1.arrayMove(array, from, to);
-            }
-            else {
-            }
-            let correction = 0;
-            const updates = array.map((item, i, array) => {
-                if (item) {
-                    return {
-                        _id: item.id,
-                        flags: {
-                            GURPS: {
-                                ["index"]: i + 1 - correction
-                            }
-                        }
-                    };
-                }
-                else {
-                    correction++;
-                }
-            }).filter(update => update !== undefined);
-            return this.actor.updateEmbeddedEntity("OwnedItem", updates);
-        });
-    }
-    getMenuItems() {
-        return () => {
-            const entity = this;
-            const isLabel = this.isLabel();
-            const getBaseMenu = () => {
-                return [
-                    {
-                        name: `Edit`,
-                        icon: '<i class="fas fa-edit"></i>',
-                        condition: () => !isLabel,
-                        callback() {
-                            entity.sheet.render(true);
-                        }
-                    },
-                    {
-                        name: `Move to ${(entity.getProperty("data.location") || "carried") === "carried" ? "Other" : "Carried"} Equipment`,
-                        icon: "",
-                        condition: entity.data.type === "item",
-                        callback() {
-                            return __awaiter(this, void 0, void 0, function* () {
-                                const containedBy = container_1.getContainedBy(entity);
-                                const location = entity.getProperty("data.location");
-                                if (containedBy && location) {
-                                    console.log(containedBy, location);
-                                    yield container_1.setContainedBy(entity, null);
-                                }
-                                if (location === "carried") {
-                                    entity.update({ "data.location": "other" }, {});
-                                }
-                                else if (location === "other") {
-                                    entity.update({ "data.location": "carried" }, {});
-                                }
-                                else {
-                                    entity.update({ "data.location": "carried" }, {});
-                                }
-                            });
-                        }
-                    },
-                    {
-                        name: `Set As ${isLabel ? "Item" : "Label"}`,
-                        icon: `<i class="fas fa-tags"></i>`,
-                        condition: () => {
-                            return ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type);
-                        },
-                        callback() {
-                            return __awaiter(this, void 0, void 0, function* () {
-                                entity.setFlag("GURPS", "is_label", !isLabel);
-                            });
-                        }
-                    },
-                    {
-                        name: "Change Color",
-                        icon: `<i class="fas fa-eye-dropper"></i>`,
-                        condition: () => ["skill", "technique", "trait", "item", "spell"].includes(entity.data.type),
-                        callback() {
-                            new ColorPicker_svelte_1.default({
-                                target: document.body,
-                                props: { entity: entity._entity }
-                            });
-                        }
-                    },
-                    {
-                        name: `Roll`,
-                        icon: '<i class="fas fa-dice-d6"></i>',
-                        condition: () => !isLabel && ["skill", "technique", "spell"].includes(entity.data.type),
-                        callback() {
-                            let skillike = entity.getGURPSObject();
-                            if (skillike.isTechnique) {
-                                ui.notifications.warn("Please roll from the skill list for now");
-                                return false;
-                            }
-                            entity.actor.rollSkill(skillike.name, skillike.calculateLevel());
-                        }
-                    },
-                    {
-                        name: `Open PDF`,
-                        icon: '<i class="fas fa-file-pdf"></i>',
-                        condition: () => !isLabel,
-                        callback() {
-                            entity.openPDFReference();
-                        }
-                    },
-                    {
-                        name: `Copy ID`,
-                        icon: `<i class="fas fa-copy"></i>`,
-                        condition: () => this._id,
-                        callback() {
-                            return __awaiter(this, void 0, void 0, function* () {
-                                try {
-                                    yield navigator.clipboard.writeText(entity._id);
-                                }
-                                catch (err) {
-                                    ui.notifications.info("Your browser does not support clipboard operations");
-                                }
-                            });
-                        }
-                    },
-                    {
-                        name: `Delete`,
-                        icon: '<i class="fas fa-trash"></i>',
-                        condition: () => true,
-                        callback() {
-                            return __awaiter(this, void 0, void 0, function* () {
-                                entity.delete();
-                            });
-                        }
-                    },
-                ];
-            };
-            let options = getBaseMenu();
-            switch (this.data.type) {
-                case "weapon":
-                    return [{
-                            name: "Add Weapon",
-                            icon: `<i class="fas fa-add"></i>`,
-                            condition: () => true,
-                            callback() {
-                                return __awaiter(this, void 0, void 0, function* () {
-                                    yield entity.addWeapon();
-                                });
-                            }
-                        },
-                        {
-                            name: "Delete",
-                            icon: '<i class="fas fa-trash"></i>',
-                            condition: () => true,
-                            callback() {
-                                return __awaiter(this, void 0, void 0, function* () {
-                                    yield entity.delete();
-                                });
-                            }
-                        }
-                    ];
-                case "item":
-                    break;
-                case "skill":
-                    break;
-                case "spell":
-                    break;
-                case "trait":
-                    break;
-                case "melee_weapon":
-                    break;
-                case "ranged_weapon":
-                    break;
-                default:
-            }
-            return options;
-        };
-    }
-};
-_Item = __decorate([
-    helpers_1.injectHelpers,
-    __metadata("design:paramtypes", [Object, Object])
-], _Item);
-exports._Item = _Item;
-
-
-/***/ }),
-
-/***/ "./src/sheet.ts":
-/*!**********************!*\
-  !*** ./src/sheet.ts ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
+        if (containedBy)
+            removeReferenceFromParent(child);
+        yield addReferencesToChildren(parent, [child.id]);
+        yield child.setFlag("GURPS", "contained_by", parent.id);
+        return child;
     });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports._Actor = exports._ActorSheet = void 0;
-const Sheet_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/Sheet.svelte */ "./src/svelte/Sheet.svelte"));
-const GCSImportDialog_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/GCSImportDialog.svelte */ "./src/svelte/GCSImportDialog.svelte"));
-__webpack_require__(/*! ./item */ "./src/item.ts");
-const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
-const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-const SuccessRoll_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js"));
-const SuccessRollRenderer_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer */ "./node_modules/gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer.js"));
-const helpers_1 = __webpack_require__(/*! ./helpers */ "./src/helpers.ts");
-const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
-const AttackDialog_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/AttackDialog.svelte */ "./src/svelte/AttackDialog.svelte"));
-const ModifierPrompt_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte"));
-const dragdrop_1 = __webpack_require__(/*! ./dragdrop */ "./src/dragdrop.ts");
-let _ActorSheet = class _ActorSheet extends ActorSheet {
-    static get defaultOptions() {
-        return mergeObject(ActorSheet.defaultOptions, {
-            classes: ["GURPSActor"],
-            template: "systems/GURPS/holder.html",
-            width: 700,
-            height: 900,
-            submitOnChange: false
+}
+exports.setContainedBy = setContainedBy;
+function removeReferenceFromParent(item) {
+    var _a;
+    return __awaiter(this, void 0, void 0, function* () {
+        const containedBy = getContainedBy(item);
+        if (!containedBy)
+            return item;
+        let newReferences = (_a = containedBy.getFlag("GURPS", "children")) === null || _a === void 0 ? void 0 : _a.filter(id => id !== item.id);
+        yield containedBy.setFlag("GURPS", "children", duplicate(newReferences));
+        yield item.setFlag("GURPS", "contained_by", null);
+        return item;
+    });
+}
+exports.removeReferenceFromParent = removeReferenceFromParent;
+function addReferencesToChildren(item, references) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const children = item.getFlag("GURPS", "children") || [];
+        let newReferences = [].concat(children, references).reduce((prev, cur) => {
+            return !prev.includes(cur) ? [...prev, cur] : prev;
+        }, []);
+        yield item.setFlag("GURPS", "children", duplicate(newReferences));
+        return item;
+    });
+}
+exports.addReferencesToChildren = addReferencesToChildren;
+function deleteDeep(item, options) {
+    var _a, _b, _c;
+    return __awaiter(this, void 0, void 0, function* () {
+        if (!item.actor)
+            return item;
+        let targetDeletes = (_b = (_a = getChildren(item)) === null || _a === void 0 ? void 0 : _a.map(child => child._id)) !== null && _b !== void 0 ? _b : [];
+        (_c = getChildren(item)) === null || _c === void 0 ? void 0 : _c.forEach(child => {
+            try {
+                deleteDeep(child, options);
+            }
+            catch (err) {
+                clearAllChildren(item);
+            }
         });
-    }
-    activateListeners(html) {
-        return super.activateListeners(html);
-    }
-    _onDrop(e) {
-        const _super = Object.create(null, {
-            _onDrop: { get: () => super._onDrop }
-        });
-        var _a, _b;
-        return __awaiter(this, void 0, void 0, function* () {
-            function attemptToAddPartyMember(id, entity) {
-                return __awaiter(this, void 0, void 0, function* () {
-                    let roster = entity.getProperty("data.members") || [];
-                    if (!roster.includes(id)) {
-                        roster.push(id);
-                        return entity.update({ "data.members": duplicate(roster) }, { diff: false });
-                    }
-                });
-            }
-            if (((_b = (_a = this === null || this === void 0 ? void 0 : this.actor) === null || _a === void 0 ? void 0 : _a.data) === null || _b === void 0 ? void 0 : _b.type) === "party") {
-                try {
-                    const { origin } = dragdrop_1.getDragContext(e, "actor");
-                    if (origin && origin.data.type === "character") {
-                        return attemptToAddPartyMember(origin.id, this.actor);
-                    }
-                }
-                catch (err) {
-                    console.log(err);
-                    return false;
-                }
-                return false;
-            }
-            return _super._onDrop.call(this, e);
-        });
-    }
-    submit() {
-        return null;
-    }
-    loadGCSFile() {
-        const dialog = new GCSImportDialog_svelte_1.default({
-            target: document.body,
-        });
-        dialog.$on("File Loaded", (e) => __awaiter(this, void 0, void 0, function* () {
-            const files = e.detail;
-            if (files.length === 1) {
-                let file = files[0];
-                let character = new g4elogic_1.Character("GCSJSON").load(JSON.parse(yield file.text()), "GCSJSON");
-                console.log(character);
-                character.save("foundry", this.actor);
-            }
-            else if (files.length > 1) {
-            }
-        }));
-    }
-    customHeaderButtons() {
-        return [
-            {
-                label: "LoadGCS",
-                class: "load",
-                icon: "fas fa-file-import",
-                onclick: (e) => this.loadGCSFile()
-            }
-        ];
-    }
-};
-_ActorSheet = __decorate([
-    helpers_1.svelte(Sheet_svelte_1.default)
-], _ActorSheet);
-exports._ActorSheet = _ActorSheet;
-let _Actor = class _Actor extends Actor {
-    constructor(data, options) {
-        super(data, options);
-        this._entity = store_1.writable(this);
-        this.GURPS = new g4elogic_1.Character();
-        this._GURPS = store_1.writable(this.GURPS);
-        this.updateGURPS();
-    }
-    prepareData() {
-        super.prepareData();
-        if (this.GURPS) {
-            this.updateGURPS();
-        }
-        this.determineInitiative();
-        this.setPools();
-    }
-    determineInitiative() {
-        const speed = this.getProperty("data.attributes.speed");
-        const dexterity = this.getProperty("data.attributes.dexterity");
-        const health = this.getProperty("data.attributes.health");
-        if (this.data.type === "character") {
-            mergeObject(this.data.data, {
-                initiative: speed + (dexterity + health) / 4
-            });
-        }
-        else if (this.data.type === "monster") {
-            mergeObject(this.data.data, {
-                initiative: speed
-            });
-        }
-    }
-    setPools() {
-        const ST = this.getProperty("data.attributes.strength") || 10;
-        const HT = this.getProperty("data.attributes.health") || 10;
-        const hp = this.getProperty("data.attributes.hit_points") || 0;
-        const fp = this.getProperty("data.attributes.fatigue_points") || 0;
-        const hpValue = this.getProperty("data.pools.hit_points.value");
-        const fpValue = this.getProperty("data.pools.fatigue_points.value");
-        if (this.data.type === "character") {
-            mergeObject(this.data.data, {
-                pools: {
-                    fatigue_points: {
-                        max: HT + fp,
-                        value: fpValue
-                    },
-                    hit_points: {
-                        max: ST + hp,
-                        value: hpValue
-                    }
-                }
-            });
-        }
-    }
-    _onUpdateEmbeddedEntity(type, doc, update, options, userId) {
-        this.getOwnedItem(doc._id).embeddedUpdate();
-        this.updateGURPS();
-        super._onUpdateEmbeddedEntity(type, doc, update, options, userId);
-    }
-    updateGURPS() {
-        try {
-            const update = this.GURPS.load(this, "foundry");
-            this._GURPS.set(update);
-            this._entity.set(this);
-        }
-        catch (e) {
-            console.log(e);
-        }
-    }
-    sortList(type, sortPropPath) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const list = this.ownedItemsByType(type);
-            const toUpdate = list
-                .map((item, i) => { return { original: i, sortProp: item.getProperty(sortPropPath) }; })
-                .sort((a, b) => a.sortProp - b.sortProp)
-                .map(item => list[item.original])
-                .map((item, i) => {
+        return item.actor.deleteEmbeddedEntity("OwnedItem", targetDeletes, options);
+    });
+}
+exports.deleteDeep = deleteDeep;
+function clearAllChildren(item) {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield item.setFlag("GURPS", "children", []);
+        return item;
+    });
+}
+exports.clearAllChildren = clearAllChildren;
+function setIndex(item, index) {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield item.setFlag("GURPS", "index", index);
+        return item;
+    });
+}
+exports.setIndex = setIndex;
+function getIndex(item) {
+    return item.getFlag("GURPS", "index");
+}
+exports.getIndex = getIndex;
+function fixIndexes(actor, types) {
+    return __awaiter(this, void 0, void 0, function* () {
+        let array = helpers_1.ownedItemsByType(actor, ...types);
+        let newArray = array.sort((a, b) => getIndex(a) - getIndex(b));
+        let count = 0;
+        const updates = newArray.map((item, i) => {
+            if (item) {
                 return {
                     _id: item.id,
-                    "flags.GURPS.index": i + 1
+                    flags: {
+                        "GURPS": {
+                            "index": count++ + 1
+                        }
+                    }
                 };
-            });
-            return this.updateEmbeddedEntity("OwnedItem", toUpdate);
-        });
-    }
-    ownedItemsByType(...types) {
-        return helpers_1.ownedItemsByType(this, ...types);
-    }
-    getWildWeapons() {
-        return this.ownedItemsByType("melee attack");
-    }
-    getWeapons() {
-        const entity = this;
-        const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
-            edit(entity) {
-                new WeaponEditor_svelte_1.default({
-                    target: document.body,
-                    props: {
-                        entity,
-                        weapon
-                    }
-                });
-            },
-            skillLevel: () => {
-                let level = weapon.getBestAttackLevel();
-                console.log(level);
-                return level;
-            },
-            rollParry() {
-                entity.rollSkill(`Parry With ${weapon.owner.name}`, weapon.getParryLevel(), [+weapon.parry]);
-            },
-            rollBlock() {
-                entity.rollSkill(`Block With ${this.owner.name}`, weapon.getBlockLevel(), [+weapon.block]);
-            },
-            rollSkill() {
-                entity.rollSkill(`${weapon.owner.name} ${weapon.usage}`, this.skillLevel(), [weapon.skillMod || 0], "attack", { weapon });
-            },
-            rollDamage: () => {
-                this.rollDamage({
-                    damage: weapon.damage,
-                    damageType: weapon.damageType,
-                    type: weapon.getType(),
-                    weaponName: weapon.owner.name,
-                    weaponUsage: weapon.usage
-                });
-            },
-        }));
-        return {
-            ranged: weapons.filter(weapon => weapon.getType() === "ranged_weapon"),
-            melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
-        };
-    }
-    rollSkill(trait, level, modifiers = [], modType = "", data = {}) {
-        switch (modType) {
-            case "attack":
-                const modifierDialog = new AttackDialog_svelte_1.default({
-                    target: document.body,
-                    props: {
-                        type: "attack",
-                        weapon: data.weapon ? data.weapon : null
-                    }
-                });
-                modifierDialog.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, helpers_1.formatModList([...e.detail, ...modifiers]));
-                });
-                break;
-            default:
-                const modifierPrompt = new ModifierPrompt_svelte_1.default({
-                    target: document.body,
-                });
-                modifierPrompt.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, helpers_1.formatModList([e.detail]));
-                });
-        }
-    }
-    rollAndRender(trait, level, modifiers) {
-        try {
-            let roll;
-            try {
-                roll = new SuccessRoll_1.default({ level, trait, modifiers });
-            }
-            catch (err) {
-                roll = new SuccessRoll_1.default({ level, trait, modifiers: null });
-                ui.notifications.warn("Your modifier is invalid");
-            }
-            roll.roll();
-            let renderer = new SuccessRollRenderer_1.default();
-            renderer.render(roll, { template: "systems/GURPS/templates/GURPS-foundry-roll-templates/templates_roll.html" }).then((html) => {
-                ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER });
-            });
-        }
-        catch (err) {
-            ui.notifications.error(err);
-        }
-    }
-    dodge() {
-        let roll = new SuccessRoll_1.default({ level: Math.floor(this.GURPS.getAttribute(g4elogic_1.Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3), modifiers: prompt(), trait: "Dodge" });
-        roll.roll();
-        let renderer = new SuccessRollRenderer_1.default();
-        renderer.render(roll).then(html => {
-            ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER });
-        });
-    }
-    rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const swing = this.GURPS.getSwingDamage();
-            const thrust = this.GURPS.getThrustDamage();
-            try {
-                const roll = new Roll(damage, {
-                    swing,
-                    sw: swing,
-                    thrust,
-                    thr: thrust
-                });
-                return roll.toMessage({
-                    GURPSRollType: "Damage", GURPSRollData: {
-                        type,
-                        damageType,
-                        weaponUsage,
-                        weaponName
-                    }
-                });
-            }
-            catch (err) {
-                ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed");
             }
         });
-    }
-};
-_Actor = __decorate([
-    helpers_1.injectHelpers,
-    __metadata("design:paramtypes", [Object, Object])
-], _Actor);
-exports._Actor = _Actor;
+        return actor.updateEmbeddedEntity("OwnedItem", updates);
+    });
+}
+exports.fixIndexes = fixIndexes;
+function moveToIndex(item, from, to, types) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const actor = item.actor;
+        if (!actor)
+            return item;
+        yield fixIndexes(actor, types);
+        let array = helpers_1.ownedItemsByType(item.actor, ...types).sort((a, b) => getIndex(a) - getIndex(b));
+        helpers_1.arrayMove(array, from, to);
+        let count = 0;
+        const updates = array.map((item, i) => {
+            if (item) {
+                return {
+                    _id: item.id,
+                    flags: {
+                        "GURPS": {
+                            "index": count++ + 1
+                        }
+                    }
+                };
+            }
+        });
+        return actor.updateEmbeddedEntity("OwnedItem", updates);
+    });
+}
+exports.moveToIndex = moveToIndex;
+function nest(actor, types, nesting) {
+    let array = nesting || helpers_1.ownedItemsByType(actor, ...types);
+    return array.reduce((prev, cur) => {
+        const containedBy = getContainedBy(cur);
+        if (containedBy) {
+            return prev;
+        }
+        return [...prev, nest(actor, types, getChildren(cur))];
+    }, []);
+}
+exports.nest = nest;
+function validateAndFixLists(actor) {
+}
+exports.validateAndFixLists = validateAndFixLists;
 
 
 /***/ }),
@@ -22315,7 +23452,7 @@ exports._Actor = _Actor;
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js??ref--7-2!./global.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/styles/global.scss");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js??ref--8-2!./global.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/styles/global.scss");
 
             content = content.__esModule ? content.default : content;
 
@@ -25793,8 +26930,8 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _sheet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sheet */ "./src/sheet.ts");
-/* harmony import */ var _sheet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sheet__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _foundry_GURPS_sheet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../foundry-GURPS/sheet */ "./src/foundry-GURPS/sheet.ts");
+/* harmony import */ var _foundry_GURPS_sheet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_foundry_GURPS_sheet__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs/tabs */ "./src/svelte/tabs/tabs.ts");
 /* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__);
@@ -25809,11 +26946,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pools__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Pools */ "./src/svelte/Pools.svelte");
 /* harmony import */ var _Biography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Biography */ "./src/svelte/Biography.svelte");
 /* harmony import */ var _CharacterCombat__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./CharacterCombat */ "./src/svelte/CharacterCombat.svelte");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/svelte/Character.svelte.css */ "./src/svelte/Character.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _CHANGELOG_md__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../CHANGELOG.md */ "./CHANGELOG.md");
+/* harmony import */ var _CHANGELOG_md__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_CHANGELOG_md__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../INFO.md */ "./INFO.md");
+/* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_INFO_md__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/svelte/Character.svelte.css */ "./src/svelte/Character.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18__);
 /* src\svelte\Character.svelte generated by Svelte v3.25.0 */
+
+
 
 
 
@@ -25839,8 +26982,8 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (59:4) <Tab index={0}>
-function create_default_slot_29(ctx) {
+// (62:4) <Tab index={0}>
+function create_default_slot_33(ctx) {
 	let t;
 
 	return {
@@ -25856,8 +26999,8 @@ function create_default_slot_29(ctx) {
 	};
 }
 
-// (60:4) <Tab index={1}>
-function create_default_slot_28(ctx) {
+// (63:4) <Tab index={1}>
+function create_default_slot_32(ctx) {
 	let t;
 
 	return {
@@ -25873,8 +27016,8 @@ function create_default_slot_28(ctx) {
 	};
 }
 
-// (61:4) <Tab index={2}>
-function create_default_slot_27(ctx) {
+// (64:4) <Tab index={2}>
+function create_default_slot_31(ctx) {
 	let t;
 
 	return {
@@ -25890,8 +27033,8 @@ function create_default_slot_27(ctx) {
 	};
 }
 
-// (62:4) <Tab index={3}>
-function create_default_slot_26(ctx) {
+// (65:4) <Tab index={3}>
+function create_default_slot_30(ctx) {
 	let t;
 
 	return {
@@ -25907,8 +27050,8 @@ function create_default_slot_26(ctx) {
 	};
 }
 
-// (63:4) <Tab index={4}>
-function create_default_slot_25(ctx) {
+// (66:4) <Tab index={4}>
+function create_default_slot_29(ctx) {
 	let t;
 
 	return {
@@ -25924,8 +27067,8 @@ function create_default_slot_25(ctx) {
 	};
 }
 
-// (64:4) <Tab index={5}>
-function create_default_slot_24(ctx) {
+// (67:4) <Tab index={5}>
+function create_default_slot_28(ctx) {
 	let t;
 
 	return {
@@ -25941,8 +27084,8 @@ function create_default_slot_24(ctx) {
 	};
 }
 
-// (65:4) <Tab index={6}>
-function create_default_slot_23(ctx) {
+// (68:4) <Tab index={6}>
+function create_default_slot_27(ctx) {
 	let t;
 
 	return {
@@ -25958,8 +27101,8 @@ function create_default_slot_23(ctx) {
 	};
 }
 
-// (66:4) <Tab index={7}>
-function create_default_slot_22(ctx) {
+// (69:4) <Tab index={7}>
+function create_default_slot_26(ctx) {
 	let i;
 
 	return {
@@ -25976,8 +27119,8 @@ function create_default_slot_22(ctx) {
 	};
 }
 
-// (58:2) <TabList>
-function create_default_slot_21(ctx) {
+// (61:2) <TabList>
+function create_default_slot_25(ctx) {
 	let tab0;
 	let t0;
 	let tab1;
@@ -25998,7 +27141,7 @@ function create_default_slot_21(ctx) {
 	tab0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 0,
-				$$slots: { default: [create_default_slot_29] },
+				$$slots: { default: [create_default_slot_33] },
 				$$scope: { ctx }
 			}
 		});
@@ -26006,7 +27149,7 @@ function create_default_slot_21(ctx) {
 	tab1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 1,
-				$$slots: { default: [create_default_slot_28] },
+				$$slots: { default: [create_default_slot_32] },
 				$$scope: { ctx }
 			}
 		});
@@ -26014,7 +27157,7 @@ function create_default_slot_21(ctx) {
 	tab2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 2,
-				$$slots: { default: [create_default_slot_27] },
+				$$slots: { default: [create_default_slot_31] },
 				$$scope: { ctx }
 			}
 		});
@@ -26022,7 +27165,7 @@ function create_default_slot_21(ctx) {
 	tab3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 3,
-				$$slots: { default: [create_default_slot_26] },
+				$$slots: { default: [create_default_slot_30] },
 				$$scope: { ctx }
 			}
 		});
@@ -26030,7 +27173,7 @@ function create_default_slot_21(ctx) {
 	tab4 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 4,
-				$$slots: { default: [create_default_slot_25] },
+				$$slots: { default: [create_default_slot_29] },
 				$$scope: { ctx }
 			}
 		});
@@ -26038,7 +27181,7 @@ function create_default_slot_21(ctx) {
 	tab5 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 5,
-				$$slots: { default: [create_default_slot_24] },
+				$$slots: { default: [create_default_slot_28] },
 				$$scope: { ctx }
 			}
 		});
@@ -26046,7 +27189,7 @@ function create_default_slot_21(ctx) {
 	tab6 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 6,
-				$$slots: { default: [create_default_slot_23] },
+				$$slots: { default: [create_default_slot_27] },
 				$$scope: { ctx }
 			}
 		});
@@ -26054,7 +27197,7 @@ function create_default_slot_21(ctx) {
 	tab7 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 7,
-				$$slots: { default: [create_default_slot_22] },
+				$$slots: { default: [create_default_slot_26] },
 				$$scope: { ctx }
 			}
 		});
@@ -26196,8 +27339,8 @@ function create_default_slot_21(ctx) {
 	};
 }
 
-// (68:2) <TabPanel>
-function create_default_slot_20(ctx) {
+// (71:2) <TabPanel>
+function create_default_slot_24(ctx) {
 	let div7;
 	let div0;
 	let attributes;
@@ -26222,7 +27365,7 @@ function create_default_slot_20(ctx) {
 	pools = new _Pools__WEBPACK_IMPORTED_MODULE_12__["default"]({});
 	totals_1 = new _Totals__WEBPACK_IMPORTED_MODULE_9__["default"]({});
 
-	textarea = new _form_form__WEBPACK_IMPORTED_MODULE_15__["Textarea"]({
+	textarea = new _form_form__WEBPACK_IMPORTED_MODULE_17__["Textarea"]({
 			props: { path: "data.notes", label: "Notes" }
 		});
 
@@ -26307,8 +27450,8 @@ function create_default_slot_20(ctx) {
 	};
 }
 
-// (90:2) <TabPanel>
-function create_default_slot_19(ctx) {
+// (93:2) <TabPanel>
+function create_default_slot_23(ctx) {
 	let traitlist;
 	let current;
 	traitlist = new _TraitList__WEBPACK_IMPORTED_MODULE_5__["default"]({});
@@ -26336,8 +27479,8 @@ function create_default_slot_19(ctx) {
 	};
 }
 
-// (93:2) <TabPanel>
-function create_default_slot_18(ctx) {
+// (96:2) <TabPanel>
+function create_default_slot_22(ctx) {
 	let biography;
 	let current;
 	biography = new _Biography__WEBPACK_IMPORTED_MODULE_13__["default"]({});
@@ -26365,8 +27508,8 @@ function create_default_slot_18(ctx) {
 	};
 }
 
-// (96:2) <TabPanel>
-function create_default_slot_17(ctx) {
+// (99:2) <TabPanel>
+function create_default_slot_21(ctx) {
 	let skilllist;
 	let current;
 	skilllist = new _SkillList__WEBPACK_IMPORTED_MODULE_6__["default"]({});
@@ -26394,8 +27537,8 @@ function create_default_slot_17(ctx) {
 	};
 }
 
-// (99:2) <TabPanel>
-function create_default_slot_16(ctx) {
+// (102:2) <TabPanel>
+function create_default_slot_20(ctx) {
 	let charactercombat;
 	let current;
 	charactercombat = new _CharacterCombat__WEBPACK_IMPORTED_MODULE_14__["default"]({});
@@ -26423,8 +27566,8 @@ function create_default_slot_16(ctx) {
 	};
 }
 
-// (109:8) <Tab index={0}>
-function create_default_slot_15(ctx) {
+// (112:8) <Tab index={0}>
+function create_default_slot_19(ctx) {
 	let t;
 
 	return {
@@ -26440,8 +27583,8 @@ function create_default_slot_15(ctx) {
 	};
 }
 
-// (110:8) <Tab index={1}>
-function create_default_slot_14(ctx) {
+// (113:8) <Tab index={1}>
+function create_default_slot_18(ctx) {
 	let t;
 
 	return {
@@ -26457,8 +27600,8 @@ function create_default_slot_14(ctx) {
 	};
 }
 
-// (108:6) <TabList>
-function create_default_slot_13(ctx) {
+// (111:6) <TabList>
+function create_default_slot_17(ctx) {
 	let tab0;
 	let t;
 	let tab1;
@@ -26467,7 +27610,7 @@ function create_default_slot_13(ctx) {
 	tab0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 0,
-				$$slots: { default: [create_default_slot_15] },
+				$$slots: { default: [create_default_slot_19] },
 				$$scope: { ctx }
 			}
 		});
@@ -26475,7 +27618,7 @@ function create_default_slot_13(ctx) {
 	tab1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 1,
-				$$slots: { default: [create_default_slot_14] },
+				$$slots: { default: [create_default_slot_18] },
 				$$scope: { ctx }
 			}
 		});
@@ -26527,8 +27670,8 @@ function create_default_slot_13(ctx) {
 	};
 }
 
-// (112:6) <TabPanel>
-function create_default_slot_12(ctx) {
+// (115:6) <TabPanel>
+function create_default_slot_16(ctx) {
 	let equipmentlist;
 	let current;
 	equipmentlist = new _EquipmentList__WEBPACK_IMPORTED_MODULE_4__["default"]({});
@@ -26556,8 +27699,8 @@ function create_default_slot_12(ctx) {
 	};
 }
 
-// (115:6) <TabPanel>
-function create_default_slot_11(ctx) {
+// (118:6) <TabPanel>
+function create_default_slot_15(ctx) {
 	let equipmentlist;
 	let current;
 	equipmentlist = new _EquipmentList__WEBPACK_IMPORTED_MODULE_4__["default"]({ props: { location: "other" } });
@@ -26586,8 +27729,8 @@ function create_default_slot_11(ctx) {
 	};
 }
 
-// (103:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'inventory-tab', e.detail);        }}>
-function create_default_slot_10(ctx) {
+// (106:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'inventory-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'inventory-tab', e.detail);        }}>
+function create_default_slot_14(ctx) {
 	let tablist;
 	let t0;
 	let tabpanel0;
@@ -26597,21 +27740,21 @@ function create_default_slot_10(ctx) {
 
 	tablist = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabList"]({
 			props: {
-				$$slots: { default: [create_default_slot_13] },
+				$$slots: { default: [create_default_slot_17] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_12] },
+				$$slots: { default: [create_default_slot_16] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_11] },
+				$$slots: { default: [create_default_slot_15] },
 				$$scope: { ctx }
 			}
 		});
@@ -26678,15 +27821,15 @@ function create_default_slot_10(ctx) {
 	};
 }
 
-// (102:2) <TabPanel>
-function create_default_slot_9(ctx) {
+// (105:2) <TabPanel>
+function create_default_slot_13(ctx) {
 	let tabs;
 	let current;
 
 	tabs = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tabs"]({
 			props: {
 				tabIndex: /*$entity*/ ctx[1].getFlag("GURPS", "inventory-tab") || 0,
-				$$slots: { default: [create_default_slot_10] },
+				$$slots: { default: [create_default_slot_14] },
 				$$scope: { ctx }
 			}
 		});
@@ -26726,8 +27869,8 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (120:2) <TabPanel>
-function create_default_slot_8(ctx) {
+// (123:2) <TabPanel>
+function create_default_slot_12(ctx) {
 	let spelllist;
 	let current;
 	spelllist = new _SpellList__WEBPACK_IMPORTED_MODULE_7__["default"]({});
@@ -26755,8 +27898,8 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (130:8) <Tab index={0}>
-function create_default_slot_7(ctx) {
+// (133:8) <Tab index={0}>
+function create_default_slot_11(ctx) {
 	let t;
 
 	return {
@@ -26772,8 +27915,8 @@ function create_default_slot_7(ctx) {
 	};
 }
 
-// (131:8) <Tab index={1}>
-function create_default_slot_6(ctx) {
+// (134:8) <Tab index={1}>
+function create_default_slot_10(ctx) {
 	let t;
 
 	return {
@@ -26789,17 +27932,55 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (129:6) <TabList>
-function create_default_slot_5(ctx) {
-	let tab0;
+// (135:8) <Tab index={2}>
+function create_default_slot_9(ctx) {
 	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("Changelog");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (136:8) <Tab index={3}>
+function create_default_slot_8(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("Project Info");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (132:6) <TabList>
+function create_default_slot_7(ctx) {
+	let tab0;
+	let t0;
 	let tab1;
+	let t1;
+	let tab2;
+	let t2;
+	let tab3;
 	let current;
 
 	tab0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 0,
-				$$slots: { default: [create_default_slot_7] },
+				$$slots: { default: [create_default_slot_11] },
 				$$scope: { ctx }
 			}
 		});
@@ -26807,7 +27988,23 @@ function create_default_slot_5(ctx) {
 	tab1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
 			props: {
 				index: 1,
-				$$slots: { default: [create_default_slot_6] },
+				$$slots: { default: [create_default_slot_10] },
+				$$scope: { ctx }
+			}
+		});
+
+	tab2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
+			props: {
+				index: 2,
+				$$slots: { default: [create_default_slot_9] },
+				$$scope: { ctx }
+			}
+		});
+
+	tab3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tab"]({
+			props: {
+				index: 3,
+				$$slots: { default: [create_default_slot_8] },
 				$$scope: { ctx }
 			}
 		});
@@ -26815,13 +28012,21 @@ function create_default_slot_5(ctx) {
 	return {
 		c() {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab0.$$.fragment);
-			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab1.$$.fragment);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab2.$$.fragment);
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab3.$$.fragment);
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab0, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t0, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab1, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab2, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab3, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -26839,27 +28044,49 @@ function create_default_slot_5(ctx) {
 			}
 
 			tab1.$set(tab1_changes);
+			const tab2_changes = {};
+
+			if (dirty & /*$$scope*/ 2048) {
+				tab2_changes.$$scope = { dirty, ctx };
+			}
+
+			tab2.$set(tab2_changes);
+			const tab3_changes = {};
+
+			if (dirty & /*$$scope*/ 2048) {
+				tab3_changes.$$scope = { dirty, ctx };
+			}
+
+			tab3.$set(tab3_changes);
 		},
 		i(local) {
 			if (current) return;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab3.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab3.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab0, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab1, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab2, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab3, detaching);
 		}
 	};
 }
 
-// (135:10) {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}
+// (140:10) {#each Object.entries($entity.getProperty('data.attributes')) as attribute, i}
 function create_each_block(ctx) {
 	let li;
 	let t0_value = /*attribute*/ ctx[8][0] + "";
@@ -26891,8 +28118,8 @@ function create_each_block(ctx) {
 	};
 }
 
-// (133:6) <TabPanel>
-function create_default_slot_4(ctx) {
+// (138:6) <TabPanel>
+function create_default_slot_6(ctx) {
 	let ul;
 	let each_value = Object.entries(/*$entity*/ ctx[1].getProperty("data.attributes"));
 	let each_blocks = [];
@@ -26947,8 +28174,8 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (140:6) <TabPanel>
-function create_default_slot_3(ctx) {
+// (145:6) <TabPanel>
+function create_default_slot_5(ctx) {
 	let h1;
 
 	return {
@@ -26965,30 +28192,92 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (124:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'config-tab', e.detail);        }}>
+// (148:6) <TabPanel>
+function create_default_slot_4(ctx) {
+	let html_tag;
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(_CHANGELOG_md__WEBPACK_IMPORTED_MODULE_15___default.a, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (151:6) <TabPanel>
+function create_default_slot_3(ctx) {
+	let html_tag;
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(_INFO_md__WEBPACK_IMPORTED_MODULE_16___default.a, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (127:4) <Tabs        tabIndex={$entity.getFlag('GURPS', 'config-tab') || 0}        on:tabchange={(e) => {          $entity.setFlag('GURPS', 'config-tab', e.detail);        }}>
 function create_default_slot_2(ctx) {
 	let tablist;
 	let t0;
 	let tabpanel0;
 	let t1;
 	let tabpanel1;
+	let t2;
+	let tabpanel2;
+	let t3;
+	let tabpanel3;
 	let current;
 
 	tablist = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabList"]({
 			props: {
-				$$slots: { default: [create_default_slot_5] },
+				$$slots: { default: [create_default_slot_7] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_4] },
+				$$slots: { default: [create_default_slot_6] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
+			props: {
+				$$slots: { default: [create_default_slot_5] },
+				$$scope: { ctx }
+			}
+		});
+
+	tabpanel2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
+			props: {
+				$$slots: { default: [create_default_slot_4] },
+				$$scope: { ctx }
+			}
+		});
+
+	tabpanel3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
 				$$slots: { default: [create_default_slot_3] },
 				$$scope: { ctx }
@@ -27002,6 +28291,10 @@ function create_default_slot_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel0.$$.fragment);
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel1.$$.fragment);
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel2.$$.fragment);
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel3.$$.fragment);
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tablist, target, anchor);
@@ -27009,6 +28302,10 @@ function create_default_slot_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel0, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel1, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel2, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel3, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -27033,18 +28330,36 @@ function create_default_slot_2(ctx) {
 			}
 
 			tabpanel1.$set(tabpanel1_changes);
+			const tabpanel2_changes = {};
+
+			if (dirty & /*$$scope*/ 2048) {
+				tabpanel2_changes.$$scope = { dirty, ctx };
+			}
+
+			tabpanel2.$set(tabpanel2_changes);
+			const tabpanel3_changes = {};
+
+			if (dirty & /*$$scope*/ 2048) {
+				tabpanel3_changes.$$scope = { dirty, ctx };
+			}
+
+			tabpanel3.$set(tabpanel3_changes);
 		},
 		i(local) {
 			if (current) return;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tablist.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel3.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tablist.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel3.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -27053,11 +28368,15 @@ function create_default_slot_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel0, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel1, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel2, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel3, detaching);
 		}
 	};
 }
 
-// (123:2) <TabPanel>
+// (126:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let tabs;
 	let current;
@@ -27105,7 +28424,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (53:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'tab', e.detail);    }}>
+// (56:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'tab', e.detail);    }}>
 function create_default_slot(ctx) {
 	let tablist;
 	let t0;
@@ -27128,56 +28447,56 @@ function create_default_slot(ctx) {
 
 	tablist = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabList"]({
 			props: {
-				$$slots: { default: [create_default_slot_21] },
+				$$slots: { default: [create_default_slot_25] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_20] },
+				$$slots: { default: [create_default_slot_24] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_19] },
+				$$slots: { default: [create_default_slot_23] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_18] },
+				$$slots: { default: [create_default_slot_22] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_17] },
+				$$slots: { default: [create_default_slot_21] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel4 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_16] },
+				$$slots: { default: [create_default_slot_20] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel5 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_9] },
+				$$slots: { default: [create_default_slot_13] },
 				$$scope: { ctx }
 			}
 		});
 
 	tabpanel6 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["TabPanel"]({
 			props: {
-				$$slots: { default: [create_default_slot_8] },
+				$$slots: { default: [create_default_slot_12] },
 				$$scope: { ctx }
 			}
 		});
@@ -28352,7 +29671,7 @@ function instance($$self, $$props, $$invalidate) {
 	let { width = 800 } = $$props;
 	let { title = "???" } = $$props;
 	let { buttons = {} } = $$props;
-	let { defaultButton = null } = $$props;
+	let { defaultButton = "submit" } = $$props;
 	let { onClose = new Function() } = $$props;
 	let { overrideSubmit = false } = $$props;
 
@@ -28873,13 +30192,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_Input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form/Input */ "./src/svelte/form/Input.svelte");
 /* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../helpers.ts */ "./src/helpers.ts");
 /* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _container_ts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../container.ts */ "./src/container.ts");
-/* harmony import */ var _container_ts__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_container_ts__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_lists_container_ts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/lists/container.ts */ "./src/modules/lists/container.ts");
+/* harmony import */ var _modules_lists_container_ts__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_lists_container_ts__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./list/list */ "./src/svelte/list/list.ts");
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_list_list__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/svelte/EquipmentList.svelte.css */ "./src/svelte/EquipmentList.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _character_lists_Equipment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./character-lists/Equipment */ "./src/svelte/character-lists/Equipment.svelte");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/svelte/EquipmentList.svelte.css */ "./src/svelte/EquipmentList.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7__);
 /* src\svelte\EquipmentList.svelte generated by Svelte v3.25.0 */
+
 
 
 
@@ -28895,7 +30216,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (77:0) {#if location === 'carried'}
+// (78:0) {#if location === 'carried'}
 function create_if_block_1(ctx) {
 	let h30;
 	let t0;
@@ -28966,7 +30287,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (101:2) <th slot="header">
+// (102:2) <th slot="header">
 function create_header_slot(ctx) {
 	let th0;
 	let th1;
@@ -29052,7 +30373,7 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (125:8) {#if item.equipped}
+// (127:8) {#if item.equipped}
 function create_if_block(ctx) {
 	let i;
 
@@ -29070,7 +30391,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (135:10) <span class="no-edit" slot="no-edit">
+// (137:10) <span class="no-edit" slot="no-edit">
 function create_no_edit_slot_1(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[19] + "";
@@ -29096,7 +30417,7 @@ function create_no_edit_slot_1(ctx) {
 	};
 }
 
-// (152:10) <span class="no-edit" slot="no-edit">
+// (154:10) <span class="no-edit" slot="no-edit">
 function create_no_edit_slot(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[19] + "";
@@ -29122,7 +30443,7 @@ function create_no_edit_slot(ctx) {
 	};
 }
 
-// (103:4) <Row        let:item        let:depth        let:id        let:ownedItem        let:hovered        let:open        id={equipment.foundryID}        on:delete={async (e) => {          await e.detail.entity.delete();        }}        {i}        draggable={true}        colspan={10}        children={Array.from(equipment.children)}        container={equipment.canContainChildren}>
+// (105:4) <Row        let:item        let:depth        let:id        let:ownedItem        let:hovered        let:open        id={equipment.foundryID}        on:delete={async (e) => {          await e.detail.entity.delete();        }}        {i}        draggable={true}        colspan={10}        children={Array.from(equipment.children)}        container={equipment.canContainChildren}>
 function create_default_slot_1(ctx) {
 	let td0;
 	let t0;
@@ -29375,7 +30696,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (102:2) {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}
+// (103:2) {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
@@ -29451,7 +30772,7 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-// (86:0) <List title="{location} Items" type="item" addListItemMenu={menuItems}>
+// (87:0) <List title="{location} Items" type="item" addListItemMenu={menuItems}>
 function create_default_slot(ctx) {
 	let t0;
 	let t1;
@@ -29651,7 +30972,7 @@ function instance($$self, $$props, $$invalidate) {
 	let { location = "carried" } = $$props;
 
 	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onMount"])(() => {
-		Object(_container_ts__WEBPACK_IMPORTED_MODULE_4__["fixIndexes"])($entity, ["item"]);
+		Object(_modules_lists_container_ts__WEBPACK_IMPORTED_MODULE_4__["fixIndexes"])($entity, ["item"]);
 	});
 
 	async function toggleItemOpen(id) {
@@ -29791,7 +31112,7 @@ function create_default_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, input, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input, "change", /*change_handler*/ ctx[1]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input, "change", /*input_change_handler*/ ctx[2]);
 				mounted = true;
 			}
 		},
@@ -29810,13 +31131,16 @@ function create_fragment(ctx) {
 
 	dialog = new _Dialog__WEBPACK_IMPORTED_MODULE_1__["default"]({
 			props: {
+				width: 350,
+				height: 200,
+				buttons: /*buttons*/ ctx[1],
 				title: "GCS Import",
 				$$slots: { default: [create_default_slot] },
 				$$scope: { ctx }
 			}
 		});
 
-	dialog.$on("close", /*close_handler*/ ctx[2]);
+	dialog.$on("close", /*close_handler*/ ctx[3]);
 
 	return {
 		c() {
@@ -29829,7 +31153,7 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const dialog_changes = {};
 
-			if (dirty & /*$$scope*/ 8) {
+			if (dirty & /*$$scope, files*/ 33) {
 				dialog_changes.$$scope = { dirty, ctx };
 			}
 
@@ -29850,18 +31174,28 @@ function create_fragment(ctx) {
 	};
 }
 
-function instance($$self) {
+function instance($$self, $$props, $$invalidate) {
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_2__["createEventDispatcher"])();
+	let files;
 
-	const change_handler = e => {
-		dispatch("File Loaded", e.target.files);
+	const buttons = {
+		submit: {
+			icon: "<i class=\"fas fa-check\"></i>",
+			label: "Load",
+			callback: () => dispatch("Load", files)
+		}
 	};
+
+	function input_change_handler() {
+		files = this.files;
+		$$invalidate(0, files);
+	}
 
 	function close_handler(event) {
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
 	}
 
-	return [dispatch, change_handler, close_handler];
+	return [files, buttons, input_change_handler, close_handler];
 }
 
 class GCSImportDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
@@ -32740,7 +34074,7 @@ function create_fragment(ctx) {
 	let div2;
 	let t4;
 	let div3;
-	let t5_value = /*totals*/ ctx[3].total + "";
+	let t5_value = /*totals*/ ctx[3].spent + "";
 	let t5;
 	let t6;
 	let div4;
@@ -32941,7 +34275,7 @@ function create_fragment(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(input1, "width", "50px");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input1, "type", "number");
 			input1.disabled = true;
-			input1.value = input1_value_value = /*$entity*/ ctx[2].getProperty("data.point_total") - /*totals*/ ctx[3].total;
+			input1.value = input1_value_value = /*$entity*/ ctx[2].getProperty("data.point_total") - /*totals*/ ctx[3].spent;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div5, "class", "total svelte-4bzp0r");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div6, "class", "divider svelte-4bzp0r");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div7, "class", "");
@@ -33044,9 +34378,9 @@ function create_fragment(ctx) {
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if ((!current || dirty & /*totals*/ 8) && t5_value !== (t5_value = /*totals*/ ctx[3].total + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t5, t5_value);
+			if ((!current || dirty & /*totals*/ 8) && t5_value !== (t5_value = /*totals*/ ctx[3].spent + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t5, t5_value);
 
-			if (!current || dirty & /*$entity, totals*/ 12 && input1_value_value !== (input1_value_value = /*$entity*/ ctx[2].getProperty("data.point_total") - /*totals*/ ctx[3].total)) {
+			if (!current || dirty & /*$entity, totals*/ 12 && input1_value_value !== (input1_value_value = /*$entity*/ ctx[2].getProperty("data.point_total") - /*totals*/ ctx[3].spent)) {
 				input1.value = input1_value_value;
 			}
 
@@ -33186,6 +34520,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_list_list_ts__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs/tabs */ "./src/svelte/tabs/tabs.ts");
 /* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/TraitList.svelte.css */ "./src/svelte/TraitList.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
 /* src\svelte\TraitList.svelte generated by Svelte v3.25.0 */
 
 
@@ -33196,19 +34532,19 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[12] = list[i];
-	child_ctx[14] = i;
+	child_ctx[13] = list[i];
+	child_ctx[15] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[12] = list[i];
-	child_ctx[14] = i;
+	child_ctx[13] = list[i];
+	child_ctx[15] = i;
 	return child_ctx;
 }
 
-// (35:4) <Tab index={0}>
+// (44:4) <Tab index={0}>
 function create_default_slot_17(ctx) {
 	let t;
 
@@ -33225,7 +34561,7 @@ function create_default_slot_17(ctx) {
 	};
 }
 
-// (36:4) <Tab index={1}>
+// (45:4) <Tab index={1}>
 function create_default_slot_16(ctx) {
 	let t;
 
@@ -33242,7 +34578,7 @@ function create_default_slot_16(ctx) {
 	};
 }
 
-// (37:4) <Tab index={2}>
+// (46:4) <Tab index={2}>
 function create_default_slot_15(ctx) {
 	let t;
 
@@ -33259,7 +34595,7 @@ function create_default_slot_15(ctx) {
 	};
 }
 
-// (38:4) <Tab index={3}>
+// (47:4) <Tab index={3}>
 function create_default_slot_14(ctx) {
 	let t;
 
@@ -33276,7 +34612,7 @@ function create_default_slot_14(ctx) {
 	};
 }
 
-// (34:2) <TabList>
+// (43:2) <TabList>
 function create_default_slot_13(ctx) {
 	let tab0;
 	let t0;
@@ -33342,28 +34678,28 @@ function create_default_slot_13(ctx) {
 		p(ctx, dirty) {
 			const tab0_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tab0_changes.$$scope = { dirty, ctx };
 			}
 
 			tab0.$set(tab0_changes);
 			const tab1_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tab1_changes.$$scope = { dirty, ctx };
 			}
 
 			tab1.$set(tab1_changes);
 			const tab2_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tab2_changes.$$scope = { dirty, ctx };
 			}
 
 			tab2.$set(tab2_changes);
 			const tab3_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tab3_changes.$$scope = { dirty, ctx };
 			}
 
@@ -33396,7 +34732,7 @@ function create_default_slot_13(ctx) {
 	};
 }
 
-// (60:6) <th slot="header">
+// (69:6) <th slot="header">
 function create_header_slot_1(ctx) {
 	let th0;
 	let th1;
@@ -33422,7 +34758,7 @@ function create_header_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, th2, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler*/ ctx[5]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler*/ ctx[6]);
 				mounted = true;
 			}
 		},
@@ -33437,50 +34773,101 @@ function create_header_slot_1(ctx) {
 	};
 }
 
-// (79:14) <span slot="no-edit">
+// (92:14) <span                  class:no-show={trait.controlRating === 'n/a'}                  slot="no-edit"                  class="fas fa-dice d6 roll-ico cr-roll"                  on:click={rollCr(trait)}>
 function create_no_edit_slot_3(ctx) {
-	let span;
-	let t0_value = /*trait*/ ctx[12].name + "";
+	let span0;
+	let t0_value = /*trait*/ ctx[13].name + "";
 	let t0;
 	let t1;
 
-	let t2_value = (/*trait*/ ctx[12].hasLevels
-	? /*trait*/ ctx[12].levels
+	let t2_value = (/*trait*/ ctx[13].hasLevels
+	? /*trait*/ ctx[13].levels
 	: "") + "";
 
 	let t2;
+	let span1;
+	let t3;
+	let t4_value = /*trait*/ ctx[13].controlRating + "";
+	let t4;
+	let mounted;
+	let dispose;
 
 	return {
 		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t2_value);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "slot", "no-edit");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(" ");
+			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t4_value);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "no-edit");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "no-edit");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico cr-roll svelte-1uk8ldr");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[13].controlRating === "n/a");
 		},
 		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*disadvantages*/ 2 && t0_value !== (t0_value = /*trait*/ ctx[12].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, t4);
 
-			if (dirty & /*disadvantages*/ 2 && t2_value !== (t2_value = (/*trait*/ ctx[12].hasLevels
-			? /*trait*/ ctx[12].levels
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", function () {
+					if (Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(/*rollCr*/ ctx[5](/*trait*/ ctx[13]))) /*rollCr*/ ctx[5](/*trait*/ ctx[13]).apply(this, arguments);
+				});
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*disadvantages*/ 2 && t0_value !== (t0_value = /*trait*/ ctx[13].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+
+			if (dirty & /*disadvantages*/ 2 && t2_value !== (t2_value = (/*trait*/ ctx[13].hasLevels
+			? /*trait*/ ctx[13].levels
 			: "") + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
+
+			if (dirty & /*disadvantages*/ 2 && t4_value !== (t4_value = /*trait*/ ctx[13].controlRating + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t4, t4_value);
+
+			if (dirty & /*disadvantages*/ 2) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[13].controlRating === "n/a");
+			}
 		},
 		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span1);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-// (92:14) <span slot="no-edit">
+// (82:12) <Input                config={{ clickToEdit: true }}                entity={ownedItem ? ownedItem._entity : null}                path="data.name"                alsoUpdate={['name']}                let:value>
+function create_default_slot_12(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (108:14) <span slot="no-edit">
 function create_no_edit_slot_2(ctx) {
 	let span;
-	let t_value = /*value*/ ctx[16] + "";
+	let t_value = /*value*/ ctx[17] + "";
 	let t;
 
 	return {
@@ -33494,7 +34881,7 @@ function create_no_edit_slot_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*value*/ 65536 && t_value !== (t_value = /*value*/ ctx[16] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*value*/ 131072 && t_value !== (t_value = /*value*/ ctx[17] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
@@ -33502,10 +34889,10 @@ function create_no_edit_slot_2(ctx) {
 	};
 }
 
-// (95:10) <div slot="notes">
+// (111:10) <div slot="notes">
 function create_notes_slot_1(ctx) {
 	let div;
-	let t_value = /*trait*/ ctx[12].notes + "";
+	let t_value = /*trait*/ ctx[13].notes + "";
 	let t;
 
 	return {
@@ -33519,7 +34906,7 @@ function create_notes_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*disadvantages*/ 2 && t_value !== (t_value = /*trait*/ ctx[12].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*disadvantages*/ 2 && t_value !== (t_value = /*trait*/ ctx[13].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
@@ -33527,13 +34914,13 @@ function create_notes_slot_1(ctx) {
 	};
 }
 
-// (62:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              e.detail.entity.delete();            }}>
+// (71:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              e.detail.entity.delete();            }}>
 function create_default_slot_10(ctx) {
 	let td0;
 	let input0;
 	let t0;
 	let td1;
-	let t1_value = /*trait*/ ctx[12].adjustedPoints() + "";
+	let t1_value = /*trait*/ ctx[13].adjustedPoints() + "";
 	let t1;
 	let t2;
 	let td2;
@@ -33545,16 +34932,21 @@ function create_default_slot_10(ctx) {
 	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[15]
-				? /*ownedItem*/ ctx[15]._entity
+				entity: /*ownedItem*/ ctx[16]
+				? /*ownedItem*/ ctx[16]._entity
 				: null,
 				path: "data.name",
 				alsoUpdate: ["name"],
 				$$slots: {
+					default: [
+						create_default_slot_12,
+						({ value }) => ({ 17: value }),
+						({ value }) => value ? 131072 : 0
+					],
 					"no-edit": [
 						create_no_edit_slot_3,
-						({ value }) => ({ 16: value }),
-						({ value }) => value ? 65536 : 0
+						({ value }) => ({ 17: value }),
+						({ value }) => value ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -33564,15 +34956,15 @@ function create_default_slot_10(ctx) {
 	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[15]
-				? /*ownedItem*/ ctx[15]._entity
+				entity: /*ownedItem*/ ctx[16]
+				? /*ownedItem*/ ctx[16]._entity
 				: null,
 				path: "data.reference",
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot_2,
-						({ value }) => ({ 16: value }),
-						({ value }) => value ? 65536 : 0
+						({ value }) => ({ 17: value }),
+						({ value }) => value ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -33591,7 +34983,7 @@ function create_default_slot_10(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input1.$$.fragment);
 			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(td0, "class", "main-list-col");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(td0, "class", "main-list-col relative");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td0, anchor);
@@ -33609,23 +35001,23 @@ function create_default_slot_10(ctx) {
 		p(ctx, dirty) {
 			const input0_changes = {};
 
-			if (dirty & /*ownedItem*/ 32768) input0_changes.entity = /*ownedItem*/ ctx[15]
-			? /*ownedItem*/ ctx[15]._entity
+			if (dirty & /*ownedItem*/ 65536) input0_changes.entity = /*ownedItem*/ ctx[16]
+			? /*ownedItem*/ ctx[16]._entity
 			: null;
 
-			if (dirty & /*$$scope, disadvantages*/ 262146) {
+			if (dirty & /*$$scope, disadvantages*/ 524290) {
 				input0_changes.$$scope = { dirty, ctx };
 			}
 
 			input0.$set(input0_changes);
-			if ((!current || dirty & /*disadvantages*/ 2) && t1_value !== (t1_value = /*trait*/ ctx[12].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if ((!current || dirty & /*disadvantages*/ 2) && t1_value !== (t1_value = /*trait*/ ctx[13].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 			const input1_changes = {};
 
-			if (dirty & /*ownedItem*/ 32768) input1_changes.entity = /*ownedItem*/ ctx[15]
-			? /*ownedItem*/ ctx[15]._entity
+			if (dirty & /*ownedItem*/ 65536) input1_changes.entity = /*ownedItem*/ ctx[16]
+			? /*ownedItem*/ ctx[16]._entity
 			: null;
 
-			if (dirty & /*$$scope, value*/ 327680) {
+			if (dirty & /*$$scope, value*/ 655360) {
 				input1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -33656,7 +35048,7 @@ function create_default_slot_10(ctx) {
 	};
 }
 
-// (61:6) {#each disadvantages as trait, i (trait.foundryID)}
+// (70:6) {#each disadvantages as trait, i (trait.foundryID)}
 function create_each_block_1(key_1, ctx) {
 	let first;
 	let row;
@@ -33664,21 +35056,21 @@ function create_each_block_1(key_1, ctx) {
 
 	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["Row"]({
 			props: {
-				disabled: /*trait*/ ctx[12].disabled,
+				disabled: /*trait*/ ctx[13].disabled,
 				colspan: "5",
-				i: /*i*/ ctx[14],
-				id: /*trait*/ ctx[12].foundryID,
+				i: /*i*/ ctx[15],
+				id: /*trait*/ ctx[13].foundryID,
 				draggable: true,
 				$$slots: {
 					default: [
 						create_default_slot_10,
-						({ ownedItem }) => ({ 15: ownedItem }),
-						({ ownedItem }) => ownedItem ? 32768 : 0
+						({ ownedItem }) => ({ 16: ownedItem }),
+						({ ownedItem }) => ownedItem ? 65536 : 0
 					],
 					notes: [
 						create_notes_slot_1,
-						({ ownedItem }) => ({ 15: ownedItem }),
-						({ ownedItem }) => ownedItem ? 32768 : 0
+						({ ownedItem }) => ({ 16: ownedItem }),
+						({ ownedItem }) => ownedItem ? 65536 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -33702,11 +35094,11 @@ function create_each_block_1(key_1, ctx) {
 		},
 		p(ctx, dirty) {
 			const row_changes = {};
-			if (dirty & /*disadvantages*/ 2) row_changes.disabled = /*trait*/ ctx[12].disabled;
-			if (dirty & /*disadvantages*/ 2) row_changes.i = /*i*/ ctx[14];
-			if (dirty & /*disadvantages*/ 2) row_changes.id = /*trait*/ ctx[12].foundryID;
+			if (dirty & /*disadvantages*/ 2) row_changes.disabled = /*trait*/ ctx[13].disabled;
+			if (dirty & /*disadvantages*/ 2) row_changes.i = /*i*/ ctx[15];
+			if (dirty & /*disadvantages*/ 2) row_changes.id = /*trait*/ ctx[13].foundryID;
 
-			if (dirty & /*$$scope, disadvantages, ownedItem*/ 294914) {
+			if (dirty & /*$$scope, disadvantages, ownedItem*/ 589826) {
 				row_changes.$$scope = { dirty, ctx };
 			}
 
@@ -33728,7 +35120,7 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (41:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Disadvantage'],            },          });        }}>
+// (50:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Disadvantage'],            },          });        }}>
 function create_default_slot_9(ctx) {
 	let t0;
 	let t1;
@@ -33738,7 +35130,7 @@ function create_default_slot_9(ctx) {
 	let each_1_anchor;
 	let current;
 	let each_value_1 = /*disadvantages*/ ctx[1];
-	const get_key = ctx => /*trait*/ ctx[12].foundryID;
+	const get_key = ctx => /*trait*/ ctx[13].foundryID;
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -33771,7 +35163,7 @@ function create_default_slot_9(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*disadvantages, ownedItem, value*/ 98306) {
+			if (dirty & /*disadvantages, ownedItem, value, rollCr*/ 196642) {
 				const each_value_1 = /*disadvantages*/ ctx[1];
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block_1, each_1_anchor, get_each_context_1);
@@ -33808,7 +35200,7 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (40:2) <TabPanel>
+// (49:2) <TabPanel>
 function create_default_slot_8(ctx) {
 	let list;
 	let current;
@@ -33824,7 +35216,7 @@ function create_default_slot_8(ctx) {
 			}
 		});
 
-	list.$on("addlistitem", /*addlistitem_handler*/ ctx[6]);
+	list.$on("addlistitem", /*addlistitem_handler*/ ctx[7]);
 
 	return {
 		c() {
@@ -33837,7 +35229,7 @@ function create_default_slot_8(ctx) {
 		p(ctx, dirty) {
 			const list_changes = {};
 
-			if (dirty & /*$$scope, disadvantages, $entity*/ 262154) {
+			if (dirty & /*$$scope, disadvantages, $entity*/ 524298) {
 				list_changes.$$scope = { dirty, ctx };
 			}
 
@@ -33858,7 +35250,7 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (120:6) <th slot="header">
+// (136:6) <th slot="header">
 function create_header_slot(ctx) {
 	let th0;
 	let th1;
@@ -33884,7 +35276,7 @@ function create_header_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, th2, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler_1*/ ctx[7]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler_1*/ ctx[8]);
 				mounted = true;
 			}
 		},
@@ -33899,15 +35291,15 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (139:14) <span slot="no-edit">
+// (155:14) <span slot="no-edit">
 function create_no_edit_slot_1(ctx) {
 	let span;
-	let t0_value = /*trait*/ ctx[12].name + "";
+	let t0_value = /*trait*/ ctx[13].name + "";
 	let t0;
 	let t1;
 
-	let t2_value = (/*trait*/ ctx[12].hasLevels
-	? /*trait*/ ctx[12].levels
+	let t2_value = (/*trait*/ ctx[13].hasLevels
+	? /*trait*/ ctx[13].levels
 	: "") + "";
 
 	let t2;
@@ -33927,10 +35319,10 @@ function create_no_edit_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages*/ 4 && t0_value !== (t0_value = /*trait*/ ctx[12].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			if (dirty & /*advantages*/ 4 && t0_value !== (t0_value = /*trait*/ ctx[13].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*advantages*/ 4 && t2_value !== (t2_value = (/*trait*/ ctx[12].hasLevels
-			? /*trait*/ ctx[12].levels
+			if (dirty & /*advantages*/ 4 && t2_value !== (t2_value = (/*trait*/ ctx[13].hasLevels
+			? /*trait*/ ctx[13].levels
 			: "") + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
 		},
 		d(detaching) {
@@ -33939,10 +35331,10 @@ function create_no_edit_slot_1(ctx) {
 	};
 }
 
-// (152:14) <span slot="no-edit">
+// (168:14) <span slot="no-edit">
 function create_no_edit_slot(ctx) {
 	let span;
-	let t_value = /*value*/ ctx[16] + "";
+	let t_value = /*value*/ ctx[17] + "";
 	let t;
 
 	return {
@@ -33956,7 +35348,7 @@ function create_no_edit_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*value*/ 65536 && t_value !== (t_value = /*value*/ ctx[16] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*value*/ 131072 && t_value !== (t_value = /*value*/ ctx[17] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
@@ -33964,10 +35356,10 @@ function create_no_edit_slot(ctx) {
 	};
 }
 
-// (155:10) <div slot="notes">
+// (171:10) <div slot="notes">
 function create_notes_slot(ctx) {
 	let div;
-	let t_value = /*trait*/ ctx[12].notes + "";
+	let t_value = /*trait*/ ctx[13].notes + "";
 	let t;
 
 	return {
@@ -33981,7 +35373,7 @@ function create_notes_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages*/ 4 && t_value !== (t_value = /*trait*/ ctx[12].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*advantages*/ 4 && t_value !== (t_value = /*trait*/ ctx[13].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
@@ -33989,13 +35381,13 @@ function create_notes_slot(ctx) {
 	};
 }
 
-// (122:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              $entity.getOwnedItem(trait.foundryID).delete();            }}>
+// (138:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              $entity.getOwnedItem(trait.foundryID).delete();            }}>
 function create_default_slot_5(ctx) {
 	let td0;
 	let input0;
 	let t0;
 	let td1;
-	let t1_value = /*trait*/ ctx[12].adjustedPoints() + "";
+	let t1_value = /*trait*/ ctx[13].adjustedPoints() + "";
 	let t1;
 	let t2;
 	let td2;
@@ -34007,16 +35399,16 @@ function create_default_slot_5(ctx) {
 	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[15]
-				? /*ownedItem*/ ctx[15]._entity
+				entity: /*ownedItem*/ ctx[16]
+				? /*ownedItem*/ ctx[16]._entity
 				: null,
 				path: "data.name",
 				alsoUpdate: ["name"],
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot_1,
-						({ value }) => ({ 16: value }),
-						({ value }) => value ? 65536 : 0
+						({ value }) => ({ 17: value }),
+						({ value }) => value ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -34026,15 +35418,15 @@ function create_default_slot_5(ctx) {
 	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[15]
-				? /*ownedItem*/ ctx[15]._entity
+				entity: /*ownedItem*/ ctx[16]
+				? /*ownedItem*/ ctx[16]._entity
 				: null,
 				path: "data.reference",
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot,
-						({ value }) => ({ 16: value }),
-						({ value }) => value ? 65536 : 0
+						({ value }) => ({ 17: value }),
+						({ value }) => value ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -34071,23 +35463,23 @@ function create_default_slot_5(ctx) {
 		p(ctx, dirty) {
 			const input0_changes = {};
 
-			if (dirty & /*ownedItem*/ 32768) input0_changes.entity = /*ownedItem*/ ctx[15]
-			? /*ownedItem*/ ctx[15]._entity
+			if (dirty & /*ownedItem*/ 65536) input0_changes.entity = /*ownedItem*/ ctx[16]
+			? /*ownedItem*/ ctx[16]._entity
 			: null;
 
-			if (dirty & /*$$scope, advantages*/ 262148) {
+			if (dirty & /*$$scope, advantages*/ 524292) {
 				input0_changes.$$scope = { dirty, ctx };
 			}
 
 			input0.$set(input0_changes);
-			if ((!current || dirty & /*advantages*/ 4) && t1_value !== (t1_value = /*trait*/ ctx[12].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if ((!current || dirty & /*advantages*/ 4) && t1_value !== (t1_value = /*trait*/ ctx[13].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 			const input1_changes = {};
 
-			if (dirty & /*ownedItem*/ 32768) input1_changes.entity = /*ownedItem*/ ctx[15]
-			? /*ownedItem*/ ctx[15]._entity
+			if (dirty & /*ownedItem*/ 65536) input1_changes.entity = /*ownedItem*/ ctx[16]
+			? /*ownedItem*/ ctx[16]._entity
 			: null;
 
-			if (dirty & /*$$scope, value*/ 327680) {
+			if (dirty & /*$$scope, value*/ 655360) {
 				input1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34118,33 +35510,33 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (121:6) {#each advantages as trait, i (trait.foundryID)}
+// (137:6) {#each advantages as trait, i (trait.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
 	let current;
 
 	function delete_handler_1(...args) {
-		return /*delete_handler_1*/ ctx[8](/*trait*/ ctx[12], ...args);
+		return /*delete_handler_1*/ ctx[9](/*trait*/ ctx[13], ...args);
 	}
 
 	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["Row"]({
 			props: {
-				disabled: /*trait*/ ctx[12].disabled,
+				disabled: /*trait*/ ctx[13].disabled,
 				colspan: "5",
-				i: /*i*/ ctx[14],
-				id: /*trait*/ ctx[12].foundryID,
+				i: /*i*/ ctx[15],
+				id: /*trait*/ ctx[13].foundryID,
 				draggable: true,
 				$$slots: {
 					default: [
 						create_default_slot_5,
-						({ ownedItem }) => ({ 15: ownedItem }),
-						({ ownedItem }) => ownedItem ? 32768 : 0
+						({ ownedItem }) => ({ 16: ownedItem }),
+						({ ownedItem }) => ownedItem ? 65536 : 0
 					],
 					notes: [
 						create_notes_slot,
-						({ ownedItem }) => ({ 15: ownedItem }),
-						({ ownedItem }) => ownedItem ? 32768 : 0
+						({ ownedItem }) => ({ 16: ownedItem }),
+						({ ownedItem }) => ownedItem ? 65536 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -34169,11 +35561,11 @@ function create_each_block(key_1, ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const row_changes = {};
-			if (dirty & /*advantages*/ 4) row_changes.disabled = /*trait*/ ctx[12].disabled;
-			if (dirty & /*advantages*/ 4) row_changes.i = /*i*/ ctx[14];
-			if (dirty & /*advantages*/ 4) row_changes.id = /*trait*/ ctx[12].foundryID;
+			if (dirty & /*advantages*/ 4) row_changes.disabled = /*trait*/ ctx[13].disabled;
+			if (dirty & /*advantages*/ 4) row_changes.i = /*i*/ ctx[15];
+			if (dirty & /*advantages*/ 4) row_changes.id = /*trait*/ ctx[13].foundryID;
 
-			if (dirty & /*$$scope, advantages, ownedItem*/ 294916) {
+			if (dirty & /*$$scope, advantages, ownedItem*/ 589828) {
 				row_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34195,7 +35587,7 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-// (101:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Advantage'],            },          });        }}>
+// (117:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Advantage'],            },          });        }}>
 function create_default_slot_4(ctx) {
 	let t0;
 	let t1;
@@ -34205,7 +35597,7 @@ function create_default_slot_4(ctx) {
 	let each_1_anchor;
 	let current;
 	let each_value = /*advantages*/ ctx[2];
-	const get_key = ctx => /*trait*/ ctx[12].foundryID;
+	const get_key = ctx => /*trait*/ ctx[13].foundryID;
 
 	for (let i = 0; i < each_value.length; i += 1) {
 		let child_ctx = get_each_context(ctx, each_value, i);
@@ -34238,7 +35630,7 @@ function create_default_slot_4(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages, $entity, ownedItem, value*/ 98316) {
+			if (dirty & /*advantages, $entity, ownedItem, value*/ 196620) {
 				const each_value = /*advantages*/ ctx[2];
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block, each_1_anchor, get_each_context);
@@ -34275,7 +35667,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (100:2) <TabPanel>
+// (116:2) <TabPanel>
 function create_default_slot_3(ctx) {
 	let list;
 	let current;
@@ -34291,7 +35683,7 @@ function create_default_slot_3(ctx) {
 			}
 		});
 
-	list.$on("addlistitem", /*addlistitem_handler_1*/ ctx[9]);
+	list.$on("addlistitem", /*addlistitem_handler_1*/ ctx[10]);
 
 	return {
 		c() {
@@ -34304,7 +35696,7 @@ function create_default_slot_3(ctx) {
 		p(ctx, dirty) {
 			const list_changes = {};
 
-			if (dirty & /*$$scope, advantages, $entity*/ 262156) {
+			if (dirty & /*$$scope, advantages, $entity*/ 524300) {
 				list_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34325,7 +35717,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (160:2) <TabPanel>
+// (176:2) <TabPanel>
 function create_default_slot_2(ctx) {
 	let h1;
 
@@ -34343,7 +35735,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (163:2) <TabPanel>
+// (179:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let h1;
 
@@ -34361,7 +35753,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (29:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'traits-tab', e.detail);    }}>
+// (38:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'traits-tab', e.detail);    }}>
 function create_default_slot(ctx) {
 	let tablist;
 	let t0;
@@ -34436,35 +35828,35 @@ function create_default_slot(ctx) {
 		p(ctx, dirty) {
 			const tablist_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tablist_changes.$$scope = { dirty, ctx };
 			}
 
 			tablist.$set(tablist_changes);
 			const tabpanel0_changes = {};
 
-			if (dirty & /*$$scope, $entity, disadvantages*/ 262154) {
+			if (dirty & /*$$scope, $entity, disadvantages*/ 524298) {
 				tabpanel0_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel0.$set(tabpanel0_changes);
 			const tabpanel1_changes = {};
 
-			if (dirty & /*$$scope, $entity, advantages*/ 262156) {
+			if (dirty & /*$$scope, $entity, advantages*/ 524300) {
 				tabpanel1_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel1.$set(tabpanel1_changes);
 			const tabpanel2_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tabpanel2_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel2.$set(tabpanel2_changes);
 			const tabpanel3_changes = {};
 
-			if (dirty & /*$$scope*/ 262144) {
+			if (dirty & /*$$scope*/ 524288) {
 				tabpanel3_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34513,7 +35905,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	tabs.$on("tabchange", /*tabchange_handler*/ ctx[10]);
+	tabs.$on("tabchange", /*tabchange_handler*/ ctx[11]);
 
 	return {
 		c() {
@@ -34527,7 +35919,7 @@ function create_fragment(ctx) {
 			const tabs_changes = {};
 			if (dirty & /*$entity*/ 8) tabs_changes.tabIndex = /*$entity*/ ctx[3].getFlag("GURPS", "traits-tab") || 0;
 
-			if (dirty & /*$$scope, $entity, advantages, disadvantages*/ 262158) {
+			if (dirty & /*$$scope, $entity, advantages, disadvantages*/ 524302) {
 				tabs_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34563,7 +35955,15 @@ function instance($$self, $$props, $$invalidate) {
 	let { entity = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("entity") || null } = $$props;
 	$$subscribe_entity();
 	const GURPS = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("GURPS");
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(11, $GURPS = value));
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(12, $GURPS = value));
+
+	function rollCr(trait) {
+		let rollAgainst = trait.controlRating === "none"
+		? 0
+		: +trait.controlRating;
+
+		$entity.rollSkill(`${trait.name}`, rollAgainst);
+	}
 
 	const dblclick_handler = e => {
 		$entity.sortList("trait", "data.name");
@@ -34605,11 +36005,11 @@ function instance($$self, $$props, $$invalidate) {
 	let advantages;
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*$GURPS*/ 2048) {
+		if ($$self.$$.dirty & /*$GURPS*/ 4096) {
 			$: $$invalidate(1, disadvantages = window.game.gurps4e.indexSort([].concat($GURPS.traitList.splitByType().disadvantages, $GURPS.traitList.splitByType().quirks)));
 		}
 
-		if ($$self.$$.dirty & /*$GURPS*/ 2048) {
+		if ($$self.$$.dirty & /*$GURPS*/ 4096) {
 			$: $$invalidate(2, advantages = window.game.gurps4e.indexSort([].concat($GURPS.traitList.splitByType().advantages, $GURPS.traitList.splitByType().perks)));
 		}
 	};
@@ -34620,6 +36020,7 @@ function instance($$self, $$props, $$invalidate) {
 		advantages,
 		$entity,
 		GURPS,
+		rollCr,
 		dblclick_handler,
 		addlistitem_handler,
 		dblclick_handler_1,
@@ -34637,6 +36038,683 @@ class TraitList extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComp
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (TraitList);
+
+
+
+/***/ }),
+
+/***/ "./src/svelte/TraitList.svelte.css":
+/*!*****************************************!*\
+  !*** ./src/svelte/TraitList.svelte.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./TraitList.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/svelte/TraitList.svelte.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/svelte/WelcomeDialog.svelte":
+/*!*****************************************!*\
+  !*** ./src/svelte/WelcomeDialog.svelte ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog */ "./src/svelte/Dialog.svelte");
+/* harmony import */ var _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/tabs/tabs */ "./src/svelte/tabs/tabs.ts");
+/* harmony import */ var _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../CHANGELOG.md */ "./CHANGELOG.md");
+/* harmony import */ var _CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../INFO.md */ "./INFO.md");
+/* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_INFO_md__WEBPACK_IMPORTED_MODULE_4__);
+/* src\svelte\WelcomeDialog.svelte generated by Svelte v3.25.0 */
+
+
+
+
+
+
+
+function create_default_slot_6(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("Changelog");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (20:6) <Tab>
+function create_default_slot_5(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("Project Info");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+		}
+	};
+}
+
+// (18:4) <TabList>
+function create_default_slot_4(ctx) {
+	let tab0;
+	let t;
+	let tab1;
+	let current;
+
+	tab0 = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"]({
+			props: {
+				$$slots: { default: [create_default_slot_6] },
+				$$scope: { ctx }
+			}
+		});
+
+	tab1 = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["Tab"]({
+			props: {
+				$$slots: { default: [create_default_slot_5] },
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab0.$$.fragment);
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tab1.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab0, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tab1, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const tab0_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tab0_changes.$$scope = { dirty, ctx };
+			}
+
+			tab0.$set(tab0_changes);
+			const tab1_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tab1_changes.$$scope = { dirty, ctx };
+			}
+
+			tab1.$set(tab1_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tab1.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tab1.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab0, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tab1, detaching);
+		}
+	};
+}
+
+// (22:4) <TabPanel>
+function create_default_slot_3(ctx) {
+	let html_tag;
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(_CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3___default.a, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (25:4) <TabPanel>
+function create_default_slot_2(ctx) {
+	let html_tag;
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(_INFO_md__WEBPACK_IMPORTED_MODULE_4___default.a, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+// (17:2) <Tabs>
+function create_default_slot_1(ctx) {
+	let tablist;
+	let t0;
+	let tabpanel0;
+	let t1;
+	let tabpanel1;
+	let current;
+
+	tablist = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["TabList"]({
+			props: {
+				$$slots: { default: [create_default_slot_4] },
+				$$scope: { ctx }
+			}
+		});
+
+	tabpanel0 = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"]({
+			props: {
+				$$slots: { default: [create_default_slot_3] },
+				$$scope: { ctx }
+			}
+		});
+
+	tabpanel1 = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["TabPanel"]({
+			props: {
+				$$slots: { default: [create_default_slot_2] },
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tablist.$$.fragment);
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel0.$$.fragment);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabpanel1.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tablist, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel0, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabpanel1, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const tablist_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tablist_changes.$$scope = { dirty, ctx };
+			}
+
+			tablist.$set(tablist_changes);
+			const tabpanel0_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tabpanel0_changes.$$scope = { dirty, ctx };
+			}
+
+			tabpanel0.$set(tabpanel0_changes);
+			const tabpanel1_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tabpanel1_changes.$$scope = { dirty, ctx };
+			}
+
+			tabpanel1.$set(tabpanel1_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tablist.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabpanel1.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tablist.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel0.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabpanel1.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tablist, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel0, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabpanel1, detaching);
+		}
+	};
+}
+
+// (13:0) <Dialog    title={'GURPS4e Foundry System Welcome Dialog'}    height={800}    width={800}>
+function create_default_slot(ctx) {
+	let tabs;
+	let current;
+
+	tabs = new _components_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["Tabs"]({
+			props: {
+				$$slots: { default: [create_default_slot_1] },
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(tabs.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(tabs, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const tabs_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				tabs_changes.$$scope = { dirty, ctx };
+			}
+
+			tabs.$set(tabs_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(tabs.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(tabs.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(tabs, detaching);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let dialog;
+	let current;
+
+	dialog = new _Dialog__WEBPACK_IMPORTED_MODULE_1__["default"]({
+			props: {
+				title: "GURPS4e Foundry System Welcome Dialog",
+				height: 800,
+				width: 800,
+				$$slots: { default: [create_default_slot] },
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(dialog.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(dialog, target, anchor);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			const dialog_changes = {};
+
+			if (dirty & /*$$scope*/ 2) {
+				dialog_changes.$$scope = { dirty, ctx };
+			}
+
+			dialog.$set(dialog_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(dialog.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(dialog.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(dialog, detaching);
+		}
+	};
+}
+
+function instance($$self) {
+	const buttons = {};
+	return [];
+}
+
+class WelcomeDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {});
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (WelcomeDialog);
+
+/***/ }),
+
+/***/ "./src/svelte/character-lists/Equipment.svelte":
+/*!*****************************************************!*\
+  !*** ./src/svelte/character-lists/Equipment.svelte ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../list/list */ "./src/svelte/list/list.ts");
+/* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_list_list__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers.ts */ "./src/helpers.ts");
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
+/* src\svelte\character-lists\Equipment.svelte generated by Svelte v3.25.0 */
+
+
+
+
+
+
+function create_default_slot(ctx) {
+	let td0;
+	let span;
+	let t0;
+	let td1;
+	let input0;
+	let t1;
+	let td2;
+	let input1;
+	let t2;
+	let td3;
+	let t3;
+	let td4;
+	let input2;
+	let t4;
+	let td5;
+	let t5_value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["fixed6"])(/*$item*/ ctx[1].extendedWeight()) + "";
+	let t5;
+	let t6;
+	let td6;
+	let t7_value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["fixed6"])(/*$item*/ ctx[1].extendedValue()) + "";
+	let t7;
+	let t8;
+	let td7;
+	let t9_value = /*$item*/ ctx[1].reference + "";
+	let t9;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			td0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			input0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			input1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			input2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t5_value);
+			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t7_value);
+			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			td7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("td");
+			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t9_value);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "left", 15 + /*depth*/ ctx[6] * 30 + "px");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "toggle fas");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span, "fa-angle-down", /*itemIsOpen*/ ctx[2] && /*$item*/ ctx[1].canContainChildren);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span, "fa-angle-right", !/*itemIsOpen*/ ctx[2] && /*$item*/ ctx[1].canContainChildren);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input0, "type", "number");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input1, "type", "text");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input2, "type", "number");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td0, span);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td1, input0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*$item*/ ctx[1].quantity);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td2, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td2, input1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input1, /*$item*/ ctx[1].description);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td3, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td4, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td4, input2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*$item*/ ctx[1].weight);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t4, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td5, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td5, t5);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t6, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td6, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td6, t7);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t8, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, td7, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(td7, t9);
+
+			if (!mounted) {
+				dispose = [
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span, "click", function () {
+						if (Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(/*$item*/ ctx[1].equipped = !/*$item*/ ctx[1].equipped)) (/*$item*/ ctx[1].equipped = !/*$item*/ ctx[1].equipped).apply(this, arguments);
+					}),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input0, "input", /*input0_input_handler*/ ctx[3]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input1, "input", /*input1_input_handler*/ ctx[4]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input2, "input", /*input2_input_handler*/ ctx[5])
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*depth*/ 64) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(span, "left", 15 + /*depth*/ ctx[6] * 30 + "px");
+			}
+
+			if (dirty & /*itemIsOpen, $item*/ 6) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span, "fa-angle-down", /*itemIsOpen*/ ctx[2] && /*$item*/ ctx[1].canContainChildren);
+			}
+
+			if (dirty & /*itemIsOpen, $item*/ 6) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span, "fa-angle-right", !/*itemIsOpen*/ ctx[2] && /*$item*/ ctx[1].canContainChildren);
+			}
+
+			if (dirty & /*$item*/ 2 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input0.value) !== /*$item*/ ctx[1].quantity) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*$item*/ ctx[1].quantity);
+			}
+
+			if (dirty & /*$item*/ 2 && input1.value !== /*$item*/ ctx[1].description) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input1, /*$item*/ ctx[1].description);
+			}
+
+			if (dirty & /*$item*/ 2 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input2.value) !== /*$item*/ ctx[1].weight) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*$item*/ ctx[1].weight);
+			}
+
+			if (dirty & /*$item*/ 2 && t5_value !== (t5_value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["fixed6"])(/*$item*/ ctx[1].extendedWeight()) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t5, t5_value);
+			if (dirty & /*$item*/ 2 && t7_value !== (t7_value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["fixed6"])(/*$item*/ ctx[1].extendedValue()) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t7, t7_value);
+			if (dirty & /*$item*/ 2 && t9_value !== (t9_value = /*$item*/ ctx[1].reference + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t9, t9_value);
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td2);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td3);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td4);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t4);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td5);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t6);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td6);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t8);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(td7);
+			mounted = false;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let row;
+	let current;
+
+	row = new _list_list__WEBPACK_IMPORTED_MODULE_1__["Row"]({
+			props: {
+				$$slots: {
+					default: [
+						create_default_slot,
+						({ depth }) => ({ 6: depth }),
+						({ depth }) => depth ? 64 : 0
+					]
+				},
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(row.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(row, target, anchor);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			const row_changes = {};
+
+			if (dirty & /*$$scope, $item, depth*/ 194) {
+				row_changes.$$scope = { dirty, ctx };
+			}
+
+			row.$set(row_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(row.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(row.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(row, detaching);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let $item,
+		$$unsubscribe_item = svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		$$subscribe_item = () => ($$unsubscribe_item(), $$unsubscribe_item = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(item, $$value => $$invalidate(1, $item = $$value)), item);
+
+	$$self.$$.on_destroy.push(() => $$unsubscribe_item());
+	let { item = null } = $$props;
+	$$subscribe_item();
+	console.log(item);
+
+	// $: itemIsOpen = $item.getFlag("ui", "open");
+	let itemIsOpen;
+
+	function input0_input_handler() {
+		$item.quantity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		item.set($item);
+	}
+
+	function input1_input_handler() {
+		$item.description = this.value;
+		item.set($item);
+	}
+
+	function input2_input_handler() {
+		$item.weight = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		item.set($item);
+	}
+
+	$$self.$$set = $$props => {
+		if ("item" in $$props) $$subscribe_item($$invalidate(0, item = $$props.item));
+	};
+
+	return [
+		item,
+		$item,
+		itemIsOpen,
+		input0_input_handler,
+		input1_input_handler,
+		input2_input_handler
+	];
+}
+
+class Equipment extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { item: 0 });
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Equipment);
 
 /***/ }),
 
@@ -34903,592 +36981,6 @@ class Damage extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Damage);
-
-/***/ }),
-
-/***/ "./src/svelte/chat/Message.svelte":
-/*!****************************************!*\
-  !*** ./src/svelte/chat/Message.svelte ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var gurps_foundry_roll_lib_src_js_Roll_SuccessRoll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
-/* harmony import */ var _Damage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Damage */ "./src/svelte/chat/Damage.svelte");
-/* harmony import */ var _Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Skill */ "./src/svelte/chat/Skill.svelte");
-/* src\svelte\chat\Message.svelte generated by Svelte v3.25.0 */
-
-
-
-
-
-
-function create_if_block(ctx) {
-	let li;
-	let header;
-	let h4;
-	let t0_value = /*message*/ ctx[0].alias + "";
-	let t0;
-	let t1;
-	let span;
-	let time;
-	let t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "";
-	let t2;
-	let t3;
-	let t4;
-	let t5;
-	let t6;
-	let div;
-	let show_if;
-	let current_block_type_index;
-	let if_block3;
-	let li_data_message_id_value;
-	let current;
-	let if_block0 = window.game.user.isGM && create_if_block_6(ctx);
-	let if_block1 = /*isWhisper*/ ctx[3] && create_if_block_5(ctx);
-	let if_block2 = /*message*/ ctx[0].data.flavor && create_if_block_4(ctx);
-	const if_block_creators = [create_if_block_1, create_if_block_2, create_if_block_3];
-	const if_blocks = [];
-
-	function select_block_type(ctx, dirty) {
-		if (dirty & /*message*/ 1) show_if = !!/*message*/ ctx[0].rollType();
-		if (show_if) return 0;
-		if (/*message*/ ctx[0].roll) return 1;
-		if (/*hasHTMLContent*/ ctx[7] || /*message*/ ctx[0].data.content && !/*rollComponent*/ ctx[1]) return 2;
-		return -1;
-	}
-
-	if (~(current_block_type_index = select_block_type(ctx, -1))) {
-		if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-	}
-
-	return {
-		c() {
-			li = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("li");
-			header = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("header");
-			h4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("h4");
-			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			time = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("time");
-			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t2_value);
-			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block0) if_block0.c();
-			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block1) if_block1.c();
-			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block2) if_block2.c();
-			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			if (if_block3) if_block3.c();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(h4, "class", "message-sender");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "message-metadata");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(header, "class", "message-header flexrow");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "message-content");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(li, "border-color", /*borderColor*/ ctx[6]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "class", "message flexcol");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value = /*message*/ ctx[0]._id);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "blind", /*message*/ ctx[0].data.blind);
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, li, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, header);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, h4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(h4, t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, span);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, time);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(time, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t3);
-			if (if_block0) if_block0.m(span, null);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t4);
-			if (if_block1) if_block1.m(header, null);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(header, t5);
-			if (if_block2) if_block2.m(header, null);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, t6);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(li, div);
-
-			if (~current_block_type_index) {
-				if_blocks[current_block_type_index].m(div, null);
-			}
-
-			current = true;
-		},
-		p(ctx, dirty) {
-			if ((!current || dirty & /*message*/ 1) && t0_value !== (t0_value = /*message*/ ctx[0].alias + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
-			if ((!current || dirty & /*message*/ 1) && t2_value !== (t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
-
-			if (/*isWhisper*/ ctx[3]) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
-				} else {
-					if_block1 = create_if_block_5(ctx);
-					if_block1.c();
-					if_block1.m(header, t5);
-				}
-			} else if (if_block1) {
-				if_block1.d(1);
-				if_block1 = null;
-			}
-
-			if (/*message*/ ctx[0].data.flavor) {
-				if (if_block2) {
-					if_block2.p(ctx, dirty);
-				} else {
-					if_block2 = create_if_block_4(ctx);
-					if_block2.c();
-					if_block2.m(header, null);
-				}
-			} else if (if_block2) {
-				if_block2.d(1);
-				if_block2 = null;
-			}
-
-			let previous_block_index = current_block_type_index;
-			current_block_type_index = select_block_type(ctx, dirty);
-
-			if (current_block_type_index === previous_block_index) {
-				if (~current_block_type_index) {
-					if_blocks[current_block_type_index].p(ctx, dirty);
-				}
-			} else {
-				if (if_block3) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
-
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_blocks[previous_block_index], 1, 1, () => {
-						if_blocks[previous_block_index] = null;
-					});
-
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
-				}
-
-				if (~current_block_type_index) {
-					if_block3 = if_blocks[current_block_type_index];
-
-					if (!if_block3) {
-						if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-						if_block3.c();
-					}
-
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
-					if_block3.m(div, null);
-				} else {
-					if_block3 = null;
-				}
-			}
-
-			if (!current || dirty & /*message*/ 1 && li_data_message_id_value !== (li_data_message_id_value = /*message*/ ctx[0]._id)) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value);
-			}
-
-			if (dirty & /*window*/ 0) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
-			}
-
-			if (dirty & /*window*/ 0) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
-			}
-
-			if (dirty & /*isWhisper*/ 8) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
-			}
-
-			if (dirty & /*message*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "blind", /*message*/ ctx[0].data.blind);
-			}
-		},
-		i(local) {
-			if (current) return;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3);
-			current = true;
-		},
-		o(local) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block3);
-			current = false;
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(li);
-			if (if_block0) if_block0.d();
-			if (if_block1) if_block1.d();
-			if (if_block2) if_block2.d();
-
-			if (~current_block_type_index) {
-				if_blocks[current_block_type_index].d();
-			}
-		}
-	};
-}
-
-// (63:8) {#if window.game.user.isGM}
-function create_if_block_6(ctx) {
-	let a;
-
-	return {
-		c() {
-			a = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("a");
-			a.innerHTML = `<i class="fas fa-trash"></i>`;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(a, "class", "button message-delete");
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, a, anchor);
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(a);
-		}
-	};
-}
-
-// (67:6) {#if isWhisper}
-function create_if_block_5(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span.textContent = `${/*whisperTo*/ ctx[4]}`;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "whisper-to");
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-		},
-		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
-		}
-	};
-}
-
-// (68:6) {#if message.data.flavor}
-function create_if_block_4(ctx) {
-	let span;
-	let t_value = /*message*/ ctx[0].data.flavor + "";
-	let t;
-
-	return {
-		c() {
-			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "flavor-text");
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*message*/ 1 && t_value !== (t_value = /*message*/ ctx[0].data.flavor + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
-		}
-	};
-}
-
-// (82:75) 
-function create_if_block_3(ctx) {
-	let html_tag;
-	let raw_value = /*message*/ ctx[0].data.content + "";
-	let html_anchor;
-
-	return {
-		c() {
-			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
-			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
-		},
-		m(target, anchor) {
-			html_tag.m(raw_value, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*message*/ ctx[0].data.content + "")) html_tag.p(raw_value);
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
-			if (detaching) html_tag.d();
-		}
-	};
-}
-
-// (78:29) 
-function create_if_block_2(ctx) {
-	let await_block_anchor;
-	let promise;
-
-	let info = {
-		ctx,
-		current: null,
-		token: null,
-		hasCatch: false,
-		pending: create_pending_block,
-		then: create_then_block,
-		catch: create_catch_block,
-		value: 15
-	};
-
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["handle_promise"])(promise = /*message*/ ctx[0].roll.render(), info);
-
-	return {
-		c() {
-			await_block_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
-			info.block.c();
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, await_block_anchor, anchor);
-			info.block.m(target, info.anchor = anchor);
-			info.mount = () => await_block_anchor.parentNode;
-			info.anchor = await_block_anchor;
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			info.ctx = ctx;
-
-			if (dirty & /*message*/ 1 && promise !== (promise = /*message*/ ctx[0].roll.render()) && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["handle_promise"])(promise, info)) {
-				
-			} else {
-				const child_ctx = ctx.slice();
-				child_ctx[15] = info.resolved;
-				info.block.p(child_ctx, dirty);
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(await_block_anchor);
-			info.block.d(detaching);
-			info.token = null;
-			info = null;
-		}
-	};
-}
-
-// (73:6) {#if message.rollType()}
-function create_if_block_1(ctx) {
-	let switch_instance;
-	let switch_instance_anchor;
-	let current;
-	var switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType());
-
-	function switch_props(ctx) {
-		return {
-			props: {
-				message: /*message*/ ctx[0],
-				rollData: /*rollData*/ ctx[2]
-			}
-		};
-	}
-
-	if (switch_value) {
-		switch_instance = new switch_value(switch_props(ctx));
-	}
-
-	return {
-		c() {
-			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(switch_instance.$$.fragment);
-			switch_instance_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
-		},
-		m(target, anchor) {
-			if (switch_instance) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(switch_instance, target, anchor);
-			}
-
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, switch_instance_anchor, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const switch_instance_changes = {};
-			if (dirty & /*message*/ 1) switch_instance_changes.message = /*message*/ ctx[0];
-			if (dirty & /*rollData*/ 4) switch_instance_changes.rollData = /*rollData*/ ctx[2];
-
-			if (switch_value !== (switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType()))) {
-				if (switch_instance) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
-					const old_component = switch_instance;
-
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(old_component.$$.fragment, 1, 0, () => {
-						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(old_component, 1);
-					});
-
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
-				}
-
-				if (switch_value) {
-					switch_instance = new switch_value(switch_props(ctx));
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(switch_instance.$$.fragment);
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(switch_instance.$$.fragment, 1);
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(switch_instance, switch_instance_anchor.parentNode, switch_instance_anchor);
-				} else {
-					switch_instance = null;
-				}
-			} else if (switch_value) {
-				switch_instance.$set(switch_instance_changes);
-			}
-		},
-		i(local) {
-			if (current) return;
-			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(switch_instance.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(switch_instance.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(switch_instance_anchor);
-			if (switch_instance) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(switch_instance, detaching);
-		}
-	};
-}
-
-// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "./Damage";    import Skill from "./Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
-function create_catch_block(ctx) {
-	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
-}
-
-// (79:48)             {@html roll}
-function create_then_block(ctx) {
-	let html_tag;
-	let raw_value = /*roll*/ ctx[15] + "";
-	let html_anchor;
-
-	return {
-		c() {
-			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
-			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
-		},
-		m(target, anchor) {
-			html_tag.m(raw_value, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*roll*/ ctx[15] + "")) html_tag.p(raw_value);
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
-			if (detaching) html_tag.d();
-		}
-	};
-}
-
-// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "./Damage";    import Skill from "./Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
-function create_pending_block(ctx) {
-	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-	let current;
-	let if_block = /*isVisible*/ ctx[5] && create_if_block(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, if_block_anchor, anchor);
-			current = true;
-		},
-		p(ctx, [dirty]) {
-			if (/*isVisible*/ ctx[5]) if_block.p(ctx, dirty);
-		},
-		i(local) {
-			if (current) return;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block);
-			current = true;
-		},
-		o(local) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block);
-			current = false;
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(if_block_anchor);
-		}
-	};
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let { message = null } = $$props;
-	let sender = game.users.get(message.data.user);
-	let userAvatar = sender.avatar;
-
-	let aliasAvatar = sender.character
-	? sender.character.getProperty("img")
-	: null;
-
-	let avatar = aliasAvatar || userAvatar;
-	let isWhisper = getProperty(message, "data.whisper.length");
-
-	let whisperTo = message.data.whisper.map(u => {
-		let user = game.users.get(u);
-		return user ? user.name : null;
-	});
-
-	let isVisible = message.isContentVisible;
-	let flavor = null;
-	let alias = null;
-
-	let borderColor = message.data.type === CONST.CHAT_MESSAGE_TYPES.OOC
-	? message.user.color
-	: null;
-
-	if (!isVisible) {
-		isWhisper = false;
-		flavor = `${this.user.name} privately rolled some dice`;
-		alias = message.user.name;
-	}
-
-	let hasHTMLContent = message.data.content.startsWith("<");
-	let { rollComponent = false } = $$props;
-	let { rollData = null } = $$props;
-
-	function getRollComponent(type) {
-		switch (type) {
-			case "Damage":
-				return _Damage__WEBPACK_IMPORTED_MODULE_2__["default"];
-		}
-	}
-
-	$$self.$$set = $$props => {
-		if ("message" in $$props) $$invalidate(0, message = $$props.message);
-		if ("rollComponent" in $$props) $$invalidate(1, rollComponent = $$props.rollComponent);
-		if ("rollData" in $$props) $$invalidate(2, rollData = $$props.rollData);
-	};
-
-	return [
-		message,
-		rollComponent,
-		rollData,
-		isWhisper,
-		whisperTo,
-		isVisible,
-		borderColor,
-		hasHTMLContent,
-		getRollComponent
-	];
-}
-
-class Message extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
-	constructor(options) {
-		super();
-
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
-			message: 0,
-			rollComponent: 1,
-			rollData: 2
-		});
-	}
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Message);
 
 /***/ }),
 
@@ -35872,7 +37364,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Modifier__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Modifier */ "./src/svelte/editors/Modifier.svelte");
 /* harmony import */ var _EquipmentModifier__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./EquipmentModifier */ "./src/svelte/editors/EquipmentModifier.svelte");
 /* harmony import */ var _Spell__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Spell */ "./src/svelte/editors/Spell.svelte");
+/* harmony import */ var _Ritual__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Ritual */ "./src/svelte/editors/Ritual.svelte");
 /* src\svelte\editors\Editor.svelte generated by Svelte v3.25.0 */
+
 
 
 
@@ -35970,14 +37464,16 @@ function instance($$self, $$props, $$invalidate) {
 				return _Trait__WEBPACK_IMPORTED_MODULE_2__["default"];
 			case "item":
 				return _Equipment__WEBPACK_IMPORTED_MODULE_5__["default"];
-			case "modifier":
+			case "trait modifier":
 				return _Modifier__WEBPACK_IMPORTED_MODULE_6__["default"];
-			case "eqp_modifier":
+			case "equipment modifier":
 				return _EquipmentModifier__WEBPACK_IMPORTED_MODULE_7__["default"];
 			case "spell":
 				return _Spell__WEBPACK_IMPORTED_MODULE_8__["default"];
 			case "technique":
 				return _Technique__WEBPACK_IMPORTED_MODULE_4__["default"];
+			case "ritual":
+				return _Ritual__WEBPACK_IMPORTED_MODULE_9__["default"];
 			default:
 				return false;
 		}
@@ -37408,7 +38904,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (18:0) <Select {entity} path="data.cost_type" label="Type">
+// (17:0) <Select {entity} path="data.cost_type" label="Type">
 function create_default_slot_1(ctx) {
 	let option0;
 	let t1;
@@ -37450,7 +38946,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (23:0) <Select {entity} path="data.affects" label="Affects">
+// (22:0) <Select {entity} path="data.affects" label="Affects">
 function create_default_slot(ctx) {
 	let option0;
 	let t1;
@@ -37731,6 +39227,30 @@ class Modifier extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompo
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Modifier);
+
+/***/ }),
+
+/***/ "./src/svelte/editors/Ritual.svelte":
+/*!******************************************!*\
+  !*** ./src/svelte/editors/Ritual.svelte ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* src\svelte\editors\Ritual.svelte generated by Svelte v3.25.0 */
+
+
+class Ritual extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, null, null, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {});
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Ritual);
 
 /***/ }),
 
@@ -41967,7 +43487,7 @@ function create_default_slot_20(ctx) {
 	};
 }
 
-// (69:4) <Tab index={1}>
+// (68:4) <Tab index={1}>
 function create_default_slot_19(ctx) {
 	let t;
 
@@ -41984,7 +43504,7 @@ function create_default_slot_19(ctx) {
 	};
 }
 
-// (70:4) <Tab index={2}>
+// (69:4) <Tab index={2}>
 function create_default_slot_18(ctx) {
 	let t;
 
@@ -42001,7 +43521,7 @@ function create_default_slot_18(ctx) {
 	};
 }
 
-// (71:4) <Tab index={3}>
+// (70:4) <Tab index={3}>
 function create_default_slot_17(ctx) {
 	let t;
 
@@ -42018,7 +43538,7 @@ function create_default_slot_17(ctx) {
 	};
 }
 
-// (72:4) <Tab index={4}>
+// (71:4) <Tab index={4}>
 function create_default_slot_16(ctx) {
 	let t;
 
@@ -42035,7 +43555,7 @@ function create_default_slot_16(ctx) {
 	};
 }
 
-// (73:4) <Tab index={5}>
+// (72:4) <Tab index={5}>
 function create_default_slot_15(ctx) {
 	let t;
 
@@ -42052,7 +43572,7 @@ function create_default_slot_15(ctx) {
 	};
 }
 
-// (74:4) <Tab index={6}>
+// (73:4) <Tab index={6}>
 function create_default_slot_14(ctx) {
 	let t;
 
@@ -42069,7 +43589,7 @@ function create_default_slot_14(ctx) {
 	};
 }
 
-// (67:2) <TabList>
+// (66:2) <TabList>
 function create_default_slot_13(ctx) {
 	let tab0;
 	let t0;
@@ -42264,8 +43784,8 @@ function create_default_slot_13(ctx) {
 	};
 }
 
-// (77:4) {#if $entity.actor}
-function create_if_block(ctx) {
+// (76:4) {#if $entity.actor}
+function create_if_block_4(ctx) {
 	let checkbox;
 	let current;
 
@@ -42305,7 +43825,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (98:6) <Option>
+// (97:6) <Option>
 function create_default_slot_12(ctx) {
 	let t;
 
@@ -42322,7 +43842,7 @@ function create_default_slot_12(ctx) {
 	};
 }
 
-// (99:6) <Option>
+// (98:6) <Option>
 function create_default_slot_11(ctx) {
 	let t;
 
@@ -42339,7 +43859,7 @@ function create_default_slot_11(ctx) {
 	};
 }
 
-// (100:6) <Option disabled>
+// (99:6) <Option disabled>
 function create_default_slot_10(ctx) {
 	let t;
 
@@ -42356,7 +43876,7 @@ function create_default_slot_10(ctx) {
 	};
 }
 
-// (93:4) <Select        on:change={(e) => handleLevelSetting(e.detail.index)}        noop={true}        defaultIndex={setLevelType()}        label="Levels">
+// (92:4) <Select        on:change={(e) => handleLevelSetting(e.detail.index)}        noop={true}        defaultIndex={setLevelType()}        label="Levels">
 function create_default_slot_9(ctx) {
 	let option0;
 	let t0;
@@ -42449,7 +43969,192 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (140:4) <Select {entity} path="data.cr" label="Self-Control Roll">
+// (102:4) {#if traitIsLeveled}
+function create_if_block_3(ctx) {
+	let input;
+	let current;
+
+	input = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+			props: {
+				label: "Level",
+				width: "50px",
+				entity: /*entity*/ ctx[0],
+				path: "data.levels",
+				type: "number",
+				min: "0",
+				disabled: !/*traitIsLeveled*/ ctx[1]
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const input_changes = {};
+			if (dirty & /*entity*/ 1) input_changes.entity = /*entity*/ ctx[0];
+			if (dirty & /*traitIsLeveled*/ 2) input_changes.disabled = !/*traitIsLeveled*/ ctx[1];
+			input.$set(input_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input, detaching);
+		}
+	};
+}
+
+// (113:4) {#if traitHasHalfLevels}
+function create_if_block_2(ctx) {
+	let checkbox;
+	let current;
+
+	checkbox = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+			props: {
+				entity: /*entity*/ ctx[0],
+				on: "true",
+				off: "false",
+				path: "data.has_half_level",
+				label: "+1/2",
+				disabled: !/*traitHasHalfLevels*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const checkbox_changes = {};
+			if (dirty & /*entity*/ 1) checkbox_changes.entity = /*entity*/ ctx[0];
+			if (dirty & /*traitHasHalfLevels*/ 4) checkbox_changes.disabled = !/*traitHasHalfLevels*/ ctx[2];
+			checkbox.$set(checkbox_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox, detaching);
+		}
+	};
+}
+
+// (123:4) {#if traitIsLeveled}
+function create_if_block_1(ctx) {
+	let input;
+	let current;
+
+	input = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+			props: {
+				label: "Point Cost Per Level",
+				width: "50px",
+				entity: /*entity*/ ctx[0],
+				path: "data.points_per_level",
+				type: "number",
+				disabled: !/*traitIsLeveled*/ ctx[1],
+				min: "0"
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const input_changes = {};
+			if (dirty & /*entity*/ 1) input_changes.entity = /*entity*/ ctx[0];
+			if (dirty & /*traitIsLeveled*/ 2) input_changes.disabled = !/*traitIsLeveled*/ ctx[1];
+			input.$set(input_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input, detaching);
+		}
+	};
+}
+
+// (145:4) {#if !/disad|quirk/i.test($entity          .getProperty(`data.categories`)          .toString())}
+function create_if_block(ctx) {
+	let select;
+	let current;
+
+	select = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
+			props: {
+				entity: /*entity*/ ctx[0],
+				path: "data.cr",
+				label: "Self-Control Roll",
+				$$slots: { default: [create_default_slot_8] },
+				$$scope: { ctx }
+			}
+		});
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const select_changes = {};
+			if (dirty & /*entity*/ 1) select_changes.entity = /*entity*/ ctx[0];
+
+			if (dirty & /*$$scope*/ 256) {
+				select_changes.$$scope = { dirty, ctx };
+			}
+
+			select.$set(select_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select, detaching);
+		}
+	};
+}
+
+// (148:6) <Select {entity} path="data.cr" label="Self-Control Roll">
 function create_default_slot_8(ctx) {
 	let option0;
 	let t1;
@@ -42482,7 +44187,7 @@ function create_default_slot_8(ctx) {
 			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			option5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("option");
 			option5.textContent = "None Required";
-			option0.__value = "0";
+			option0.__value = "none";
 			option0.value = option0.__value;
 			option1.__value = "6";
 			option1.value = option1.__value;
@@ -42492,7 +44197,7 @@ function create_default_slot_8(ctx) {
 			option3.value = option3.__value;
 			option4.__value = "15";
 			option4.value = option4.__value;
-			option5.__value = "null";
+			option5.__value = "n/a";
 			option5.value = option5.__value;
 		},
 		m(target, anchor) {
@@ -42524,30 +44229,28 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (76:2) <TabPanel>
+// (75:2) <TabPanel>
 function create_default_slot_7(ctx) {
 	let t0;
 	let input0;
 	let t1;
 	let input1;
 	let t2;
-	let select0;
+	let select;
 	let t3;
-	let input2;
 	let t4;
-	let checkbox0;
 	let t5;
-	let input3;
 	let t6;
-	let checkbox1;
+	let checkbox0;
 	let t7;
-	let input4;
-	let t8;
 	let textarea;
-	let t9;
+	let t8;
 	let chiplist;
+	let t9;
+	let show_if = !(/disad|quirk/i).test(/*$entity*/ ctx[3].getProperty(`data.categories`).toString());
 	let t10;
-	let select1;
+	let div;
+	let checkbox1;
 	let t11;
 	let checkbox2;
 	let t12;
@@ -42557,11 +44260,9 @@ function create_default_slot_7(ctx) {
 	let t14;
 	let checkbox5;
 	let t15;
-	let checkbox6;
-	let t16;
-	let input5;
+	let input2;
 	let current;
-	let if_block = /*$entity*/ ctx[3].actor && create_if_block(ctx);
+	let if_block0 = /*$entity*/ ctx[3].actor && create_if_block_4(ctx);
 
 	input0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
 			props: {
@@ -42583,7 +44284,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	select0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
+	select = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
 			props: {
 				noop: true,
 				defaultIndex: /*setLevelType*/ ctx[5](),
@@ -42593,44 +44294,12 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	select0.$on("change", /*change_handler*/ ctx[6]);
-
-	input2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
-			props: {
-				label: "Level",
-				width: "50px",
-				entity: /*entity*/ ctx[0],
-				path: "data.levels",
-				type: "number",
-				min: "0",
-				disabled: !/*traitIsLeveled*/ ctx[1]
-			}
-		});
+	select.$on("change", /*change_handler*/ ctx[6]);
+	let if_block1 = /*traitIsLeveled*/ ctx[1] && create_if_block_3(ctx);
+	let if_block2 = /*traitHasHalfLevels*/ ctx[2] && create_if_block_2(ctx);
+	let if_block3 = /*traitIsLeveled*/ ctx[1] && create_if_block_1(ctx);
 
 	checkbox0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
-			props: {
-				entity: /*entity*/ ctx[0],
-				on: "true",
-				off: "false",
-				path: "data.has_half_level",
-				label: "+1/2",
-				disabled: !/*traitHasHalfLevels*/ ctx[2]
-			}
-		});
-
-	input3 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
-			props: {
-				label: "Point Cost Per Level",
-				width: "50px",
-				entity: /*entity*/ ctx[0],
-				path: "data.points_per_level",
-				type: "number",
-				disabled: !/*traitIsLeveled*/ ctx[1],
-				min: "0"
-			}
-		});
-
-	checkbox1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				label: "Round Down",
 				entity: /*entity*/ ctx[0],
@@ -42639,10 +44308,6 @@ function create_default_slot_7(ctx) {
 				disabled: true,
 				path: "data.round_down"
 			}
-		});
-
-	input4 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
-			props: { disabled: true, label: "Total" }
 		});
 
 	textarea = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Textarea"]({
@@ -42663,17 +44328,9 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	select1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
-			props: {
-				entity: /*entity*/ ctx[0],
-				path: "data.cr",
-				label: "Self-Control Roll",
-				$$slots: { default: [create_default_slot_8] },
-				$$scope: { ctx }
-			}
-		});
+	let if_block4 = show_if && create_if_block(ctx);
 
-	checkbox2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+	checkbox1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				on: "true",
@@ -42683,7 +44340,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	checkbox3 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+	checkbox2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				on: "true",
@@ -42693,7 +44350,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	checkbox4 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+	checkbox3 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				on: "true",
@@ -42703,7 +44360,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	checkbox5 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+	checkbox4 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				on: "true",
@@ -42713,7 +44370,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	checkbox6 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+	checkbox5 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				on: "true",
@@ -42723,7 +44380,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	input5 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
 			props: {
 				entity: /*entity*/ ctx[0],
 				path: "data.reference",
@@ -42734,29 +44391,30 @@ function create_default_slot_7(ctx) {
 
 	return {
 		c() {
-			if (if_block) if_block.c();
+			if (if_block0) if_block0.c();
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input0.$$.fragment);
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input1.$$.fragment);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select0.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select.$$.fragment);
 			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input2.$$.fragment);
+			if (if_block1) if_block1.c();
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox0.$$.fragment);
+			if (if_block2) if_block2.c();
 			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input3.$$.fragment);
+			if (if_block3) if_block3.c();
 			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox1.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox0.$$.fragment);
 			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input4.$$.fragment);
-			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(textarea.$$.fragment);
-			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(chiplist.$$.fragment);
+			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block4) if_block4.c();
 			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select1.$$.fragment);
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox1.$$.fragment);
 			t11 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox2.$$.fragment);
 			t12 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
@@ -42766,67 +44424,65 @@ function create_default_slot_7(ctx) {
 			t14 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox5.$$.fragment);
 			t15 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox6.$$.fragment);
-			t16 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input5.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input2.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "flex");
 		},
 		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
+			if (if_block0) if_block0.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t0, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input0, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input1, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select0, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input2, target, anchor);
+			if (if_block1) if_block1.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t4, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox0, target, anchor);
+			if (if_block2) if_block2.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t5, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input3, target, anchor);
+			if (if_block3) if_block3.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t6, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox1, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox0, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t7, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input4, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t8, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(textarea, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t9, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t8, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(chiplist, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t9, anchor);
+			if (if_block4) if_block4.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t10, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select1, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t11, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox2, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t12, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox3, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t13, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox4, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t14, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox5, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox1, div, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t11);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox2, div, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t12);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox3, div, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t13);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox4, div, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t14);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox5, div, null);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t15, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox6, target, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t16, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input5, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input2, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
 			if (/*$entity*/ ctx[3].actor) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
 
 					if (dirty & /*$entity*/ 8) {
-						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block, 1);
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0, 1);
 					}
 				} else {
-					if_block = create_if_block(ctx);
-					if_block.c();
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block, 1);
-					if_block.m(t0.parentNode, t0);
+					if_block0 = create_if_block_4(ctx);
+					if_block0.c();
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0, 1);
+					if_block0.m(t0.parentNode, t0);
 				}
-			} else if (if_block) {
+			} else if (if_block0) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block, 1, 1, () => {
-					if_block = null;
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block0, 1, 1, () => {
+					if_block0 = null;
 				});
 
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
@@ -42838,42 +44494,120 @@ function create_default_slot_7(ctx) {
 			const input1_changes = {};
 			if (dirty & /*entity*/ 1) input1_changes.entity = /*entity*/ ctx[0];
 			input1.$set(input1_changes);
-			const select0_changes = {};
+			const select_changes = {};
 
 			if (dirty & /*$$scope*/ 256) {
-				select0_changes.$$scope = { dirty, ctx };
+				select_changes.$$scope = { dirty, ctx };
 			}
 
-			select0.$set(select0_changes);
-			const input2_changes = {};
-			if (dirty & /*entity*/ 1) input2_changes.entity = /*entity*/ ctx[0];
-			if (dirty & /*traitIsLeveled*/ 2) input2_changes.disabled = !/*traitIsLeveled*/ ctx[1];
-			input2.$set(input2_changes);
+			select.$set(select_changes);
+
+			if (/*traitIsLeveled*/ ctx[1]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+
+					if (dirty & /*traitIsLeveled*/ 2) {
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1, 1);
+					}
+				} else {
+					if_block1 = create_if_block_3(ctx);
+					if_block1.c();
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1, 1);
+					if_block1.m(t4.parentNode, t4);
+				}
+			} else if (if_block1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block1, 1, 1, () => {
+					if_block1 = null;
+				});
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			}
+
+			if (/*traitHasHalfLevels*/ ctx[2]) {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+
+					if (dirty & /*traitHasHalfLevels*/ 4) {
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2, 1);
+					}
+				} else {
+					if_block2 = create_if_block_2(ctx);
+					if_block2.c();
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2, 1);
+					if_block2.m(t5.parentNode, t5);
+				}
+			} else if (if_block2) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block2, 1, 1, () => {
+					if_block2 = null;
+				});
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			}
+
+			if (/*traitIsLeveled*/ ctx[1]) {
+				if (if_block3) {
+					if_block3.p(ctx, dirty);
+
+					if (dirty & /*traitIsLeveled*/ 2) {
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
+					}
+				} else {
+					if_block3 = create_if_block_1(ctx);
+					if_block3.c();
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
+					if_block3.m(t6.parentNode, t6);
+				}
+			} else if (if_block3) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block3, 1, 1, () => {
+					if_block3 = null;
+				});
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			}
+
 			const checkbox0_changes = {};
 			if (dirty & /*entity*/ 1) checkbox0_changes.entity = /*entity*/ ctx[0];
-			if (dirty & /*traitHasHalfLevels*/ 4) checkbox0_changes.disabled = !/*traitHasHalfLevels*/ ctx[2];
 			checkbox0.$set(checkbox0_changes);
-			const input3_changes = {};
-			if (dirty & /*entity*/ 1) input3_changes.entity = /*entity*/ ctx[0];
-			if (dirty & /*traitIsLeveled*/ 2) input3_changes.disabled = !/*traitIsLeveled*/ ctx[1];
-			input3.$set(input3_changes);
-			const checkbox1_changes = {};
-			if (dirty & /*entity*/ 1) checkbox1_changes.entity = /*entity*/ ctx[0];
-			checkbox1.$set(checkbox1_changes);
 			const textarea_changes = {};
 			if (dirty & /*entity*/ 1) textarea_changes.entity = /*entity*/ ctx[0];
 			textarea.$set(textarea_changes);
 			const chiplist_changes = {};
 			if (dirty & /*entity*/ 1) chiplist_changes.entity = /*entity*/ ctx[0];
 			chiplist.$set(chiplist_changes);
-			const select1_changes = {};
-			if (dirty & /*entity*/ 1) select1_changes.entity = /*entity*/ ctx[0];
+			if (dirty & /*$entity*/ 8) show_if = !(/disad|quirk/i).test(/*$entity*/ ctx[3].getProperty(`data.categories`).toString());
 
-			if (dirty & /*$$scope*/ 256) {
-				select1_changes.$$scope = { dirty, ctx };
+			if (show_if) {
+				if (if_block4) {
+					if_block4.p(ctx, dirty);
+
+					if (dirty & /*$entity*/ 8) {
+						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4, 1);
+					}
+				} else {
+					if_block4 = create_if_block(ctx);
+					if_block4.c();
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4, 1);
+					if_block4.m(t10.parentNode, t10);
+				}
+			} else if (if_block4) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block4, 1, 1, () => {
+					if_block4 = null;
+				});
+
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
 			}
 
-			select1.$set(select1_changes);
+			const checkbox1_changes = {};
+			if (dirty & /*entity*/ 1) checkbox1_changes.entity = /*entity*/ ctx[0];
+			checkbox1.$set(checkbox1_changes);
 			const checkbox2_changes = {};
 			if (dirty & /*entity*/ 1) checkbox2_changes.entity = /*entity*/ ctx[0];
 			checkbox2.$set(checkbox2_changes);
@@ -42886,97 +44620,87 @@ function create_default_slot_7(ctx) {
 			const checkbox5_changes = {};
 			if (dirty & /*entity*/ 1) checkbox5_changes.entity = /*entity*/ ctx[0];
 			checkbox5.$set(checkbox5_changes);
-			const checkbox6_changes = {};
-			if (dirty & /*entity*/ 1) checkbox6_changes.entity = /*entity*/ ctx[0];
-			checkbox6.$set(checkbox6_changes);
-			const input5_changes = {};
-			if (dirty & /*entity*/ 1) input5_changes.entity = /*entity*/ ctx[0];
-			input5.$set(input5_changes);
+			const input2_changes = {};
+			if (dirty & /*entity*/ 1) input2_changes.entity = /*entity*/ ctx[0];
+			input2.$set(input2_changes);
 		},
 		i(local) {
 			if (current) return;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select0.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox0.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input3.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input4.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(textarea.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(chiplist.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox3.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox4.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox5.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox6.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input5.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input2.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select0.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input2.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox0.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input3.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input4.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(textarea.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(chiplist.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select1.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox3.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox4.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox5.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox6.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input5.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input2.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
-			if (if_block) if_block.d(detaching);
+			if (if_block0) if_block0.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input0, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input1, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select0, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input2, detaching);
+			if (if_block1) if_block1.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox0, detaching);
+			if (if_block2) if_block2.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input3, detaching);
+			if (if_block3) if_block3.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t6);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox1, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox0, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t7);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input4, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t8);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(textarea, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t9);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t8);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(chiplist, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t9);
+			if (if_block4) if_block4.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t10);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select1, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t11);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox2, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t12);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox3, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t13);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox4, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t14);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox5, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox5);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t15);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox6, detaching);
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t16);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input5, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input2, detaching);
 		}
 	};
 }
 
-// (180:2) <TabPanel>
+// (191:2) <TabPanel>
 function create_default_slot_6(ctx) {
 	let h1;
 
@@ -42994,7 +44718,7 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (183:2) <TabPanel>
+// (194:2) <TabPanel>
 function create_default_slot_5(ctx) {
 	let features;
 	let current;
@@ -43023,7 +44747,7 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (186:2) <TabPanel>
+// (197:2) <TabPanel>
 function create_default_slot_4(ctx) {
 	let h1;
 
@@ -43041,7 +44765,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (189:2) <TabPanel>
+// (200:2) <TabPanel>
 function create_default_slot_3(ctx) {
 	let meleeweapons;
 	let current;
@@ -43070,7 +44794,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (192:2) <TabPanel>
+// (203:2) <TabPanel>
 function create_default_slot_2(ctx) {
 	let rangedweapons;
 	let current;
@@ -43099,7 +44823,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (195:2) <TabPanel>
+// (206:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let richtexteditor;
 	let current;
@@ -43135,7 +44859,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (62:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'tab', e.detail);    }}>
+// (61:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'tab', e.detail);    }}>
 function create_default_slot(ctx) {
 	let tablist;
 	let t0;
@@ -43256,7 +44980,7 @@ function create_default_slot(ctx) {
 			tablist.$set(tablist_changes);
 			const tabpanel0_changes = {};
 
-			if (dirty & /*$$scope, entity, traitIsLeveled, traitHasHalfLevels, $entity*/ 271) {
+			if (dirty & /*$$scope, entity, $entity, traitIsLeveled, traitHasHalfLevels*/ 271) {
 				tabpanel0_changes.$$scope = { dirty, ctx };
 			}
 
@@ -43373,7 +45097,7 @@ function create_fragment(ctx) {
 			const tabs_changes = {};
 			if (dirty & /*$entity*/ 8) tabs_changes.tabIndex = /*$entity*/ ctx[3].getFlag("GURPS", "tab") || 0;
 
-			if (dirty & /*$$scope, entity, traitIsLeveled, traitHasHalfLevels, $entity*/ 271) {
+			if (dirty & /*$$scope, entity, $entity, traitIsLeveled, traitHasHalfLevels*/ 271) {
 				tabs_changes.$$scope = { dirty, ctx };
 			}
 
@@ -44533,7 +46257,7 @@ function create_default_slot_41(ctx) {
 	};
 }
 
-// (52:10) <Option value={FeatureType.damageResistanceBonus}>
+// (52:10) <Option value={FeatureType.damageResistanceBonus} disabled={true}>
 function create_default_slot_40(ctx) {
 	let t;
 
@@ -44701,6 +46425,7 @@ function create_default_slot_32(ctx) {
 	option1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Option"]({
 			props: {
 				value: g4elogic__WEBPACK_IMPORTED_MODULE_3__["FeatureType"].damageResistanceBonus,
+				disabled: true,
 				$$slots: { default: [create_default_slot_40] },
 				$$scope: { ctx }
 			}
@@ -44993,21 +46718,13 @@ function create_default_slot_30(ctx) {
 
 // (146:67) 
 function create_if_block_3(ctx) {
-	let t;
-
 	return {
-		c() {
-			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])("10");
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t, anchor);
-		},
+		c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
 		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t);
-		}
+		d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"]
 	};
 }
 
@@ -49311,7 +51028,7 @@ function create_else_block_1(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	let if_block = !/*value*/ ctx[0] && create_if_block_2(ctx);
+	let if_block = /*value*/ ctx[0] === "" && create_if_block_2(ctx);
 	const no_edit_slot_template = /*#slots*/ ctx[23]["no-edit"];
 	const no_edit_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(no_edit_slot_template, ctx, /*$$scope*/ ctx[22], get_no_edit_slot_context);
 
@@ -49340,7 +51057,7 @@ function create_else_block_1(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (!/*value*/ ctx[0]) {
+			if (/*value*/ ctx[0] === "") {
 				if (if_block) {
 					
 				} else {
@@ -49568,7 +51285,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (113:4) {#if !value}
+// (113:4) {#if value === ''}
 function create_if_block_2(ctx) {
 	let t;
 
@@ -51757,7 +53474,7 @@ const get_default_slot_context = ctx => ({
 	hovered: /*isHovered*/ ctx[11]
 });
 
-// (186:4) {#if config.toggle}
+// (188:4) {#if config.toggle}
 function create_if_block_4(ctx) {
 	let t_value = (/*hideNotes*/ ctx[0] ? ">" : "∨") + "";
 	let t;
@@ -51778,7 +53495,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (196:4) {#if config.deleteButton}
+// (198:4) {#if config.deleteButton}
 function create_if_block_2(ctx) {
 	let t;
 	let i_1;
@@ -51832,12 +53549,12 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (197:6) {#if container}
+// (199:6) {#if container}
 function create_if_block_3(ctx) {
 	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
 }
 
-// (210:0) {#if !hideNotes}
+// (212:0) {#if !hideNotes}
 function create_if_block_1(ctx) {
 	let td;
 	let current;
@@ -51887,7 +53604,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (216:0) {#if container && itemIsOpen(id)}
+// (218:0) {#if container && itemIsOpen(id)}
 function create_if_block(ctx) {
 	let each_blocks = [];
 	let each_1_lookup = new Map();
@@ -51952,7 +53669,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (218:4) <svelte:self        on:delete        let:id        let:ownedItem        let:depth        let:open        let:item={child}        {entity}        id={child.foundryID}        i={i + 1}        {config}        {colspan}        container={child.canContainChildren}        children={Array.from(child.children)}        open={itemIsOpen(id)}>
+// (220:4) <svelte:self        on:delete        let:id        let:ownedItem        let:depth        let:open        let:item={child}        {entity}        id={child.foundryID}        i={i + 1}        {config}        {colspan}        container={child.canContainChildren}        children={Array.from(child.children)}        open={itemIsOpen(id)}>
 function create_default_slot(ctx) {
 	let t;
 	let current;
@@ -51995,7 +53712,7 @@ function create_default_slot(ctx) {
 	};
 }
 
-// (217:2) {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
+// (219:2) {#each game.gurps4e.indexSort(children) as child, i (child.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
@@ -52452,10 +54169,12 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const dragleave_handler = e => {
+		$$invalidate(11, isHovered = false);
 		dispatch("dragleave");
 	};
 
 	const dragover_handler = e => {
+		$$invalidate(11, isHovered = false);
 		dragover.set(i);
 		dispatch("dragover");
 	};
@@ -55681,8 +57400,8 @@ __webpack_require__.r(__webpack_exports__);
 function create_fragment(ctx) {
 	let div;
 	let current;
-	const default_slot_template = /*#slots*/ ctx[3].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[2], null);
+	const default_slot_template = /*#slots*/ ctx[4].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[3], null);
 
 	return {
 		c() {
@@ -55701,8 +57420,8 @@ function create_fragment(ctx) {
 		},
 		p(ctx, [dirty]) {
 			if (default_slot) {
-				if (default_slot.p && dirty & /*$$scope*/ 4) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[2], dirty, null, null);
+				if (default_slot.p && dirty & /*$$scope*/ 8) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[3], dirty, null, null);
 				}
 			}
 		},
@@ -55724,6 +57443,10 @@ function create_fragment(ctx) {
 
 const TABS = {};
 
+function selectTab() {
+	
+}
+
 function instance($$self, $$props, $$invalidate) {
 	let $selectedTab;
 	let { $$slots: slots = {}, $$scope } = $$props;
@@ -55732,7 +57455,7 @@ function instance($$self, $$props, $$invalidate) {
 	const tabs = [];
 	const panels = [];
 	const selectedTab = Object(svelte_store__WEBPACK_IMPORTED_MODULE_2__["writable"])(null);
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, selectedTab, value => $$invalidate(4, $selectedTab = value));
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, selectedTab, value => $$invalidate(5, $selectedTab = value));
 	const selectedPanel = Object(svelte_store__WEBPACK_IMPORTED_MODULE_2__["writable"])(null);
 
 	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onMount"])(() => {
@@ -55779,16 +57502,20 @@ function instance($$self, $$props, $$invalidate) {
 
 	$$self.$$set = $$props => {
 		if ("tabIndex" in $$props) $$invalidate(1, tabIndex = $$props.tabIndex);
-		if ("$$scope" in $$props) $$invalidate(2, $$scope = $$props.$$scope);
+		if ("$$scope" in $$props) $$invalidate(3, $$scope = $$props.$$scope);
 	};
 
-	return [selectedTab, tabIndex, $$scope, slots];
+	return [selectedTab, tabIndex, selectTab, $$scope, slots];
 }
 
 class Tabs extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { tabIndex: 1 });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { tabIndex: 1, selectTab: 2 });
+	}
+
+	get selectTab() {
+		return selectTab;
 	}
 }
 
@@ -55943,7 +57670,7 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (45:8) {#if weapon.skillLevel()}
+// (46:8) {#if weapon.skillLevel()}
 function create_if_block_3(ctx) {
 	let span;
 	let t0;
@@ -55987,7 +57714,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (53:8) {#if typeof weapon.parry === "number"}
+// (54:8) {#if typeof weapon.parry === 'number'}
 function create_if_block_2(ctx) {
 	let span;
 	let t0;
@@ -56031,7 +57758,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (59:8) {#if typeof weapon.block === "number"}
+// (60:8) {#if typeof weapon.block === 'number'}
 function create_if_block_1(ctx) {
 	let span;
 	let t0;
@@ -56075,7 +57802,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (65:8) {#if weapon.damage}
+// (66:8) {#if weapon.damage}
 function create_if_block(ctx) {
 	let span;
 	let t0;
@@ -56119,7 +57846,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (39:4) <Row        menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}        config={{ highlightHover: false, deleteButton: false, focusable: false }}>
+// (39:4) <Row        disabled={!weapon.owner.isActive()}        menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}        config={{ highlightHover: false, deleteButton: false, focusable: false }}>
 function create_default_slot_1(ctx) {
 	let td0;
 	let t0_value = /*weapon*/ ctx[9].owner.name + "";
@@ -56308,6 +58035,7 @@ function create_each_block(ctx) {
 
 	row = new _list_list__WEBPACK_IMPORTED_MODULE_1__["Row"]({
 			props: {
+				disabled: !/*weapon*/ ctx[9].owner.isActive(),
 				menuItems: func,
 				config: {
 					highlightHover: false,
@@ -56330,6 +58058,7 @@ function create_each_block(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const row_changes = {};
+			if (dirty & /*$entity*/ 1) row_changes.disabled = !/*weapon*/ ctx[9].owner.isActive();
 			if (dirty & /*$entity*/ 1) row_changes.menuItems = func;
 
 			if (dirty & /*$$scope, $entity*/ 4097) {
@@ -56411,7 +58140,7 @@ function create_default_slot(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*weaponMenuItems, $entity*/ 5) {
+			if (dirty & /*$entity, weaponMenuItems*/ 5) {
 				each_value = /*$entity*/ ctx[0].getWeapons().melee;
 				let i;
 
@@ -56702,7 +58431,7 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (45:8) {#if weapon.skillLevel()}
+// (46:8) {#if weapon.skillLevel()}
 function create_if_block_1(ctx) {
 	let span;
 	let mounted;
@@ -56736,7 +58465,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (54:8) {#if weapon.damage}
+// (55:8) {#if weapon.damage}
 function create_if_block(ctx) {
 	let span;
 	let mounted;
@@ -56770,7 +58499,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (39:4) <Row        menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}        config={{ highlightHover: false, deleteButton: false, focusable: false }}>
+// (39:4) <Row        disabled={!weapon.owner.isActive()}        menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}        config={{ highlightHover: false, deleteButton: false, focusable: false }}>
 function create_default_slot_1(ctx) {
 	let td0;
 	let t0_value = (/*weapon*/ ctx[7].owner.name || "") + "";
@@ -56989,6 +58718,7 @@ function create_each_block(ctx) {
 
 	row = new _list_list__WEBPACK_IMPORTED_MODULE_1__["Row"]({
 			props: {
+				disabled: !/*weapon*/ ctx[7].owner.isActive(),
 				menuItems: func,
 				config: {
 					highlightHover: false,
@@ -57011,6 +58741,7 @@ function create_each_block(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const row_changes = {};
+			if (dirty & /*$entity*/ 1) row_changes.disabled = !/*weapon*/ ctx[7].owner.isActive();
 			if (dirty & /*$entity*/ 1) row_changes.menuItems = func;
 
 			if (dirty & /*$$scope, $entity*/ 1025) {
@@ -57101,7 +58832,7 @@ function create_default_slot(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*weaponMenuItems, $entity*/ 5) {
+			if (dirty & /*$entity, weaponMenuItems*/ 5) {
 				each_value = /*$entity*/ ctx[0].getWeapons().ranged;
 				let i;
 
@@ -57256,35 +58987,6 @@ class RangedWeapons extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["Svelte
 
 var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./RangedWeapons.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/svelte/weapon-list/RangedWeapons.svelte.css");
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
-
-/***/ }),
-
-/***/ "./src/templates/GURPS-foundry-roll-templates/templates_roll.css":
-/*!***********************************************************************!*\
-  !*** ./src/templates/GURPS-foundry-roll-templates/templates_roll.css ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./templates_roll.css */ "./node_modules/css-loader/dist/cjs.js!./src/templates/GURPS-foundry-roll-templates/templates_roll.css");
 
             content = content.__esModule ? content.default : content;
 

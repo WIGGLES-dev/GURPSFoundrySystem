@@ -9,7 +9,7 @@
   export let width = 800;
   export let title = "???";
   export let buttons = {};
-  export let defaultButton = null;
+  export let defaultButton = "submit";
   export let onClose = new Function();
   export let overrideSubmit = false;
 

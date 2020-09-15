@@ -70,7 +70,7 @@
   </div>
 
   <div>Spent</div>
-  <div class="total">{totals.total}</div>
+  <div class="total">{totals.spent}</div>
 
   <div>Unspent Points</div>
   <div class="total">
@@ -78,7 +78,7 @@
       style="width: 50px;"
       type="number"
       disabled
-      value={$entity.getProperty('data.point_total') - totals.total} />
+      value={$entity.getProperty('data.point_total') - totals.spent} />
   </div>
 
   <div class="divider" />

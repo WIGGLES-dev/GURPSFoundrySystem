@@ -1,4 +1,4 @@
-import { _Actor } from "./sheet";
+import { _Actor } from "../../foundry-GURPS/sheet";
 
 class Party {
     party: _Actor
@@ -8,7 +8,7 @@ class Party {
     }
 
     addPartyMember(id: string) {
-    
+
     }
 
     removePartyMember(id: string) {

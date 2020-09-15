@@ -37,6 +37,7 @@
   <th slot="header">ST</th>
   {#each $entity.getWeapons().melee as weapon, i}
     <Row
+      disabled={!weapon.owner.isActive()}
       menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}
       config={{ highlightHover: false, deleteButton: false, focusable: false }}>
       <td>{weapon.owner.name}</td>
@@ -50,13 +51,13 @@
         {/if}
       </td>
       <td>
-        {#if typeof weapon.parry === "number"}
+        {#if typeof weapon.parry === 'number'}
           <span class="fas fa-shield-alt" on:click={() => weapon.rollParry()} />
           {weapon.parry || ''}
         {/if}
       </td>
       <td>
-        {#if typeof weapon.block === "number"}
+        {#if typeof weapon.block === 'number'}
           <span class="fas fa-shield-alt" on:click={() => weapon.rollBlock()} />
           {weapon.block || ''}
         {/if}

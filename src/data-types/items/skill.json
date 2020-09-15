@@ -1,8 +1,9 @@
 {
     "skill": {
         "templates": [
-            "skill_like",
-            "notable"
+            "skill-like",
+            "notable",
+            "list item"
         ],
         "type": "skill",
         "tech_level": "",

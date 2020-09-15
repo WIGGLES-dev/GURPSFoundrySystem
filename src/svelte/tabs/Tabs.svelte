@@ -57,6 +57,10 @@
     selectedTab,
     selectedPanel,
   });
+
+  export function selectTab() {
+    
+  }
 </script>
 
 <style>

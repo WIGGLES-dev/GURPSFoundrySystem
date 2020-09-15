@@ -5,6 +5,11 @@
             "pools",
             "attributes"
         ],
-        "point_total": 100
+        "point_total": 100,
+        "hit_locations": [],
+        "saved_modifiers": [],
+        "config": {},
+        "status_effects": [],
+        "notes": ""
     }
 }

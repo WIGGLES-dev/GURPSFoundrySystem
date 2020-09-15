@@ -37,6 +37,7 @@
   <th slot="header">ST</th>
   {#each $entity.getWeapons().ranged as weapon, i}
     <Row
+      disabled={!weapon.owner.isActive()}
       menuItems={() => weaponMenuItems(weapon, i, weapon.owner.foundryID)}
       config={{ highlightHover: false, deleteButton: false, focusable: false }}>
       <td>{weapon.owner.name || ''}</td>

@@ -1,16 +1,17 @@
-import Message from "./svelte/chat/Message.svelte"
+import Message from "./svelte/Message.svelte"
+import SvelteChatLog from "./svelte/ChatLog.svelte";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
+import { svelte } from "helpers";
 
 
-export class _ChatMessage extends ChatMessage {
-
+export class CustomChatMessage extends ChatMessage {
     constructor(data: EntityData<any>, options: any) {
         super(data, options);
     }
 
     static async create(data: any, options?: any) {
         let message = await super.create(data, options);
-        if (message instanceof _ChatMessage) {
+        if (message instanceof CustomChatMessage) {
             // if (data.roll instanceof SuccessRoll) {
             //     await message.setFlag("GURPS", "type", "Skill");
             //     await message.setFlag("GURPS", "roll_data", data.GURPSRollData || {})
@@ -27,8 +28,8 @@ export class _ChatMessage extends ChatMessage {
 }
 
 //@ts-ignore
-export class _ChatLog extends ChatLog {
-    static apps: Map<string, any> = new Map()
+export class CustomChatLog extends ChatLog {
+    svelteApp: SvelteChatLog
     _lastId: string
     element: JQuery<HTMLElement>
     rendered: boolean
@@ -37,20 +38,30 @@ export class _ChatLog extends ChatLog {
         super(options);
     }
 
+    async _renderInner(data) {
+        // return super._renderInner(data);
+        let html = await super._renderInner(data) as JQuery<HTMLElement>;
+        this.svelteApp = new SvelteChatLog({
+            target: html.get(0),
+            props: {
+                ChatLog: this,
+            },
+        });
+        return jQuery(this.svelteApp.chatPanel)
+    }
+
+    // async _render(...args) {
+    //     if (this.rendered) return
+    //     super._render(...args)
+    // }
+
     /**
      * Override Chatlog postOne method to allow svelte to render the chat messages.
      */
-    async postOne(message: _ChatMessage, notify: boolean = false) {
+    async postOne(message: CustomChatMessage, notify: boolean = false) {
         if (!message.visible) return
         if (!this._lastId) this._lastId = message.id
-        const target = this.element.find("#chat-log").get(0);
-        const app = new Message({
-            target,
-            props: {
-                message
-            }
-        })
-        _ChatLog.apps.set(message.id, app)
+        this.svelteApp.$set({ messages: [...this.svelteApp.messages, message] });
         this.scrollBottom();
         if (notify) this.notify(message);
     }
@@ -59,7 +70,7 @@ export class _ChatLog extends ChatLog {
         if (!this.rendered) return;
         //@ts-ignore
         this._state = Application.RENDER_STATES.RENDERING;
-        const messages = game.messages.entities as _ChatMessage[];
+        const messages = game.messages.entities as CustomChatMessage[];
         const log = this.element.find("#chat-log");
 
         // Get the index of the last rendered message
@@ -70,33 +81,20 @@ export class _ChatLog extends ChatLog {
         let targetIdx = Math.max((lastIdx - size) || 0, 0);
         let m = null;
 
-
         if (lastIdx !== 0) {
             let html: any[] = [];
             for (let i = targetIdx; i < lastIdx; i++) {
                 m = messages[i];
                 if (!m.visible) continue;
+
                 try {
-                    if (_ChatLog.apps.has(m._id)) {
-                        _ChatLog.apps.get(m._id).$set({ message: m })
-                    } else {
-                        html.push(m)
-                    }
+                    html.push(m)
                 } catch (err) {
                     console.error(`Chat message ${m.id} failed to render.\n${err})`);
                 }
             }
 
-            //create the missing applications
-            html.forEach(message => {
-                const app = new Message({
-                    target: log.get(0),
-                    props: { message }
-                });
-                _ChatLog.apps.set(message._id, app);
-            })
-
-
+            this.svelteApp.$set({ ChatLog: this, messages: html });
 
             this._lastId = messages[targetIdx].id;
         }
@@ -106,14 +104,12 @@ export class _ChatLog extends ChatLog {
         this._state = Application.RENDER_STATES.RENDERED;
     }
 
-    updateMessage(message: _ChatMessage) {
-        _ChatLog.apps.get(message.id).$set({ message })
+    updateMessage(message: CustomChatMessage, notify = false) {
+        return super.updateMessage(message, notify);
     }
 
     updateTimestamps() {
-        game.messages.entities.forEach(message => {
-            _ChatLog.apps.get(message._id).$set({ message });
-        });
+        return super.updateTimestamps();
     }
 
     scrollBottom: () => void

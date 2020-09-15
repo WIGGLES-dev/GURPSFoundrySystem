@@ -1,7 +1,7 @@
 import { getEntity } from "./helpers";
-import { _Item } from "./item";
+import { _Item } from "./foundry-GURPS/item";
 
-import { setContainedBy, getIndex, getContainedBy, fixIndexes } from "./container";
+import { setContainedBy, getIndex, getContainedBy, fixIndexes } from "./modules/lists/container";
 
 export class GURPSDragDrop {
     static dropOnHotbar() {

@@ -21,9 +21,18 @@
       $GURPS.traitList.splitByType().perks
     )
   );
+
+  function rollCr(trait) {
+    let rollAgainst = trait.controlRating === "none" ? 0 : +trait.controlRating;
+    $entity.rollSkill(`${trait.name}`, rollAgainst);
+  }
 </script>
 
 <style>
+  .cr-roll {
+    position: absolute;
+    right: 10px;
+  }
 </style>
 
 <Tabs
@@ -69,7 +78,7 @@
           on:delete={(e) => {
             e.detail.entity.delete();
           }}>
-          <td class="main-list-col">
+          <td class="main-list-col relative">
             <Input
               config={{ clickToEdit: true }}
               entity={ownedItem ? ownedItem._entity : null}
@@ -79,6 +88,13 @@
               <span slot="no-edit">
                 {trait.name}
                 {trait.hasLevels ? trait.levels : ''}
+              </span>
+              <span
+                class:no-show={trait.controlRating === 'n/a'}
+                slot="no-edit"
+                class="fas fa-dice d6 roll-ico cr-roll"
+                on:click={rollCr(trait)}>
+                &nbsp;{trait.controlRating}
               </span>
             </Input>
           </td>

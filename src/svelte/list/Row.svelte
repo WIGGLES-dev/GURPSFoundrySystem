@@ -167,9 +167,11 @@
     dispatch('dragenter');
   }}
   on:dragleave={(e) => {
+    isHovered = false;
     dispatch('dragleave');
   }}
   on:dragover={(e) => {
+    isHovered = false;
     dragover.set(i);
     dispatch('dragover');
   }}

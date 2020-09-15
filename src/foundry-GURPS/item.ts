@@ -1,24 +1,24 @@
-import Editor from "./svelte/editors/Editor.svelte";
-import WeaponEditor from "./svelte/editors/WeaponEditor.svelte";
-import ColorPicker from "./svelte/ColorPicker.svelte";
+import Editor from "../svelte/editors/Editor.svelte";
+import WeaponEditor from "../svelte/editors/WeaponEditor.svelte";
+import ColorPicker from "../svelte/ColorPicker.svelte";
 
 import { _Actor } from "./sheet";
-import { getContainedBy, setContainedBy } from "./container";
-import { injectHelpers, svelte, arrayMove } from "./helpers";
+import { getChildren, getContainedBy, setContainedBy } from "../modules/lists/container";
+import { injectHelpers, svelte, arrayMove } from "../helpers";
 import { Writable, writable } from "svelte/store";
-import { _ChatMessage } from "./chat";
+import { CustomChatMessage } from "@modules/custom-chat/chat";
 import { FeatureType, Signature } from "g4elogic";
 
 @svelte(Editor)
 export class _ItemSheet extends ItemSheet {
     //@ts-ignore
     item: _Item;
-    app: Editor
+    svelteApp: Editor
 
     static get defaultOptions() {
         return mergeObject(ItemSheet.defaultOptions, {
             classes: ["GURPSItem"],
-            template: "systems/GURPS/holder.html",
+            template: "systems/GURPS/assets/templates/holder.html",
             width: 700,
             height: 900,
             submitOnChange: false
@@ -286,20 +286,21 @@ export class _Item extends Item {
                         icon: "",
                         condition: entity.data.type === "item",
                         async callback() {
+
                             const containedBy = getContainedBy(entity);
                             const location = entity.getProperty("data.location");
+                            const toUpdate = [entity, ...getChildren(entity)];
 
                             if (containedBy && location) {
-                                console.log(containedBy, location);
                                 await setContainedBy(entity, null);
                             }
-                            if (location === "carried") {
-                                entity.update({ "data.location": "other" }, {});
-                            } else if (location === "other") {
-                                entity.update({ "data.location": "carried" }, {});
-                            } else {
-                                entity.update({ "data.location": "carried" }, {})
-                            }
+                            
+                            entity.actor.updateEmbeddedEntity("OwnedItem", toUpdate.map(item => {
+                                return {
+                                    _id: item._id,
+                                    "data.location": location === "carried" ? "other" : "carried"
+                                }
+                            }));
                         }
                     },
                     {
@@ -354,6 +355,7 @@ export class _Item extends Item {
                         condition: () => this._id,
                         async callback() {
                             try {
+                                //@ts-ignore
                                 await navigator.clipboard.writeText(entity._id);
                             } catch (err) {
                                 ui.notifications.info("Your browser does not support clipboard operations")

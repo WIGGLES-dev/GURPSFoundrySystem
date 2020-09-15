@@ -56,7 +56,6 @@
 </script>
 
 <style>
-
 </style>
 
 <Tabs
@@ -100,31 +99,37 @@
       <Option disabled>Has Half Levels</Option>
     </Select>
 
-    <Input
-      label="Level"
-      width="50px"
-      {entity}
-      path="data.levels"
-      type="number"
-      min="0"
-      disabled={!traitIsLeveled} />
+    {#if traitIsLeveled}
+      <Input
+        label="Level"
+        width="50px"
+        {entity}
+        path="data.levels"
+        type="number"
+        min="0"
+        disabled={!traitIsLeveled} />
+    {/if}
 
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.has_half_level"
-      label="+1/2"
-      disabled={!traitHasHalfLevels} />
+    {#if traitHasHalfLevels}
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.has_half_level"
+        label="+1/2"
+        disabled={!traitHasHalfLevels} />
+    {/if}
 
-    <Input
-      label="Point Cost Per Level"
-      width="50px"
-      {entity}
-      path="data.points_per_level"
-      type="number"
-      disabled={!traitIsLeveled}
-      min="0" />
+    {#if traitIsLeveled}
+      <Input
+        label="Point Cost Per Level"
+        width="50px"
+        {entity}
+        path="data.points_per_level"
+        type="number"
+        disabled={!traitIsLeveled}
+        min="0" />
+    {/if}
 
     <Checkbox
       label="Round Down"
@@ -133,48 +138,54 @@
       off="false"
       disabled={true}
       path="data.round_down" />
-      
-    <Input disabled={true} label="Total" />
+
     <Textarea {entity} path="data.notes" label="Notes" cols="30" rows="1" />
     <ChipList {entity} path="data.categories" label="Categories" />
-    <Select {entity} path="data.cr" label="Self-Control Roll">
-      <option value="0">CR: N/A (Cannot Resist)</option>
-      <option value="6">CR: 6 (Resist Rarely)</option>
-      <option value="9">CR: 9 (Resist Fairly Often)</option>
-      <option value="12">CR: 12 (Resist Often)</option>
-      <option value="15">CR: 15 (Resist Almost All The Time)</option>
-      <option value="null">None Required</option>
-    </Select>
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.mental"
-      label="Mental" />
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.Physical"
-      label="Physical" />
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.social"
-      label="Social" />
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.exotic"
-      label="Exotic" />
-    <Checkbox
-      {entity}
-      on="true"
-      off="false"
-      path="data.supernatural"
-      label="Supernatural" />
+
+    {#if !/disad|quirk/i.test($entity
+        .getProperty(`data.categories`)
+        .toString())}
+      <Select {entity} path="data.cr" label="Self-Control Roll">
+        <option value="none">CR: N/A (Cannot Resist)</option>
+        <option value="6">CR: 6 (Resist Rarely)</option>
+        <option value="9">CR: 9 (Resist Fairly Often)</option>
+        <option value="12">CR: 12 (Resist Often)</option>
+        <option value="15">CR: 15 (Resist Almost All The Time)</option>
+        <option value="n/a">None Required</option>
+      </Select>
+    {/if}
+    <div class="flex">
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.mental"
+        label="Mental" />
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.Physical"
+        label="Physical" />
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.social"
+        label="Social" />
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.exotic"
+        label="Exotic" />
+      <Checkbox
+        {entity}
+        on="true"
+        off="false"
+        path="data.supernatural"
+        label="Supernatural" />
+    </div>
     <Input {entity} path="data.reference" type="text" label="Reference" />
   </TabPanel>
   <TabPanel>
@@ -196,5 +207,3 @@
     <RichTextEditor path="data.user_description" title="User Description" />
   </TabPanel>
 </Tabs>
-
-<!-- <pre>{JSON.stringify(entity.data, null, 2)}</pre> -->

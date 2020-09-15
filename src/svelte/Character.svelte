@@ -1,5 +1,5 @@
 <script>
-  import { Character } from "../sheet";
+  import { Character } from "../foundry-GURPS/sheet";
   import { setContext } from "svelte";
   import { Tabs, TabList, TabPanel, Tab } from "./tabs/tabs";
 
@@ -14,6 +14,9 @@
   import Pools from "./Pools";
   import Biography from "./Biography";
   import CharacterCombat from "./CharacterCombat";
+
+  import ChangeLog from "../../CHANGELOG.md";
+  import Info from "../../INFO.md";
 
   import { RichTextEditor, Input, FilePicker, Textarea } from "./form/form";
 
@@ -129,6 +132,8 @@
       <TabList>
         <Tab index={0}>Attributes</Tab>
         <Tab index={1}>Options</Tab>
+        <Tab index={2}>Changelog</Tab>
+        <Tab index={3}>Project Info</Tab>
       </TabList>
       <TabPanel>
         <ul>
@@ -139,6 +144,12 @@
       </TabPanel>
       <TabPanel>
         <h1>Under Construction</h1>
+      </TabPanel>
+      <TabPanel>
+        {@html ChangeLog}
+      </TabPanel>
+      <TabPanel>
+        {@html Info}
       </TabPanel>
     </Tabs>
   </TabPanel>

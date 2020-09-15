@@ -49,7 +49,7 @@
           <Option value={FeatureType.attributeBonus}>
             Gives an attribute bonus of
           </Option>
-          <Option value={FeatureType.damageResistanceBonus}>
+          <Option value={FeatureType.damageResistanceBonus} disabled={true}>
             Gives a DR bonus of
           </Option>
           <Option value={FeatureType.reactionBonus} disabled={true}>
@@ -143,7 +143,7 @@
             path="data.features"
             array={{ index: i, property: 'specialization' }} />
         </div>
-      {:else if feature.type === FeatureType.damageResistanceBonus}10{/if}
+      {:else if feature.type === FeatureType.damageResistanceBonus}{/if}
     </div>
   {/each}
 </div>

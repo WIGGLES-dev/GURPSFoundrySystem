@@ -6,7 +6,6 @@
 </script>
 
 <style>
-
 </style>
 
 <Input {entity} path="data.name" type="text" label="Name" />

@@ -1,7 +1,6 @@
 import { createPopper } from "@popperjs/core";
 import jsonQuery from "json-query";
-import { deleteDeep, removeReferenceFromParent } from "./container";
-import { types } from "util";
+import { deleteDeep, removeReferenceFromParent } from "./modules/lists/container";
 
 export function fixed6(number: string | number) {
     let ifString;
@@ -42,7 +41,6 @@ export function ownedItemsByType(actor: Actor, ...types: string[]): Item[] {
  * @param list a list of object that must have a listIndex property
  */
 export function indexSort(list: any[], property = "listIndex") {
-
     return list.sort((a, b) => a[property] - b[property])
 }
 
@@ -334,7 +332,7 @@ export function createContextMenu(node: HTMLElement, { menuItems, selector, even
 export function svelte(app: any) {
     return function (constructor: new () => Application): any {
         return class extends constructor {
-            app: any
+            svelteApp: any
             actor: any
             item: any
             entity: string
@@ -344,20 +342,6 @@ export function svelte(app: any) {
                 //@ts-ignore
                 super(...args);
             }
-
-            async _renderInner(data: any, options: any) {
-                //@ts-ignore
-                let html = await super._renderInner(data, options) as JQuery<HTMLElement>;
-                this.app = new app({
-                    target: html.get(0),
-                    props: {
-                        entity: this?.item?._entity ?? this?.actor?._entity ?? null,
-                        GURPS: this?.actor?.GURPS ?? null
-                    }
-                })
-                return html as JQuery<HTMLElement>
-            }
-
             _getHeaderButtons() {
                 return [].concat(this.customHeaderButtons(), super._getHeaderButtons())
             }
@@ -371,6 +355,19 @@ export function svelte(app: any) {
                 }
             }
 
+            async _renderInner(data: any, options: any) {
+                //@ts-ignore
+                let html = await super._renderInner(data, options) as JQuery<HTMLElement>;
+                this.svelteApp = new app({
+                    target: html.get(0),
+                    props: {
+                        entity: this?.item?._entity ?? this?.actor?._entity ?? null,
+                        GURPS: this?.actor?.GURPS ?? null
+                    }
+                })
+                return html
+            }
+
             render(force: boolean = false, options: any) {
                 if (!this.rendered) return super.render(force, options);
 
@@ -381,7 +378,7 @@ export function svelte(app: any) {
                 const entity = (this.item || this.actor);
                 entity._entity.set(entity);
                 actor?.updateGURPS();
-                this.app.$set({ entity: entity._entity });
+                this.svelteApp.$set({ entity: entity._entity });
 
                 Hooks.call(`render${this.options.baseApplication}`, this, this.element, {});
 

@@ -1,7 +1,8 @@
 {
     "trait": {
         "templates": [
-            "notable"
+            "notable",
+            "list item"
         ],
         "type": "advantage",
         "name": "",
@@ -12,7 +13,8 @@
         "social": false,
         "enabled": true,
         "base_points": 0,
-        "cr": 12,
+        "points_per_level": 0,
+        "cr": "n/a",
         "levels": 1,
         "has_levels": false,
         "has_half_level": false,

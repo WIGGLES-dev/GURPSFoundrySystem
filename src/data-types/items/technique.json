@@ -1,8 +1,9 @@
 {
     "technique": {
         "templates": [
-            "skill_like",
-            "notable"
+            "skill-like",
+            "notable",
+            "list item"
         ],
         "type": "technique",
         "limit": 0,

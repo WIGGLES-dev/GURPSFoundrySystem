@@ -6,8 +6,9 @@
 
   import Input from "./form/Input";
   import { fixed6 } from "../helpers.ts";
-  import { fixIndexes } from "../container.ts";
+  import { fixIndexes } from "../modules/lists/container.ts";
   import { List, Row } from "./list/list";
+  import Equipment from "./character-lists/Equipment";
 
   onMount(() => {
     fixIndexes($entity, ["item"]);
@@ -100,6 +101,7 @@
   <th slot="header">Total $</th>
   <th slot="header">Ref</th>
   {#each window.game.gurps4e.indexSort(location === 'other' ? $GURPS.otherEquipmentList.iterTop() : $GURPS.equipmentList.iterTop()) as equipment, i (equipment.foundryID)}
+    <!-- <Equipment item={equipment} /> -->
     <Row
       let:item
       let:depth
