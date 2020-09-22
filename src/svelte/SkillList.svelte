@@ -2,6 +2,7 @@
   import Input from "./form/Input";
   import { List, Row } from "./list/list.ts";
   import { getContext } from "svelte";
+  import { Roller } from "@GURPSFoundry/rolling";
 
   const GURPS = getContext("GURPS");
   export let entity = getContext("entity") || null;
@@ -45,12 +46,12 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(technique.name, technique.calculateLevel(), []);
+            Roller.rollSkill($entity, technique);
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill(technique.name, technique.calculateLevel());
+            Roller.rollSkill($entity, technique);
           }} />
         <Input
           entity={ownedItem._entity}
@@ -137,12 +138,12 @@
           class:no-show={!hovered || ownedItem.isLabel()}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(skill.name, skill.calculateLevel(), []);
+            Roller.rollSkill($entity, skill);
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill(skill.name, skill.calculateLevel());
+            Roller.rollSkill($entity, skill);
           }} />
         <Input
           entity={ownedItem._entity}

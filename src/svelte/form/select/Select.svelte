@@ -5,12 +5,13 @@
     getContext,
     onMount,
   } from "svelte";
+  import { getValue, createTooltip } from "../../../helpers.ts";
   import { readable } from "svelte/store";
   const dispatch = createEventDispatcher();
 
-  import { getValue } from "../../../helpers.ts";
-
+  export let tooltipText = null;
   export let noop = false;
+  export let defaultIndex = null;
   export let defaultValue = null;
   export let path = null;
   export let array = false;
@@ -20,8 +21,6 @@
   export let alsoUpdate = null;
   export let disabled = null;
   export let optionPreface = "";
-
-  export let selected;
 
   const options = [];
 
@@ -72,27 +71,25 @@
   }
 
   function setDefault(select) {
-    Array.from(select.options).forEach((option, i) => {
-      if (option.value == value) {
-        select.selectedIndex = i;
-      }
-    });
+    if (typeof defaultIndex === "number") {
+      select.selectedIndex = defaultIndex;
+    } else {
+      Array.from(select.options).forEach((option, i) => {
+        if (option.value == value) {
+          select.selectedIndex = i;
+        }
+      });
+    }
   }
 </script>
 
 <style>
-
 </style>
 
 <!-- svelte-ignore a11y-no-onchange -->
-<label class="GURPS-label" for={name}>
+<label class="GURPS-label" for={name} use:createTooltip={{ tooltipText }}>
   {label}
-  <select
-    {name}
-    on:change={update}
-    use:setDefault
-    {disabled}
-    bind:value={selected}>
+  <select {name} on:change={update} use:setDefault {disabled}>
     <slot />
   </select>
 </label>

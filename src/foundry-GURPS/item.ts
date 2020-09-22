@@ -67,12 +67,9 @@ export class _Item extends Item {
             ui.notifications.info("Unable to open page reference. Make sure that you've properly recorded it in the reference field.");
         }
     }
-
-
     embeddedUpdate() {
         this._entity.set(this);
     }
-
     getWeapons(): any[] {
         const weapons = getProperty(this.data, "data.weapons") ?? []
         return weapons.reduce((prev: any, cur: any) => {
@@ -131,15 +128,6 @@ export class _Item extends Item {
             return prev
         }, { melee: [], ranged: [] })
     }
-
-    roll() {
-        switch (this.data.type) {
-            case "skill":
-
-            default:
-        }
-    }
-
     getFeatures() {
         return getProperty(this.data, "data.features") || []
     }
@@ -215,7 +203,6 @@ export class _Item extends Item {
         list = list.filter((item: any) => item._id !== id);
         return this.update({ [path]: duplicate(list) }, null);
     }
-
     getGURPSObject() {
         try {
             return this.actor.GURPS.getElementById("foundryID", this._id)
@@ -223,14 +210,12 @@ export class _Item extends Item {
             return null
         }
     }
-
     getIndex(): number {
         return this.getFlag("GURPS", "index")
     }
     async setIndex(index: number): Promise<_Item> {
         return this.update({ "flags.GURPS.index": index }, null) as Promise<_Item>
     }
-
     isLabel() { return this.getFlag("GURPS", "is_label"); }
     /**
      * Rearrange a list of indexes and flags in a batch to keep socket requests to a minimum
@@ -294,7 +279,7 @@ export class _Item extends Item {
                             if (containedBy && location) {
                                 await setContainedBy(entity, null);
                             }
-                            
+
                             entity.actor.updateEmbeddedEntity("OwnedItem", toUpdate.map(item => {
                                 return {
                                     _id: item._id,
@@ -323,22 +308,6 @@ export class _Item extends Item {
                                 target: document.body,
                                 props: { entity: entity._entity }
                             })
-                        }
-                    },
-                    {
-                        name: `Roll`,
-                        icon: '<i class="fas fa-dice-d6"></i>',
-                        condition: () => !isLabel && ["skill", "technique", "spell"].includes(entity.data.type),
-                        callback() {
-                            let skillike = entity.getGURPSObject();
-                            if (skillike.isTechnique) {
-                                ui.notifications.warn("Please roll from the skill list for now");
-                                return false
-                            }
-                            entity.actor.rollSkill(
-                                skillike.name,
-                                skillike.calculateLevel()
-                            )
                         }
                     },
                     {

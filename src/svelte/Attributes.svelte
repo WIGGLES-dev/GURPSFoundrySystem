@@ -1,5 +1,6 @@
 <script>
   import { getContext } from "svelte";
+  import { Roller } from "@GURPSFoundry/rolling";
   import { RichTextEditor, Input, FilePicker } from "./form/form";
   import { Signature } from "g4elogic";
 
@@ -39,9 +40,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Strength', $GURPS
+        on:click={() => Roller.customRoll($entity, $GURPS
               .getAttribute(Signature.ST)
-              .calculateLevel())} />
+              .calculateLevel(), 'Strength')} />
     </Input>
   </div>
   <div class="attribute dexterity">
@@ -56,9 +57,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Dexterity', $GURPS
-              .getAttribute(Signature.DX)
-              .calculateLevel())} />
+        on:click={() => Roller.customRoll($entity, $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel(), 'Dexterity')} />
     </Input>
   </div>
   <div class="attribute intelligence">
@@ -73,9 +74,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Intelligence', $GURPS
-              .getAttribute(Signature.IQ)
-              .calculateLevel())} />
+        on:click={() => Roller.customRoll($entity, $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel(), 'Intelligence')} />
     </Input>
   </div>
   <div class="attribute health">
@@ -90,9 +91,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Health', $GURPS
-              .getAttribute(Signature.HT)
-              .calculateLevel())} />
+        on:click={() => Roller.customRoll($entity, $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel(), 'Health')} />
     </Input>
   </div>
   <div class="attribute move">
@@ -134,9 +135,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Will', $GURPS
-              .getAttribute(Signature.Will)
-              .calculateLevel())} />
+        on:click={() => Roller.customRoll($entity, $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel(), 'Will')} />
     </Input>
   </div>
   <div class="attribute perception">
@@ -151,9 +152,9 @@
       <span
         slot="label-text"
         class="fas fa-dice d6 roll-ico"
-        on:click={() => $entity.rollSkill('Perception', $GURPS
-              .getAttribute(Signature.Per)
-              .calculateLevel())} />
+        on:click={() => Roller.customRoll($entity, $GURPS
+              .getAttribute(Signature.ST)
+              .calculateLevel(), 'Perception')} />
     </Input>
   </div>
   <div class="attribute hitpoints">

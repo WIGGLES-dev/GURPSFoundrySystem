@@ -1,20 +1,17 @@
 <script>
-  import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
 
-  import Damage from "@components/chat/Damage";
+  import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
+  import Attack from "@components/chat/Attack";
   import Skill from "@components/chat/Skill";
+  import Timer from "./ContentTemplates/Timer";
 
   export let message = null;
+  export let hide = false;
 
   let sender = game.users.get(message.data.user);
-  let userAvatar = sender.avatar;
-  let aliasAvatar = sender.character
-    ? sender.character.getProperty("img")
-    : null;
-
-  let avatar = aliasAvatar || userAvatar;
-
-  let isWhisper = getProperty(message, "data.whisper.length");
+  let isWhisper = message.data.whisper.length;
   let whisperTo = message.data.whisper.map((u) => {
     let user = game.users.get(u);
     return user ? user.name : null;
@@ -33,23 +30,31 @@
   }
   let hasHTMLContent = message.data.content.startsWith("<");
 
-  export let rollComponent = false;
-  export let rollData = null;
-
   function getRollComponent(type) {
     switch (type) {
-      case "Damage":
-        return Damage;
+      case "attack":
+        return Attack;
+      case "skill":
+        return Skill;
+      case "timer":
+        return Timer;
     }
   }
 </script>
 
 <style>
+  .pinned {
+    color: red;
+  }
+  .pinned:hover {
+    color: yellow;
+  }
 </style>
 
 {#if isVisible}
   <li
     style="border-color: {borderColor};"
+    class:no-show={hide}
     class="message flexcol"
     class:ic={window.CONST.CHAT_MESSAGE_TYPES.IC}
     class:emote={window.CONST.CHAT_MESSAGE_TYPES.EMOTE}
@@ -60,7 +65,7 @@
       <h4 class="message-sender">{message.alias}</h4>
       <span class="message-metadata">
         <time
-          class="message-timestamp">{window.timeSince(message.data.timestamp)}</time>
+          class="message-timestamp">{timeSince(message.data.timestamp)}</time>
         {#if window.game.user.isGM}
           <a class="button message-delete"> <i class="fas fa-trash" /></a>
         {/if}
@@ -73,16 +78,15 @@
       {/if}
     </header>
     <div class="message-content">
-      {#if message.rollType()}
+      {#if message.messageType()}
         <svelte:component
-          this={getRollComponent(message.rollType())}
-          {message}
-          {rollData} />
+          this={getRollComponent(message.messageType())}
+          {message} />
       {:else if message.roll}
         {#await message.roll.render() then roll}
           {@html roll}
         {/await}
-      {:else if hasHTMLContent || (message.data.content && !rollComponent)}
+      {:else if hasHTMLContent || message.data.content}
         {@html message.data.content}
       {/if}
     </div>

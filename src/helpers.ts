@@ -28,9 +28,6 @@ export function formatModList(mods: number[]) {
         return prev
     }, "")
 }
-export function formatSkill() { }
-export function formatTrait() { }
-export function formatEquipment() { }
 
 export function ownedItemsByType(actor: Actor, ...types: string[]): Item[] {
     return actor.items.filter((item: Item) => types.includes(item.data.type));

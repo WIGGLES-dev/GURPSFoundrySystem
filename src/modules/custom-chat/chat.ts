@@ -1,29 +1,22 @@
-import Message from "./svelte/Message.svelte"
-import SvelteChatLog from "./svelte/ChatLog.svelte";
+import Message from "./components/Message.svelte"
+import SvelteChatLog from "./components/ChatLog.svelte";
 import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
-import { svelte } from "helpers";
+import { tick } from "svelte";
 
+export function init() {
+
+}
 
 export class CustomChatMessage extends ChatMessage {
     constructor(data: EntityData<any>, options: any) {
         super(data, options);
     }
 
-    static async create(data: any, options?: any) {
-        let message = await super.create(data, options);
-        if (message instanceof CustomChatMessage) {
-            // if (data.roll instanceof SuccessRoll) {
-            //     await message.setFlag("GURPS", "type", "Skill");
-            //     await message.setFlag("GURPS", "roll_data", data.GURPSRollData || {})
-            // }
-            await message.setFlag("GURPS", "roll_data", data.GURPSRollData || {})
-            await message.setFlag("GURPS", "type", data.GURPSRollType);
-        }
-        return message
-    }
-
-    rollType() { return this.getFlag("GURPS", "type") }
-
+    messageType() { return this.getFlag("GURPS", "message_type") }
+    messageData() { return this.getFlag("GURPS", "message_data") }
+    isOOC() { return this.user.name === this.alias }
+    isDiceRoll() { return this.roll || this.getFlag("GURPS", "is_roll") === true }
+    isTimer() { return this.getFlag("GURPS", "is_timer") === true }
     render: () => Promise<HTMLElement>
 }
 
@@ -38,22 +31,22 @@ export class CustomChatLog extends ChatLog {
         super(options);
     }
 
+    updateSvelte() {
+        this._renderBatch(100)
+    }
+
     async _renderInner(data) {
         // return super._renderInner(data);
         let html = await super._renderInner(data) as JQuery<HTMLElement>;
         this.svelteApp = new SvelteChatLog({
             target: html.get(0),
             props: {
+                vanilla: game.settings.get("GURPS", "custom_chat"),
                 ChatLog: this,
             },
         });
         return jQuery(this.svelteApp.chatPanel)
     }
-
-    // async _render(...args) {
-    //     if (this.rendered) return
-    //     super._render(...args)
-    // }
 
     /**
      * Override Chatlog postOne method to allow svelte to render the chat messages.
@@ -61,9 +54,15 @@ export class CustomChatLog extends ChatLog {
     async postOne(message: CustomChatMessage, notify: boolean = false) {
         if (!message.visible) return
         if (!this._lastId) this._lastId = message.id
+
         this.svelteApp.$set({ messages: [...this.svelteApp.messages, message] });
-        this.scrollBottom();
+
+        setTimeout(() => {
+            this.scrollBottom();
+        }, 100);
+
         if (notify) this.notify(message);
+        return message
     }
 
     async _renderBatch(size: number) {
@@ -86,7 +85,6 @@ export class CustomChatLog extends ChatLog {
             for (let i = targetIdx; i < lastIdx; i++) {
                 m = messages[i];
                 if (!m.visible) continue;
-
                 try {
                     html.push(m)
                 } catch (err) {
@@ -94,7 +92,7 @@ export class CustomChatLog extends ChatLog {
                 }
             }
 
-            this.svelteApp.$set({ ChatLog: this, messages: html });
+            this.svelteApp.$set({ messages: html });
 
             this._lastId = messages[targetIdx].id;
         }

@@ -1,5 +1,6 @@
 <script>
   import { getContext } from "svelte";
+  import { Roller } from "@GURPSFoundry/rolling";
 
   export let entity = getContext("entity") || null;
   const GURPS = getContext("GURPS");
@@ -8,23 +9,35 @@
   import { List, Row } from "./list/list.ts";
   import { Tabs, TabList, TabPanel, Tab } from "./tabs/tabs";
 
-  $: disadvantages = window.game.gurps4e.indexSort(
-    [].concat(
-      $GURPS.traitList.splitByType().disadvantages,
-      $GURPS.traitList.splitByType().quirks
-    )
+  $: advantages = window.game.gurps4e.indexSort(
+    $GURPS.traitList
+      .iter()
+      .filter(
+        (trait) =>
+          trait.adjustedPoints() >= 0 ||
+          (trait.adjustedPoints() >= 0 &&
+            /advantage|perk/i.test(Array.from(trait.categories)))
+      )
   );
 
-  $: advantages = window.game.gurps4e.indexSort(
-    [].concat(
-      $GURPS.traitList.splitByType().advantages,
-      $GURPS.traitList.splitByType().perks
-    )
+  $: disadvantages = window.game.gurps4e.indexSort(
+    $GURPS.traitList
+      .iter()
+      .filter(
+        (trait) =>
+          trait.adjustedPoints() < 0 ||
+          (trait.adjustedPoints() < 0 &&
+            /quirk|disadvantage/i.test(Array.from(trait.categories)))
+      )
   );
+
+  $: other = $GURPS.traitList
+    .iter()
+    .filter((trait) => ![...advantages, ...disadvantages].includes(trait));
 
   function rollCr(trait) {
     let rollAgainst = trait.controlRating === "none" ? 0 : +trait.controlRating;
-    $entity.rollSkill(`${trait.name}`, rollAgainst);
+    Roller.customRoll($entity, rollAgainst, `Control Save vs. ${trait.name}`);
   }
 </script>
 
@@ -134,7 +147,7 @@
       </th>
       <th slot="header">Pts</th>
       <th slot="header">Ref</th>
-      {#each advantages as trait, i (trait.foundryID)}
+      {#each [...advantages, ...other] as trait, i (trait.foundryID)}
         <Row
           disabled={trait.disabled}
           colspan="5"

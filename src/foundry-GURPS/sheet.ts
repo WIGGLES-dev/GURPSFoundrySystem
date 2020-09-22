@@ -7,9 +7,11 @@ import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";
 import SuccessRollRenderer from "gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer";
 import { injectHelpers, svelte, ownedItemsByType, formatModList } from "../helpers";
 import WeaponEditor from "../svelte/editors/WeaponEditor.svelte";
-import AttackDialog from "../svelte/AttackDialog.svelte";
+import AttackDialog from "../svelte/dialogs/AttackDialog.svelte";
 import ModifierPrompt from "../svelte/dialogs/ModifierPrompt.svelte";
 import { getDragContext } from "../dragdrop";
+
+import { Roller } from "@GURPSFoundry/rolling";
 
 @svelte(_Sheet)
 export class _ActorSheet extends ActorSheet {
@@ -172,7 +174,7 @@ export class _Actor extends Actor {
             useReducedSwing = false,
             useThrustEqualsSwingMinus2 = false,
             diceIcon = "fas fa-dice d6 roll-ico",
-            
+
         } = this.getProperty("data.config");
     }
     updateGURPS() {
@@ -207,50 +209,24 @@ export class _Actor extends Actor {
     getWeapons() {
         const entity = this
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
-            edit(entity) {
-                new WeaponEditor({
-                    target: document.body,
-                    props: {
-                        entity,
-                        weapon
-                    }
-                })
-            },
-            skillLevel: () => {
-                let level = weapon.getBestAttackLevel();
-                return level
+            skillLevel() {
+                return this.getBestAttackLevel();
             },
             rollParry() {
-                entity.rollSkill(
-                    `Parry With ${weapon.owner.name}`,
-                    weapon.getParryLevel(),
-                    [+weapon.parry]
-                )
+                Roller.customRoll(entity, weapon.getParryLevel(), `Parry With ${weapon.owner.name}`, [{ modifier: `+${weapon.parry}`, description: "Parry bonus" }]);
             },
             rollBlock() {
-                entity.rollSkill(
-                    `Block With ${this.owner.name}`,
-                    weapon.getBlockLevel(),
-                    [+weapon.block]
-                )
+                Roller.customRoll(entity, weapon.getBlockLevel(), `Block With ${weapon.name}`, [{ modifier: `+${weapon.block}`, description: "DB" }]);
             },
             rollSkill() {
-                entity.rollSkill(
-                    `${weapon.owner.name} ${weapon.usage}`,
-                    this.skillLevel(),
-                    [weapon.skillMod || 0],
-                    "attack",
-                    { weapon }
-                );
+                Roller.customRoll(entity, weapon.getBestAttackLevel(), `${weapon.usage} with ${weapon.owner.name}`, [], {
+                    dialog: "attack", props: {
+                        weapon
+                    }
+                });
             },
             rollDamage: () => {
-                this.rollDamage({
-                    damage: weapon.damage,
-                    damageType: weapon.damageType,
-                    type: weapon.getType(),
-                    weaponName: weapon.owner.name,
-                    weaponUsage: weapon.usage
-                })
+                Roller.rollDamage(entity, weapon);
             },
         }));
         return {
@@ -258,72 +234,8 @@ export class _Actor extends Actor {
             melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
         }
     }
-    rollSkill(trait: string, level: number, modifiers: number[] = [], modType = "", data: any = {}) {
-        switch (modType) {
-            case "attack":
-                const modifierDialog = new AttackDialog({
-                    target: document.body,
-                    props: {
-                        type: "attack",
-                        weapon: data.weapon ? data.weapon : null
-                    }
-                });
-                modifierDialog.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, formatModList([...e.detail, ...modifiers]));
-                });
-                break
-            default:
-                const modifierPrompt = new ModifierPrompt({
-                    target: document.body,
-                });
-                modifierPrompt.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, formatModList([e.detail]));
-                })
-        }
-    }
-    private rollAndRender(trait: string, level: number, modifiers: string) {
-        try {
-            let roll;
-            try {
-                roll = new SuccessRoll({ level, trait, modifiers });
-            } catch (err) {
-                roll = new SuccessRoll({ level, trait, modifiers: null });
-                ui.notifications.warn("Your modifier is invalid");
-            }
-            roll.roll();
-            let renderer = new SuccessRollRenderer();
-            renderer.render(roll, { template: "systems/GURPS/assets/templates/templates_roll.html" }).then((html) => {
-                ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER })
-            });
-        } catch (err) {
-            ui.notifications.error(err)
-        }
-    }
     dodge() {
         let dodgeScore = Math.floor(this.GURPS.getAttribute(Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3);
-        this.rollSkill("Dodge", dodgeScore);
-    }
-    async rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
-        const swing = this.GURPS.getSwingDamage();
-        const thrust = this.GURPS.getThrustDamage();
-        try {
-            const roll = new Roll(damage, {
-                swing,
-                sw: swing,
-                thrust,
-                thr: thrust
-            });
-            return roll.toMessage({
-                GURPSRollType: "Damage", GURPSRollData: {
-                    type,
-                    damageType,
-                    weaponUsage,
-                    weaponName
-                }
-            })
-        }
-        catch (err) {
-            ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed")
-        }
+        Roller.customRoll(this, dodgeScore, "Dodge", []);
     }
 }

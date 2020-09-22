@@ -79,7 +79,7 @@ declare module "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll" {
          * @param {String} formula Success roll formula to be parsed, this can be passed instead of the previous three parameters
          */
 
-        constructor({ level, trait, modifiers, formula }: SuccessData)
+        constructor({ level, trait, modifiers, modList, formula }: SuccessData)
 
         /**
         * Create a success roll object by parsing a formula based on the notation for skill levels published on sample characters in some GURPS supplements.
@@ -135,12 +135,12 @@ declare module "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll" {
          * @returns {SuccessRoll} Self
          */
         roll(): SuccessRoll
-
     }
     interface SuccessData {
         level: number,
         trait: string,
-        modifiers: string
+        modifiers?: string
+        modList?: { modifier: string, description: string }[]
         formula?: string
     }
 }

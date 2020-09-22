@@ -2,6 +2,7 @@
   import { List, Row } from "./list/list.ts";
   import { getContext } from "svelte";
   import { Input } from "./form/form";
+  import { Roller } from "@GURPSFoundry/rolling";
 
   const GURPS = getContext("GURPS");
   const entity = getContext("entity");
@@ -11,8 +12,17 @@
   $: spellConcentrationPenalty =
     ($entity.getProperty("data.penalties.concentration_spells") || 0) * 3;
 
-  const getRollMod = () =>
-    spellBonus - spellOnPenalty - spellConcentrationPenalty;
+  const getRollMod = () => [
+    { modifier: `+${spellBonus}`, description: "Magery bonus" },
+    {
+      modifier: `-${spellOnPenalty}`,
+      description: `Penalty for spells on`,
+    },
+    {
+      modifier: `-${spellConcentrationPenalty * 3}`,
+      description: `Penalty for spells concentrated on`,
+    },
+  ];
 </script>
 
 <style>
@@ -79,12 +89,12 @@
           class:no-show={!hovered || isLabel}
           class="fas fa-dice d6 roll-ico"
           on:contextmenu|capture={(e) => {
-            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
+            Roller.rollSkill($entity, spell, getRollMod());
             e.stopImmediatePropagation();
             e.preventDefault();
           }}
           on:click={(e) => {
-            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
+            Roller.rollSkill($entity, spell, getRollMod());
           }} />
         <Input
           entity={ownedItem._entity}

@@ -11,6 +11,7 @@
         "legality_class": "",
         "value": 0,
         "weight": 0,
-        "location": "carried"
+        "location": "carried",
+        "is_ammunition": false
     }
 }

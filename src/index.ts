@@ -43,13 +43,27 @@ function init() {
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("GURPS", _ItemSheet, { makeDefault: true });
 
-
+    game.settings.register("GURPS", "custom_chat", {
+        name: "Custom Chat Switch",
+        hint: "Turns on or off custom chat",
+        scope: "client",
+        config: true,
+        type: Boolean,
+        choices: {
+            "on": "Custom Chat On",
+            "off": "Custom Chat Off"
+        },
+        default: "on",
+        //@ts-ignore
+        onChange: (value) => ui.chat.svelteApp.$set({ vanilla: value })
+    });
 }
 
 function ready() {
-    if (isNewVersion()) {
-        alert("New Version");
+    if (localStorage.getItem("show_welcome_dialog") !== "false") {
+
     }
+
     new WelcomeDialog({
         target: document.body,
         props: {}

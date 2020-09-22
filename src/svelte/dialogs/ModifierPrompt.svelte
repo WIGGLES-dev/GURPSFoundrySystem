@@ -3,12 +3,20 @@
   import { Input } from "../form/form";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
-  let modifier = [];
+
+  let modifier = 0;
+
   const buttons = {
     submit: {
       icon: '<i class="fas fa-check"></i>',
       label: "Roll",
-      callback: () => dispatch("roll", modifier),
+      callback: () =>
+        dispatch("roll", [
+          {
+            modifier: `${modifier >= 0 ? "+" : ""}${modifier}`,
+            description: "Modifier",
+          },
+        ]),
     },
   };
 </script>

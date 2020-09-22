@@ -1,6 +1,6 @@
 <script>
-  import Dialog from "./Dialog";
-  import { Input } from "./form/form";
+  import Dialog from "@components/Dialog";
+  import { Input } from "../form/form";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
@@ -15,17 +15,30 @@
 
   function sendDiceRoll() {
     return [
-      deceptiveAttacks * -2,
-      rapidStrikes * -(hasWeaponMaster ? 3 : 6),
-      telegraphed ? 4 : 0,
-      otherMods,
+      {
+        modifier: `${deceptiveAttacks === 0 ? "+" : "-"}${
+          deceptiveAttacks * 2
+        }`,
+        description: "Deceptive attacks",
+      },
+      {
+        modifier: `${rapidStrikes === 0 ? "+" : "-"}${
+          rapidStrikes * (hasWeaponMaster ? 3 : 6)
+        }`,
+        description: "Rapid strikes",
+      },
+      { modifier: `+${telegraphed ? 4 : 0}`, description: "Is telegraphed" },
+      {
+        modifier: `${otherMods >= 0 ? "+" : "-"}${otherMods}`,
+        description: "Other mods",
+      },
     ];
   }
 
   const buttons = {
     submit: {
       icon: '<i class="fas fa-check"></i>',
-      label: "Roll",
+      label: "roll",
       callback: () => dispatch("roll", sendDiceRoll()),
     },
   };
@@ -36,7 +49,7 @@
 
 <Dialog
   on:close
-  title="Attck Roll"
+  title="Attack Roll"
   {buttons}
   overrideSubmit={true}
   height={300}
@@ -53,7 +66,12 @@
     <span>Other Mods</span>
     <input type="number" bind:value={otherMods} />
     {#if weapon.getType() === 'ranged_weapon'}
-      <select bind:value={ammoSource} />
+      <span>Ammo Source To Use</span>
+      <select>
+        {#each weapon.getAmmoSources() || [] as ammoSource, i (ammoSource.uuid)}
+          <option value={ammoSource.foundryID}>{ammoSource.name}</option>
+        {/each}
+      </select>
     {/if}
   </div>
 </Dialog>

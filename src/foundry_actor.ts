@@ -155,6 +155,12 @@ export class FoundryEntity extends Serializer {
             tWeapon.load(weapon, entity);
         });
 
+        if (!entity.GURPSUpdater) {
+            entity.GURPSUpdater = skill.subscribe(async (skill) => {
+                entity.update(skill.save(), { diff: false });
+            }).unsubscribe;
+        }
+
         if (getProperty(data, "data.type")?.includes("_container")) {
             return entity.getFlag("GURPS", "children")?.map((itemID: string) => entity?.actor?.getOwnedItem(itemID)) as Item[]
         }
@@ -274,7 +280,8 @@ export class FoundryEntity extends Serializer {
             //     (modifier: any) => equipment.modifiers.add(new EquipmentModifier(equipment).load(modifier))
             // );
 
-            equipment.equipped = getProperty(data, "data.equipped")
+            equipment.equipped = getProperty(data, "data.equipped");
+            equipment.isAmmunition = getProperty(data, "data.is_ammunition");
             equipment.description = getProperty(data, "data.description");
             equipment.quantity = getProperty(data, "data.quantity");
             equipment.value = +(getProperty(data, "data.value"));
@@ -334,7 +341,7 @@ export class FoundryEntity extends Serializer {
                     tech_level: equipment.techLevel,
                     legality_class: equipment.legalityClass,
                     reference: equipment.reference,
-                    
+
                     weapons: Array.from(equipment.weapons).map(weapon => weapon.save({})),
                     features: Array.from(equipment.features).map(feature => feature.save({}))
                 }
@@ -484,7 +491,7 @@ export class FoundryEntity extends Serializer {
         weapon.foundryID = data._id;
         weapon.attackBonus = +data.weapon_skill_mod || 0;
 
-        weapon.strength = getProperty(data, "strength_requirement")
+        weapon.strength = getProperty(data, "strength_requirement") || "10";
         weapon.usage = getProperty(data, "usage");
         weapon.damage = getProperty(data, "damage");
 

@@ -16,6 +16,7 @@
   export let callback = null;
   export let value = null;
   export let disabled = null;
+  export let selected = null;
 
   const onSelect = () => {
     dispatch("select", value);
@@ -27,7 +28,7 @@
 
 </style>
 
-<option use:registerOption={{ onSelect }} {value} {disabled}>
+<option use:registerOption={{ onSelect }} {value} {disabled} {selected}>
   {$optionPreface}
   <slot />
 </option>

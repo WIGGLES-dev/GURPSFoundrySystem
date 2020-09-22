@@ -1,15 +1,13 @@
 <script>
   export let message = null;
-
   const roll = message.roll;
   const { type, weaponName, damageType, weaponUsage } = message.getFlag(
     "GURPS",
-    "roll_data"
+    "message_data"
   );
 </script>
 
 <style>
-
 </style>
 
 <div class="dice-roll">

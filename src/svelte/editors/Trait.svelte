@@ -16,8 +16,8 @@
 
   export let entity = getContext("entity") || null;
 
-  let traitIsLeveled = getProperty($entity.data, "data.has_levels");
-  let traitHasHalfLevels = getProperty($entity.data, "data.has_half_level");
+  $: traitIsLeveled = getProperty($entity.data, "data.has_levels");
+  $: traitHasHalfLevels = getProperty($entity.data, "data.has_half_level");
 
   async function handleLevelSetting(index) {
     switch (index) {
@@ -94,9 +94,9 @@
       noop={true}
       defaultIndex={setLevelType()}
       label="Levels">
-      <Option>Has No Levels</Option>
-      <Option>Has Levels</Option>
-      <Option disabled>Has Half Levels</Option>
+      <Option selected={setLevelType() === 0}>Has No Levels</Option>
+      <Option selected={setLevelType() === 1}>Has Levels</Option>
+      <Option selected={setLevelType() === 2} disabled>Has Half Levels</Option>
     </Select>
 
     {#if traitIsLeveled}
@@ -142,18 +142,26 @@
     <Textarea {entity} path="data.notes" label="Notes" cols="30" rows="1" />
     <ChipList {entity} path="data.categories" label="Categories" />
 
-    {#if !/disad|quirk/i.test($entity
-        .getProperty(`data.categories`)
-        .toString())}
-      <Select {entity} path="data.cr" label="Self-Control Roll">
-        <option value="none">CR: N/A (Cannot Resist)</option>
-        <option value="6">CR: 6 (Resist Rarely)</option>
-        <option value="9">CR: 9 (Resist Fairly Often)</option>
-        <option value="12">CR: 12 (Resist Often)</option>
-        <option value="15">CR: 15 (Resist Almost All The Time)</option>
-        <option value="n/a">None Required</option>
-      </Select>
-    {/if}
+    <Select
+      tooltipText={/disad|quirk/i.test($entity
+          .getProperty(`data.categories`)
+          .toString()) ? null : `
+          Control Rating only available on disadvantages or quirks,
+          <br /> if still disabled add category Disadvantage/Quirk to the trait.
+          <br /> make CR roll icon go away by setting CR to none required`}
+      {entity}
+      path="data.cr"
+      label="Self-Control Roll"
+      disabled={!/disad|quirk/i.test($entity
+          .getProperty(`data.categories`)
+          .toString())}>
+      <option value="none">CR: N/A (Cannot Resist)</option>
+      <option value="6">CR: 6 (Resist Rarely)</option>
+      <option value="9">CR: 9 (Resist Fairly Often)</option>
+      <option value="12">CR: 12 (Resist Often)</option>
+      <option value="15">CR: 15 (Resist Almost All The Time)</option>
+      <option value="n/a">None Required</option>
+    </Select>
     <div class="flex">
       <Checkbox
         {entity}
