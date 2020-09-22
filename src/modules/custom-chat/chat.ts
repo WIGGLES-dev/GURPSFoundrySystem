@@ -41,7 +41,7 @@ export class CustomChatLog extends ChatLog {
         this.svelteApp = new SvelteChatLog({
             target: html.get(0),
             props: {
-                vanilla: game.settings.get("GURPS", "custom_chat"),
+                vanilla: !game.settings.get("GURPS", "custom_chat"),
                 ChatLog: this,
             },
         });

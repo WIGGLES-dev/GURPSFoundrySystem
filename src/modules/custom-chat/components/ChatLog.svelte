@@ -94,7 +94,8 @@
   id="chat"
   data-tab="chat"
   bind:this={chatPanel}>
-  {#if vanilla}
+  
+  {#if !vanilla}
     <div class="chat-sidebar-tabs">
       {#each tabs as tab, i (i)}
         <div

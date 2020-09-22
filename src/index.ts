@@ -55,7 +55,7 @@ function init() {
         },
         default: "on",
         //@ts-ignore
-        onChange: (value) => ui.chat.svelteApp.$set({ vanilla: value })
+        onChange: (value) => ui.chat.svelteApp.$set({ vanilla: !value })
     });
 }
 
