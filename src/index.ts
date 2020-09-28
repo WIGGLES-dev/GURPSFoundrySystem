@@ -57,17 +57,29 @@ function init() {
         //@ts-ignore
         onChange: (value) => ui.chat.svelteApp.$set({ vanilla: !value })
     });
+
+    game.settings.register("GURPS", "welcome_dialog", {
+        name: "Hide Welcome Dialog",
+        hint: "Will only show welcome dialog when system is updated",
+        scope: "client",
+        config: true,
+        type: Boolean,
+        choices: {
+            "yes": "Don't Show Welcome Dialog on Join Game",
+            "no": "Show Welcome Dialog on Join Game"
+        },
+        default: "no",
+        onChange: () => { }
+    })
 }
 
 function ready() {
-    if (localStorage.getItem("show_welcome_dialog") !== "false") {
-
+    if (!game.settings.get("GURPS", "welcome_dialog")) {
+        new WelcomeDialog({
+            target: document.body,
+            props: {}
+        });
     }
-
-    new WelcomeDialog({
-        target: document.body,
-        props: {}
-    });
 }
 
 export function isNewVersion() {

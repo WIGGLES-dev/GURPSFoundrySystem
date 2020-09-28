@@ -91,7 +91,7 @@
             <Option value="IQ">to IQ</Option>
             <Option value="HT">to HT</Option>
           </Select>
-          {#if ['ST', 'SS', 'SL'].includes(feature.attribute)}
+          {#if ['ST', 'SS', 'LS'].includes(feature.attribute)}
             <Select
               path="data.features"
               array={{ index: i, property: 'attribute' }}>

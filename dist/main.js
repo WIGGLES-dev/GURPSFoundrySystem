@@ -94,7 +94,7 @@
 /***/ (function(module, exports) {
 
 // Module
-var code = "<h2 id=\"122\">[1.2.2]</h2>\n<h2 id=\"added\">Added</h2>\n<ul>\n<li>changelog section</li>\n<li>project info section</li>\n<li>quick roll against disadvantage control rating</li>\n</ul>\n<h2 id=\"fixed\">Fixed</h2>\n<ul>\n<li>Bug that prevented the removal of equipment</li>\n<li>GCS Importer</li>\n</ul>\n";
+var code = "<h2 id=\"13\">[1.3]</h2>\n<h3 id=\"added\">Added</h3>\n<ul>\n<li>Beta custom chat log and option to revert to vanilla log. This introduces the ability to keep timers in the chat log and sort by IC/OOC messages</li>\n<li>All rolls from the sheet will be aliased</li>\n</ul>\n<h3 id=\"fixed\">Fixed</h3>\n<ul>\n<li>Bug where disadvantages and advantages would swap places</li>\n<li>Bug where CR was available for advantages but not for disadvantages </li>\n</ul>\n<h2 id=\"122\">[1.2.2]</h2>\n<h3 id=\"added-1\">Added</h3>\n<ul>\n<li>changelog section</li>\n<li>project info section</li>\n<li>quick roll against disadvantage control rating</li>\n</ul>\n<h3 id=\"fixed-1\">Fixed</h3>\n<ul>\n<li>Bug that prevented the removal of equipment</li>\n<li>GCS Importer</li>\n</ul>\n";
 // Exports
 module.exports = code;
 
@@ -2993,7 +2993,51 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "@use \"./templates_roll\";\ninput[type=\"number\"] {\n  background: rgba(0, 0, 0, 0.05);\n  padding: 1px 3px;\n  margin: 0px;\n  height: 24px;\n  color: #191813;\n  font-family: inherit;\n  font-size: inherit;\n  text-align: inherit;\n  line-height: inherit;\n  border: 1px solid #7a7971;\n  border-radius: 3px; }\n\nh2 {\n  min-height: 26px; }\n\n.flex {\n  display: flex; }\n\n.flex-col {\n  display: flex;\n  flex-direction: column; }\n\n.fas.fa-trash:hover {\n  color: red; }\n\n.GURPS-label {\n  box-sizing: border-box;\n  padding: 7px; }\n  .GURPS-label[data-label=\"true\"] span::after {\n    content: \":\"; }\n  .GURPS-label:hover {\n    background-color: #7a7971;\n    color: white; }\n    .GURPS-label:hover input,\n    .GURPS-label:hover textarea {\n      color: white; }\n\n.GURPSActor .relative {\n  position: relative; }\n\n.GURPSActor .no-show {\n  display: none; }\n\n.GURPSActor .is-row-label > td:not(.show-when-label):not(.main-list-col) {\n  opacity: 0; }\n\n.GURPSActor .main-list-col {\n  width: 100%; }\n\n.GURPSActor .click-to-edit {\n  padding: 0; }\n\n.GURPSActor tr.strikethrough td {\n  position: relative; }\n  .GURPSActor tr.strikethrough td:before {\n    content: \" \";\n    position: absolute;\n    top: 50%;\n    left: 0;\n    border-bottom: 1px solid red;\n    width: 100%; }\n\n.GURPSActor .roll-ico {\n  border: none; }\n  .GURPSActor .roll-ico:hover {\n    box-shadow: 0 0 8px red; }\n", "",{"version":3,"sources":["webpack://src/styles/global.scss"],"names":[],"mappings":"AAAA,uBAAI;AAEJ;EACI,+BAA+B;EAC/B,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,cAAc;EACd,oBAAoB;EACpB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,yBAAyB;EACzB,kBAAkB,EAAA;;AAGtB;EACI,gBAAgB,EAAA;;AAGpB;EACI,aAAa,EAAA;;AAGjB;EACI,aAAa;EACb,sBAAsB,EAAA;;AAG1B;EACI,UAAU,EAAA;;AAGd;EAKI,sBAAsB;EAYtB,YAAY,EAAA;EAjBhB;IAEQ,YACJ,EAAA;EAHJ;IAQQ,yBAAoC;IACpC,YAAY,EAAA;IATpB;;MAaY,YAAY,EAAA;;AAOxB;EAEQ,kBAAkB,EAAA;;AAF1B;EAMQ,aAAa,EAAA;;AANrB;EAUQ,UAAU,EAAA;;AAVlB;EAcQ,WAAW,EAAA;;AAdnB;EAkBQ,UAAU,EAAA;;AAlBlB;EAuBY,kBAAkB,EAAA;EAvB9B;IA0BgB,YAAY;IACZ,kBAAkB;IAClB,QAAQ;IACR,OAAO;IACP,4BAA4B;IAC5B,WAAW,EAAA;;AA/B3B;EAyCQ,YAAY,EAAA;EAzCpB;IAsCY,uBAAuB,EAAA","sourcesContent":["@use \"./templates_roll\";\r\n\r\ninput[type=\"number\"] {\r\n    background: rgba(0, 0, 0, 0.05);\r\n    padding: 1px 3px;\r\n    margin: 0px;\r\n    height: 24px;\r\n    color: #191813;\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n    text-align: inherit;\r\n    line-height: inherit;\r\n    border: 1px solid #7a7971;\r\n    border-radius: 3px;\r\n}\r\n\r\nh2 {\r\n    min-height: 26px;\r\n}\r\n\r\n.flex {\r\n    display: flex;\r\n}\r\n\r\n.flex-col {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.fas.fa-trash:hover {\r\n    color: red;\r\n}\r\n\r\n.GURPS-label {\r\n    &[data-label=\"true\"] span::after {\r\n        content: \":\"\r\n    }\r\n\r\n    box-sizing: border-box;\r\n\r\n    &:hover {\r\n        background-color: rgb(122, 121, 113);\r\n        color: white;\r\n\r\n        input,\r\n        textarea {\r\n            color: white;\r\n        }\r\n    }\r\n\r\n    padding: 7px;\r\n}\r\n\r\n.GURPSActor {\r\n    .relative {\r\n        position: relative;\r\n    }\r\n\r\n    .no-show {\r\n        display: none;\r\n    }\r\n\r\n    .is-row-label>td:not(.show-when-label):not(.main-list-col) {\r\n        opacity: 0;\r\n    }\r\n\r\n    .main-list-col {\r\n        width: 100%;\r\n    }\r\n\r\n    .click-to-edit {\r\n        padding: 0;\r\n    }\r\n\r\n    tr.strikethrough {\r\n        td {\r\n            position: relative;\r\n\r\n            &:before {\r\n                content: \" \";\r\n                position: absolute;\r\n                top: 50%;\r\n                left: 0;\r\n                border-bottom: 1px solid red;\r\n                width: 100%;\r\n            }\r\n        }\r\n    }\r\n\r\n    .roll-ico {\r\n        &:hover {\r\n            box-shadow: 0 0 8px red;\r\n        }\r\n\r\n        border: none;\r\n    }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".mouseover-anchor {\n  position: relative;\n  display: inline-block;\n  width: 100%; }\n\n.mouseover-anchor .mouseover-container {\n  visibility: hidden;\n  width: 100%;\n  text-align: center;\n  /* Position the mouseover text */\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 0;\n  /* Fade in mouseover */\n  opacity: 0;\n  transition: opacity 0.3s; }\n\n.mouseover {\n  display: inline-block;\n  background-color: #555;\n  color: #fff;\n  padding: 5px;\n  border-radius: 6px; }\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-style: solid;\n  border-color: #555 transparent transparent transparent; }\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n  visibility: visible;\n  opacity: 1; }\n\n:root {\n  --foundry-accent-color: #ff6400\r\n; }\n\ninput[type=\"number\"] {\n  background: rgba(0, 0, 0, 0.05);\n  padding: 1px 3px;\n  margin: 0px;\n  height: 24px;\n  color: #191813;\n  font-family: inherit;\n  font-size: inherit;\n  text-align: inherit;\n  line-height: inherit;\n  border: 1px solid #7a7971;\n  border-radius: 3px; }\n\nh2 {\n  min-height: 26px; }\n\n.flex {\n  display: flex; }\n\n.flex-col {\n  display: flex;\n  flex-direction: column; }\n\n.no-show {\n  display: none; }\n\n.fas:hover.fa-trash, .fas:hover.fa-map-pin {\n  color: red; }\n\n.GURPS-label {\n  box-sizing: border-box;\n  padding: 7px; }\n  .GURPS-label[data-label=\"true\"] span::after {\n    content: \":\"; }\n  .GURPS-label:hover {\n    background-color: #7a7971;\n    color: white; }\n    .GURPS-label:hover input,\n    .GURPS-label:hover textarea {\n      color: white; }\n\n.GURPSActor .relative {\n  position: relative; }\n\n.GURPSActor .is-row-label > td:not(.show-when-label):not(.main-list-col) {\n  opacity: 0; }\n\n.GURPSActor .main-list-col {\n  width: 100%; }\n\n.GURPSActor .click-to-edit {\n  padding: 0; }\n\n.GURPSActor tr.strikethrough td {\n  position: relative; }\n  .GURPSActor tr.strikethrough td:before {\n    content: \" \";\n    position: absolute;\n    top: 50%;\n    left: 0;\n    border-bottom: 1px solid red;\n    width: 100%; }\n\n.GURPSActor .roll-ico {\n  border: none; }\n  .GURPSActor .roll-ico:hover {\n    box-shadow: 0 0 8px red; }\n", "",{"version":3,"sources":["webpack://src/styles/templates_roll.css","webpack://src/styles/global.scss"],"names":[],"mappings":"AAAA;EACI,kBAAkB;EAClB,qBAAqB;EACrB,WAAW,EAAA;;AAGf;EACI,kBAAkB;EAClB,WAAW;EACX,kBAAkB;EAElB,gCAAA;EACA,kBAAkB;EAClB,UAAU;EACV,YAAY;EACZ,OAAO;EAEP,sBAAA;EACA,UAAU;EACV,wBAAwB,EAAA;;AAG5B;EACI,qBAAqB;EACrB,sBAAsB;EACtB,WAAW;EACX,YAAY;EACZ,kBAAkB,EAAA;;AAGtB,oBAAA;AACA;EACI,WAAW;EACX,kBAAkB;EAClB,SAAS;EACT,SAAS;EACT,iBAAiB;EACjB,iBAAiB;EACjB,mBAAmB;EACnB,sDAAsD,EAAA;;AAG1D,wEAAA;AACA;EACI,mBAAmB;EACnB,UAAU,EAAA;;AC3Cd;EACI;AAAuB,EAAA;;AAG3B;EACI,+BAA+B;EAC/B,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,cAAc;EACd,oBAAoB;EACpB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,yBAAyB;EACzB,kBAAkB,EAAA;;AAGtB;EACI,gBAAgB,EAAA;;AAGpB;EACI,aAAa,EAAA;;AAGjB;EACI,aAAa;EACb,sBAAsB,EAAA;;AAG1B;EACI,aAAa,EAAA;;AAGjB;EAIQ,UAAU,EAAA;;AAIlB;EAKI,sBAAsB;EAYtB,YAAY,EAAA;EAjBhB;IAEQ,YACJ,EAAA;EAHJ;IAQQ,yBAAoC;IACpC,YAAY,EAAA;IATpB;;MAaY,YAAY,EAAA;;AAOxB;EAEQ,kBAAkB,EAAA;;AAF1B;EAMQ,UAAU,EAAA;;AANlB;EAUQ,WAAW,EAAA;;AAVnB;EAcQ,UAAU,EAAA;;AAdlB;EAmBY,kBAAkB,EAAA;EAnB9B;IAsBgB,YAAY;IACZ,kBAAkB;IAClB,QAAQ;IACR,OAAO;IACP,4BAA4B;IAC5B,WAAW,EAAA;;AA3B3B;EAqCQ,YAAY,EAAA;EArCpB;IAkCY,uBAAuB,EAAA","sourcesContent":[".mouseover-anchor {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n}\n\n.mouseover-anchor .mouseover-container {\n    visibility: hidden;\n    width: 100%;\n    text-align: center;\n\n    /* Position the mouseover text */\n    position: absolute;\n    z-index: 1;\n    bottom: 125%;\n    left: 0;\n\n    /* Fade in mouseover */\n    opacity: 0;\n    transition: opacity 0.3s;\n}\n\n.mouseover {\n    display: inline-block;\n    background-color: #555;\n    color: #fff;\n    padding: 5px;\n    border-radius: 6px;\n}\n\n/* mouseover arrow */\n.mouseover-anchor .mouseover-container::after {\n    content: \"\";\n    position: absolute;\n    top: 100%;\n    left: 50%;\n    margin-left: -5px;\n    border-width: 5px;\n    border-style: solid;\n    border-color: #555 transparent transparent transparent;\n}\n\n/* Show the mouseover text when you mouse over the mouseover container */\n.mouseover-anchor:hover .mouseover-container {\n    visibility: visible;\n    opacity: 1;\n}","@import \"./templates_roll\";\r\n\r\n:root {\r\n    --foundry-accent-color: #ff6400\r\n}\r\n\r\ninput[type=\"number\"] {\r\n    background: rgba(0, 0, 0, 0.05);\r\n    padding: 1px 3px;\r\n    margin: 0px;\r\n    height: 24px;\r\n    color: #191813;\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n    text-align: inherit;\r\n    line-height: inherit;\r\n    border: 1px solid #7a7971;\r\n    border-radius: 3px;\r\n}\r\n\r\nh2 {\r\n    min-height: 26px;\r\n}\r\n\r\n.flex {\r\n    display: flex;\r\n}\r\n\r\n.flex-col {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.no-show {\r\n    display: none;\r\n}\r\n\r\n.fas:hover {\r\n\r\n    &.fa-trash,\r\n    &.fa-map-pin {\r\n        color: red;\r\n    }\r\n}\r\n\r\n.GURPS-label {\r\n    &[data-label=\"true\"] span::after {\r\n        content: \":\"\r\n    }\r\n\r\n    box-sizing: border-box;\r\n\r\n    &:hover {\r\n        background-color: rgb(122, 121, 113);\r\n        color: white;\r\n\r\n        input,\r\n        textarea {\r\n            color: white;\r\n        }\r\n    }\r\n\r\n    padding: 7px;\r\n}\r\n\r\n.GURPSActor {\r\n    .relative {\r\n        position: relative;\r\n    }\r\n\r\n    .is-row-label>td:not(.show-when-label):not(.main-list-col) {\r\n        opacity: 0;\r\n    }\r\n\r\n    .main-list-col {\r\n        width: 100%;\r\n    }\r\n\r\n    .click-to-edit {\r\n        padding: 0;\r\n    }\r\n\r\n    tr.strikethrough {\r\n        td {\r\n            position: relative;\r\n\r\n            &:before {\r\n                content: \" \";\r\n                position: absolute;\r\n                top: 50%;\r\n                left: 0;\r\n                border-bottom: 1px solid red;\r\n                width: 100%;\r\n            }\r\n        }\r\n    }\r\n\r\n    .roll-ico {\r\n        &:hover {\r\n            box-shadow: 0 0 8px red;\r\n        }\r\n\r\n        border: none;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ChatLog.svelte.css":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ChatLog.svelte.css ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".chat-sidebar-tabs.svelte-1heiklo.svelte-1heiklo{display:flex;flex:none}.chat-sidebar-tabs.svelte-1heiklo>.chat-item.svelte-1heiklo{text-align:center;padding:3px;align-self:center;flex:1}.timers.svelte-1heiklo.svelte-1heiklo{display:flex;flex:none;padding-top:5px}.fa-clock.svelte-1heiklo.svelte-1heiklo{flex:1;text-align:center}.fa-clock.svelte-1heiklo.svelte-1heiklo:hover{color:red}.active.svelte-1heiklo.svelte-1heiklo{box-shadow:0 0 10px var(--foundry-accent-color)}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhdExvZy5zdmVsdGUiLCJzb3VyY2VzIjpbIkNoYXRMb2cuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgVGltZXIgfSBmcm9tIFwiQG1vZHVsZXMvdGltZXIvdGltZXJcIjtcclxuICBpbXBvcnQgeyBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBNZXNzYWdlIGZyb20gXCIuL01lc3NhZ2VcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBDaGF0TG9nID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHZhbmlsbGEgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IG1lc3NhZ2VzID0gW107XHJcblxyXG4gICQ6IHZpc2libGVNZXNzYWdlcyA9IChhY3RpdmVUYWIpID0+IHtcclxuICAgIGlmICh2YW5pbGxhKSByZXR1cm4gbWVzc2FnZXM7XHJcbiAgICBzd2l0Y2ggKGFjdGl2ZVRhYikge1xyXG4gICAgICBjYXNlIDA6XHJcbiAgICAgICAgcmV0dXJuIG1lc3NhZ2VzLmZpbHRlcihcclxuICAgICAgICAgIChtZXNzYWdlKSA9PlxyXG4gICAgICAgICAgICBtZXNzYWdlLnJvbGwgfHwgKG1lc3NhZ2UuaXNEaWNlUm9sbCgpICYmICFtZXNzYWdlLmlzVGltZXIoKSlcclxuICAgICAgICApOyAvL3JvbGxzXHJcbiAgICAgIGNhc2UgMTpcclxuICAgICAgICByZXR1cm4gbWVzc2FnZXMuZmlsdGVyKChtZXNzYWdlKSA9PiBtZXNzYWdlLmRhdGEud2hpc3Blci5sZW5ndGgpOyAvL3doaXNwZXJzXHJcbiAgICAgIGNhc2UgMjpcclxuICAgICAgICByZXR1cm4gbWVzc2FnZXMuZmlsdGVyKFxyXG4gICAgICAgICAgKG1lc3NhZ2UpID0+ICFtZXNzYWdlLmlzT09DKCkgJiYgIW1lc3NhZ2UuaXNUaW1lcigpXHJcbiAgICAgICAgKTsgLy9pYyBtZXNzYWdlc1xyXG4gICAgICBjYXNlIDM6XHJcbiAgICAgICAgcmV0dXJuIG1lc3NhZ2VzLmZpbHRlcihcclxuICAgICAgICAgIChtZXNzYWdlKSA9PiBtZXNzYWdlLmlzT09DKCkgJiYgIW1lc3NhZ2UuaXNUaW1lcigpXHJcbiAgICAgICAgKTsgLy9vb2MgbWVzc2FnZXNcclxuICAgICAgY2FzZSA0OlxyXG4gICAgICAgIHJldHVybiBtZXNzYWdlcy5maWx0ZXIoKG1lc3NhZ2UpID0+IG1lc3NhZ2UuaXNUaW1lcigpKTsgLy90aW1lcnNcclxuICAgICAgZGVmYXVsdDpcclxuICAgICAgICByZXR1cm4gW107XHJcbiAgICB9XHJcbiAgfTtcclxuXHJcbiAgZnVuY3Rpb24gY3JlYXRlVGltZXIobGVuZ3RoKSB7XHJcbiAgICBsZXQgdGltZXJMYWJlbCA9IHByb21wdChcIk5hbWUgb2YgdGltZXJcIik7XHJcbiAgICBsZXQgdGltZXIgPSBuZXcgVGltZXIobGVuZ3RoKTtcclxuICAgIENoYXRNZXNzYWdlLmNyZWF0ZSh7XHJcbiAgICAgIGZsYWdzOiB7XHJcbiAgICAgICAgR1VSUFM6IHtcclxuICAgICAgICAgIG1lc3NhZ2VfdHlwZTogXCJ0aW1lclwiLFxyXG4gICAgICAgICAgbWVzc2FnZV9kYXRhOiB7XHJcbiAgICAgICAgICAgIHRpbWVyTGFiZWwsXHJcbiAgICAgICAgICAgIHRpbWVyRGF0YTogdGltZXIudG9KU09OKCksXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgICAgaXNfdGltZXI6IHRydWUsXHJcbiAgICAgICAgfSxcclxuICAgICAgfSxcclxuICAgIH0pO1xyXG4gIH1cclxuXHJcbiAgZXhwb3J0IGxldCBjaGF0UGFuZWw7XHJcblxyXG4gIGxldCB0YWJzID0gW1wiUm9sbHNcIiwgXCJXaGlzcGVyc1wiLCBcIklDXCIsIFwiT09DXCIsIFwiVGltZXJzXCJdO1xyXG4gIGxldCBhY3RpdmVUYWIgPSAwO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuY2hhdC1zaWRlYmFyLXRhYnMge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXg6IG5vbmU7XHJcbiAgfVxyXG4gIC5jaGF0LXNpZGViYXItdGFicyA+IC5jaGF0LWl0ZW0ge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZzogM3B4O1xyXG4gICAgYWxpZ24tc2VsZjogY2VudGVyO1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLnRpbWVycyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleDogbm9uZTtcclxuICAgIHBhZGRpbmctdG9wOiA1cHg7XHJcbiAgfVxyXG4gIC5mYS1jbG9jayB7XHJcbiAgICBmbGV4OiAxO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuICAuZmEtY2xvY2s6aG92ZXIge1xyXG4gICAgY29sb3I6IHJlZDtcclxuICB9XHJcbiAgLmFjdGl2ZSB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgMTBweCB2YXIoLS1mb3VuZHJ5LWFjY2VudC1jb2xvcik7XHJcbiAgfVxyXG4gIC5jaGF0LWxvZyB7XHJcbiAgICBtYXJnaW46IDBweDtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48c3ZlbHRlOm9wdGlvbnMgYWNjZXNzb3JzPXt0cnVlfSAvPlxyXG5cclxuPHNlY3Rpb25cclxuICBjbGFzcz1cImFjdGl2ZSBzaWRlYmFyLXRhYiB0YWIgZmxleGNvbFwiXHJcbiAgaWQ9XCJjaGF0XCJcclxuICBkYXRhLXRhYj1cImNoYXRcIlxyXG4gIGJpbmQ6dGhpcz17Y2hhdFBhbmVsfT5cclxuICBcclxuICB7I2lmICF2YW5pbGxhfVxyXG4gICAgPGRpdiBjbGFzcz1cImNoYXQtc2lkZWJhci10YWJzXCI+XHJcbiAgICAgIHsjZWFjaCB0YWJzIGFzIHRhYiwgaSAoaSl9XHJcbiAgICAgICAgPGRpdlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+IChhY3RpdmVUYWIgPSBpKX1cclxuICAgICAgICAgIGNsYXNzPVwiY2hhdC1pdGVtXCJcclxuICAgICAgICAgIGNsYXNzOmFjdGl2ZT17aSA9PT0gYWN0aXZlVGFifT5cclxuICAgICAgICAgIHt0YWJ9XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIHsvaWZ9XHJcblxyXG4gIHsjaWYgYWN0aXZlVGFiID09PSA0fVxyXG4gICAgPGRpdiBjbGFzcz1cInRpbWVyc1wiPlxyXG4gICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1jbG9ja1wiIG9uOmNsaWNrPXsoKSA9PiBjcmVhdGVUaW1lcig2MDAwMCl9PjFNPC9zcGFuPlxyXG4gICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1jbG9ja1wiIG9uOmNsaWNrPXsoKSA9PiBjcmVhdGVUaW1lcigzMDAwMDApfT41TTwvc3Bhbj5cclxuICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtY2xvY2tcIiBvbjpjbGljaz17KCkgPT4gY3JlYXRlVGltZXIoNjAwMDAwKX0+MTBNPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWNsb2NrXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gY3JlYXRlVGltZXIoMTgwMDAwMCl9PjMwTTwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1jbG9ja1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IGNyZWF0ZVRpbWVyKDM2MDAwMDApfT42ME08L3NwYW4+XHJcbiAgICA8L2Rpdj5cclxuICB7L2lmfVxyXG5cclxuICA8b2wgaWQ9XCJjaGF0LWxvZ1wiPlxyXG4gICAgeyNlYWNoIG1lc3NhZ2VzIGFzIG1lc3NhZ2UsIGkgKG1lc3NhZ2UuaWQpfVxyXG4gICAgICA8TWVzc2FnZSB7bWVzc2FnZX0gaGlkZT17IXZpc2libGVNZXNzYWdlcyhhY3RpdmVUYWIpLmluY2x1ZGVzKG1lc3NhZ2UpfSAvPlxyXG4gICAgey9lYWNofVxyXG4gIDwvb2w+XHJcblxyXG4gIHsjaWYgISEhQ2hhdExvZy5vcHRpb25zLnN0cmVhbX1cclxuICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW5vLW9uY2hhbmdlIC0tPlxyXG4gICAgPGRpdiBpZD1cImNoYXQtY29udHJvbHNcIiBjbGFzcz1cImZsZXhyb3dcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cInJvbGwtdHlwZS1zZWxlY3RcIj5cclxuICAgICAgICA8IS0tIHN2ZWx0ZS1pZ25vcmUgYTExeS1sYWJlbC1oYXMtYXNzb2NpYXRlZC1jb250cm9sIC0tPlxyXG4gICAgICAgIDxsYWJlbD4gPGkgY2xhc3M9XCJmYXMgZmEtZGljZS1kMjBcIiAvPiA8L2xhYmVsPlxyXG4gICAgICAgIDxzZWxlY3QgdmFsdWU9e2dhbWUuc2V0dGluZ3MuZ2V0KCdjb3JlJywgJ3JvbGxNb2RlJyl9IG5hbWU9XCJyb2xsTW9kZVwiPlxyXG4gICAgICAgICAgPG9wdGdyb3VwIGxhYmVsPXtnYW1lLmkxOG4ubG9jYWxpemUoJ0NIQVQuUm9sbERlZmF1bHQnKX0+XHJcbiAgICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcyhDT05GSUcuRGljZS5yb2xsTW9kZXMpIGFzIFtuYW1lLCBydF0sIGl9XHJcbiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT17bmFtZX0+e2dhbWUuaTE4bi5sb2NhbGl6ZShydCl9PC9vcHRpb24+XHJcbiAgICAgICAgICAgIHsvZWFjaH1cclxuICAgICAgICAgIDwvb3B0Z3JvdXA+XHJcbiAgICAgICAgPC9zZWxlY3Q+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICB7I2lmIGdhbWUudXNlci5pc0dNfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250cm9sLWJ1dHRvbnNcIj5cclxuICAgICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgICAgPGFcclxuICAgICAgICAgICAgY2xhc3M9XCJidXR0b24gZXhwb3J0LWxvZ1wiXHJcbiAgICAgICAgICAgIHRpdGxlPXtnYW1lLmkxOG4ubG9jYWxpemUoJ0NIQVQuRXhwb3J0Jyl9PlxyXG4gICAgICAgICAgICA8aSBjbGFzcz1cImZhcyBmYS1zYXZlXCIgLz5cclxuICAgICAgICAgIDwvYT5cclxuICAgICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgICAgPGFcclxuICAgICAgICAgICAgY2xhc3M9XCJkZWxldGUgYnV0dG9uIGNoYXQtZmx1c2hcIlxyXG4gICAgICAgICAgICB0aXRsZT17Z2FtZS5pMThuLmxvY2FsaXplKCdDSEFULkNsZWFyJyl9PlxyXG4gICAgICAgICAgICA8aSBjbGFzcz1cImZhcyBmYS10cmFzaFwiIC8+XHJcbiAgICAgICAgICA8L2E+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICAgIDxmb3JtIGlkPVwiY2hhdC1mb3JtXCI+XHJcbiAgICAgIDx0ZXh0YXJlYSBpZD1cImNoYXQtbWVzc2FnZVwiIGF1dG9jb21wbGV0ZT1cIm5vcGVcIiAvPlxyXG4gICAgPC9mb3JtPlxyXG4gIHsvaWZ9XHJcbjwvc2VjdGlvbj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTBERSxrQkFBa0IsOEJBQUMsQ0FBQyxBQUNsQixPQUFPLENBQUUsSUFBSSxDQUNiLElBQUksQ0FBRSxJQUFJLEFBQ1osQ0FBQyxBQUNELGlDQUFrQixDQUFHLFVBQVUsZUFBQyxDQUFDLEFBQy9CLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLE9BQU8sQ0FBRSxHQUFHLENBQ1osVUFBVSxDQUFFLE1BQU0sQ0FDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsT0FBTyw4QkFBQyxDQUFDLEFBQ1AsT0FBTyxDQUFFLElBQUksQ0FDYixJQUFJLENBQUUsSUFBSSxDQUNWLFdBQVcsQ0FBRSxHQUFHLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxJQUFJLENBQUUsQ0FBQyxDQUNQLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCx1Q0FBUyxNQUFNLEFBQUMsQ0FBQyxBQUNmLEtBQUssQ0FBRSxHQUFHLEFBQ1osQ0FBQyxBQUNELE9BQU8sOEJBQUMsQ0FBQyxBQUNQLFVBQVUsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxJQUFJLHNCQUFzQixDQUFDLEFBQ2xELENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/modules/custom-chat/components/ChatLog.svelte","webpack://src/modules/custom-chat/components/ChatLog.svelte.css"],"names":[],"mappings":"AA0DE,iDAAoB,YACL,CACb,SAAU,CACX,4DACgC,iBACb,CAClB,WAAY,CACZ,iBAAkB,CAClB,MAAO,CACR,sCACQ,YACM,CACb,SAAU,CACV,eAAgB,CACjB,wCACU,MACF,CACP,iBAAkB,CACnB,8CACgB,SACL,CACX,sCACQ,+CACyC;AChFpD,yxOAAyxO","sourcesContent":["<script>\r\n  import { Timer } from \"@modules/timer/timer\";\r\n  import { onMount } from \"svelte\";\r\n  import Message from \"./Message\";\r\n\r\n  export let ChatLog = null;\r\n  export let vanilla = false;\r\n  export let messages = [];\r\n\r\n  $: visibleMessages = (activeTab) => {\r\n    if (vanilla) return messages;\r\n    switch (activeTab) {\r\n      case 0:\r\n        return messages.filter(\r\n          (message) =>\r\n            message.roll || (message.isDiceRoll() && !message.isTimer())\r\n        ); //rolls\r\n      case 1:\r\n        return messages.filter((message) => message.data.whisper.length); //whispers\r\n      case 2:\r\n        return messages.filter(\r\n          (message) => !message.isOOC() && !message.isTimer()\r\n        ); //ic messages\r\n      case 3:\r\n        return messages.filter(\r\n          (message) => message.isOOC() && !message.isTimer()\r\n        ); //ooc messages\r\n      case 4:\r\n        return messages.filter((message) => message.isTimer()); //timers\r\n      default:\r\n        return [];\r\n    }\r\n  };\r\n\r\n  function createTimer(length) {\r\n    let timerLabel = prompt(\"Name of timer\");\r\n    let timer = new Timer(length);\r\n    ChatMessage.create({\r\n      flags: {\r\n        GURPS: {\r\n          message_type: \"timer\",\r\n          message_data: {\r\n            timerLabel,\r\n            timerData: timer.toJSON(),\r\n          },\r\n          is_timer: true,\r\n        },\r\n      },\r\n    });\r\n  }\r\n\r\n  export let chatPanel;\r\n\r\n  let tabs = [\"Rolls\", \"Whispers\", \"IC\", \"OOC\", \"Timers\"];\r\n  let activeTab = 0;\r\n</script>\r\n\r\n<style>\r\n  .chat-sidebar-tabs {\r\n    display: flex;\r\n    flex: none;\r\n  }\r\n  .chat-sidebar-tabs > .chat-item {\r\n    text-align: center;\r\n    padding: 3px;\r\n    align-self: center;\r\n    flex: 1;\r\n  }\r\n  .timers {\r\n    display: flex;\r\n    flex: none;\r\n    padding-top: 5px;\r\n  }\r\n  .fa-clock {\r\n    flex: 1;\r\n    text-align: center;\r\n  }\r\n  .fa-clock:hover {\r\n    color: red;\r\n  }\r\n  .active {\r\n    box-shadow: 0 0 10px var(--foundry-accent-color);\r\n  }\r\n  .chat-log {\r\n    margin: 0px;\r\n    padding: 0px;\r\n  }\r\n</style>\r\n\r\n<svelte:options accessors={true} />\r\n\r\n<section\r\n  class=\"active sidebar-tab tab flexcol\"\r\n  id=\"chat\"\r\n  data-tab=\"chat\"\r\n  bind:this={chatPanel}>\r\n  \r\n  {#if !vanilla}\r\n    <div class=\"chat-sidebar-tabs\">\r\n      {#each tabs as tab, i (i)}\r\n        <div\r\n          on:click={() => (activeTab = i)}\r\n          class=\"chat-item\"\r\n          class:active={i === activeTab}>\r\n          {tab}\r\n        </div>\r\n      {/each}\r\n    </div>\r\n  {/if}\r\n\r\n  {#if activeTab === 4}\r\n    <div class=\"timers\">\r\n      <span class=\"fas fa-clock\" on:click={() => createTimer(60000)}>1M</span>\r\n      <span class=\"fas fa-clock\" on:click={() => createTimer(300000)}>5M</span>\r\n      <span class=\"fas fa-clock\" on:click={() => createTimer(600000)}>10M</span>\r\n      <span\r\n        class=\"fas fa-clock\"\r\n        on:click={() => createTimer(1800000)}>30M</span>\r\n      <span\r\n        class=\"fas fa-clock\"\r\n        on:click={() => createTimer(3600000)}>60M</span>\r\n    </div>\r\n  {/if}\r\n\r\n  <ol id=\"chat-log\">\r\n    {#each messages as message, i (message.id)}\r\n      <Message {message} hide={!visibleMessages(activeTab).includes(message)} />\r\n    {/each}\r\n  </ol>\r\n\r\n  {#if !!!ChatLog.options.stream}\r\n    <!-- svelte-ignore a11y-no-onchange -->\r\n    <div id=\"chat-controls\" class=\"flexrow\">\r\n      <div class=\"roll-type-select\">\r\n        <!-- svelte-ignore a11y-label-has-associated-control -->\r\n        <label> <i class=\"fas fa-dice-d20\" /> </label>\r\n        <select value={game.settings.get('core', 'rollMode')} name=\"rollMode\">\r\n          <optgroup label={game.i18n.localize('CHAT.RollDefault')}>\r\n            {#each Object.entries(CONFIG.Dice.rollModes) as [name, rt], i}\r\n              <option value={name}>{game.i18n.localize(rt)}</option>\r\n            {/each}\r\n          </optgroup>\r\n        </select>\r\n      </div>\r\n      {#if game.user.isGM}\r\n        <div class=\"control-buttons\">\r\n          <!-- svelte-ignore a11y-missing-attribute -->\r\n          <a\r\n            class=\"button export-log\"\r\n            title={game.i18n.localize('CHAT.Export')}>\r\n            <i class=\"fas fa-save\" />\r\n          </a>\r\n          <!-- svelte-ignore a11y-missing-attribute -->\r\n          <a\r\n            class=\"delete button chat-flush\"\r\n            title={game.i18n.localize('CHAT.Clear')}>\r\n            <i class=\"fas fa-trash\" />\r\n          </a>\r\n        </div>\r\n      {/if}\r\n    </div>\r\n    <form id=\"chat-form\">\r\n      <textarea id=\"chat-message\" autocomplete=\"nope\" />\r\n    </form>\r\n  {/if}\r\n</section>\r\n",".chat-sidebar-tabs.svelte-1heiklo.svelte-1heiklo{display:flex;flex:none}.chat-sidebar-tabs.svelte-1heiklo>.chat-item.svelte-1heiklo{text-align:center;padding:3px;align-self:center;flex:1}.timers.svelte-1heiklo.svelte-1heiklo{display:flex;flex:none;padding-top:5px}.fa-clock.svelte-1heiklo.svelte-1heiklo{flex:1;text-align:center}.fa-clock.svelte-1heiklo.svelte-1heiklo:hover{color:red}.active.svelte-1heiklo.svelte-1heiklo{box-shadow:0 0 10px var(--foundry-accent-color)}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhdExvZy5zdmVsdGUiLCJzb3VyY2VzIjpbIkNoYXRMb2cuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgVGltZXIgfSBmcm9tIFwiQG1vZHVsZXMvdGltZXIvdGltZXJcIjtcclxuICBpbXBvcnQgeyBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBNZXNzYWdlIGZyb20gXCIuL01lc3NhZ2VcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBDaGF0TG9nID0gbnVsbDtcclxuICBleHBvcnQgbGV0IHZhbmlsbGEgPSBmYWxzZTtcclxuICBleHBvcnQgbGV0IG1lc3NhZ2VzID0gW107XHJcblxyXG4gICQ6IHZpc2libGVNZXNzYWdlcyA9IChhY3RpdmVUYWIpID0+IHtcclxuICAgIGlmICh2YW5pbGxhKSByZXR1cm4gbWVzc2FnZXM7XHJcbiAgICBzd2l0Y2ggKGFjdGl2ZVRhYikge1xyXG4gICAgICBjYXNlIDA6XHJcbiAgICAgICAgcmV0dXJuIG1lc3NhZ2VzLmZpbHRlcihcclxuICAgICAgICAgIChtZXNzYWdlKSA9PlxyXG4gICAgICAgICAgICBtZXNzYWdlLnJvbGwgfHwgKG1lc3NhZ2UuaXNEaWNlUm9sbCgpICYmICFtZXNzYWdlLmlzVGltZXIoKSlcclxuICAgICAgICApOyAvL3JvbGxzXHJcbiAgICAgIGNhc2UgMTpcclxuICAgICAgICByZXR1cm4gbWVzc2FnZXMuZmlsdGVyKChtZXNzYWdlKSA9PiBtZXNzYWdlLmRhdGEud2hpc3Blci5sZW5ndGgpOyAvL3doaXNwZXJzXHJcbiAgICAgIGNhc2UgMjpcclxuICAgICAgICByZXR1cm4gbWVzc2FnZXMuZmlsdGVyKFxyXG4gICAgICAgICAgKG1lc3NhZ2UpID0+ICFtZXNzYWdlLmlzT09DKCkgJiYgIW1lc3NhZ2UuaXNUaW1lcigpXHJcbiAgICAgICAgKTsgLy9pYyBtZXNzYWdlc1xyXG4gICAgICBjYXNlIDM6XHJcbiAgICAgICAgcmV0dXJuIG1lc3NhZ2VzLmZpbHRlcihcclxuICAgICAgICAgIChtZXNzYWdlKSA9PiBtZXNzYWdlLmlzT09DKCkgJiYgIW1lc3NhZ2UuaXNUaW1lcigpXHJcbiAgICAgICAgKTsgLy9vb2MgbWVzc2FnZXNcclxuICAgICAgY2FzZSA0OlxyXG4gICAgICAgIHJldHVybiBtZXNzYWdlcy5maWx0ZXIoKG1lc3NhZ2UpID0+IG1lc3NhZ2UuaXNUaW1lcigpKTsgLy90aW1lcnNcclxuICAgICAgZGVmYXVsdDpcclxuICAgICAgICByZXR1cm4gW107XHJcbiAgICB9XHJcbiAgfTtcclxuXHJcbiAgZnVuY3Rpb24gY3JlYXRlVGltZXIobGVuZ3RoKSB7XHJcbiAgICBsZXQgdGltZXJMYWJlbCA9IHByb21wdChcIk5hbWUgb2YgdGltZXJcIik7XHJcbiAgICBsZXQgdGltZXIgPSBuZXcgVGltZXIobGVuZ3RoKTtcclxuICAgIENoYXRNZXNzYWdlLmNyZWF0ZSh7XHJcbiAgICAgIGZsYWdzOiB7XHJcbiAgICAgICAgR1VSUFM6IHtcclxuICAgICAgICAgIG1lc3NhZ2VfdHlwZTogXCJ0aW1lclwiLFxyXG4gICAgICAgICAgbWVzc2FnZV9kYXRhOiB7XHJcbiAgICAgICAgICAgIHRpbWVyTGFiZWwsXHJcbiAgICAgICAgICAgIHRpbWVyRGF0YTogdGltZXIudG9KU09OKCksXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgICAgaXNfdGltZXI6IHRydWUsXHJcbiAgICAgICAgfSxcclxuICAgICAgfSxcclxuICAgIH0pO1xyXG4gIH1cclxuXHJcbiAgZXhwb3J0IGxldCBjaGF0UGFuZWw7XHJcblxyXG4gIGxldCB0YWJzID0gW1wiUm9sbHNcIiwgXCJXaGlzcGVyc1wiLCBcIklDXCIsIFwiT09DXCIsIFwiVGltZXJzXCJdO1xyXG4gIGxldCBhY3RpdmVUYWIgPSAwO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuY2hhdC1zaWRlYmFyLXRhYnMge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXg6IG5vbmU7XHJcbiAgfVxyXG4gIC5jaGF0LXNpZGViYXItdGFicyA+IC5jaGF0LWl0ZW0ge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgcGFkZGluZzogM3B4O1xyXG4gICAgYWxpZ24tc2VsZjogY2VudGVyO1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLnRpbWVycyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleDogbm9uZTtcclxuICAgIHBhZGRpbmctdG9wOiA1cHg7XHJcbiAgfVxyXG4gIC5mYS1jbG9jayB7XHJcbiAgICBmbGV4OiAxO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuICAuZmEtY2xvY2s6aG92ZXIge1xyXG4gICAgY29sb3I6IHJlZDtcclxuICB9XHJcbiAgLmFjdGl2ZSB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgMTBweCB2YXIoLS1mb3VuZHJ5LWFjY2VudC1jb2xvcik7XHJcbiAgfVxyXG4gIC5jaGF0LWxvZyB7XHJcbiAgICBtYXJnaW46IDBweDtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48c3ZlbHRlOm9wdGlvbnMgYWNjZXNzb3JzPXt0cnVlfSAvPlxyXG5cclxuPHNlY3Rpb25cclxuICBjbGFzcz1cImFjdGl2ZSBzaWRlYmFyLXRhYiB0YWIgZmxleGNvbFwiXHJcbiAgaWQ9XCJjaGF0XCJcclxuICBkYXRhLXRhYj1cImNoYXRcIlxyXG4gIGJpbmQ6dGhpcz17Y2hhdFBhbmVsfT5cclxuICBcclxuICB7I2lmICF2YW5pbGxhfVxyXG4gICAgPGRpdiBjbGFzcz1cImNoYXQtc2lkZWJhci10YWJzXCI+XHJcbiAgICAgIHsjZWFjaCB0YWJzIGFzIHRhYiwgaSAoaSl9XHJcbiAgICAgICAgPGRpdlxyXG4gICAgICAgICAgb246Y2xpY2s9eygpID0+IChhY3RpdmVUYWIgPSBpKX1cclxuICAgICAgICAgIGNsYXNzPVwiY2hhdC1pdGVtXCJcclxuICAgICAgICAgIGNsYXNzOmFjdGl2ZT17aSA9PT0gYWN0aXZlVGFifT5cclxuICAgICAgICAgIHt0YWJ9XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIHsvaWZ9XHJcblxyXG4gIHsjaWYgYWN0aXZlVGFiID09PSA0fVxyXG4gICAgPGRpdiBjbGFzcz1cInRpbWVyc1wiPlxyXG4gICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1jbG9ja1wiIG9uOmNsaWNrPXsoKSA9PiBjcmVhdGVUaW1lcig2MDAwMCl9PjFNPC9zcGFuPlxyXG4gICAgICA8c3BhbiBjbGFzcz1cImZhcyBmYS1jbG9ja1wiIG9uOmNsaWNrPXsoKSA9PiBjcmVhdGVUaW1lcigzMDAwMDApfT41TTwvc3Bhbj5cclxuICAgICAgPHNwYW4gY2xhc3M9XCJmYXMgZmEtY2xvY2tcIiBvbjpjbGljaz17KCkgPT4gY3JlYXRlVGltZXIoNjAwMDAwKX0+MTBNPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWNsb2NrXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gY3JlYXRlVGltZXIoMTgwMDAwMCl9PjMwTTwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1jbG9ja1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IGNyZWF0ZVRpbWVyKDM2MDAwMDApfT42ME08L3NwYW4+XHJcbiAgICA8L2Rpdj5cclxuICB7L2lmfVxyXG5cclxuICA8b2wgaWQ9XCJjaGF0LWxvZ1wiPlxyXG4gICAgeyNlYWNoIG1lc3NhZ2VzIGFzIG1lc3NhZ2UsIGkgKG1lc3NhZ2UuaWQpfVxyXG4gICAgICA8TWVzc2FnZSB7bWVzc2FnZX0gaGlkZT17IXZpc2libGVNZXNzYWdlcyhhY3RpdmVUYWIpLmluY2x1ZGVzKG1lc3NhZ2UpfSAvPlxyXG4gICAgey9lYWNofVxyXG4gIDwvb2w+XHJcblxyXG4gIHsjaWYgISEhQ2hhdExvZy5vcHRpb25zLnN0cmVhbX1cclxuICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW5vLW9uY2hhbmdlIC0tPlxyXG4gICAgPGRpdiBpZD1cImNoYXQtY29udHJvbHNcIiBjbGFzcz1cImZsZXhyb3dcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cInJvbGwtdHlwZS1zZWxlY3RcIj5cclxuICAgICAgICA8IS0tIHN2ZWx0ZS1pZ25vcmUgYTExeS1sYWJlbC1oYXMtYXNzb2NpYXRlZC1jb250cm9sIC0tPlxyXG4gICAgICAgIDxsYWJlbD4gPGkgY2xhc3M9XCJmYXMgZmEtZGljZS1kMjBcIiAvPiA8L2xhYmVsPlxyXG4gICAgICAgIDxzZWxlY3QgdmFsdWU9e2dhbWUuc2V0dGluZ3MuZ2V0KCdjb3JlJywgJ3JvbGxNb2RlJyl9IG5hbWU9XCJyb2xsTW9kZVwiPlxyXG4gICAgICAgICAgPG9wdGdyb3VwIGxhYmVsPXtnYW1lLmkxOG4ubG9jYWxpemUoJ0NIQVQuUm9sbERlZmF1bHQnKX0+XHJcbiAgICAgICAgICAgIHsjZWFjaCBPYmplY3QuZW50cmllcyhDT05GSUcuRGljZS5yb2xsTW9kZXMpIGFzIFtuYW1lLCBydF0sIGl9XHJcbiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT17bmFtZX0+e2dhbWUuaTE4bi5sb2NhbGl6ZShydCl9PC9vcHRpb24+XHJcbiAgICAgICAgICAgIHsvZWFjaH1cclxuICAgICAgICAgIDwvb3B0Z3JvdXA+XHJcbiAgICAgICAgPC9zZWxlY3Q+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICB7I2lmIGdhbWUudXNlci5pc0dNfVxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb250cm9sLWJ1dHRvbnNcIj5cclxuICAgICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgICAgPGFcclxuICAgICAgICAgICAgY2xhc3M9XCJidXR0b24gZXhwb3J0LWxvZ1wiXHJcbiAgICAgICAgICAgIHRpdGxlPXtnYW1lLmkxOG4ubG9jYWxpemUoJ0NIQVQuRXhwb3J0Jyl9PlxyXG4gICAgICAgICAgICA8aSBjbGFzcz1cImZhcyBmYS1zYXZlXCIgLz5cclxuICAgICAgICAgIDwvYT5cclxuICAgICAgICAgIDwhLS0gc3ZlbHRlLWlnbm9yZSBhMTF5LW1pc3NpbmctYXR0cmlidXRlIC0tPlxyXG4gICAgICAgICAgPGFcclxuICAgICAgICAgICAgY2xhc3M9XCJkZWxldGUgYnV0dG9uIGNoYXQtZmx1c2hcIlxyXG4gICAgICAgICAgICB0aXRsZT17Z2FtZS5pMThuLmxvY2FsaXplKCdDSEFULkNsZWFyJyl9PlxyXG4gICAgICAgICAgICA8aSBjbGFzcz1cImZhcyBmYS10cmFzaFwiIC8+XHJcbiAgICAgICAgICA8L2E+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvaWZ9XHJcbiAgICA8L2Rpdj5cclxuICAgIDxmb3JtIGlkPVwiY2hhdC1mb3JtXCI+XHJcbiAgICAgIDx0ZXh0YXJlYSBpZD1cImNoYXQtbWVzc2FnZVwiIGF1dG9jb21wbGV0ZT1cIm5vcGVcIiAvPlxyXG4gICAgPC9mb3JtPlxyXG4gIHsvaWZ9XHJcbjwvc2VjdGlvbj5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTBERSxrQkFBa0IsOEJBQUMsQ0FBQyxBQUNsQixPQUFPLENBQUUsSUFBSSxDQUNiLElBQUksQ0FBRSxJQUFJLEFBQ1osQ0FBQyxBQUNELGlDQUFrQixDQUFHLFVBQVUsZUFBQyxDQUFDLEFBQy9CLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLE9BQU8sQ0FBRSxHQUFHLENBQ1osVUFBVSxDQUFFLE1BQU0sQ0FDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsT0FBTyw4QkFBQyxDQUFDLEFBQ1AsT0FBTyxDQUFFLElBQUksQ0FDYixJQUFJLENBQUUsSUFBSSxDQUNWLFdBQVcsQ0FBRSxHQUFHLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxJQUFJLENBQUUsQ0FBQyxDQUNQLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCx1Q0FBUyxNQUFNLEFBQUMsQ0FBQyxBQUNmLEtBQUssQ0FBRSxHQUFHLEFBQ1osQ0FBQyxBQUNELE9BQU8sOEJBQUMsQ0FBQyxBQUNQLFVBQVUsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxJQUFJLHNCQUFzQixDQUFDLEFBQ2xELENBQUMifQ==*/"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css ***!
+  \********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".expired.svelte-xu5k3{background-color:red}.timer.svelte-xu5k3{padding:8px;display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXIuc3ZlbHRlIiwic291cmNlcyI6WyJUaW1lci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBvbk1vdW50LCBvbkRlc3Ryb3kgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGltZXIgfSBmcm9tIFwiQG1vZHVsZXMvdGltZXIvdGltZXJcIjtcclxuICBleHBvcnQgbGV0IG1lc3NhZ2UgPSBudWxsO1xyXG4gIGNvbnN0IHsgdGltZXJEYXRhLCB0aW1lckxhYmVsIH0gPSBtZXNzYWdlLmdldEZsYWcoXCJHVVJQU1wiLCBcIm1lc3NhZ2VfZGF0YVwiKTtcclxuICBsZXQgdGltZXIgPSBUaW1lci5mcm9tSlNPTih0aW1lckRhdGEpO1xyXG5cclxuICBsZXQgaW50ZXJ2YWw7XHJcbiAgb25Nb3VudCgoKSA9PiB7XHJcbiAgICBpbnRlcnZhbCA9IHNldEludGVydmFsKCgpID0+IHtcclxuICAgICAgaWYgKHRpbWVyLmlzRmluaXNoZWQoKSkge1xyXG4gICAgICAgIGNsZWFySW50ZXJ2YWwoaW50ZXJ2YWwpO1xyXG4gICAgICB9XHJcbiAgICAgIHRpbWVyID0gdGltZXI7XHJcbiAgICB9LCAxMDAwKTtcclxuICB9KTtcclxuICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbCk7XHJcbiAgfSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5leHBpcmVkIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICB9XHJcbiAgLnRpbWVyIHtcclxuICAgIHBhZGRpbmc6IDhweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb250cm9sIHtcclxuICAgIHBhZGRpbmctbGVmdDogMTBweDtcclxuICB9XHJcbiAgLmNvbnRyb2w6aG92ZXIge1xyXG4gICAgY29sb3I6IHJlZDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidGltZXJcIiBjbGFzczpleHBpcmVkPXt0aW1lci5pc0ZpbmlzaGVkKCl9PlxyXG4gIDxzcGFuIGNsYXNzPVwibWludXRlc1wiPnt0aW1lci5taW51dGVzUmVtYWluaW5nKCl9PC9zcGFuPjogPHNwYW5cclxuICAgIGNsYXNzPVwic2Vjb25kc1wiPnt0aW1lci5zZWNvbmRzUmVtYWluaW5nKCl9PC9zcGFuPlxyXG48L2Rpdj5cclxuPGRpdiBjbGFzcz1cInRpbWVyLWxhYmVsXCI+e3RpbWVyTGFiZWx9PC9kaXY+XHJcbjwhLS0gPGRpdiBjbGFzcz1cInRpbWVyLWNvbnRyb2xzXCI+XHJcbiAgPHNwYW4gY2xhc3M9XCJjb250cm9sIHBhdXNlIGZhcyBmYS1wYXVzZVwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5wYXVzZSgpfSAvPlxyXG4gIDxzcGFuIGNsYXNzPVwiY29udHJvbCBzdGFydCBmYXMgZmEtcGxheVwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5zdGFydCgpfSAvPlxyXG4gIDxzcGFuIGNsYXNzPVwiY29udHJvbCByZXNldCBmYXMgZmEtcmVmcmVzaFwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5yZXN0YXJ0KCl9IC8+XHJcbjwvZGl2PiAtLT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCRSxRQUFRLGFBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLEdBQUcsQUFDdkIsQ0FBQyxBQUNELE1BQU0sYUFBQyxDQUFDLEFBQ04sT0FBTyxDQUFFLEdBQUcsQ0FDWixPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/modules/custom-chat/components/ContentTemplates/Timer.svelte","webpack://src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css"],"names":[],"mappings":"AAsBE,sBAAU,oBACa,CACtB,oBACO,WACM,CACZ,YAAa;AC1BjB,qpEAAqpE","sourcesContent":["<script>\r\n  import { onMount, onDestroy } from \"svelte\";\r\n  import { Timer } from \"@modules/timer/timer\";\r\n  export let message = null;\r\n  const { timerData, timerLabel } = message.getFlag(\"GURPS\", \"message_data\");\r\n  let timer = Timer.fromJSON(timerData);\r\n\r\n  let interval;\r\n  onMount(() => {\r\n    interval = setInterval(() => {\r\n      if (timer.isFinished()) {\r\n        clearInterval(interval);\r\n      }\r\n      timer = timer;\r\n    }, 1000);\r\n  });\r\n  onDestroy(() => {\r\n    clearInterval(interval);\r\n  });\r\n</script>\r\n\r\n<style>\r\n  .expired {\r\n    background-color: red;\r\n  }\r\n  .timer {\r\n    padding: 8px;\r\n    display: flex;\r\n  }\r\n  .control {\r\n    padding-left: 10px;\r\n  }\r\n  .control:hover {\r\n    color: red;\r\n  }\r\n</style>\r\n\r\n<div class=\"timer\" class:expired={timer.isFinished()}>\r\n  <span class=\"minutes\">{timer.minutesRemaining()}</span>: <span\r\n    class=\"seconds\">{timer.secondsRemaining()}</span>\r\n</div>\r\n<div class=\"timer-label\">{timerLabel}</div>\r\n<!-- <div class=\"timer-controls\">\r\n  <span class=\"control pause fas fa-pause\" on:click={() => timer.pause()} />\r\n  <span class=\"control start fas fa-play\" on:click={() => timer.start()} />\r\n  <span class=\"control reset fas fa-refresh\" on:click={() => timer.restart()} />\r\n</div> -->\r\n",".expired.svelte-xu5k3{background-color:red}.timer.svelte-xu5k3{padding:8px;display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXIuc3ZlbHRlIiwic291cmNlcyI6WyJUaW1lci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBvbk1vdW50LCBvbkRlc3Ryb3kgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgVGltZXIgfSBmcm9tIFwiQG1vZHVsZXMvdGltZXIvdGltZXJcIjtcclxuICBleHBvcnQgbGV0IG1lc3NhZ2UgPSBudWxsO1xyXG4gIGNvbnN0IHsgdGltZXJEYXRhLCB0aW1lckxhYmVsIH0gPSBtZXNzYWdlLmdldEZsYWcoXCJHVVJQU1wiLCBcIm1lc3NhZ2VfZGF0YVwiKTtcclxuICBsZXQgdGltZXIgPSBUaW1lci5mcm9tSlNPTih0aW1lckRhdGEpO1xyXG5cclxuICBsZXQgaW50ZXJ2YWw7XHJcbiAgb25Nb3VudCgoKSA9PiB7XHJcbiAgICBpbnRlcnZhbCA9IHNldEludGVydmFsKCgpID0+IHtcclxuICAgICAgaWYgKHRpbWVyLmlzRmluaXNoZWQoKSkge1xyXG4gICAgICAgIGNsZWFySW50ZXJ2YWwoaW50ZXJ2YWwpO1xyXG4gICAgICB9XHJcbiAgICAgIHRpbWVyID0gdGltZXI7XHJcbiAgICB9LCAxMDAwKTtcclxuICB9KTtcclxuICBvbkRlc3Ryb3koKCkgPT4ge1xyXG4gICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbCk7XHJcbiAgfSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5leHBpcmVkIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcclxuICB9XHJcbiAgLnRpbWVyIHtcclxuICAgIHBhZGRpbmc6IDhweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC5jb250cm9sIHtcclxuICAgIHBhZGRpbmctbGVmdDogMTBweDtcclxuICB9XHJcbiAgLmNvbnRyb2w6aG92ZXIge1xyXG4gICAgY29sb3I6IHJlZDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidGltZXJcIiBjbGFzczpleHBpcmVkPXt0aW1lci5pc0ZpbmlzaGVkKCl9PlxyXG4gIDxzcGFuIGNsYXNzPVwibWludXRlc1wiPnt0aW1lci5taW51dGVzUmVtYWluaW5nKCl9PC9zcGFuPjogPHNwYW5cclxuICAgIGNsYXNzPVwic2Vjb25kc1wiPnt0aW1lci5zZWNvbmRzUmVtYWluaW5nKCl9PC9zcGFuPlxyXG48L2Rpdj5cclxuPGRpdiBjbGFzcz1cInRpbWVyLWxhYmVsXCI+e3RpbWVyTGFiZWx9PC9kaXY+XHJcbjwhLS0gPGRpdiBjbGFzcz1cInRpbWVyLWNvbnRyb2xzXCI+XHJcbiAgPHNwYW4gY2xhc3M9XCJjb250cm9sIHBhdXNlIGZhcyBmYS1wYXVzZVwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5wYXVzZSgpfSAvPlxyXG4gIDxzcGFuIGNsYXNzPVwiY29udHJvbCBzdGFydCBmYXMgZmEtcGxheVwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5zdGFydCgpfSAvPlxyXG4gIDxzcGFuIGNsYXNzPVwiY29udHJvbCByZXNldCBmYXMgZmEtcmVmcmVzaFwiIG9uOmNsaWNrPXsoKSA9PiB0aW1lci5yZXN0YXJ0KCl9IC8+XHJcbjwvZGl2PiAtLT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCRSxRQUFRLGFBQUMsQ0FBQyxBQUNSLGdCQUFnQixDQUFFLEdBQUcsQUFDdkIsQ0FBQyxBQUNELE1BQU0sYUFBQyxDQUFDLEFBQ04sT0FBTyxDQUFFLEdBQUcsQ0FDWixPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3015,7 +3059,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "table.svelte-12dsqpr.svelte-12dsqpr{white-space:nowrap}table.svelte-12dsqpr.svelte-12dsqpr .GURPS-label{padding:0px !important}.grow.svelte-12dsqpr.svelte-12dsqpr{width:100%}.armor.svelte-12dsqpr.svelte-12dsqpr{text-align:center}.armor.svelte-12dsqpr td.svelte-12dsqpr{padding:0}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJtb3Iuc3ZlbHRlIiwic291cmNlcyI6WyJBcm1vci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBJbnB1dCB9IGZyb20gXCIuL2Zvcm0vZm9ybS50c1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpIHx8ICRlbnRpdHkuX0dVUlBTIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRhYmxlIHtcclxuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgfVxyXG5cclxuICB0YWJsZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCkge1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG5cclxuICAuZ3JvdyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgLmFybW9yIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmFybW9yIHRkIHtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPHRhYmxlIGNsYXNzPVwiYXJtb3JcIj5cclxuICA8dGhlYWQ+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0aD5Sb2xsPC90aD5cclxuICAgICAgPHRoIGNsYXNzPVwiZ3Jvd1wiPldoZXJlPC90aD5cclxuICAgICAgPHRoPlBlbmFsdHk8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJtaW4td2lkdGg6IDc1cHg7XCI+RFI8L3RoPlxyXG4gICAgICA8dGg+XHJcbiAgICAgICAgPGlcclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAgIGxldCBsb2NhdGlvbnMgPSAkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmxvY2F0aW9ucy5jdXN0b20nKSB8fCBbXTtcclxuICAgICAgICAgICAgbG9jYXRpb25zLnB1c2goeyByb2xsOiAnLScsIHdoZXJlOiAnPz8/JywgcGVuYWx0eTogJ04vQScsIGRyOiAnJyB9KTtcclxuICAgICAgICAgICAgJGVudGl0eS51cGRhdGUoeyAnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJzogZHVwbGljYXRlKGxvY2F0aW9ucykgfSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+RXllPC90ZD5cclxuICAgICAgPHRkPi05PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuZXllXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+My00PC90ZD5cclxuICAgICAgPHRkPlNrdWxsPC90ZD5cclxuICAgICAgPHRkPi03PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuc2t1bGxcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD41PC90ZD5cclxuICAgICAgPHRkPkZhY2U8L3RkPlxyXG4gICAgICA8dGQ+LTU8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mYWNlXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+Ni03PC90ZD5cclxuICAgICAgPHRkPlJpZ2h0IExlZzwvdGQ+XHJcbiAgICAgIDx0ZD4tMjwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnJpZ2h0X2xlZ1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjg8L3RkPlxyXG4gICAgICA8dGQ+UmlnaHQgQXJtPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMucmlnaHRfYXJtXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+OS0xMDwvdGQ+XHJcbiAgICAgIDx0ZD5Ub3JzbzwvdGQ+XHJcbiAgICAgIDx0ZD4wPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMudG9yc29cIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xMTwvdGQ+XHJcbiAgICAgIDx0ZD5Hcm9pbjwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLmdyb2luXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTI8L3RkPlxyXG4gICAgICA8dGQ+TGVmdCBBcm08L3RkPlxyXG4gICAgICA8dGQ+LTI8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5sZWZ0X2FybVwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjEzLTE0PC90ZD5cclxuICAgICAgPHRkPkxlZnQgTGVnPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMubGVmdF9sZWdcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xNTwvdGQ+XHJcbiAgICAgIDx0ZD5IYW5kPC90ZD5cclxuICAgICAgPHRkPi00PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuaGFuZFwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjE2PC90ZD5cclxuICAgICAgPHRkPkZvb3Q8L3RkPlxyXG4gICAgICA8dGQ+LTQ8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mb290XCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTctMTg8L3RkPlxyXG4gICAgICA8dGQ+TmVjazwvdGQ+XHJcbiAgICAgIDx0ZD4tNTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLm5lY2tcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4tPC90ZD5cclxuICAgICAgPHRkPlZpdGFsczwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnZpdGFsc1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+QXJlYTwvdGQ+XHJcbiAgICAgIDx0ZD5OL0E8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5hcmVhXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gIDwvdGJvZHk+XHJcbiAgPHRib2R5PlxyXG4gICAgeyNlYWNoICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEubG9jYXRpb25zLmN1c3RvbScpIHx8IFtdIGFzIGxvY2F0aW9uLCBpfVxyXG4gICAgICA8dHI+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cIi1cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncm9sbCcgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnd2hlcmUnIH19IC8+XHJcbiAgICAgICAgPC90ZD5cclxuICAgICAgICA8dGQ+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEubG9jYXRpb25zLmN1c3RvbVwiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3BlbmFsdHknIH19XHJcbiAgICAgICAgICAgIHR5cGU9XCJudW1iZXJcIiAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5jdXN0b21cIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdkcicgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxpXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHtcclxuICAgICAgICAgICAgICBsZXQgbG9jYXRpb25zID0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJyk7XHJcbiAgICAgICAgICAgICAgbG9jYXRpb25zLnNwbGljZShpLCAxKTtcclxuICAgICAgICAgICAgICAkZW50aXR5LnVwZGF0ZSh7ICdkYXRhLmxvYWRGb250LmN1c3RvbSc6IGR1cGxpY2F0ZShsb2NhdGlvbnMpIH0pO1xyXG4gICAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICB7L2VhY2h9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVFLEtBQUssOEJBQUMsQ0FBQyxBQUNMLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCxtQ0FBSyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDM0IsT0FBTyxDQUFFLEdBQUcsQ0FBQyxVQUFVLEFBQ3pCLENBQUMsQUFFRCxLQUFLLDhCQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFDRCxNQUFNLDhCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QscUJBQU0sQ0FBQyxFQUFFLGVBQUMsQ0FBQyxBQUNULE9BQU8sQ0FBRSxDQUFDLEFBQ1osQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/Armor.svelte","webpack://src/svelte/Armor.svelte.css"],"names":[],"mappings":"AAUE,oCAAO,kBACc,CACpB,iDAE4B,sBACJ,CACxB,oCAEM,UACM,CACZ,qCACO,iBACY,CACnB,wCACU,SACC;ACxBd,inOAAinO","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form.ts\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n</script>\r\n\r\n<style>\r\n  table {\r\n    white-space: nowrap;\r\n  }\r\n\r\n  table :global(.GURPS-label) {\r\n    padding: 0px !important;\r\n  }\r\n\r\n  .grow {\r\n    width: 100%;\r\n  }\r\n  .armor {\r\n    text-align: center;\r\n  }\r\n  .armor td {\r\n    padding: 0;\r\n  }\r\n</style>\r\n\r\n<table class=\"armor\">\r\n  <thead>\r\n    <tr>\r\n      <th>Roll</th>\r\n      <th class=\"grow\">Where</th>\r\n      <th>Penalty</th>\r\n      <th style=\"min-width: 75px;\">DR</th>\r\n      <th>\r\n        <i\r\n          class=\"fas fa-plus-square\"\r\n          on:click={() => {\r\n            let locations = $entity.getProperty('data.locations.custom') || [];\r\n            locations.push({ roll: '-', where: '???', penalty: 'N/A', dr: '' });\r\n            $entity.update({ 'data.locations.custom': duplicate(locations) });\r\n          }} />\r\n      </th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Eye</td>\r\n      <td>-9</td>\r\n      <td>\r\n        <Input path=\"data.locations.eye\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>3-4</td>\r\n      <td>Skull</td>\r\n      <td>-7</td>\r\n      <td>\r\n        <Input path=\"data.locations.skull\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>5</td>\r\n      <td>Face</td>\r\n      <td>-5</td>\r\n      <td>\r\n        <Input path=\"data.locations.face\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>6-7</td>\r\n      <td>Right Leg</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.right_leg\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>8</td>\r\n      <td>Right Arm</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.right_arm\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>9-10</td>\r\n      <td>Torso</td>\r\n      <td>0</td>\r\n      <td>\r\n        <Input path=\"data.locations.torso\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>11</td>\r\n      <td>Groin</td>\r\n      <td>-3</td>\r\n      <td>\r\n        <Input path=\"data.locations.groin\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>12</td>\r\n      <td>Left Arm</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.left_arm\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>13-14</td>\r\n      <td>Left Leg</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.left_leg\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>15</td>\r\n      <td>Hand</td>\r\n      <td>-4</td>\r\n      <td>\r\n        <Input path=\"data.locations.hand\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>16</td>\r\n      <td>Foot</td>\r\n      <td>-4</td>\r\n      <td>\r\n        <Input path=\"data.locations.foot\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>17-18</td>\r\n      <td>Neck</td>\r\n      <td>-5</td>\r\n      <td>\r\n        <Input path=\"data.locations.neck\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Vitals</td>\r\n      <td>-3</td>\r\n      <td>\r\n        <Input path=\"data.locations.vitals\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Area</td>\r\n      <td>N/A</td>\r\n      <td>\r\n        <Input path=\"data.locations.area\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n  </tbody>\r\n  <tbody>\r\n    {#each $entity.getProperty('data.locations.custom') || [] as location, i}\r\n      <tr>\r\n        <td>\r\n          <Input\r\n            defaultValue=\"-\"\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'roll' }} />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'where' }} />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'penalty' }}\r\n            type=\"number\" />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'dr' }} />\r\n        </td>\r\n        <td>\r\n          <i\r\n            class=\"fas fa-trash\"\r\n            on:click={() => {\r\n              let locations = $entity.getProperty('data.locations.custom');\r\n              locations.splice(i, 1);\r\n              $entity.update({ 'data.loadFont.custom': duplicate(locations) });\r\n            }} />\r\n        </td>\r\n      </tr>\r\n    {/each}\r\n  </tbody>\r\n</table>\r\n","table.svelte-12dsqpr.svelte-12dsqpr{white-space:nowrap}table.svelte-12dsqpr.svelte-12dsqpr .GURPS-label{padding:0px !important}.grow.svelte-12dsqpr.svelte-12dsqpr{width:100%}.armor.svelte-12dsqpr.svelte-12dsqpr{text-align:center}.armor.svelte-12dsqpr td.svelte-12dsqpr{padding:0}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJtb3Iuc3ZlbHRlIiwic291cmNlcyI6WyJBcm1vci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBJbnB1dCB9IGZyb20gXCIuL2Zvcm0vZm9ybS50c1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpIHx8ICRlbnRpdHkuX0dVUlBTIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRhYmxlIHtcclxuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgfVxyXG5cclxuICB0YWJsZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCkge1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG5cclxuICAuZ3JvdyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgLmFybW9yIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmFybW9yIHRkIHtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPHRhYmxlIGNsYXNzPVwiYXJtb3JcIj5cclxuICA8dGhlYWQ+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0aD5Sb2xsPC90aD5cclxuICAgICAgPHRoIGNsYXNzPVwiZ3Jvd1wiPldoZXJlPC90aD5cclxuICAgICAgPHRoPlBlbmFsdHk8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJtaW4td2lkdGg6IDc1cHg7XCI+RFI8L3RoPlxyXG4gICAgICA8dGg+XHJcbiAgICAgICAgPGlcclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAgIGxldCBsb2NhdGlvbnMgPSAkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmxvY2F0aW9ucy5jdXN0b20nKSB8fCBbXTtcclxuICAgICAgICAgICAgbG9jYXRpb25zLnB1c2goeyByb2xsOiAnLScsIHdoZXJlOiAnPz8/JywgcGVuYWx0eTogJ04vQScsIGRyOiAnJyB9KTtcclxuICAgICAgICAgICAgJGVudGl0eS51cGRhdGUoeyAnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJzogZHVwbGljYXRlKGxvY2F0aW9ucykgfSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+RXllPC90ZD5cclxuICAgICAgPHRkPi05PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuZXllXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+My00PC90ZD5cclxuICAgICAgPHRkPlNrdWxsPC90ZD5cclxuICAgICAgPHRkPi03PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuc2t1bGxcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD41PC90ZD5cclxuICAgICAgPHRkPkZhY2U8L3RkPlxyXG4gICAgICA8dGQ+LTU8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mYWNlXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+Ni03PC90ZD5cclxuICAgICAgPHRkPlJpZ2h0IExlZzwvdGQ+XHJcbiAgICAgIDx0ZD4tMjwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnJpZ2h0X2xlZ1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjg8L3RkPlxyXG4gICAgICA8dGQ+UmlnaHQgQXJtPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMucmlnaHRfYXJtXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+OS0xMDwvdGQ+XHJcbiAgICAgIDx0ZD5Ub3JzbzwvdGQ+XHJcbiAgICAgIDx0ZD4wPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMudG9yc29cIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xMTwvdGQ+XHJcbiAgICAgIDx0ZD5Hcm9pbjwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLmdyb2luXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTI8L3RkPlxyXG4gICAgICA8dGQ+TGVmdCBBcm08L3RkPlxyXG4gICAgICA8dGQ+LTI8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5sZWZ0X2FybVwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjEzLTE0PC90ZD5cclxuICAgICAgPHRkPkxlZnQgTGVnPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMubGVmdF9sZWdcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xNTwvdGQ+XHJcbiAgICAgIDx0ZD5IYW5kPC90ZD5cclxuICAgICAgPHRkPi00PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuaGFuZFwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjE2PC90ZD5cclxuICAgICAgPHRkPkZvb3Q8L3RkPlxyXG4gICAgICA8dGQ+LTQ8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mb290XCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTctMTg8L3RkPlxyXG4gICAgICA8dGQ+TmVjazwvdGQ+XHJcbiAgICAgIDx0ZD4tNTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLm5lY2tcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4tPC90ZD5cclxuICAgICAgPHRkPlZpdGFsczwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnZpdGFsc1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+QXJlYTwvdGQ+XHJcbiAgICAgIDx0ZD5OL0E8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5hcmVhXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gIDwvdGJvZHk+XHJcbiAgPHRib2R5PlxyXG4gICAgeyNlYWNoICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEubG9jYXRpb25zLmN1c3RvbScpIHx8IFtdIGFzIGxvY2F0aW9uLCBpfVxyXG4gICAgICA8dHI+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cIi1cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncm9sbCcgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnd2hlcmUnIH19IC8+XHJcbiAgICAgICAgPC90ZD5cclxuICAgICAgICA8dGQ+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEubG9jYXRpb25zLmN1c3RvbVwiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3BlbmFsdHknIH19XHJcbiAgICAgICAgICAgIHR5cGU9XCJudW1iZXJcIiAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5jdXN0b21cIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdkcicgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxpXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHtcclxuICAgICAgICAgICAgICBsZXQgbG9jYXRpb25zID0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJyk7XHJcbiAgICAgICAgICAgICAgbG9jYXRpb25zLnNwbGljZShpLCAxKTtcclxuICAgICAgICAgICAgICAkZW50aXR5LnVwZGF0ZSh7ICdkYXRhLmxvYWRGb250LmN1c3RvbSc6IGR1cGxpY2F0ZShsb2NhdGlvbnMpIH0pO1xyXG4gICAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICB7L2VhY2h9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVFLEtBQUssOEJBQUMsQ0FBQyxBQUNMLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCxtQ0FBSyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDM0IsT0FBTyxDQUFFLEdBQUcsQ0FBQyxVQUFVLEFBQ3pCLENBQUMsQUFFRCxLQUFLLDhCQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFDRCxNQUFNLDhCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QscUJBQU0sQ0FBQyxFQUFFLGVBQUMsQ0FBQyxBQUNULE9BQU8sQ0FBRSxDQUFDLEFBQ1osQ0FBQyJ9*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "table.svelte-12dsqpr.svelte-12dsqpr{white-space:nowrap}table.svelte-12dsqpr .GURPS-label{padding:0px !important}.grow.svelte-12dsqpr.svelte-12dsqpr{width:100%}.armor.svelte-12dsqpr.svelte-12dsqpr{text-align:center}.armor.svelte-12dsqpr td.svelte-12dsqpr{padding:0}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJtb3Iuc3ZlbHRlIiwic291cmNlcyI6WyJBcm1vci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBJbnB1dCB9IGZyb20gXCIuL2Zvcm0vZm9ybS50c1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpIHx8ICRlbnRpdHkuX0dVUlBTIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRhYmxlIHtcclxuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgfVxyXG5cclxuICB0YWJsZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCkge1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG5cclxuICAuZ3JvdyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgLmFybW9yIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmFybW9yIHRkIHtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPHRhYmxlIGNsYXNzPVwiYXJtb3JcIj5cclxuICA8dGhlYWQ+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0aD5Sb2xsPC90aD5cclxuICAgICAgPHRoIGNsYXNzPVwiZ3Jvd1wiPldoZXJlPC90aD5cclxuICAgICAgPHRoPlBlbmFsdHk8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJtaW4td2lkdGg6IDc1cHg7XCI+RFI8L3RoPlxyXG4gICAgICA8dGg+XHJcbiAgICAgICAgPGlcclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAgIGxldCBsb2NhdGlvbnMgPSAkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmxvY2F0aW9ucy5jdXN0b20nKSB8fCBbXTtcclxuICAgICAgICAgICAgbG9jYXRpb25zLnB1c2goeyByb2xsOiAnLScsIHdoZXJlOiAnPz8/JywgcGVuYWx0eTogJ04vQScsIGRyOiAnJyB9KTtcclxuICAgICAgICAgICAgJGVudGl0eS51cGRhdGUoeyAnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJzogZHVwbGljYXRlKGxvY2F0aW9ucykgfSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+RXllPC90ZD5cclxuICAgICAgPHRkPi05PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuZXllXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+My00PC90ZD5cclxuICAgICAgPHRkPlNrdWxsPC90ZD5cclxuICAgICAgPHRkPi03PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuc2t1bGxcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD41PC90ZD5cclxuICAgICAgPHRkPkZhY2U8L3RkPlxyXG4gICAgICA8dGQ+LTU8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mYWNlXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+Ni03PC90ZD5cclxuICAgICAgPHRkPlJpZ2h0IExlZzwvdGQ+XHJcbiAgICAgIDx0ZD4tMjwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnJpZ2h0X2xlZ1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjg8L3RkPlxyXG4gICAgICA8dGQ+UmlnaHQgQXJtPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMucmlnaHRfYXJtXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+OS0xMDwvdGQ+XHJcbiAgICAgIDx0ZD5Ub3JzbzwvdGQ+XHJcbiAgICAgIDx0ZD4wPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMudG9yc29cIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xMTwvdGQ+XHJcbiAgICAgIDx0ZD5Hcm9pbjwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLmdyb2luXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTI8L3RkPlxyXG4gICAgICA8dGQ+TGVmdCBBcm08L3RkPlxyXG4gICAgICA8dGQ+LTI8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5sZWZ0X2FybVwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjEzLTE0PC90ZD5cclxuICAgICAgPHRkPkxlZnQgTGVnPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMubGVmdF9sZWdcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xNTwvdGQ+XHJcbiAgICAgIDx0ZD5IYW5kPC90ZD5cclxuICAgICAgPHRkPi00PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuaGFuZFwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjE2PC90ZD5cclxuICAgICAgPHRkPkZvb3Q8L3RkPlxyXG4gICAgICA8dGQ+LTQ8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mb290XCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTctMTg8L3RkPlxyXG4gICAgICA8dGQ+TmVjazwvdGQ+XHJcbiAgICAgIDx0ZD4tNTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLm5lY2tcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4tPC90ZD5cclxuICAgICAgPHRkPlZpdGFsczwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnZpdGFsc1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+QXJlYTwvdGQ+XHJcbiAgICAgIDx0ZD5OL0E8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5hcmVhXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gIDwvdGJvZHk+XHJcbiAgPHRib2R5PlxyXG4gICAgeyNlYWNoICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEubG9jYXRpb25zLmN1c3RvbScpIHx8IFtdIGFzIGxvY2F0aW9uLCBpfVxyXG4gICAgICA8dHI+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cIi1cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncm9sbCcgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnd2hlcmUnIH19IC8+XHJcbiAgICAgICAgPC90ZD5cclxuICAgICAgICA8dGQ+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEubG9jYXRpb25zLmN1c3RvbVwiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3BlbmFsdHknIH19XHJcbiAgICAgICAgICAgIHR5cGU9XCJudW1iZXJcIiAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5jdXN0b21cIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdkcicgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxpXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHtcclxuICAgICAgICAgICAgICBsZXQgbG9jYXRpb25zID0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJyk7XHJcbiAgICAgICAgICAgICAgbG9jYXRpb25zLnNwbGljZShpLCAxKTtcclxuICAgICAgICAgICAgICAkZW50aXR5LnVwZGF0ZSh7ICdkYXRhLmxvYWRGb250LmN1c3RvbSc6IGR1cGxpY2F0ZShsb2NhdGlvbnMpIH0pO1xyXG4gICAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICB7L2VhY2h9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVFLEtBQUssOEJBQUMsQ0FBQyxBQUNMLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCxvQkFBSyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDM0IsT0FBTyxDQUFFLEdBQUcsQ0FBQyxVQUFVLEFBQ3pCLENBQUMsQUFFRCxLQUFLLDhCQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFDRCxNQUFNLDhCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QscUJBQU0sQ0FBQyxFQUFFLGVBQUMsQ0FBQyxBQUNULE9BQU8sQ0FBRSxDQUFDLEFBQ1osQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/Armor.svelte","webpack://src/svelte/Armor.svelte.css"],"names":[],"mappings":"AAUE,oCAAO,kBACc,CACpB,kCAE4B,sBACJ,CACxB,oCAEM,UACM,CACZ,qCACO,iBACY,CACnB,wCACU,SACC;ACxBd,inOAAinO","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form.ts\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n</script>\r\n\r\n<style>\r\n  table {\r\n    white-space: nowrap;\r\n  }\r\n\r\n  table :global(.GURPS-label) {\r\n    padding: 0px !important;\r\n  }\r\n\r\n  .grow {\r\n    width: 100%;\r\n  }\r\n  .armor {\r\n    text-align: center;\r\n  }\r\n  .armor td {\r\n    padding: 0;\r\n  }\r\n</style>\r\n\r\n<table class=\"armor\">\r\n  <thead>\r\n    <tr>\r\n      <th>Roll</th>\r\n      <th class=\"grow\">Where</th>\r\n      <th>Penalty</th>\r\n      <th style=\"min-width: 75px;\">DR</th>\r\n      <th>\r\n        <i\r\n          class=\"fas fa-plus-square\"\r\n          on:click={() => {\r\n            let locations = $entity.getProperty('data.locations.custom') || [];\r\n            locations.push({ roll: '-', where: '???', penalty: 'N/A', dr: '' });\r\n            $entity.update({ 'data.locations.custom': duplicate(locations) });\r\n          }} />\r\n      </th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Eye</td>\r\n      <td>-9</td>\r\n      <td>\r\n        <Input path=\"data.locations.eye\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>3-4</td>\r\n      <td>Skull</td>\r\n      <td>-7</td>\r\n      <td>\r\n        <Input path=\"data.locations.skull\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>5</td>\r\n      <td>Face</td>\r\n      <td>-5</td>\r\n      <td>\r\n        <Input path=\"data.locations.face\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>6-7</td>\r\n      <td>Right Leg</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.right_leg\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>8</td>\r\n      <td>Right Arm</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.right_arm\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>9-10</td>\r\n      <td>Torso</td>\r\n      <td>0</td>\r\n      <td>\r\n        <Input path=\"data.locations.torso\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>11</td>\r\n      <td>Groin</td>\r\n      <td>-3</td>\r\n      <td>\r\n        <Input path=\"data.locations.groin\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>12</td>\r\n      <td>Left Arm</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.left_arm\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>13-14</td>\r\n      <td>Left Leg</td>\r\n      <td>-2</td>\r\n      <td>\r\n        <Input path=\"data.locations.left_leg\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>15</td>\r\n      <td>Hand</td>\r\n      <td>-4</td>\r\n      <td>\r\n        <Input path=\"data.locations.hand\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>16</td>\r\n      <td>Foot</td>\r\n      <td>-4</td>\r\n      <td>\r\n        <Input path=\"data.locations.foot\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>17-18</td>\r\n      <td>Neck</td>\r\n      <td>-5</td>\r\n      <td>\r\n        <Input path=\"data.locations.neck\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Vitals</td>\r\n      <td>-3</td>\r\n      <td>\r\n        <Input path=\"data.locations.vitals\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n    <tr>\r\n      <td>-</td>\r\n      <td>Area</td>\r\n      <td>N/A</td>\r\n      <td>\r\n        <Input path=\"data.locations.area\" />\r\n      </td>\r\n      <td />\r\n    </tr>\r\n  </tbody>\r\n  <tbody>\r\n    {#each $entity.getProperty('data.locations.custom') || [] as location, i}\r\n      <tr>\r\n        <td>\r\n          <Input\r\n            defaultValue=\"-\"\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'roll' }} />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'where' }} />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'penalty' }}\r\n            type=\"number\" />\r\n        </td>\r\n        <td>\r\n          <Input\r\n            path=\"data.locations.custom\"\r\n            array={{ index: i, property: 'dr' }} />\r\n        </td>\r\n        <td>\r\n          <i\r\n            class=\"fas fa-trash\"\r\n            on:click={() => {\r\n              let locations = $entity.getProperty('data.locations.custom');\r\n              locations.splice(i, 1);\r\n              $entity.update({ 'data.loadFont.custom': duplicate(locations) });\r\n            }} />\r\n        </td>\r\n      </tr>\r\n    {/each}\r\n  </tbody>\r\n</table>\r\n","table.svelte-12dsqpr.svelte-12dsqpr{white-space:nowrap}table.svelte-12dsqpr .GURPS-label{padding:0px !important}.grow.svelte-12dsqpr.svelte-12dsqpr{width:100%}.armor.svelte-12dsqpr.svelte-12dsqpr{text-align:center}.armor.svelte-12dsqpr td.svelte-12dsqpr{padding:0}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJtb3Iuc3ZlbHRlIiwic291cmNlcyI6WyJBcm1vci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cclxuICBpbXBvcnQgeyBnZXRDb250ZXh0IH0gZnJvbSBcInN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBJbnB1dCB9IGZyb20gXCIuL2Zvcm0vZm9ybS50c1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBleHBvcnQgbGV0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpIHx8ICRlbnRpdHkuX0dVUlBTIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIHRhYmxlIHtcclxuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgfVxyXG5cclxuICB0YWJsZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCkge1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG5cclxuICAuZ3JvdyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgLmFybW9yIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmFybW9yIHRkIHtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPHRhYmxlIGNsYXNzPVwiYXJtb3JcIj5cclxuICA8dGhlYWQ+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0aD5Sb2xsPC90aD5cclxuICAgICAgPHRoIGNsYXNzPVwiZ3Jvd1wiPldoZXJlPC90aD5cclxuICAgICAgPHRoPlBlbmFsdHk8L3RoPlxyXG4gICAgICA8dGggc3R5bGU9XCJtaW4td2lkdGg6IDc1cHg7XCI+RFI8L3RoPlxyXG4gICAgICA8dGg+XHJcbiAgICAgICAgPGlcclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXBsdXMtc3F1YXJlXCJcclxuICAgICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAgIGxldCBsb2NhdGlvbnMgPSAkZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmxvY2F0aW9ucy5jdXN0b20nKSB8fCBbXTtcclxuICAgICAgICAgICAgbG9jYXRpb25zLnB1c2goeyByb2xsOiAnLScsIHdoZXJlOiAnPz8/JywgcGVuYWx0eTogJ04vQScsIGRyOiAnJyB9KTtcclxuICAgICAgICAgICAgJGVudGl0eS51cGRhdGUoeyAnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJzogZHVwbGljYXRlKGxvY2F0aW9ucykgfSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgPC90cj5cclxuICA8L3RoZWFkPlxyXG4gIDx0Ym9keT5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+RXllPC90ZD5cclxuICAgICAgPHRkPi05PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuZXllXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+My00PC90ZD5cclxuICAgICAgPHRkPlNrdWxsPC90ZD5cclxuICAgICAgPHRkPi03PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuc2t1bGxcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD41PC90ZD5cclxuICAgICAgPHRkPkZhY2U8L3RkPlxyXG4gICAgICA8dGQ+LTU8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mYWNlXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+Ni03PC90ZD5cclxuICAgICAgPHRkPlJpZ2h0IExlZzwvdGQ+XHJcbiAgICAgIDx0ZD4tMjwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnJpZ2h0X2xlZ1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjg8L3RkPlxyXG4gICAgICA8dGQ+UmlnaHQgQXJtPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMucmlnaHRfYXJtXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+OS0xMDwvdGQ+XHJcbiAgICAgIDx0ZD5Ub3JzbzwvdGQ+XHJcbiAgICAgIDx0ZD4wPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMudG9yc29cIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xMTwvdGQ+XHJcbiAgICAgIDx0ZD5Hcm9pbjwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLmdyb2luXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTI8L3RkPlxyXG4gICAgICA8dGQ+TGVmdCBBcm08L3RkPlxyXG4gICAgICA8dGQ+LTI8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5sZWZ0X2FybVwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjEzLTE0PC90ZD5cclxuICAgICAgPHRkPkxlZnQgTGVnPC90ZD5cclxuICAgICAgPHRkPi0yPC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMubGVmdF9sZWdcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4xNTwvdGQ+XHJcbiAgICAgIDx0ZD5IYW5kPC90ZD5cclxuICAgICAgPHRkPi00PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuaGFuZFwiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPjE2PC90ZD5cclxuICAgICAgPHRkPkZvb3Q8L3RkPlxyXG4gICAgICA8dGQ+LTQ8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5mb290XCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gICAgPHRyPlxyXG4gICAgICA8dGQ+MTctMTg8L3RkPlxyXG4gICAgICA8dGQ+TmVjazwvdGQ+XHJcbiAgICAgIDx0ZD4tNTwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLm5lY2tcIiAvPlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgIDwvdHI+XHJcbiAgICA8dHI+XHJcbiAgICAgIDx0ZD4tPC90ZD5cclxuICAgICAgPHRkPlZpdGFsczwvdGQ+XHJcbiAgICAgIDx0ZD4tMzwvdGQ+XHJcbiAgICAgIDx0ZD5cclxuICAgICAgICA8SW5wdXQgcGF0aD1cImRhdGEubG9jYXRpb25zLnZpdGFsc1wiIC8+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgPC90cj5cclxuICAgIDx0cj5cclxuICAgICAgPHRkPi08L3RkPlxyXG4gICAgICA8dGQ+QXJlYTwvdGQ+XHJcbiAgICAgIDx0ZD5OL0E8L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAgPElucHV0IHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5hcmVhXCIgLz5cclxuICAgICAgPC90ZD5cclxuICAgICAgPHRkIC8+XHJcbiAgICA8L3RyPlxyXG4gIDwvdGJvZHk+XHJcbiAgPHRib2R5PlxyXG4gICAgeyNlYWNoICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEubG9jYXRpb25zLmN1c3RvbScpIHx8IFtdIGFzIGxvY2F0aW9uLCBpfVxyXG4gICAgICA8dHI+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cIi1cIlxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAncm9sbCcgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICBwYXRoPVwiZGF0YS5sb2NhdGlvbnMuY3VzdG9tXCJcclxuICAgICAgICAgICAgYXJyYXk9e3sgaW5kZXg6IGksIHByb3BlcnR5OiAnd2hlcmUnIH19IC8+XHJcbiAgICAgICAgPC90ZD5cclxuICAgICAgICA8dGQ+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgcGF0aD1cImRhdGEubG9jYXRpb25zLmN1c3RvbVwiXHJcbiAgICAgICAgICAgIGFycmF5PXt7IGluZGV4OiBpLCBwcm9wZXJ0eTogJ3BlbmFsdHknIH19XHJcbiAgICAgICAgICAgIHR5cGU9XCJudW1iZXJcIiAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgICAgPHRkPlxyXG4gICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLmxvY2F0aW9ucy5jdXN0b21cIlxyXG4gICAgICAgICAgICBhcnJheT17eyBpbmRleDogaSwgcHJvcGVydHk6ICdkcicgfX0gLz5cclxuICAgICAgICA8L3RkPlxyXG4gICAgICAgIDx0ZD5cclxuICAgICAgICAgIDxpXHJcbiAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCJcclxuICAgICAgICAgICAgb246Y2xpY2s9eygpID0+IHtcclxuICAgICAgICAgICAgICBsZXQgbG9jYXRpb25zID0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5sb2NhdGlvbnMuY3VzdG9tJyk7XHJcbiAgICAgICAgICAgICAgbG9jYXRpb25zLnNwbGljZShpLCAxKTtcclxuICAgICAgICAgICAgICAkZW50aXR5LnVwZGF0ZSh7ICdkYXRhLmxvYWRGb250LmN1c3RvbSc6IGR1cGxpY2F0ZShsb2NhdGlvbnMpIH0pO1xyXG4gICAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDwvdGQ+XHJcbiAgICAgIDwvdHI+XHJcbiAgICB7L2VhY2h9XHJcbiAgPC90Ym9keT5cclxuPC90YWJsZT5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVFLEtBQUssOEJBQUMsQ0FBQyxBQUNMLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCxvQkFBSyxDQUFDLEFBQVEsWUFBWSxBQUFFLENBQUMsQUFDM0IsT0FBTyxDQUFFLEdBQUcsQ0FBQyxVQUFVLEFBQ3pCLENBQUMsQUFFRCxLQUFLLDhCQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFDRCxNQUFNLDhCQUFDLENBQUMsQUFDTixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QscUJBQU0sQ0FBQyxFQUFFLGVBQUMsQ0FBQyxBQUNULE9BQU8sQ0FBRSxDQUFDLEFBQ1osQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3037,7 +3081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDEwMHB4KTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBnYXA6IDJweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCBpbnB1dCkge1xyXG4gICAgbWF4LXdpZHRoOiA3NXB4O1xyXG4gIH1cclxuICAucm9sbC1pY28ge1xyXG4gICAgcGFkZGluZy1sZWZ0OiAzcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdTdHJlbmd0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdEZXh0ZXJpdHknLCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaW50ZWxsaWdlbmNlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5JUSkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0lRJykucG9pbnRzU3BlbnQoKX1dIElROlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnSW50ZWxsaWdlbmNlJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCkpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhlYWx0aFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSFQpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aFwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdIVCcpLnBvaW50c1NwZW50KCl9XSBIVDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gJGVudGl0eS5yb2xsU2tpbGwoJ0hlYWx0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbCkucG9pbnRzU3BlbnQoKX1dIFdpbGw6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdXaWxsJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnUGVyY2VwdGlvbicsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlBlcilcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGVBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FDdkMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxlQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx5QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBQ0QsU0FBUyxlQUFDLENBQUMsQUFDVCxZQUFZLENBQUUsR0FBRyxBQUNuQixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/Attributes.svelte","webpack://src/svelte/Attributes.svelte.css"],"names":[],"mappings":"AAUE,2BAAa,YACE,CACb,qCAAsC,CACtC,sCAAuC,CACvC,oCAAqC,CACrC,OAAQ,CACT,0BACW,sBACa,CACxB,6CACuC,cACvB,CAChB,yBACU,gBACQ;ACvBrB,y3QAAy3Q","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { RichTextEditor, Input, FilePicker } from \"./form/form\";\r\n  import { Signature } from \"g4elogic\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n</script>\r\n\r\n<style>\r\n  .attributes {\r\n    display: grid;\r\n    grid-template-rows: repeat(auto, 60px);\r\n    grid-template-columns: repeat(1, 100px);\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    gap: 2px;\r\n  }\r\n  .attribute {\r\n    border: 1px solid black;\r\n  }\r\n  .attribute :global(.GURPS-label input) {\r\n    max-width: 75px;\r\n  }\r\n  .roll-ico {\r\n    padding-left: 3px;\r\n  }\r\n</style>\r\n\r\n<div class=\"attributes strength\">\r\n  <div class=\"attribute\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.ST).getMod()}\r\n      path=\"data.attributes.strength\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('ST').pointsSpent()}] ST:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Strength', $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute dexterity\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.DX).getMod()}\r\n      path=\"data.attributes.dexterity\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('DX').pointsSpent()}] DX:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Dexterity', $GURPS\r\n              .getAttribute(Signature.DX)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute intelligence\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.IQ).getMod()}\r\n      path=\"data.attributes.intelligence\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Intelligence', $GURPS\r\n              .getAttribute(Signature.IQ)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute health\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.HT).getMod()}\r\n      path=\"data.attributes.health\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HT').pointsSpent()}] HT:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Health', $GURPS\r\n              .getAttribute(Signature.HT)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute move\">\r\n    <Input\r\n      path=\"data.attributes.move\"\r\n      type=\"number\"\r\n      basedOn={$GURPS\r\n        .getAttribute('Move')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.move')}>\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Move').pointsSpent()}] Move:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute speed\">\r\n    <Input\r\n      path=\"data.attributes.speed\"\r\n      step=\"0.25\"\r\n      min={0}\r\n      basedOn={$GURPS\r\n        .getAttribute('Speed')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.speed')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute will\">\r\n    <Input\r\n      let:value\r\n      path=\"data.attributes.will\"\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      min={0}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute(Signature.Will).pointsSpent()}] Will:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Will', $GURPS\r\n              .getAttribute(Signature.Will)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute perception\">\r\n    <Input\r\n      path=\"data.attributes.perception\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Per').pointsSpent()}] Per:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => $entity.rollSkill('Perception', $GURPS\r\n              .getAttribute(Signature.Per)\r\n              .calculateLevel())} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute hitpoints\">\r\n    <Input\r\n      path=\"data.attributes.hit_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.strength')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HP').pointsSpent()}] HP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute fatigue\">\r\n    <Input\r\n      path=\"data.attributes.fatigue_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.health')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('FP').pointsSpent()}] FP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSaWNoVGV4dEVkaXRvciwgSW5wdXQsIEZpbGVQaWNrZXIgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBTaWduYXR1cmUgfSBmcm9tIFwiZzRlbG9naWNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5hdHRyaWJ1dGVzIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IHJlcGVhdChhdXRvLCA2MHB4KTtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDEsIDEwMHB4KTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XHJcbiAgICBnYXA6IDJweDtcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICB9XHJcbiAgLmF0dHJpYnV0ZSA6Z2xvYmFsKC5HVVJQUy1sYWJlbCBpbnB1dCkge1xyXG4gICAgbWF4LXdpZHRoOiA3NXB4O1xyXG4gIH1cclxuICAucm9sbC1pY28ge1xyXG4gICAgcGFkZGluZy1sZWZ0OiAzcHg7XHJcbiAgfVxyXG48L3N0eWxlPlxyXG5cclxuPGRpdiBjbGFzcz1cImF0dHJpYnV0ZXMgc3RyZW5ndGhcIj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnU1QnKS5wb2ludHNTcGVudCgpfV0gU1Q6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdTdHJlbmd0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBkZXh0ZXJpdHlcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkRYKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRFgnKS5wb2ludHNTcGVudCgpfV0gRFg6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdEZXh0ZXJpdHknLCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaW50ZWxsaWdlbmNlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5JUSkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0lRJykucG9pbnRzU3BlbnQoKX1dIElROlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnSW50ZWxsaWdlbmNlJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCkpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhlYWx0aFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSFQpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aFwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdIVCcpLnBvaW50c1NwZW50KCl9XSBIVDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gJGVudGl0eS5yb2xsU2tpbGwoJ0hlYWx0aCcsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBtb3ZlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5tb3ZlXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ01vdmUnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLm1vdmUnKX0+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdNb3ZlJykucG9pbnRzU3BlbnQoKX1dIE1vdmU6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBzcGVlZFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JEdVUlBTXHJcbiAgICAgICAgLmdldEF0dHJpYnV0ZSgnU3BlZWQnKVxyXG4gICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpIC0gJGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnNwZWVkJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NwZWVkJykucG9pbnRzU3BlbnQoKX1dIFNwZWVkOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgd2lsbFwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIGxldDp2YWx1ZVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIlxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbCkucG9pbnRzU3BlbnQoKX1dIFdpbGw6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+ICRlbnRpdHkucm9sbFNraWxsKCdXaWxsJywgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuV2lsbClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgcGVyY2VwdGlvblwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdQZXInKS5wb2ludHNTcGVudCgpfV0gUGVyOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiAkZW50aXR5LnJvbGxTa2lsbCgnUGVyY2VwdGlvbicsICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlBlcilcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgaGl0cG9pbnRzXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oaXRfcG9pbnRzXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuc3RyZW5ndGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFAnKS5wb2ludHNTcGVudCgpfV0gSFA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBmYXRpZ3VlXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5mYXRpZ3VlX3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmhlYWx0aCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLnBvaW50c1NwZW50KCl9XSBGUDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVRSxXQUFXLGVBQUMsQ0FBQyxBQUNYLE9BQU8sQ0FBRSxJQUFJLENBQ2Isa0JBQWtCLENBQUUsT0FBTyxJQUFJLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDdEMscUJBQXFCLENBQUUsT0FBTyxDQUFDLENBQUMsQ0FBQyxLQUFLLENBQUMsQ0FDdkMsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsR0FBRyxDQUFFLEdBQUcsQUFDVixDQUFDLEFBQ0QsVUFBVSxlQUFDLENBQUMsQUFDVixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLEFBQ3pCLENBQUMsQUFDRCx5QkFBVSxDQUFDLEFBQVEsa0JBQWtCLEFBQUUsQ0FBQyxBQUN0QyxTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBQ0QsU0FBUyxlQUFDLENBQUMsQUFDVCxZQUFZLENBQUUsR0FBRyxBQUNuQixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSb2xsZXIgfSBmcm9tIFwiQEdVUlBTRm91bmRyeS9yb2xsaW5nXCI7XHJcbiAgaW1wb3J0IHsgUmljaFRleHRFZGl0b3IsIElucHV0LCBGaWxlUGlja2VyIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcbiAgaW1wb3J0IHsgU2lnbmF0dXJlIH0gZnJvbSBcImc0ZWxvZ2ljXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuYXR0cmlidXRlcyB7XHJcbiAgICBkaXNwbGF5OiBncmlkO1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiByZXBlYXQoYXV0bywgNjBweCk7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgxLCAxMDBweCk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgZ2FwOiAycHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUge1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNzVweDtcclxuICB9XHJcbiAgLnJvbGwtaWNvIHtcclxuICAgIHBhZGRpbmctbGVmdDogM3B4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXYgY2xhc3M9XCJhdHRyaWJ1dGVzIHN0cmVuZ3RoXCI+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuU1QpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NUJykucG9pbnRzU3BlbnQoKX1dIFNUOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ1N0cmVuZ3RoJyl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgZGV4dGVyaXR5XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuZGV4dGVyaXR5XCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0RYJykucG9pbnRzU3BlbnQoKX1dIERYOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ0RleHRlcml0eScpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGludGVsbGlnZW5jZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZVwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdJUScpLnBvaW50c1NwZW50KCl9XSBJUTpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gUm9sbGVyLmN1c3RvbVJvbGwoJGVudGl0eSwgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuU1QpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCksICdJbnRlbGxpZ2VuY2UnKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBoZWFsdGhcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFQnKS5wb2ludHNTcGVudCgpfV0gSFQ6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpLCAnSGVhbHRoJyl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgbW92ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMubW92ZVwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBiYXNlZE9uPXskR1VSUFNcclxuICAgICAgICAuZ2V0QXR0cmlidXRlKCdNb3ZlJylcclxuICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSAtICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5tb3ZlJyl9PlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnTW92ZScpLnBvaW50c1NwZW50KCl9XSBNb3ZlOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgc3BlZWRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnNwZWVkXCJcclxuICAgICAgc3RlcD1cIjAuMjVcIlxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ1NwZWVkJylcclxuICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSAtICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5zcGVlZCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdTcGVlZCcpLnBvaW50c1NwZW50KCl9XSBTcGVlZDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIHdpbGxcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBsZXQ6dmFsdWVcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy53aWxsXCJcclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLldpbGwpLnBvaW50c1NwZW50KCl9XSBXaWxsOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ1dpbGwnKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBwZXJjZXB0aW9uXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5wZXJjZXB0aW9uXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1BlcicpLnBvaW50c1NwZW50KCl9XSBQZXI6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpLCAnUGVyY2VwdGlvbicpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhpdHBvaW50c1wiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaGl0X3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0hQJykucG9pbnRzU3BlbnQoKX1dIEhQOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgZmF0aWd1ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuZmF0aWd1ZV9wb2ludHNcIlxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIGJhc2VkT249eyRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5oZWFsdGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRlAnKS5wb2ludHNTcGVudCgpfV0gRlA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV0UsV0FBVyxlQUFDLENBQUMsQUFDWCxPQUFPLENBQUUsSUFBSSxDQUNiLGtCQUFrQixDQUFFLE9BQU8sSUFBSSxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3RDLHFCQUFxQixDQUFFLE9BQU8sQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQ3ZDLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3JDLEdBQUcsQ0FBRSxHQUFHLEFBQ1YsQ0FBQyxBQUNELFVBQVUsZUFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxBQUN6QixDQUFDLEFBQ0QseUJBQVUsQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDdEMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUNELFNBQVMsZUFBQyxDQUFDLEFBQ1QsWUFBWSxDQUFFLEdBQUcsQUFDbkIsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/Attributes.svelte","webpack://src/svelte/Attributes.svelte.css"],"names":[],"mappings":"AAWE,2BAAa,YACE,CACb,qCAAsC,CACtC,sCAAuC,CACvC,oCAAqC,CACrC,OAAQ,CACT,0BACW,sBACa,CACxB,6CACuC,cACvB,CAChB,yBACU,gBACQ;ACxBrB,qgRAAqgR","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { Roller } from \"@GURPSFoundry/rolling\";\r\n  import { RichTextEditor, Input, FilePicker } from \"./form/form\";\r\n  import { Signature } from \"g4elogic\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n</script>\r\n\r\n<style>\r\n  .attributes {\r\n    display: grid;\r\n    grid-template-rows: repeat(auto, 60px);\r\n    grid-template-columns: repeat(1, 100px);\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    gap: 2px;\r\n  }\r\n  .attribute {\r\n    border: 1px solid black;\r\n  }\r\n  .attribute :global(.GURPS-label input) {\r\n    max-width: 75px;\r\n  }\r\n  .roll-ico {\r\n    padding-left: 3px;\r\n  }\r\n</style>\r\n\r\n<div class=\"attributes strength\">\r\n  <div class=\"attribute\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.ST).getMod()}\r\n      path=\"data.attributes.strength\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('ST').pointsSpent()}] ST:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Strength')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute dexterity\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.DX).getMod()}\r\n      path=\"data.attributes.dexterity\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('DX').pointsSpent()}] DX:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Dexterity')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute intelligence\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.IQ).getMod()}\r\n      path=\"data.attributes.intelligence\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('IQ').pointsSpent()}] IQ:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Intelligence')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute health\">\r\n    <Input\r\n      mod={$GURPS.getAttribute(Signature.HT).getMod()}\r\n      path=\"data.attributes.health\"\r\n      min=\"0\"\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HT').pointsSpent()}] HT:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Health')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute move\">\r\n    <Input\r\n      path=\"data.attributes.move\"\r\n      type=\"number\"\r\n      basedOn={$GURPS\r\n        .getAttribute('Move')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.move')}>\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Move').pointsSpent()}] Move:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute speed\">\r\n    <Input\r\n      path=\"data.attributes.speed\"\r\n      step=\"0.25\"\r\n      min={0}\r\n      basedOn={$GURPS\r\n        .getAttribute('Speed')\r\n        .calculateLevel() - $entity.getProperty('data.attributes.speed')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Speed').pointsSpent()}] Speed:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute will\">\r\n    <Input\r\n      let:value\r\n      path=\"data.attributes.will\"\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      min={0}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute(Signature.Will).pointsSpent()}] Will:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Will')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute perception\">\r\n    <Input\r\n      path=\"data.attributes.perception\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.intelligence')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('Per').pointsSpent()}] Per:\r\n      </span>\r\n      <span\r\n        slot=\"label-text\"\r\n        class=\"fas fa-dice d6 roll-ico\"\r\n        on:click={() => Roller.customRoll($entity, $GURPS\r\n              .getAttribute(Signature.ST)\r\n              .calculateLevel(), 'Perception')} />\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute hitpoints\">\r\n    <Input\r\n      path=\"data.attributes.hit_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.strength')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('HP').pointsSpent()}] HP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n  <div class=\"attribute fatigue\">\r\n    <Input\r\n      path=\"data.attributes.fatigue_points\"\r\n      min={0}\r\n      basedOn={$entity.getProperty('data.attributes.health')}\r\n      type=\"number\">\r\n      <span slot=\"label-text\">\r\n        [{$GURPS.getAttribute('FP').pointsSpent()}] FP:\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".attributes.svelte-1tz8r8w{display:grid;grid-template-rows:repeat(auto, 60px);grid-template-columns:repeat(1, 100px);background-color:rgba(0, 0, 0, 0.05);gap:2px}.attribute.svelte-1tz8r8w{border:1px solid black}.attribute.svelte-1tz8r8w .GURPS-label input{max-width:75px}.roll-ico.svelte-1tz8r8w{padding-left:3px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXR0cmlidXRlcy5zdmVsdGUiLCJzb3VyY2VzIjpbIkF0dHJpYnV0ZXMuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IHsgZ2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBpbXBvcnQgeyBSb2xsZXIgfSBmcm9tIFwiQEdVUlBTRm91bmRyeS9yb2xsaW5nXCI7XHJcbiAgaW1wb3J0IHsgUmljaFRleHRFZGl0b3IsIElucHV0LCBGaWxlUGlja2VyIH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcbiAgaW1wb3J0IHsgU2lnbmF0dXJlIH0gZnJvbSBcImc0ZWxvZ2ljXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuYXR0cmlidXRlcyB7XHJcbiAgICBkaXNwbGF5OiBncmlkO1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiByZXBlYXQoYXV0bywgNjBweCk7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgxLCAxMDBweCk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDUpO1xyXG4gICAgZ2FwOiAycHg7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUge1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgfVxyXG4gIC5hdHRyaWJ1dGUgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNzVweDtcclxuICB9XHJcbiAgLnJvbGwtaWNvIHtcclxuICAgIHBhZGRpbmctbGVmdDogM3B4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXYgY2xhc3M9XCJhdHRyaWJ1dGVzIHN0cmVuZ3RoXCI+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuU1QpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1NUJykucG9pbnRzU3BlbnQoKX1dIFNUOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ1N0cmVuZ3RoJyl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgZGV4dGVyaXR5XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgbW9kPXskR1VSUFMuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5EWCkuZ2V0TW9kKCl9XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuZGV4dGVyaXR5XCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0RYJykucG9pbnRzU3BlbnQoKX1dIERYOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ0RleHRlcml0eScpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGludGVsbGlnZW5jZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIG1vZD17JEdVUlBTLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuSVEpLmdldE1vZCgpfVxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZVwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdJUScpLnBvaW50c1NwZW50KCl9XSBJUTpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgICA8c3BhblxyXG4gICAgICAgIHNsb3Q9XCJsYWJlbC10ZXh0XCJcclxuICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICBvbjpjbGljaz17KCkgPT4gUm9sbGVyLmN1c3RvbVJvbGwoJGVudGl0eSwgJEdVUlBTXHJcbiAgICAgICAgICAgICAgLmdldEF0dHJpYnV0ZShTaWduYXR1cmUuU1QpXHJcbiAgICAgICAgICAgICAgLmNhbGN1bGF0ZUxldmVsKCksICdJbnRlbGxpZ2VuY2UnKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBoZWFsdGhcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBtb2Q9eyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLkhUKS5nZXRNb2QoKX1cclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIlxyXG4gICAgICBtaW49XCIwXCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnSFQnKS5wb2ludHNTcGVudCgpfV0gSFQ6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpLCAnSGVhbHRoJyl9IC8+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgbW92ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMubW92ZVwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBiYXNlZE9uPXskR1VSUFNcclxuICAgICAgICAuZ2V0QXR0cmlidXRlKCdNb3ZlJylcclxuICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSAtICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5tb3ZlJyl9PlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnTW92ZScpLnBvaW50c1NwZW50KCl9XSBNb3ZlOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgc3BlZWRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnNwZWVkXCJcclxuICAgICAgc3RlcD1cIjAuMjVcIlxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIGJhc2VkT249eyRHVVJQU1xyXG4gICAgICAgIC5nZXRBdHRyaWJ1dGUoJ1NwZWVkJylcclxuICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSAtICRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5zcGVlZCcpfVxyXG4gICAgICB0eXBlPVwibnVtYmVyXCI+XHJcbiAgICAgIDxzcGFuIHNsb3Q9XCJsYWJlbC10ZXh0XCI+XHJcbiAgICAgICAgW3skR1VSUFMuZ2V0QXR0cmlidXRlKCdTcGVlZCcpLnBvaW50c1NwZW50KCl9XSBTcGVlZDpcclxuICAgICAgPC9zcGFuPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIHdpbGxcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBsZXQ6dmFsdWVcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy53aWxsXCJcclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLmludGVsbGlnZW5jZScpfVxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLldpbGwpLnBvaW50c1NwZW50KCl9XSBXaWxsOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICAgIDxzcGFuXHJcbiAgICAgICAgc2xvdD1cImxhYmVsLXRleHRcIlxyXG4gICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiBSb2xsZXIuY3VzdG9tUm9sbCgkZW50aXR5LCAkR1VSUFNcclxuICAgICAgICAgICAgICAuZ2V0QXR0cmlidXRlKFNpZ25hdHVyZS5TVClcclxuICAgICAgICAgICAgICAuY2FsY3VsYXRlTGV2ZWwoKSwgJ1dpbGwnKX0gLz5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImF0dHJpYnV0ZSBwZXJjZXB0aW9uXCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5wZXJjZXB0aW9uXCJcclxuICAgICAgbWluPXswfVxyXG4gICAgICBiYXNlZE9uPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLmF0dHJpYnV0ZXMuaW50ZWxsaWdlbmNlJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ1BlcicpLnBvaW50c1NwZW50KCl9XSBQZXI6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgPHNwYW5cclxuICAgICAgICBzbG90PVwibGFiZWwtdGV4dFwiXHJcbiAgICAgICAgY2xhc3M9XCJmYXMgZmEtZGljZSBkNiByb2xsLWljb1wiXHJcbiAgICAgICAgb246Y2xpY2s9eygpID0+IFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksICRHVVJQU1xyXG4gICAgICAgICAgICAgIC5nZXRBdHRyaWJ1dGUoU2lnbmF0dXJlLlNUKVxyXG4gICAgICAgICAgICAgIC5jYWxjdWxhdGVMZXZlbCgpLCAnUGVyY2VwdGlvbicpfSAvPlxyXG4gICAgPC9JbnB1dD5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiYXR0cmlidXRlIGhpdHBvaW50c1wiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuaGl0X3BvaW50c1wiXHJcbiAgICAgIG1pbj17MH1cclxuICAgICAgYmFzZWRPbj17JGVudGl0eS5nZXRQcm9wZXJ0eSgnZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoJyl9XHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHRcIj5cclxuICAgICAgICBbeyRHVVJQUy5nZXRBdHRyaWJ1dGUoJ0hQJykucG9pbnRzU3BlbnQoKX1dIEhQOlxyXG4gICAgICA8L3NwYW4+XHJcbiAgICA8L0lucHV0PlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJhdHRyaWJ1dGUgZmF0aWd1ZVwiPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuZmF0aWd1ZV9wb2ludHNcIlxyXG4gICAgICBtaW49ezB9XHJcbiAgICAgIGJhc2VkT249eyRlbnRpdHkuZ2V0UHJvcGVydHkoJ2RhdGEuYXR0cmlidXRlcy5oZWFsdGgnKX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiPlxyXG4gICAgICA8c3BhbiBzbG90PVwibGFiZWwtdGV4dFwiPlxyXG4gICAgICAgIFt7JEdVUlBTLmdldEF0dHJpYnV0ZSgnRlAnKS5wb2ludHNTcGVudCgpfV0gRlA6XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV0UsV0FBVyxlQUFDLENBQUMsQUFDWCxPQUFPLENBQUUsSUFBSSxDQUNiLGtCQUFrQixDQUFFLE9BQU8sSUFBSSxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3RDLHFCQUFxQixDQUFFLE9BQU8sQ0FBQyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQ3ZDLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3JDLEdBQUcsQ0FBRSxHQUFHLEFBQ1YsQ0FBQyxBQUNELFVBQVUsZUFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsS0FBSyxBQUN6QixDQUFDLEFBQ0QseUJBQVUsQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDdEMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUNELFNBQVMsZUFBQyxDQUFDLEFBQ1QsWUFBWSxDQUFFLEdBQUcsQUFDbkIsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3103,7 +3147,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IFwic3VibWl0XCI7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Dialog.svelte","webpack://src/svelte/Dialog.svelte.css"],"names":[],"mappings":"AA2DE,uBAAS,YACM;AC3DjB,i3EAAi3E","sourcesContent":["<script>\r\n  import { onMount, createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let dialogOpen = false;\r\n  let content;\r\n\r\n  export let height = 800;\r\n  export let width = 800;\r\n  export let title = \"???\";\r\n  export let buttons = {};\r\n  export let defaultButton = \"submit\";\r\n  export let onClose = new Function();\r\n  export let overrideSubmit = false;\r\n\r\n  function _onClose() {\r\n    let close = onClose();\r\n    dispatch(\"close\", close);\r\n    dialogOpen = false;\r\n  }\r\n\r\n  async function launchDialog(node, parameters) {\r\n    const dialog = new Dialog(\r\n      {\r\n        title,\r\n        buttons,\r\n        close: _onClose,\r\n        default: defaultButton,\r\n      },\r\n      {\r\n        width,\r\n        height,\r\n      }\r\n    );\r\n\r\n    if (overrideSubmit)\r\n      dialog.submit = (button) => {\r\n        try {\r\n          if (button.callback) button.callback();\r\n          dialog.close();\r\n        } catch (err) {\r\n          console.log(err);\r\n        }\r\n      };\r\n\r\n    await dialog._render(true);\r\n    dialog.element.get(0).querySelector(\".dialog-content\").appendChild(node);\r\n    dialogOpen = true;\r\n    dispatch(\"opened\");\r\n\r\n    return () => {\r\n      return {\r\n        destroy: () => {},\r\n      };\r\n    };\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .hidden {\r\n    display: none;\r\n  }\r\n</style>\r\n\r\n<div\r\n  class:hidden={!dialogOpen}\r\n  class=\"svelte-dialog\"\r\n  bind:this={content}\r\n  use:launchDialog>\r\n  <slot />\r\n</div>\r\n",".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IFwic3VibWl0XCI7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IGJ1dHRvbnMuc3VibWl0ID8gXCJzdWJtaXRcIiA6IG51bGw7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Dialog.svelte","webpack://src/svelte/Dialog.svelte.css"],"names":[],"mappings":"AA2DE,uBAAS,YACM;AC3DjB,i5EAAi5E","sourcesContent":["<script>\r\n  import { onMount, createEventDispatcher } from \"svelte\";\r\n  const dispatch = createEventDispatcher();\r\n\r\n  let dialogOpen = false;\r\n  let content;\r\n\r\n  export let height = 800;\r\n  export let width = 800;\r\n  export let title = \"???\";\r\n  export let buttons = {};\r\n  export let defaultButton = buttons.submit ? \"submit\" : null;\r\n  export let onClose = new Function();\r\n  export let overrideSubmit = false;\r\n\r\n  function _onClose() {\r\n    let close = onClose();\r\n    dispatch(\"close\", close);\r\n    dialogOpen = false;\r\n  }\r\n\r\n  async function launchDialog(node, parameters) {\r\n    const dialog = new Dialog(\r\n      {\r\n        title,\r\n        buttons,\r\n        close: _onClose,\r\n        default: defaultButton,\r\n      },\r\n      {\r\n        width,\r\n        height,\r\n      }\r\n    );\r\n\r\n    if (overrideSubmit)\r\n      dialog.submit = (button) => {\r\n        try {\r\n          if (button.callback) button.callback();\r\n          dialog.close();\r\n        } catch (err) {\r\n          console.log(err);\r\n        }\r\n      };\r\n\r\n    await dialog._render(true);\r\n    dialog.element.get(0).querySelector(\".dialog-content\").appendChild(node);\r\n    dialogOpen = true;\r\n    dispatch(\"opened\");\r\n\r\n    return () => {\r\n      return {\r\n        destroy: () => {},\r\n      };\r\n    };\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .hidden {\r\n    display: none;\r\n  }\r\n</style>\r\n\r\n<div\r\n  class:hidden={!dialogOpen}\r\n  class=\"svelte-dialog\"\r\n  bind:this={content}\r\n  use:launchDialog>\r\n  <slot />\r\n</div>\r\n",".hidden.svelte-1ifx1we{display:none}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nLnN2ZWx0ZSIsInNvdXJjZXMiOlsiRGlhbG9nLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IG9uTW91bnQsIGNyZWF0ZUV2ZW50RGlzcGF0Y2hlciB9IGZyb20gXCJzdmVsdGVcIjtcclxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xyXG5cclxuICBsZXQgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIGxldCBjb250ZW50O1xyXG5cclxuICBleHBvcnQgbGV0IGhlaWdodCA9IDgwMDtcclxuICBleHBvcnQgbGV0IHdpZHRoID0gODAwO1xyXG4gIGV4cG9ydCBsZXQgdGl0bGUgPSBcIj8/P1wiO1xyXG4gIGV4cG9ydCBsZXQgYnV0dG9ucyA9IHt9O1xyXG4gIGV4cG9ydCBsZXQgZGVmYXVsdEJ1dHRvbiA9IGJ1dHRvbnMuc3VibWl0ID8gXCJzdWJtaXRcIiA6IG51bGw7XHJcbiAgZXhwb3J0IGxldCBvbkNsb3NlID0gbmV3IEZ1bmN0aW9uKCk7XHJcbiAgZXhwb3J0IGxldCBvdmVycmlkZVN1Ym1pdCA9IGZhbHNlO1xyXG5cclxuICBmdW5jdGlvbiBfb25DbG9zZSgpIHtcclxuICAgIGxldCBjbG9zZSA9IG9uQ2xvc2UoKTtcclxuICAgIGRpc3BhdGNoKFwiY2xvc2VcIiwgY2xvc2UpO1xyXG4gICAgZGlhbG9nT3BlbiA9IGZhbHNlO1xyXG4gIH1cclxuXHJcbiAgYXN5bmMgZnVuY3Rpb24gbGF1bmNoRGlhbG9nKG5vZGUsIHBhcmFtZXRlcnMpIHtcclxuICAgIGNvbnN0IGRpYWxvZyA9IG5ldyBEaWFsb2coXHJcbiAgICAgIHtcclxuICAgICAgICB0aXRsZSxcclxuICAgICAgICBidXR0b25zLFxyXG4gICAgICAgIGNsb3NlOiBfb25DbG9zZSxcclxuICAgICAgICBkZWZhdWx0OiBkZWZhdWx0QnV0dG9uLFxyXG4gICAgICB9LFxyXG4gICAgICB7XHJcbiAgICAgICAgd2lkdGgsXHJcbiAgICAgICAgaGVpZ2h0LFxyXG4gICAgICB9XHJcbiAgICApO1xyXG5cclxuICAgIGlmIChvdmVycmlkZVN1Ym1pdClcclxuICAgICAgZGlhbG9nLnN1Ym1pdCA9IChidXR0b24pID0+IHtcclxuICAgICAgICB0cnkge1xyXG4gICAgICAgICAgaWYgKGJ1dHRvbi5jYWxsYmFjaykgYnV0dG9uLmNhbGxiYWNrKCk7XHJcbiAgICAgICAgICBkaWFsb2cuY2xvc2UoKTtcclxuICAgICAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgICAgIGNvbnNvbGUubG9nKGVycik7XHJcbiAgICAgICAgfVxyXG4gICAgICB9O1xyXG5cclxuICAgIGF3YWl0IGRpYWxvZy5fcmVuZGVyKHRydWUpO1xyXG4gICAgZGlhbG9nLmVsZW1lbnQuZ2V0KDApLnF1ZXJ5U2VsZWN0b3IoXCIuZGlhbG9nLWNvbnRlbnRcIikuYXBwZW5kQ2hpbGQobm9kZSk7XHJcbiAgICBkaWFsb2dPcGVuID0gdHJ1ZTtcclxuICAgIGRpc3BhdGNoKFwib3BlbmVkXCIpO1xyXG5cclxuICAgIHJldHVybiAoKSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgZGVzdHJveTogKCkgPT4ge30sXHJcbiAgICAgIH07XHJcbiAgICB9O1xyXG4gIH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgLmhpZGRlbiB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXZcclxuICBjbGFzczpoaWRkZW49eyFkaWFsb2dPcGVufVxyXG4gIGNsYXNzPVwic3ZlbHRlLWRpYWxvZ1wiXHJcbiAgYmluZDp0aGlzPXtjb250ZW50fVxyXG4gIHVzZTpsYXVuY2hEaWFsb2c+XHJcbiAgPHNsb3QgLz5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyREUsT0FBTyxlQUFDLENBQUMsQUFDUCxPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3213,7 +3257,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".spell-tools.svelte-p9o1vp{display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3BlbGxMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiU3BlbGxMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgSW5wdXQgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuXHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbiAgY29uc3QgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKTtcclxuXHJcbiAgJDogc3BlbGxCb251cyA9ICRlbnRpdHkuZ2V0UHJvcGVydHkoXCJkYXRhLmJvbnVzZXMuc3BlbGxfYm9udXNcIikgfHwgMDtcclxuICAkOiBzcGVsbE9uUGVuYWx0eSA9ICRlbnRpdHkuZ2V0UHJvcGVydHkoXCJkYXRhLnBlbmFsdGllcy5zcGVsbHNfb25cIikgfHwgMDtcclxuICAkOiBzcGVsbENvbmNlbnRyYXRpb25QZW5hbHR5ID1cclxuICAgICgkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5wZW5hbHRpZXMuY29uY2VudHJhdGlvbl9zcGVsbHNcIikgfHwgMCkgKiAzO1xyXG5cclxuICBjb25zdCBnZXRSb2xsTW9kID0gKCkgPT5cclxuICAgIHNwZWxsQm9udXMgLSBzcGVsbE9uUGVuYWx0eSAtIHNwZWxsQ29uY2VudHJhdGlvblBlbmFsdHk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5zcGVsbC10b29scyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXYgY2xhc3M9XCJzcGVsbC10b29sc1wiPlxyXG4gIDxJbnB1dFxyXG4gICAgcGF0aD17J2RhdGEuYm9udXNlcy5zcGVsbF9ib251cyd9XHJcbiAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgIHtlbnRpdHl9XHJcbiAgICBsYWJlbD1cIlNwZWxsIEJvbnVzXCIgLz5cclxuICA8SW5wdXRcclxuICAgIHBhdGg9eydkYXRhLnBlbmFsdGllcy5zcGVsbHNfb24nfVxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbWluPVwiMFwiXHJcbiAgICBsYWJlbD1cIlNwZWxscyBPblwiIC8+XHJcbiAgPElucHV0XHJcbiAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgIHBhdGg9eydkYXRhLnBlbmFsdGllcy5jb25jZW50cmF0aW9uX3NwZWxscyd9XHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbWluPVwiMFwiXHJcbiAgICBsYWJlbD1cIlNwZWxsIENvbmNlbnRyYXRpbmcgT25cIiAvPlxyXG48L2Rpdj5cclxuXHJcbjxMaXN0XHJcbiAgdHlwZT1cInNwZWxsXCJcclxuICBvbjphZGRsaXN0aXRlbT17KCkgPT4ge1xyXG4gICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oeyBuYW1lOiAnPz8/JywgdHlwZTogJ3NwZWxsJyB9KTtcclxuICB9fT5cclxuICA8dGhcclxuICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICRlbnRpdHkuc29ydExpc3QoJ3NwZWxsJywgJ2RhdGEubmFtZScpO1xyXG4gICAgfX0+XHJcbiAgICBTcGVsbHMgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJlc2lzdDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5DbGFzczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Db3N0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1haW50YWluPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRpbWU8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+RHVyYXRpb248L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U0w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UlNMPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlB0czwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gIHsjZWFjaCB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydCgkR1VSUFMuc3BlbGxMaXN0Lml0ZXIoKSkgYXMgc3BlbGwsIGkgKHNwZWxsLmZvdW5kcnlJRCl9XHJcbiAgICA8Um93XHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmlzTGFiZWxcclxuICAgICAgbGV0OmhvdmVyZWRcclxuICAgICAge2l9XHJcbiAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgaWQ9e3NwZWxsLmZvdW5kcnlJRH1cclxuICAgICAgb246ZGVsZXRlPXsoZSkgPT4ge1xyXG4gICAgICAgIGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M6bm8tc2hvdz17IWhvdmVyZWQgfHwgaXNMYWJlbH1cclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgb246Y29udGV4dG1lbnV8Y2FwdHVyZT17KGUpID0+IHtcclxuICAgICAgICAgICAgJGVudGl0eS5yb2xsU2tpbGwoc3BlbGwubmFtZSwgc3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICAgIGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICAgIH19XHJcbiAgICAgICAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICAgJGVudGl0eS5yb2xsU2tpbGwoc3BlbGwubmFtZSwgc3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0uX2VudGl0eX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgIHtzcGVsbC5uYW1lfXtzcGVsbC50ZWNoTGV2ZWwgPyBgL1RMJHtzcGVsbC50ZWNoTGV2ZWx9YCA6ICcnfVxyXG4gICAgICAgICAgICB7c3BlbGwuc3BlY2lhbGl6YXRpb24gPyBgKCR7c3BlbGwuc3BlY2lhbGl6YXRpb259KWAgOiBgYH1cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICA8L0lucHV0PlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgICAgPHRkPntzcGVsbC5zcGVsbENsYXNzfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuY2FzdGluZ0Nvc3R9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5tYWludGVuYW5jZUNvc3R9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYXN0aW5nVGltZX08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLmR1cmF0aW9ufTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIHNwZWxsQm9udXN9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHtzcGVsbC5zaWduYXR1cmV9e3NwZWxsLmdldFJlbGF0aXZlTGV2ZWwoKSArIHNwZWxsQm9udXMgPj0gMCA/ICcrJyA6ICcnfXtzcGVsbC5nZXRSZWxhdGl2ZUxldmVsKCkgKyBzcGVsbEJvbnVzfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLnBvaW50c308L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLnJlZmVyZW5jZX08L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrQkUsWUFBWSxjQUFDLENBQUMsQUFDWixPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/SpellList.svelte","webpack://src/svelte/SpellList.svelte.css"],"names":[],"mappings":"AAkBE,2BAAc,YACC;AClBjB,ihKAAihK","sourcesContent":["<script>\r\n  import { List, Row } from \"./list/list.ts\";\r\n  import { getContext } from \"svelte\";\r\n  import { Input } from \"./form/form\";\r\n\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  $: spellBonus = $entity.getProperty(\"data.bonuses.spell_bonus\") || 0;\r\n  $: spellOnPenalty = $entity.getProperty(\"data.penalties.spells_on\") || 0;\r\n  $: spellConcentrationPenalty =\r\n    ($entity.getProperty(\"data.penalties.concentration_spells\") || 0) * 3;\r\n\r\n  const getRollMod = () =>\r\n    spellBonus - spellOnPenalty - spellConcentrationPenalty;\r\n</script>\r\n\r\n<style>\r\n  .spell-tools {\r\n    display: flex;\r\n  }\r\n</style>\r\n\r\n<div class=\"spell-tools\">\r\n  <Input\r\n    path={'data.bonuses.spell_bonus'}\r\n    type=\"number\"\r\n    {entity}\r\n    label=\"Spell Bonus\" />\r\n  <Input\r\n    path={'data.penalties.spells_on'}\r\n    type=\"number\"\r\n    {entity}\r\n    min=\"0\"\r\n    label=\"Spells On\" />\r\n  <Input\r\n    type=\"number\"\r\n    path={'data.penalties.concentration_spells'}\r\n    {entity}\r\n    min=\"0\"\r\n    label=\"Spell Concentrating On\" />\r\n</div>\r\n\r\n<List\r\n  type=\"spell\"\r\n  on:addlistitem={() => {\r\n    $entity.createOwnedItem({ name: '???', type: 'spell' });\r\n  }}>\r\n  <th\r\n    slot=\"header\"\r\n    on:dblclick={(e) => {\r\n      $entity.sortList('spell', 'data.name');\r\n    }}>\r\n    Spells <i class=\"fas fa-sort\" />\r\n  </th>\r\n  <th slot=\"header\">Resist</th>\r\n  <th slot=\"header\">Class</th>\r\n  <th slot=\"header\">Cost</th>\r\n  <th slot=\"header\">Maintain</th>\r\n  <th slot=\"header\">Time</th>\r\n  <th slot=\"header\">Duration</th>\r\n  <th slot=\"header\">SL</th>\r\n  <th slot=\"header\">RSL</th>\r\n  <th slot=\"header\">Pts</th>\r\n  <th slot=\"header\">Ref</th>\r\n  {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}\r\n    <Row\r\n      let:ownedItem\r\n      let:isLabel\r\n      let:hovered\r\n      {i}\r\n      draggable={true}\r\n      id={spell.foundryID}\r\n      on:delete={(e) => {\r\n        e.detail.entity.delete();\r\n      }}>\r\n      <td class=\"main-list-col\">\r\n        <span\r\n          class:no-show={!hovered || isLabel}\r\n          class=\"fas fa-dice d6 roll-ico\"\r\n          on:contextmenu|capture={(e) => {\r\n            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());\r\n            e.stopImmediatePropagation();\r\n            e.preventDefault();\r\n          }}\r\n          on:click={(e) => {\r\n            $entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());\r\n          }} />\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          path=\"data.name\"\r\n          alsoUpdate={['name']}\r\n          config={{ clickToEdit: true }}\r\n          let:value>\r\n          <span slot=\"no-edit\">\r\n            {spell.name}{spell.techLevel ? `/TL${spell.techLevel}` : ''}\r\n            {spell.specialization ? `(${spell.specialization})` : ``}\r\n          </span>\r\n        </Input>\r\n      </td>\r\n      <td />\r\n      <td>{spell.spellClass}</td>\r\n      <td>{spell.castingCost}</td>\r\n      <td>{spell.maintenanceCost}</td>\r\n      <td>{spell.castingTime}</td>\r\n      <td>{spell.duration}</td>\r\n      <td>{spell.calculateLevel() + spellBonus}</td>\r\n      <td>\r\n        {spell.signature}{spell.getRelativeLevel() + spellBonus >= 0 ? '+' : ''}{spell.getRelativeLevel() + spellBonus}\r\n      </td>\r\n      <td>{spell.points}</td>\r\n      <td>{spell.reference}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".spell-tools.svelte-p9o1vp{display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3BlbGxMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiU3BlbGxMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgSW5wdXQgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuXHJcbiAgY29uc3QgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIik7XHJcbiAgY29uc3QgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKTtcclxuXHJcbiAgJDogc3BlbGxCb251cyA9ICRlbnRpdHkuZ2V0UHJvcGVydHkoXCJkYXRhLmJvbnVzZXMuc3BlbGxfYm9udXNcIikgfHwgMDtcclxuICAkOiBzcGVsbE9uUGVuYWx0eSA9ICRlbnRpdHkuZ2V0UHJvcGVydHkoXCJkYXRhLnBlbmFsdGllcy5zcGVsbHNfb25cIikgfHwgMDtcclxuICAkOiBzcGVsbENvbmNlbnRyYXRpb25QZW5hbHR5ID1cclxuICAgICgkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5wZW5hbHRpZXMuY29uY2VudHJhdGlvbl9zcGVsbHNcIikgfHwgMCkgKiAzO1xyXG5cclxuICBjb25zdCBnZXRSb2xsTW9kID0gKCkgPT5cclxuICAgIHNwZWxsQm9udXMgLSBzcGVsbE9uUGVuYWx0eSAtIHNwZWxsQ29uY2VudHJhdGlvblBlbmFsdHk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5zcGVsbC10b29scyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxkaXYgY2xhc3M9XCJzcGVsbC10b29sc1wiPlxyXG4gIDxJbnB1dFxyXG4gICAgcGF0aD17J2RhdGEuYm9udXNlcy5zcGVsbF9ib251cyd9XHJcbiAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgIHtlbnRpdHl9XHJcbiAgICBsYWJlbD1cIlNwZWxsIEJvbnVzXCIgLz5cclxuICA8SW5wdXRcclxuICAgIHBhdGg9eydkYXRhLnBlbmFsdGllcy5zcGVsbHNfb24nfVxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbWluPVwiMFwiXHJcbiAgICBsYWJlbD1cIlNwZWxscyBPblwiIC8+XHJcbiAgPElucHV0XHJcbiAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgIHBhdGg9eydkYXRhLnBlbmFsdGllcy5jb25jZW50cmF0aW9uX3NwZWxscyd9XHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbWluPVwiMFwiXHJcbiAgICBsYWJlbD1cIlNwZWxsIENvbmNlbnRyYXRpbmcgT25cIiAvPlxyXG48L2Rpdj5cclxuXHJcbjxMaXN0XHJcbiAgdHlwZT1cInNwZWxsXCJcclxuICBvbjphZGRsaXN0aXRlbT17KCkgPT4ge1xyXG4gICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oeyBuYW1lOiAnPz8/JywgdHlwZTogJ3NwZWxsJyB9KTtcclxuICB9fT5cclxuICA8dGhcclxuICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICRlbnRpdHkuc29ydExpc3QoJ3NwZWxsJywgJ2RhdGEubmFtZScpO1xyXG4gICAgfX0+XHJcbiAgICBTcGVsbHMgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJlc2lzdDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5DbGFzczwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5Db3N0PC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPk1haW50YWluPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlRpbWU8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+RHVyYXRpb248L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+U0w8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UlNMPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlB0czwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gIHsjZWFjaCB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydCgkR1VSUFMuc3BlbGxMaXN0Lml0ZXIoKSkgYXMgc3BlbGwsIGkgKHNwZWxsLmZvdW5kcnlJRCl9XHJcbiAgICA8Um93XHJcbiAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgbGV0OmlzTGFiZWxcclxuICAgICAgbGV0OmhvdmVyZWRcclxuICAgICAge2l9XHJcbiAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgaWQ9e3NwZWxsLmZvdW5kcnlJRH1cclxuICAgICAgb246ZGVsZXRlPXsoZSkgPT4ge1xyXG4gICAgICAgIGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICA8c3BhblxyXG4gICAgICAgICAgY2xhc3M6bm8tc2hvdz17IWhvdmVyZWQgfHwgaXNMYWJlbH1cclxuICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY29cIlxyXG4gICAgICAgICAgb246Y29udGV4dG1lbnV8Y2FwdHVyZT17KGUpID0+IHtcclxuICAgICAgICAgICAgJGVudGl0eS5yb2xsU2tpbGwoc3BlbGwubmFtZSwgc3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICAgIGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICAgIH19XHJcbiAgICAgICAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICAgJGVudGl0eS5yb2xsU2tpbGwoc3BlbGwubmFtZSwgc3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICB9fSAvPlxyXG4gICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0uX2VudGl0eX1cclxuICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgIHtzcGVsbC5uYW1lfXtzcGVsbC50ZWNoTGV2ZWwgPyBgL1RMJHtzcGVsbC50ZWNoTGV2ZWx9YCA6ICcnfVxyXG4gICAgICAgICAgICB7c3BlbGwuc3BlY2lhbGl6YXRpb24gPyBgKCR7c3BlbGwuc3BlY2lhbGl6YXRpb259KWAgOiBgYH1cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICA8L0lucHV0PlxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQgLz5cclxuICAgICAgPHRkPntzcGVsbC5zcGVsbENsYXNzfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuY2FzdGluZ0Nvc3R9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5tYWludGVuYW5jZUNvc3R9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYXN0aW5nVGltZX08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLmR1cmF0aW9ufTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuY2FsY3VsYXRlTGV2ZWwoKSArIHNwZWxsQm9udXN9PC90ZD5cclxuICAgICAgPHRkPlxyXG4gICAgICAgIHtzcGVsbC5zaWduYXR1cmV9e3NwZWxsLmdldFJlbGF0aXZlTGV2ZWwoKSArIHNwZWxsQm9udXMgPj0gMCA/ICcrJyA6ICcnfXtzcGVsbC5nZXRSZWxhdGl2ZUxldmVsKCkgKyBzcGVsbEJvbnVzfVxyXG4gICAgICA8L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLnBvaW50c308L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLnJlZmVyZW5jZX08L3RkPlxyXG4gICAgPC9Sb3c+XHJcbiAgey9lYWNofVxyXG48L0xpc3Q+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFrQkUsWUFBWSxjQUFDLENBQUMsQUFDWixPQUFPLENBQUUsSUFBSSxBQUNmLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".spell-tools.svelte-p9o1vp{display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3BlbGxMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiU3BlbGxMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgSW5wdXQgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBSb2xsZXIgfSBmcm9tIFwiQEdVUlBTRm91bmRyeS9yb2xsaW5nXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gICQ6IHNwZWxsQm9udXMgPSAkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5ib251c2VzLnNwZWxsX2JvbnVzXCIpIHx8IDA7XHJcbiAgJDogc3BlbGxPblBlbmFsdHkgPSAkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5wZW5hbHRpZXMuc3BlbGxzX29uXCIpIHx8IDA7XHJcbiAgJDogc3BlbGxDb25jZW50cmF0aW9uUGVuYWx0eSA9XHJcbiAgICAoJGVudGl0eS5nZXRQcm9wZXJ0eShcImRhdGEucGVuYWx0aWVzLmNvbmNlbnRyYXRpb25fc3BlbGxzXCIpIHx8IDApICogMztcclxuXHJcbiAgY29uc3QgZ2V0Um9sbE1vZCA9ICgpID0+IFtcclxuICAgIHsgbW9kaWZpZXI6IGArJHtzcGVsbEJvbnVzfWAsIGRlc2NyaXB0aW9uOiBcIk1hZ2VyeSBib251c1wiIH0sXHJcbiAgICB7XHJcbiAgICAgIG1vZGlmaWVyOiBgLSR7c3BlbGxPblBlbmFsdHl9YCxcclxuICAgICAgZGVzY3JpcHRpb246IGBQZW5hbHR5IGZvciBzcGVsbHMgb25gLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgbW9kaWZpZXI6IGAtJHtzcGVsbENvbmNlbnRyYXRpb25QZW5hbHR5ICogM31gLFxyXG4gICAgICBkZXNjcmlwdGlvbjogYFBlbmFsdHkgZm9yIHNwZWxscyBjb25jZW50cmF0ZWQgb25gLFxyXG4gICAgfSxcclxuICBdO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuc3BlbGwtdG9vbHMge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwic3BlbGwtdG9vbHNcIj5cclxuICA8SW5wdXRcclxuICAgIHBhdGg9eydkYXRhLmJvbnVzZXMuc3BlbGxfYm9udXMnfVxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbGFiZWw9XCJTcGVsbCBCb251c1wiIC8+XHJcbiAgPElucHV0XHJcbiAgICBwYXRoPXsnZGF0YS5wZW5hbHRpZXMuc3BlbGxzX29uJ31cclxuICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAge2VudGl0eX1cclxuICAgIG1pbj1cIjBcIlxyXG4gICAgbGFiZWw9XCJTcGVsbHMgT25cIiAvPlxyXG4gIDxJbnB1dFxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICBwYXRoPXsnZGF0YS5wZW5hbHRpZXMuY29uY2VudHJhdGlvbl9zcGVsbHMnfVxyXG4gICAge2VudGl0eX1cclxuICAgIG1pbj1cIjBcIlxyXG4gICAgbGFiZWw9XCJTcGVsbCBDb25jZW50cmF0aW5nIE9uXCIgLz5cclxuPC9kaXY+XHJcblxyXG48TGlzdFxyXG4gIHR5cGU9XCJzcGVsbFwiXHJcbiAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHsgbmFtZTogJz8/PycsIHR5cGU6ICdzcGVsbCcgfSk7XHJcbiAgfX0+XHJcbiAgPHRoXHJcbiAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAkZW50aXR5LnNvcnRMaXN0KCdzcGVsbCcsICdkYXRhLm5hbWUnKTtcclxuICAgIH19PlxyXG4gICAgU3BlbGxzIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gIDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZXNpc3Q8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+Q2xhc3M8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+Q29zdDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5NYWludGFpbjwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5UaW1lPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkR1cmF0aW9uPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlNMPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJTTDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICB7I2VhY2ggd2luZG93LmdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoJEdVUlBTLnNwZWxsTGlzdC5pdGVyKCkpIGFzIHNwZWxsLCBpIChzcGVsbC5mb3VuZHJ5SUQpfVxyXG4gICAgPFJvd1xyXG4gICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgIGxldDppc0xhYmVsXHJcbiAgICAgIGxldDpob3ZlcmVkXHJcbiAgICAgIHtpfVxyXG4gICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgIGlkPXtzcGVsbC5mb3VuZHJ5SUR9XHJcbiAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICBlLmRldGFpbC5lbnRpdHkuZGVsZXRlKCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sXCI+XHJcbiAgICAgICAgPHNwYW5cclxuICAgICAgICAgIGNsYXNzOm5vLXNob3c9eyFob3ZlcmVkIHx8IGlzTGFiZWx9XHJcbiAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgIG9uOmNvbnRleHRtZW51fGNhcHR1cmU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgIFJvbGxlci5yb2xsU2tpbGwoJGVudGl0eSwgc3BlbGwsIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICAgIGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICAgIH19XHJcbiAgICAgICAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICAgUm9sbGVyLnJvbGxTa2lsbCgkZW50aXR5LCBzcGVsbCwgZ2V0Um9sbE1vZCgpKTtcclxuICAgICAgICAgIH19IC8+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgPHNwYW4gc2xvdD1cIm5vLWVkaXRcIj5cclxuICAgICAgICAgICAge3NwZWxsLm5hbWV9e3NwZWxsLnRlY2hMZXZlbCA/IGAvVEwke3NwZWxsLnRlY2hMZXZlbH1gIDogJyd9XHJcbiAgICAgICAgICAgIHtzcGVsbC5zcGVjaWFsaXphdGlvbiA/IGAoJHtzcGVsbC5zcGVjaWFsaXphdGlvbn0pYCA6IGBgfVxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgICA8dGQ+e3NwZWxsLnNwZWxsQ2xhc3N9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYXN0aW5nQ29zdH08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLm1haW50ZW5hbmNlQ29zdH08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLmNhc3RpbmdUaW1lfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuZHVyYXRpb259PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYWxjdWxhdGVMZXZlbCgpICsgc3BlbGxCb251c308L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAge3NwZWxsLnNpZ25hdHVyZX17c3BlbGwuZ2V0UmVsYXRpdmVMZXZlbCgpICsgc3BlbGxCb251cyA+PSAwID8gJysnIDogJyd9e3NwZWxsLmdldFJlbGF0aXZlTGV2ZWwoKSArIHNwZWxsQm9udXN9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwucG9pbnRzfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwucmVmZXJlbmNlfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTRCRSxZQUFZLGNBQUMsQ0FBQyxBQUNaLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/SpellList.svelte","webpack://src/svelte/SpellList.svelte.css"],"names":[],"mappings":"AA4BE,2BAAc,YACC;AC5BjB,q3KAAq3K","sourcesContent":["<script>\r\n  import { List, Row } from \"./list/list.ts\";\r\n  import { getContext } from \"svelte\";\r\n  import { Input } from \"./form/form\";\r\n  import { Roller } from \"@GURPSFoundry/rolling\";\r\n\r\n  const GURPS = getContext(\"GURPS\");\r\n  const entity = getContext(\"entity\");\r\n\r\n  $: spellBonus = $entity.getProperty(\"data.bonuses.spell_bonus\") || 0;\r\n  $: spellOnPenalty = $entity.getProperty(\"data.penalties.spells_on\") || 0;\r\n  $: spellConcentrationPenalty =\r\n    ($entity.getProperty(\"data.penalties.concentration_spells\") || 0) * 3;\r\n\r\n  const getRollMod = () => [\r\n    { modifier: `+${spellBonus}`, description: \"Magery bonus\" },\r\n    {\r\n      modifier: `-${spellOnPenalty}`,\r\n      description: `Penalty for spells on`,\r\n    },\r\n    {\r\n      modifier: `-${spellConcentrationPenalty * 3}`,\r\n      description: `Penalty for spells concentrated on`,\r\n    },\r\n  ];\r\n</script>\r\n\r\n<style>\r\n  .spell-tools {\r\n    display: flex;\r\n  }\r\n</style>\r\n\r\n<div class=\"spell-tools\">\r\n  <Input\r\n    path={'data.bonuses.spell_bonus'}\r\n    type=\"number\"\r\n    {entity}\r\n    label=\"Spell Bonus\" />\r\n  <Input\r\n    path={'data.penalties.spells_on'}\r\n    type=\"number\"\r\n    {entity}\r\n    min=\"0\"\r\n    label=\"Spells On\" />\r\n  <Input\r\n    type=\"number\"\r\n    path={'data.penalties.concentration_spells'}\r\n    {entity}\r\n    min=\"0\"\r\n    label=\"Spell Concentrating On\" />\r\n</div>\r\n\r\n<List\r\n  type=\"spell\"\r\n  on:addlistitem={() => {\r\n    $entity.createOwnedItem({ name: '???', type: 'spell' });\r\n  }}>\r\n  <th\r\n    slot=\"header\"\r\n    on:dblclick={(e) => {\r\n      $entity.sortList('spell', 'data.name');\r\n    }}>\r\n    Spells <i class=\"fas fa-sort\" />\r\n  </th>\r\n  <th slot=\"header\">Resist</th>\r\n  <th slot=\"header\">Class</th>\r\n  <th slot=\"header\">Cost</th>\r\n  <th slot=\"header\">Maintain</th>\r\n  <th slot=\"header\">Time</th>\r\n  <th slot=\"header\">Duration</th>\r\n  <th slot=\"header\">SL</th>\r\n  <th slot=\"header\">RSL</th>\r\n  <th slot=\"header\">Pts</th>\r\n  <th slot=\"header\">Ref</th>\r\n  {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}\r\n    <Row\r\n      let:ownedItem\r\n      let:isLabel\r\n      let:hovered\r\n      {i}\r\n      draggable={true}\r\n      id={spell.foundryID}\r\n      on:delete={(e) => {\r\n        e.detail.entity.delete();\r\n      }}>\r\n      <td class=\"main-list-col\">\r\n        <span\r\n          class:no-show={!hovered || isLabel}\r\n          class=\"fas fa-dice d6 roll-ico\"\r\n          on:contextmenu|capture={(e) => {\r\n            Roller.rollSkill($entity, spell, getRollMod());\r\n            e.stopImmediatePropagation();\r\n            e.preventDefault();\r\n          }}\r\n          on:click={(e) => {\r\n            Roller.rollSkill($entity, spell, getRollMod());\r\n          }} />\r\n        <Input\r\n          entity={ownedItem._entity}\r\n          path=\"data.name\"\r\n          alsoUpdate={['name']}\r\n          config={{ clickToEdit: true }}\r\n          let:value>\r\n          <span slot=\"no-edit\">\r\n            {spell.name}{spell.techLevel ? `/TL${spell.techLevel}` : ''}\r\n            {spell.specialization ? `(${spell.specialization})` : ``}\r\n          </span>\r\n        </Input>\r\n      </td>\r\n      <td />\r\n      <td>{spell.spellClass}</td>\r\n      <td>{spell.castingCost}</td>\r\n      <td>{spell.maintenanceCost}</td>\r\n      <td>{spell.castingTime}</td>\r\n      <td>{spell.duration}</td>\r\n      <td>{spell.calculateLevel() + spellBonus}</td>\r\n      <td>\r\n        {spell.signature}{spell.getRelativeLevel() + spellBonus >= 0 ? '+' : ''}{spell.getRelativeLevel() + spellBonus}\r\n      </td>\r\n      <td>{spell.points}</td>\r\n      <td>{spell.reference}</td>\r\n    </Row>\r\n  {/each}\r\n</List>\r\n",".spell-tools.svelte-p9o1vp{display:flex}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3BlbGxMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiU3BlbGxMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgSW5wdXQgfSBmcm9tIFwiLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBSb2xsZXIgfSBmcm9tIFwiQEdVUlBTRm91bmRyeS9yb2xsaW5nXCI7XHJcblxyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG4gIGNvbnN0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIik7XHJcblxyXG4gICQ6IHNwZWxsQm9udXMgPSAkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5ib251c2VzLnNwZWxsX2JvbnVzXCIpIHx8IDA7XHJcbiAgJDogc3BlbGxPblBlbmFsdHkgPSAkZW50aXR5LmdldFByb3BlcnR5KFwiZGF0YS5wZW5hbHRpZXMuc3BlbGxzX29uXCIpIHx8IDA7XHJcbiAgJDogc3BlbGxDb25jZW50cmF0aW9uUGVuYWx0eSA9XHJcbiAgICAoJGVudGl0eS5nZXRQcm9wZXJ0eShcImRhdGEucGVuYWx0aWVzLmNvbmNlbnRyYXRpb25fc3BlbGxzXCIpIHx8IDApICogMztcclxuXHJcbiAgY29uc3QgZ2V0Um9sbE1vZCA9ICgpID0+IFtcclxuICAgIHsgbW9kaWZpZXI6IGArJHtzcGVsbEJvbnVzfWAsIGRlc2NyaXB0aW9uOiBcIk1hZ2VyeSBib251c1wiIH0sXHJcbiAgICB7XHJcbiAgICAgIG1vZGlmaWVyOiBgLSR7c3BlbGxPblBlbmFsdHl9YCxcclxuICAgICAgZGVzY3JpcHRpb246IGBQZW5hbHR5IGZvciBzcGVsbHMgb25gLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgbW9kaWZpZXI6IGAtJHtzcGVsbENvbmNlbnRyYXRpb25QZW5hbHR5ICogM31gLFxyXG4gICAgICBkZXNjcmlwdGlvbjogYFBlbmFsdHkgZm9yIHNwZWxscyBjb25jZW50cmF0ZWQgb25gLFxyXG4gICAgfSxcclxuICBdO1xyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuc3BlbGwtdG9vbHMge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwic3BlbGwtdG9vbHNcIj5cclxuICA8SW5wdXRcclxuICAgIHBhdGg9eydkYXRhLmJvbnVzZXMuc3BlbGxfYm9udXMnfVxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICB7ZW50aXR5fVxyXG4gICAgbGFiZWw9XCJTcGVsbCBCb251c1wiIC8+XHJcbiAgPElucHV0XHJcbiAgICBwYXRoPXsnZGF0YS5wZW5hbHRpZXMuc3BlbGxzX29uJ31cclxuICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAge2VudGl0eX1cclxuICAgIG1pbj1cIjBcIlxyXG4gICAgbGFiZWw9XCJTcGVsbHMgT25cIiAvPlxyXG4gIDxJbnB1dFxyXG4gICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICBwYXRoPXsnZGF0YS5wZW5hbHRpZXMuY29uY2VudHJhdGlvbl9zcGVsbHMnfVxyXG4gICAge2VudGl0eX1cclxuICAgIG1pbj1cIjBcIlxyXG4gICAgbGFiZWw9XCJTcGVsbCBDb25jZW50cmF0aW5nIE9uXCIgLz5cclxuPC9kaXY+XHJcblxyXG48TGlzdFxyXG4gIHR5cGU9XCJzcGVsbFwiXHJcbiAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHsgbmFtZTogJz8/PycsIHR5cGU6ICdzcGVsbCcgfSk7XHJcbiAgfX0+XHJcbiAgPHRoXHJcbiAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAkZW50aXR5LnNvcnRMaXN0KCdzcGVsbCcsICdkYXRhLm5hbWUnKTtcclxuICAgIH19PlxyXG4gICAgU3BlbGxzIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gIDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZXNpc3Q8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+Q2xhc3M8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+Q29zdDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5NYWludGFpbjwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5UaW1lPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPkR1cmF0aW9uPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlNMPC90aD5cclxuICA8dGggc2xvdD1cImhlYWRlclwiPlJTTDwvdGg+XHJcbiAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICB7I2VhY2ggd2luZG93LmdhbWUuZ3VycHM0ZS5pbmRleFNvcnQoJEdVUlBTLnNwZWxsTGlzdC5pdGVyKCkpIGFzIHNwZWxsLCBpIChzcGVsbC5mb3VuZHJ5SUQpfVxyXG4gICAgPFJvd1xyXG4gICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgIGxldDppc0xhYmVsXHJcbiAgICAgIGxldDpob3ZlcmVkXHJcbiAgICAgIHtpfVxyXG4gICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgIGlkPXtzcGVsbC5mb3VuZHJ5SUR9XHJcbiAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICBlLmRldGFpbC5lbnRpdHkuZGVsZXRlKCk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sXCI+XHJcbiAgICAgICAgPHNwYW5cclxuICAgICAgICAgIGNsYXNzOm5vLXNob3c9eyFob3ZlcmVkIHx8IGlzTGFiZWx9XHJcbiAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvXCJcclxuICAgICAgICAgIG9uOmNvbnRleHRtZW51fGNhcHR1cmU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgIFJvbGxlci5yb2xsU2tpbGwoJGVudGl0eSwgc3BlbGwsIGdldFJvbGxNb2QoKSk7XHJcbiAgICAgICAgICAgIGUuc3RvcEltbWVkaWF0ZVByb3BhZ2F0aW9uKCk7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICAgIH19XHJcbiAgICAgICAgICBvbjpjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICAgUm9sbGVyLnJvbGxTa2lsbCgkZW50aXR5LCBzcGVsbCwgZ2V0Um9sbE1vZCgpKTtcclxuICAgICAgICAgIH19IC8+XHJcbiAgICAgICAgPElucHV0XHJcbiAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbS5fZW50aXR5fVxyXG4gICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgPHNwYW4gc2xvdD1cIm5vLWVkaXRcIj5cclxuICAgICAgICAgICAge3NwZWxsLm5hbWV9e3NwZWxsLnRlY2hMZXZlbCA/IGAvVEwke3NwZWxsLnRlY2hMZXZlbH1gIDogJyd9XHJcbiAgICAgICAgICAgIHtzcGVsbC5zcGVjaWFsaXphdGlvbiA/IGAoJHtzcGVsbC5zcGVjaWFsaXphdGlvbn0pYCA6IGBgfVxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZCAvPlxyXG4gICAgICA8dGQ+e3NwZWxsLnNwZWxsQ2xhc3N9PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYXN0aW5nQ29zdH08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLm1haW50ZW5hbmNlQ29zdH08L3RkPlxyXG4gICAgICA8dGQ+e3NwZWxsLmNhc3RpbmdUaW1lfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwuZHVyYXRpb259PC90ZD5cclxuICAgICAgPHRkPntzcGVsbC5jYWxjdWxhdGVMZXZlbCgpICsgc3BlbGxCb251c308L3RkPlxyXG4gICAgICA8dGQ+XHJcbiAgICAgICAge3NwZWxsLnNpZ25hdHVyZX17c3BlbGwuZ2V0UmVsYXRpdmVMZXZlbCgpICsgc3BlbGxCb251cyA+PSAwID8gJysnIDogJyd9e3NwZWxsLmdldFJlbGF0aXZlTGV2ZWwoKSArIHNwZWxsQm9udXN9XHJcbiAgICAgIDwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwucG9pbnRzfTwvdGQ+XHJcbiAgICAgIDx0ZD57c3BlbGwucmVmZXJlbmNlfTwvdGQ+XHJcbiAgICA8L1Jvdz5cclxuICB7L2VhY2h9XHJcbjwvTGlzdD5cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTRCRSxZQUFZLGNBQUMsQ0FBQyxBQUNaLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3235,7 +3279,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,uDAEoC,cACpB,CAChB,iDAE8B,WACjB,CACb,mEAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,yyMAAyyM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.spent}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.spent} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQsbUNBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELG1DQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCx5Q0FBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQscUJBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELHFCQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/Totals.svelte","webpack://src/svelte/Totals.svelte.css"],"names":[],"mappings":"AAYE,oCAAS,oCAC8B,CACrC,YAAa,CACb,6BAA8B,CAC9B,mBAAoB,CACrB,yCAEoC,cACpB,CAChB,mCAE8B,WACjB,CACb,qDAEgD,WACnC,CACb,6DAEiC,iBACd,CACnB,mCAEO,gBACW,CACjB,qBAAsB,CACvB,oCACQ,sBACgB,CACxB,0CAEc,mCACuB,CACpC,WAAY,CACZ,WAAY,CACZ,iBAAkB,CACnB,qCACS,sBACe,CACvB,0CAA2C,CAC5C,uEAEO,WACM,CACZ,mCAAoC,CACpC,iBAAkB,CAClB,sBAAuB;ACzD3B,yyMAAyyM","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import { Input } from \"./form/form\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  export let GURPS = getContext(\"GURPS\") || $entity._GURPS || null;\r\n\r\n  $: totals = $GURPS.pointTotals();\r\n</script>\r\n\r\n<style>\r\n  .totals {\r\n    background-color: rgba(0, 0, 0, 0.05);\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n\r\n  .totals :global(.GURPS-label input) {\r\n    max-width: 50px;\r\n  }\r\n\r\n  .totals :global(.GURPS-label) {\r\n    padding: 0px;\r\n  }\r\n\r\n  .total-points :global(input.total-points-input) {\r\n    color: white;\r\n  }\r\n\r\n  .total-points .point-total-label {\r\n    margin-right: auto;\r\n  }\r\n\r\n  .total {\r\n    text-align: right;\r\n    padding: 3px 0 3px 3px;\r\n  }\r\n  .span-2 {\r\n    grid-column: 1 / span 2;\r\n  }\r\n\r\n  .total-points {\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding: 5px;\r\n    text-align: center;\r\n  }\r\n  .divider {\r\n    grid-column: 1 / span 2;\r\n    border-bottom: 1px solid rgba(0, 0, 0, 0.5);\r\n  }\r\n  .thrust,\r\n  .swing {\r\n    color: white;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    text-align: center;\r\n    grid-column: 1 / span 2;\r\n  }\r\n</style>\r\n\r\n<div class=\"totals\">\r\n  <div class=\"span-2 total-points flex\">\r\n    <div class=\"point-total-label\">Point Total</div>\r\n    <Input\r\n      path=\"data.point_total\"\r\n      type=\"number\"\r\n      classList=\"total-points-input\" />\r\n  </div>\r\n\r\n  <div>Spent</div>\r\n  <div class=\"total\">{totals.spent}</div>\r\n\r\n  <div>Unspent Points</div>\r\n  <div class=\"total\">\r\n    <input\r\n      style=\"width: 50px;\"\r\n      type=\"number\"\r\n      disabled\r\n      value={$entity.getProperty('data.point_total') - totals.spent} />\r\n  </div>\r\n\r\n  <div class=\"divider\" />\r\n\r\n  <div class=\"\">Race</div>\r\n  <div class=\"total\">{totals.racialPoints}</div>\r\n\r\n  <div class=\"\">Attributes</div>\r\n  <div class=\"total\">{totals.attributePoints}</div>\r\n\r\n  <div class=\"\">Advantages</div>\r\n  <div class=\"total\">{totals.advantages}</div>\r\n\r\n  <div class=\"\">Disadvantages</div>\r\n  <div class=\"total\">{totals.disadvantages}</div>\r\n\r\n  <div class=\"\">Quirks</div>\r\n  <div class=\"total\">{totals.quirks}</div>\r\n\r\n  <div class=\"\">Skills</div>\r\n  <div class=\"total\">{totals.skills}</div>\r\n\r\n  <div class=\"\">Spells</div>\r\n  <div class=\"total\">{totals.spells}</div>\r\n\r\n  <div class=\"thrust total\">\r\n    <span style=\"float: left;\">Thrust:</span>\r\n    {$GURPS.getThrustDamage()}\r\n  </div>\r\n\r\n  <div class=\"swing total\">\r\n    <span style=\"float: left;\">Swing:</span>\r\n    {$GURPS.getSwingDamage()}\r\n  </div>\r\n\r\n  <div class=\"hp\">Hit Points</div>\r\n  <div class=\"hp total\">\r\n    <Input path=\"data.pools.hit_points.value\" type=\"number\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('HP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n\r\n  <div class=\"fatigue\">Fatigue Points</div>\r\n  <div class=\"fatigue total\">\r\n    <Input path=\"data.pools.fatigue_points.value\" type=\"number\" min=\"0\">\r\n      <span slot=\"label-text-after\">\r\n        / {$GURPS.getAttribute('FP').calculateLevel()}\r\n      </span>\r\n    </Input>\r\n  </div>\r\n</div>\r\n",".totals.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.05);display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.totals.svelte-4bzp0r .GURPS-label input{max-width:50px}.totals.svelte-4bzp0r .GURPS-label{padding:0px}.total-points.svelte-4bzp0r input.total-points-input{color:white}.total-points.svelte-4bzp0r .point-total-label.svelte-4bzp0r{margin-right:auto}.total.svelte-4bzp0r.svelte-4bzp0r{text-align:right;padding:3px 0 3px 3px}.span-2.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2}.total-points.svelte-4bzp0r.svelte-4bzp0r{background-color:rgba(0, 0, 0, 0.5);color:white;padding:5px;text-align:center}.divider.svelte-4bzp0r.svelte-4bzp0r{grid-column:1 / span 2;border-bottom:1px solid rgba(0, 0, 0, 0.5)}.thrust.svelte-4bzp0r.svelte-4bzp0r,.swing.svelte-4bzp0r.svelte-4bzp0r{color:white;background-color:rgba(0, 0, 0, 0.5);text-align:center;grid-column:1 / span 2}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG90YWxzLnN2ZWx0ZSIsInNvdXJjZXMiOlsiVG90YWxzLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7IElucHV0IH0gZnJvbSBcIi4vZm9ybS9mb3JtXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGV4cG9ydCBsZXQgR1VSUFMgPSBnZXRDb250ZXh0KFwiR1VSUFNcIikgfHwgJGVudGl0eS5fR1VSUFMgfHwgbnVsbDtcclxuXHJcbiAgJDogdG90YWxzID0gJEdVUlBTLnBvaW50VG90YWxzKCk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC50b3RhbHMge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwgaW5wdXQpIHtcclxuICAgIG1heC13aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbHMgOmdsb2JhbCguR1VSUFMtbGFiZWwpIHtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgOmdsb2JhbChpbnB1dC50b3RhbC1wb2ludHMtaW5wdXQpIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcblxyXG4gIC50b3RhbC1wb2ludHMgLnBvaW50LXRvdGFsLWxhYmVsIHtcclxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB9XHJcblxyXG4gIC50b3RhbCB7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIHBhZGRpbmc6IDNweCAwIDNweCAzcHg7XHJcbiAgfVxyXG4gIC5zcGFuLTIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgfVxyXG5cclxuICAudG90YWwtcG9pbnRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgLmRpdmlkZXIge1xyXG4gICAgZ3JpZC1jb2x1bW46IDEgLyBzcGFuIDI7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gIH1cclxuICAudGhydXN0LFxyXG4gIC5zd2luZyB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBncmlkLWNvbHVtbjogMSAvIHNwYW4gMjtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48ZGl2IGNsYXNzPVwidG90YWxzXCI+XHJcbiAgPGRpdiBjbGFzcz1cInNwYW4tMiB0b3RhbC1wb2ludHMgZmxleFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cInBvaW50LXRvdGFsLWxhYmVsXCI+UG9pbnQgVG90YWw8L2Rpdj5cclxuICAgIDxJbnB1dFxyXG4gICAgICBwYXRoPVwiZGF0YS5wb2ludF90b3RhbFwiXHJcbiAgICAgIHR5cGU9XCJudW1iZXJcIlxyXG4gICAgICBjbGFzc0xpc3Q9XCJ0b3RhbC1wb2ludHMtaW5wdXRcIiAvPlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2PlNwZW50PC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5zcGVudH08L2Rpdj5cclxuXHJcbiAgPGRpdj5VbnNwZW50IFBvaW50czwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPlxyXG4gICAgPGlucHV0XHJcbiAgICAgIHN0eWxlPVwid2lkdGg6IDUwcHg7XCJcclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIGRpc2FibGVkXHJcbiAgICAgIHZhbHVlPXskZW50aXR5LmdldFByb3BlcnR5KCdkYXRhLnBvaW50X3RvdGFsJykgLSB0b3RhbHMuc3BlbnR9IC8+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJkaXZpZGVyXCIgLz5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlJhY2U8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnJhY2lhbFBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkF0dHJpYnV0ZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmF0dHJpYnV0ZVBvaW50c308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPkFkdmFudGFnZXM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLmFkdmFudGFnZXN9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5EaXNhZHZhbnRhZ2VzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5kaXNhZHZhbnRhZ2VzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiXCI+UXVpcmtzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInRvdGFsXCI+e3RvdGFscy5xdWlya3N9PC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJcIj5Ta2lsbHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwidG90YWxcIj57dG90YWxzLnNraWxsc308L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cIlwiPlNwZWxsczwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJ0b3RhbFwiPnt0b3RhbHMuc3BlbGxzfTwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwidGhydXN0IHRvdGFsXCI+XHJcbiAgICA8c3BhbiBzdHlsZT1cImZsb2F0OiBsZWZ0O1wiPlRocnVzdDo8L3NwYW4+XHJcbiAgICB7JEdVUlBTLmdldFRocnVzdERhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwic3dpbmcgdG90YWxcIj5cclxuICAgIDxzcGFuIHN0eWxlPVwiZmxvYXQ6IGxlZnQ7XCI+U3dpbmc6PC9zcGFuPlxyXG4gICAgeyRHVVJQUy5nZXRTd2luZ0RhbWFnZSgpfVxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwiaHBcIj5IaXQgUG9pbnRzPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cImhwIHRvdGFsXCI+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdIUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJmYXRpZ3VlXCI+RmF0aWd1ZSBQb2ludHM8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwiZmF0aWd1ZSB0b3RhbFwiPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnBvb2xzLmZhdGlndWVfcG9pbnRzLnZhbHVlXCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIj5cclxuICAgICAgPHNwYW4gc2xvdD1cImxhYmVsLXRleHQtYWZ0ZXJcIj5cclxuICAgICAgICAvIHskR1VSUFMuZ2V0QXR0cmlidXRlKCdGUCcpLmNhbGN1bGF0ZUxldmVsKCl9XHJcbiAgICAgIDwvc3Bhbj5cclxuICAgIDwvSW5wdXQ+XHJcbiAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUUsT0FBTyw0QkFBQyxDQUFDLEFBQ1AsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDckMsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUM5QixjQUFjLENBQUUsSUFBSSxBQUN0QixDQUFDLEFBRUQscUJBQU8sQ0FBQyxBQUFRLGtCQUFrQixBQUFFLENBQUMsQUFDbkMsU0FBUyxDQUFFLElBQUksQUFDakIsQ0FBQyxBQUVELHFCQUFPLENBQUMsQUFBUSxZQUFZLEFBQUUsQ0FBQyxBQUM3QixPQUFPLENBQUUsR0FBRyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLEFBQVEsd0JBQXdCLEFBQUUsQ0FBQyxBQUMvQyxLQUFLLENBQUUsS0FBSyxBQUNkLENBQUMsQUFFRCwyQkFBYSxDQUFDLGtCQUFrQixjQUFDLENBQUMsQUFDaEMsWUFBWSxDQUFFLElBQUksQUFDcEIsQ0FBQyxBQUVELE1BQU0sNEJBQUMsQ0FBQyxBQUNOLFVBQVUsQ0FBRSxLQUFLLENBQ2pCLE9BQU8sQ0FBRSxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEFBQ3hCLENBQUMsQUFDRCxPQUFPLDRCQUFDLENBQUMsQUFDUCxXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxBQUN6QixDQUFDLEFBRUQsYUFBYSw0QkFBQyxDQUFDLEFBQ2IsZ0JBQWdCLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDcEMsS0FBSyxDQUFFLEtBQUssQ0FDWixPQUFPLENBQUUsR0FBRyxDQUNaLFVBQVUsQ0FBRSxNQUFNLEFBQ3BCLENBQUMsQUFDRCxRQUFRLDRCQUFDLENBQUMsQUFDUixXQUFXLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUN2QixhQUFhLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxBQUM3QyxDQUFDLEFBQ0QsbUNBQU8sQ0FDUCxNQUFNLDRCQUFDLENBQUMsQUFDTixLQUFLLENBQUUsS0FBSyxDQUNaLGdCQUFnQixDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQ3BDLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFdBQVcsQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLEFBQ3pCLENBQUMifQ==*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3257,7 +3301,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4vZm9ybS9JbnB1dFwiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IFRhYnMsIFRhYkxpc3QsIFRhYlBhbmVsLCBUYWIgfSBmcm9tIFwiLi90YWJzL3RhYnNcIjtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgW10uY29uY2F0KFxyXG4gICAgICAkR1VSUFMudHJhaXRMaXN0LnNwbGl0QnlUeXBlKCkuZGlzYWR2YW50YWdlcyxcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLnF1aXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgIFtdLmNvbmNhdChcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLmFkdmFudGFnZXMsXHJcbiAgICAgICRHVVJQUy50cmFpdExpc3Quc3BsaXRCeVR5cGUoKS5wZXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gIGZ1bmN0aW9uIHJvbGxDcih0cmFpdCkge1xyXG4gICAgbGV0IHJvbGxBZ2FpbnN0ID0gdHJhaXQuY29udHJvbFJhdGluZyA9PT0gXCJub25lXCIgPyAwIDogK3RyYWl0LmNvbnRyb2xSYXRpbmc7XHJcbiAgICAkZW50aXR5LnJvbGxTa2lsbChgJHt0cmFpdC5uYW1lfWAsIHJvbGxBZ2FpbnN0KTtcclxuICB9XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5jci1yb2xsIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0cmFpdHMtdGFiJywgZS5kZXRhaWwpO1xyXG4gIH19PlxyXG4gIDxUYWJMaXN0PlxyXG4gICAgPFRhYiBpbmRleD17MH0+RGlzYWR2YW50YWdlcyAmIFF1aXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17MX0+QWR2YW50YWdlcyAmIFBlcmtzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsyfT5MYW5ndWFnZXMgJiBDdWx0dXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5SYWNpYWwgVHJhaXRzPC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0Rpc2FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgRGlzYWR2YW50YWdlcyAmIFF1aXJrcyA8aSBjbGFzcz1cImZhcyBmYS1zb3J0XCIgLz5cclxuICAgICAgPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgICAgIHsjZWFjaCBkaXNhZHZhbnRhZ2VzIGFzIHRyYWl0LCBpICh0cmFpdC5mb3VuZHJ5SUQpfVxyXG4gICAgICAgIDxSb3dcclxuICAgICAgICAgIGRpc2FibGVkPXt0cmFpdC5kaXNhYmxlZH1cclxuICAgICAgICAgIGNvbHNwYW49XCI1XCJcclxuICAgICAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgICAgIHtpfVxyXG4gICAgICAgICAgaWQ9e3RyYWl0LmZvdW5kcnlJRH1cclxuICAgICAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICAgICAgZS5kZXRhaWwuZW50aXR5LmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sIHJlbGF0aXZlXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgICAgICBjbGFzczpuby1zaG93PXt0cmFpdC5jb250cm9sUmF0aW5nID09PSAnbi9hJ31cclxuICAgICAgICAgICAgICAgIHNsb3Q9XCJuby1lZGl0XCJcclxuICAgICAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY28gY3Itcm9sbFwiXHJcbiAgICAgICAgICAgICAgICBvbjpjbGljaz17cm9sbENyKHRyYWl0KX0+XHJcbiAgICAgICAgICAgICAgICAmbmJzcDt7dHJhaXQuY29udHJvbFJhdGluZ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPExpc3RcclxuICAgICAgdHlwZT1cInRyYWl0XCJcclxuICAgICAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiAnPz8/JyxcclxuICAgICAgICAgIHR5cGU6ICd0cmFpdCcsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIGNhdGVnb3JpZXM6IFsnQWR2YW50YWdlJ10sXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgIH0pO1xyXG4gICAgICB9fT5cclxuICAgICAgPHRoXHJcbiAgICAgICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICAgICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LnNvcnRMaXN0KCd0cmFpdCcsICdkYXRhLm5hbWUnKTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZHZhbnRhZ2VzICYgUGVya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHRyYWl0LmZvdW5kcnlJRCkuZGVsZXRlKCk7XHJcbiAgICAgICAgICB9fT5cclxuICAgICAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0gPyBvd25lZEl0ZW0uX2VudGl0eSA6IG51bGx9XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQubmFtZX1cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5oYXNMZXZlbHMgPyB0cmFpdC5sZXZlbHMgOiAnJ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUErQkUsUUFBUSxlQUFDLENBQUMsQUFDUixRQUFRLENBQUUsUUFBUSxDQUNsQixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/", "",{"version":3,"sources":["webpack://src/svelte/TraitList.svelte","webpack://src/svelte/TraitList.svelte.css"],"names":[],"mappings":"AA+BE,wBAAU,iBACU,CAClB,UAAW;AChCf,yoPAAyoP","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n\r\n  import Input from \"./form/Input\";\r\n  import { List, Row } from \"./list/list.ts\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  $: disadvantages = window.game.gurps4e.indexSort(\r\n    [].concat(\r\n      $GURPS.traitList.splitByType().disadvantages,\r\n      $GURPS.traitList.splitByType().quirks\r\n    )\r\n  );\r\n\r\n  $: advantages = window.game.gurps4e.indexSort(\r\n    [].concat(\r\n      $GURPS.traitList.splitByType().advantages,\r\n      $GURPS.traitList.splitByType().perks\r\n    )\r\n  );\r\n\r\n  function rollCr(trait) {\r\n    let rollAgainst = trait.controlRating === \"none\" ? 0 : +trait.controlRating;\r\n    $entity.rollSkill(`${trait.name}`, rollAgainst);\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .cr-roll {\r\n    position: absolute;\r\n    right: 10px;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'traits-tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>Disadvantages & Quirks</Tab>\r\n    <Tab index={1}>Advantages & Perks</Tab>\r\n    <Tab index={2}>Languages & Culture</Tab>\r\n    <Tab index={3}>Racial Traits</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Disadvantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Disadvantages & Quirks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each disadvantages as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            e.detail.entity.delete();\r\n          }}>\r\n          <td class=\"main-list-col relative\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n              <span\r\n                class:no-show={trait.controlRating === 'n/a'}\r\n                slot=\"no-edit\"\r\n                class=\"fas fa-dice d6 roll-ico cr-roll\"\r\n                on:click={rollCr(trait)}>\r\n                &nbsp;{trait.controlRating}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Advantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Advantages & Perks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each advantages as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            $entity.getOwnedItem(trait.foundryID).delete();\r\n          }}>\r\n          <td class=\"main-list-col\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n</Tabs>\r\n",".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGV4cG9ydCBsZXQgZW50aXR5ID0gZ2V0Q29udGV4dChcImVudGl0eVwiKSB8fCBudWxsO1xyXG4gIGNvbnN0IEdVUlBTID0gZ2V0Q29udGV4dChcIkdVUlBTXCIpO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4vZm9ybS9JbnB1dFwiO1xyXG4gIGltcG9ydCB7IExpc3QsIFJvdyB9IGZyb20gXCIuL2xpc3QvbGlzdC50c1wiO1xyXG4gIGltcG9ydCB7IFRhYnMsIFRhYkxpc3QsIFRhYlBhbmVsLCBUYWIgfSBmcm9tIFwiLi90YWJzL3RhYnNcIjtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgW10uY29uY2F0KFxyXG4gICAgICAkR1VSUFMudHJhaXRMaXN0LnNwbGl0QnlUeXBlKCkuZGlzYWR2YW50YWdlcyxcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLnF1aXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgIFtdLmNvbmNhdChcclxuICAgICAgJEdVUlBTLnRyYWl0TGlzdC5zcGxpdEJ5VHlwZSgpLmFkdmFudGFnZXMsXHJcbiAgICAgICRHVVJQUy50cmFpdExpc3Quc3BsaXRCeVR5cGUoKS5wZXJrc1xyXG4gICAgKVxyXG4gICk7XHJcblxyXG4gIGZ1bmN0aW9uIHJvbGxDcih0cmFpdCkge1xyXG4gICAgbGV0IHJvbGxBZ2FpbnN0ID0gdHJhaXQuY29udHJvbFJhdGluZyA9PT0gXCJub25lXCIgPyAwIDogK3RyYWl0LmNvbnRyb2xSYXRpbmc7XHJcbiAgICAkZW50aXR5LnJvbGxTa2lsbChgJHt0cmFpdC5uYW1lfWAsIHJvbGxBZ2FpbnN0KTtcclxuICB9XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5jci1yb2xsIHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicpIHx8IDB9XHJcbiAgb246dGFiY2hhbmdlPXsoZSkgPT4ge1xyXG4gICAgJGVudGl0eS5zZXRGbGFnKCdHVVJQUycsICd0cmFpdHMtdGFiJywgZS5kZXRhaWwpO1xyXG4gIH19PlxyXG4gIDxUYWJMaXN0PlxyXG4gICAgPFRhYiBpbmRleD17MH0+RGlzYWR2YW50YWdlcyAmIFF1aXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17MX0+QWR2YW50YWdlcyAmIFBlcmtzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsyfT5MYW5ndWFnZXMgJiBDdWx0dXJlPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXszfT5SYWNpYWwgVHJhaXRzPC9UYWI+XHJcbiAgPC9UYWJMaXN0PlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0Rpc2FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgRGlzYWR2YW50YWdlcyAmIFF1aXJrcyA8aSBjbGFzcz1cImZhcyBmYS1zb3J0XCIgLz5cclxuICAgICAgPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5QdHM8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlJlZjwvdGg+XHJcbiAgICAgIHsjZWFjaCBkaXNhZHZhbnRhZ2VzIGFzIHRyYWl0LCBpICh0cmFpdC5mb3VuZHJ5SUQpfVxyXG4gICAgICAgIDxSb3dcclxuICAgICAgICAgIGRpc2FibGVkPXt0cmFpdC5kaXNhYmxlZH1cclxuICAgICAgICAgIGNvbHNwYW49XCI1XCJcclxuICAgICAgICAgIGxldDpvd25lZEl0ZW1cclxuICAgICAgICAgIHtpfVxyXG4gICAgICAgICAgaWQ9e3RyYWl0LmZvdW5kcnlJRH1cclxuICAgICAgICAgIGRyYWdnYWJsZT17dHJ1ZX1cclxuICAgICAgICAgIG9uOmRlbGV0ZT17KGUpID0+IHtcclxuICAgICAgICAgICAgZS5kZXRhaWwuZW50aXR5LmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sIHJlbGF0aXZlXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxzcGFuXHJcbiAgICAgICAgICAgICAgICBjbGFzczpuby1zaG93PXt0cmFpdC5jb250cm9sUmF0aW5nID09PSAnbi9hJ31cclxuICAgICAgICAgICAgICAgIHNsb3Q9XCJuby1lZGl0XCJcclxuICAgICAgICAgICAgICAgIGNsYXNzPVwiZmFzIGZhLWRpY2UgZDYgcm9sbC1pY28gY3Itcm9sbFwiXHJcbiAgICAgICAgICAgICAgICBvbjpjbGljaz17cm9sbENyKHRyYWl0KX0+XHJcbiAgICAgICAgICAgICAgICAmbmJzcDt7dHJhaXQuY29udHJvbFJhdGluZ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPExpc3RcclxuICAgICAgdHlwZT1cInRyYWl0XCJcclxuICAgICAgb246YWRkbGlzdGl0ZW09eygpID0+IHtcclxuICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7XHJcbiAgICAgICAgICBuYW1lOiAnPz8/JyxcclxuICAgICAgICAgIHR5cGU6ICd0cmFpdCcsXHJcbiAgICAgICAgICBkYXRhOiB7XHJcbiAgICAgICAgICAgIGNhdGVnb3JpZXM6IFsnQWR2YW50YWdlJ10sXHJcbiAgICAgICAgICB9LFxyXG4gICAgICAgIH0pO1xyXG4gICAgICB9fT5cclxuICAgICAgPHRoXHJcbiAgICAgICAgc2xvdD1cImhlYWRlclwiXHJcbiAgICAgICAgb246ZGJsY2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LnNvcnRMaXN0KCd0cmFpdCcsICdkYXRhLm5hbWUnKTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZHZhbnRhZ2VzICYgUGVya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICRlbnRpdHkuZ2V0T3duZWRJdGVtKHRyYWl0LmZvdW5kcnlJRCkuZGVsZXRlKCk7XHJcbiAgICAgICAgICB9fT5cclxuICAgICAgICAgIDx0ZCBjbGFzcz1cIm1haW4tbGlzdC1jb2xcIj5cclxuICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgY29uZmlnPXt7IGNsaWNrVG9FZGl0OiB0cnVlIH19XHJcbiAgICAgICAgICAgICAgZW50aXR5PXtvd25lZEl0ZW0gPyBvd25lZEl0ZW0uX2VudGl0eSA6IG51bGx9XHJcbiAgICAgICAgICAgICAgcGF0aD1cImRhdGEubmFtZVwiXHJcbiAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQubmFtZX1cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5oYXNMZXZlbHMgPyB0cmFpdC5sZXZlbHMgOiAnJ31cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPHRkPnt0cmFpdC5hZGp1c3RlZFBvaW50cygpfTwvdGQ+XHJcbiAgICAgICAgICA8dGQ+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiXHJcbiAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgIDxzcGFuIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgIDwvdGQ+XHJcbiAgICAgICAgICA8ZGl2IHNsb3Q9XCJub3Rlc1wiPnt0cmFpdC5ub3Rlc308L2Rpdj5cclxuICAgICAgICA8L1Jvdz5cclxuICAgICAgey9lYWNofVxyXG4gICAgPC9MaXN0PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8aDE+VW5kZXIgQ29uc3RydWN0aW9uPC9oMT5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUErQkUsUUFBUSxlQUFDLENBQUMsQUFDUixRQUFRLENBQUUsUUFBUSxDQUNsQixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMifQ==*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgUm9sbGVyIH0gZnJvbSBcIkBHVVJQU0ZvdW5kcnkvcm9sbGluZ1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuXHJcbiAgaW1wb3J0IElucHV0IGZyb20gXCIuL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBMaXN0LCBSb3cgfSBmcm9tIFwiLi9saXN0L2xpc3QudHNcIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4vdGFicy90YWJzXCI7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgICRHVVJQUy50cmFpdExpc3RcclxuICAgICAgLml0ZXIoKVxyXG4gICAgICAuZmlsdGVyKFxyXG4gICAgICAgICh0cmFpdCkgPT5cclxuICAgICAgICAgIHRyYWl0LmFkanVzdGVkUG9pbnRzKCkgPj0gMCB8fFxyXG4gICAgICAgICAgKHRyYWl0LmFkanVzdGVkUG9pbnRzKCkgPj0gMCAmJlxyXG4gICAgICAgICAgICAvYWR2YW50YWdlfHBlcmsvaS50ZXN0KEFycmF5LmZyb20odHJhaXQuY2F0ZWdvcmllcykpKVxyXG4gICAgICApXHJcbiAgKTtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgJEdVUlBTLnRyYWl0TGlzdFxyXG4gICAgICAuaXRlcigpXHJcbiAgICAgIC5maWx0ZXIoXHJcbiAgICAgICAgKHRyYWl0KSA9PlxyXG4gICAgICAgICAgdHJhaXQuYWRqdXN0ZWRQb2ludHMoKSA8IDAgfHxcclxuICAgICAgICAgICh0cmFpdC5hZGp1c3RlZFBvaW50cygpIDwgMCAmJlxyXG4gICAgICAgICAgICAvcXVpcmt8ZGlzYWR2YW50YWdlL2kudGVzdChBcnJheS5mcm9tKHRyYWl0LmNhdGVnb3JpZXMpKSlcclxuICAgICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IG90aGVyID0gJEdVUlBTLnRyYWl0TGlzdFxyXG4gICAgLml0ZXIoKVxyXG4gICAgLmZpbHRlcigodHJhaXQpID0+ICFbLi4uYWR2YW50YWdlcywgLi4uZGlzYWR2YW50YWdlc10uaW5jbHVkZXModHJhaXQpKTtcclxuXHJcbiAgZnVuY3Rpb24gcm9sbENyKHRyYWl0KSB7XHJcbiAgICBsZXQgcm9sbEFnYWluc3QgPSB0cmFpdC5jb250cm9sUmF0aW5nID09PSBcIm5vbmVcIiA/IDAgOiArdHJhaXQuY29udHJvbFJhdGluZztcclxuICAgIFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksIHJvbGxBZ2FpbnN0LCBgQ29udHJvbCBTYXZlIHZzLiAke3RyYWl0Lm5hbWV9YCk7XHJcbiAgfVxyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuY3Itcm9sbCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMTBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RyYWl0cy10YWInKSB8fCAwfVxyXG4gIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkRpc2FkdmFudGFnZXMgJiBRdWlya3M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PkFkdmFudGFnZXMgJiBQZXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TGFuZ3VhZ2VzICYgQ3VsdHVyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFjaWFsIFRyYWl0czwvVGFiPlxyXG4gIDwvVGFiTGlzdD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8TGlzdFxyXG4gICAgICB0eXBlPVwidHJhaXRcIlxyXG4gICAgICBvbjphZGRsaXN0aXRlbT17KCkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHtcclxuICAgICAgICAgIG5hbWU6ICc/Pz8nLFxyXG4gICAgICAgICAgdHlwZTogJ3RyYWl0JyxcclxuICAgICAgICAgIGRhdGE6IHtcclxuICAgICAgICAgICAgY2F0ZWdvcmllczogWydEaXNhZHZhbnRhZ2UnXSxcclxuICAgICAgICAgIH0sXHJcbiAgICAgICAgfSk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8dGhcclxuICAgICAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgICAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICRlbnRpdHkuc29ydExpc3QoJ3RyYWl0JywgJ2RhdGEubmFtZScpO1xyXG4gICAgICAgIH19PlxyXG4gICAgICAgIERpc2FkdmFudGFnZXMgJiBRdWlya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggZGlzYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgIGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgICAgIH19PlxyXG4gICAgICAgICAgPHRkIGNsYXNzPVwibWFpbi1saXN0LWNvbCByZWxhdGl2ZVwiPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5uYW1lXCJcclxuICAgICAgICAgICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICAgICAgPHNwYW4gc2xvdD1cIm5vLWVkaXRcIj5cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5uYW1lfVxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lmhhc0xldmVscyA/IHRyYWl0LmxldmVscyA6ICcnfVxyXG4gICAgICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICAgICAgY2xhc3M6bm8tc2hvdz17dHJhaXQuY29udHJvbFJhdGluZyA9PT0gJ24vYSd9XHJcbiAgICAgICAgICAgICAgICBzbG90PVwibm8tZWRpdFwiXHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvIGNyLXJvbGxcIlxyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9e3JvbGxDcih0cmFpdCl9PlxyXG4gICAgICAgICAgICAgICAgJm5ic3A7e3RyYWl0LmNvbnRyb2xSYXRpbmd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICA8L0lucHV0PlxyXG4gICAgICAgICAgPC90ZD5cclxuICAgICAgICAgIDx0ZD57dHJhaXQuYWRqdXN0ZWRQb2ludHMoKX08L3RkPlxyXG4gICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIlxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPGRpdiBzbG90PVwibm90ZXNcIj57dHJhaXQubm90ZXN9PC9kaXY+XHJcbiAgICAgICAgPC9Sb3c+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvTGlzdD5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgQWR2YW50YWdlcyAmIFBlcmtzIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlB0czwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICAgICAgeyNlYWNoIFsuLi5hZHZhbnRhZ2VzLCAuLi5vdGhlcl0gYXMgdHJhaXQsIGkgKHRyYWl0LmZvdW5kcnlJRCl9XHJcbiAgICAgICAgPFJvd1xyXG4gICAgICAgICAgZGlzYWJsZWQ9e3RyYWl0LmRpc2FibGVkfVxyXG4gICAgICAgICAgY29sc3Bhbj1cIjVcIlxyXG4gICAgICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICAgICAge2l9XHJcbiAgICAgICAgICBpZD17dHJhaXQuZm91bmRyeUlEfVxyXG4gICAgICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICAgICAgb246ZGVsZXRlPXsoZSkgPT4ge1xyXG4gICAgICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh0cmFpdC5mb3VuZHJ5SUQpLmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICA8L0lucHV0PlxyXG4gICAgICAgICAgPC90ZD5cclxuICAgICAgICAgIDx0ZD57dHJhaXQuYWRqdXN0ZWRQb2ludHMoKX08L3RkPlxyXG4gICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIlxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPGRpdiBzbG90PVwibm90ZXNcIj57dHJhaXQubm90ZXN9PC9kaXY+XHJcbiAgICAgICAgPC9Sb3c+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvTGlzdD5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuPC9UYWJzPlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNENFLFFBQVEsZUFBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/TraitList.svelte","webpack://src/svelte/TraitList.svelte.css"],"names":[],"mappings":"AA4CE,wBAAU,iBACU,CAClB,UAAW;AC7Cf,iwQAAiwQ","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n  import { Roller } from \"@GURPSFoundry/rolling\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n  const GURPS = getContext(\"GURPS\");\r\n\r\n  import Input from \"./form/Input\";\r\n  import { List, Row } from \"./list/list.ts\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"./tabs/tabs\";\r\n\r\n  $: advantages = window.game.gurps4e.indexSort(\r\n    $GURPS.traitList\r\n      .iter()\r\n      .filter(\r\n        (trait) =>\r\n          trait.adjustedPoints() >= 0 ||\r\n          (trait.adjustedPoints() >= 0 &&\r\n            /advantage|perk/i.test(Array.from(trait.categories)))\r\n      )\r\n  );\r\n\r\n  $: disadvantages = window.game.gurps4e.indexSort(\r\n    $GURPS.traitList\r\n      .iter()\r\n      .filter(\r\n        (trait) =>\r\n          trait.adjustedPoints() < 0 ||\r\n          (trait.adjustedPoints() < 0 &&\r\n            /quirk|disadvantage/i.test(Array.from(trait.categories)))\r\n      )\r\n  );\r\n\r\n  $: other = $GURPS.traitList\r\n    .iter()\r\n    .filter((trait) => ![...advantages, ...disadvantages].includes(trait));\r\n\r\n  function rollCr(trait) {\r\n    let rollAgainst = trait.controlRating === \"none\" ? 0 : +trait.controlRating;\r\n    Roller.customRoll($entity, rollAgainst, `Control Save vs. ${trait.name}`);\r\n  }\r\n</script>\r\n\r\n<style>\r\n  .cr-roll {\r\n    position: absolute;\r\n    right: 10px;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'traits-tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>Disadvantages & Quirks</Tab>\r\n    <Tab index={1}>Advantages & Perks</Tab>\r\n    <Tab index={2}>Languages & Culture</Tab>\r\n    <Tab index={3}>Racial Traits</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Disadvantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Disadvantages & Quirks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each disadvantages as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            e.detail.entity.delete();\r\n          }}>\r\n          <td class=\"main-list-col relative\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n              <span\r\n                class:no-show={trait.controlRating === 'n/a'}\r\n                slot=\"no-edit\"\r\n                class=\"fas fa-dice d6 roll-ico cr-roll\"\r\n                on:click={rollCr(trait)}>\r\n                &nbsp;{trait.controlRating}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <List\r\n      type=\"trait\"\r\n      on:addlistitem={() => {\r\n        $entity.createOwnedItem({\r\n          name: '???',\r\n          type: 'trait',\r\n          data: {\r\n            categories: ['Advantage'],\r\n          },\r\n        });\r\n      }}>\r\n      <th\r\n        slot=\"header\"\r\n        on:dblclick={(e) => {\r\n          $entity.sortList('trait', 'data.name');\r\n        }}>\r\n        Advantages & Perks <i class=\"fas fa-sort\" />\r\n      </th>\r\n      <th slot=\"header\">Pts</th>\r\n      <th slot=\"header\">Ref</th>\r\n      {#each [...advantages, ...other] as trait, i (trait.foundryID)}\r\n        <Row\r\n          disabled={trait.disabled}\r\n          colspan=\"5\"\r\n          let:ownedItem\r\n          {i}\r\n          id={trait.foundryID}\r\n          draggable={true}\r\n          on:delete={(e) => {\r\n            $entity.getOwnedItem(trait.foundryID).delete();\r\n          }}>\r\n          <td class=\"main-list-col\">\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.name\"\r\n              alsoUpdate={['name']}\r\n              let:value>\r\n              <span slot=\"no-edit\">\r\n                {trait.name}\r\n                {trait.hasLevels ? trait.levels : ''}\r\n              </span>\r\n            </Input>\r\n          </td>\r\n          <td>{trait.adjustedPoints()}</td>\r\n          <td>\r\n            <Input\r\n              config={{ clickToEdit: true }}\r\n              entity={ownedItem ? ownedItem._entity : null}\r\n              path=\"data.reference\"\r\n              let:value>\r\n              <span slot=\"no-edit\">{value}</span>\r\n            </Input>\r\n          </td>\r\n          <div slot=\"notes\">{trait.notes}</div>\r\n        </Row>\r\n      {/each}\r\n    </List>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <h1>Under Construction</h1>\r\n  </TabPanel>\r\n</Tabs>\r\n",".cr-roll.svelte-1uk8ldr{position:absolute;right:10px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJhaXRMaXN0LnN2ZWx0ZSIsInNvdXJjZXMiOlsiVHJhaXRMaXN0LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcbiAgaW1wb3J0IHsgUm9sbGVyIH0gZnJvbSBcIkBHVVJQU0ZvdW5kcnkvcm9sbGluZ1wiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IGdldENvbnRleHQoXCJlbnRpdHlcIikgfHwgbnVsbDtcclxuICBjb25zdCBHVVJQUyA9IGdldENvbnRleHQoXCJHVVJQU1wiKTtcclxuXHJcbiAgaW1wb3J0IElucHV0IGZyb20gXCIuL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBMaXN0LCBSb3cgfSBmcm9tIFwiLi9saXN0L2xpc3QudHNcIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4vdGFicy90YWJzXCI7XHJcblxyXG4gICQ6IGFkdmFudGFnZXMgPSB3aW5kb3cuZ2FtZS5ndXJwczRlLmluZGV4U29ydChcclxuICAgICRHVVJQUy50cmFpdExpc3RcclxuICAgICAgLml0ZXIoKVxyXG4gICAgICAuZmlsdGVyKFxyXG4gICAgICAgICh0cmFpdCkgPT5cclxuICAgICAgICAgIHRyYWl0LmFkanVzdGVkUG9pbnRzKCkgPj0gMCB8fFxyXG4gICAgICAgICAgKHRyYWl0LmFkanVzdGVkUG9pbnRzKCkgPj0gMCAmJlxyXG4gICAgICAgICAgICAvYWR2YW50YWdlfHBlcmsvaS50ZXN0KEFycmF5LmZyb20odHJhaXQuY2F0ZWdvcmllcykpKVxyXG4gICAgICApXHJcbiAgKTtcclxuXHJcbiAgJDogZGlzYWR2YW50YWdlcyA9IHdpbmRvdy5nYW1lLmd1cnBzNGUuaW5kZXhTb3J0KFxyXG4gICAgJEdVUlBTLnRyYWl0TGlzdFxyXG4gICAgICAuaXRlcigpXHJcbiAgICAgIC5maWx0ZXIoXHJcbiAgICAgICAgKHRyYWl0KSA9PlxyXG4gICAgICAgICAgdHJhaXQuYWRqdXN0ZWRQb2ludHMoKSA8IDAgfHxcclxuICAgICAgICAgICh0cmFpdC5hZGp1c3RlZFBvaW50cygpIDwgMCAmJlxyXG4gICAgICAgICAgICAvcXVpcmt8ZGlzYWR2YW50YWdlL2kudGVzdChBcnJheS5mcm9tKHRyYWl0LmNhdGVnb3JpZXMpKSlcclxuICAgICAgKVxyXG4gICk7XHJcblxyXG4gICQ6IG90aGVyID0gJEdVUlBTLnRyYWl0TGlzdFxyXG4gICAgLml0ZXIoKVxyXG4gICAgLmZpbHRlcigodHJhaXQpID0+ICFbLi4uYWR2YW50YWdlcywgLi4uZGlzYWR2YW50YWdlc10uaW5jbHVkZXModHJhaXQpKTtcclxuXHJcbiAgZnVuY3Rpb24gcm9sbENyKHRyYWl0KSB7XHJcbiAgICBsZXQgcm9sbEFnYWluc3QgPSB0cmFpdC5jb250cm9sUmF0aW5nID09PSBcIm5vbmVcIiA/IDAgOiArdHJhaXQuY29udHJvbFJhdGluZztcclxuICAgIFJvbGxlci5jdXN0b21Sb2xsKCRlbnRpdHksIHJvbGxBZ2FpbnN0LCBgQ29udHJvbCBTYXZlIHZzLiAke3RyYWl0Lm5hbWV9YCk7XHJcbiAgfVxyXG48L3NjcmlwdD5cclxuXHJcbjxzdHlsZT5cclxuICAuY3Itcm9sbCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMTBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48VGFic1xyXG4gIHRhYkluZGV4PXskZW50aXR5LmdldEZsYWcoJ0dVUlBTJywgJ3RyYWl0cy10YWInKSB8fCAwfVxyXG4gIG9uOnRhYmNoYW5nZT17KGUpID0+IHtcclxuICAgICRlbnRpdHkuc2V0RmxhZygnR1VSUFMnLCAndHJhaXRzLXRhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkRpc2FkdmFudGFnZXMgJiBRdWlya3M8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezF9PkFkdmFudGFnZXMgJiBQZXJrczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TGFuZ3VhZ2VzICYgQ3VsdHVyZTwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFjaWFsIFRyYWl0czwvVGFiPlxyXG4gIDwvVGFiTGlzdD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8TGlzdFxyXG4gICAgICB0eXBlPVwidHJhaXRcIlxyXG4gICAgICBvbjphZGRsaXN0aXRlbT17KCkgPT4ge1xyXG4gICAgICAgICRlbnRpdHkuY3JlYXRlT3duZWRJdGVtKHtcclxuICAgICAgICAgIG5hbWU6ICc/Pz8nLFxyXG4gICAgICAgICAgdHlwZTogJ3RyYWl0JyxcclxuICAgICAgICAgIGRhdGE6IHtcclxuICAgICAgICAgICAgY2F0ZWdvcmllczogWydEaXNhZHZhbnRhZ2UnXSxcclxuICAgICAgICAgIH0sXHJcbiAgICAgICAgfSk7XHJcbiAgICAgIH19PlxyXG4gICAgICA8dGhcclxuICAgICAgICBzbG90PVwiaGVhZGVyXCJcclxuICAgICAgICBvbjpkYmxjbGljaz17KGUpID0+IHtcclxuICAgICAgICAgICRlbnRpdHkuc29ydExpc3QoJ3RyYWl0JywgJ2RhdGEubmFtZScpO1xyXG4gICAgICAgIH19PlxyXG4gICAgICAgIERpc2FkdmFudGFnZXMgJiBRdWlya3MgPGkgY2xhc3M9XCJmYXMgZmEtc29ydFwiIC8+XHJcbiAgICAgIDwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UHRzPC90aD5cclxuICAgICAgPHRoIHNsb3Q9XCJoZWFkZXJcIj5SZWY8L3RoPlxyXG4gICAgICB7I2VhY2ggZGlzYWR2YW50YWdlcyBhcyB0cmFpdCwgaSAodHJhaXQuZm91bmRyeUlEKX1cclxuICAgICAgICA8Um93XHJcbiAgICAgICAgICBkaXNhYmxlZD17dHJhaXQuZGlzYWJsZWR9XHJcbiAgICAgICAgICBjb2xzcGFuPVwiNVwiXHJcbiAgICAgICAgICBsZXQ6b3duZWRJdGVtXHJcbiAgICAgICAgICB7aX1cclxuICAgICAgICAgIGlkPXt0cmFpdC5mb3VuZHJ5SUR9XHJcbiAgICAgICAgICBkcmFnZ2FibGU9e3RydWV9XHJcbiAgICAgICAgICBvbjpkZWxldGU9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgIGUuZGV0YWlsLmVudGl0eS5kZWxldGUoKTtcclxuICAgICAgICAgIH19PlxyXG4gICAgICAgICAgPHRkIGNsYXNzPVwibWFpbi1saXN0LWNvbCByZWxhdGl2ZVwiPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5uYW1lXCJcclxuICAgICAgICAgICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgICAgICAgICBsZXQ6dmFsdWU+XHJcbiAgICAgICAgICAgICAgPHNwYW4gc2xvdD1cIm5vLWVkaXRcIj5cclxuICAgICAgICAgICAgICAgIHt0cmFpdC5uYW1lfVxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lmhhc0xldmVscyA/IHRyYWl0LmxldmVscyA6ICcnfVxyXG4gICAgICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICAgICAgICA8c3BhblxyXG4gICAgICAgICAgICAgICAgY2xhc3M6bm8tc2hvdz17dHJhaXQuY29udHJvbFJhdGluZyA9PT0gJ24vYSd9XHJcbiAgICAgICAgICAgICAgICBzbG90PVwibm8tZWRpdFwiXHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cImZhcyBmYS1kaWNlIGQ2IHJvbGwtaWNvIGNyLXJvbGxcIlxyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9e3JvbGxDcih0cmFpdCl9PlxyXG4gICAgICAgICAgICAgICAgJm5ic3A7e3RyYWl0LmNvbnRyb2xSYXRpbmd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICA8L0lucHV0PlxyXG4gICAgICAgICAgPC90ZD5cclxuICAgICAgICAgIDx0ZD57dHJhaXQuYWRqdXN0ZWRQb2ludHMoKX08L3RkPlxyXG4gICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIlxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPGRpdiBzbG90PVwibm90ZXNcIj57dHJhaXQubm90ZXN9PC9kaXY+XHJcbiAgICAgICAgPC9Sb3c+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvTGlzdD5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxMaXN0XHJcbiAgICAgIHR5cGU9XCJ0cmFpdFwiXHJcbiAgICAgIG9uOmFkZGxpc3RpdGVtPXsoKSA9PiB7XHJcbiAgICAgICAgJGVudGl0eS5jcmVhdGVPd25lZEl0ZW0oe1xyXG4gICAgICAgICAgbmFtZTogJz8/PycsXHJcbiAgICAgICAgICB0eXBlOiAndHJhaXQnLFxyXG4gICAgICAgICAgZGF0YToge1xyXG4gICAgICAgICAgICBjYXRlZ29yaWVzOiBbJ0FkdmFudGFnZSddLFxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9KTtcclxuICAgICAgfX0+XHJcbiAgICAgIDx0aFxyXG4gICAgICAgIHNsb3Q9XCJoZWFkZXJcIlxyXG4gICAgICAgIG9uOmRibGNsaWNrPXsoZSkgPT4ge1xyXG4gICAgICAgICAgJGVudGl0eS5zb3J0TGlzdCgndHJhaXQnLCAnZGF0YS5uYW1lJyk7XHJcbiAgICAgICAgfX0+XHJcbiAgICAgICAgQWR2YW50YWdlcyAmIFBlcmtzIDxpIGNsYXNzPVwiZmFzIGZhLXNvcnRcIiAvPlxyXG4gICAgICA8L3RoPlxyXG4gICAgICA8dGggc2xvdD1cImhlYWRlclwiPlB0czwvdGg+XHJcbiAgICAgIDx0aCBzbG90PVwiaGVhZGVyXCI+UmVmPC90aD5cclxuICAgICAgeyNlYWNoIFsuLi5hZHZhbnRhZ2VzLCAuLi5vdGhlcl0gYXMgdHJhaXQsIGkgKHRyYWl0LmZvdW5kcnlJRCl9XHJcbiAgICAgICAgPFJvd1xyXG4gICAgICAgICAgZGlzYWJsZWQ9e3RyYWl0LmRpc2FibGVkfVxyXG4gICAgICAgICAgY29sc3Bhbj1cIjVcIlxyXG4gICAgICAgICAgbGV0Om93bmVkSXRlbVxyXG4gICAgICAgICAge2l9XHJcbiAgICAgICAgICBpZD17dHJhaXQuZm91bmRyeUlEfVxyXG4gICAgICAgICAgZHJhZ2dhYmxlPXt0cnVlfVxyXG4gICAgICAgICAgb246ZGVsZXRlPXsoZSkgPT4ge1xyXG4gICAgICAgICAgICAkZW50aXR5LmdldE93bmVkSXRlbSh0cmFpdC5mb3VuZHJ5SUQpLmRlbGV0ZSgpO1xyXG4gICAgICAgICAgfX0+XHJcbiAgICAgICAgICA8dGQgY2xhc3M9XCJtYWluLWxpc3QtY29sXCI+XHJcbiAgICAgICAgICAgIDxJbnB1dFxyXG4gICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgIGVudGl0eT17b3duZWRJdGVtID8gb3duZWRJdGVtLl9lbnRpdHkgOiBudWxsfVxyXG4gICAgICAgICAgICAgIHBhdGg9XCJkYXRhLm5hbWVcIlxyXG4gICAgICAgICAgICAgIGFsc29VcGRhdGU9e1snbmFtZSddfVxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPlxyXG4gICAgICAgICAgICAgICAge3RyYWl0Lm5hbWV9XHJcbiAgICAgICAgICAgICAgICB7dHJhaXQuaGFzTGV2ZWxzID8gdHJhaXQubGV2ZWxzIDogJyd9XHJcbiAgICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICA8L0lucHV0PlxyXG4gICAgICAgICAgPC90ZD5cclxuICAgICAgICAgIDx0ZD57dHJhaXQuYWRqdXN0ZWRQb2ludHMoKX08L3RkPlxyXG4gICAgICAgICAgPHRkPlxyXG4gICAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgICBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX1cclxuICAgICAgICAgICAgICBlbnRpdHk9e293bmVkSXRlbSA/IG93bmVkSXRlbS5fZW50aXR5IDogbnVsbH1cclxuICAgICAgICAgICAgICBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIlxyXG4gICAgICAgICAgICAgIGxldDp2YWx1ZT5cclxuICAgICAgICAgICAgICA8c3BhbiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvSW5wdXQ+XHJcbiAgICAgICAgICA8L3RkPlxyXG4gICAgICAgICAgPGRpdiBzbG90PVwibm90ZXNcIj57dHJhaXQubm90ZXN9PC9kaXY+XHJcbiAgICAgICAgPC9Sb3c+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvTGlzdD5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxoMT5VbmRlciBDb25zdHJ1Y3Rpb248L2gxPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGgxPlVuZGVyIENvbnN0cnVjdGlvbjwvaDE+XHJcbiAgPC9UYWJQYW5lbD5cclxuPC9UYWJzPlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNENFLFFBQVEsZUFBQyxDQUFDLEFBQ1IsUUFBUSxDQUFFLFFBQVEsQ0FDbEIsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3279,7 +3323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "label{display:block}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50LnN2ZWx0ZSIsInNvdXJjZXMiOlsiRXF1aXBtZW50LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7XHJcbiAgICBTZWxlY3QsXHJcbiAgICBPcHRpb24sXHJcbiAgICBDaGVja2JveCxcclxuICAgIFRleHRhcmVhLFxyXG4gICAgUmljaFRleHRFZGl0b3IsXHJcbiAgICBJbnB1dCxcclxuICB9IGZyb20gXCIuLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRmVhdHVyZXMgZnJvbSBcIi4vcGFuZWxzL0ZlYXR1cmVzXCI7XHJcbiAgaW1wb3J0IFJhbmdlZFdlYXBvbnMgZnJvbSBcIi4vcGFuZWxzL1JhbmdlZFdlYXBvbnNcIjtcclxuICBpbXBvcnQgTWVsZWVXZWFwb25zIGZyb20gXCIuL3BhbmVscy9NZWxlZVdlYXBvbnNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIDpnbG9iYWwobGFiZWwpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkVxdWlwbWVudCBEYXRhPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5GZWF0dXJlczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TWVsZWUgV2VhcG9uczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFuZ2VkIFdlYXBvbnM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PlVzZXIgRGVzY3JpcHRpb248L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgeyNpZiAkZW50aXR5LmFjdG9yfVxyXG4gICAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuZXF1aXBwZWRcIiBsYWJlbD1cIkVxdWlwcGVkXCIgLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuZGVzY3JpcHRpb25cIlxyXG4gICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgdHlwZT1cInRleHRcIlxyXG4gICAgICBsYWJlbD1cIk5hbWVcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnF1YW50aXR5XCIgbWluPVwiMFwiIHR5cGU9XCJudW1iZXJcIiBsYWJlbD1cIlF1YW50aXR5XCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS50ZWNoX2xldmVsXCIgdHlwZT1cInRleHRcIiBsYWJlbD1cIlRlY2ggTGV2ZWxcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLmxlZ2FsaXR5X2NsYXNzXCIgdHlwZT1cInRleHRcIiBsYWJlbD1cIkxlZ2FsaXR5IENsYXNzXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJWYWx1ZVwiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEud2VpZ2h0XCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIldlaWdodFwiIC8+XHJcblxyXG4gICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIGNvbHM9XCIzMFwiIHJvd3M9XCIxXCIgLz5cclxuICAgIDxJbnB1dCB0eXBlPVwidGV4dFwiIHBhdGg9XCJkYXRhLmNhdGVnb3JpZXNcIiBsYWJlbD1cIkNhdGVnb3JpZXNcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiIGxhYmVsPVwiUmVmZXJlbmNlXCIgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxGZWF0dXJlcyAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPE1lbGVlV2VhcG9ucyAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFJhbmdlZFdlYXBvbnMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxSaWNoVGV4dEVkaXRvciBwYXRoPVwiZGF0YS51c2VyX2Rlc2NyaXB0aW9uXCIgdGl0bGU9XCJVc2VyIERlc2NyaXB0aW9uXCIgLz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQlUsS0FBSyxBQUFFLENBQUMsQUFDZCxPQUFPLENBQUUsS0FBSyxBQUNoQixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/editors/Equipment.svelte","webpack://src/svelte/editors/Equipment.svelte.css"],"names":[],"mappings":"AAqBU,MAAQ,aACA;ACrBlB,6nGAA6nG","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import {\r\n    Select,\r\n    Option,\r\n    Checkbox,\r\n    Textarea,\r\n    RichTextEditor,\r\n    Input,\r\n  } from \"../form/form\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"../tabs/tabs\";\r\n\r\n  import Features from \"./panels/Features\";\r\n  import RangedWeapons from \"./panels/RangedWeapons\";\r\n  import MeleeWeapons from \"./panels/MeleeWeapons\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n</script>\r\n\r\n<style>\r\n  :global(label) {\r\n    display: block;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>Equipment Data</Tab>\r\n    <Tab index={1}>Features</Tab>\r\n    <Tab index={2}>Melee Weapons</Tab>\r\n    <Tab index={3}>Ranged Weapons</Tab>\r\n    <Tab index={4}>User Description</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    {#if $entity.actor}\r\n      <Checkbox path=\"data.equipped\" label=\"Equipped\" />\r\n    {/if}\r\n    <Input\r\n      path=\"data.description\"\r\n      alsoUpdate={['name']}\r\n      type=\"text\"\r\n      label=\"Name\" />\r\n    <Input path=\"data.quantity\" min=\"0\" type=\"number\" label=\"Quantity\" />\r\n    <Input path=\"data.tech_level\" type=\"text\" label=\"Tech Level\" />\r\n    <Input path=\"data.legality_class\" type=\"text\" label=\"Legality Class\" />\r\n    <Input path=\"data.value\" type=\"number\" min=\"0\" label=\"Value\" />\r\n    <Input path=\"data.weight\" type=\"number\" min=\"0\" label=\"Weight\" />\r\n\r\n    <Textarea path=\"data.notes\" label=\"Notes\" cols=\"30\" rows=\"1\" />\r\n    <Input type=\"text\" path=\"data.categories\" label=\"Categories\" />\r\n    <Input path=\"data.reference\" label=\"Reference\" />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Features />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <MeleeWeapons />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <RangedWeapons />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <RichTextEditor path=\"data.user_description\" title=\"User Description\" />\r\n  </TabPanel>\r\n</Tabs>\r\n","label{display:block}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50LnN2ZWx0ZSIsInNvdXJjZXMiOlsiRXF1aXBtZW50LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7XHJcbiAgICBTZWxlY3QsXHJcbiAgICBPcHRpb24sXHJcbiAgICBDaGVja2JveCxcclxuICAgIFRleHRhcmVhLFxyXG4gICAgUmljaFRleHRFZGl0b3IsXHJcbiAgICBJbnB1dCxcclxuICB9IGZyb20gXCIuLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRmVhdHVyZXMgZnJvbSBcIi4vcGFuZWxzL0ZlYXR1cmVzXCI7XHJcbiAgaW1wb3J0IFJhbmdlZFdlYXBvbnMgZnJvbSBcIi4vcGFuZWxzL1JhbmdlZFdlYXBvbnNcIjtcclxuICBpbXBvcnQgTWVsZWVXZWFwb25zIGZyb20gXCIuL3BhbmVscy9NZWxlZVdlYXBvbnNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIDpnbG9iYWwobGFiZWwpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkVxdWlwbWVudCBEYXRhPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5GZWF0dXJlczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TWVsZWUgV2VhcG9uczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFuZ2VkIFdlYXBvbnM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PlVzZXIgRGVzY3JpcHRpb248L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgeyNpZiAkZW50aXR5LmFjdG9yfVxyXG4gICAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuZXF1aXBwZWRcIiBsYWJlbD1cIkVxdWlwcGVkXCIgLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8SW5wdXRcclxuICAgICAgcGF0aD1cImRhdGEuZGVzY3JpcHRpb25cIlxyXG4gICAgICBhbHNvVXBkYXRlPXtbJ25hbWUnXX1cclxuICAgICAgdHlwZT1cInRleHRcIlxyXG4gICAgICBsYWJlbD1cIk5hbWVcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnF1YW50aXR5XCIgbWluPVwiMFwiIHR5cGU9XCJudW1iZXJcIiBsYWJlbD1cIlF1YW50aXR5XCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS50ZWNoX2xldmVsXCIgdHlwZT1cInRleHRcIiBsYWJlbD1cIlRlY2ggTGV2ZWxcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLmxlZ2FsaXR5X2NsYXNzXCIgdHlwZT1cInRleHRcIiBsYWJlbD1cIkxlZ2FsaXR5IENsYXNzXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS52YWx1ZVwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJWYWx1ZVwiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEud2VpZ2h0XCIgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIldlaWdodFwiIC8+XHJcblxyXG4gICAgPFRleHRhcmVhIHBhdGg9XCJkYXRhLm5vdGVzXCIgbGFiZWw9XCJOb3Rlc1wiIGNvbHM9XCIzMFwiIHJvd3M9XCIxXCIgLz5cclxuICAgIDxJbnB1dCB0eXBlPVwidGV4dFwiIHBhdGg9XCJkYXRhLmNhdGVnb3JpZXNcIiBsYWJlbD1cIkNhdGVnb3JpZXNcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLnJlZmVyZW5jZVwiIGxhYmVsPVwiUmVmZXJlbmNlXCIgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxGZWF0dXJlcyAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPE1lbGVlV2VhcG9ucyAvPlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPFJhbmdlZFdlYXBvbnMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxSaWNoVGV4dEVkaXRvciBwYXRoPVwiZGF0YS51c2VyX2Rlc2NyaXB0aW9uXCIgdGl0bGU9XCJVc2VyIERlc2NyaXB0aW9uXCIgLz5cclxuICA8L1RhYlBhbmVsPlxyXG48L1RhYnM+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQlUsS0FBSyxBQUFFLENBQUMsQUFDZCxPQUFPLENBQUUsS0FBSyxBQUNoQixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "label{display:block}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50LnN2ZWx0ZSIsInNvdXJjZXMiOlsiRXF1aXBtZW50LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7XHJcbiAgICBTZWxlY3QsXHJcbiAgICBPcHRpb24sXHJcbiAgICBDaGVja2JveCxcclxuICAgIFRleHRhcmVhLFxyXG4gICAgUmljaFRleHRFZGl0b3IsXHJcbiAgICBJbnB1dCxcclxuICB9IGZyb20gXCIuLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRmVhdHVyZXMgZnJvbSBcIi4vcGFuZWxzL0ZlYXR1cmVzXCI7XHJcbiAgaW1wb3J0IFJhbmdlZFdlYXBvbnMgZnJvbSBcIi4vcGFuZWxzL1JhbmdlZFdlYXBvbnNcIjtcclxuICBpbXBvcnQgTWVsZWVXZWFwb25zIGZyb20gXCIuL3BhbmVscy9NZWxlZVdlYXBvbnNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIDpnbG9iYWwobGFiZWwpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkVxdWlwbWVudCBEYXRhPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5GZWF0dXJlczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TWVsZWUgV2VhcG9uczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFuZ2VkIFdlYXBvbnM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PlVzZXIgRGVzY3JpcHRpb248L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgeyNpZiAkZW50aXR5LmFjdG9yfVxyXG4gICAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuZXF1aXBwZWRcIiBsYWJlbD1cIkVxdWlwcGVkXCIgLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuaXNfYW1tdW5pdGlvblwiIGxhYmVsPVwiVHJlYXQgQXMgQW1tdW5pdGlvbj9cIiAvPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmRlc2NyaXB0aW9uXCJcclxuICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgIHR5cGU9XCJ0ZXh0XCJcclxuICAgICAgbGFiZWw9XCJOYW1lXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5xdWFudGl0eVwiIG1pbj1cIjBcIiB0eXBlPVwibnVtYmVyXCIgbGFiZWw9XCJRdWFudGl0eVwiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEudGVjaF9sZXZlbFwiIHR5cGU9XCJ0ZXh0XCIgbGFiZWw9XCJUZWNoIExldmVsXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sZWdhbGl0eV9jbGFzc1wiIHR5cGU9XCJ0ZXh0XCIgbGFiZWw9XCJMZWdhbGl0eSBDbGFzc1wiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEudmFsdWVcIiB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiVmFsdWVcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLndlaWdodFwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJXZWlnaHRcIiAvPlxyXG5cclxuICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiBjb2xzPVwiMzBcIiByb3dzPVwiMVwiIC8+XHJcbiAgICA8SW5wdXQgdHlwZT1cInRleHRcIiBwYXRoPVwiZGF0YS5jYXRlZ29yaWVzXCIgbGFiZWw9XCJDYXRlZ29yaWVzXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIiBsYWJlbD1cIlJlZmVyZW5jZVwiIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8RmVhdHVyZXMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxNZWxlZVdlYXBvbnMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxSYW5nZWRXZWFwb25zIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8UmljaFRleHRFZGl0b3IgcGF0aD1cImRhdGEudXNlcl9kZXNjcmlwdGlvblwiIHRpdGxlPVwiVXNlciBEZXNjcmlwdGlvblwiIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuPC9UYWJzPlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJVLEtBQUssQUFBRSxDQUFDLEFBQ2QsT0FBTyxDQUFFLEtBQUssQUFDaEIsQ0FBQyJ9*/", "",{"version":3,"sources":["webpack://src/svelte/editors/Equipment.svelte","webpack://src/svelte/editors/Equipment.svelte.css"],"names":[],"mappings":"AAqBU,MAAQ,aACA;ACrBlB,quGAAquG","sourcesContent":["<script>\r\n  import { getContext } from \"svelte\";\r\n\r\n  import {\r\n    Select,\r\n    Option,\r\n    Checkbox,\r\n    Textarea,\r\n    RichTextEditor,\r\n    Input,\r\n  } from \"../form/form\";\r\n  import { Tabs, TabList, TabPanel, Tab } from \"../tabs/tabs\";\r\n\r\n  import Features from \"./panels/Features\";\r\n  import RangedWeapons from \"./panels/RangedWeapons\";\r\n  import MeleeWeapons from \"./panels/MeleeWeapons\";\r\n\r\n  export let entity = getContext(\"entity\") || null;\r\n</script>\r\n\r\n<style>\r\n  :global(label) {\r\n    display: block;\r\n  }\r\n</style>\r\n\r\n<Tabs\r\n  tabIndex={$entity.getFlag('GURPS', 'tab') || 0}\r\n  on:tabchange={(e) => {\r\n    $entity.setFlag('GURPS', 'tab', e.detail);\r\n  }}>\r\n  <TabList>\r\n    <Tab index={0}>Equipment Data</Tab>\r\n    <Tab index={1}>Features</Tab>\r\n    <Tab index={2}>Melee Weapons</Tab>\r\n    <Tab index={3}>Ranged Weapons</Tab>\r\n    <Tab index={4}>User Description</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    {#if $entity.actor}\r\n      <Checkbox path=\"data.equipped\" label=\"Equipped\" />\r\n    {/if}\r\n    <Checkbox path=\"data.is_ammunition\" label=\"Treat As Ammunition?\" />\r\n    <Input\r\n      path=\"data.description\"\r\n      alsoUpdate={['name']}\r\n      type=\"text\"\r\n      label=\"Name\" />\r\n    <Input path=\"data.quantity\" min=\"0\" type=\"number\" label=\"Quantity\" />\r\n    <Input path=\"data.tech_level\" type=\"text\" label=\"Tech Level\" />\r\n    <Input path=\"data.legality_class\" type=\"text\" label=\"Legality Class\" />\r\n    <Input path=\"data.value\" type=\"number\" min=\"0\" label=\"Value\" />\r\n    <Input path=\"data.weight\" type=\"number\" min=\"0\" label=\"Weight\" />\r\n\r\n    <Textarea path=\"data.notes\" label=\"Notes\" cols=\"30\" rows=\"1\" />\r\n    <Input type=\"text\" path=\"data.categories\" label=\"Categories\" />\r\n    <Input path=\"data.reference\" label=\"Reference\" />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <Features />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <MeleeWeapons />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <RangedWeapons />\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <RichTextEditor path=\"data.user_description\" title=\"User Description\" />\r\n  </TabPanel>\r\n</Tabs>\r\n","label{display:block}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBtZW50LnN2ZWx0ZSIsInNvdXJjZXMiOlsiRXF1aXBtZW50LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxyXG4gIGltcG9ydCB7IGdldENvbnRleHQgfSBmcm9tIFwic3ZlbHRlXCI7XHJcblxyXG4gIGltcG9ydCB7XHJcbiAgICBTZWxlY3QsXHJcbiAgICBPcHRpb24sXHJcbiAgICBDaGVja2JveCxcclxuICAgIFRleHRhcmVhLFxyXG4gICAgUmljaFRleHRFZGl0b3IsXHJcbiAgICBJbnB1dCxcclxuICB9IGZyb20gXCIuLi9mb3JtL2Zvcm1cIjtcclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgRmVhdHVyZXMgZnJvbSBcIi4vcGFuZWxzL0ZlYXR1cmVzXCI7XHJcbiAgaW1wb3J0IFJhbmdlZFdlYXBvbnMgZnJvbSBcIi4vcGFuZWxzL1JhbmdlZFdlYXBvbnNcIjtcclxuICBpbXBvcnQgTWVsZWVXZWFwb25zIGZyb20gXCIuL3BhbmVscy9NZWxlZVdlYXBvbnNcIjtcclxuXHJcbiAgZXhwb3J0IGxldCBlbnRpdHkgPSBnZXRDb250ZXh0KFwiZW50aXR5XCIpIHx8IG51bGw7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIDpnbG9iYWwobGFiZWwpIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuPC9zdHlsZT5cclxuXHJcbjxUYWJzXHJcbiAgdGFiSW5kZXg9eyRlbnRpdHkuZ2V0RmxhZygnR1VSUFMnLCAndGFiJykgfHwgMH1cclxuICBvbjp0YWJjaGFuZ2U9eyhlKSA9PiB7XHJcbiAgICAkZW50aXR5LnNldEZsYWcoJ0dVUlBTJywgJ3RhYicsIGUuZGV0YWlsKTtcclxuICB9fT5cclxuICA8VGFiTGlzdD5cclxuICAgIDxUYWIgaW5kZXg9ezB9PkVxdWlwbWVudCBEYXRhPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5GZWF0dXJlczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17Mn0+TWVsZWUgV2VhcG9uczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+UmFuZ2VkIFdlYXBvbnM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezR9PlVzZXIgRGVzY3JpcHRpb248L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgeyNpZiAkZW50aXR5LmFjdG9yfVxyXG4gICAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuZXF1aXBwZWRcIiBsYWJlbD1cIkVxdWlwcGVkXCIgLz5cclxuICAgIHsvaWZ9XHJcbiAgICA8Q2hlY2tib3ggcGF0aD1cImRhdGEuaXNfYW1tdW5pdGlvblwiIGxhYmVsPVwiVHJlYXQgQXMgQW1tdW5pdGlvbj9cIiAvPlxyXG4gICAgPElucHV0XHJcbiAgICAgIHBhdGg9XCJkYXRhLmRlc2NyaXB0aW9uXCJcclxuICAgICAgYWxzb1VwZGF0ZT17WyduYW1lJ119XHJcbiAgICAgIHR5cGU9XCJ0ZXh0XCJcclxuICAgICAgbGFiZWw9XCJOYW1lXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5xdWFudGl0eVwiIG1pbj1cIjBcIiB0eXBlPVwibnVtYmVyXCIgbGFiZWw9XCJRdWFudGl0eVwiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEudGVjaF9sZXZlbFwiIHR5cGU9XCJ0ZXh0XCIgbGFiZWw9XCJUZWNoIExldmVsXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5sZWdhbGl0eV9jbGFzc1wiIHR5cGU9XCJ0ZXh0XCIgbGFiZWw9XCJMZWdhbGl0eSBDbGFzc1wiIC8+XHJcbiAgICA8SW5wdXQgcGF0aD1cImRhdGEudmFsdWVcIiB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiVmFsdWVcIiAvPlxyXG4gICAgPElucHV0IHBhdGg9XCJkYXRhLndlaWdodFwiIHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJXZWlnaHRcIiAvPlxyXG5cclxuICAgIDxUZXh0YXJlYSBwYXRoPVwiZGF0YS5ub3Rlc1wiIGxhYmVsPVwiTm90ZXNcIiBjb2xzPVwiMzBcIiByb3dzPVwiMVwiIC8+XHJcbiAgICA8SW5wdXQgdHlwZT1cInRleHRcIiBwYXRoPVwiZGF0YS5jYXRlZ29yaWVzXCIgbGFiZWw9XCJDYXRlZ29yaWVzXCIgLz5cclxuICAgIDxJbnB1dCBwYXRoPVwiZGF0YS5yZWZlcmVuY2VcIiBsYWJlbD1cIlJlZmVyZW5jZVwiIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8RmVhdHVyZXMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxNZWxlZVdlYXBvbnMgLz5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxSYW5nZWRXZWFwb25zIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8UmljaFRleHRFZGl0b3IgcGF0aD1cImRhdGEudXNlcl9kZXNjcmlwdGlvblwiIHRpdGxlPVwiVXNlciBEZXNjcmlwdGlvblwiIC8+XHJcbiAgPC9UYWJQYW5lbD5cclxuPC9UYWJzPlxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJVLEtBQUssQUFBRSxDQUFDLEFBQ2QsT0FBTyxDQUFFLEtBQUssQUFDaEIsQ0FBQyJ9*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -3521,7 +3565,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-1yywemp.svelte-1yywemp{display:flex}.to-bottom.svelte-1yywemp.svelte-1yywemp{margin:auto}.statgrid.svelte-1yywemp.svelte-1yywemp{display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:auto}.statgrid.svelte-1yywemp.svelte-1yywemp input{width:50px}.box.svelte-1yywemp.svelte-1yywemp{border:2px solid grey;padding:7px}.box-title.svelte-1yywemp.svelte-1yywemp{display:flex}.box-title.svelte-1yywemp>.grow.svelte-1yywemp{flex:1}.box-tools.svelte-1yywemp.svelte-1yywemp{list-style-type:none;margin:0;padding:0;overflow:hidden}.box-tool.svelte-1yywemp.svelte-1yywemp{float:left;display:block;color:white;text-align:center}.tool-ico.svelte-1yywemp.svelte-1yywemp:hover{box-shadow:0 0 8px red}.portrait-by-bio.svelte-1yywemp.svelte-1yywemp{display:flex}.padding.svelte-1yywemp.svelte-1yywemp{width:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9uc3Rlci5zdmVsdGUiLCJzb3VyY2VzIjpbIk1vbnN0ZXIuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsUmVuZGVyZXIgZnJvbSBcImd1cnBzLWZvdW5kcnktcm9sbC1saWIvc3JjL2pzL1JlbmRlcmVyL1N1Y2Nlc3NSb2xsUmVuZGVyZXJcIjtcclxuXHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG5cclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuLi9Ta2lsbExpc3Quc3ZlbHRlXCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi4vVHJhaXRMaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuLi9FcXVpcG1lbnRMaXN0LnN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4uL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBTZWxlY3QsIE9wdGlvbiB9IGZyb20gXCIuLi9mb3JtL3NlbGVjdC9zZWxlY3RcIjtcclxuICBpbXBvcnQgQ2hlY2tib3ggZnJvbSBcIi4uL2Zvcm0vQ2hlY2tib3hcIjtcclxuICBpbXBvcnQgVGV4dGFyZWEgZnJvbSBcIi4uL2Zvcm0vVGV4dGFyZWFcIjtcclxuICBpbXBvcnQgUmljaFRleHRFZGl0b3IgZnJvbSBcIi4uL2Zvcm0vUmljaFRleHRFZGl0b3JcIjtcclxuICBpbXBvcnQgRmlsZVBpY2tlciBmcm9tIFwiLi4vZm9ybS9GaWxlUGlja2VyLnN2ZWx0ZVwiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSAkZW50aXR5Ll9HVVJQUztcclxuXHJcbiAgc2V0Q29udGV4dChcIkdVUlBTXCIsIEdVUlBTKTtcclxuICBzZXRDb250ZXh0KFwiZW50aXR5XCIsIGVudGl0eSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC50by1ib3R0b20ge1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gIH1cclxuICAuc3RhdGdyaWQge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcbiAgLnN0YXRncmlkIDpnbG9iYWwoaW5wdXQpIHtcclxuICAgIHdpZHRoOiA1MHB4O1xyXG4gIH1cclxuICAuc3RhdCB7XHJcbiAgfVxyXG4gIC5ib3gge1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgZ3JleTtcclxuICAgIHBhZGRpbmc6IDdweDtcclxuICB9XHJcbiAgLmJveC10aXRsZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAuYm94LXRpdGxlID4gLmdyb3cge1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLmJveC10b29scyB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB9XHJcbiAgLmJveC10b29sIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC50b29sLWljbzpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgOHB4IHJlZDtcclxuICB9XHJcbiAgLnBvcnRyYWl0LWJ5LWJpbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAucGFkZGluZyB7XHJcbiAgICB3aWR0aDogMjBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48SW5wdXQge2VudGl0eX0gcGF0aD1cIm5hbWVcIiBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX0gbGV0OnZhbHVlPlxyXG4gIDxoMiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L2gyPlxyXG48L0lucHV0PlxyXG5cclxuPGRpdiBjbGFzcz1cInBvcnRyYWl0LWJ5LWJpb1wiPlxyXG4gIDxGaWxlUGlja2VyIGhlaWdodD1cIjEwMHB4XCIgdHlwZT1cImltYWdlXCIgLz5cclxuICA8ZGl2IGNsYXNzPVwicGFkZGluZ1wiPiZUaGluU3BhY2U7PC9kaXY+XHJcbiAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLmJpb1wiIC8+XHJcbjwvZGl2PlxyXG5cclxuPGRpdiBjbGFzcz1cInN0YXRncmlkXCI+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dCB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiU1RcIiBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCIgLz5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJIUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIC8+XHJcbiAgICAgIDxJbnB1dFxyXG4gICAgICAgIHdpZHRoPVwiNTBweFwiXHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIGxhYmVsPVwiU3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIkRYXCIgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIldpbGxcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIk1vdmVcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLm1vdmVcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIklRXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlBlclwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIiAvPlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIkhUXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8c3BhbiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJGUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuZmF0aWd1ZV9wb2ludHMudmFsdWVcIiAvPlxyXG4gICAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9zcGFuPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlNNXCJcclxuICAgICAgcGF0aD1cImRhdGEuc2l6ZV9tb2RpaWZlclwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5Eb2RnZTwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+UGFycnk8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPElucHV0IHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJEUlwiIHBhdGg9XCJkYXRhLmRhbWFnZV9yZXNpc3RhbmNlXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcblxyXG48VGFicyB0YWJJbmRleD17MH0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5BdHRhY2tzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+SXRlbXM8L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdj5cclxuICAgICAgPGJ1dHRvblxyXG4gICAgICAgIHR5cGU9XCJidXR0b25cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7IG5hbWU6ICc/Pz8nLCB0eXBlOiAnbWVsZWUgYXR0YWNrJyB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZGQgQW4gQXR0YWNrXHJcbiAgICAgIDwvYnV0dG9uPlxyXG4gICAgICB7I2VhY2ggJGVudGl0eS5nZXRXaWxkV2VhcG9ucygpIGFzIGF0dGFjaywgaSAoYXR0YWNrLmlkKX1cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiYm94XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiYm94LXRpdGxlXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJncm93XCI+XHJcbiAgICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgICBlbnRpdHk9e2F0dGFjay5fZW50aXR5fVxyXG4gICAgICAgICAgICAgICAgcGF0aD1cIm5hbWVcIlxyXG4gICAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WydkYXRhLm5hbWUnXX1cclxuICAgICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgICAgPGgyIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvaDI+XHJcbiAgICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxpIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCIgb246Y2xpY2s9e2F0dGFjay5kZWxldGUoKX0gLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPFJpY2hUZXh0RWRpdG9yXHJcbiAgICAgICAgICAgIGVudGl0eT17YXR0YWNrLl9lbnRpdHl9XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLnVzZXJfZGVzY3JpcHRpb25cIiAvPlxyXG4gICAgICAgICAgPHVsIGNsYXNzPVwiYm94LXRvb2xzXCI+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImJveC10b29sXCI+XHJcbiAgICAgICAgICAgICAgPCEtLSBzdmVsdGUtaWdub3JlIG1pc3NpbmctZGVjbGFyYXRpb24gLS0+XHJcbiAgICAgICAgICAgICAgPGltZ1xyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgIGxldCByb2xsID0gbmV3IFN1Y2Nlc3NSb2xsKHtcclxuICAgICAgICAgICAgICAgICAgICBsZXZlbDogYXR0YWNrLmdldFByb3BlcnR5KCdkYXRhLnJvbGxfYWdhaW5zdCcpLFxyXG4gICAgICAgICAgICAgICAgICAgIHRyYWl0OiBhdHRhY2suZ2V0UHJvcGVydHkoJ25hbWUnKSxcclxuICAgICAgICAgICAgICAgICAgICBtb2RpZmllcnM6IHByb21wdCgnTW9kaWZpZXJzJyksXHJcbiAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICByb2xsLnJvbGwoKTtcclxuICAgICAgICAgICAgICAgICAgbGV0IHJlbmRlcmVyID0gbmV3IFN1Y2Nlc3NSb2xsUmVuZGVyZXIoKTtcclxuICAgICAgICAgICAgICAgICAgcmVuZGVyZXIucmVuZGVyKHJvbGwpLnRoZW4oKGh0bWwpID0+IHtcclxuICAgICAgICAgICAgICAgICAgICBDaGF0TWVzc2FnZS5jcmVhdGUoe1xyXG4gICAgICAgICAgICAgICAgICAgICAgY29udGVudDogaHRtbCxcclxuICAgICAgICAgICAgICAgICAgICAgIHVzZXI6IGdhbWUudXNlci5pX2lkLFxyXG4gICAgICAgICAgICAgICAgICAgICAgdHlwZTogQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLk9USEVSLFxyXG4gICAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgICAgIH19XHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cInRvb2wtaWNvXCJcclxuICAgICAgICAgICAgICAgIHNyYz1cInN5c3RlbXMvR1VSUFMvaWNvbnMvYXR0YWNrLWljb24tcG5nLTMucG5nXCJcclxuICAgICAgICAgICAgICAgIGFsdD1cImF0dGFja1wiXHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ9XCIyMXB4XCIgLz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgZW50aXR5PXthdHRhY2suX2VudGl0eX1cclxuICAgICAgICAgICAgcGF0aD1cImRhdGEucm9sbF9hZ2FpbnN0XCJcclxuICAgICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICAgIGxhYmVsPVwiQXR0YWNrIFRhcmdldFwiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cInRyYWl0c1wiPlxyXG4gICAgICA8VHJhaXRMaXN0IC8+XHJcbiAgICA8L2Rpdj5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJza2lsbHNcIj5cclxuICAgICAgPFNraWxsTGlzdCAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8ZGl2IGNsYXNzPVwiaXRlbXNcIj5cclxuICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuXHJcbjxkaXYgY2xhc3M9XCJ0by1ib3R0b21cIj5cclxuICA8SW5wdXQgcGF0aD1cImRhdGEuY2xhc3NcIiBsZXQ6dmFsdWUgbGFiZWw9XCJDbGFzc1wiIC8+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJub3Rlc1wiPlxyXG4gICAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLm5vdGVzXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyw4QkFBQyxDQUFDLEFBQ0wsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsU0FBUyw4QkFBQyxDQUFDLEFBQ1QsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDbEMsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUNELHVDQUFTLENBQUMsQUFBUSxLQUFLLEFBQUUsQ0FBQyxBQUN4QixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFHRCxJQUFJLDhCQUFDLENBQUMsQUFDSixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsOEJBQUMsQ0FBQyxBQUNWLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUNELHlCQUFVLENBQUcsS0FBSyxlQUFDLENBQUMsQUFDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsZUFBZSxDQUFFLElBQUksQ0FDckIsTUFBTSxDQUFFLENBQUMsQ0FDVCxPQUFPLENBQUUsQ0FBQyxDQUNWLFFBQVEsQ0FBRSxNQUFNLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxLQUFLLENBQUUsSUFBSSxDQUNYLE9BQU8sQ0FBRSxLQUFLLENBQ2QsS0FBSyxDQUFFLEtBQUssQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsdUNBQVMsTUFBTSxBQUFDLENBQUMsQUFDZixVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN6QixDQUFDLEFBQ0QsZ0JBQWdCLDhCQUFDLENBQUMsQUFDaEIsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsUUFBUSw4QkFBQyxDQUFDLEFBQ1IsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/monster/Monster.svelte","webpack://src/svelte/monster/Monster.svelte.css"],"names":[],"mappings":"AA6BE,oCAAO,YACQ,CACd,yCACW,WACE,CACb,wCACU,YACI,CACb,iCAAkC,CAClC,mBAAoB,CACrB,8CACyB,UACb,CACZ,mCAGK,qBACkB,CACtB,WAAY,CACb,yCACW,YACG,CACd,+CACmB,MACX,CACR,yCACW,oBACW,CACrB,QAAS,CACT,SAAU,CACV,eAAgB,CACjB,wCACU,UACE,CACX,aAAc,CACd,WAAY,CACZ,iBAAkB,CACnB,8CACgB,sBACQ,CACxB,+CACiB,YACH,CACd,uCACS,UACG;ACzEf,q5WAAq5W","sourcesContent":["<script>\r\n  import SuccessRoll from \"gurps-foundry-roll-lib/src/js/Roll/SuccessRoll\";\r\n  import SuccessRollRenderer from \"gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer\";\r\n\r\n  import { setContext } from \"svelte\";\r\n\r\n  import { List, Row } from \"../list/list\";\r\n\r\n  import SkillList from \"../SkillList.svelte\";\r\n  import TraitList from \"../TraitList.svelte\";\r\n  import EquipmentList from \"../EquipmentList.svelte\";\r\n\r\n  import { Tabs, TabList, TabPanel, Tab } from \"../tabs/tabs\";\r\n\r\n  import Input from \"../form/Input\";\r\n  import { Select, Option } from \"../form/select/select\";\r\n  import Checkbox from \"../form/Checkbox\";\r\n  import Textarea from \"../form/Textarea\";\r\n  import RichTextEditor from \"../form/RichTextEditor\";\r\n  import FilePicker from \"../form/FilePicker.svelte\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .to-bottom {\r\n    margin: auto;\r\n  }\r\n  .statgrid {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n  .statgrid :global(input) {\r\n    width: 50px;\r\n  }\r\n  .stat {\r\n  }\r\n  .box {\r\n    border: 2px solid grey;\r\n    padding: 7px;\r\n  }\r\n  .box-title {\r\n    display: flex;\r\n  }\r\n  .box-title > .grow {\r\n    flex: 1;\r\n  }\r\n  .box-tools {\r\n    list-style-type: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow: hidden;\r\n  }\r\n  .box-tool {\r\n    float: left;\r\n    display: block;\r\n    color: white;\r\n    text-align: center;\r\n  }\r\n  .tool-ico:hover {\r\n    box-shadow: 0 0 8px red;\r\n  }\r\n  .portrait-by-bio {\r\n    display: flex;\r\n  }\r\n  .padding {\r\n    width: 20px;\r\n  }\r\n</style>\r\n\r\n<Input {entity} path=\"name\" config={{ clickToEdit: true }} let:value>\r\n  <h2 slot=\"no-edit\">{value}</h2>\r\n</Input>\r\n\r\n<div class=\"portrait-by-bio\">\r\n  <FilePicker height=\"100px\" type=\"image\" />\r\n  <div class=\"padding\">&ThinSpace;</div>\r\n  <RichTextEditor {entity} path=\"data.bio\" />\r\n</div>\r\n\r\n<div class=\"statgrid\">\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"ST\" path=\"data.attributes.strength\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <div class=\"flex\">\r\n      <Input\r\n        type=\"number\"\r\n        min=\"0\"\r\n        label=\"HP\"\r\n        path=\"data.pools.hit_points.value\" />\r\n      <Input\r\n        width=\"50px\"\r\n        type=\"number\"\r\n        min=\"0\"\r\n        path=\"data.pools.hit_points.max\" />\r\n    </div>\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Speed\"\r\n      step=\"0.25\"\r\n      path=\"data.attributes.speed\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"DX\" path=\"data.attributes.dexterity\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Will\"\r\n      path=\"data.attributes.will\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Move\"\r\n      path=\"data.attributes.move\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"IQ\"\r\n      path=\"data.attributes.intelligence\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Per\"\r\n      path=\"data.attributes.perception\" />\r\n  </div>\r\n  <div class=\"stat\" />\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"HT\"\r\n      path=\"data.attributes.health\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <span class=\"flex\">\r\n      <Input\r\n        type=\"number\"\r\n        min=\"0\"\r\n        label=\"FP\"\r\n        path=\"data.pools.fatigue_points.value\" />\r\n      <Input type=\"number\" min=\"0\" path=\"data.pools.fatigue_points.max\" />\r\n    </span>\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"SM\"\r\n      path=\"data.size_modiifer\" />\r\n  </div>\r\n  <div class=\"stat\">Dodge</div>\r\n  <div class=\"stat\">Parry</div>\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"DR\" path=\"data.damage_resistance\" />\r\n  </div>\r\n</div>\r\n\r\n<Tabs tabIndex={0}>\r\n  <TabList>\r\n    <Tab index={0}>Attacks</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Skills</Tab>\r\n    <Tab index={3}>Items</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div>\r\n      <button\r\n        type=\"button\"\r\n        on:click={() => {\r\n          $entity.createOwnedItem({ name: '???', type: 'melee attack' });\r\n        }}>\r\n        Add An Attack\r\n      </button>\r\n      {#each $entity.getWildWeapons() as attack, i (attack.id)}\r\n        <div class=\"box\">\r\n          <div class=\"box-title\">\r\n            <div class=\"grow\">\r\n              <Input\r\n                entity={attack._entity}\r\n                path=\"name\"\r\n                alsoUpdate={['data.name']}\r\n                config={{ clickToEdit: true }}\r\n                let:value>\r\n                <h2 slot=\"no-edit\">{value}</h2>\r\n              </Input>\r\n            </div>\r\n            <i class=\"fas fa-trash\" on:click={attack.delete()} />\r\n          </div>\r\n          <RichTextEditor\r\n            entity={attack._entity}\r\n            path=\"data.user_description\" />\r\n          <ul class=\"box-tools\">\r\n            <li class=\"box-tool\">\r\n              <!-- svelte-ignore missing-declaration -->\r\n              <img\r\n                on:click={(e) => {\r\n                  let roll = new SuccessRoll({\r\n                    level: attack.getProperty('data.roll_against'),\r\n                    trait: attack.getProperty('name'),\r\n                    modifiers: prompt('Modifiers'),\r\n                  });\r\n                  roll.roll();\r\n                  let renderer = new SuccessRollRenderer();\r\n                  renderer.render(roll).then((html) => {\r\n                    ChatMessage.create({\r\n                      content: html,\r\n                      user: game.user.i_id,\r\n                      type: CONST.CHAT_MESSAGE_TYPES.OTHER,\r\n                    });\r\n                  });\r\n                }}\r\n                class=\"tool-ico\"\r\n                src=\"systems/GURPS/icons/attack-icon-png-3.png\"\r\n                alt=\"attack\"\r\n                height=\"21px\" />\r\n            </li>\r\n          </ul>\r\n          <Input\r\n            entity={attack._entity}\r\n            path=\"data.roll_against\"\r\n            type=\"number\"\r\n            label=\"Attack Target\" />\r\n        </div>\r\n      {/each}\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"traits\">\r\n      <TraitList />\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"skills\">\r\n      <SkillList />\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"items\">\r\n      <EquipmentList />\r\n    </div>\r\n  </TabPanel>\r\n</Tabs>\r\n\r\n<div class=\"to-bottom\">\r\n  <Input path=\"data.class\" let:value label=\"Class\" />\r\n\r\n  <div class=\"notes\">\r\n    <RichTextEditor {entity} path=\"data.notes\" />\r\n  </div>\r\n</div>\r\n",".flex.svelte-1yywemp.svelte-1yywemp{display:flex}.to-bottom.svelte-1yywemp.svelte-1yywemp{margin:auto}.statgrid.svelte-1yywemp.svelte-1yywemp{display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:auto}.statgrid.svelte-1yywemp.svelte-1yywemp input{width:50px}.box.svelte-1yywemp.svelte-1yywemp{border:2px solid grey;padding:7px}.box-title.svelte-1yywemp.svelte-1yywemp{display:flex}.box-title.svelte-1yywemp>.grow.svelte-1yywemp{flex:1}.box-tools.svelte-1yywemp.svelte-1yywemp{list-style-type:none;margin:0;padding:0;overflow:hidden}.box-tool.svelte-1yywemp.svelte-1yywemp{float:left;display:block;color:white;text-align:center}.tool-ico.svelte-1yywemp.svelte-1yywemp:hover{box-shadow:0 0 8px red}.portrait-by-bio.svelte-1yywemp.svelte-1yywemp{display:flex}.padding.svelte-1yywemp.svelte-1yywemp{width:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9uc3Rlci5zdmVsdGUiLCJzb3VyY2VzIjpbIk1vbnN0ZXIuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsUmVuZGVyZXIgZnJvbSBcImd1cnBzLWZvdW5kcnktcm9sbC1saWIvc3JjL2pzL1JlbmRlcmVyL1N1Y2Nlc3NSb2xsUmVuZGVyZXJcIjtcclxuXHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG5cclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuLi9Ta2lsbExpc3Quc3ZlbHRlXCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi4vVHJhaXRMaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuLi9FcXVpcG1lbnRMaXN0LnN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4uL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBTZWxlY3QsIE9wdGlvbiB9IGZyb20gXCIuLi9mb3JtL3NlbGVjdC9zZWxlY3RcIjtcclxuICBpbXBvcnQgQ2hlY2tib3ggZnJvbSBcIi4uL2Zvcm0vQ2hlY2tib3hcIjtcclxuICBpbXBvcnQgVGV4dGFyZWEgZnJvbSBcIi4uL2Zvcm0vVGV4dGFyZWFcIjtcclxuICBpbXBvcnQgUmljaFRleHRFZGl0b3IgZnJvbSBcIi4uL2Zvcm0vUmljaFRleHRFZGl0b3JcIjtcclxuICBpbXBvcnQgRmlsZVBpY2tlciBmcm9tIFwiLi4vZm9ybS9GaWxlUGlja2VyLnN2ZWx0ZVwiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSAkZW50aXR5Ll9HVVJQUztcclxuXHJcbiAgc2V0Q29udGV4dChcIkdVUlBTXCIsIEdVUlBTKTtcclxuICBzZXRDb250ZXh0KFwiZW50aXR5XCIsIGVudGl0eSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC50by1ib3R0b20ge1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gIH1cclxuICAuc3RhdGdyaWQge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcbiAgLnN0YXRncmlkIDpnbG9iYWwoaW5wdXQpIHtcclxuICAgIHdpZHRoOiA1MHB4O1xyXG4gIH1cclxuICAuc3RhdCB7XHJcbiAgfVxyXG4gIC5ib3gge1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgZ3JleTtcclxuICAgIHBhZGRpbmc6IDdweDtcclxuICB9XHJcbiAgLmJveC10aXRsZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAuYm94LXRpdGxlID4gLmdyb3cge1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLmJveC10b29scyB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB9XHJcbiAgLmJveC10b29sIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC50b29sLWljbzpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgOHB4IHJlZDtcclxuICB9XHJcbiAgLnBvcnRyYWl0LWJ5LWJpbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAucGFkZGluZyB7XHJcbiAgICB3aWR0aDogMjBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48SW5wdXQge2VudGl0eX0gcGF0aD1cIm5hbWVcIiBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX0gbGV0OnZhbHVlPlxyXG4gIDxoMiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L2gyPlxyXG48L0lucHV0PlxyXG5cclxuPGRpdiBjbGFzcz1cInBvcnRyYWl0LWJ5LWJpb1wiPlxyXG4gIDxGaWxlUGlja2VyIGhlaWdodD1cIjEwMHB4XCIgdHlwZT1cImltYWdlXCIgLz5cclxuICA8ZGl2IGNsYXNzPVwicGFkZGluZ1wiPiZUaGluU3BhY2U7PC9kaXY+XHJcbiAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLmJpb1wiIC8+XHJcbjwvZGl2PlxyXG5cclxuPGRpdiBjbGFzcz1cInN0YXRncmlkXCI+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dCB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiU1RcIiBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCIgLz5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJIUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIC8+XHJcbiAgICAgIDxJbnB1dFxyXG4gICAgICAgIHdpZHRoPVwiNTBweFwiXHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIGxhYmVsPVwiU3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIkRYXCIgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIldpbGxcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIk1vdmVcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLm1vdmVcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIklRXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlBlclwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIiAvPlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIkhUXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8c3BhbiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJGUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuZmF0aWd1ZV9wb2ludHMudmFsdWVcIiAvPlxyXG4gICAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9zcGFuPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlNNXCJcclxuICAgICAgcGF0aD1cImRhdGEuc2l6ZV9tb2RpaWZlclwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5Eb2RnZTwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+UGFycnk8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPElucHV0IHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJEUlwiIHBhdGg9XCJkYXRhLmRhbWFnZV9yZXNpc3RhbmNlXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcblxyXG48VGFicyB0YWJJbmRleD17MH0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5BdHRhY2tzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+SXRlbXM8L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdj5cclxuICAgICAgPGJ1dHRvblxyXG4gICAgICAgIHR5cGU9XCJidXR0b25cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7IG5hbWU6ICc/Pz8nLCB0eXBlOiAnbWVsZWUgYXR0YWNrJyB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZGQgQW4gQXR0YWNrXHJcbiAgICAgIDwvYnV0dG9uPlxyXG4gICAgICB7I2VhY2ggJGVudGl0eS5nZXRXaWxkV2VhcG9ucygpIGFzIGF0dGFjaywgaSAoYXR0YWNrLmlkKX1cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiYm94XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiYm94LXRpdGxlXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJncm93XCI+XHJcbiAgICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgICBlbnRpdHk9e2F0dGFjay5fZW50aXR5fVxyXG4gICAgICAgICAgICAgICAgcGF0aD1cIm5hbWVcIlxyXG4gICAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WydkYXRhLm5hbWUnXX1cclxuICAgICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgICAgPGgyIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvaDI+XHJcbiAgICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxpIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCIgb246Y2xpY2s9e2F0dGFjay5kZWxldGUoKX0gLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPFJpY2hUZXh0RWRpdG9yXHJcbiAgICAgICAgICAgIGVudGl0eT17YXR0YWNrLl9lbnRpdHl9XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLnVzZXJfZGVzY3JpcHRpb25cIiAvPlxyXG4gICAgICAgICAgPHVsIGNsYXNzPVwiYm94LXRvb2xzXCI+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImJveC10b29sXCI+XHJcbiAgICAgICAgICAgICAgPCEtLSBzdmVsdGUtaWdub3JlIG1pc3NpbmctZGVjbGFyYXRpb24gLS0+XHJcbiAgICAgICAgICAgICAgPGltZ1xyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgIGxldCByb2xsID0gbmV3IFN1Y2Nlc3NSb2xsKHtcclxuICAgICAgICAgICAgICAgICAgICBsZXZlbDogYXR0YWNrLmdldFByb3BlcnR5KCdkYXRhLnJvbGxfYWdhaW5zdCcpLFxyXG4gICAgICAgICAgICAgICAgICAgIHRyYWl0OiBhdHRhY2suZ2V0UHJvcGVydHkoJ25hbWUnKSxcclxuICAgICAgICAgICAgICAgICAgICBtb2RpZmllcnM6IHByb21wdCgnTW9kaWZpZXJzJyksXHJcbiAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICByb2xsLnJvbGwoKTtcclxuICAgICAgICAgICAgICAgICAgbGV0IHJlbmRlcmVyID0gbmV3IFN1Y2Nlc3NSb2xsUmVuZGVyZXIoKTtcclxuICAgICAgICAgICAgICAgICAgcmVuZGVyZXIucmVuZGVyKHJvbGwpLnRoZW4oKGh0bWwpID0+IHtcclxuICAgICAgICAgICAgICAgICAgICBDaGF0TWVzc2FnZS5jcmVhdGUoe1xyXG4gICAgICAgICAgICAgICAgICAgICAgY29udGVudDogaHRtbCxcclxuICAgICAgICAgICAgICAgICAgICAgIHVzZXI6IGdhbWUudXNlci5pX2lkLFxyXG4gICAgICAgICAgICAgICAgICAgICAgdHlwZTogQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLk9USEVSLFxyXG4gICAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgICAgIH19XHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cInRvb2wtaWNvXCJcclxuICAgICAgICAgICAgICAgIHNyYz1cInN5c3RlbXMvR1VSUFMvaWNvbnMvYXR0YWNrLWljb24tcG5nLTMucG5nXCJcclxuICAgICAgICAgICAgICAgIGFsdD1cImF0dGFja1wiXHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ9XCIyMXB4XCIgLz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgZW50aXR5PXthdHRhY2suX2VudGl0eX1cclxuICAgICAgICAgICAgcGF0aD1cImRhdGEucm9sbF9hZ2FpbnN0XCJcclxuICAgICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICAgIGxhYmVsPVwiQXR0YWNrIFRhcmdldFwiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cInRyYWl0c1wiPlxyXG4gICAgICA8VHJhaXRMaXN0IC8+XHJcbiAgICA8L2Rpdj5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJza2lsbHNcIj5cclxuICAgICAgPFNraWxsTGlzdCAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8ZGl2IGNsYXNzPVwiaXRlbXNcIj5cclxuICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuXHJcbjxkaXYgY2xhc3M9XCJ0by1ib3R0b21cIj5cclxuICA8SW5wdXQgcGF0aD1cImRhdGEuY2xhc3NcIiBsZXQ6dmFsdWUgbGFiZWw9XCJDbGFzc1wiIC8+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJub3Rlc1wiPlxyXG4gICAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLm5vdGVzXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyw4QkFBQyxDQUFDLEFBQ0wsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsU0FBUyw4QkFBQyxDQUFDLEFBQ1QsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDbEMsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUNELHVDQUFTLENBQUMsQUFBUSxLQUFLLEFBQUUsQ0FBQyxBQUN4QixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFHRCxJQUFJLDhCQUFDLENBQUMsQUFDSixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsOEJBQUMsQ0FBQyxBQUNWLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUNELHlCQUFVLENBQUcsS0FBSyxlQUFDLENBQUMsQUFDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsZUFBZSxDQUFFLElBQUksQ0FDckIsTUFBTSxDQUFFLENBQUMsQ0FDVCxPQUFPLENBQUUsQ0FBQyxDQUNWLFFBQVEsQ0FBRSxNQUFNLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxLQUFLLENBQUUsSUFBSSxDQUNYLE9BQU8sQ0FBRSxLQUFLLENBQ2QsS0FBSyxDQUFFLEtBQUssQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsdUNBQVMsTUFBTSxBQUFDLENBQUMsQUFDZixVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN6QixDQUFDLEFBQ0QsZ0JBQWdCLDhCQUFDLENBQUMsQUFDaEIsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsUUFBUSw4QkFBQyxDQUFDLEFBQ1IsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".flex.svelte-1yywemp.svelte-1yywemp{display:flex}.to-bottom.svelte-1yywemp.svelte-1yywemp{margin:auto}.statgrid.svelte-1yywemp.svelte-1yywemp{display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:auto}.statgrid.svelte-1yywemp input{width:50px}.box.svelte-1yywemp.svelte-1yywemp{border:2px solid grey;padding:7px}.box-title.svelte-1yywemp.svelte-1yywemp{display:flex}.box-title.svelte-1yywemp>.grow.svelte-1yywemp{flex:1}.box-tools.svelte-1yywemp.svelte-1yywemp{list-style-type:none;margin:0;padding:0;overflow:hidden}.box-tool.svelte-1yywemp.svelte-1yywemp{float:left;display:block;color:white;text-align:center}.tool-ico.svelte-1yywemp.svelte-1yywemp:hover{box-shadow:0 0 8px red}.portrait-by-bio.svelte-1yywemp.svelte-1yywemp{display:flex}.padding.svelte-1yywemp.svelte-1yywemp{width:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9uc3Rlci5zdmVsdGUiLCJzb3VyY2VzIjpbIk1vbnN0ZXIuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsUmVuZGVyZXIgZnJvbSBcImd1cnBzLWZvdW5kcnktcm9sbC1saWIvc3JjL2pzL1JlbmRlcmVyL1N1Y2Nlc3NSb2xsUmVuZGVyZXJcIjtcclxuXHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG5cclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuLi9Ta2lsbExpc3Quc3ZlbHRlXCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi4vVHJhaXRMaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuLi9FcXVpcG1lbnRMaXN0LnN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4uL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBTZWxlY3QsIE9wdGlvbiB9IGZyb20gXCIuLi9mb3JtL3NlbGVjdC9zZWxlY3RcIjtcclxuICBpbXBvcnQgQ2hlY2tib3ggZnJvbSBcIi4uL2Zvcm0vQ2hlY2tib3hcIjtcclxuICBpbXBvcnQgVGV4dGFyZWEgZnJvbSBcIi4uL2Zvcm0vVGV4dGFyZWFcIjtcclxuICBpbXBvcnQgUmljaFRleHRFZGl0b3IgZnJvbSBcIi4uL2Zvcm0vUmljaFRleHRFZGl0b3JcIjtcclxuICBpbXBvcnQgRmlsZVBpY2tlciBmcm9tIFwiLi4vZm9ybS9GaWxlUGlja2VyLnN2ZWx0ZVwiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSAkZW50aXR5Ll9HVVJQUztcclxuXHJcbiAgc2V0Q29udGV4dChcIkdVUlBTXCIsIEdVUlBTKTtcclxuICBzZXRDb250ZXh0KFwiZW50aXR5XCIsIGVudGl0eSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC50by1ib3R0b20ge1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gIH1cclxuICAuc3RhdGdyaWQge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcbiAgLnN0YXRncmlkIDpnbG9iYWwoaW5wdXQpIHtcclxuICAgIHdpZHRoOiA1MHB4O1xyXG4gIH1cclxuICAuc3RhdCB7XHJcbiAgfVxyXG4gIC5ib3gge1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgZ3JleTtcclxuICAgIHBhZGRpbmc6IDdweDtcclxuICB9XHJcbiAgLmJveC10aXRsZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAuYm94LXRpdGxlID4gLmdyb3cge1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLmJveC10b29scyB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB9XHJcbiAgLmJveC10b29sIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC50b29sLWljbzpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgOHB4IHJlZDtcclxuICB9XHJcbiAgLnBvcnRyYWl0LWJ5LWJpbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAucGFkZGluZyB7XHJcbiAgICB3aWR0aDogMjBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48SW5wdXQge2VudGl0eX0gcGF0aD1cIm5hbWVcIiBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX0gbGV0OnZhbHVlPlxyXG4gIDxoMiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L2gyPlxyXG48L0lucHV0PlxyXG5cclxuPGRpdiBjbGFzcz1cInBvcnRyYWl0LWJ5LWJpb1wiPlxyXG4gIDxGaWxlUGlja2VyIGhlaWdodD1cIjEwMHB4XCIgdHlwZT1cImltYWdlXCIgLz5cclxuICA8ZGl2IGNsYXNzPVwicGFkZGluZ1wiPiZUaGluU3BhY2U7PC9kaXY+XHJcbiAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLmJpb1wiIC8+XHJcbjwvZGl2PlxyXG5cclxuPGRpdiBjbGFzcz1cInN0YXRncmlkXCI+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dCB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiU1RcIiBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCIgLz5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJIUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIC8+XHJcbiAgICAgIDxJbnB1dFxyXG4gICAgICAgIHdpZHRoPVwiNTBweFwiXHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIGxhYmVsPVwiU3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIkRYXCIgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIldpbGxcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIk1vdmVcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLm1vdmVcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIklRXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlBlclwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIiAvPlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIkhUXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8c3BhbiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJGUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuZmF0aWd1ZV9wb2ludHMudmFsdWVcIiAvPlxyXG4gICAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9zcGFuPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlNNXCJcclxuICAgICAgcGF0aD1cImRhdGEuc2l6ZV9tb2RpaWZlclwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5Eb2RnZTwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+UGFycnk8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPElucHV0IHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJEUlwiIHBhdGg9XCJkYXRhLmRhbWFnZV9yZXNpc3RhbmNlXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcblxyXG48VGFicyB0YWJJbmRleD17MH0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5BdHRhY2tzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+SXRlbXM8L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdj5cclxuICAgICAgPGJ1dHRvblxyXG4gICAgICAgIHR5cGU9XCJidXR0b25cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7IG5hbWU6ICc/Pz8nLCB0eXBlOiAnbWVsZWUgYXR0YWNrJyB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZGQgQW4gQXR0YWNrXHJcbiAgICAgIDwvYnV0dG9uPlxyXG4gICAgICB7I2VhY2ggJGVudGl0eS5nZXRXaWxkV2VhcG9ucygpIGFzIGF0dGFjaywgaSAoYXR0YWNrLmlkKX1cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiYm94XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiYm94LXRpdGxlXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJncm93XCI+XHJcbiAgICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgICBlbnRpdHk9e2F0dGFjay5fZW50aXR5fVxyXG4gICAgICAgICAgICAgICAgcGF0aD1cIm5hbWVcIlxyXG4gICAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WydkYXRhLm5hbWUnXX1cclxuICAgICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgICAgPGgyIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvaDI+XHJcbiAgICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxpIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCIgb246Y2xpY2s9e2F0dGFjay5kZWxldGUoKX0gLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPFJpY2hUZXh0RWRpdG9yXHJcbiAgICAgICAgICAgIGVudGl0eT17YXR0YWNrLl9lbnRpdHl9XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLnVzZXJfZGVzY3JpcHRpb25cIiAvPlxyXG4gICAgICAgICAgPHVsIGNsYXNzPVwiYm94LXRvb2xzXCI+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImJveC10b29sXCI+XHJcbiAgICAgICAgICAgICAgPCEtLSBzdmVsdGUtaWdub3JlIG1pc3NpbmctZGVjbGFyYXRpb24gLS0+XHJcbiAgICAgICAgICAgICAgPGltZ1xyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgIGxldCByb2xsID0gbmV3IFN1Y2Nlc3NSb2xsKHtcclxuICAgICAgICAgICAgICAgICAgICBsZXZlbDogYXR0YWNrLmdldFByb3BlcnR5KCdkYXRhLnJvbGxfYWdhaW5zdCcpLFxyXG4gICAgICAgICAgICAgICAgICAgIHRyYWl0OiBhdHRhY2suZ2V0UHJvcGVydHkoJ25hbWUnKSxcclxuICAgICAgICAgICAgICAgICAgICBtb2RpZmllcnM6IHByb21wdCgnTW9kaWZpZXJzJyksXHJcbiAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICByb2xsLnJvbGwoKTtcclxuICAgICAgICAgICAgICAgICAgbGV0IHJlbmRlcmVyID0gbmV3IFN1Y2Nlc3NSb2xsUmVuZGVyZXIoKTtcclxuICAgICAgICAgICAgICAgICAgcmVuZGVyZXIucmVuZGVyKHJvbGwpLnRoZW4oKGh0bWwpID0+IHtcclxuICAgICAgICAgICAgICAgICAgICBDaGF0TWVzc2FnZS5jcmVhdGUoe1xyXG4gICAgICAgICAgICAgICAgICAgICAgY29udGVudDogaHRtbCxcclxuICAgICAgICAgICAgICAgICAgICAgIHVzZXI6IGdhbWUudXNlci5pX2lkLFxyXG4gICAgICAgICAgICAgICAgICAgICAgdHlwZTogQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLk9USEVSLFxyXG4gICAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgICAgIH19XHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cInRvb2wtaWNvXCJcclxuICAgICAgICAgICAgICAgIHNyYz1cInN5c3RlbXMvR1VSUFMvaWNvbnMvYXR0YWNrLWljb24tcG5nLTMucG5nXCJcclxuICAgICAgICAgICAgICAgIGFsdD1cImF0dGFja1wiXHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ9XCIyMXB4XCIgLz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgZW50aXR5PXthdHRhY2suX2VudGl0eX1cclxuICAgICAgICAgICAgcGF0aD1cImRhdGEucm9sbF9hZ2FpbnN0XCJcclxuICAgICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICAgIGxhYmVsPVwiQXR0YWNrIFRhcmdldFwiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cInRyYWl0c1wiPlxyXG4gICAgICA8VHJhaXRMaXN0IC8+XHJcbiAgICA8L2Rpdj5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJza2lsbHNcIj5cclxuICAgICAgPFNraWxsTGlzdCAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8ZGl2IGNsYXNzPVwiaXRlbXNcIj5cclxuICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuXHJcbjxkaXYgY2xhc3M9XCJ0by1ib3R0b21cIj5cclxuICA8SW5wdXQgcGF0aD1cImRhdGEuY2xhc3NcIiBsZXQ6dmFsdWUgbGFiZWw9XCJDbGFzc1wiIC8+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJub3Rlc1wiPlxyXG4gICAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLm5vdGVzXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyw4QkFBQyxDQUFDLEFBQ0wsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsU0FBUyw4QkFBQyxDQUFDLEFBQ1QsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDbEMsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUNELHdCQUFTLENBQUMsQUFBUSxLQUFLLEFBQUUsQ0FBQyxBQUN4QixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFHRCxJQUFJLDhCQUFDLENBQUMsQUFDSixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsOEJBQUMsQ0FBQyxBQUNWLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUNELHlCQUFVLENBQUcsS0FBSyxlQUFDLENBQUMsQUFDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsZUFBZSxDQUFFLElBQUksQ0FDckIsTUFBTSxDQUFFLENBQUMsQ0FDVCxPQUFPLENBQUUsQ0FBQyxDQUNWLFFBQVEsQ0FBRSxNQUFNLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxLQUFLLENBQUUsSUFBSSxDQUNYLE9BQU8sQ0FBRSxLQUFLLENBQ2QsS0FBSyxDQUFFLEtBQUssQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsdUNBQVMsTUFBTSxBQUFDLENBQUMsQUFDZixVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN6QixDQUFDLEFBQ0QsZ0JBQWdCLDhCQUFDLENBQUMsQUFDaEIsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsUUFBUSw4QkFBQyxDQUFDLEFBQ1IsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/", "",{"version":3,"sources":["webpack://src/svelte/monster/Monster.svelte","webpack://src/svelte/monster/Monster.svelte.css"],"names":[],"mappings":"AA6BE,oCAAO,YACQ,CACd,yCACW,WACE,CACb,wCACU,YACI,CACb,iCAAkC,CAClC,mBAAoB,CACrB,+BACyB,UACb,CACZ,mCAGK,qBACkB,CACtB,WAAY,CACb,yCACW,YACG,CACd,+CACmB,MACX,CACR,yCACW,oBACW,CACrB,QAAS,CACT,SAAU,CACV,eAAgB,CACjB,wCACU,UACE,CACX,aAAc,CACd,WAAY,CACZ,iBAAkB,CACnB,8CACgB,sBACQ,CACxB,+CACiB,YACH,CACd,uCACS,UACG;ACzEf,q5WAAq5W","sourcesContent":["<script>\r\n  import SuccessRoll from \"gurps-foundry-roll-lib/src/js/Roll/SuccessRoll\";\r\n  import SuccessRollRenderer from \"gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer\";\r\n\r\n  import { setContext } from \"svelte\";\r\n\r\n  import { List, Row } from \"../list/list\";\r\n\r\n  import SkillList from \"../SkillList.svelte\";\r\n  import TraitList from \"../TraitList.svelte\";\r\n  import EquipmentList from \"../EquipmentList.svelte\";\r\n\r\n  import { Tabs, TabList, TabPanel, Tab } from \"../tabs/tabs\";\r\n\r\n  import Input from \"../form/Input\";\r\n  import { Select, Option } from \"../form/select/select\";\r\n  import Checkbox from \"../form/Checkbox\";\r\n  import Textarea from \"../form/Textarea\";\r\n  import RichTextEditor from \"../form/RichTextEditor\";\r\n  import FilePicker from \"../form/FilePicker.svelte\";\r\n\r\n  export let entity = null;\r\n  const GURPS = $entity._GURPS;\r\n\r\n  setContext(\"GURPS\", GURPS);\r\n  setContext(\"entity\", entity);\r\n</script>\r\n\r\n<style>\r\n  .flex {\r\n    display: flex;\r\n  }\r\n  .to-bottom {\r\n    margin: auto;\r\n  }\r\n  .statgrid {\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n    grid-auto-rows: auto;\r\n  }\r\n  .statgrid :global(input) {\r\n    width: 50px;\r\n  }\r\n  .stat {\r\n  }\r\n  .box {\r\n    border: 2px solid grey;\r\n    padding: 7px;\r\n  }\r\n  .box-title {\r\n    display: flex;\r\n  }\r\n  .box-title > .grow {\r\n    flex: 1;\r\n  }\r\n  .box-tools {\r\n    list-style-type: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow: hidden;\r\n  }\r\n  .box-tool {\r\n    float: left;\r\n    display: block;\r\n    color: white;\r\n    text-align: center;\r\n  }\r\n  .tool-ico:hover {\r\n    box-shadow: 0 0 8px red;\r\n  }\r\n  .portrait-by-bio {\r\n    display: flex;\r\n  }\r\n  .padding {\r\n    width: 20px;\r\n  }\r\n</style>\r\n\r\n<Input {entity} path=\"name\" config={{ clickToEdit: true }} let:value>\r\n  <h2 slot=\"no-edit\">{value}</h2>\r\n</Input>\r\n\r\n<div class=\"portrait-by-bio\">\r\n  <FilePicker height=\"100px\" type=\"image\" />\r\n  <div class=\"padding\">&ThinSpace;</div>\r\n  <RichTextEditor {entity} path=\"data.bio\" />\r\n</div>\r\n\r\n<div class=\"statgrid\">\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"ST\" path=\"data.attributes.strength\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <div class=\"flex\">\r\n      <Input\r\n        type=\"number\"\r\n        min=\"0\"\r\n        label=\"HP\"\r\n        path=\"data.pools.hit_points.value\" />\r\n      <Input\r\n        width=\"50px\"\r\n        type=\"number\"\r\n        min=\"0\"\r\n        path=\"data.pools.hit_points.max\" />\r\n    </div>\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Speed\"\r\n      step=\"0.25\"\r\n      path=\"data.attributes.speed\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"DX\" path=\"data.attributes.dexterity\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Will\"\r\n      path=\"data.attributes.will\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Move\"\r\n      path=\"data.attributes.move\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"IQ\"\r\n      path=\"data.attributes.intelligence\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"Per\"\r\n      path=\"data.attributes.perception\" />\r\n  </div>\r\n  <div class=\"stat\" />\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"HT\"\r\n      path=\"data.attributes.health\" />\r\n  </div>\r\n  <div class=\"stat\">\r\n    <span class=\"flex\">\r\n      <Input\r\n        type=\"number\"\r\n        min=\"0\"\r\n        label=\"FP\"\r\n        path=\"data.pools.fatigue_points.value\" />\r\n      <Input type=\"number\" min=\"0\" path=\"data.pools.fatigue_points.max\" />\r\n    </span>\r\n  </div>\r\n  <div class=\"stat\">\r\n    <Input\r\n      {entity}\r\n      type=\"number\"\r\n      min=\"0\"\r\n      label=\"SM\"\r\n      path=\"data.size_modiifer\" />\r\n  </div>\r\n  <div class=\"stat\">Dodge</div>\r\n  <div class=\"stat\">Parry</div>\r\n  <div class=\"stat\">\r\n    <Input type=\"number\" min=\"0\" label=\"DR\" path=\"data.damage_resistance\" />\r\n  </div>\r\n</div>\r\n\r\n<Tabs tabIndex={0}>\r\n  <TabList>\r\n    <Tab index={0}>Attacks</Tab>\r\n    <Tab index={1}>Traits</Tab>\r\n    <Tab index={2}>Skills</Tab>\r\n    <Tab index={3}>Items</Tab>\r\n  </TabList>\r\n  <TabPanel>\r\n    <div>\r\n      <button\r\n        type=\"button\"\r\n        on:click={() => {\r\n          $entity.createOwnedItem({ name: '???', type: 'melee attack' });\r\n        }}>\r\n        Add An Attack\r\n      </button>\r\n      {#each $entity.getWildWeapons() as attack, i (attack.id)}\r\n        <div class=\"box\">\r\n          <div class=\"box-title\">\r\n            <div class=\"grow\">\r\n              <Input\r\n                entity={attack._entity}\r\n                path=\"name\"\r\n                alsoUpdate={['data.name']}\r\n                config={{ clickToEdit: true }}\r\n                let:value>\r\n                <h2 slot=\"no-edit\">{value}</h2>\r\n              </Input>\r\n            </div>\r\n            <i class=\"fas fa-trash\" on:click={attack.delete()} />\r\n          </div>\r\n          <RichTextEditor\r\n            entity={attack._entity}\r\n            path=\"data.user_description\" />\r\n          <ul class=\"box-tools\">\r\n            <li class=\"box-tool\">\r\n              <!-- svelte-ignore missing-declaration -->\r\n              <img\r\n                on:click={(e) => {\r\n                  let roll = new SuccessRoll({\r\n                    level: attack.getProperty('data.roll_against'),\r\n                    trait: attack.getProperty('name'),\r\n                    modifiers: prompt('Modifiers'),\r\n                  });\r\n                  roll.roll();\r\n                  let renderer = new SuccessRollRenderer();\r\n                  renderer.render(roll).then((html) => {\r\n                    ChatMessage.create({\r\n                      content: html,\r\n                      user: game.user.i_id,\r\n                      type: CONST.CHAT_MESSAGE_TYPES.OTHER,\r\n                    });\r\n                  });\r\n                }}\r\n                class=\"tool-ico\"\r\n                src=\"systems/GURPS/icons/attack-icon-png-3.png\"\r\n                alt=\"attack\"\r\n                height=\"21px\" />\r\n            </li>\r\n          </ul>\r\n          <Input\r\n            entity={attack._entity}\r\n            path=\"data.roll_against\"\r\n            type=\"number\"\r\n            label=\"Attack Target\" />\r\n        </div>\r\n      {/each}\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"traits\">\r\n      <TraitList />\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"skills\">\r\n      <SkillList />\r\n    </div>\r\n  </TabPanel>\r\n  <TabPanel>\r\n    <div class=\"items\">\r\n      <EquipmentList />\r\n    </div>\r\n  </TabPanel>\r\n</Tabs>\r\n\r\n<div class=\"to-bottom\">\r\n  <Input path=\"data.class\" let:value label=\"Class\" />\r\n\r\n  <div class=\"notes\">\r\n    <RichTextEditor {entity} path=\"data.notes\" />\r\n  </div>\r\n</div>\r\n",".flex.svelte-1yywemp.svelte-1yywemp{display:flex}.to-bottom.svelte-1yywemp.svelte-1yywemp{margin:auto}.statgrid.svelte-1yywemp.svelte-1yywemp{display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:auto}.statgrid.svelte-1yywemp input{width:50px}.box.svelte-1yywemp.svelte-1yywemp{border:2px solid grey;padding:7px}.box-title.svelte-1yywemp.svelte-1yywemp{display:flex}.box-title.svelte-1yywemp>.grow.svelte-1yywemp{flex:1}.box-tools.svelte-1yywemp.svelte-1yywemp{list-style-type:none;margin:0;padding:0;overflow:hidden}.box-tool.svelte-1yywemp.svelte-1yywemp{float:left;display:block;color:white;text-align:center}.tool-ico.svelte-1yywemp.svelte-1yywemp:hover{box-shadow:0 0 8px red}.portrait-by-bio.svelte-1yywemp.svelte-1yywemp{display:flex}.padding.svelte-1yywemp.svelte-1yywemp{width:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9uc3Rlci5zdmVsdGUiLCJzb3VyY2VzIjpbIk1vbnN0ZXIuc3ZlbHRlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsIGZyb20gXCJndXJwcy1mb3VuZHJ5LXJvbGwtbGliL3NyYy9qcy9Sb2xsL1N1Y2Nlc3NSb2xsXCI7XHJcbiAgaW1wb3J0IFN1Y2Nlc3NSb2xsUmVuZGVyZXIgZnJvbSBcImd1cnBzLWZvdW5kcnktcm9sbC1saWIvc3JjL2pzL1JlbmRlcmVyL1N1Y2Nlc3NSb2xsUmVuZGVyZXJcIjtcclxuXHJcbiAgaW1wb3J0IHsgc2V0Q29udGV4dCB9IGZyb20gXCJzdmVsdGVcIjtcclxuXHJcbiAgaW1wb3J0IHsgTGlzdCwgUm93IH0gZnJvbSBcIi4uL2xpc3QvbGlzdFwiO1xyXG5cclxuICBpbXBvcnQgU2tpbGxMaXN0IGZyb20gXCIuLi9Ta2lsbExpc3Quc3ZlbHRlXCI7XHJcbiAgaW1wb3J0IFRyYWl0TGlzdCBmcm9tIFwiLi4vVHJhaXRMaXN0LnN2ZWx0ZVwiO1xyXG4gIGltcG9ydCBFcXVpcG1lbnRMaXN0IGZyb20gXCIuLi9FcXVpcG1lbnRMaXN0LnN2ZWx0ZVwiO1xyXG5cclxuICBpbXBvcnQgeyBUYWJzLCBUYWJMaXN0LCBUYWJQYW5lbCwgVGFiIH0gZnJvbSBcIi4uL3RhYnMvdGFic1wiO1xyXG5cclxuICBpbXBvcnQgSW5wdXQgZnJvbSBcIi4uL2Zvcm0vSW5wdXRcIjtcclxuICBpbXBvcnQgeyBTZWxlY3QsIE9wdGlvbiB9IGZyb20gXCIuLi9mb3JtL3NlbGVjdC9zZWxlY3RcIjtcclxuICBpbXBvcnQgQ2hlY2tib3ggZnJvbSBcIi4uL2Zvcm0vQ2hlY2tib3hcIjtcclxuICBpbXBvcnQgVGV4dGFyZWEgZnJvbSBcIi4uL2Zvcm0vVGV4dGFyZWFcIjtcclxuICBpbXBvcnQgUmljaFRleHRFZGl0b3IgZnJvbSBcIi4uL2Zvcm0vUmljaFRleHRFZGl0b3JcIjtcclxuICBpbXBvcnQgRmlsZVBpY2tlciBmcm9tIFwiLi4vZm9ybS9GaWxlUGlja2VyLnN2ZWx0ZVwiO1xyXG5cclxuICBleHBvcnQgbGV0IGVudGl0eSA9IG51bGw7XHJcbiAgY29uc3QgR1VSUFMgPSAkZW50aXR5Ll9HVVJQUztcclxuXHJcbiAgc2V0Q29udGV4dChcIkdVUlBTXCIsIEdVUlBTKTtcclxuICBzZXRDb250ZXh0KFwiZW50aXR5XCIsIGVudGl0eSk7XHJcbjwvc2NyaXB0PlxyXG5cclxuPHN0eWxlPlxyXG4gIC5mbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gIC50by1ib3R0b20ge1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gIH1cclxuICAuc3RhdGdyaWQge1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XHJcbiAgICBncmlkLWF1dG8tcm93czogYXV0bztcclxuICB9XHJcbiAgLnN0YXRncmlkIDpnbG9iYWwoaW5wdXQpIHtcclxuICAgIHdpZHRoOiA1MHB4O1xyXG4gIH1cclxuICAuc3RhdCB7XHJcbiAgfVxyXG4gIC5ib3gge1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgZ3JleTtcclxuICAgIHBhZGRpbmc6IDdweDtcclxuICB9XHJcbiAgLmJveC10aXRsZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAuYm94LXRpdGxlID4gLmdyb3cge1xyXG4gICAgZmxleDogMTtcclxuICB9XHJcbiAgLmJveC10b29scyB7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICB9XHJcbiAgLmJveC10b29sIHtcclxuICAgIGZsb2F0OiBsZWZ0O1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIC50b29sLWljbzpob3ZlciB7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgOHB4IHJlZDtcclxuICB9XHJcbiAgLnBvcnRyYWl0LWJ5LWJpbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gIH1cclxuICAucGFkZGluZyB7XHJcbiAgICB3aWR0aDogMjBweDtcclxuICB9XHJcbjwvc3R5bGU+XHJcblxyXG48SW5wdXQge2VudGl0eX0gcGF0aD1cIm5hbWVcIiBjb25maWc9e3sgY2xpY2tUb0VkaXQ6IHRydWUgfX0gbGV0OnZhbHVlPlxyXG4gIDxoMiBzbG90PVwibm8tZWRpdFwiPnt2YWx1ZX08L2gyPlxyXG48L0lucHV0PlxyXG5cclxuPGRpdiBjbGFzcz1cInBvcnRyYWl0LWJ5LWJpb1wiPlxyXG4gIDxGaWxlUGlja2VyIGhlaWdodD1cIjEwMHB4XCIgdHlwZT1cImltYWdlXCIgLz5cclxuICA8ZGl2IGNsYXNzPVwicGFkZGluZ1wiPiZUaGluU3BhY2U7PC9kaXY+XHJcbiAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLmJpb1wiIC8+XHJcbjwvZGl2PlxyXG5cclxuPGRpdiBjbGFzcz1cInN0YXRncmlkXCI+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dCB0eXBlPVwibnVtYmVyXCIgbWluPVwiMFwiIGxhYmVsPVwiU1RcIiBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLnN0cmVuZ3RoXCIgLz5cclxuICA8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPGRpdiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJIUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy52YWx1ZVwiIC8+XHJcbiAgICAgIDxJbnB1dFxyXG4gICAgICAgIHdpZHRoPVwiNTBweFwiXHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuaGl0X3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5cclxuICAgIDxJbnB1dFxyXG4gICAgICB0eXBlPVwibnVtYmVyXCJcclxuICAgICAgbWluPVwiMFwiXHJcbiAgICAgIGxhYmVsPVwiU3BlZWRcIlxyXG4gICAgICBzdGVwPVwiMC4yNVwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMuc3BlZWRcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBsYWJlbD1cIkRYXCIgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5kZXh0ZXJpdHlcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIldpbGxcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLndpbGxcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIk1vdmVcIlxyXG4gICAgICBwYXRoPVwiZGF0YS5hdHRyaWJ1dGVzLm1vdmVcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIklRXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5pbnRlbGxpZ2VuY2VcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlBlclwiXHJcbiAgICAgIHBhdGg9XCJkYXRhLmF0dHJpYnV0ZXMucGVyY2VwdGlvblwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIiAvPlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIkhUXCJcclxuICAgICAgcGF0aD1cImRhdGEuYXR0cmlidXRlcy5oZWFsdGhcIiAvPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8c3BhbiBjbGFzcz1cImZsZXhcIj5cclxuICAgICAgPElucHV0XHJcbiAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgbWluPVwiMFwiXHJcbiAgICAgICAgbGFiZWw9XCJGUFwiXHJcbiAgICAgICAgcGF0aD1cImRhdGEucG9vbHMuZmF0aWd1ZV9wb2ludHMudmFsdWVcIiAvPlxyXG4gICAgICA8SW5wdXQgdHlwZT1cIm51bWJlclwiIG1pbj1cIjBcIiBwYXRoPVwiZGF0YS5wb29scy5mYXRpZ3VlX3BvaW50cy5tYXhcIiAvPlxyXG4gICAgPC9zcGFuPlxyXG4gIDwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+XHJcbiAgICA8SW5wdXRcclxuICAgICAge2VudGl0eX1cclxuICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgIG1pbj1cIjBcIlxyXG4gICAgICBsYWJlbD1cIlNNXCJcclxuICAgICAgcGF0aD1cImRhdGEuc2l6ZV9tb2RpaWZlclwiIC8+XHJcbiAgPC9kaXY+XHJcbiAgPGRpdiBjbGFzcz1cInN0YXRcIj5Eb2RnZTwvZGl2PlxyXG4gIDxkaXYgY2xhc3M9XCJzdGF0XCI+UGFycnk8L2Rpdj5cclxuICA8ZGl2IGNsYXNzPVwic3RhdFwiPlxyXG4gICAgPElucHV0IHR5cGU9XCJudW1iZXJcIiBtaW49XCIwXCIgbGFiZWw9XCJEUlwiIHBhdGg9XCJkYXRhLmRhbWFnZV9yZXNpc3RhbmNlXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcblxyXG48VGFicyB0YWJJbmRleD17MH0+XHJcbiAgPFRhYkxpc3Q+XHJcbiAgICA8VGFiIGluZGV4PXswfT5BdHRhY2tzPC9UYWI+XHJcbiAgICA8VGFiIGluZGV4PXsxfT5UcmFpdHM8L1RhYj5cclxuICAgIDxUYWIgaW5kZXg9ezJ9PlNraWxsczwvVGFiPlxyXG4gICAgPFRhYiBpbmRleD17M30+SXRlbXM8L1RhYj5cclxuICA8L1RhYkxpc3Q+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdj5cclxuICAgICAgPGJ1dHRvblxyXG4gICAgICAgIHR5cGU9XCJidXR0b25cIlxyXG4gICAgICAgIG9uOmNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAkZW50aXR5LmNyZWF0ZU93bmVkSXRlbSh7IG5hbWU6ICc/Pz8nLCB0eXBlOiAnbWVsZWUgYXR0YWNrJyB9KTtcclxuICAgICAgICB9fT5cclxuICAgICAgICBBZGQgQW4gQXR0YWNrXHJcbiAgICAgIDwvYnV0dG9uPlxyXG4gICAgICB7I2VhY2ggJGVudGl0eS5nZXRXaWxkV2VhcG9ucygpIGFzIGF0dGFjaywgaSAoYXR0YWNrLmlkKX1cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiYm94XCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzPVwiYm94LXRpdGxlXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJncm93XCI+XHJcbiAgICAgICAgICAgICAgPElucHV0XHJcbiAgICAgICAgICAgICAgICBlbnRpdHk9e2F0dGFjay5fZW50aXR5fVxyXG4gICAgICAgICAgICAgICAgcGF0aD1cIm5hbWVcIlxyXG4gICAgICAgICAgICAgICAgYWxzb1VwZGF0ZT17WydkYXRhLm5hbWUnXX1cclxuICAgICAgICAgICAgICAgIGNvbmZpZz17eyBjbGlja1RvRWRpdDogdHJ1ZSB9fVxyXG4gICAgICAgICAgICAgICAgbGV0OnZhbHVlPlxyXG4gICAgICAgICAgICAgICAgPGgyIHNsb3Q9XCJuby1lZGl0XCI+e3ZhbHVlfTwvaDI+XHJcbiAgICAgICAgICAgICAgPC9JbnB1dD5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxpIGNsYXNzPVwiZmFzIGZhLXRyYXNoXCIgb246Y2xpY2s9e2F0dGFjay5kZWxldGUoKX0gLz5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPFJpY2hUZXh0RWRpdG9yXHJcbiAgICAgICAgICAgIGVudGl0eT17YXR0YWNrLl9lbnRpdHl9XHJcbiAgICAgICAgICAgIHBhdGg9XCJkYXRhLnVzZXJfZGVzY3JpcHRpb25cIiAvPlxyXG4gICAgICAgICAgPHVsIGNsYXNzPVwiYm94LXRvb2xzXCI+XHJcbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImJveC10b29sXCI+XHJcbiAgICAgICAgICAgICAgPCEtLSBzdmVsdGUtaWdub3JlIG1pc3NpbmctZGVjbGFyYXRpb24gLS0+XHJcbiAgICAgICAgICAgICAgPGltZ1xyXG4gICAgICAgICAgICAgICAgb246Y2xpY2s9eyhlKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgIGxldCByb2xsID0gbmV3IFN1Y2Nlc3NSb2xsKHtcclxuICAgICAgICAgICAgICAgICAgICBsZXZlbDogYXR0YWNrLmdldFByb3BlcnR5KCdkYXRhLnJvbGxfYWdhaW5zdCcpLFxyXG4gICAgICAgICAgICAgICAgICAgIHRyYWl0OiBhdHRhY2suZ2V0UHJvcGVydHkoJ25hbWUnKSxcclxuICAgICAgICAgICAgICAgICAgICBtb2RpZmllcnM6IHByb21wdCgnTW9kaWZpZXJzJyksXHJcbiAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICByb2xsLnJvbGwoKTtcclxuICAgICAgICAgICAgICAgICAgbGV0IHJlbmRlcmVyID0gbmV3IFN1Y2Nlc3NSb2xsUmVuZGVyZXIoKTtcclxuICAgICAgICAgICAgICAgICAgcmVuZGVyZXIucmVuZGVyKHJvbGwpLnRoZW4oKGh0bWwpID0+IHtcclxuICAgICAgICAgICAgICAgICAgICBDaGF0TWVzc2FnZS5jcmVhdGUoe1xyXG4gICAgICAgICAgICAgICAgICAgICAgY29udGVudDogaHRtbCxcclxuICAgICAgICAgICAgICAgICAgICAgIHVzZXI6IGdhbWUudXNlci5pX2lkLFxyXG4gICAgICAgICAgICAgICAgICAgICAgdHlwZTogQ09OU1QuQ0hBVF9NRVNTQUdFX1RZUEVTLk9USEVSLFxyXG4gICAgICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgICAgIH19XHJcbiAgICAgICAgICAgICAgICBjbGFzcz1cInRvb2wtaWNvXCJcclxuICAgICAgICAgICAgICAgIHNyYz1cInN5c3RlbXMvR1VSUFMvaWNvbnMvYXR0YWNrLWljb24tcG5nLTMucG5nXCJcclxuICAgICAgICAgICAgICAgIGFsdD1cImF0dGFja1wiXHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ9XCIyMXB4XCIgLz5cclxuICAgICAgICAgICAgPC9saT5cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICA8SW5wdXRcclxuICAgICAgICAgICAgZW50aXR5PXthdHRhY2suX2VudGl0eX1cclxuICAgICAgICAgICAgcGF0aD1cImRhdGEucm9sbF9hZ2FpbnN0XCJcclxuICAgICAgICAgICAgdHlwZT1cIm51bWJlclwiXHJcbiAgICAgICAgICAgIGxhYmVsPVwiQXR0YWNrIFRhcmdldFwiIC8+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIHsvZWFjaH1cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbiAgPFRhYlBhbmVsPlxyXG4gICAgPGRpdiBjbGFzcz1cInRyYWl0c1wiPlxyXG4gICAgICA8VHJhaXRMaXN0IC8+XHJcbiAgICA8L2Rpdj5cclxuICA8L1RhYlBhbmVsPlxyXG4gIDxUYWJQYW5lbD5cclxuICAgIDxkaXYgY2xhc3M9XCJza2lsbHNcIj5cclxuICAgICAgPFNraWxsTGlzdCAvPlxyXG4gICAgPC9kaXY+XHJcbiAgPC9UYWJQYW5lbD5cclxuICA8VGFiUGFuZWw+XHJcbiAgICA8ZGl2IGNsYXNzPVwiaXRlbXNcIj5cclxuICAgICAgPEVxdWlwbWVudExpc3QgLz5cclxuICAgIDwvZGl2PlxyXG4gIDwvVGFiUGFuZWw+XHJcbjwvVGFicz5cclxuXHJcbjxkaXYgY2xhc3M9XCJ0by1ib3R0b21cIj5cclxuICA8SW5wdXQgcGF0aD1cImRhdGEuY2xhc3NcIiBsZXQ6dmFsdWUgbGFiZWw9XCJDbGFzc1wiIC8+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJub3Rlc1wiPlxyXG4gICAgPFJpY2hUZXh0RWRpdG9yIHtlbnRpdHl9IHBhdGg9XCJkYXRhLm5vdGVzXCIgLz5cclxuICA8L2Rpdj5cclxuPC9kaXY+XHJcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkUsS0FBSyw4QkFBQyxDQUFDLEFBQ0wsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsTUFBTSxDQUFFLElBQUksQUFDZCxDQUFDLEFBQ0QsU0FBUyw4QkFBQyxDQUFDLEFBQ1QsT0FBTyxDQUFFLElBQUksQ0FDYixxQkFBcUIsQ0FBRSxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FDbEMsY0FBYyxDQUFFLElBQUksQUFDdEIsQ0FBQyxBQUNELHdCQUFTLENBQUMsQUFBUSxLQUFLLEFBQUUsQ0FBQyxBQUN4QixLQUFLLENBQUUsSUFBSSxBQUNiLENBQUMsQUFHRCxJQUFJLDhCQUFDLENBQUMsQUFDSixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLE9BQU8sQ0FBRSxHQUFHLEFBQ2QsQ0FBQyxBQUNELFVBQVUsOEJBQUMsQ0FBQyxBQUNWLE9BQU8sQ0FBRSxJQUFJLEFBQ2YsQ0FBQyxBQUNELHlCQUFVLENBQUcsS0FBSyxlQUFDLENBQUMsQUFDbEIsSUFBSSxDQUFFLENBQUMsQUFDVCxDQUFDLEFBQ0QsVUFBVSw4QkFBQyxDQUFDLEFBQ1YsZUFBZSxDQUFFLElBQUksQ0FDckIsTUFBTSxDQUFFLENBQUMsQ0FDVCxPQUFPLENBQUUsQ0FBQyxDQUNWLFFBQVEsQ0FBRSxNQUFNLEFBQ2xCLENBQUMsQUFDRCxTQUFTLDhCQUFDLENBQUMsQUFDVCxLQUFLLENBQUUsSUFBSSxDQUNYLE9BQU8sQ0FBRSxLQUFLLENBQ2QsS0FBSyxDQUFFLEtBQUssQ0FDWixVQUFVLENBQUUsTUFBTSxBQUNwQixDQUFDLEFBQ0QsdUNBQVMsTUFBTSxBQUFDLENBQUMsQUFDZixVQUFVLENBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsR0FBRyxBQUN6QixDQUFDLEFBQ0QsZ0JBQWdCLDhCQUFDLENBQUMsQUFDaEIsT0FBTyxDQUFFLElBQUksQUFDZixDQUFDLEFBQ0QsUUFBUSw4QkFBQyxDQUFDLEFBQ1IsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDIn0=*/"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -12075,10 +12119,12 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
         this.version = 1;
         this.tag = "equipment";
         this.equipped = true;
+        this.storedLocation = "carried";
         this.quantity = 1;
         this.weight = 0;
         this.value = 0;
         this.applySkillEncumbrancePenalty = true;
+        this.isAmmunition = false;
         this.modifiers = new Set();
         this.hasLevels = false;
     }
@@ -12093,7 +12139,7 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
     getLevel() { return null; }
     getAmmoSources() {
         return Array.from(this.getRecursiveChildren()).reduce((prev, cur) => {
-            if (cur.categories.has("Ammunition")) {
+            if (cur.isAmmunition) {
                 prev = [...prev, cur];
             }
             return prev;
@@ -12249,7 +12295,11 @@ class Equipment extends _misc_list__WEBPACK_IMPORTED_MODULE_0__["ListItem"] {
         return weight;
     }
 }
-Equipment.keys = ["description", "equipped", "techLevel", "legalityClass", "quantity", "weight", "value", "containedWeightReduction"];
+Equipment.keys = [
+    "description", "equipped", "techLevel", "legalityClass", "quantity",
+    "weight", "value", "containedWeightReduction", "applySkillEncumbrancePenalty",
+    "isAmmunition"
+];
 class EquipmentModifier extends _misc_modifier__WEBPACK_IMPORTED_MODULE_1__["Modifier"] {
     constructor(equipment, keys = []) {
         super(equipment, [...keys, ...EquipmentModifier.keys]);
@@ -12684,8 +12734,6 @@ class CharacterElement {
                             if (data[cur] === undefined) {
                                 data[cur] = val;
                             }
-                            if (typeof data[cur] !== typeof val)
-                                return true;
                             if (data[cur] === val) {
                             }
                             else if (data[cur] !== val) {
@@ -12895,19 +12943,18 @@ var __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || 
     }
     return privateMap.get(receiver);
 };
-var _contents, _revoke, _childIDs, _containedByID;
+var _contents, _childIDs, _containedByID;
 
 
 
 class List {
     constructor(character) {
         _contents.set(this, new _collection__WEBPACK_IMPORTED_MODULE_2__["Collection"]());
-        _revoke.set(this, void 0);
         this.contents = new Set();
         this.character = character;
     }
     get length() { return __classPrivateFieldGet(this, _contents).size; }
-    get [(_contents = new WeakMap(), _revoke = new WeakMap(), Symbol.iterator)]() { return __classPrivateFieldGet(this, _contents)[Symbol.iterator]; }
+    get [(_contents = new WeakMap(), Symbol.iterator)]() { return __classPrivateFieldGet(this, _contents)[Symbol.iterator]; }
     generate() {
         this.contents.clear();
         this.iter().reduce((prev, cur) => {
@@ -13760,77 +13807,26 @@ class TraitList extends _misc_list__WEBPACK_IMPORTED_MODULE_1__["List"] {
     populator(data) {
         return new Trait(this);
     }
-    sumRacials({ activeOnly = true } = {}) {
+    sumMatching(match, { activeOnly = true }) {
         return this.iter().reduce((prev, cur) => {
-            if (cur.isRacial()) {
-                if (activeOnly) {
-                    if (!cur.disabled)
-                        prev += cur.adjustedPoints();
-                }
-                else {
-                    prev += cur.adjustedPoints();
-                }
-            }
+            if (match(cur) && activeOnly)
+                prev += cur.adjustedPoints();
             return prev;
         }, 0);
+    }
+    sumRacials({ activeOnly = true } = {}) {
+        return this.sumMatching((trait) => trait.isRacial(), { activeOnly });
     }
     sumAdvantages({ activeOnly = true } = {}) {
-        return this.iter().reduce((prev, cur) => {
-            if (cur.isRacial())
-                return prev;
-            if (cur.categories.has("Advantage") || cur.categories.has("Perk") || cur.adjustedPoints() >= 1) {
-                if (activeOnly) {
-                    if (!cur.disabled)
-                        prev += cur.adjustedPoints();
-                }
-                else {
-                    prev += cur.adjustedPoints();
-                }
-            }
-            return prev;
-        }, 0);
+        return this.sumMatching((trait) => !trait.isRacial() &&
+            trait.adjustedPoints() > 1, { activeOnly });
     }
     sumDisadvantages({ activeOnly = true } = {}) {
-        return this.iter().reduce((prev, cur) => {
-            if (cur.isRacial())
-                return prev;
-            if (cur.categories.has("Disadvantage") || cur.adjustedPoints() < -1) {
-                if (activeOnly) {
-                    if (!cur.disabled)
-                        prev += cur.adjustedPoints();
-                }
-                else {
-                    prev += cur.adjustedPoints();
-                }
-            }
-            return prev;
-        }, 0);
+        return this.sumMatching((trait) => !trait.isRacial() &&
+            trait.adjustedPoints() < -1, { activeOnly });
     }
     sumQuirks({ activeOnly = true } = {}) {
-        return this.iter().reduce((prev, cur) => {
-            if (cur.isRacial())
-                return prev;
-            if (cur.categories.has("Quirk") || cur.adjustedPoints() === -1) {
-                if (activeOnly) {
-                    if (!cur.disabled)
-                        prev += cur.adjustedPoints();
-                }
-                else {
-                    prev += cur.adjustedPoints();
-                }
-            }
-            return prev;
-        }, 0);
-    }
-    splitByType() {
-        return {
-            advantages: this.iter().filter(trait => trait.categories.has("Advantage") || trait.adjustedPoints() > 1),
-            perks: this.iter().filter(trait => trait.categories.has("Perk") || trait.adjustedPoints() === 1),
-            disadvantages: this.iter().filter(trait => trait.categories.has("Disadvantage") || trait.adjustedPoints() < -1),
-            quirks: this.iter().filter(trait => trait.categories.has("Quirk") || trait.adjustedPoints() === -1),
-            languages: this.iter().filter(trait => trait.categories.has("Language")),
-            racial: this.iter().filter(trait => trait.isRacial())
-        };
+        return this.sumMatching((trait) => !trait.isRacial() && trait.adjustedPoints() === -1, { activeOnly });
     }
 }
 var ContainerType;
@@ -13845,13 +13841,18 @@ class Trait extends _misc_list__WEBPACK_IMPORTED_MODULE_1__["ListItem"] {
         super(list, [...keys, ...Trait.keys]);
         this.version = 1;
         this.tag = "trait";
+        this.name = "";
+        this.basePoints = null;
         this.hasLevels = false;
-        this.levels = 0;
+        this.levels = null;
         this.allowHalfLevels = false;
         this.hasHalfLevel = false;
+        this.roundDown = false;
         this.controlRating = ControlRollMultiplier.noneRequired;
         this.types = new Set();
+        this.pointsPerLevel = null;
         this.disabled = false;
+        this.containerType = null;
         this.modifiers = new Set();
     }
     isActive() { return !this.disabled; }
@@ -13904,7 +13905,7 @@ class Trait extends _misc_list__WEBPACK_IMPORTED_MODULE_1__["ListItem"] {
         return modifier;
     }
 }
-Trait.keys = ["name", "basePoints", "levels", "allowHalfLevels", "hasHalfLevel", "roundDown", "controlRating", "types", ""];
+Trait.keys = ["name", "basePoints", "hasLevels", "levels", "allowHalfLevels", "hasHalfLevel", "roundDown", "controlRating", "types", "disabled", "pointsPerLevel", "containerType"];
 class TraitModifier extends _misc_modifier__WEBPACK_IMPORTED_MODULE_0__["Modifier"] {
     constructor(owner, keys = []) {
         super(owner, [...keys, ...TraitModifier.keys]);
@@ -13990,6 +13991,7 @@ class Weapon extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterElemen
     constructor(owner, keys) {
         super(owner.getCharacter(), [...keys, ...Weapon.keys]);
         this.tag = "weapon";
+        this.usage = "attack";
         this.strength = "10";
         this.attackBonus = null;
         this.defaults = new Set;
@@ -14039,7 +14041,7 @@ class Weapon extends _misc_element__WEBPACK_IMPORTED_MODULE_2__["CharacterElemen
     }
     getAmmoSources() {
         try {
-            this.owner.getAmmoSources();
+            return this.owner.getAmmoSources();
         }
         catch (err) {
             return [];
@@ -14379,30 +14381,30 @@ class GCSJSON extends _serializer__WEBPACK_IMPORTED_MODULE_0__["Serializer"] {
         return data;
     }
     mapTrait(trait, data) {
-        var _a, _b, _c, _d, _e, _f, _g, _h;
+        var _a, _b, _c, _d, _e, _f, _g;
         trait.name = data.name;
         (_a = data.modifiers) === null || _a === void 0 ? void 0 : _a.forEach((modifier) => trait.addModifier().load(modifier));
         trait.basePoints = data.base_points;
-        trait.levels = (_b = parseInt(data === null || data === void 0 ? void 0 : data.levels)) !== null && _b !== void 0 ? _b : null;
+        trait.hasLevels = Boolean(data === null || data === void 0 ? void 0 : data.levels);
+        trait.levels = data.levels ? +data.levels : undefined;
         trait.allowHalfLevels = data.allow_half_levels;
         trait.hasHalfLevel = data.has_half_level;
         trait.roundDown = data.round_down;
-        trait.controlRating = data.cr === 0 ? "none" : (_d = (_c = data === null || data === void 0 ? void 0 : data.cr) === null || _c === void 0 ? void 0 : _c.toString()) !== null && _d !== void 0 ? _d : "n/a";
+        trait.controlRating = data.cr === 0 ? "none" : (_c = (_b = data === null || data === void 0 ? void 0 : data.cr) === null || _b === void 0 ? void 0 : _b.toString()) !== null && _c !== void 0 ? _c : "n/a";
         trait.pointsPerLevel = data.points_per_level;
         trait.disabled = data.disabled;
-        trait.hasLevels = trait.levels !== undefined;
         trait.reference = data.reference;
-        (_e = data.features) === null || _e === void 0 ? void 0 : _e.forEach((feature) => {
+        (_d = data.features) === null || _d === void 0 ? void 0 : _d.forEach((feature) => {
             var _a;
             (_a = _character_misc_feature__WEBPACK_IMPORTED_MODULE_7__["Feature"].loadFeature(trait, feature.type)) === null || _a === void 0 ? void 0 : _a.load(feature);
         });
-        (_f = data.weapons) === null || _f === void 0 ? void 0 : _f.forEach((weapon) => {
+        (_e = data.weapons) === null || _e === void 0 ? void 0 : _e.forEach((weapon) => {
             trait.addWeapon(weapon.type).load(weapon);
         });
-        (_g = data.categories) === null || _g === void 0 ? void 0 : _g.forEach((category) => {
+        (_f = data.categories) === null || _f === void 0 ? void 0 : _f.forEach((category) => {
             trait.categories.add(category);
         });
-        if (data && ((_h = data.type) === null || _h === void 0 ? void 0 : _h.includes("_container"))) {
+        if (data && ((_g = data.type) === null || _g === void 0 ? void 0 : _g.includes("_container"))) {
             return data.children;
         }
     }
@@ -19230,12 +19232,12 @@ function handle_promise(promise, info) {
             update(info.then, 1, info.value, value);
             set_current_component(null);
         }, error => {
-            if (!info.hasCatch) {
-                throw error;
-            }
             set_current_component(current_component);
             update(info.catch, 2, info.error, error);
             set_current_component(null);
+            if (!info.hasCatch) {
+                throw error;
+            }
         });
         // if we previously had a then/catch block, destroy it
         if (info.current !== info.pending) {
@@ -19707,7 +19709,7 @@ class SvelteComponent {
 }
 
 function dispatch_dev(type, detail) {
-    document.dispatchEvent(custom_event(type, Object.assign({ version: '3.25.0' }, detail)));
+    document.dispatchEvent(custom_event(type, Object.assign({ version: '3.25.1' }, detail)));
 }
 function append_dev(target, node) {
     dispatch_dev("SvelteDOMInsert", { target, node });
@@ -20414,12 +20416,6 @@ let _Item = class _Item extends Item {
             return prev;
         }, { melee: [], ranged: [] });
     }
-    roll() {
-        switch (this.data.type) {
-            case "skill":
-            default:
-        }
-    }
     getFeatures() {
         return getProperty(this.data, "data.features") || [];
     }
@@ -20604,19 +20600,6 @@ let _Item = class _Item extends Item {
                         }
                     },
                     {
-                        name: `Roll`,
-                        icon: '<i class="fas fa-dice-d6"></i>',
-                        condition: () => !isLabel && ["skill", "technique", "spell"].includes(entity.data.type),
-                        callback() {
-                            let skillike = entity.getGURPSObject();
-                            if (skillike.isTechnique) {
-                                ui.notifications.warn("Please roll from the skill list for now");
-                                return false;
-                            }
-                            entity.actor.rollSkill(skillike.name, skillike.calculateLevel());
-                        }
-                    },
-                    {
                         name: `Open PDF`,
                         icon: '<i class="fas fa-file-pdf"></i>',
                         condition: () => !isLabel,
@@ -20702,6 +20685,164 @@ exports._Item = _Item;
 
 /***/ }),
 
+/***/ "./src/foundry-GURPS/rolling.ts":
+/*!**************************************!*\
+  !*** ./src/foundry-GURPS/rolling.ts ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.formatEquipmentDescription = exports.formatTraitName = exports.formatSkillName = exports.Roller = void 0;
+const AttackDialog_svelte_1 = __importDefault(__webpack_require__(/*! @components/dialogs/AttackDialog.svelte */ "./src/svelte/dialogs/AttackDialog.svelte"));
+const ModifierPrompt_svelte_1 = __importDefault(__webpack_require__(/*! @components/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte"));
+__webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
+const SuccessRollRenderer_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer */ "./node_modules/gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer.js"));
+const SuccessRoll_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js"));
+class Roller {
+    static customRoll(actor, level, trait, mods = [], { dialog = "default", props = {} } = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            Roller.launchModifierDialog(dialog, (modList) => {
+                modList = purgeNullMods([...modList, ...mods]);
+                let roll = new SuccessRoll_1.default({
+                    level,
+                    trait,
+                    modList
+                });
+                Roller.rollAndRender(actor, roll);
+            }, props);
+        });
+    }
+    static rollSkill(actor, skill, mods = [], { dialog = "skill", props = {} } = {}) {
+        return __awaiter(this, void 0, void 0, function* () {
+            Roller.launchModifierDialog(dialog, (modList) => {
+                modList = purgeNullMods([...modList, ...mods]);
+                let roll = new SuccessRoll_1.default({
+                    level: skill.calculateLevel(),
+                    trait: formatSkillName(skill),
+                    modList
+                });
+                Roller.rollAndRender(actor, roll, "skill");
+            });
+        });
+    }
+    static rollDamage(actor, weapon) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const swing = weapon.owner.getCharacter().getSwingDamage();
+            const thrust = weapon.owner.getCharacter().getThrustDamage();
+            let roll = new Roll(weapon.damage, {
+                swing,
+                sw: swing,
+                thrust,
+                thr: thrust
+            });
+            roll.toMessage({
+                flags: {
+                    GURPS: {
+                        message_type: "attack",
+                        message_data: {
+                            type: weapon.getType(),
+                            damageType: weapon.damageType,
+                            weaponUsage: weapon.usage,
+                            weaponName: weapon.owner.name
+                        }
+                    }
+                }
+            });
+        });
+    }
+    static launchModifierDialog(dialog, callback, props = {}) {
+        const instanceData = {
+            target: document.body,
+            props
+        };
+        let instance;
+        switch (dialog) {
+            case "attack":
+                instance = new AttackDialog_svelte_1.default(instanceData);
+                break;
+            default:
+                instance = new ModifierPrompt_svelte_1.default(instanceData);
+        }
+        let mods;
+        instance.$on("roll", (e) => {
+            callback(e.detail);
+        });
+    }
+    static rollAndRender(actor, roll, message_type = "skill", message_data) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let content = yield new SuccessRollRenderer_1.default().render(roll.roll(), { template: "systems/GURPS/assets/templates/templates_roll.html" });
+            yield ChatMessage.create({
+                flags: {
+                    CHAT: {
+                        associated_entity_id: ""
+                    },
+                    GURPS: {
+                        message_type,
+                        message_data,
+                        is_roll: true
+                    }
+                },
+                speaker: {
+                    alias: actor.name
+                },
+                content,
+                user: game.user._id,
+                type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            });
+        });
+    }
+}
+exports.Roller = Roller;
+function purgeNullMods(mods) {
+    return mods.reduce((prev, mod) => {
+        if (+mod.modifier === 0) { }
+        else {
+            prev.push(mod);
+        }
+        return prev;
+    }, []);
+}
+function formatModList(mods) {
+    return mods.reduce((prev, cur, i) => {
+        if (cur > 0) {
+            prev += `+${cur}`;
+        }
+        else if (cur < 0) {
+            prev += cur;
+        }
+        return prev;
+    }, "");
+}
+function formatSkillName(skill) {
+    let name = skill.name;
+    name += skill.techLevel ? ` TL/${skill.techLevel}` : '';
+    name += skill.specialization ? ` (${skill.specialization})` : '';
+    return name;
+}
+exports.formatSkillName = formatSkillName;
+function formatTraitName() { }
+exports.formatTraitName = formatTraitName;
+function formatEquipmentDescription() { }
+exports.formatEquipmentDescription = formatEquipmentDescription;
+
+
+/***/ }),
+
 /***/ "./src/foundry-GURPS/sheet.ts":
 /*!************************************!*\
   !*** ./src/foundry-GURPS/sheet.ts ***!
@@ -20739,13 +20880,14 @@ const GCSImportDialog_svelte_1 = __importDefault(__webpack_require__(/*! ../svel
 __webpack_require__(/*! ./item */ "./src/foundry-GURPS/item.ts");
 const g4elogic_1 = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
 const store_1 = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-const SuccessRoll_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js"));
-const SuccessRollRenderer_1 = __importDefault(__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer */ "./node_modules/gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer.js"));
+__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
+__webpack_require__(/*! gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer */ "./node_modules/gurps-foundry-roll-lib/src/js/Renderer/SuccessRollRenderer.js");
 const helpers_1 = __webpack_require__(/*! ../helpers */ "./src/helpers.ts");
-const WeaponEditor_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte"));
-const AttackDialog_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/AttackDialog.svelte */ "./src/svelte/AttackDialog.svelte"));
-const ModifierPrompt_svelte_1 = __importDefault(__webpack_require__(/*! ../svelte/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte"));
+__webpack_require__(/*! ../svelte/editors/WeaponEditor.svelte */ "./src/svelte/editors/WeaponEditor.svelte");
+__webpack_require__(/*! ../svelte/dialogs/AttackDialog.svelte */ "./src/svelte/dialogs/AttackDialog.svelte");
+__webpack_require__(/*! ../svelte/dialogs/ModifierPrompt.svelte */ "./src/svelte/dialogs/ModifierPrompt.svelte");
 const dragdrop_1 = __webpack_require__(/*! ../dragdrop */ "./src/dragdrop.ts");
+const rolling_1 = __webpack_require__(/*! @GURPSFoundry/rolling */ "./src/foundry-GURPS/rolling.ts");
 let _ActorSheet = class _ActorSheet extends ActorSheet {
     static get defaultOptions() {
         return mergeObject(ActorSheet.defaultOptions, {
@@ -20926,36 +21068,24 @@ let _Actor = class _Actor extends Actor {
     getWeapons() {
         const entity = this;
         const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
-            edit(entity) {
-                new WeaponEditor_svelte_1.default({
-                    target: document.body,
-                    props: {
-                        entity,
+            skillLevel() {
+                return this.getBestAttackLevel();
+            },
+            rollParry() {
+                rolling_1.Roller.customRoll(entity, weapon.getParryLevel(), `Parry With ${weapon.owner.name}`, [{ modifier: `+${weapon.parry}`, description: "Parry bonus" }]);
+            },
+            rollBlock() {
+                rolling_1.Roller.customRoll(entity, weapon.getBlockLevel(), `Block With ${weapon.name}`, [{ modifier: `+${weapon.block}`, description: "DB" }]);
+            },
+            rollSkill() {
+                rolling_1.Roller.customRoll(entity, weapon.getBestAttackLevel(), `${weapon.usage} with ${weapon.owner.name}`, [], {
+                    dialog: "attack", props: {
                         weapon
                     }
                 });
             },
-            skillLevel: () => {
-                let level = weapon.getBestAttackLevel();
-                return level;
-            },
-            rollParry() {
-                entity.rollSkill(`Parry With ${weapon.owner.name}`, weapon.getParryLevel(), [+weapon.parry]);
-            },
-            rollBlock() {
-                entity.rollSkill(`Block With ${this.owner.name}`, weapon.getBlockLevel(), [+weapon.block]);
-            },
-            rollSkill() {
-                entity.rollSkill(`${weapon.owner.name} ${weapon.usage}`, this.skillLevel(), [weapon.skillMod || 0], "attack", { weapon });
-            },
             rollDamage: () => {
-                this.rollDamage({
-                    damage: weapon.damage,
-                    damageType: weapon.damageType,
-                    type: weapon.getType(),
-                    weaponName: weapon.owner.name,
-                    weaponUsage: weapon.usage
-                });
+                rolling_1.Roller.rollDamage(entity, weapon);
             },
         }));
         return {
@@ -20963,77 +21093,9 @@ let _Actor = class _Actor extends Actor {
             melee: weapons.filter(weapon => weapon.getType() === "melee_weapon")
         };
     }
-    rollSkill(trait, level, modifiers = [], modType = "", data = {}) {
-        switch (modType) {
-            case "attack":
-                const modifierDialog = new AttackDialog_svelte_1.default({
-                    target: document.body,
-                    props: {
-                        type: "attack",
-                        weapon: data.weapon ? data.weapon : null
-                    }
-                });
-                modifierDialog.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, helpers_1.formatModList([...e.detail, ...modifiers]));
-                });
-                break;
-            default:
-                const modifierPrompt = new ModifierPrompt_svelte_1.default({
-                    target: document.body,
-                });
-                modifierPrompt.$on("roll", (e) => {
-                    this.rollAndRender(trait, level, helpers_1.formatModList([e.detail]));
-                });
-        }
-    }
-    rollAndRender(trait, level, modifiers) {
-        try {
-            let roll;
-            try {
-                roll = new SuccessRoll_1.default({ level, trait, modifiers });
-            }
-            catch (err) {
-                roll = new SuccessRoll_1.default({ level, trait, modifiers: null });
-                ui.notifications.warn("Your modifier is invalid");
-            }
-            roll.roll();
-            let renderer = new SuccessRollRenderer_1.default();
-            renderer.render(roll, { template: "systems/GURPS/assets/templates/templates_roll.html" }).then((html) => {
-                ChatMessage.create({ content: html, user: game.user._id, type: CONST.CHAT_MESSAGE_TYPES.OTHER });
-            });
-        }
-        catch (err) {
-            ui.notifications.error(err);
-        }
-    }
     dodge() {
         let dodgeScore = Math.floor(this.GURPS.getAttribute(g4elogic_1.Signature.Speed).calculateLevel() + this.GURPS.encumbranceLevel() + 3);
-        this.rollSkill("Dodge", dodgeScore);
-    }
-    rollDamage({ type = "", damageType = "", weaponUsage = "", weaponName = "", damage = "" }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const swing = this.GURPS.getSwingDamage();
-            const thrust = this.GURPS.getThrustDamage();
-            try {
-                const roll = new Roll(damage, {
-                    swing,
-                    sw: swing,
-                    thrust,
-                    thr: thrust
-                });
-                return roll.toMessage({
-                    GURPSRollType: "Damage", GURPSRollData: {
-                        type,
-                        damageType,
-                        weaponUsage,
-                        weaponName
-                    }
-                });
-            }
-            catch (err) {
-                ui.notifications.warn("Roll failed, this is probably because the damage string could not be parsed");
-            }
-        });
+        rolling_1.Roller.customRoll(this, dodgeScore, "Dodge", []);
     }
 };
 _Actor = __decorate([
@@ -21184,6 +21246,11 @@ class FoundryEntity extends g4elogic_1.Serializer {
             let tWeapon = skill.addWeapon(weapon.type);
             tWeapon.load(weapon, entity);
         });
+        if (!entity.GURPSUpdater) {
+            entity.GURPSUpdater = skill.subscribe((skill) => __awaiter(this, void 0, void 0, function* () {
+                entity.update(skill.save(), { diff: false });
+            })).unsubscribe;
+        }
         if ((_c = getProperty(data, "data.type")) === null || _c === void 0 ? void 0 : _c.includes("_container")) {
             return (_d = entity.getFlag("GURPS", "children")) === null || _d === void 0 ? void 0 : _d.map((itemID) => { var _a; return (_a = entity === null || entity === void 0 ? void 0 : entity.actor) === null || _a === void 0 ? void 0 : _a.getOwnedItem(itemID); });
         }
@@ -21294,6 +21361,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
             equipment.foundryID = entity.id;
             equipment.canContainChildren = (_b = (_a = getProperty(data, "data.type")) === null || _a === void 0 ? void 0 : _a.includes("_container")) !== null && _b !== void 0 ? _b : false;
             equipment.equipped = getProperty(data, "data.equipped");
+            equipment.isAmmunition = getProperty(data, "data.is_ammunition");
             equipment.description = getProperty(data, "data.description");
             equipment.quantity = getProperty(data, "data.quantity");
             equipment.value = +(getProperty(data, "data.value"));
@@ -21486,7 +21554,7 @@ class FoundryEntity extends g4elogic_1.Serializer {
         var _a;
         weapon.foundryID = data._id;
         weapon.attackBonus = +data.weapon_skill_mod || 0;
-        weapon.strength = getProperty(data, "strength_requirement");
+        weapon.strength = getProperty(data, "strength_requirement") || "10";
         weapon.usage = getProperty(data, "usage");
         weapon.damage = getProperty(data, "damage");
         weapon.damageType = getProperty(data, "damage_type");
@@ -21671,7 +21739,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.injectHelpers = exports.svelte = exports.createContextMenu = exports.createTooltip = exports.getValue = exports.coerce = exports.customUpdate = exports.getEntity = exports.arrayMove = exports.indexSort = exports.ownedItemsByType = exports.formatEquipment = exports.formatTrait = exports.formatSkill = exports.formatModList = exports.fixed6 = void 0;
+exports.injectHelpers = exports.svelte = exports.createContextMenu = exports.createTooltip = exports.getValue = exports.coerce = exports.customUpdate = exports.getEntity = exports.arrayMove = exports.indexSort = exports.ownedItemsByType = exports.formatModList = exports.fixed6 = void 0;
 const core_1 = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/popper.js");
 const json_query_1 = __importDefault(__webpack_require__(/*! json-query */ "./node_modules/json-query/index.js"));
 const container_1 = __webpack_require__(/*! ./modules/lists/container */ "./src/modules/lists/container.ts");
@@ -21704,12 +21772,6 @@ function formatModList(mods) {
     }, "");
 }
 exports.formatModList = formatModList;
-function formatSkill() { }
-exports.formatSkill = formatSkill;
-function formatTrait() { }
-exports.formatTrait = formatTrait;
-function formatEquipment() { }
-exports.formatEquipment = formatEquipment;
 function ownedItemsByType(actor, ...types) {
     return actor.items.filter((item) => types.includes(item.data.type));
 }
@@ -22110,10 +22172,22 @@ function init() {
     Actors.registerSheet("GURPS", sheet_1._ActorSheet, { makeDefault: true });
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("GURPS", item_1._ItemSheet, { makeDefault: true });
+    game.settings.register("GURPS", "custom_chat", {
+        name: "Custom Chat Switch",
+        hint: "Turns on or off custom chat",
+        scope: "client",
+        config: true,
+        type: Boolean,
+        choices: {
+            "on": "Custom Chat On",
+            "off": "Custom Chat Off"
+        },
+        default: "on",
+        onChange: (value) => ui.chat.svelteApp.$set({ vanilla: !value })
+    });
 }
 function ready() {
-    if (isNewVersion()) {
-        alert("New Version");
+    if (localStorage.getItem("show_welcome_dialog") !== "false") {
     }
     new WelcomeDialog_svelte_1.default({
         target: document.body,
@@ -22150,34 +22224,31 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CustomChatLog = exports.CustomChatMessage = void 0;
-__webpack_require__(/*! ./svelte/Message.svelte */ "./src/modules/custom-chat/svelte/Message.svelte");
-const ChatLog_svelte_1 = __importDefault(__webpack_require__(/*! ./svelte/ChatLog.svelte */ "./src/modules/custom-chat/svelte/ChatLog.svelte"));
+exports.CustomChatLog = exports.CustomChatMessage = exports.init = void 0;
+__webpack_require__(/*! ./components/Message.svelte */ "./src/modules/custom-chat/components/Message.svelte");
+const ChatLog_svelte_1 = __importDefault(__webpack_require__(/*! ./components/ChatLog.svelte */ "./src/modules/custom-chat/components/ChatLog.svelte"));
 __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
-__webpack_require__(/*! helpers */ "./src/helpers.ts");
+__webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+function init() {
+}
+exports.init = init;
 class CustomChatMessage extends ChatMessage {
     constructor(data, options) {
         super(data, options);
     }
-    static create(data, options) {
-        const _super = Object.create(null, {
-            create: { get: () => super.create }
-        });
-        return __awaiter(this, void 0, void 0, function* () {
-            let message = yield _super.create.call(this, data, options);
-            if (message instanceof CustomChatMessage) {
-                yield message.setFlag("GURPS", "roll_data", data.GURPSRollData || {});
-                yield message.setFlag("GURPS", "type", data.GURPSRollType);
-            }
-            return message;
-        });
-    }
-    rollType() { return this.getFlag("GURPS", "type"); }
+    messageType() { return this.getFlag("GURPS", "message_type"); }
+    messageData() { return this.getFlag("GURPS", "message_data"); }
+    isOOC() { return this.user.name === this.alias; }
+    isDiceRoll() { return this.roll || this.getFlag("GURPS", "is_roll") === true; }
+    isTimer() { return this.getFlag("GURPS", "is_timer") === true; }
 }
 exports.CustomChatMessage = CustomChatMessage;
 class CustomChatLog extends ChatLog {
     constructor(options) {
         super(options);
+    }
+    updateSvelte() {
+        this._renderBatch(100);
     }
     _renderInner(data) {
         const _super = Object.create(null, {
@@ -22188,6 +22259,7 @@ class CustomChatLog extends ChatLog {
             this.svelteApp = new ChatLog_svelte_1.default({
                 target: html.get(0),
                 props: {
+                    vanilla: !game.settings.get("GURPS", "custom_chat"),
                     ChatLog: this,
                 },
             });
@@ -22201,9 +22273,12 @@ class CustomChatLog extends ChatLog {
             if (!this._lastId)
                 this._lastId = message.id;
             this.svelteApp.$set({ messages: [...this.svelteApp.messages, message] });
-            this.scrollBottom();
+            setTimeout(() => {
+                this.scrollBottom();
+            }, 100);
             if (notify)
                 this.notify(message);
+            return message;
         });
     }
     _renderBatch(size) {
@@ -22230,7 +22305,7 @@ class CustomChatLog extends ChatLog {
                         console.error(`Chat message ${m.id} failed to render.\n${err})`);
                     }
                 }
-                this.svelteApp.$set({ ChatLog: this, messages: html });
+                this.svelteApp.$set({ messages: html });
                 this._lastId = messages[targetIdx].id;
             }
             this._state = Application.RENDER_STATES.RENDERED;
@@ -22248,19 +22323,24 @@ exports.CustomChatLog = CustomChatLog;
 
 /***/ }),
 
-/***/ "./src/modules/custom-chat/svelte/ChatLog.svelte":
-/*!*******************************************************!*\
-  !*** ./src/modules/custom-chat/svelte/ChatLog.svelte ***!
-  \*******************************************************/
+/***/ "./src/modules/custom-chat/components/ChatLog.svelte":
+/*!***********************************************************!*\
+  !*** ./src/modules/custom-chat/components/ChatLog.svelte ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Message */ "./src/modules/custom-chat/svelte/Message.svelte");
-/* src\modules\custom-chat\svelte\ChatLog.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _modules_timer_timer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @modules/timer/timer */ "./src/modules/timer/timer.ts");
+/* harmony import */ var _modules_timer_timer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_timer_timer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _Message__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Message */ "./src/modules/custom-chat/components/Message.svelte");
+/* harmony import */ var E_foundryVTT_GURPS_src_modules_custom_chat_components_ChatLog_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/modules/custom-chat/components/ChatLog.svelte.css */ "./src/modules/custom-chat/components/ChatLog.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_modules_custom_chat_components_ChatLog_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_modules_custom_chat_components_ChatLog_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
+/* src\modules\custom-chat\components\ChatLog.svelte generated by Svelte v3.25.1 */
+
 
 
 
@@ -22268,25 +22348,206 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[4] = list[i][0];
-	child_ctx[5] = list[i][1];
-	child_ctx[7] = i;
+	child_ctx[15] = list[i][0];
+	child_ctx[16] = list[i][1];
+	child_ctx[18] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[8] = list[i];
-	child_ctx[7] = i;
+	child_ctx[19] = list[i];
+	child_ctx[18] = i;
 	return child_ctx;
 }
 
-// (30:4) {#each messages as message, i (message.id)}
+function get_each_context_2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[21] = list[i];
+	child_ctx[18] = i;
+	return child_ctx;
+}
+
+// (98:2) {#if !vanilla}
+function create_if_block_3(ctx) {
+	let div;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value_2 = /*tabs*/ ctx[7];
+	const get_key = ctx => /*i*/ ctx[18];
+
+	for (let i = 0; i < each_value_2.length; i += 1) {
+		let child_ctx = get_each_context_2(ctx, each_value_2, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_2(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "chat-sidebar-tabs svelte-1heiklo");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(div, null);
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*tabs, activeTab*/ 144) {
+				const each_value_2 = /*tabs*/ ctx[7];
+				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_2, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_block"], create_each_block_2, null, get_each_context_2);
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (100:6) {#each tabs as tab, i (i)}
+function create_each_block_2(key_1, ctx) {
+	let div;
+	let t0_value = /*tab*/ ctx[21] + "";
+	let t0;
+	let t1;
+	let mounted;
+	let dispose;
+
+	function click_handler(...args) {
+		return /*click_handler*/ ctx[8](/*i*/ ctx[18], ...args);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "chat-item svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(div, "active", /*i*/ ctx[18] === /*activeTab*/ ctx[4]);
+			this.first = div;
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t1);
+
+			if (!mounted) {
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(div, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*tabs, activeTab*/ 144) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(div, "active", /*i*/ ctx[18] === /*activeTab*/ ctx[4]);
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (111:2) {#if activeTab === 4}
+function create_if_block_2(ctx) {
+	let div;
+	let span0;
+	let t1;
+	let span1;
+	let t3;
+	let span2;
+	let t5;
+	let span3;
+	let t7;
+	let span4;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0.textContent = "1M";
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span1.textContent = "5M";
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span2.textContent = "10M";
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span3.textContent = "30M";
+			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span4.textContent = "60M";
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "fas fa-clock svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-clock svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span2, "class", "fas fa-clock svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span3, "class", "fas fa-clock svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span4, "class", "fas fa-clock svelte-1heiklo");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "timers svelte-1heiklo");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t5);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t7);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span4);
+
+			if (!mounted) {
+				dispose = [
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span0, "click", /*click_handler_1*/ ctx[9]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", /*click_handler_2*/ ctx[10]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span2, "click", /*click_handler_3*/ ctx[11]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span3, "click", /*click_handler_4*/ ctx[12]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span4, "click", /*click_handler_5*/ ctx[13])
+				];
+
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+			mounted = false;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
+		}
+	};
+}
+
+// (126:4) {#each messages as message, i (message.id)}
 function create_each_block_1(key_1, ctx) {
 	let first;
 	let message;
 	let current;
-	message = new _Message__WEBPACK_IMPORTED_MODULE_2__["default"]({ props: { message: /*message*/ ctx[8] } });
+
+	message = new _Message__WEBPACK_IMPORTED_MODULE_3__["default"]({
+			props: {
+				message: /*message*/ ctx[19],
+				hide: !/*visibleMessages*/ ctx[5](/*activeTab*/ ctx[4]).includes(/*message*/ ctx[19])
+			}
+		});
 
 	return {
 		key: key_1,
@@ -22303,7 +22564,8 @@ function create_each_block_1(key_1, ctx) {
 		},
 		p(ctx, dirty) {
 			const message_changes = {};
-			if (dirty & /*messages*/ 4) message_changes.message = /*message*/ ctx[8];
+			if (dirty & /*messages*/ 8) message_changes.message = /*message*/ ctx[19];
+			if (dirty & /*visibleMessages, activeTab, messages*/ 56) message_changes.hide = !/*visibleMessages*/ ctx[5](/*activeTab*/ ctx[4]).includes(/*message*/ ctx[19]);
 			message.$set(message_changes);
 		},
 		i(local) {
@@ -22322,7 +22584,7 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (35:2) {#if !!!ChatLog.options.stream}
+// (131:2) {#if !!!ChatLog.options.stream}
 function create_if_block(ctx) {
 	let div1;
 	let div0;
@@ -22424,10 +22686,10 @@ function create_if_block(ctx) {
 	};
 }
 
-// (43:12) {#each Object.entries(CONFIG.Dice.rollModes) as [name, rt], i}
+// (139:12) {#each Object.entries(CONFIG.Dice.rollModes) as [name, rt], i}
 function create_each_block(ctx) {
 	let option;
-	let t_value = game.i18n.localize(/*rt*/ ctx[5]) + "";
+	let t_value = game.i18n.localize(/*rt*/ ctx[16]) + "";
 	let t;
 	let option_value_value;
 
@@ -22435,7 +22697,7 @@ function create_each_block(ctx) {
 		c() {
 			option = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("option");
 			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
-			option.__value = option_value_value = /*name*/ ctx[4];
+			option.__value = option_value_value = /*name*/ ctx[15];
 			option.value = option.__value;
 		},
 		m(target, anchor) {
@@ -22449,7 +22711,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (49:6) {#if game.user.isGM}
+// (145:6) {#if game.user.isGM}
 function create_if_block_1(ctx) {
 	let div;
 	let a0;
@@ -22493,13 +22755,17 @@ function create_if_block_1(ctx) {
 
 function create_fragment(ctx) {
 	let section;
+	let t0;
+	let t1;
 	let ol;
 	let each_blocks = [];
 	let each_1_lookup = new Map();
-	let t;
+	let t2;
 	let current;
-	let each_value_1 = /*messages*/ ctx[2];
-	const get_key = ctx => /*message*/ ctx[8].id;
+	let if_block0 = !/*vanilla*/ ctx[2] && create_if_block_3(ctx);
+	let if_block1 = /*activeTab*/ ctx[4] === 4 && create_if_block_2(ctx);
+	let each_value_1 = /*messages*/ ctx[3];
+	const get_key = ctx => /*message*/ ctx[19].id;
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -22507,56 +22773,90 @@ function create_fragment(ctx) {
 		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
 	}
 
-	let if_block = !!!/*ChatLog*/ ctx[1].options.stream && create_if_block(ctx);
+	let if_block2 = !!!/*ChatLog*/ ctx[1].options.stream && create_if_block(ctx);
 
 	return {
 		c() {
 			section = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("section");
+			if (if_block0) if_block0.c();
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block1) if_block1.c();
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			ol = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("ol");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
 			}
 
-			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block) if_block.c();
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block2) if_block2.c();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(ol, "id", "chat-log");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "class", "active sidebar-tab tab flexcol");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "class", "active sidebar-tab tab flexcol svelte-1heiklo");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "id", "chat");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(section, "data-tab", "chat");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, section, anchor);
+			if (if_block0) if_block0.m(section, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, t0);
+			if (if_block1) if_block1.m(section, null);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, ol);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].m(ol, null);
 			}
 
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, t);
-			if (if_block) if_block.m(section, null);
-			/*section_binding*/ ctx[3](section);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(section, t2);
+			if (if_block2) if_block2.m(section, null);
+			/*section_binding*/ ctx[14](section);
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*messages*/ 4) {
-				const each_value_1 = /*messages*/ ctx[2];
+			if (!/*vanilla*/ ctx[2]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_3(ctx);
+					if_block0.c();
+					if_block0.m(section, t0);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*activeTab*/ ctx[4] === 4) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_2(ctx);
+					if_block1.c();
+					if_block1.m(section, t1);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty & /*messages, visibleMessages, activeTab*/ 56) {
+				const each_value_1 = /*messages*/ ctx[3];
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, ol, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block_1, null, get_each_context_1);
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
 			}
 
 			if (!!!/*ChatLog*/ ctx[1].options.stream) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
 				} else {
-					if_block = create_if_block(ctx);
-					if_block.c();
-					if_block.m(section, null);
+					if_block2 = create_if_block(ctx);
+					if_block2.c();
+					if_block2.m(section, null);
 				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
 			}
 		},
 		i(local) {
@@ -22577,25 +22877,48 @@ function create_fragment(ctx) {
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(section);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].d();
 			}
 
-			if (if_block) if_block.d();
-			/*section_binding*/ ctx[3](null);
+			if (if_block2) if_block2.d();
+			/*section_binding*/ ctx[14](null);
 		}
 	};
 }
 
 function instance($$self, $$props, $$invalidate) {
 	let { ChatLog = null } = $$props;
+	let { vanilla = false } = $$props;
 	let { messages = [] } = $$props;
-	let { chatPanel } = $$props;
 
-	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onMount"])(() => {
-		
-	}); //ChatLog.activateListeners(jQuery(chatPanel));
+	function createTimer(length) {
+		let timerLabel = prompt("Name of timer");
+		let timer = new _modules_timer_timer__WEBPACK_IMPORTED_MODULE_1__["Timer"](length);
+
+		ChatMessage.create({
+			flags: {
+				GURPS: {
+					message_type: "timer",
+					message_data: { timerLabel, timerData: timer.toJSON() },
+					is_timer: true
+				}
+			}
+		});
+	}
+
+	let { chatPanel } = $$props;
+	let tabs = ["Rolls", "Whispers", "IC", "OOC", "Timers"];
+	let activeTab = 0;
+	const click_handler = i => $$invalidate(4, activeTab = i);
+	const click_handler_1 = () => createTimer(60000);
+	const click_handler_2 = () => createTimer(300000);
+	const click_handler_3 = () => createTimer(600000);
+	const click_handler_4 = () => createTimer(1800000);
+	const click_handler_5 = () => createTimer(3600000);
 
 	function section_binding($$value) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__["binding_callbacks"][$$value ? "unshift" : "push"](() => {
@@ -22606,17 +22929,69 @@ function instance($$self, $$props, $$invalidate) {
 
 	$$self.$$set = $$props => {
 		if ("ChatLog" in $$props) $$invalidate(1, ChatLog = $$props.ChatLog);
-		if ("messages" in $$props) $$invalidate(2, messages = $$props.messages);
+		if ("vanilla" in $$props) $$invalidate(2, vanilla = $$props.vanilla);
+		if ("messages" in $$props) $$invalidate(3, messages = $$props.messages);
 		if ("chatPanel" in $$props) $$invalidate(0, chatPanel = $$props.chatPanel);
 	};
 
-	return [chatPanel, ChatLog, messages, section_binding];
+	let visibleMessages;
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*vanilla, messages*/ 12) {
+			$: $$invalidate(5, visibleMessages = activeTab => {
+				if (vanilla) return messages;
+
+				switch (activeTab) {
+					case 0:
+						return messages.filter(message => message.roll || message.isDiceRoll() && !message.isTimer());
+					case 1:
+						return messages.filter(message => message.data.whisper.length);
+					case 2:
+						return messages.filter(message => !message.isOOC() && !message.isTimer());
+					case 3:
+						return messages.filter(message => message.isOOC() && !message.isTimer());
+					case 4:
+						return messages.filter(message => message.isTimer());
+					default:
+						return [];
+				} //rolls
+				//whispers
+				//ic messages
+				//ooc messages
+				//timers
+			});
+		}
+	};
+
+	return [
+		chatPanel,
+		ChatLog,
+		vanilla,
+		messages,
+		activeTab,
+		visibleMessages,
+		createTimer,
+		tabs,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4,
+		click_handler_5,
+		section_binding
+	];
 }
 
 class ChatLog_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { ChatLog: 1, messages: 2, chatPanel: 0 });
+
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
+			ChatLog: 1,
+			vanilla: 2,
+			messages: 3,
+			chatPanel: 0
+		});
 	}
 
 	get ChatLog() {
@@ -22628,8 +23003,17 @@ class ChatLog_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComp
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["flush"])();
 	}
 
-	get messages() {
+	get vanilla() {
 		return this.$$.ctx[2];
+	}
+
+	set vanilla(vanilla) {
+		this.$set({ vanilla });
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["flush"])();
+	}
+
+	get messages() {
+		return this.$$.ctx[3];
 	}
 
 	set messages(messages) {
@@ -22649,22 +23033,207 @@ class ChatLog_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComp
 
 /* harmony default export */ __webpack_exports__["default"] = (ChatLog_1);
 
+
+
 /***/ }),
 
-/***/ "./src/modules/custom-chat/svelte/Message.svelte":
-/*!*******************************************************!*\
-  !*** ./src/modules/custom-chat/svelte/Message.svelte ***!
-  \*******************************************************/
+/***/ "./src/modules/custom-chat/components/ChatLog.svelte.css":
+/*!***************************************************************!*\
+  !*** ./src/modules/custom-chat/components/ChatLog.svelte.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!./ChatLog.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ChatLog.svelte.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/modules/custom-chat/components/ContentTemplates/Timer.svelte":
+/*!**************************************************************************!*\
+  !*** ./src/modules/custom-chat/components/ContentTemplates/Timer.svelte ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var gurps_foundry_roll_lib_src_js_Roll_SuccessRoll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
-/* harmony import */ var _components_chat_Damage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/chat/Damage */ "./src/svelte/chat/Damage.svelte");
-/* harmony import */ var _components_chat_Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/chat/Skill */ "./src/svelte/chat/Skill.svelte");
-/* src\modules\custom-chat\svelte\Message.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _modules_timer_timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @modules/timer/timer */ "./src/modules/timer/timer.ts");
+/* harmony import */ var _modules_timer_timer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_timer_timer__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var E_foundryVTT_GURPS_src_modules_custom_chat_components_ContentTemplates_Timer_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css */ "./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_modules_custom_chat_components_ContentTemplates_Timer_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_modules_custom_chat_components_ContentTemplates_Timer_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
+/* src\modules\custom-chat\components\ContentTemplates\Timer.svelte generated by Svelte v3.25.1 */
+
+
+
+
+
+function create_fragment(ctx) {
+	let div0;
+	let span0;
+	let t0_value = /*timer*/ ctx[0].minutesRemaining() + "";
+	let t0;
+	let t1;
+	let span1;
+	let t2_value = /*timer*/ ctx[0].secondsRemaining() + "";
+	let t2;
+	let t3;
+	let div1;
+
+	return {
+		c() {
+			div0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t0_value);
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(": ");
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t2_value);
+			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			div1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			div1.textContent = `${/*timerLabel*/ ctx[1]}`;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "class", "minutes");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "seconds");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div0, "class", "timer svelte-xu5k3");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(div0, "expired", /*timer*/ ctx[0].isFinished());
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div1, "class", "timer-label");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div0, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span0, t0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div0, span1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span1, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div1, anchor);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*timer*/ 1 && t0_value !== (t0_value = /*timer*/ ctx[0].minutesRemaining() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			if (dirty & /*timer*/ 1 && t2_value !== (t2_value = /*timer*/ ctx[0].secondsRemaining() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
+
+			if (dirty & /*timer*/ 1) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(div0, "expired", /*timer*/ ctx[0].isFinished());
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div0);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div1);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { message = null } = $$props;
+	const { timerData, timerLabel } = message.getFlag("GURPS", "message_data");
+	let timer = _modules_timer_timer__WEBPACK_IMPORTED_MODULE_2__["Timer"].fromJSON(timerData);
+	let interval;
+
+	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onMount"])(() => {
+		interval = setInterval(
+			() => {
+				if (timer.isFinished()) {
+					clearInterval(interval);
+				}
+
+				$$invalidate(0, timer);
+			},
+			1000
+		);
+	});
+
+	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["onDestroy"])(() => {
+		clearInterval(interval);
+	});
+
+	$$self.$$set = $$props => {
+		if ("message" in $$props) $$invalidate(2, message = $$props.message);
+	};
+
+	return [timer, timerLabel, message];
+}
+
+class Timer_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { message: 2 });
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Timer_1);
+
+
+
+/***/ }),
+
+/***/ "./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css":
+/*!******************************************************************************!*\
+  !*** ./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!./Timer.svelte.css */ "./node_modules/css-loader/dist/cjs.js!./src/modules/custom-chat/components/ContentTemplates/Timer.svelte.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/modules/custom-chat/components/Message.svelte":
+/*!***********************************************************!*\
+  !*** ./src/modules/custom-chat/components/Message.svelte ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var gurps_foundry_roll_lib_src_js_Roll_SuccessRoll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gurps-foundry-roll-lib/src/js/Roll/SuccessRoll */ "./node_modules/gurps-foundry-roll-lib/src/js/Roll/SuccessRoll.js");
+/* harmony import */ var _components_chat_Attack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/chat/Attack */ "./src/svelte/chat/Attack.svelte");
+/* harmony import */ var _components_chat_Skill__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/chat/Skill */ "./src/svelte/chat/Skill.svelte");
+/* harmony import */ var _ContentTemplates_Timer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContentTemplates/Timer */ "./src/modules/custom-chat/components/ContentTemplates/Timer.svelte");
+/* src\modules\custom-chat\components\Message.svelte generated by Svelte v3.25.1 */
+
+
 
 
 
@@ -22680,7 +23249,7 @@ function create_if_block(ctx) {
 	let t1;
 	let span;
 	let time;
-	let t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "";
+	let t2_value = timeSince(/*message*/ ctx[0].data.timestamp) + "";
 	let t2;
 	let t3;
 	let t4;
@@ -22693,16 +23262,16 @@ function create_if_block(ctx) {
 	let li_data_message_id_value;
 	let current;
 	let if_block0 = window.game.user.isGM && create_if_block_6(ctx);
-	let if_block1 = /*isWhisper*/ ctx[3] && create_if_block_5(ctx);
+	let if_block1 = /*isWhisper*/ ctx[2] && create_if_block_5(ctx);
 	let if_block2 = /*message*/ ctx[0].data.flavor && create_if_block_4(ctx);
 	const if_block_creators = [create_if_block_1, create_if_block_2, create_if_block_3];
 	const if_blocks = [];
 
 	function select_block_type(ctx, dirty) {
-		if (dirty & /*message*/ 1) show_if = !!/*message*/ ctx[0].rollType();
+		if (dirty & /*message*/ 1) show_if = !!/*message*/ ctx[0].messageType();
 		if (show_if) return 0;
 		if (/*message*/ ctx[0].roll) return 1;
-		if (/*hasHTMLContent*/ ctx[7] || /*message*/ ctx[0].data.content && !/*rollComponent*/ ctx[1]) return 2;
+		if (/*hasHTMLContent*/ ctx[6] || /*message*/ ctx[0].data.content) return 2;
 		return -1;
 	}
 
@@ -22734,12 +23303,13 @@ function create_if_block(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "message-metadata");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(header, "class", "message-header flexrow");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "message-content");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(li, "border-color", /*borderColor*/ ctx[6]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_style"])(li, "border-color", /*borderColor*/ ctx[5]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "class", "message flexcol");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value = /*message*/ ctx[0]._id);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "no-show", /*hide*/ ctx[1]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[2]);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "blind", /*message*/ ctx[0].data.blind);
 		},
 		m(target, anchor) {
@@ -22768,9 +23338,9 @@ function create_if_block(ctx) {
 		},
 		p(ctx, dirty) {
 			if ((!current || dirty & /*message*/ 1) && t0_value !== (t0_value = /*message*/ ctx[0].alias + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
-			if ((!current || dirty & /*message*/ 1) && t2_value !== (t2_value = window.timeSince(/*message*/ ctx[0].data.timestamp) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
+			if ((!current || dirty & /*message*/ 1) && t2_value !== (t2_value = timeSince(/*message*/ ctx[0].data.timestamp) + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
 
-			if (/*isWhisper*/ ctx[3]) {
+			if (/*isWhisper*/ ctx[2]) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
@@ -22833,6 +23403,10 @@ function create_if_block(ctx) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(li, "data-message-id", li_data_message_id_value);
 			}
 
+			if (dirty & /*hide*/ 2) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "no-show", /*hide*/ ctx[1]);
+			}
+
 			if (dirty & /*window*/ 0) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "ic", window.CONST.CHAT_MESSAGE_TYPES.IC);
 			}
@@ -22841,8 +23415,8 @@ function create_if_block(ctx) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "emote", window.CONST.CHAT_MESSAGE_TYPES.EMOTE);
 			}
 
-			if (dirty & /*isWhisper*/ 8) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[3]);
+			if (dirty & /*isWhisper*/ 4) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(li, "whisper", /*isWhisper*/ ctx[2]);
 			}
 
 			if (dirty & /*message*/ 1) {
@@ -22871,7 +23445,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (64:8) {#if window.game.user.isGM}
+// (69:8) {#if window.game.user.isGM}
 function create_if_block_6(ctx) {
 	let a;
 
@@ -22890,14 +23464,14 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (68:6) {#if isWhisper}
+// (73:6) {#if isWhisper}
 function create_if_block_5(ctx) {
 	let span;
 
 	return {
 		c() {
 			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span.textContent = `${game.i18n.localize("CHAT.To")}: ${/*whisperTo*/ ctx[4]}`;
+			span.textContent = `${game.i18n.localize("CHAT.To")}: ${/*whisperTo*/ ctx[3]}`;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span, "class", "whisper-to");
 		},
 		m(target, anchor) {
@@ -22910,7 +23484,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (71:6) {#if message.data.flavor}
+// (76:6) {#if message.data.flavor}
 function create_if_block_4(ctx) {
 	let span;
 	let t_value = /*message*/ ctx[0].data.flavor + "";
@@ -22935,7 +23509,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (85:75) 
+// (89:55) 
 function create_if_block_3(ctx) {
 	let html_tag;
 	let raw_value = /*message*/ ctx[0].data.content + "";
@@ -22962,7 +23536,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (81:29) 
+// (85:29) 
 function create_if_block_2(ctx) {
 	let await_block_anchor;
 	let promise;
@@ -22975,7 +23549,7 @@ function create_if_block_2(ctx) {
 		pending: create_pending_block,
 		then: create_then_block,
 		catch: create_catch_block,
-		value: 15
+		value: 12
 	};
 
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["handle_promise"])(promise = /*message*/ ctx[0].roll.render(), info);
@@ -22999,7 +23573,7 @@ function create_if_block_2(ctx) {
 				
 			} else {
 				const child_ctx = ctx.slice();
-				child_ctx[15] = info.resolved;
+				child_ctx[12] = info.resolved;
 				info.block.p(child_ctx, dirty);
 			}
 		},
@@ -23014,20 +23588,15 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (76:6) {#if message.rollType()}
+// (81:6) {#if message.messageType()}
 function create_if_block_1(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
 	let current;
-	var switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType());
+	var switch_value = /*getRollComponent*/ ctx[7](/*message*/ ctx[0].messageType());
 
 	function switch_props(ctx) {
-		return {
-			props: {
-				message: /*message*/ ctx[0],
-				rollData: /*rollData*/ ctx[2]
-			}
-		};
+		return { props: { message: /*message*/ ctx[0] } };
 	}
 
 	if (switch_value) {
@@ -23050,9 +23619,8 @@ function create_if_block_1(ctx) {
 		p(ctx, dirty) {
 			const switch_instance_changes = {};
 			if (dirty & /*message*/ 1) switch_instance_changes.message = /*message*/ ctx[0];
-			if (dirty & /*rollData*/ 4) switch_instance_changes.rollData = /*rollData*/ ctx[2];
 
-			if (switch_value !== (switch_value = /*getRollComponent*/ ctx[8](/*message*/ ctx[0].rollType()))) {
+			if (switch_value !== (switch_value = /*getRollComponent*/ ctx[7](/*message*/ ctx[0].messageType()))) {
 				if (switch_instance) {
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 					const old_component = switch_instance;
@@ -23092,15 +23660,15 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "@components/chat/Damage";    import Skill from "@components/chat/Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
+// (1:0) <script>    import { createEventDispatcher }
 function create_catch_block(ctx) {
 	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
 }
 
-// (82:48)             {@html roll}
+// (86:48)             {@html roll}
 function create_then_block(ctx) {
 	let html_tag;
-	let raw_value = /*roll*/ ctx[15] + "";
+	let raw_value = /*roll*/ ctx[12] + "";
 	let html_anchor;
 
 	return {
@@ -23113,7 +23681,7 @@ function create_then_block(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*roll*/ ctx[15] + "")) html_tag.p(raw_value);
+			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*roll*/ ctx[12] + "")) html_tag.p(raw_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
@@ -23122,7 +23690,7 @@ function create_then_block(ctx) {
 	};
 }
 
-// (1:0) <script>    import SuccessRoll from "gurps-foundry-roll-lib/src/js/Roll/SuccessRoll";      import Damage from "@components/chat/Damage";    import Skill from "@components/chat/Skill";      export let message = null;      let sender = game.users.get(message.data.user);    let userAvatar = sender.avatar;    let aliasAvatar = sender.character      ? sender.character.getProperty("img")      : null;      let avatar = aliasAvatar || userAvatar;      let isWhisper = getProperty(message, "data.whisper.length");    let whisperTo = message.data.whisper.map((u) => {      let user = game.users.get(u);      return user ? user.name : null;    }
+// (1:0) <script>    import { createEventDispatcher }
 function create_pending_block(ctx) {
 	return { c: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], m: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"], d: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"] };
 }
@@ -23130,7 +23698,7 @@ function create_pending_block(ctx) {
 function create_fragment(ctx) {
 	let if_block_anchor;
 	let current;
-	let if_block = /*isVisible*/ ctx[5] && create_if_block(ctx);
+	let if_block = /*isVisible*/ ctx[4] && create_if_block(ctx);
 
 	return {
 		c() {
@@ -23143,7 +23711,7 @@ function create_fragment(ctx) {
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (/*isVisible*/ ctx[5]) if_block.p(ctx, dirty);
+			if (/*isVisible*/ ctx[4]) if_block.p(ctx, dirty);
 		},
 		i(local) {
 			if (current) return;
@@ -23162,16 +23730,11 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
+	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["createEventDispatcher"])();
 	let { message = null } = $$props;
+	let { hide = false } = $$props;
 	let sender = game.users.get(message.data.user);
-	let userAvatar = sender.avatar;
-
-	let aliasAvatar = sender.character
-	? sender.character.getProperty("img")
-	: null;
-
-	let avatar = aliasAvatar || userAvatar;
-	let isWhisper = getProperty(message, "data.whisper.length");
+	let isWhisper = message.data.whisper.length;
 
 	let whisperTo = message.data.whisper.map(u => {
 		let user = game.users.get(u);
@@ -23193,26 +23756,26 @@ function instance($$self, $$props, $$invalidate) {
 	}
 
 	let hasHTMLContent = message.data.content.startsWith("<");
-	let { rollComponent = false } = $$props;
-	let { rollData = null } = $$props;
 
 	function getRollComponent(type) {
 		switch (type) {
-			case "Damage":
-				return _components_chat_Damage__WEBPACK_IMPORTED_MODULE_2__["default"];
+			case "attack":
+				return _components_chat_Attack__WEBPACK_IMPORTED_MODULE_3__["default"];
+			case "skill":
+				return _components_chat_Skill__WEBPACK_IMPORTED_MODULE_4__["default"];
+			case "timer":
+				return _ContentTemplates_Timer__WEBPACK_IMPORTED_MODULE_5__["default"];
 		}
 	}
 
 	$$self.$$set = $$props => {
 		if ("message" in $$props) $$invalidate(0, message = $$props.message);
-		if ("rollComponent" in $$props) $$invalidate(1, rollComponent = $$props.rollComponent);
-		if ("rollData" in $$props) $$invalidate(2, rollData = $$props.rollData);
+		if ("hide" in $$props) $$invalidate(1, hide = $$props.hide);
 	};
 
 	return [
 		message,
-		rollComponent,
-		rollData,
+		hide,
 		isWhisper,
 		whisperTo,
 		isVisible,
@@ -23225,12 +23788,7 @@ function instance($$self, $$props, $$invalidate) {
 class Message extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
-
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
-			message: 0,
-			rollComponent: 1,
-			rollData: 2
-		});
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { message: 0, hide: 1 });
 	}
 }
 
@@ -23444,6 +24002,69 @@ exports.validateAndFixLists = validateAndFixLists;
 
 /***/ }),
 
+/***/ "./src/modules/timer/timer.ts":
+/*!************************************!*\
+  !*** ./src/modules/timer/timer.ts ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Timer = void 0;
+class Timer {
+    constructor(length) {
+        this.isPaused = false;
+        this.timePaused = 0;
+        this.lastPausedAt = null;
+        this.startTime = Timer.currentTime();
+        this.timerLength = length;
+    }
+    static currentTime() { return new Date().getTime(); }
+    timeRemaining() { return Math.max(0, this.finishesAt() - Timer.currentTime()); }
+    finishesAt() { return this.startTime + this.timePaused + this.timerLength; }
+    isFinished() { return Timer.currentTime() > this.finishesAt(); }
+    pause() {
+        if (!this.isPaused)
+            this.lastPausedAt = Timer.currentTime();
+        this.isPaused = true;
+    }
+    start() { this.timePaused += Timer.currentTime() - this.lastPausedAt; this.isPaused = false; }
+    timeString() { return `${this.hoursRemaining()}:${this.minutesRemaining()}:${this.secondsRemaining()}`; }
+    daysRemaining() { }
+    hoursRemaining() { return Math.floor(this.timeRemaining() / 1000 / 60 / 60); }
+    minutesRemaining() { return Math.floor((this.timeRemaining() / 1000 / 60 / 60 - this.hoursRemaining()) * 60); }
+    secondsRemaining() { return Math.floor(((this.timeRemaining() / 1000 / 60 / 60 - this.hoursRemaining()) * 60 - this.minutesRemaining()) * 60); }
+    restart() {
+        this.timePaused = 0;
+        this.lastPausedAt = null;
+        this.startTime = Timer.currentTime() + this.timerLength;
+    }
+    toJSON() {
+        return JSON.stringify({
+            timePaused: this.timePaused,
+            isPaused: this.isPaused,
+            lastPausedAt: this.lastPausedAt,
+            timerLength: this.timerLength,
+            startTime: this.startTime
+        });
+    }
+    static fromJSON(data) {
+        const { timePaused = 0, isPaused = false, lastPausedAt = null, timerLength = 3600000, startTime = Timer.currentTime() } = JSON.parse(data);
+        const timer = new Timer(timerLength);
+        timer.isPaused = isPaused;
+        timer.timePaused = timePaused;
+        timer.lastPausedAt = lastPausedAt;
+        timer.startTime = startTime;
+        return timer;
+    }
+}
+exports.Timer = Timer;
+
+
+/***/ }),
+
 /***/ "./src/styles/global.scss":
 /*!********************************!*\
   !*** ./src/styles/global.scss ***!
@@ -23488,7 +24109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form_ts__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Armor_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/Armor.svelte.css */ "./src/svelte/Armor.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Armor_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Armor_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\Armor.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Armor.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -24553,356 +25174,6 @@ module.exports = content.locals || {};
 
 /***/ }),
 
-/***/ "./src/svelte/AttackDialog.svelte":
-/*!****************************************!*\
-  !*** ./src/svelte/AttackDialog.svelte ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog */ "./src/svelte/Dialog.svelte");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\AttackDialog.svelte generated by Svelte v3.25.0 */
-
-
-
-
-
-
-function create_if_block(ctx) {
-	let select;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			select = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("select");
-			if (/*ammoSource*/ ctx[6] === void 0) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_render_callback"])(() => /*select_change_handler*/ ctx[13].call(select));
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, select, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*ammoSource*/ ctx[6]);
-
-			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*select_change_handler*/ ctx[13]);
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*ammoSource*/ 64) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*ammoSource*/ ctx[6]);
-			}
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(select);
-			mounted = false;
-			dispose();
-		}
-	};
-}
-
-// (37:0) <Dialog    on:close    title="Attck Roll"    {buttons}    overrideSubmit={true}    height={300}    width={200}>
-function create_default_slot(ctx) {
-	let div;
-	let span0;
-	let t1;
-	let input0;
-	let t2;
-	let span1;
-	let t4;
-	let input1;
-	let t5;
-	let span2;
-	let t7;
-	let input2;
-	let t8;
-	let span3;
-	let t10;
-	let input3;
-	let t11;
-	let span4;
-	let t13;
-	let input4;
-	let t14;
-	let show_if = /*weapon*/ ctx[0].getType() === "ranged_weapon";
-	let mounted;
-	let dispose;
-	let if_block = show_if && create_if_block(ctx);
-
-	return {
-		c() {
-			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
-			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span0.textContent = "Deceptive Attacks";
-			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			input0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
-			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span1.textContent = "Has Weapon Master";
-			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			input1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
-			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span2.textContent = "Rapid Strikes";
-			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			input2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
-			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span3.textContent = "Is Telegraphed";
-			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			input3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
-			t11 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			span4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
-			span4.textContent = "Other Mods";
-			t13 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			input4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
-			t14 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block) if_block.c();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input0, "type", "number");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input0, "min", "0");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input1, "type", "checkbox");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input2, "type", "number");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input2, "min", "0");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input3, "type", "checkbox");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input4, "type", "number");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "flex-col");
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*deceptiveAttacks*/ ctx[1]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input1);
-			input1.checked = /*hasWeaponMaster*/ ctx[3];
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t7);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*rapidStrikes*/ ctx[4]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t8);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t10);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input3);
-			input3.checked = /*telegraphed*/ ctx[2];
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t11);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t13);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input4, /*otherMods*/ ctx[5]);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t14);
-			if (if_block) if_block.m(div, null);
-
-			if (!mounted) {
-				dispose = [
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input0, "input", /*input0_input_handler*/ ctx[8]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input1, "change", /*input1_change_handler*/ ctx[9]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input2, "input", /*input2_input_handler*/ ctx[10]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input3, "change", /*input3_change_handler*/ ctx[11]),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input4, "input", /*input4_input_handler*/ ctx[12])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*deceptiveAttacks*/ 2 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input0.value) !== /*deceptiveAttacks*/ ctx[1]) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*deceptiveAttacks*/ ctx[1]);
-			}
-
-			if (dirty & /*hasWeaponMaster*/ 8) {
-				input1.checked = /*hasWeaponMaster*/ ctx[3];
-			}
-
-			if (dirty & /*rapidStrikes*/ 16 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input2.value) !== /*rapidStrikes*/ ctx[4]) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*rapidStrikes*/ ctx[4]);
-			}
-
-			if (dirty & /*telegraphed*/ 4) {
-				input3.checked = /*telegraphed*/ ctx[2];
-			}
-
-			if (dirty & /*otherMods*/ 32 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input4.value) !== /*otherMods*/ ctx[5]) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input4, /*otherMods*/ ctx[5]);
-			}
-
-			if (dirty & /*weapon*/ 1) show_if = /*weapon*/ ctx[0].getType() === "ranged_weapon";
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block(ctx);
-					if_block.c();
-					if_block.m(div, null);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
-			if (if_block) if_block.d();
-			mounted = false;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let dialog;
-	let current;
-
-	dialog = new _Dialog__WEBPACK_IMPORTED_MODULE_1__["default"]({
-			props: {
-				title: "Attck Roll",
-				buttons: /*buttons*/ ctx[7],
-				overrideSubmit: true,
-				height: 300,
-				width: 200,
-				$$slots: { default: [create_default_slot] },
-				$$scope: { ctx }
-			}
-		});
-
-	dialog.$on("close", /*close_handler*/ ctx[14]);
-
-	return {
-		c() {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(dialog.$$.fragment);
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(dialog, target, anchor);
-			current = true;
-		},
-		p(ctx, [dirty]) {
-			const dialog_changes = {};
-
-			if (dirty & /*$$scope, ammoSource, weapon, otherMods, telegraphed, rapidStrikes, hasWeaponMaster, deceptiveAttacks*/ 131199) {
-				dialog_changes.$$scope = { dirty, ctx };
-			}
-
-			dialog.$set(dialog_changes);
-		},
-		i(local) {
-			if (current) return;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(dialog.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(dialog.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(dialog, detaching);
-		}
-	};
-}
-
-function instance($$self, $$props, $$invalidate) {
-	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_3__["createEventDispatcher"])();
-	let { weapon = null } = $$props;
-	let deceptiveAttacks = 0;
-	let telegraphed = false;
-	let hasWeaponMaster = false;
-	let rapidStrikes = 0;
-	let otherMods = 0;
-	let ammoSource;
-
-	function sendDiceRoll() {
-		return [
-			deceptiveAttacks * -2,
-			rapidStrikes * -(hasWeaponMaster ? 3 : 6),
-			telegraphed ? 4 : 0,
-			otherMods
-		];
-	}
-
-	const buttons = {
-		submit: {
-			icon: "<i class=\"fas fa-check\"></i>",
-			label: "Roll",
-			callback: () => dispatch("roll", sendDiceRoll())
-		}
-	};
-
-	function input0_input_handler() {
-		deceptiveAttacks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
-		$$invalidate(1, deceptiveAttacks);
-	}
-
-	function input1_change_handler() {
-		hasWeaponMaster = this.checked;
-		$$invalidate(3, hasWeaponMaster);
-	}
-
-	function input2_input_handler() {
-		rapidStrikes = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
-		$$invalidate(4, rapidStrikes);
-	}
-
-	function input3_change_handler() {
-		telegraphed = this.checked;
-		$$invalidate(2, telegraphed);
-	}
-
-	function input4_input_handler() {
-		otherMods = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
-		$$invalidate(5, otherMods);
-	}
-
-	function select_change_handler() {
-		ammoSource = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_value"])(this);
-		$$invalidate(6, ammoSource);
-	}
-
-	function close_handler(event) {
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
-	}
-
-	$$self.$$set = $$props => {
-		if ("weapon" in $$props) $$invalidate(0, weapon = $$props.weapon);
-	};
-
-	return [
-		weapon,
-		deceptiveAttacks,
-		telegraphed,
-		hasWeaponMaster,
-		rapidStrikes,
-		otherMods,
-		ammoSource,
-		buttons,
-		input0_input_handler,
-		input1_change_handler,
-		input2_input_handler,
-		input3_change_handler,
-		input4_input_handler,
-		select_change_handler,
-		close_handler
-	];
-}
-
-class AttackDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
-	constructor(options) {
-		super();
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { weapon: 0 });
-	}
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (AttackDialog);
-
-/***/ }),
-
 /***/ "./src/svelte/Attributes.svelte":
 /*!**************************************!*\
   !*** ./src/svelte/Attributes.svelte ***!
@@ -24914,13 +25185,16 @@ class AttackDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteC
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
-/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var g4elogic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
-/* harmony import */ var g4elogic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(g4elogic__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/Attributes.svelte.css */ "./src/svelte/Attributes.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\Attributes.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @GURPSFoundry/rolling */ "./src/foundry-GURPS/rolling.ts");
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var g4elogic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! g4elogic */ "./node_modules/g4elogic/lib/index.js");
+/* harmony import */ var g4elogic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(g4elogic__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/Attributes.svelte.css */ "./src/svelte/Attributes.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Attributes_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
+/* src\svelte\Attributes.svelte generated by Svelte v3.25.1 */
+
 
 
 
@@ -24972,7 +25246,7 @@ function create_label_text_slot_9(ctx) {
 	};
 }
 
-// (31:4) <Input        mod={$GURPS.getAttribute(Signature.ST).getMod()}        path="data.attributes.strength"        min="0"        type="number">
+// (32:4) <Input        mod={$GURPS.getAttribute(Signature.ST).getMod()}        path="data.attributes.strength"        min="0"        type="number">
 function create_default_slot_9(ctx) {
 	let t;
 
@@ -24990,7 +25264,7 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (56:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
+// (57:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_8(ctx) {
 	let span0;
 	let t0;
@@ -25036,7 +25310,7 @@ function create_label_text_slot_8(ctx) {
 	};
 }
 
-// (48:4) <Input        mod={$GURPS.getAttribute(Signature.DX).getMod()}        path="data.attributes.dexterity"        min="0"        type="number">
+// (49:4) <Input        mod={$GURPS.getAttribute(Signature.DX).getMod()}        path="data.attributes.dexterity"        min="0"        type="number">
 function create_default_slot_8(ctx) {
 	let t;
 
@@ -25054,7 +25328,7 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (73:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
+// (74:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_7(ctx) {
 	let span0;
 	let t0;
@@ -25100,7 +25374,7 @@ function create_label_text_slot_7(ctx) {
 	};
 }
 
-// (65:4) <Input        mod={$GURPS.getAttribute(Signature.IQ).getMod()}        path="data.attributes.intelligence"        min="0"        type="number">
+// (66:4) <Input        mod={$GURPS.getAttribute(Signature.IQ).getMod()}        path="data.attributes.intelligence"        min="0"        type="number">
 function create_default_slot_7(ctx) {
 	let t;
 
@@ -25118,7 +25392,7 @@ function create_default_slot_7(ctx) {
 	};
 }
 
-// (90:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
+// (91:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_6(ctx) {
 	let span0;
 	let t0;
@@ -25164,7 +25438,7 @@ function create_label_text_slot_6(ctx) {
 	};
 }
 
-// (82:4) <Input        mod={$GURPS.getAttribute(Signature.HT).getMod()}        path="data.attributes.health"        min="0"        type="number">
+// (83:4) <Input        mod={$GURPS.getAttribute(Signature.HT).getMod()}        path="data.attributes.health"        min="0"        type="number">
 function create_default_slot_6(ctx) {
 	let t;
 
@@ -25182,7 +25456,7 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (105:6) <span slot="label-text">
+// (106:6) <span slot="label-text">
 function create_label_text_slot_5(ctx) {
 	let span;
 	let t0;
@@ -25213,7 +25487,7 @@ function create_label_text_slot_5(ctx) {
 	};
 }
 
-// (119:6) <span slot="label-text">
+// (120:6) <span slot="label-text">
 function create_label_text_slot_4(ctx) {
 	let span;
 	let t0;
@@ -25244,11 +25518,11 @@ function create_label_text_slot_4(ctx) {
 	};
 }
 
-// (134:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
+// (135:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_3(ctx) {
 	let span0;
 	let t0;
-	let t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).pointsSpent() + "";
+	let t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].Will).pointsSpent() + "";
 	let t1;
 	let t2;
 	let span1;
@@ -25279,7 +25553,7 @@ function create_label_text_slot_3(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if (dirty & /*$GURPS*/ 2 && t1_value !== (t1_value = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].Will).pointsSpent() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span0);
@@ -25290,7 +25564,7 @@ function create_label_text_slot_3(ctx) {
 	};
 }
 
-// (125:4) <Input        let:value        path="data.attributes.will"        basedOn={$entity.getProperty('data.attributes.intelligence')}        min={0}        type="number">
+// (126:4) <Input        let:value        path="data.attributes.will"        basedOn={$entity.getProperty('data.attributes.intelligence')}        min={0}        type="number">
 function create_default_slot_3(ctx) {
 	let t;
 
@@ -25308,7 +25582,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (151:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
+// (152:6) <span          slot="label-text"          class="fas fa-dice d6 roll-ico"          on:click={() =>
 function create_label_text_slot_2(ctx) {
 	let span0;
 	let t0;
@@ -25354,7 +25628,7 @@ function create_label_text_slot_2(ctx) {
 	};
 }
 
-// (143:4) <Input        path="data.attributes.perception"        min={0}        basedOn={$entity.getProperty('data.attributes.intelligence')}        type="number">
+// (144:4) <Input        path="data.attributes.perception"        min={0}        basedOn={$entity.getProperty('data.attributes.intelligence')}        type="number">
 function create_default_slot_2(ctx) {
 	let t;
 
@@ -25372,7 +25646,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (165:6) <span slot="label-text">
+// (166:6) <span slot="label-text">
 function create_label_text_slot_1(ctx) {
 	let span;
 	let t0;
@@ -25403,7 +25677,7 @@ function create_label_text_slot_1(ctx) {
 	};
 }
 
-// (176:6) <span slot="label-text">
+// (177:6) <span slot="label-text">
 function create_label_text_slot(ctx) {
 	let span;
 	let t0;
@@ -25467,9 +25741,9 @@ function create_fragment(ctx) {
 	let input9;
 	let current;
 
-	input0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input0 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
-				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].ST).getMod(),
+				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).getMod(),
 				path: "data.attributes.strength",
 				min: "0",
 				type: "number",
@@ -25481,9 +25755,9 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input1 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
-				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].DX).getMod(),
+				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].DX).getMod(),
 				path: "data.attributes.dexterity",
 				min: "0",
 				type: "number",
@@ -25495,9 +25769,9 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input2 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
-				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].IQ).getMod(),
+				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].IQ).getMod(),
 				path: "data.attributes.intelligence",
 				min: "0",
 				type: "number",
@@ -25509,9 +25783,9 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input3 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input3 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
-				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].HT).getMod(),
+				mod: /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].HT).getMod(),
 				path: "data.attributes.health",
 				min: "0",
 				type: "number",
@@ -25523,7 +25797,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input4 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input4 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.move",
 				type: "number",
@@ -25533,7 +25807,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input5 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input5 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.speed",
 				step: "0.25",
@@ -25545,7 +25819,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input6 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input6 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.will",
 				basedOn: /*$entity*/ ctx[2].getProperty("data.attributes.intelligence"),
@@ -25567,7 +25841,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input7 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input7 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.perception",
 				min: 0,
@@ -25581,7 +25855,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input8 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input8 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.hit_points",
 				min: 0,
@@ -25592,7 +25866,7 @@ function create_fragment(ctx) {
 			}
 		});
 
-	input9 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
+	input9 = new _form_form__WEBPACK_IMPORTED_MODULE_3__["Input"]({
 			props: {
 				path: "data.attributes.fatigue_points",
 				min: 0,
@@ -25682,7 +25956,7 @@ function create_fragment(ctx) {
 		},
 		p(ctx, [dirty]) {
 			const input0_changes = {};
-			if (dirty & /*$GURPS*/ 2) input0_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].ST).getMod();
+			if (dirty & /*$GURPS*/ 2) input0_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).getMod();
 
 			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input0_changes.$$scope = { dirty, ctx };
@@ -25690,7 +25964,7 @@ function create_fragment(ctx) {
 
 			input0.$set(input0_changes);
 			const input1_changes = {};
-			if (dirty & /*$GURPS*/ 2) input1_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].DX).getMod();
+			if (dirty & /*$GURPS*/ 2) input1_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].DX).getMod();
 
 			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input1_changes.$$scope = { dirty, ctx };
@@ -25698,7 +25972,7 @@ function create_fragment(ctx) {
 
 			input1.$set(input1_changes);
 			const input2_changes = {};
-			if (dirty & /*$GURPS*/ 2) input2_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].IQ).getMod();
+			if (dirty & /*$GURPS*/ 2) input2_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].IQ).getMod();
 
 			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input2_changes.$$scope = { dirty, ctx };
@@ -25706,7 +25980,7 @@ function create_fragment(ctx) {
 
 			input2.$set(input2_changes);
 			const input3_changes = {};
-			if (dirty & /*$GURPS*/ 2) input3_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].HT).getMod();
+			if (dirty & /*$GURPS*/ 2) input3_changes.mod = /*$GURPS*/ ctx[1].getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].HT).getMod();
 
 			if (dirty & /*$$scope, $entity, $GURPS*/ 2054) {
 				input3_changes.$$scope = { dirty, ctx };
@@ -25817,12 +26091,12 @@ function instance($$self, $$props, $$invalidate) {
 	$$subscribe_entity();
 	const GURPS = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("GURPS");
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(1, $GURPS = value));
-	const click_handler = () => $entity.rollSkill("Strength", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].ST).calculateLevel());
-	const click_handler_1 = () => $entity.rollSkill("Dexterity", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].DX).calculateLevel());
-	const click_handler_2 = () => $entity.rollSkill("Intelligence", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].IQ).calculateLevel());
-	const click_handler_3 = () => $entity.rollSkill("Health", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].HT).calculateLevel());
-	const click_handler_4 = () => $entity.rollSkill("Will", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Will).calculateLevel());
-	const click_handler_5 = () => $entity.rollSkill("Perception", $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_3__["Signature"].Per).calculateLevel());
+	const click_handler = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Strength");
+	const click_handler_1 = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Dexterity");
+	const click_handler_2 = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Intelligence");
+	const click_handler_3 = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Health");
+	const click_handler_4 = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Will");
+	const click_handler_5 = () => _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, $GURPS.getAttribute(g4elogic__WEBPACK_IMPORTED_MODULE_4__["Signature"].ST).calculateLevel(), "Perception");
 
 	$$self.$$set = $$props => {
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(0, entity = $$props.entity));
@@ -25901,7 +26175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Biography_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/Biography.svelte.css */ "./src/svelte/Biography.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Biography_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Biography_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\Biography.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Biography.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -26954,7 +27228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/svelte/Character.svelte.css */ "./src/svelte/Character.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Character_svelte_css__WEBPACK_IMPORTED_MODULE_18__);
-/* src\svelte\Character.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Character.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -28814,7 +29088,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Encumbrance__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Encumbrance */ "./src/svelte/Encumbrance.svelte");
 /* harmony import */ var _weapon_list_MeleeWeapons_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./weapon-list/MeleeWeapons.svelte */ "./src/svelte/weapon-list/MeleeWeapons.svelte");
 /* harmony import */ var _weapon_list_RangedWeapons_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./weapon-list/RangedWeapons.svelte */ "./src/svelte/weapon-list/RangedWeapons.svelte");
-/* src\svelte\CharacterCombat.svelte generated by Svelte v3.25.0 */
+/* src\svelte\CharacterCombat.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -29370,7 +29644,7 @@ class CharacterCombat extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["Svel
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog */ "./src/svelte/Dialog.svelte");
-/* src\svelte\ColorPicker.svelte generated by Svelte v3.25.0 */
+/* src\svelte\ColorPicker.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -29596,7 +29870,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Dialog_svelte_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/svelte/Dialog.svelte.css */ "./src/svelte/Dialog.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Dialog_svelte_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Dialog_svelte_css__WEBPACK_IMPORTED_MODULE_2__);
-/* src\svelte\Dialog.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Dialog.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -29671,7 +29945,7 @@ function instance($$self, $$props, $$invalidate) {
 	let { width = 800 } = $$props;
 	let { title = "???" } = $$props;
 	let { buttons = {} } = $$props;
-	let { defaultButton = "submit" } = $$props;
+	let { defaultButton = buttons.submit ? "submit" : null } = $$props;
 	let { onClose = new Function() } = $$props;
 	let { overrideSubmit = false } = $$props;
 
@@ -29814,7 +30088,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Encumbrance_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/Encumbrance.svelte.css */ "./src/svelte/Encumbrance.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Encumbrance_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Encumbrance_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\Encumbrance.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Encumbrance.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -30199,7 +30473,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _character_lists_Equipment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./character-lists/Equipment */ "./src/svelte/character-lists/Equipment.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/svelte/EquipmentList.svelte.css */ "./src/svelte/EquipmentList.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_EquipmentList_svelte_css__WEBPACK_IMPORTED_MODULE_7__);
-/* src\svelte\EquipmentList.svelte generated by Svelte v3.25.0 */
+/* src\svelte\EquipmentList.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -31092,7 +31366,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog */ "./src/svelte/Dialog.svelte");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\GCSImportDialog.svelte generated by Svelte v3.25.0 */
+/* src\svelte\GCSImportDialog.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -31224,7 +31498,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Pools_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/Pools.svelte.css */ "./src/svelte/Pools.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Pools_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Pools_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\Pools.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Pools.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -31550,7 +31824,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _party_PartyManager__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./party/PartyManager */ "./src/svelte/party/PartyManager.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Sheet_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/Sheet.svelte.css */ "./src/svelte/Sheet.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Sheet_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Sheet_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\Sheet.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Sheet.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -31726,7 +32000,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./list/list.ts */ "./src/svelte/list/list.ts");
 /* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_list_list_ts__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\SkillList.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @GURPSFoundry/rolling */ "./src/foundry-GURPS/rolling.ts");
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__);
+/* src\svelte\SkillList.svelte generated by Svelte v3.25.1 */
+
 
 
 
@@ -31747,7 +32024,7 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (30:2) <th slot="header">
+// (31:2) <th slot="header">
 function create_header_slot_1(ctx) {
 	let th0;
 	let th1;
@@ -31806,7 +32083,7 @@ function create_header_slot_1(ctx) {
 	};
 }
 
-// (61:10) <span slot="no-edit">
+// (62:10) <span slot="no-edit">
 function create_no_edit_slot_7(ctx) {
 	let span;
 	let t0_value = /*technique*/ ctx[18].name + "";
@@ -31858,7 +32135,7 @@ function create_no_edit_slot_7(ctx) {
 	};
 }
 
-// (78:10) <span slot="no-edit">
+// (79:10) <span slot="no-edit">
 function create_no_edit_slot_6(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -31883,7 +32160,7 @@ function create_no_edit_slot_6(ctx) {
 	};
 }
 
-// (89:10) <span slot="no-edit">
+// (90:10) <span slot="no-edit">
 function create_no_edit_slot_5(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -31908,7 +32185,7 @@ function create_no_edit_slot_5(ctx) {
 	};
 }
 
-// (98:10) <span slot="no-edit">
+// (99:10) <span slot="no-edit">
 function create_no_edit_slot_4(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -31933,7 +32210,7 @@ function create_no_edit_slot_4(ctx) {
 	};
 }
 
-// (101:6) <div slot="notes">
+// (102:6) <div slot="notes">
 function create_notes_slot_1(ctx) {
 	let div;
 	let t_value = /*technique*/ ctx[18].notes + "";
@@ -31958,7 +32235,7 @@ function create_notes_slot_1(ctx) {
 	};
 }
 
-// (32:4) <Row        let:hovered        let:ownedItem        on:delete={(e) => {          e.detail.entity.delete();        }}        colspan="6"        {i}        draggable={true}        id={technique.foundryID}        on:middleclick={(e) => {}}>
+// (33:4) <Row        let:hovered        let:ownedItem        on:delete={(e) => {          e.detail.entity.delete();        }}        colspan="6"        {i}        draggable={true}        id={technique.foundryID}        on:middleclick={(e) => {}}>
 function create_default_slot_7(ctx) {
 	let td0;
 	let span;
@@ -32209,7 +32486,7 @@ function create_default_slot_7(ctx) {
 	};
 }
 
-// (31:2) {#each window.game.gurps4e.indexSort($GURPS.techniqueList.iter()) as technique, i (technique.foundryID)}
+// (32:2) {#each window.game.gurps4e.indexSort($GURPS.techniqueList.iter()) as technique, i (technique.foundryID)}
 function create_each_block_1(key_1, ctx) {
 	let first;
 	let row;
@@ -32280,7 +32557,7 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (13:0) <List    title="Techniques"    type="technique"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'technique' });    }}>
+// (14:0) <List    title="Techniques"    type="technique"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'technique' });    }}>
 function create_default_slot_6(ctx) {
 	let t0;
 	let t1;
@@ -32332,7 +32609,7 @@ function create_default_slot_6(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*window, $GURPS, ownedItem, value, Math, hovered, $entity*/ 229382) {
+			if (dirty & /*window, $GURPS, ownedItem, value, Math, hovered, Roller, $entity*/ 229382) {
 				const each_value_1 = window.game.gurps4e.indexSort(/*$GURPS*/ ctx[2].techniqueList.iter());
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block_1, each_1_anchor, get_each_context_1);
@@ -32372,7 +32649,7 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (123:2) <th slot="header">
+// (124:2) <th slot="header">
 function create_header_slot(ctx) {
 	let th0;
 	let th1;
@@ -32431,7 +32708,7 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (153:10) <span slot="no-edit">
+// (154:10) <span slot="no-edit">
 function create_no_edit_slot_3(ctx) {
 	let span;
 	let t0_value = /*skill*/ ctx[12].name + "";
@@ -32483,7 +32760,7 @@ function create_no_edit_slot_3(ctx) {
 	};
 }
 
-// (170:10) <span slot="no-edit">
+// (171:10) <span slot="no-edit">
 function create_no_edit_slot_2(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -32508,7 +32785,7 @@ function create_no_edit_slot_2(ctx) {
 	};
 }
 
-// (182:10) <span slot="no-edit">
+// (183:10) <span slot="no-edit">
 function create_no_edit_slot_1(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -32533,7 +32810,7 @@ function create_no_edit_slot_1(ctx) {
 	};
 }
 
-// (191:10) <span slot="no-edit">
+// (192:10) <span slot="no-edit">
 function create_no_edit_slot(ctx) {
 	let span;
 	let t_value = /*value*/ ctx[17] + "";
@@ -32558,7 +32835,7 @@ function create_no_edit_slot(ctx) {
 	};
 }
 
-// (194:6) <div slot="notes">
+// (195:6) <div slot="notes">
 function create_notes_slot(ctx) {
 	let div;
 	let t_value = /*skill*/ ctx[12].notes + "";
@@ -32583,7 +32860,7 @@ function create_notes_slot(ctx) {
 	};
 }
 
-// (125:4) <Row        let:hovered        let:ownedItem        on:delete={(e) => {          e.detail.entity.delete();        }}        colspan="6"        {i}        draggable={true}        id={skill.foundryID}>
+// (126:4) <Row        let:hovered        let:ownedItem        on:delete={(e) => {          e.detail.entity.delete();        }}        colspan="6"        {i}        draggable={true}        id={skill.foundryID}>
 function create_default_slot_1(ctx) {
 	let td0;
 	let span;
@@ -32848,7 +33125,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (124:2) {#each window.game.gurps4e.indexSort($GURPS.skillList.iter()) as skill, i (skill.foundryID)}
+// (125:2) {#each window.game.gurps4e.indexSort($GURPS.skillList.iter()) as skill, i (skill.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
@@ -32918,7 +33195,7 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-// (106:0) <List    title="Skills"    type="skill"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'skill' });    }}>
+// (107:0) <List    title="Skills"    type="skill"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'skill' });    }}>
 function create_default_slot(ctx) {
 	let t0;
 	let t1;
@@ -32970,7 +33247,7 @@ function create_default_slot(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*window, $GURPS, ownedItem, value, Math, hovered, $entity*/ 229382) {
+			if (dirty & /*window, $GURPS, ownedItem, value, Math, hovered, Roller, $entity*/ 229382) {
 				const each_value = window.game.gurps4e.indexSort(/*$GURPS*/ ctx[2].skillList.iter());
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block, each_1_anchor, get_each_context);
@@ -33120,13 +33397,13 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const contextmenu_handler = (technique, e) => {
-		$entity.rollSkill(technique.name, technique.calculateLevel(), []);
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, technique);
 		e.stopImmediatePropagation();
 		e.preventDefault();
 	};
 
 	const click_handler = (technique, e) => {
-		$entity.rollSkill(technique.name, technique.calculateLevel());
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, technique);
 	};
 
 	const addlistitem_handler = () => {
@@ -33138,13 +33415,13 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const contextmenu_handler_1 = (skill, e) => {
-		$entity.rollSkill(skill.name, skill.calculateLevel(), []);
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, skill);
 		e.stopImmediatePropagation();
 		e.preventDefault();
 	};
 
 	const click_handler_1 = (skill, e) => {
-		$entity.rollSkill(skill.name, skill.calculateLevel());
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, skill);
 	};
 
 	const addlistitem_handler_1 = () => {
@@ -33197,9 +33474,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./form/form */ "./src/svelte/form/form.ts");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/SpellList.svelte.css */ "./src/svelte/SpellList.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\SpellList.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @GURPSFoundry/rolling */ "./src/foundry-GURPS/rolling.ts");
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/SpellList.svelte.css */ "./src/svelte/SpellList.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_SpellList_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
+/* src\svelte\SpellList.svelte generated by Svelte v3.25.1 */
+
 
 
 
@@ -33213,7 +33493,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (65:2) <th slot="header">
+// (75:2) <th slot="header">
 function create_header_slot(ctx) {
 	let th0;
 	let th1;
@@ -33302,7 +33582,7 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (95:10) <span slot="no-edit">
+// (105:10) <span slot="no-edit">
 function create_no_edit_slot(ctx) {
 	let span;
 	let t0_value = /*spell*/ ctx[12].name + "";
@@ -33354,7 +33634,7 @@ function create_no_edit_slot(ctx) {
 	};
 }
 
-// (67:4) <Row        let:ownedItem        let:isLabel        let:hovered        {i}        draggable={true}        id={spell.foundryID}        on:delete={(e) => {          e.detail.entity.delete();        }}>
+// (77:4) <Row        let:ownedItem        let:isLabel        let:hovered        {i}        draggable={true}        id={spell.foundryID}        on:delete={(e) => {          e.detail.entity.delete();        }}>
 function create_default_slot_1(ctx) {
 	let td0;
 	let span;
@@ -33596,7 +33876,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (66:2) {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}
+// (76:2) {#each window.game.gurps4e.indexSort($GURPS.spellList.iter()) as spell, i (spell.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
@@ -33660,7 +33940,7 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-// (44:0) <List    type="spell"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'spell' });    }}>
+// (54:0) <List    type="spell"    on:addlistitem={() => {      $entity.createOwnedItem({ name: '???', type: 'spell' });    }}>
 function create_default_slot(ctx) {
 	let t0;
 	let t1;
@@ -33727,7 +34007,7 @@ function create_default_slot(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*window, $GURPS, spellBonus, ownedItem, hovered, isLabel, $entity, getRollMod*/ 229415) {
+			if (dirty & /*window, $GURPS, spellBonus, ownedItem, hovered, isLabel, Roller, $entity, getRollMod*/ 229415) {
 				const each_value = window.game.gurps4e.indexSort(/*$GURPS*/ ctx[2].spellList.iter());
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block, each_1_anchor, get_each_context);
@@ -33894,20 +34174,34 @@ function instance($$self, $$props, $$invalidate) {
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(2, $GURPS = value));
 	const entity = Object(svelte__WEBPACK_IMPORTED_MODULE_2__["getContext"])("entity");
 	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, entity, value => $$invalidate(1, $entity = value));
-	const getRollMod = () => spellBonus - spellOnPenalty - spellConcentrationPenalty;
+
+	const getRollMod = () => [
+		{
+			modifier: `+${spellBonus}`,
+			description: "Magery bonus"
+		},
+		{
+			modifier: `-${spellOnPenalty}`,
+			description: `Penalty for spells on`
+		},
+		{
+			modifier: `-${spellConcentrationPenalty * 3}`,
+			description: `Penalty for spells concentrated on`
+		}
+	];
 
 	const dblclick_handler = e => {
 		$entity.sortList("spell", "data.name");
 	};
 
 	const contextmenu_handler = (spell, e) => {
-		$entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, spell, getRollMod());
 		e.stopImmediatePropagation();
 		e.preventDefault();
 	};
 
 	const click_handler = (spell, e) => {
-		$entity.rollSkill(spell.name, spell.calculateLevel() + getRollMod());
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_4__["Roller"].rollSkill($entity, spell, getRollMod());
 	};
 
 	const addlistitem_handler = () => {
@@ -34003,7 +34297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Totals_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/Totals.svelte.css */ "./src/svelte/Totals.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_Totals_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_Totals_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\Totals.svelte generated by Svelte v3.25.0 */
+/* src\svelte\Totals.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -34515,14 +34809,17 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* harmony import */ var _form_Input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form/Input */ "./src/svelte/form/Input.svelte");
-/* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list/list.ts */ "./src/svelte/list/list.ts");
-/* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_list_list_ts__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs/tabs */ "./src/svelte/tabs/tabs.ts");
-/* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/TraitList.svelte.css */ "./src/svelte/TraitList.svelte.css");
-/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
-/* src\svelte\TraitList.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @GURPSFoundry/rolling */ "./src/foundry-GURPS/rolling.ts");
+/* harmony import */ var _GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _form_Input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./form/Input */ "./src/svelte/form/Input.svelte");
+/* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list/list.ts */ "./src/svelte/list/list.ts");
+/* harmony import */ var _list_list_ts__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_list_list_ts__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tabs/tabs */ "./src/svelte/tabs/tabs.ts");
+/* harmony import */ var _tabs_tabs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_tabs_tabs__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/svelte/TraitList.svelte.css */ "./src/svelte/TraitList.svelte.css");
+/* harmony import */ var E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_TraitList_svelte_css__WEBPACK_IMPORTED_MODULE_6__);
+/* src\svelte\TraitList.svelte generated by Svelte v3.25.1 */
+
 
 
 
@@ -34532,19 +34829,19 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[13] = list[i];
-	child_ctx[15] = i;
+	child_ctx[14] = list[i];
+	child_ctx[16] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[13] = list[i];
-	child_ctx[15] = i;
+	child_ctx[14] = list[i];
+	child_ctx[16] = i;
 	return child_ctx;
 }
 
-// (44:4) <Tab index={0}>
+// (57:4) <Tab index={0}>
 function create_default_slot_17(ctx) {
 	let t;
 
@@ -34561,7 +34858,7 @@ function create_default_slot_17(ctx) {
 	};
 }
 
-// (45:4) <Tab index={1}>
+// (58:4) <Tab index={1}>
 function create_default_slot_16(ctx) {
 	let t;
 
@@ -34578,7 +34875,7 @@ function create_default_slot_16(ctx) {
 	};
 }
 
-// (46:4) <Tab index={2}>
+// (59:4) <Tab index={2}>
 function create_default_slot_15(ctx) {
 	let t;
 
@@ -34595,7 +34892,7 @@ function create_default_slot_15(ctx) {
 	};
 }
 
-// (47:4) <Tab index={3}>
+// (60:4) <Tab index={3}>
 function create_default_slot_14(ctx) {
 	let t;
 
@@ -34612,7 +34909,7 @@ function create_default_slot_14(ctx) {
 	};
 }
 
-// (43:2) <TabList>
+// (56:2) <TabList>
 function create_default_slot_13(ctx) {
 	let tab0;
 	let t0;
@@ -34623,7 +34920,7 @@ function create_default_slot_13(ctx) {
 	let tab3;
 	let current;
 
-	tab0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["Tab"]({
+	tab0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["Tab"]({
 			props: {
 				index: 0,
 				$$slots: { default: [create_default_slot_17] },
@@ -34631,7 +34928,7 @@ function create_default_slot_13(ctx) {
 			}
 		});
 
-	tab1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["Tab"]({
+	tab1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["Tab"]({
 			props: {
 				index: 1,
 				$$slots: { default: [create_default_slot_16] },
@@ -34639,7 +34936,7 @@ function create_default_slot_13(ctx) {
 			}
 		});
 
-	tab2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["Tab"]({
+	tab2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["Tab"]({
 			props: {
 				index: 2,
 				$$slots: { default: [create_default_slot_15] },
@@ -34647,7 +34944,7 @@ function create_default_slot_13(ctx) {
 			}
 		});
 
-	tab3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["Tab"]({
+	tab3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["Tab"]({
 			props: {
 				index: 3,
 				$$slots: { default: [create_default_slot_14] },
@@ -34678,28 +34975,28 @@ function create_default_slot_13(ctx) {
 		p(ctx, dirty) {
 			const tab0_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tab0_changes.$$scope = { dirty, ctx };
 			}
 
 			tab0.$set(tab0_changes);
 			const tab1_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tab1_changes.$$scope = { dirty, ctx };
 			}
 
 			tab1.$set(tab1_changes);
 			const tab2_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tab2_changes.$$scope = { dirty, ctx };
 			}
 
 			tab2.$set(tab2_changes);
 			const tab3_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tab3_changes.$$scope = { dirty, ctx };
 			}
 
@@ -34732,7 +35029,7 @@ function create_default_slot_13(ctx) {
 	};
 }
 
-// (69:6) <th slot="header">
+// (82:6) <th slot="header">
 function create_header_slot_1(ctx) {
 	let th0;
 	let th1;
@@ -34758,7 +35055,7 @@ function create_header_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, th2, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler*/ ctx[6]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler*/ ctx[7]);
 				mounted = true;
 			}
 		},
@@ -34773,21 +35070,21 @@ function create_header_slot_1(ctx) {
 	};
 }
 
-// (92:14) <span                  class:no-show={trait.controlRating === 'n/a'}                  slot="no-edit"                  class="fas fa-dice d6 roll-ico cr-roll"                  on:click={rollCr(trait)}>
+// (105:14) <span                  class:no-show={trait.controlRating === 'n/a'}                  slot="no-edit"                  class="fas fa-dice d6 roll-ico cr-roll"                  on:click={rollCr(trait)}>
 function create_no_edit_slot_3(ctx) {
 	let span0;
-	let t0_value = /*trait*/ ctx[13].name + "";
+	let t0_value = /*trait*/ ctx[14].name + "";
 	let t0;
 	let t1;
 
-	let t2_value = (/*trait*/ ctx[13].hasLevels
-	? /*trait*/ ctx[13].levels
+	let t2_value = (/*trait*/ ctx[14].hasLevels
+	? /*trait*/ ctx[14].levels
 	: "") + "";
 
 	let t2;
 	let span1;
 	let t3;
-	let t4_value = /*trait*/ ctx[13].controlRating + "";
+	let t4_value = /*trait*/ ctx[14].controlRating + "";
 	let t4;
 	let mounted;
 	let dispose;
@@ -34804,7 +35101,7 @@ function create_no_edit_slot_3(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span0, "slot", "no-edit");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "slot", "no-edit");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(span1, "class", "fas fa-dice d6 roll-ico cr-roll svelte-1uk8ldr");
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[13].controlRating === "n/a");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[14].controlRating === "n/a");
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span0, anchor);
@@ -34817,7 +35114,7 @@ function create_no_edit_slot_3(ctx) {
 
 			if (!mounted) {
 				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(span1, "click", function () {
-					if (Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(/*rollCr*/ ctx[5](/*trait*/ ctx[13]))) /*rollCr*/ ctx[5](/*trait*/ ctx[13]).apply(this, arguments);
+					if (Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(/*rollCr*/ ctx[6](/*trait*/ ctx[14]))) /*rollCr*/ ctx[6](/*trait*/ ctx[14]).apply(this, arguments);
 				});
 
 				mounted = true;
@@ -34825,16 +35122,16 @@ function create_no_edit_slot_3(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*disadvantages*/ 2 && t0_value !== (t0_value = /*trait*/ ctx[13].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			if (dirty & /*disadvantages*/ 4 && t0_value !== (t0_value = /*trait*/ ctx[14].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*disadvantages*/ 2 && t2_value !== (t2_value = (/*trait*/ ctx[13].hasLevels
-			? /*trait*/ ctx[13].levels
+			if (dirty & /*disadvantages*/ 4 && t2_value !== (t2_value = (/*trait*/ ctx[14].hasLevels
+			? /*trait*/ ctx[14].levels
 			: "") + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
 
-			if (dirty & /*disadvantages*/ 2 && t4_value !== (t4_value = /*trait*/ ctx[13].controlRating + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t4, t4_value);
+			if (dirty & /*disadvantages*/ 4 && t4_value !== (t4_value = /*trait*/ ctx[14].controlRating + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t4, t4_value);
 
-			if (dirty & /*disadvantages*/ 2) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[13].controlRating === "n/a");
+			if (dirty & /*disadvantages*/ 4) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["toggle_class"])(span1, "no-show", /*trait*/ ctx[14].controlRating === "n/a");
 			}
 		},
 		d(detaching) {
@@ -34846,7 +35143,7 @@ function create_no_edit_slot_3(ctx) {
 	};
 }
 
-// (82:12) <Input                config={{ clickToEdit: true }}                entity={ownedItem ? ownedItem._entity : null}                path="data.name"                alsoUpdate={['name']}                let:value>
+// (95:12) <Input                config={{ clickToEdit: true }}                entity={ownedItem ? ownedItem._entity : null}                path="data.name"                alsoUpdate={['name']}                let:value>
 function create_default_slot_12(ctx) {
 	let t;
 
@@ -34864,10 +35161,10 @@ function create_default_slot_12(ctx) {
 	};
 }
 
-// (108:14) <span slot="no-edit">
+// (121:14) <span slot="no-edit">
 function create_no_edit_slot_2(ctx) {
 	let span;
-	let t_value = /*value*/ ctx[17] + "";
+	let t_value = /*value*/ ctx[18] + "";
 	let t;
 
 	return {
@@ -34881,7 +35178,7 @@ function create_no_edit_slot_2(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*value*/ 131072 && t_value !== (t_value = /*value*/ ctx[17] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*value*/ 262144 && t_value !== (t_value = /*value*/ ctx[18] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
@@ -34889,10 +35186,10 @@ function create_no_edit_slot_2(ctx) {
 	};
 }
 
-// (111:10) <div slot="notes">
+// (124:10) <div slot="notes">
 function create_notes_slot_1(ctx) {
 	let div;
-	let t_value = /*trait*/ ctx[13].notes + "";
+	let t_value = /*trait*/ ctx[14].notes + "";
 	let t;
 
 	return {
@@ -34906,7 +35203,7 @@ function create_notes_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*disadvantages*/ 2 && t_value !== (t_value = /*trait*/ ctx[13].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*disadvantages*/ 4 && t_value !== (t_value = /*trait*/ ctx[14].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
@@ -34914,13 +35211,13 @@ function create_notes_slot_1(ctx) {
 	};
 }
 
-// (71:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              e.detail.entity.delete();            }}>
+// (84:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              e.detail.entity.delete();            }}>
 function create_default_slot_10(ctx) {
 	let td0;
 	let input0;
 	let t0;
 	let td1;
-	let t1_value = /*trait*/ ctx[13].adjustedPoints() + "";
+	let t1_value = /*trait*/ ctx[14].adjustedPoints() + "";
 	let t1;
 	let t2;
 	let td2;
@@ -34929,42 +35226,42 @@ function create_default_slot_10(ctx) {
 	let t4;
 	let current;
 
-	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
+	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_3__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[16]
-				? /*ownedItem*/ ctx[16]._entity
+				entity: /*ownedItem*/ ctx[17]
+				? /*ownedItem*/ ctx[17]._entity
 				: null,
 				path: "data.name",
 				alsoUpdate: ["name"],
 				$$slots: {
 					default: [
 						create_default_slot_12,
-						({ value }) => ({ 17: value }),
-						({ value }) => value ? 131072 : 0
+						({ value }) => ({ 18: value }),
+						({ value }) => value ? 262144 : 0
 					],
 					"no-edit": [
 						create_no_edit_slot_3,
-						({ value }) => ({ 17: value }),
-						({ value }) => value ? 131072 : 0
+						({ value }) => ({ 18: value }),
+						({ value }) => value ? 262144 : 0
 					]
 				},
 				$$scope: { ctx }
 			}
 		});
 
-	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
+	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_3__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[16]
-				? /*ownedItem*/ ctx[16]._entity
+				entity: /*ownedItem*/ ctx[17]
+				? /*ownedItem*/ ctx[17]._entity
 				: null,
 				path: "data.reference",
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot_2,
-						({ value }) => ({ 17: value }),
-						({ value }) => value ? 131072 : 0
+						({ value }) => ({ 18: value }),
+						({ value }) => value ? 262144 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -35001,23 +35298,23 @@ function create_default_slot_10(ctx) {
 		p(ctx, dirty) {
 			const input0_changes = {};
 
-			if (dirty & /*ownedItem*/ 65536) input0_changes.entity = /*ownedItem*/ ctx[16]
-			? /*ownedItem*/ ctx[16]._entity
+			if (dirty & /*ownedItem*/ 131072) input0_changes.entity = /*ownedItem*/ ctx[17]
+			? /*ownedItem*/ ctx[17]._entity
 			: null;
 
-			if (dirty & /*$$scope, disadvantages*/ 524290) {
+			if (dirty & /*$$scope, disadvantages*/ 1048580) {
 				input0_changes.$$scope = { dirty, ctx };
 			}
 
 			input0.$set(input0_changes);
-			if ((!current || dirty & /*disadvantages*/ 2) && t1_value !== (t1_value = /*trait*/ ctx[13].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if ((!current || dirty & /*disadvantages*/ 4) && t1_value !== (t1_value = /*trait*/ ctx[14].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 			const input1_changes = {};
 
-			if (dirty & /*ownedItem*/ 65536) input1_changes.entity = /*ownedItem*/ ctx[16]
-			? /*ownedItem*/ ctx[16]._entity
+			if (dirty & /*ownedItem*/ 131072) input1_changes.entity = /*ownedItem*/ ctx[17]
+			? /*ownedItem*/ ctx[17]._entity
 			: null;
 
-			if (dirty & /*$$scope, value*/ 655360) {
+			if (dirty & /*$$scope, value*/ 1310720) {
 				input1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35048,29 +35345,29 @@ function create_default_slot_10(ctx) {
 	};
 }
 
-// (70:6) {#each disadvantages as trait, i (trait.foundryID)}
+// (83:6) {#each disadvantages as trait, i (trait.foundryID)}
 function create_each_block_1(key_1, ctx) {
 	let first;
 	let row;
 	let current;
 
-	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["Row"]({
+	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_4__["Row"]({
 			props: {
-				disabled: /*trait*/ ctx[13].disabled,
+				disabled: /*trait*/ ctx[14].disabled,
 				colspan: "5",
-				i: /*i*/ ctx[15],
-				id: /*trait*/ ctx[13].foundryID,
+				i: /*i*/ ctx[16],
+				id: /*trait*/ ctx[14].foundryID,
 				draggable: true,
 				$$slots: {
 					default: [
 						create_default_slot_10,
-						({ ownedItem }) => ({ 16: ownedItem }),
-						({ ownedItem }) => ownedItem ? 65536 : 0
+						({ ownedItem }) => ({ 17: ownedItem }),
+						({ ownedItem }) => ownedItem ? 131072 : 0
 					],
 					notes: [
 						create_notes_slot_1,
-						({ ownedItem }) => ({ 16: ownedItem }),
-						({ ownedItem }) => ownedItem ? 65536 : 0
+						({ ownedItem }) => ({ 17: ownedItem }),
+						({ ownedItem }) => ownedItem ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -35094,11 +35391,11 @@ function create_each_block_1(key_1, ctx) {
 		},
 		p(ctx, dirty) {
 			const row_changes = {};
-			if (dirty & /*disadvantages*/ 2) row_changes.disabled = /*trait*/ ctx[13].disabled;
-			if (dirty & /*disadvantages*/ 2) row_changes.i = /*i*/ ctx[15];
-			if (dirty & /*disadvantages*/ 2) row_changes.id = /*trait*/ ctx[13].foundryID;
+			if (dirty & /*disadvantages*/ 4) row_changes.disabled = /*trait*/ ctx[14].disabled;
+			if (dirty & /*disadvantages*/ 4) row_changes.i = /*i*/ ctx[16];
+			if (dirty & /*disadvantages*/ 4) row_changes.id = /*trait*/ ctx[14].foundryID;
 
-			if (dirty & /*$$scope, disadvantages, ownedItem*/ 589826) {
+			if (dirty & /*$$scope, disadvantages, ownedItem*/ 1179652) {
 				row_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35120,7 +35417,7 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (50:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Disadvantage'],            },          });        }}>
+// (63:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Disadvantage'],            },          });        }}>
 function create_default_slot_9(ctx) {
 	let t0;
 	let t1;
@@ -35129,8 +35426,8 @@ function create_default_slot_9(ctx) {
 	let each_1_lookup = new Map();
 	let each_1_anchor;
 	let current;
-	let each_value_1 = /*disadvantages*/ ctx[1];
-	const get_key = ctx => /*trait*/ ctx[13].foundryID;
+	let each_value_1 = /*disadvantages*/ ctx[2];
+	const get_key = ctx => /*trait*/ ctx[14].foundryID;
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -35163,8 +35460,8 @@ function create_default_slot_9(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*disadvantages, ownedItem, value, rollCr*/ 196642) {
-				const each_value_1 = /*disadvantages*/ ctx[1];
+			if (dirty & /*disadvantages, ownedItem, value, rollCr*/ 393284) {
+				const each_value_1 = /*disadvantages*/ ctx[2];
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block_1, each_1_anchor, get_each_context_1);
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
@@ -35200,12 +35497,12 @@ function create_default_slot_9(ctx) {
 	};
 }
 
-// (49:2) <TabPanel>
+// (62:2) <TabPanel>
 function create_default_slot_8(ctx) {
 	let list;
 	let current;
 
-	list = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["List"]({
+	list = new _list_list_ts__WEBPACK_IMPORTED_MODULE_4__["List"]({
 			props: {
 				type: "trait",
 				$$slots: {
@@ -35216,7 +35513,7 @@ function create_default_slot_8(ctx) {
 			}
 		});
 
-	list.$on("addlistitem", /*addlistitem_handler*/ ctx[7]);
+	list.$on("addlistitem", /*addlistitem_handler*/ ctx[8]);
 
 	return {
 		c() {
@@ -35229,7 +35526,7 @@ function create_default_slot_8(ctx) {
 		p(ctx, dirty) {
 			const list_changes = {};
 
-			if (dirty & /*$$scope, disadvantages, $entity*/ 524298) {
+			if (dirty & /*$$scope, disadvantages, $entity*/ 1048596) {
 				list_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35250,7 +35547,7 @@ function create_default_slot_8(ctx) {
 	};
 }
 
-// (136:6) <th slot="header">
+// (149:6) <th slot="header">
 function create_header_slot(ctx) {
 	let th0;
 	let th1;
@@ -35276,7 +35573,7 @@ function create_header_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, th2, anchor);
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler_1*/ ctx[8]);
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(th0, "dblclick", /*dblclick_handler_1*/ ctx[9]);
 				mounted = true;
 			}
 		},
@@ -35291,15 +35588,15 @@ function create_header_slot(ctx) {
 	};
 }
 
-// (155:14) <span slot="no-edit">
+// (168:14) <span slot="no-edit">
 function create_no_edit_slot_1(ctx) {
 	let span;
-	let t0_value = /*trait*/ ctx[13].name + "";
+	let t0_value = /*trait*/ ctx[14].name + "";
 	let t0;
 	let t1;
 
-	let t2_value = (/*trait*/ ctx[13].hasLevels
-	? /*trait*/ ctx[13].levels
+	let t2_value = (/*trait*/ ctx[14].hasLevels
+	? /*trait*/ ctx[14].levels
 	: "") + "";
 
 	let t2;
@@ -35319,10 +35616,10 @@ function create_no_edit_slot_1(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t2);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages*/ 4 && t0_value !== (t0_value = /*trait*/ ctx[13].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
+			if (dirty & /*advantages, other*/ 10 && t0_value !== (t0_value = /*trait*/ ctx[14].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, t0_value);
 
-			if (dirty & /*advantages*/ 4 && t2_value !== (t2_value = (/*trait*/ ctx[13].hasLevels
-			? /*trait*/ ctx[13].levels
+			if (dirty & /*advantages, other*/ 10 && t2_value !== (t2_value = (/*trait*/ ctx[14].hasLevels
+			? /*trait*/ ctx[14].levels
 			: "") + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t2, t2_value);
 		},
 		d(detaching) {
@@ -35331,10 +35628,10 @@ function create_no_edit_slot_1(ctx) {
 	};
 }
 
-// (168:14) <span slot="no-edit">
+// (181:14) <span slot="no-edit">
 function create_no_edit_slot(ctx) {
 	let span;
-	let t_value = /*value*/ ctx[17] + "";
+	let t_value = /*value*/ ctx[18] + "";
 	let t;
 
 	return {
@@ -35348,7 +35645,7 @@ function create_no_edit_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(span, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*value*/ 131072 && t_value !== (t_value = /*value*/ ctx[17] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*value*/ 262144 && t_value !== (t_value = /*value*/ ctx[18] + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
@@ -35356,10 +35653,10 @@ function create_no_edit_slot(ctx) {
 	};
 }
 
-// (171:10) <div slot="notes">
+// (184:10) <div slot="notes">
 function create_notes_slot(ctx) {
 	let div;
-	let t_value = /*trait*/ ctx[13].notes + "";
+	let t_value = /*trait*/ ctx[14].notes + "";
 	let t;
 
 	return {
@@ -35373,7 +35670,7 @@ function create_notes_slot(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages*/ 4 && t_value !== (t_value = /*trait*/ ctx[13].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+			if (dirty & /*advantages, other*/ 10 && t_value !== (t_value = /*trait*/ ctx[14].notes + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
@@ -35381,13 +35678,13 @@ function create_notes_slot(ctx) {
 	};
 }
 
-// (138:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              $entity.getOwnedItem(trait.foundryID).delete();            }}>
+// (151:8) <Row            disabled={trait.disabled}            colspan="5"            let:ownedItem            {i}            id={trait.foundryID}            draggable={true}            on:delete={(e) => {              $entity.getOwnedItem(trait.foundryID).delete();            }}>
 function create_default_slot_5(ctx) {
 	let td0;
 	let input0;
 	let t0;
 	let td1;
-	let t1_value = /*trait*/ ctx[13].adjustedPoints() + "";
+	let t1_value = /*trait*/ ctx[14].adjustedPoints() + "";
 	let t1;
 	let t2;
 	let td2;
@@ -35396,37 +35693,37 @@ function create_default_slot_5(ctx) {
 	let t4;
 	let current;
 
-	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
+	input0 = new _form_Input__WEBPACK_IMPORTED_MODULE_3__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[16]
-				? /*ownedItem*/ ctx[16]._entity
+				entity: /*ownedItem*/ ctx[17]
+				? /*ownedItem*/ ctx[17]._entity
 				: null,
 				path: "data.name",
 				alsoUpdate: ["name"],
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot_1,
-						({ value }) => ({ 17: value }),
-						({ value }) => value ? 131072 : 0
+						({ value }) => ({ 18: value }),
+						({ value }) => value ? 262144 : 0
 					]
 				},
 				$$scope: { ctx }
 			}
 		});
 
-	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_2__["default"]({
+	input1 = new _form_Input__WEBPACK_IMPORTED_MODULE_3__["default"]({
 			props: {
 				config: { clickToEdit: true },
-				entity: /*ownedItem*/ ctx[16]
-				? /*ownedItem*/ ctx[16]._entity
+				entity: /*ownedItem*/ ctx[17]
+				? /*ownedItem*/ ctx[17]._entity
 				: null,
 				path: "data.reference",
 				$$slots: {
 					"no-edit": [
 						create_no_edit_slot,
-						({ value }) => ({ 17: value }),
-						({ value }) => value ? 131072 : 0
+						({ value }) => ({ 18: value }),
+						({ value }) => value ? 262144 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -35463,23 +35760,23 @@ function create_default_slot_5(ctx) {
 		p(ctx, dirty) {
 			const input0_changes = {};
 
-			if (dirty & /*ownedItem*/ 65536) input0_changes.entity = /*ownedItem*/ ctx[16]
-			? /*ownedItem*/ ctx[16]._entity
+			if (dirty & /*ownedItem*/ 131072) input0_changes.entity = /*ownedItem*/ ctx[17]
+			? /*ownedItem*/ ctx[17]._entity
 			: null;
 
-			if (dirty & /*$$scope, advantages*/ 524292) {
+			if (dirty & /*$$scope, advantages, other*/ 1048586) {
 				input0_changes.$$scope = { dirty, ctx };
 			}
 
 			input0.$set(input0_changes);
-			if ((!current || dirty & /*advantages*/ 4) && t1_value !== (t1_value = /*trait*/ ctx[13].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
+			if ((!current || dirty & /*advantages, other*/ 10) && t1_value !== (t1_value = /*trait*/ ctx[14].adjustedPoints() + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t1, t1_value);
 			const input1_changes = {};
 
-			if (dirty & /*ownedItem*/ 65536) input1_changes.entity = /*ownedItem*/ ctx[16]
-			? /*ownedItem*/ ctx[16]._entity
+			if (dirty & /*ownedItem*/ 131072) input1_changes.entity = /*ownedItem*/ ctx[17]
+			? /*ownedItem*/ ctx[17]._entity
 			: null;
 
-			if (dirty & /*$$scope, value*/ 655360) {
+			if (dirty & /*$$scope, value*/ 1310720) {
 				input1_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35510,33 +35807,33 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (137:6) {#each advantages as trait, i (trait.foundryID)}
+// (150:6) {#each [...advantages, ...other] as trait, i (trait.foundryID)}
 function create_each_block(key_1, ctx) {
 	let first;
 	let row;
 	let current;
 
 	function delete_handler_1(...args) {
-		return /*delete_handler_1*/ ctx[9](/*trait*/ ctx[13], ...args);
+		return /*delete_handler_1*/ ctx[10](/*trait*/ ctx[14], ...args);
 	}
 
-	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["Row"]({
+	row = new _list_list_ts__WEBPACK_IMPORTED_MODULE_4__["Row"]({
 			props: {
-				disabled: /*trait*/ ctx[13].disabled,
+				disabled: /*trait*/ ctx[14].disabled,
 				colspan: "5",
-				i: /*i*/ ctx[15],
-				id: /*trait*/ ctx[13].foundryID,
+				i: /*i*/ ctx[16],
+				id: /*trait*/ ctx[14].foundryID,
 				draggable: true,
 				$$slots: {
 					default: [
 						create_default_slot_5,
-						({ ownedItem }) => ({ 16: ownedItem }),
-						({ ownedItem }) => ownedItem ? 65536 : 0
+						({ ownedItem }) => ({ 17: ownedItem }),
+						({ ownedItem }) => ownedItem ? 131072 : 0
 					],
 					notes: [
 						create_notes_slot,
-						({ ownedItem }) => ({ 16: ownedItem }),
-						({ ownedItem }) => ownedItem ? 65536 : 0
+						({ ownedItem }) => ({ 17: ownedItem }),
+						({ ownedItem }) => ownedItem ? 131072 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -35561,11 +35858,11 @@ function create_each_block(key_1, ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const row_changes = {};
-			if (dirty & /*advantages*/ 4) row_changes.disabled = /*trait*/ ctx[13].disabled;
-			if (dirty & /*advantages*/ 4) row_changes.i = /*i*/ ctx[15];
-			if (dirty & /*advantages*/ 4) row_changes.id = /*trait*/ ctx[13].foundryID;
+			if (dirty & /*advantages, other*/ 10) row_changes.disabled = /*trait*/ ctx[14].disabled;
+			if (dirty & /*advantages, other*/ 10) row_changes.i = /*i*/ ctx[16];
+			if (dirty & /*advantages, other*/ 10) row_changes.id = /*trait*/ ctx[14].foundryID;
 
-			if (dirty & /*$$scope, advantages, ownedItem*/ 589828) {
+			if (dirty & /*$$scope, advantages, other, ownedItem*/ 1179658) {
 				row_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35587,7 +35884,7 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-// (117:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Advantage'],            },          });        }}>
+// (130:4) <List        type="trait"        on:addlistitem={() => {          $entity.createOwnedItem({            name: '???',            type: 'trait',            data: {              categories: ['Advantage'],            },          });        }}>
 function create_default_slot_4(ctx) {
 	let t0;
 	let t1;
@@ -35596,8 +35893,8 @@ function create_default_slot_4(ctx) {
 	let each_1_lookup = new Map();
 	let each_1_anchor;
 	let current;
-	let each_value = /*advantages*/ ctx[2];
-	const get_key = ctx => /*trait*/ ctx[13].foundryID;
+	let each_value = [.../*advantages*/ ctx[1], .../*other*/ ctx[3]];
+	const get_key = ctx => /*trait*/ ctx[14].foundryID;
 
 	for (let i = 0; i < each_value.length; i += 1) {
 		let child_ctx = get_each_context(ctx, each_value, i);
@@ -35630,8 +35927,8 @@ function create_default_slot_4(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*advantages, $entity, ownedItem, value*/ 196620) {
-				const each_value = /*advantages*/ ctx[2];
+			if (dirty & /*advantages, other, $entity, ownedItem, value*/ 393242) {
+				const each_value = [.../*advantages*/ ctx[1], .../*other*/ ctx[3]];
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
 				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["outro_and_destroy_block"], create_each_block, each_1_anchor, get_each_context);
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
@@ -35667,12 +35964,12 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (116:2) <TabPanel>
+// (129:2) <TabPanel>
 function create_default_slot_3(ctx) {
 	let list;
 	let current;
 
-	list = new _list_list_ts__WEBPACK_IMPORTED_MODULE_3__["List"]({
+	list = new _list_list_ts__WEBPACK_IMPORTED_MODULE_4__["List"]({
 			props: {
 				type: "trait",
 				$$slots: {
@@ -35683,7 +35980,7 @@ function create_default_slot_3(ctx) {
 			}
 		});
 
-	list.$on("addlistitem", /*addlistitem_handler_1*/ ctx[10]);
+	list.$on("addlistitem", /*addlistitem_handler_1*/ ctx[11]);
 
 	return {
 		c() {
@@ -35696,7 +35993,7 @@ function create_default_slot_3(ctx) {
 		p(ctx, dirty) {
 			const list_changes = {};
 
-			if (dirty & /*$$scope, advantages, $entity*/ 524300) {
+			if (dirty & /*$$scope, advantages, other, $entity*/ 1048602) {
 				list_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35717,7 +36014,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (176:2) <TabPanel>
+// (189:2) <TabPanel>
 function create_default_slot_2(ctx) {
 	let h1;
 
@@ -35735,7 +36032,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (179:2) <TabPanel>
+// (192:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let h1;
 
@@ -35753,7 +36050,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (38:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'traits-tab', e.detail);    }}>
+// (51:0) <Tabs    tabIndex={$entity.getFlag('GURPS', 'traits-tab') || 0}    on:tabchange={(e) => {      $entity.setFlag('GURPS', 'traits-tab', e.detail);    }}>
 function create_default_slot(ctx) {
 	let tablist;
 	let t0;
@@ -35766,35 +36063,35 @@ function create_default_slot(ctx) {
 	let tabpanel3;
 	let current;
 
-	tablist = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["TabList"]({
+	tablist = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["TabList"]({
 			props: {
 				$$slots: { default: [create_default_slot_13] },
 				$$scope: { ctx }
 			}
 		});
 
-	tabpanel0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["TabPanel"]({
+	tabpanel0 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["TabPanel"]({
 			props: {
 				$$slots: { default: [create_default_slot_8] },
 				$$scope: { ctx }
 			}
 		});
 
-	tabpanel1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["TabPanel"]({
+	tabpanel1 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["TabPanel"]({
 			props: {
 				$$slots: { default: [create_default_slot_3] },
 				$$scope: { ctx }
 			}
 		});
 
-	tabpanel2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["TabPanel"]({
+	tabpanel2 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["TabPanel"]({
 			props: {
 				$$slots: { default: [create_default_slot_2] },
 				$$scope: { ctx }
 			}
 		});
 
-	tabpanel3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["TabPanel"]({
+	tabpanel3 = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["TabPanel"]({
 			props: {
 				$$slots: { default: [create_default_slot_1] },
 				$$scope: { ctx }
@@ -35828,35 +36125,35 @@ function create_default_slot(ctx) {
 		p(ctx, dirty) {
 			const tablist_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tablist_changes.$$scope = { dirty, ctx };
 			}
 
 			tablist.$set(tablist_changes);
 			const tabpanel0_changes = {};
 
-			if (dirty & /*$$scope, $entity, disadvantages*/ 524298) {
+			if (dirty & /*$$scope, $entity, disadvantages*/ 1048596) {
 				tabpanel0_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel0.$set(tabpanel0_changes);
 			const tabpanel1_changes = {};
 
-			if (dirty & /*$$scope, $entity, advantages*/ 524300) {
+			if (dirty & /*$$scope, $entity, advantages, other*/ 1048602) {
 				tabpanel1_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel1.$set(tabpanel1_changes);
 			const tabpanel2_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tabpanel2_changes.$$scope = { dirty, ctx };
 			}
 
 			tabpanel2.$set(tabpanel2_changes);
 			const tabpanel3_changes = {};
 
-			if (dirty & /*$$scope*/ 524288) {
+			if (dirty & /*$$scope*/ 1048576) {
 				tabpanel3_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35897,15 +36194,15 @@ function create_fragment(ctx) {
 	let tabs;
 	let current;
 
-	tabs = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_4__["Tabs"]({
+	tabs = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_5__["Tabs"]({
 			props: {
-				tabIndex: /*$entity*/ ctx[3].getFlag("GURPS", "traits-tab") || 0,
+				tabIndex: /*$entity*/ ctx[4].getFlag("GURPS", "traits-tab") || 0,
 				$$slots: { default: [create_default_slot] },
 				$$scope: { ctx }
 			}
 		});
 
-	tabs.$on("tabchange", /*tabchange_handler*/ ctx[11]);
+	tabs.$on("tabchange", /*tabchange_handler*/ ctx[12]);
 
 	return {
 		c() {
@@ -35917,9 +36214,9 @@ function create_fragment(ctx) {
 		},
 		p(ctx, [dirty]) {
 			const tabs_changes = {};
-			if (dirty & /*$entity*/ 8) tabs_changes.tabIndex = /*$entity*/ ctx[3].getFlag("GURPS", "traits-tab") || 0;
+			if (dirty & /*$entity*/ 16) tabs_changes.tabIndex = /*$entity*/ ctx[4].getFlag("GURPS", "traits-tab") || 0;
 
-			if (dirty & /*$$scope, $entity, advantages, disadvantages*/ 524302) {
+			if (dirty & /*$$scope, $entity, advantages, other, disadvantages*/ 1048606) {
 				tabs_changes.$$scope = { dirty, ctx };
 			}
 
@@ -35949,20 +36246,20 @@ function instance($$self, $$props, $$invalidate) {
 
 	let $entity,
 		$$unsubscribe_entity = svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(3, $entity = $$value)), entity);
+		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(4, $entity = $$value)), entity);
 
 	$$self.$$.on_destroy.push(() => $$unsubscribe_entity());
 	let { entity = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("entity") || null } = $$props;
 	$$subscribe_entity();
 	const GURPS = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("GURPS");
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(12, $GURPS = value));
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, GURPS, value => $$invalidate(13, $GURPS = value));
 
 	function rollCr(trait) {
 		let rollAgainst = trait.controlRating === "none"
 		? 0
 		: +trait.controlRating;
 
-		$entity.rollSkill(`${trait.name}`, rollAgainst);
+		_GURPSFoundry_rolling__WEBPACK_IMPORTED_MODULE_2__["Roller"].customRoll($entity, rollAgainst, `Control Save vs. ${trait.name}`);
 	}
 
 	const dblclick_handler = e => {
@@ -36001,23 +36298,29 @@ function instance($$self, $$props, $$invalidate) {
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(0, entity = $$props.entity));
 	};
 
-	let disadvantages;
 	let advantages;
+	let disadvantages;
+	let other;
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*$GURPS*/ 4096) {
-			$: $$invalidate(1, disadvantages = window.game.gurps4e.indexSort([].concat($GURPS.traitList.splitByType().disadvantages, $GURPS.traitList.splitByType().quirks)));
+		if ($$self.$$.dirty & /*$GURPS*/ 8192) {
+			$: $$invalidate(1, advantages = window.game.gurps4e.indexSort($GURPS.traitList.iter().filter(trait => trait.adjustedPoints() >= 0 || trait.adjustedPoints() >= 0 && (/advantage|perk/i).test(Array.from(trait.categories)))));
 		}
 
-		if ($$self.$$.dirty & /*$GURPS*/ 4096) {
-			$: $$invalidate(2, advantages = window.game.gurps4e.indexSort([].concat($GURPS.traitList.splitByType().advantages, $GURPS.traitList.splitByType().perks)));
+		if ($$self.$$.dirty & /*$GURPS*/ 8192) {
+			$: $$invalidate(2, disadvantages = window.game.gurps4e.indexSort($GURPS.traitList.iter().filter(trait => trait.adjustedPoints() < 0 || trait.adjustedPoints() < 0 && (/quirk|disadvantage/i).test(Array.from(trait.categories)))));
+		}
+
+		if ($$self.$$.dirty & /*$GURPS, advantages, disadvantages*/ 8198) {
+			$: $$invalidate(3, other = $GURPS.traitList.iter().filter(trait => ![...advantages, ...disadvantages].includes(trait)));
 		}
 	};
 
 	return [
 		entity,
-		disadvantages,
 		advantages,
+		disadvantages,
+		other,
 		$entity,
 		GURPS,
 		rollCr,
@@ -36089,7 +36392,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_CHANGELOG_md__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../INFO.md */ "./INFO.md");
 /* harmony import */ var _INFO_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_INFO_md__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\WelcomeDialog.svelte generated by Svelte v3.25.0 */
+/* src\svelte\WelcomeDialog.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -36455,7 +36758,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers.ts */ "./src/helpers.ts");
 /* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-/* src\svelte\character-lists\Equipment.svelte generated by Svelte v3.25.0 */
+/* src\svelte\character-lists\Equipment.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -36718,9 +37021,9 @@ class Equipment extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComp
 
 /***/ }),
 
-/***/ "./src/svelte/chat/Damage.svelte":
+/***/ "./src/svelte/chat/Attack.svelte":
 /*!***************************************!*\
-  !*** ./src/svelte/chat/Damage.svelte ***!
+  !*** ./src/svelte/chat/Attack.svelte ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -36728,7 +37031,7 @@ class Equipment extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComp
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* src\svelte\chat\Damage.svelte generated by Svelte v3.25.0 */
+/* src\svelte\chat\Attack.svelte generated by Svelte v3.25.1 */
 
 
 function get_each_context_1(ctx, list, i) {
@@ -36743,7 +37046,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (31:12) {#each die.results as result}
+// (29:12) {#each die.results as result}
 function create_each_block_1(ctx) {
 	let li;
 	let t_value = /*result*/ ctx[9] + "";
@@ -36766,7 +37069,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (24:8) {#each roll.dice as die}
+// (22:8) {#each roll.dice as die}
 function create_each_block(ctx) {
 	let p;
 	let t0_value = /*die*/ ctx[6].formula + "";
@@ -36964,7 +37267,7 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let { message = null } = $$props;
 	const roll = message.roll;
-	const { type, weaponName, damageType, weaponUsage } = message.getFlag("GURPS", "roll_data");
+	const { type, weaponName, damageType, weaponUsage } = message.getFlag("GURPS", "message_data");
 
 	$$self.$$set = $$props => {
 		if ("message" in $$props) $$invalidate(4, message = $$props.message);
@@ -36973,14 +37276,14 @@ function instance($$self, $$props, $$invalidate) {
 	return [roll, weaponName, damageType, weaponUsage, message];
 }
 
-class Damage extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+class Attack extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { message: 4 });
 	}
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Damage);
+/* harmony default export */ __webpack_exports__["default"] = (Attack);
 
 /***/ }),
 
@@ -36994,13 +37297,49 @@ class Damage extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* src\svelte\chat\Skill.svelte generated by Svelte v3.25.0 */
+/* src\svelte\chat\Skill.svelte generated by Svelte v3.25.1 */
 
+
+function create_fragment(ctx) {
+	let html_tag;
+	let raw_value = /*message*/ ctx[0].data.content + "";
+	let html_anchor;
+
+	return {
+		c() {
+			html_anchor = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["empty"])();
+			html_tag = new svelte_internal__WEBPACK_IMPORTED_MODULE_0__["HtmlTag"](html_anchor);
+		},
+		m(target, anchor) {
+			html_tag.m(raw_value, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, html_anchor, anchor);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*message*/ 1 && raw_value !== (raw_value = /*message*/ ctx[0].data.content + "")) html_tag.p(raw_value);
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(html_anchor);
+			if (detaching) html_tag.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { message = null } = $$props;
+
+	$$self.$$set = $$props => {
+		if ("message" in $$props) $$invalidate(0, message = $$props.message);
+	};
+
+	return [message];
+}
 
 class Skill extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
 	constructor(options) {
 		super();
-		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, null, null, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {});
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { message: 0 });
 	}
 }
 
@@ -37019,7 +37358,7 @@ class Skill extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponen
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\clocks\Clock.svelte generated by Svelte v3.25.0 */
+/* src\svelte\clocks\Clock.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -37202,6 +37541,426 @@ class Clock extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponen
 
 /***/ }),
 
+/***/ "./src/svelte/dialogs/AttackDialog.svelte":
+/*!************************************************!*\
+  !*** ./src/svelte/dialogs/AttackDialog.svelte ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _components_Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Dialog */ "./src/svelte/Dialog.svelte");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../form/form */ "./src/svelte/form/form.ts");
+/* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* src\svelte\dialogs\AttackDialog.svelte generated by Svelte v3.25.1 */
+
+
+
+
+
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[7] = list[i];
+	child_ctx[17] = i;
+	return child_ctx;
+}
+
+// (68:4) {#if weapon.getType() === 'ranged_weapon'}
+function create_if_block(ctx) {
+	let span;
+	let t1;
+	let select;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*weapon*/ ctx[0].getAmmoSources() || [];
+	const get_key = ctx => /*ammoSource*/ ctx[7].uuid;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			span = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span.textContent = "Ammo Source To Use";
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			select = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("select");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, span, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, select, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].m(select, null);
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*weapon*/ 1) {
+				const each_value = /*weapon*/ ctx[0].getAmmoSources() || [];
+				each_blocks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_keyed_each"])(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, select, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_block"], create_each_block, null, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(span);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(select);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (71:8) {#each weapon.getAmmoSources() || [] as ammoSource, i (ammoSource.uuid)}
+function create_each_block(key_1, ctx) {
+	let option;
+	let t_value = /*ammoSource*/ ctx[7].name + "";
+	let t;
+	let option_value_value;
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			option = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("option");
+			t = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(t_value);
+			option.__value = option_value_value = /*ammoSource*/ ctx[7].foundryID;
+			option.value = option.__value;
+			this.first = option;
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, option, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(option, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*weapon*/ 1 && t_value !== (t_value = /*ammoSource*/ ctx[7].name + "")) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t, t_value);
+
+			if (dirty & /*weapon*/ 1 && option_value_value !== (option_value_value = /*ammoSource*/ ctx[7].foundryID)) {
+				option.__value = option_value_value;
+				option.value = option.__value;
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(option);
+		}
+	};
+}
+
+// (50:0) <Dialog    on:close    title="Attack Roll"    {buttons}    overrideSubmit={true}    height={300}    width={200}>
+function create_default_slot(ctx) {
+	let div;
+	let span0;
+	let t1;
+	let input0;
+	let t2;
+	let span1;
+	let t4;
+	let input1;
+	let t5;
+	let span2;
+	let t7;
+	let input2;
+	let t8;
+	let span3;
+	let t10;
+	let input3;
+	let t11;
+	let span4;
+	let t13;
+	let input4;
+	let t14;
+	let show_if = /*weapon*/ ctx[0].getType() === "ranged_weapon";
+	let mounted;
+	let dispose;
+	let if_block = show_if && create_if_block(ctx);
+
+	return {
+		c() {
+			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
+			span0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span0.textContent = "Deceptive Attacks";
+			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			input0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span1.textContent = "Has Weapon Master";
+			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			input1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span2.textContent = "Rapid Strikes";
+			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			input2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span3.textContent = "Is Telegraphed";
+			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			input3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t11 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			span4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("span");
+			span4.textContent = "Other Mods";
+			t13 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			input4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("input");
+			t14 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			if (if_block) if_block.c();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input0, "type", "number");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input0, "min", "0");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input1, "type", "checkbox");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input2, "type", "number");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input2, "min", "0");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input3, "type", "checkbox");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(input4, "type", "number");
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(div, "class", "flex-col");
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input0);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*deceptiveAttacks*/ ctx[1]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span1);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input1);
+			input1.checked = /*hasWeaponMaster*/ ctx[3];
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t5);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t7);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input2);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*rapidStrikes*/ ctx[4]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t8);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span3);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t10);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input3);
+			input3.checked = /*telegraphed*/ ctx[2];
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t11);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, span4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t13);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, input4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input4, /*otherMods*/ ctx[5]);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["append"])(div, t14);
+			if (if_block) if_block.m(div, null);
+
+			if (!mounted) {
+				dispose = [
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input0, "input", /*input0_input_handler*/ ctx[8]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input1, "change", /*input1_change_handler*/ ctx[9]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input2, "input", /*input2_input_handler*/ ctx[10]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input3, "change", /*input3_change_handler*/ ctx[11]),
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(input4, "input", /*input4_input_handler*/ ctx[12])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*deceptiveAttacks*/ 2 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input0.value) !== /*deceptiveAttacks*/ ctx[1]) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input0, /*deceptiveAttacks*/ ctx[1]);
+			}
+
+			if (dirty & /*hasWeaponMaster*/ 8) {
+				input1.checked = /*hasWeaponMaster*/ ctx[3];
+			}
+
+			if (dirty & /*rapidStrikes*/ 16 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input2.value) !== /*rapidStrikes*/ ctx[4]) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input2, /*rapidStrikes*/ ctx[4]);
+			}
+
+			if (dirty & /*telegraphed*/ 4) {
+				input3.checked = /*telegraphed*/ ctx[2];
+			}
+
+			if (dirty & /*otherMods*/ 32 && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(input4.value) !== /*otherMods*/ ctx[5]) {
+				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_input_value"])(input4, /*otherMods*/ ctx[5]);
+			}
+
+			if (dirty & /*weapon*/ 1) show_if = /*weapon*/ ctx[0].getType() === "ranged_weapon";
+
+			if (show_if) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(div, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
+			if (if_block) if_block.d();
+			mounted = false;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["run_all"])(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let dialog;
+	let current;
+
+	dialog = new _components_Dialog__WEBPACK_IMPORTED_MODULE_1__["default"]({
+			props: {
+				title: "Attack Roll",
+				buttons: /*buttons*/ ctx[6],
+				overrideSubmit: true,
+				height: 300,
+				width: 200,
+				$$slots: { default: [create_default_slot] },
+				$$scope: { ctx }
+			}
+		});
+
+	dialog.$on("close", /*close_handler*/ ctx[13]);
+
+	return {
+		c() {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(dialog.$$.fragment);
+		},
+		m(target, anchor) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(dialog, target, anchor);
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			const dialog_changes = {};
+
+			if (dirty & /*$$scope, weapon, otherMods, telegraphed, rapidStrikes, hasWeaponMaster, deceptiveAttacks*/ 262207) {
+				dialog_changes.$$scope = { dirty, ctx };
+			}
+
+			dialog.$set(dialog_changes);
+		},
+		i(local) {
+			if (current) return;
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(dialog.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(dialog.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(dialog, detaching);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_3__["createEventDispatcher"])();
+	let { weapon = null } = $$props;
+	let deceptiveAttacks = 0;
+	let telegraphed = false;
+	let hasWeaponMaster = false;
+	let rapidStrikes = 0;
+	let otherMods = 0;
+	let ammoSource;
+
+	function sendDiceRoll() {
+		return [
+			{
+				modifier: `${deceptiveAttacks === 0 ? "+" : "-"}${deceptiveAttacks * 2}`,
+				description: "Deceptive attacks"
+			},
+			{
+				modifier: `${rapidStrikes === 0 ? "+" : "-"}${rapidStrikes * (hasWeaponMaster ? 3 : 6)}`,
+				description: "Rapid strikes"
+			},
+			{
+				modifier: `+${telegraphed ? 4 : 0}`,
+				description: "Is telegraphed"
+			},
+			{
+				modifier: `${otherMods >= 0 ? "+" : "-"}${otherMods}`,
+				description: "Other mods"
+			}
+		];
+	}
+
+	const buttons = {
+		submit: {
+			icon: "<i class=\"fas fa-check\"></i>",
+			label: "roll",
+			callback: () => dispatch("roll", sendDiceRoll())
+		}
+	};
+
+	function input0_input_handler() {
+		deceptiveAttacks = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		$$invalidate(1, deceptiveAttacks);
+	}
+
+	function input1_change_handler() {
+		hasWeaponMaster = this.checked;
+		$$invalidate(3, hasWeaponMaster);
+	}
+
+	function input2_input_handler() {
+		rapidStrikes = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		$$invalidate(4, rapidStrikes);
+	}
+
+	function input3_change_handler() {
+		telegraphed = this.checked;
+		$$invalidate(2, telegraphed);
+	}
+
+	function input4_input_handler() {
+		otherMods = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["to_number"])(this.value);
+		$$invalidate(5, otherMods);
+	}
+
+	function close_handler(event) {
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["bubble"])($$self, event);
+	}
+
+	$$self.$$set = $$props => {
+		if ("weapon" in $$props) $$invalidate(0, weapon = $$props.weapon);
+	};
+
+	return [
+		weapon,
+		deceptiveAttacks,
+		telegraphed,
+		hasWeaponMaster,
+		rapidStrikes,
+		otherMods,
+		buttons,
+		ammoSource,
+		input0_input_handler,
+		input1_change_handler,
+		input2_input_handler,
+		input3_change_handler,
+		input4_input_handler,
+		close_handler
+	];
+}
+
+class AttackDialog extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
+	constructor(options) {
+		super();
+		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], { weapon: 0 });
+	}
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (AttackDialog);
+
+/***/ }),
+
 /***/ "./src/svelte/dialogs/ModifierPrompt.svelte":
 /*!**************************************************!*\
   !*** ./src/svelte/dialogs/ModifierPrompt.svelte ***!
@@ -37216,7 +37975,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../form/form */ "./src/svelte/form/form.ts");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\dialogs\ModifierPrompt.svelte generated by Svelte v3.25.0 */
+/* src\svelte\dialogs\ModifierPrompt.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -37313,13 +38072,18 @@ function create_fragment(ctx) {
 
 function instance($$self, $$props, $$invalidate) {
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_3__["createEventDispatcher"])();
-	let modifier = [];
+	let modifier = 0;
 
 	const buttons = {
 		submit: {
 			icon: "<i class=\"fas fa-check\"></i>",
 			label: "Roll",
-			callback: () => dispatch("roll", modifier)
+			callback: () => dispatch("roll", [
+				{
+					modifier: `${modifier >= 0 ? "+" : ""}${modifier}`,
+					description: "Modifier"
+				}
+			])
 		}
 	};
 
@@ -37365,7 +38129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EquipmentModifier__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./EquipmentModifier */ "./src/svelte/editors/EquipmentModifier.svelte");
 /* harmony import */ var _Spell__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Spell */ "./src/svelte/editors/Spell.svelte");
 /* harmony import */ var _Ritual__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Ritual */ "./src/svelte/editors/Ritual.svelte");
-/* src\svelte\editors\Editor.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Editor.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -37517,7 +38281,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _panels_MeleeWeapons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./panels/MeleeWeapons */ "./src/svelte/editors/panels/MeleeWeapons.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Equipment_svelte_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/svelte/editors/Equipment.svelte.css */ "./src/svelte/editors/Equipment.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Equipment_svelte_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_editors_Equipment_svelte_css__WEBPACK_IMPORTED_MODULE_7__);
-/* src\svelte\editors\Equipment.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Equipment.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -37793,25 +38557,34 @@ function create_if_block(ctx) {
 // (39:2) <TabPanel>
 function create_default_slot_5(ctx) {
 	let t0;
-	let input0;
+	let checkbox;
 	let t1;
-	let input1;
+	let input0;
 	let t2;
-	let input2;
+	let input1;
 	let t3;
-	let input3;
+	let input2;
 	let t4;
-	let input4;
+	let input3;
 	let t5;
-	let input5;
+	let input4;
 	let t6;
-	let textarea;
+	let input5;
 	let t7;
-	let input6;
+	let textarea;
 	let t8;
+	let input6;
+	let t9;
 	let input7;
 	let current;
 	let if_block = /*$entity*/ ctx[1].actor && create_if_block(ctx);
+
+	checkbox = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
+			props: {
+				path: "data.is_ammunition",
+				label: "Treat As Ammunition?"
+			}
+		});
 
 	input0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
 			props: {
@@ -37893,43 +38666,47 @@ function create_default_slot_5(ctx) {
 		c() {
 			if (if_block) if_block.c();
 			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input0.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox.$$.fragment);
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input1.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input0.$$.fragment);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input2.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input1.$$.fragment);
 			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input3.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input2.$$.fragment);
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input4.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input3.$$.fragment);
 			t5 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input5.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input4.$$.fragment);
 			t6 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(textarea.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input5.$$.fragment);
 			t7 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input6.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(textarea.$$.fragment);
 			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input6.$$.fragment);
+			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input7.$$.fragment);
 		},
 		m(target, anchor) {
 			if (if_block) if_block.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t0, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input0, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input1, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input0, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input2, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input1, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input3, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input2, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t4, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input4, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input3, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t5, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input5, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input4, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t6, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(textarea, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input5, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t7, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input6, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(textarea, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t8, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input6, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t9, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input7, target, anchor);
 			current = true;
 		},
@@ -37958,6 +38735,7 @@ function create_default_slot_5(ctx) {
 		i(local) {
 			if (current) return;
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input2.$$.fragment, local);
@@ -37971,6 +38749,7 @@ function create_default_slot_5(ctx) {
 		},
 		o(local) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input2.$$.fragment, local);
@@ -37985,28 +38764,30 @@ function create_default_slot_5(ctx) {
 		d(detaching) {
 			if (if_block) if_block.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t0);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input0, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input1, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input0, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input2, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input1, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input3, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input2, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t4);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input4, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input3, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t5);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input5, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input4, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t6);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(textarea, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input5, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t7);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input6, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(textarea, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t8);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input6, detaching);
+			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t9);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input7, detaching);
 		}
 	};
 }
 
-// (58:2) <TabPanel>
+// (59:2) <TabPanel>
 function create_default_slot_4(ctx) {
 	let features;
 	let current;
@@ -38035,7 +38816,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (61:2) <TabPanel>
+// (62:2) <TabPanel>
 function create_default_slot_3(ctx) {
 	let meleeweapons;
 	let current;
@@ -38064,7 +38845,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (64:2) <TabPanel>
+// (65:2) <TabPanel>
 function create_default_slot_2(ctx) {
 	let rangedweapons;
 	let current;
@@ -38093,7 +38874,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (67:2) <TabPanel>
+// (68:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let richtexteditor;
 	let current;
@@ -38415,7 +39196,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../form/form */ "./src/svelte/form/form.ts");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
-/* src\svelte\editors\EquipmentModifier.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\EquipmentModifier.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -38858,7 +39639,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../form/form */ "./src/svelte/form/form.ts");
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
-/* src\svelte\editors\Modifier.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Modifier.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -39240,7 +40021,7 @@ class Modifier extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompo
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* src\svelte\editors\Ritual.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Ritual.svelte generated by Svelte v3.25.1 */
 
 
 class Ritual extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
@@ -39277,7 +40058,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _panels_SkillDefaults__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./panels/SkillDefaults */ "./src/svelte/editors/panels/SkillDefaults.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Skill_svelte_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/svelte/editors/Skill.svelte.css */ "./src/svelte/editors/Skill.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Skill_svelte_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_editors_Skill_svelte_css__WEBPACK_IMPORTED_MODULE_9__);
-/* src\svelte\editors\Skill.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Skill.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -40876,7 +41657,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _panels_MeleeWeapons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./panels/MeleeWeapons */ "./src/svelte/editors/panels/MeleeWeapons.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Spell_svelte_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/svelte/editors/Spell.svelte.css */ "./src/svelte/editors/Spell.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_Spell_svelte_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_editors_Spell_svelte_css__WEBPACK_IMPORTED_MODULE_7__);
-/* src\svelte\editors\Spell.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Spell.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -41954,7 +42735,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _panels_Features__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./panels/Features */ "./src/svelte/editors/panels/Features.svelte");
 /* harmony import */ var _panels_RangedWeapons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./panels/RangedWeapons */ "./src/svelte/editors/panels/RangedWeapons.svelte");
 /* harmony import */ var _panels_MeleeWeapons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./panels/MeleeWeapons */ "./src/svelte/editors/panels/MeleeWeapons.svelte");
-/* src\svelte\editors\Technique.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Technique.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -43459,7 +44240,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _panels_Features__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./panels/Features */ "./src/svelte/editors/panels/Features.svelte");
 /* harmony import */ var _panels_RangedWeapons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./panels/RangedWeapons */ "./src/svelte/editors/panels/RangedWeapons.svelte");
 /* harmony import */ var _panels_MeleeWeapons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./panels/MeleeWeapons */ "./src/svelte/editors/panels/MeleeWeapons.svelte");
-/* src\svelte\editors\Trait.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\Trait.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -43785,7 +44566,7 @@ function create_default_slot_13(ctx) {
 }
 
 // (76:4) {#if $entity.actor}
-function create_if_block_4(ctx) {
+function create_if_block_3(ctx) {
 	let checkbox;
 	let current;
 
@@ -43825,7 +44606,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (97:6) <Option>
+// (97:6) <Option selected={setLevelType() === 0}>
 function create_default_slot_12(ctx) {
 	let t;
 
@@ -43842,7 +44623,7 @@ function create_default_slot_12(ctx) {
 	};
 }
 
-// (98:6) <Option>
+// (98:6) <Option selected={setLevelType() === 1}>
 function create_default_slot_11(ctx) {
 	let t;
 
@@ -43859,7 +44640,7 @@ function create_default_slot_11(ctx) {
 	};
 }
 
-// (99:6) <Option disabled>
+// (99:6) <Option selected={setLevelType() === 2} disabled>
 function create_default_slot_10(ctx) {
 	let t;
 
@@ -43887,6 +44668,7 @@ function create_default_slot_9(ctx) {
 
 	option0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Option"]({
 			props: {
+				selected: /*setLevelType*/ ctx[5]() === 0,
 				$$slots: { default: [create_default_slot_12] },
 				$$scope: { ctx }
 			}
@@ -43894,6 +44676,7 @@ function create_default_slot_9(ctx) {
 
 	option1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Option"]({
 			props: {
+				selected: /*setLevelType*/ ctx[5]() === 1,
 				$$slots: { default: [create_default_slot_11] },
 				$$scope: { ctx }
 			}
@@ -43901,6 +44684,7 @@ function create_default_slot_9(ctx) {
 
 	option2 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Option"]({
 			props: {
+				selected: /*setLevelType*/ ctx[5]() === 2,
 				disabled: true,
 				$$slots: { default: [create_default_slot_10] },
 				$$scope: { ctx }
@@ -43970,7 +44754,7 @@ function create_default_slot_9(ctx) {
 }
 
 // (102:4) {#if traitIsLeveled}
-function create_if_block_3(ctx) {
+function create_if_block_2(ctx) {
 	let input;
 	let current;
 
@@ -44016,7 +44800,7 @@ function create_if_block_3(ctx) {
 }
 
 // (113:4) {#if traitHasHalfLevels}
-function create_if_block_2(ctx) {
+function create_if_block_1(ctx) {
 	let checkbox;
 	let current;
 
@@ -44027,7 +44811,7 @@ function create_if_block_2(ctx) {
 				off: "false",
 				path: "data.has_half_level",
 				label: "+1/2",
-				disabled: !/*traitHasHalfLevels*/ ctx[2]
+				disabled: !/*traitHasHalfLevels*/ ctx[3]
 			}
 		});
 
@@ -44042,7 +44826,7 @@ function create_if_block_2(ctx) {
 		p(ctx, dirty) {
 			const checkbox_changes = {};
 			if (dirty & /*entity*/ 1) checkbox_changes.entity = /*entity*/ ctx[0];
-			if (dirty & /*traitHasHalfLevels*/ 4) checkbox_changes.disabled = !/*traitHasHalfLevels*/ ctx[2];
+			if (dirty & /*traitHasHalfLevels*/ 8) checkbox_changes.disabled = !/*traitHasHalfLevels*/ ctx[3];
 			checkbox.$set(checkbox_changes);
 		},
 		i(local) {
@@ -44061,7 +44845,7 @@ function create_if_block_2(ctx) {
 }
 
 // (123:4) {#if traitIsLeveled}
-function create_if_block_1(ctx) {
+function create_if_block(ctx) {
 	let input;
 	let current;
 
@@ -44106,55 +44890,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (145:4) {#if !/disad|quirk/i.test($entity          .getProperty(`data.categories`)          .toString())}
-function create_if_block(ctx) {
-	let select;
-	let current;
-
-	select = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
-			props: {
-				entity: /*entity*/ ctx[0],
-				path: "data.cr",
-				label: "Self-Control Roll",
-				$$slots: { default: [create_default_slot_8] },
-				$$scope: { ctx }
-			}
-		});
-
-	return {
-		c() {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select.$$.fragment);
-		},
-		m(target, anchor) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const select_changes = {};
-			if (dirty & /*entity*/ 1) select_changes.entity = /*entity*/ ctx[0];
-
-			if (dirty & /*$$scope*/ 256) {
-				select_changes.$$scope = { dirty, ctx };
-			}
-
-			select.$set(select_changes);
-		},
-		i(local) {
-			if (current) return;
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select, detaching);
-		}
-	};
-}
-
-// (148:6) <Select {entity} path="data.cr" label="Self-Control Roll">
+// (145:4) <Select        tooltipText={/disad|quirk/i.test($entity            .getProperty(`data.categories`)            .toString()) ? null : `            Control Rating only available on disadvantages or quirks,            <br /> if still disabled add category Disadvantage/Quirk to the trait.            <br /> make CR roll icon go away by setting CR to none required`}        {entity}        path="data.cr"        label="Self-Control Roll"        disabled={!/disad|quirk/i.test($entity            .getProperty(`data.categories`)            .toString())}>
 function create_default_slot_8(ctx) {
 	let option0;
 	let t1;
@@ -44236,7 +44972,7 @@ function create_default_slot_7(ctx) {
 	let t1;
 	let input1;
 	let t2;
-	let select;
+	let select0;
 	let t3;
 	let t4;
 	let t5;
@@ -44247,7 +44983,7 @@ function create_default_slot_7(ctx) {
 	let t8;
 	let chiplist;
 	let t9;
-	let show_if = !(/disad|quirk/i).test(/*$entity*/ ctx[3].getProperty(`data.categories`).toString());
+	let select1;
 	let t10;
 	let div;
 	let checkbox1;
@@ -44262,7 +44998,7 @@ function create_default_slot_7(ctx) {
 	let t15;
 	let input2;
 	let current;
-	let if_block0 = /*$entity*/ ctx[3].actor && create_if_block_4(ctx);
+	let if_block0 = /*$entity*/ ctx[2].actor && create_if_block_3(ctx);
 
 	input0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Input"]({
 			props: {
@@ -44284,7 +45020,7 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	select = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
+	select0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
 			props: {
 				noop: true,
 				defaultIndex: /*setLevelType*/ ctx[5](),
@@ -44294,10 +45030,10 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	select.$on("change", /*change_handler*/ ctx[6]);
-	let if_block1 = /*traitIsLeveled*/ ctx[1] && create_if_block_3(ctx);
-	let if_block2 = /*traitHasHalfLevels*/ ctx[2] && create_if_block_2(ctx);
-	let if_block3 = /*traitIsLeveled*/ ctx[1] && create_if_block_1(ctx);
+	select0.$on("change", /*change_handler*/ ctx[6]);
+	let if_block1 = /*traitIsLeveled*/ ctx[1] && create_if_block_2(ctx);
+	let if_block2 = /*traitHasHalfLevels*/ ctx[3] && create_if_block_1(ctx);
+	let if_block3 = /*traitIsLeveled*/ ctx[1] && create_if_block(ctx);
 
 	checkbox0 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
@@ -44328,7 +45064,22 @@ function create_default_slot_7(ctx) {
 			}
 		});
 
-	let if_block4 = show_if && create_if_block(ctx);
+	select1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Select"]({
+			props: {
+				tooltipText: (/disad|quirk/i).test(/*$entity*/ ctx[2].getProperty(`data.categories`).toString())
+				? null
+				: `
+          Control Rating only available on disadvantages or quirks,
+          <br /> if still disabled add category Disadvantage/Quirk to the trait.
+          <br /> make CR roll icon go away by setting CR to none required`,
+				entity: /*entity*/ ctx[0],
+				path: "data.cr",
+				label: "Self-Control Roll",
+				disabled: !(/disad|quirk/i).test(/*$entity*/ ctx[2].getProperty(`data.categories`).toString()),
+				$$slots: { default: [create_default_slot_8] },
+				$$scope: { ctx }
+			}
+		});
 
 	checkbox1 = new _form_form__WEBPACK_IMPORTED_MODULE_2__["Checkbox"]({
 			props: {
@@ -44397,7 +45148,7 @@ function create_default_slot_7(ctx) {
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(input1.$$.fragment);
 			t2 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select.$$.fragment);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select0.$$.fragment);
 			t3 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			if (if_block1) if_block1.c();
 			t4 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
@@ -44411,7 +45162,7 @@ function create_default_slot_7(ctx) {
 			t8 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(chiplist.$$.fragment);
 			t9 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
-			if (if_block4) if_block4.c();
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(select1.$$.fragment);
 			t10 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			div = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("div");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_component"])(checkbox1.$$.fragment);
@@ -44434,7 +45185,7 @@ function create_default_slot_7(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t1, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(input1, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t2, anchor);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select, target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select0, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t3, anchor);
 			if (if_block1) if_block1.m(target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t4, anchor);
@@ -44448,7 +45199,7 @@ function create_default_slot_7(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t8, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(chiplist, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t9, anchor);
-			if (if_block4) if_block4.m(target, anchor);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(select1, target, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, t10, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, div, anchor);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["mount_component"])(checkbox1, div, null);
@@ -44465,15 +45216,15 @@ function create_default_slot_7(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (/*$entity*/ ctx[3].actor) {
+			if (/*$entity*/ ctx[2].actor) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 
-					if (dirty & /*$entity*/ 8) {
+					if (dirty & /*$entity*/ 4) {
 						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0, 1);
 					}
 				} else {
-					if_block0 = create_if_block_4(ctx);
+					if_block0 = create_if_block_3(ctx);
 					if_block0.c();
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0, 1);
 					if_block0.m(t0.parentNode, t0);
@@ -44494,13 +45245,13 @@ function create_default_slot_7(ctx) {
 			const input1_changes = {};
 			if (dirty & /*entity*/ 1) input1_changes.entity = /*entity*/ ctx[0];
 			input1.$set(input1_changes);
-			const select_changes = {};
+			const select0_changes = {};
 
 			if (dirty & /*$$scope*/ 256) {
-				select_changes.$$scope = { dirty, ctx };
+				select0_changes.$$scope = { dirty, ctx };
 			}
 
-			select.$set(select_changes);
+			select0.$set(select0_changes);
 
 			if (/*traitIsLeveled*/ ctx[1]) {
 				if (if_block1) {
@@ -44510,7 +45261,7 @@ function create_default_slot_7(ctx) {
 						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1, 1);
 					}
 				} else {
-					if_block1 = create_if_block_3(ctx);
+					if_block1 = create_if_block_2(ctx);
 					if_block1.c();
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1, 1);
 					if_block1.m(t4.parentNode, t4);
@@ -44525,15 +45276,15 @@ function create_default_slot_7(ctx) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
 			}
 
-			if (/*traitHasHalfLevels*/ ctx[2]) {
+			if (/*traitHasHalfLevels*/ ctx[3]) {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 
-					if (dirty & /*traitHasHalfLevels*/ 4) {
+					if (dirty & /*traitHasHalfLevels*/ 8) {
 						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2, 1);
 					}
 				} else {
-					if_block2 = create_if_block_2(ctx);
+					if_block2 = create_if_block_1(ctx);
 					if_block2.c();
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2, 1);
 					if_block2.m(t5.parentNode, t5);
@@ -44556,7 +45307,7 @@ function create_default_slot_7(ctx) {
 						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
 					}
 				} else {
-					if_block3 = create_if_block_1(ctx);
+					if_block3 = create_if_block(ctx);
 					if_block3.c();
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3, 1);
 					if_block3.m(t6.parentNode, t6);
@@ -44580,31 +45331,23 @@ function create_default_slot_7(ctx) {
 			const chiplist_changes = {};
 			if (dirty & /*entity*/ 1) chiplist_changes.entity = /*entity*/ ctx[0];
 			chiplist.$set(chiplist_changes);
-			if (dirty & /*$entity*/ 8) show_if = !(/disad|quirk/i).test(/*$entity*/ ctx[3].getProperty(`data.categories`).toString());
+			const select1_changes = {};
 
-			if (show_if) {
-				if (if_block4) {
-					if_block4.p(ctx, dirty);
+			if (dirty & /*$entity*/ 4) select1_changes.tooltipText = (/disad|quirk/i).test(/*$entity*/ ctx[2].getProperty(`data.categories`).toString())
+			? null
+			: `
+          Control Rating only available on disadvantages or quirks,
+          <br /> if still disabled add category Disadvantage/Quirk to the trait.
+          <br /> make CR roll icon go away by setting CR to none required`;
 
-					if (dirty & /*$entity*/ 8) {
-						Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4, 1);
-					}
-				} else {
-					if_block4 = create_if_block(ctx);
-					if_block4.c();
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4, 1);
-					if_block4.m(t10.parentNode, t10);
-				}
-			} else if (if_block4) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["group_outros"])();
+			if (dirty & /*entity*/ 1) select1_changes.entity = /*entity*/ ctx[0];
+			if (dirty & /*$entity*/ 4) select1_changes.disabled = !(/disad|quirk/i).test(/*$entity*/ ctx[2].getProperty(`data.categories`).toString());
 
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block4, 1, 1, () => {
-					if_block4 = null;
-				});
-
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["check_outros"])();
+			if (dirty & /*$$scope*/ 256) {
+				select1_changes.$$scope = { dirty, ctx };
 			}
 
+			select1.$set(select1_changes);
 			const checkbox1_changes = {};
 			if (dirty & /*entity*/ 1) checkbox1_changes.entity = /*entity*/ ctx[0];
 			checkbox1.$set(checkbox1_changes);
@@ -44629,14 +45372,14 @@ function create_default_slot_7(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(input1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block2);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(textarea.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(chiplist.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(if_block4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(select1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_in"])(checkbox3.$$.fragment, local);
@@ -44649,14 +45392,14 @@ function create_default_slot_7(ctx) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block0);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(input1.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select.$$.fragment, local);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block2);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block3);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox0.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(textarea.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(chiplist.$$.fragment, local);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(if_block4);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(select1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox1.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox2.$$.fragment, local);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["transition_out"])(checkbox3.$$.fragment, local);
@@ -44672,7 +45415,7 @@ function create_default_slot_7(ctx) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t1);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(input1, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t2);
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select, detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select0, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t3);
 			if (if_block1) if_block1.d(detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t4);
@@ -44686,7 +45429,7 @@ function create_default_slot_7(ctx) {
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t8);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(chiplist, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t9);
-			if (if_block4) if_block4.d(detaching);
+			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(select1, detaching);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(t10);
 			if (detaching) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["detach"])(div);
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["destroy_component"])(checkbox1);
@@ -44700,7 +45443,7 @@ function create_default_slot_7(ctx) {
 	};
 }
 
-// (191:2) <TabPanel>
+// (199:2) <TabPanel>
 function create_default_slot_6(ctx) {
 	let h1;
 
@@ -44718,7 +45461,7 @@ function create_default_slot_6(ctx) {
 	};
 }
 
-// (194:2) <TabPanel>
+// (202:2) <TabPanel>
 function create_default_slot_5(ctx) {
 	let features;
 	let current;
@@ -44747,7 +45490,7 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (197:2) <TabPanel>
+// (205:2) <TabPanel>
 function create_default_slot_4(ctx) {
 	let h1;
 
@@ -44765,7 +45508,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (200:2) <TabPanel>
+// (208:2) <TabPanel>
 function create_default_slot_3(ctx) {
 	let meleeweapons;
 	let current;
@@ -44794,7 +45537,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (203:2) <TabPanel>
+// (211:2) <TabPanel>
 function create_default_slot_2(ctx) {
 	let rangedweapons;
 	let current;
@@ -44823,7 +45566,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (206:2) <TabPanel>
+// (214:2) <TabPanel>
 function create_default_slot_1(ctx) {
 	let richtexteditor;
 	let current;
@@ -45077,7 +45820,7 @@ function create_fragment(ctx) {
 
 	tabs = new _tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["Tabs"]({
 			props: {
-				tabIndex: /*$entity*/ ctx[3].getFlag("GURPS", "tab") || 0,
+				tabIndex: /*$entity*/ ctx[2].getFlag("GURPS", "tab") || 0,
 				$$slots: { default: [create_default_slot] },
 				$$scope: { ctx }
 			}
@@ -45095,7 +45838,7 @@ function create_fragment(ctx) {
 		},
 		p(ctx, [dirty]) {
 			const tabs_changes = {};
-			if (dirty & /*$entity*/ 8) tabs_changes.tabIndex = /*$entity*/ ctx[3].getFlag("GURPS", "tab") || 0;
+			if (dirty & /*$entity*/ 4) tabs_changes.tabIndex = /*$entity*/ ctx[2].getFlag("GURPS", "tab") || 0;
 
 			if (dirty & /*$$scope, entity, $entity, traitIsLeveled, traitHasHalfLevels*/ 271) {
 				tabs_changes.$$scope = { dirty, ctx };
@@ -45121,31 +45864,29 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let $entity,
 		$$unsubscribe_entity = svelte_internal__WEBPACK_IMPORTED_MODULE_0__["noop"],
-		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(3, $entity = $$value)), entity);
+		$$subscribe_entity = () => ($$unsubscribe_entity(), $$unsubscribe_entity = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["subscribe"])(entity, $$value => $$invalidate(2, $entity = $$value)), entity);
 
 	$$self.$$.on_destroy.push(() => $$unsubscribe_entity());
 	let { entity = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("entity") || null } = $$props;
 	$$subscribe_entity();
-	let traitIsLeveled = getProperty($entity.data, "data.has_levels");
-	let traitHasHalfLevels = getProperty($entity.data, "data.has_half_level");
 
 	async function handleLevelSetting(index) {
 		switch (index) {
 			case 0:
 				$$invalidate(1, traitIsLeveled = false);
-				$$invalidate(2, traitHasHalfLevels = false);
+				$$invalidate(3, traitHasHalfLevels = false);
 				await $entity.update({ "data.has_levels": false });
 				await $entity.update({ "data.has_half_level": false });
 				break;
 			case 1:
 				$$invalidate(1, traitIsLeveled = true);
-				$$invalidate(2, traitHasHalfLevels = false);
+				$$invalidate(3, traitHasHalfLevels = false);
 				await $entity.update({ "data.has_levels": true });
 				await $entity.update({ "data.has_half_level": false });
 				break;
 			case 2:
 				$$invalidate(1, traitIsLeveled = true);
-				$$invalidate(2, traitHasHalfLevels = true);
+				$$invalidate(3, traitHasHalfLevels = true);
 				await $entity.update({ "data.has_levels": true });
 				await $entity.update({ "data.has_half_level": true });
 				break;
@@ -45172,11 +45913,24 @@ function instance($$self, $$props, $$invalidate) {
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(0, entity = $$props.entity));
 	};
 
+	let traitIsLeveled;
+	let traitHasHalfLevels;
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*$entity*/ 4) {
+			$: $$invalidate(1, traitIsLeveled = getProperty($entity.data, "data.has_levels"));
+		}
+
+		if ($$self.$$.dirty & /*$entity*/ 4) {
+			$: $$invalidate(3, traitHasHalfLevels = getProperty($entity.data, "data.has_half_level"));
+		}
+	};
+
 	return [
 		entity,
 		traitIsLeveled,
-		traitHasHalfLevels,
 		$entity,
+		traitHasHalfLevels,
 		handleLevelSetting,
 		setLevelType,
 		change_handler,
@@ -45212,7 +45966,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _panels_SkillDefaults__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./panels/SkillDefaults */ "./src/svelte/editors/panels/SkillDefaults.svelte");
-/* src\svelte\editors\WeaponEditor.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\WeaponEditor.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -46197,7 +46951,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var process__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(process__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_panels_Features_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/editors/panels/Features.svelte.css */ "./src/svelte/editors/panels/Features.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_panels_Features_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_editors_panels_Features_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
-/* src\svelte\editors\panels\Features.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\panels\Features.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -48586,7 +49340,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../list/list */ "./src/svelte/list/list.ts");
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_list_list__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\editors\panels\MeleeWeapons.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\panels\MeleeWeapons.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -48985,7 +49739,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../list/list */ "./src/svelte/list/list.ts");
 /* harmony import */ var _list_list__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_list_list__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\editors\panels\RangedWeapons.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\panels\RangedWeapons.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -49395,7 +50149,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_form_form__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_panels_SkillDefaults_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/editors/panels/SkillDefaults.svelte.css */ "./src/svelte/editors/panels/SkillDefaults.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_editors_panels_SkillDefaults_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_editors_panels_SkillDefaults_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\editors\panels\SkillDefaults.svelte generated by Svelte v3.25.0 */
+/* src\svelte\editors\panels\SkillDefaults.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -50388,7 +51142,7 @@ module.exports = content.locals || {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* src\svelte\form\Button.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\Button.svelte generated by Svelte v3.25.1 */
 
 
 class Button extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteComponent"] {
@@ -50413,7 +51167,7 @@ class Button extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\form\Checkbox.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\Checkbox.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -50553,7 +51307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_ChipList_svelte_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/svelte/form/ChipList.svelte.css */ "./src/svelte/form/ChipList.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_ChipList_svelte_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_form_ChipList_svelte_css__WEBPACK_IMPORTED_MODULE_4__);
-/* src\svelte\form\ChipList.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\ChipList.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -50849,7 +51603,7 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\form\FilePicker.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\FilePicker.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -51009,7 +51763,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_Input_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/form/Input.svelte.css */ "./src/svelte/form/Input.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_Input_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_form_Input_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\form\Input.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\Input.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -51652,7 +52406,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_RichTextEditor_svelte_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/svelte/form/RichTextEditor.svelte.css */ "./src/svelte/form/RichTextEditor.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_RichTextEditor_svelte_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_form_RichTextEditor_svelte_css__WEBPACK_IMPORTED_MODULE_2__);
-/* src\svelte\form\RichTextEditor.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\RichTextEditor.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -52033,7 +52787,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_Textarea_svelte_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/svelte/form/Textarea.svelte.css */ "./src/svelte/form/Textarea.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_form_Textarea_svelte_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_form_Textarea_svelte_css__WEBPACK_IMPORTED_MODULE_2__);
-/* src\svelte\form\Textarea.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\Textarea.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -52248,7 +53002,7 @@ exports.ChipList = ChipList_svelte_1.default;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src\svelte\form\select\Option.svelte generated by Svelte v3.25.0 */
+/* src\svelte\form\select\Option.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -52261,18 +53015,19 @@ function create_fragment(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	const default_slot_template = /*#slots*/ ctx[9].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[8], null);
+	const default_slot_template = /*#slots*/ ctx[10].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[9], null);
 
 	return {
 		c() {
 			option = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["element"])("option");
-			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(/*$optionPreface*/ ctx[2]);
+			t0 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["text"])(/*$optionPreface*/ ctx[3]);
 			t1 = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["space"])();
 			if (default_slot) default_slot.c();
 			option.__value = /*value*/ ctx[0];
 			option.value = option.__value;
 			option.disabled = /*disabled*/ ctx[1];
+			option.selected = /*selected*/ ctx[2];
 		},
 		m(target, anchor) {
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["insert"])(target, option, anchor);
@@ -52286,16 +53041,16 @@ function create_fragment(ctx) {
 			current = true;
 
 			if (!mounted) {
-				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(registerOption_action = /*registerOption*/ ctx[3].call(null, option, { onSelect: /*onSelect*/ ctx[5] }));
+				dispose = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(registerOption_action = /*registerOption*/ ctx[4].call(null, option, { onSelect: /*onSelect*/ ctx[6] }));
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (!current || dirty & /*$optionPreface*/ 4) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, /*$optionPreface*/ ctx[2]);
+			if (!current || dirty & /*$optionPreface*/ 8) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, /*$optionPreface*/ ctx[3]);
 
 			if (default_slot) {
-				if (default_slot.p && dirty & /*$$scope*/ 256) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[8], dirty, null, null);
+				if (default_slot.p && dirty & /*$$scope*/ 512) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[9], dirty, null, null);
 				}
 			}
 
@@ -52306,6 +53061,10 @@ function create_fragment(ctx) {
 
 			if (!current || dirty & /*disabled*/ 2) {
 				option.disabled = /*disabled*/ ctx[1];
+			}
+
+			if (!current || dirty & /*selected*/ 4) {
+				option.selected = /*selected*/ ctx[2];
 			}
 		},
 		i(local) {
@@ -52331,12 +53090,13 @@ function instance($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["createEventDispatcher"])();
 	const { registerOption, optionPreface } = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["getContext"])("select");
-	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, optionPreface, value => $$invalidate(2, $optionPreface = value));
+	Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["component_subscribe"])($$self, optionPreface, value => $$invalidate(3, $optionPreface = value));
 	let registration;
 	let { path = null } = $$props;
 	let { callback = null } = $$props;
 	let { value = null } = $$props;
 	let { disabled = null } = $$props;
+	let { selected = null } = $$props;
 
 	const onSelect = () => {
 		dispatch("select", value);
@@ -52344,16 +53104,18 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	$$self.$$set = $$props => {
-		if ("path" in $$props) $$invalidate(6, path = $$props.path);
-		if ("callback" in $$props) $$invalidate(7, callback = $$props.callback);
+		if ("path" in $$props) $$invalidate(7, path = $$props.path);
+		if ("callback" in $$props) $$invalidate(8, callback = $$props.callback);
 		if ("value" in $$props) $$invalidate(0, value = $$props.value);
 		if ("disabled" in $$props) $$invalidate(1, disabled = $$props.disabled);
-		if ("$$scope" in $$props) $$invalidate(8, $$scope = $$props.$$scope);
+		if ("selected" in $$props) $$invalidate(2, selected = $$props.selected);
+		if ("$$scope" in $$props) $$invalidate(9, $$scope = $$props.$$scope);
 	};
 
 	return [
 		value,
 		disabled,
+		selected,
 		$optionPreface,
 		registerOption,
 		optionPreface,
@@ -52370,10 +53132,11 @@ class Option extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 		super();
 
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
-			path: 6,
-			callback: 7,
+			path: 7,
+			callback: 8,
 			value: 0,
-			disabled: 1
+			disabled: 1,
+			selected: 2
 		});
 	}
 }
@@ -52393,10 +53156,10 @@ class Option extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../helpers.ts */ "./src/helpers.ts");
-/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\form\select\Select.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../helpers.ts */ "./src/helpers.ts");
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
+/* src\svelte\form\select\Select.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -52409,11 +53172,12 @@ function create_fragment(ctx) {
 	let t1;
 	let select;
 	let setDefault_action;
+	let createTooltip_action;
 	let current;
 	let mounted;
 	let dispose;
-	const default_slot_template = /*#slots*/ ctx[15].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[14], null);
+	const default_slot_template = /*#slots*/ ctx[16].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[15], null);
 
 	return {
 		c() {
@@ -52424,7 +53188,6 @@ function create_fragment(ctx) {
 			if (default_slot) default_slot.c();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(select, "name", /*name*/ ctx[2]);
 			select.disabled = /*disabled*/ ctx[4];
-			if (/*selected*/ ctx[0] === void 0) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_render_callback"])(() => /*select_change_handler*/ ctx[16].call(select));
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "class", "GURPS-label");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "for", /*name*/ ctx[2]);
 		},
@@ -52438,14 +53201,13 @@ function create_fragment(ctx) {
 				default_slot.m(select, null);
 			}
 
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*selected*/ ctx[0]);
 			current = true;
 
 			if (!mounted) {
 				dispose = [
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*update*/ ctx[5]),
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(setDefault_action = /*setDefault*/ ctx[6].call(null, select)),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*select_change_handler*/ ctx[16])
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(createTooltip_action = _helpers_ts__WEBPACK_IMPORTED_MODULE_2__["createTooltip"].call(null, label_1, { tooltipText: /*tooltipText*/ ctx[0] }))
 				];
 
 				mounted = true;
@@ -52455,8 +53217,8 @@ function create_fragment(ctx) {
 			if (!current || dirty & /*label*/ 8) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, /*label*/ ctx[3]);
 
 			if (default_slot) {
-				if (default_slot.p && dirty & /*$$scope*/ 16384) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[14], dirty, null, null);
+				if (default_slot.p && dirty & /*$$scope*/ 32768) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[15], dirty, null, null);
 				}
 			}
 
@@ -52468,13 +53230,11 @@ function create_fragment(ctx) {
 				select.disabled = /*disabled*/ ctx[4];
 			}
 
-			if (dirty & /*selected*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*selected*/ ctx[0]);
-			}
-
 			if (!current || dirty & /*name*/ 4) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "for", /*name*/ ctx[2]);
 			}
+
+			if (createTooltip_action && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(createTooltip_action.update) && dirty & /*tooltipText*/ 1) createTooltip_action.update.call(null, { tooltipText: /*tooltipText*/ ctx[0] });
 		},
 		i(local) {
 			if (current) return;
@@ -52502,7 +53262,9 @@ function instance($$self, $$props, $$invalidate) {
 	$$self.$$.on_destroy.push(() => $$unsubscribe_entity());
 	let { $$slots: slots = {}, $$scope } = $$props;
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["createEventDispatcher"])();
+	let { tooltipText = null } = $$props;
 	let { noop = false } = $$props;
+	let { defaultIndex = null } = $$props;
 	let { defaultValue = null } = $$props;
 	let { path = null } = $$props;
 	let { array = false } = $$props;
@@ -52513,7 +53275,6 @@ function instance($$self, $$props, $$invalidate) {
 	let { alsoUpdate = null } = $$props;
 	let { disabled = null } = $$props;
 	let { optionPreface = "" } = $$props;
-	let { selected } = $$props;
 	const options = [];
 
 	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["setContext"])("select", {
@@ -52529,10 +53290,10 @@ function instance($$self, $$props, $$invalidate) {
 				}
 			};
 		},
-		optionPreface: Object(svelte_store__WEBPACK_IMPORTED_MODULE_2__["readable"])(optionPreface)
+		optionPreface: Object(svelte_store__WEBPACK_IMPORTED_MODULE_3__["readable"])(optionPreface)
 	});
 
-	let { value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_3__["getValue"])($entity, path, array) } = $$props;
+	let { value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["getValue"])($entity, path, array) } = $$props;
 
 	function update(e) {
 		let target = e.target;
@@ -52562,36 +53323,36 @@ function instance($$self, $$props, $$invalidate) {
 	}
 
 	function setDefault(select) {
-		Array.from(select.options).forEach((option, i) => {
-			if (option.value == value) {
-				select.selectedIndex = i;
-			}
-		});
-	}
-
-	function select_change_handler() {
-		selected = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_value"])(this);
-		$$invalidate(0, selected);
+		if (typeof defaultIndex === "number") {
+			select.selectedIndex = defaultIndex;
+		} else {
+			Array.from(select.options).forEach((option, i) => {
+				if (option.value == value) {
+					select.selectedIndex = i;
+				}
+			});
+		}
 	}
 
 	$$self.$$set = $$props => {
+		if ("tooltipText" in $$props) $$invalidate(0, tooltipText = $$props.tooltipText);
 		if ("noop" in $$props) $$invalidate(8, noop = $$props.noop);
-		if ("defaultValue" in $$props) $$invalidate(9, defaultValue = $$props.defaultValue);
+		if ("defaultIndex" in $$props) $$invalidate(9, defaultIndex = $$props.defaultIndex);
+		if ("defaultValue" in $$props) $$invalidate(10, defaultValue = $$props.defaultValue);
 		if ("path" in $$props) $$invalidate(7, path = $$props.path);
-		if ("array" in $$props) $$invalidate(10, array = $$props.array);
+		if ("array" in $$props) $$invalidate(11, array = $$props.array);
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(1, entity = $$props.entity));
 		if ("name" in $$props) $$invalidate(2, name = $$props.name);
 		if ("label" in $$props) $$invalidate(3, label = $$props.label);
-		if ("alsoUpdate" in $$props) $$invalidate(11, alsoUpdate = $$props.alsoUpdate);
+		if ("alsoUpdate" in $$props) $$invalidate(12, alsoUpdate = $$props.alsoUpdate);
 		if ("disabled" in $$props) $$invalidate(4, disabled = $$props.disabled);
-		if ("optionPreface" in $$props) $$invalidate(12, optionPreface = $$props.optionPreface);
-		if ("selected" in $$props) $$invalidate(0, selected = $$props.selected);
-		if ("value" in $$props) $$invalidate(13, value = $$props.value);
-		if ("$$scope" in $$props) $$invalidate(14, $$scope = $$props.$$scope);
+		if ("optionPreface" in $$props) $$invalidate(13, optionPreface = $$props.optionPreface);
+		if ("value" in $$props) $$invalidate(14, value = $$props.value);
+		if ("$$scope" in $$props) $$invalidate(15, $$scope = $$props.$$scope);
 	};
 
 	return [
-		selected,
+		tooltipText,
 		entity,
 		name,
 		label,
@@ -52600,14 +53361,14 @@ function instance($$self, $$props, $$invalidate) {
 		setDefault,
 		path,
 		noop,
+		defaultIndex,
 		defaultValue,
 		array,
 		alsoUpdate,
 		optionPreface,
 		value,
 		$$scope,
-		slots,
-		select_change_handler
+		slots
 	];
 }
 
@@ -52616,18 +53377,19 @@ class Select extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 		super();
 
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
+			tooltipText: 0,
 			noop: 8,
-			defaultValue: 9,
+			defaultIndex: 9,
+			defaultValue: 10,
 			path: 7,
-			array: 10,
+			array: 11,
 			entity: 1,
 			name: 2,
 			label: 3,
-			alsoUpdate: 11,
+			alsoUpdate: 12,
 			disabled: 4,
-			optionPreface: 12,
-			selected: 0,
-			value: 13
+			optionPreface: 13,
+			value: 14
 		});
 	}
 }
@@ -52647,10 +53409,10 @@ class Select extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
-/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../helpers.ts */ "./src/helpers.ts");
-/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\form\select\select.svelte generated by Svelte v3.25.0 */
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../helpers.ts */ "./src/helpers.ts");
+/* harmony import */ var _helpers_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
+/* src\svelte\form\select\select.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -52663,11 +53425,12 @@ function create_fragment(ctx) {
 	let t1;
 	let select;
 	let setDefault_action;
+	let createTooltip_action;
 	let current;
 	let mounted;
 	let dispose;
-	const default_slot_template = /*#slots*/ ctx[15].default;
-	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[14], null);
+	const default_slot_template = /*#slots*/ ctx[16].default;
+	const default_slot = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["create_slot"])(default_slot_template, ctx, /*$$scope*/ ctx[15], null);
 
 	return {
 		c() {
@@ -52678,7 +53441,6 @@ function create_fragment(ctx) {
 			if (default_slot) default_slot.c();
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(select, "name", /*name*/ ctx[2]);
 			select.disabled = /*disabled*/ ctx[4];
-			if (/*selected*/ ctx[0] === void 0) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["add_render_callback"])(() => /*select_change_handler*/ ctx[16].call(select));
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "class", "GURPS-label");
 			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "for", /*name*/ ctx[2]);
 		},
@@ -52692,14 +53454,13 @@ function create_fragment(ctx) {
 				default_slot.m(select, null);
 			}
 
-			Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*selected*/ ctx[0]);
 			current = true;
 
 			if (!mounted) {
 				dispose = [
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*update*/ ctx[5]),
 					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(setDefault_action = /*setDefault*/ ctx[6].call(null, select)),
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["listen"])(select, "change", /*select_change_handler*/ ctx[16])
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["action_destroyer"])(createTooltip_action = _helpers_ts__WEBPACK_IMPORTED_MODULE_2__["createTooltip"].call(null, label_1, { tooltipText: /*tooltipText*/ ctx[0] }))
 				];
 
 				mounted = true;
@@ -52709,8 +53470,8 @@ function create_fragment(ctx) {
 			if (!current || dirty & /*label*/ 8) Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["set_data"])(t0, /*label*/ ctx[3]);
 
 			if (default_slot) {
-				if (default_slot.p && dirty & /*$$scope*/ 16384) {
-					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[14], dirty, null, null);
+				if (default_slot.p && dirty & /*$$scope*/ 32768) {
+					Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["update_slot"])(default_slot, default_slot_template, ctx, /*$$scope*/ ctx[15], dirty, null, null);
 				}
 			}
 
@@ -52722,13 +53483,11 @@ function create_fragment(ctx) {
 				select.disabled = /*disabled*/ ctx[4];
 			}
 
-			if (dirty & /*selected*/ 1) {
-				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_option"])(select, /*selected*/ ctx[0]);
-			}
-
 			if (!current || dirty & /*name*/ 4) {
 				Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["attr"])(label_1, "for", /*name*/ ctx[2]);
 			}
+
+			if (createTooltip_action && Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["is_function"])(createTooltip_action.update) && dirty & /*tooltipText*/ 1) createTooltip_action.update.call(null, { tooltipText: /*tooltipText*/ ctx[0] });
 		},
 		i(local) {
 			if (current) return;
@@ -52756,7 +53515,9 @@ function instance($$self, $$props, $$invalidate) {
 	$$self.$$.on_destroy.push(() => $$unsubscribe_entity());
 	let { $$slots: slots = {}, $$scope } = $$props;
 	const dispatch = Object(svelte__WEBPACK_IMPORTED_MODULE_1__["createEventDispatcher"])();
+	let { tooltipText = null } = $$props;
 	let { noop = false } = $$props;
+	let { defaultIndex = null } = $$props;
 	let { defaultValue = null } = $$props;
 	let { path = null } = $$props;
 	let { array = false } = $$props;
@@ -52767,7 +53528,6 @@ function instance($$self, $$props, $$invalidate) {
 	let { alsoUpdate = null } = $$props;
 	let { disabled = null } = $$props;
 	let { optionPreface = "" } = $$props;
-	let { selected } = $$props;
 	const options = [];
 
 	Object(svelte__WEBPACK_IMPORTED_MODULE_1__["setContext"])("select", {
@@ -52783,10 +53543,10 @@ function instance($$self, $$props, $$invalidate) {
 				}
 			};
 		},
-		optionPreface: Object(svelte_store__WEBPACK_IMPORTED_MODULE_2__["readable"])(optionPreface)
+		optionPreface: Object(svelte_store__WEBPACK_IMPORTED_MODULE_3__["readable"])(optionPreface)
 	});
 
-	let { value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_3__["getValue"])($entity, path, array) } = $$props;
+	let { value = Object(_helpers_ts__WEBPACK_IMPORTED_MODULE_2__["getValue"])($entity, path, array) } = $$props;
 
 	function update(e) {
 		let target = e.target;
@@ -52816,36 +53576,36 @@ function instance($$self, $$props, $$invalidate) {
 	}
 
 	function setDefault(select) {
-		Array.from(select.options).forEach((option, i) => {
-			if (option.value == value) {
-				select.selectedIndex = i;
-			}
-		});
-	}
-
-	function select_change_handler() {
-		selected = Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["select_value"])(this);
-		$$invalidate(0, selected);
+		if (typeof defaultIndex === "number") {
+			select.selectedIndex = defaultIndex;
+		} else {
+			Array.from(select.options).forEach((option, i) => {
+				if (option.value == value) {
+					select.selectedIndex = i;
+				}
+			});
+		}
 	}
 
 	$$self.$$set = $$props => {
+		if ("tooltipText" in $$props) $$invalidate(0, tooltipText = $$props.tooltipText);
 		if ("noop" in $$props) $$invalidate(8, noop = $$props.noop);
-		if ("defaultValue" in $$props) $$invalidate(9, defaultValue = $$props.defaultValue);
+		if ("defaultIndex" in $$props) $$invalidate(9, defaultIndex = $$props.defaultIndex);
+		if ("defaultValue" in $$props) $$invalidate(10, defaultValue = $$props.defaultValue);
 		if ("path" in $$props) $$invalidate(7, path = $$props.path);
-		if ("array" in $$props) $$invalidate(10, array = $$props.array);
+		if ("array" in $$props) $$invalidate(11, array = $$props.array);
 		if ("entity" in $$props) $$subscribe_entity($$invalidate(1, entity = $$props.entity));
 		if ("name" in $$props) $$invalidate(2, name = $$props.name);
 		if ("label" in $$props) $$invalidate(3, label = $$props.label);
-		if ("alsoUpdate" in $$props) $$invalidate(11, alsoUpdate = $$props.alsoUpdate);
+		if ("alsoUpdate" in $$props) $$invalidate(12, alsoUpdate = $$props.alsoUpdate);
 		if ("disabled" in $$props) $$invalidate(4, disabled = $$props.disabled);
-		if ("optionPreface" in $$props) $$invalidate(12, optionPreface = $$props.optionPreface);
-		if ("selected" in $$props) $$invalidate(0, selected = $$props.selected);
-		if ("value" in $$props) $$invalidate(13, value = $$props.value);
-		if ("$$scope" in $$props) $$invalidate(14, $$scope = $$props.$$scope);
+		if ("optionPreface" in $$props) $$invalidate(13, optionPreface = $$props.optionPreface);
+		if ("value" in $$props) $$invalidate(14, value = $$props.value);
+		if ("$$scope" in $$props) $$invalidate(15, $$scope = $$props.$$scope);
 	};
 
 	return [
-		selected,
+		tooltipText,
 		entity,
 		name,
 		label,
@@ -52854,14 +53614,14 @@ function instance($$self, $$props, $$invalidate) {
 		setDefault,
 		path,
 		noop,
+		defaultIndex,
 		defaultValue,
 		array,
 		alsoUpdate,
 		optionPreface,
 		value,
 		$$scope,
-		slots,
-		select_change_handler
+		slots
 	];
 }
 
@@ -52870,18 +53630,19 @@ class Select extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__["SvelteCompone
 		super();
 
 		Object(svelte_internal__WEBPACK_IMPORTED_MODULE_0__["init"])(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__["safe_not_equal"], {
+			tooltipText: 0,
 			noop: 8,
-			defaultValue: 9,
+			defaultIndex: 9,
+			defaultValue: 10,
 			path: 7,
-			array: 10,
+			array: 11,
 			entity: 1,
 			name: 2,
 			label: 3,
-			alsoUpdate: 11,
+			alsoUpdate: 12,
 			disabled: 4,
-			optionPreface: 12,
-			selected: 0,
-			value: 13
+			optionPreface: 13,
+			value: 14
 		});
 	}
 }
@@ -52909,7 +53670,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_list_List_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/list/List.svelte.css */ "./src/svelte/list/List.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_list_List_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_list_List_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
-/* src\svelte\list\List.svelte generated by Svelte v3.25.0 */
+/* src\svelte\list\List.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -53403,7 +54164,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_list_Row_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/list/Row.svelte.css */ "./src/svelte/list/Row.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_list_Row_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_list_Row_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
-/* src\svelte\list\Row.svelte generated by Svelte v3.25.0 */
+/* src\svelte\list\Row.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -54414,7 +55175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_FilePicker_svelte__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../form/FilePicker.svelte */ "./src/svelte/form/FilePicker.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_monster_Monster_svelte_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/svelte/monster/Monster.svelte.css */ "./src/svelte/monster/Monster.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_monster_Monster_svelte_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_monster_Monster_svelte_css__WEBPACK_IMPORTED_MODULE_15__);
-/* src\svelte\monster\Monster.svelte generated by Svelte v3.25.0 */
+/* src\svelte\monster\Monster.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -55790,7 +56551,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_party_Calendar_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/party/Calendar.svelte.css */ "./src/svelte/party/Calendar.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_party_Calendar_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_party_Calendar_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\party\Calendar.svelte generated by Svelte v3.25.0 */
+/* src\svelte\party\Calendar.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -56046,7 +56807,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _clocks_Clock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../clocks/Clock */ "./src/svelte/clocks/Clock.svelte");
-/* src\svelte\party\Clocks.svelte generated by Svelte v3.25.0 */
+/* src\svelte\party\Clocks.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -56253,7 +57014,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Clocks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Clocks */ "./src/svelte/party/Clocks.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_party_PartyManager_svelte_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/svelte/party/PartyManager.svelte.css */ "./src/svelte/party/PartyManager.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_party_PartyManager_svelte_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_party_PartyManager_svelte_css__WEBPACK_IMPORTED_MODULE_5__);
-/* src\svelte\party\PartyManager.svelte generated by Svelte v3.25.0 */
+/* src\svelte\party\PartyManager.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -56850,7 +57611,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Tabs_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tabs.svelte */ "./src/svelte/tabs/Tabs.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_Tab_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/tabs/Tab.svelte.css */ "./src/svelte/tabs/Tab.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_Tab_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_tabs_Tab_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\tabs\Tab.svelte generated by Svelte v3.25.0 */
+/* src\svelte\tabs\Tab.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -57017,7 +57778,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_TabList_svelte_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/svelte/tabs/TabList.svelte.css */ "./src/svelte/tabs/TabList.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_TabList_svelte_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_tabs_TabList_svelte_css__WEBPACK_IMPORTED_MODULE_1__);
-/* src\svelte\tabs\TabList.svelte generated by Svelte v3.25.0 */
+/* src\svelte\tabs\TabList.svelte generated by Svelte v3.25.1 */
 
 
 function create_fragment(ctx) {
@@ -57130,7 +57891,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Tabs_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tabs.svelte */ "./src/svelte/tabs/Tabs.svelte");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_TabPanel_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/tabs/TabPanel.svelte.css */ "./src/svelte/tabs/TabPanel.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_TabPanel_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_tabs_TabPanel_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\tabs\TabPanel.svelte generated by Svelte v3.25.0 */
+/* src\svelte\tabs\TabPanel.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -57390,7 +58151,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte/store */ "./node_modules/svelte/store/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_Tabs_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/tabs/Tabs.svelte.css */ "./src/svelte/tabs/Tabs.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_tabs_Tabs_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_tabs_Tabs_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\tabs\Tabs.svelte generated by Svelte v3.25.0 */
+/* src\svelte\tabs\Tabs.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -57596,7 +58357,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_weapon_list_MeleeWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/weapon-list/MeleeWeapons.svelte.css */ "./src/svelte/weapon-list/MeleeWeapons.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_weapon_list_MeleeWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_weapon_list_MeleeWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\weapon-list\MeleeWeapons.svelte generated by Svelte v3.25.0 */
+/* src\svelte\weapon-list\MeleeWeapons.svelte generated by Svelte v3.25.1 */
 
 
 
@@ -58339,7 +59100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_weapon_list_RangedWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/svelte/weapon-list/RangedWeapons.svelte.css */ "./src/svelte/weapon-list/RangedWeapons.svelte.css");
 /* harmony import */ var E_foundryVTT_GURPS_src_svelte_weapon_list_RangedWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(E_foundryVTT_GURPS_src_svelte_weapon_list_RangedWeapons_svelte_css__WEBPACK_IMPORTED_MODULE_3__);
-/* src\svelte\weapon-list\RangedWeapons.svelte generated by Svelte v3.25.0 */
+/* src\svelte\weapon-list\RangedWeapons.svelte generated by Svelte v3.25.1 */
 
 
 

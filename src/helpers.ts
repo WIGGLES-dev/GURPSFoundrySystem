@@ -249,6 +249,7 @@ export function createTooltip(node: HTMLElement, parameters: any) {
         let state = await popper.update();
         _document.body.appendChild(tooltip);
     };
+
     const hide = (e: MouseEvent) => {
         tooltip.remove();
     };
@@ -293,7 +294,6 @@ export function createContextMenu(node: HTMLElement, { menuItems, selector, even
     const render = async (e: MouseEvent) => {
         _document.body.appendChild(contextBox);
         menu.menuItems = menuItems();
-        popper.destroy();
         virtualElement.update(e.clientX, e.clientY);
         popper = createPopper(virtualElement, contextBox);
         await popper.update();

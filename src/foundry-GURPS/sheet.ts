@@ -108,6 +108,7 @@ export class _Actor extends Actor {
         this._entity = writable(this);
         //@ts-ignore
         this.GURPS = new GURPSCharacter();
+        this.GURPS.State = {}
         this._GURPS = writable(this.GURPS);
         this.updateGURPS();
     }
@@ -208,7 +209,7 @@ export class _Actor extends Actor {
     }
     getWeapons() {
         const entity = this
-        const weapons = this.GURPS.featureList.weapons.map(weapon => Object.assign(weapon, {
+        const weapons = [...this.GURPS.featureList.weapons].map(([id, weapon]) => Object.assign(weapon, {
             skillLevel() {
                 return this.getBestAttackLevel();
             },

@@ -1,6 +1,5 @@
 <script>
   import Dialog from "@components/Dialog";
-  import { Input } from "../form/form";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
@@ -67,7 +66,7 @@
     <input type="number" bind:value={otherMods} />
     {#if weapon.getType() === 'ranged_weapon'}
       <span>Ammo Source To Use</span>
-      <select>
+      <select disabled>
         {#each weapon.getAmmoSources() || [] as ammoSource, i (ammoSource.uuid)}
           <option value={ammoSource.foundryID}>{ammoSource.name}</option>
         {/each}

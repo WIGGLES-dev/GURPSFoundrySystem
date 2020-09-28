@@ -169,6 +169,7 @@ export class _Item extends Item {
         features.push(Object.assign({
             type: FeatureType.skillBonus,
             attribute: Signature.ST,
+            per_level: false,
             name_compare_type: "is",
             specialization_compare_type: "is"
         }, data, {

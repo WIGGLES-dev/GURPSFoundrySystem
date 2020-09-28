@@ -1,5 +1,6 @@
 <script>
   import { Timer } from "@modules/timer/timer";
+  import TimerDialog from "@components/dialogs/TimerDialog.svelte";
   import { onMount } from "svelte";
   import Message from "./Message";
 
@@ -33,19 +34,23 @@
   };
 
   function createTimer(length) {
-    let timerLabel = prompt("Name of timer");
-    let timer = new Timer(length);
-    ChatMessage.create({
-      flags: {
-        GURPS: {
-          message_type: "timer",
-          message_data: {
-            timerLabel,
-            timerData: timer.toJSON(),
+    new TimerDialog({
+      target: document.body,
+      props: {},
+    }).$on("submit", (e) => {
+      let timer = new Timer(length);
+      ChatMessage.create({
+        flags: {
+          GURPS: {
+            message_type: "timer",
+            message_data: {
+              timerLabel: e.detail,
+              timerData: timer.toJSON(),
+            },
+            is_timer: true,
           },
-          is_timer: true,
         },
-      },
+      });
     });
   }
 
@@ -94,7 +99,6 @@
   id="chat"
   data-tab="chat"
   bind:this={chatPanel}>
-  
   {#if !vanilla}
     <div class="chat-sidebar-tabs">
       {#each tabs as tab, i (i)}

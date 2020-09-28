@@ -38,6 +38,7 @@ export class FoundryEntity extends Serializer {
     }
     init() {
         this.
+            //@ts-ignore
             register(SkillDefault, {
                 save: FoundryEntity.saveSkillDefault,
                 load: FoundryEntity.mapSkillDefault
@@ -172,6 +173,7 @@ export class FoundryEntity extends Serializer {
                 name: skill.name || "Skill",
                 flags: {},
                 data: Object.assign(FoundryEntity.saveSkillLike(skill), {
+                    specialization: skill.specialization,
                     type: skill.tag,
                     difficulty: skill.difficulty,
                     signature: skill.signature,
@@ -179,7 +181,7 @@ export class FoundryEntity extends Serializer {
                     encumbrance_penalty_multiplier: skill.encumbrancePenaltyMultiple,
                     reference: skill.reference,
                     notes: skill.notes,
-                    defaults: Array.from(skill.defaults).map(skillDefault => skillDefault.save({}))
+                    defaults: Array.from(skill.defaults).map((skillDefault: any) => skillDefault.save({}))
                 })
             }
         } catch (err) {
@@ -205,10 +207,13 @@ export class FoundryEntity extends Serializer {
         });
     }
     saveTechnique(technique: Technique) {
+        console.log(technique.default);
         return {
             name: technique.name || "Technique",
+            type: "technique",
             flags: {},
             data: {
+                name: technique.name,
                 points: technique.points,
                 difficulty: technique.difficulty,
                 limit: technique.limit,
@@ -342,8 +347,8 @@ export class FoundryEntity extends Serializer {
                     legality_class: equipment.legalityClass,
                     reference: equipment.reference,
 
-                    weapons: Array.from(equipment.weapons).map(weapon => weapon.save({})),
-                    features: Array.from(equipment.features).map(feature => feature.save({}))
+                    weapons: Array.from(equipment.weapons).map((weapon: any) => weapon.save({})),
+                    features: Array.from(equipment.features).map((feature: any) => feature.save({})).filter(value => value)
                 }
             }
         } catch (err) {
@@ -409,8 +414,8 @@ export class FoundryEntity extends Serializer {
                     categories: Array.from(trait.categories),
                     notes: trait.notes,
 
-                    features: Array.from(trait.features).map(feature => feature.save({})),
-                    weapons: Array.from(trait.weapons).map(weapon => weapon.save({}))
+                    features: Array.from(trait.features).map((feature: any) => feature.save({}).filter(value => value)),
+                    weapons: Array.from(trait.weapons).map((weapon: any) => weapon.save({}))
                 }
             }
         } catch (err) {
@@ -521,7 +526,7 @@ export class FoundryEntity extends Serializer {
         return weapon
     }
     saveWeapon(weapon: Weapon) {
-        let damageBase = weapon?.damageBase?.replaceAll(new RegExp(/\d+d/, "g"), (match) => `${match}6`) ?? "";
+        let damageBase = weapon?.damageBase?.replace(new RegExp(/\d+d/, "g"), (match) => `${match}6`) ?? "";
         damageBase = damageBase?.replace(/dx/, "d*") ?? "";
         const getDamage = () => {
             const base = (weapon.damageStrength === "sw" || weapon.damageStrength === "thr") ?
@@ -615,10 +620,10 @@ export class FoundryEntity extends Serializer {
 
         const create = [
             ...character.equipmentList.iter().map(item => {
-                return Object.assign(item.save({}))
+                return Object.assign({}, item.save({}))
             }),
             ...character.otherEquipmentList.iter().map(item => {
-                return Object.assign(item.save({}))
+                return Object.assign({}, item.save({}))
             }),
             ...[
                 ...character.skillList.iter(),
@@ -626,8 +631,9 @@ export class FoundryEntity extends Serializer {
                 ...character.traitList.iter(),
                 ...character.spellList.iter()
             ].map((item: ListItem<any>) => {
-                return Object.assign(item.save({}))
-            })];
+                return Object.assign({}, item.save({}))
+            })].filter(item => item["type"] && item["name"]);
+        console.log(create);
         let creations = await actor.createEmbeddedEntity("OwnedItem", duplicate(create));
         console.log(character.profile.portrait);
         await actor.update({

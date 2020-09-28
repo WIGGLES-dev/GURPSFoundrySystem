@@ -8,12 +8,9 @@
   import Features from "./panels/Features";
   import RangedWeapons from "./panels/RangedWeapons";
   import MeleeWeapons from "./panels/MeleeWeapons";
-
-  let basedOnSelect;
 </script>
 
 <style>
-
 </style>
 
 <Tabs
@@ -45,7 +42,7 @@
       label="Limit"
       type="number" />
     <div class="flex">
-      <Select bind:selected={basedOnSelect} path="data.default.type">
+      <Select path="data.default.type" label="Default">
         <Option value="DX">DX</Option>
         <Option value="ST">ST</Option>
         <Option value="IQ">IQ</Option>
@@ -57,7 +54,7 @@
         <Option disabled={true}>Blocking Skill Named</Option>
         <Option disabled={true}>10</Option>
       </Select>
-      {#if basedOnSelect === 'Skill'}
+      {#if $entity.getProperty('data.default.type') === 'Skill'}
         <Input {entity} path="data.default.name" />
         <Input {entity} path="data.default.specialization" />
       {/if}

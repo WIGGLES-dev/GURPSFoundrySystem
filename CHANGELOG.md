@@ -1,3 +1,16 @@
+## [1.3.1]
+
+### Added
+ * System setting to stop showing welcome dialog until next update 
+
+### Fixed
+ * Not being able to import characters in the standalone electron foundry app
+ * Not being able to create timers in the standalone electron foundry app
+ * Bug that would cause importer to fail when techniques were present on the sheet
+ * Bug that would cause crash when loading features that were not supported 
+ * Bug that caused strength to calculate improperly
+ * Bug that would cause spell imports to fail
+
 ## [1.3]
 
 ### Added

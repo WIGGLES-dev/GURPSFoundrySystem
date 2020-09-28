@@ -40,7 +40,7 @@
     {#if $entity.actor}
       <Checkbox path="data.equipped" label="Equipped" />
     {/if}
-    <Checkbox path="data.is_ammunition" label="Treat As Ammunition?" />
+    <Checkbox disabled={true} path="data.is_ammunition" label="Treat As Ammunition?" />
     <Input
       path="data.description"
       alsoUpdate={['name']}

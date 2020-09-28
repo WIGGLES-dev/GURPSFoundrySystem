@@ -41,6 +41,9 @@ export class Roller {
             thr: thrust
         });
         roll.toMessage({
+            speaker: {
+                alias: actor.name
+            },
             flags: {
                 GURPS: {
                     message_type: "attack",
