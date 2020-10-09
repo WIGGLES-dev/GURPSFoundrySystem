@@ -2,13 +2,16 @@
   import Character from "./Character";
   import Monster from "./monster/Monster";
   import PartyManager from "./party/PartyManager";
+  import { App } from "g4elogic";
 
   export let entity = null;
+  export let character = null;
   export let appInstance;
 
   function getSheetComponent(entity) {
     switch (entity.data.type) {
       case "character":
+        return App;
         return Character;
       case "monster":
         return Monster;
@@ -26,9 +29,10 @@
   }
 </style>
 
-<div>
+<div class="GURPS">
   <svelte:component
     this={getSheetComponent($entity)}
     bind:this={appInstance}
-    {entity} />
+    {entity}
+    {character} />
 </div>

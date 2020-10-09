@@ -65,10 +65,10 @@ function init() {
         config: true,
         type: Boolean,
         choices: {
-            "yes": "Don't Show Welcome Dialog on Join Game",
-            "no": "Show Welcome Dialog on Join Game"
+            "no": "Don't Show Welcome Dialog on Join Game",
+            "yes": "Show Welcome Dialog on Join Game"
         },
-        default: "no",
+        default: "yes",
         onChange: () => { }
     })
 }

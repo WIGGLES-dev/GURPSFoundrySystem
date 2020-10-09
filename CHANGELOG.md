@@ -1,4 +1,10 @@
-## [1.3.1]
+## [1.4]
+
+### Added
+
+### Changed
+ * UI
+### Fixed
 
 ### Added
  * System setting to stop showing welcome dialog until next update 

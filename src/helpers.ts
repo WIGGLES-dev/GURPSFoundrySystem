@@ -359,7 +359,8 @@ export function svelte(app: any) {
                     target: html.get(0),
                     props: {
                         entity: this?.item?._entity ?? this?.actor?._entity ?? null,
-                        GURPS: this?.actor?.GURPS ?? null
+                        GURPS: this?.actor?.GURPS ?? null,
+                        character: this.actor?.GURPS ?? null
                     }
                 })
                 return html

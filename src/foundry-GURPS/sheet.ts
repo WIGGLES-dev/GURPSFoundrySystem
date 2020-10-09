@@ -108,7 +108,9 @@ export class _Actor extends Actor {
         this._entity = writable(this);
         //@ts-ignore
         this.GURPS = new GURPSCharacter();
-        this.GURPS.State = {}
+        this.GURPS.State = {
+            addState: () => { }
+        }
         this._GURPS = writable(this.GURPS);
         this.updateGURPS();
     }

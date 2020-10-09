@@ -3,7 +3,7 @@ import webpack from "webpack";
 import * as utils from "./system-builder";
 import CopyPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import sveltePreprocess from "svelte-preprocess";
+import sveltePreprocess, { postcss } from "svelte-preprocess";
 import { TsConfigPathsPlugin } from "awesome-typescript-loader";
 
 type mode = "development" | "production" | "none"
@@ -56,6 +56,14 @@ const config: webpack.Configuration = {
                     loader: 'svelte-loader',
                     options: {
                         emitCss: true,
+                        preprocess: [
+                            postcss({
+                                plugins: [
+                                    require("tailwindcss"),
+                                    require("autoprefixer")
+                                ]
+                            })
+                        ]
                     }
                 }
             },
@@ -83,6 +91,18 @@ const config: webpack.Configuration = {
                         loader: 'sass-loader',
                         options: {
                             sassOptions: {}
+                        }
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                ident: "postcss",
+                                plugins: [
+                                    require("tailwindcss"),
+                                    require("autoprefixer")
+                                ]
+                            }
                         }
                     }
                 ]

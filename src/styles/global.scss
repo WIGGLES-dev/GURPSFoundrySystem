@@ -1,7 +1,9 @@
 @import "./templates_roll";
 
-:root {
-    --foundry-accent-color: #ff6400
+.GURPS {
+    @import "tailwindcss/base";
+    @import "tailwindcss/components";
+    @import "tailwindcss/utilities";
 }
 
 input[type="number"] {
@@ -16,90 +18,4 @@ input[type="number"] {
     line-height: inherit;
     border: 1px solid #7a7971;
     border-radius: 3px;
-}
-
-h2 {
-    min-height: 26px;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.no-show {
-    display: none;
-}
-
-.fas:hover {
-
-    &.fa-trash,
-    &.fa-map-pin {
-        color: red;
-    }
-}
-
-.GURPS-label {
-    &[data-label="true"] span::after {
-        content: ":"
-    }
-
-    box-sizing: border-box;
-
-    &:hover {
-        background-color: rgb(122, 121, 113);
-        color: white;
-
-        input,
-        textarea {
-            color: white;
-        }
-    }
-
-    padding: 7px;
-}
-
-.GURPSActor {
-    .relative {
-        position: relative;
-    }
-
-    .is-row-label>td:not(.show-when-label):not(.main-list-col) {
-        opacity: 0;
-    }
-
-    .main-list-col {
-        width: 100%;
-    }
-
-    .click-to-edit {
-        padding: 0;
-    }
-
-    tr.strikethrough {
-        td {
-            position: relative;
-
-            &:before {
-                content: " ";
-                position: absolute;
-                top: 50%;
-                left: 0;
-                border-bottom: 1px solid red;
-                width: 100%;
-            }
-        }
-    }
-
-    .roll-ico {
-        &:hover {
-            box-shadow: 0 0 8px red;
-        }
-
-        border: none;
-    }
 }

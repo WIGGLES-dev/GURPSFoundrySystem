@@ -22,7 +22,8 @@
     on:dblclick={(e) => {
       $entity.sortList('technique', 'data.name');
     }}>
-    Techniques <i class="fas fa-sort" />
+    Techniques
+    <i class="fas fa-sort" />
   </th>
   <th slot="header">SL</th>
   <th slot="header">RSL</th>
@@ -115,7 +116,8 @@
     on:dblclick={(e) => {
       $entity.sortList('skill', 'data.name');
     }}>
-    Skills <i class="fas fa-sort" />
+    Skills
+    <i class="fas fa-sort" />
   </th>
   <th slot="header">SL</th>
   <th slot="header">RSL</th>
