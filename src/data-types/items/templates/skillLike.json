@@ -1,0 +1,13 @@
+{
+    "keys": {
+        "points": 1,
+        "name": "",
+        "specialization": null,
+        "techLevel": null,
+        "difficulty": "A",
+        "signature": "IQ",
+        "mod": 0,
+        "encumbrancePenaltyMultiple": 0,
+        "defaults": []
+    }
+}

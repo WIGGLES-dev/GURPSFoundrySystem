@@ -5,18 +5,22 @@ import CopyPlugin from "copy-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import sveltePreprocess, { postcss } from "svelte-preprocess";
 import { TsConfigPathsPlugin } from "awesome-typescript-loader";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import FixStyleOnlyEntriesPlugin from "webpack-fix-style-only-entries";
 
-type mode = "development" | "production" | "none"
-const mode = process.argv[process.argv.indexOf("--mode") >= 0 ? process.argv.indexOf("--mode") + 1 : null] as mode || "development";
+const mode = "development";
+//@ts-ignore
 const prod = mode === 'production';
 
-let output
-output = "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS";
+const paths = [
+    "C:\\Users\\Ian\\AppData\\Local\\FoundryVTT\\Data\\systems\\GURPS",
+    path.resolve(__dirname, "./dist")
+]
 
-const config: webpack.Configuration = {
+const config = (target): webpack.Configuration => ({
     entry: {
-        bundle: [path.resolve(__dirname, 'src/index.ts')],
-        // worker: [path.resolve(__dirname), 'src/worker.ts']
+        "valor": [path.resolve(__dirname, 'src/index.ts')],
+        "foundryValor": [path.resolve(__dirname, "src/styles/styles.css")]
     },
     externals: {},
     resolve: {
@@ -27,8 +31,8 @@ const config: webpack.Configuration = {
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
     output: {
-        path: output || __dirname + '/dist',
-        filename: 'main.js',
+        path: target,
+        filename: '[name].js',
     },
     module: {
         rules: [
@@ -68,31 +72,10 @@ const config: webpack.Configuration = {
                 }
             },
             {
-                test: /\.css$/,
+                test: /\.s?css$/,
                 use: [
-                    /**
-                     * MiniCssExtractPlugin doesn't support HMR.
-                     * For developing, use 'style-loader' instead.
-                     * */
-                    prod ? MiniCssExtractPlugin.loader : 'style-loader',
-                    'css-loader'
-                ]
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    /**
-                     * MiniCssExtractPlugin doesn't support HMR.
-                     * For developing, use 'style-loader' instead.
-                     * */
-                    prod ? MiniCssExtractPlugin.loader : 'style-loader',
+                    MiniCssExtractPlugin.loader || 'style-loader',
                     'css-loader',
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sassOptions: {}
-                        }
-                    },
                     {
                         loader: "postcss-loader",
                         options: {
@@ -100,13 +83,22 @@ const config: webpack.Configuration = {
                                 ident: "postcss",
                                 plugins: [
                                     require("tailwindcss"),
-                                    require("autoprefixer")
+                                    require("postcss-nested"),
+                                    require("autoprefixer"),
                                 ]
                             }
                         }
-                    }
+                    },
+                    "sass-loader"
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                },
+            },
         ]
     },
     mode,
@@ -127,9 +119,15 @@ const config: webpack.Configuration = {
                     }
                 }
             ]
-        })
+        }),
+        new FixStyleOnlyEntriesPlugin(),
+        new MiniCssExtractPlugin(),
+        new CleanWebpackPlugin(),
     ],
     devtool: prod ? false : 'source-map'
-}
+})
 
-export default config;
+export default [
+    config(paths[0]),
+    //config(paths[1])
+];

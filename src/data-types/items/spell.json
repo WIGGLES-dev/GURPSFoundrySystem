@@ -1,23 +1,21 @@
 {
     "spell": {
         "templates": [
-            "skill-like",
-            "notable",
-            "list item"
+            "feature",
+            "skillLike"
         ],
         "type": "spell",
-        "tech_level": "",
-        "specialization": "",
-        "encumbrance_penalty_multiplier": 1,
-        "defaults": [],
-        "defaulted_from": false,
-        "college": "",
-        "power_source": "Arcane",
-        "class": "",
-        "casting_cost": "",
-        "maintenance_cost": "",
-        "casting_time": "",
-        "resist": "",
-        "duration": ""
+        "keys": {
+            "requiresConcentration": false,
+            "currentlyActive": false,
+            "college": "",
+            "powerSource": "Arcane",
+            "class": "",
+            "castingCost": "",
+            "maintenanceCost": "",
+            "castingTime": "",
+            "resist": "",
+            "duration": ""
+        }
     }
 }

@@ -1,17 +1,13 @@
 {
     "technique": {
         "templates": [
-            "skill-like",
-            "notable",
-            "list item"
+            "skillLike",
+            "feature"
         ],
         "type": "technique",
-        "limit": 0,
-        "difficulty": "A",
-        "default": {
-            "type": "skill",
-            "name": "Skill",
-            "modifier": 0
+        "keys": {
+            "limit": 0,
+            "default": {}
         }
     }
 }

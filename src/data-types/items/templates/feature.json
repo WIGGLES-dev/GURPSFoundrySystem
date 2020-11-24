@@ -1,0 +1,29 @@
+{
+    "isEntity": true,
+    "id": null,
+    "embedded": false,
+    "rootEntityId": null,
+    "rootEntityType": null,
+    "progenitorId": null,
+    "embeddedEntities": {},
+    "keys": {
+        "disabled": false,
+        "ownedById": null,
+        "ownedByType": null,
+        "children": [],
+        "bonuses": [],
+        "templates": [],
+        "reference": "",
+        "categories": [],
+        "userDescription": "",
+        "ui": {
+            "hidden": false,
+            "listWeight": null,
+            "canContainChildren": false,
+            "backgroundColor": null,
+            "textColor": null
+        }
+    },
+    "createdOn": null,
+    "lastEdit": null
+}

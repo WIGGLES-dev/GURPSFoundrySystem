@@ -1,3 +1,39 @@
 {
-    "birthday": ""
+    "keys": {
+        "profile": {
+            "birthPlace": "",
+            "birthday": "",
+            "status": "",
+            "wealth": "",
+            "income": "",
+            "expenses": "",
+            "base": "",
+            "affiliation": "",
+            "family": "",
+            "name": "",
+            "nickName": "",
+            "sex": "",
+            "gender": "",
+            "race": "",
+            "handedness": "",
+            "reaction": "",
+            "appearanceFeatures": "",
+            "age": "",
+            "appearance": "",
+            "eyes": "",
+            "skin": "",
+            "hair": "",
+            "facialHair": "",
+            "build": "",
+            "weight": "",
+            "height": "",
+            "religion": "",
+            "education": "",
+            "citizenship": "",
+            "orientation": "",
+            "other": "",
+            "portrait": "",
+            "cropped": ""
+        }
+    }
 }

@@ -1,15 +1,12 @@
 {
     "skill": {
         "templates": [
-            "skill-like",
-            "notable",
-            "list item"
+            "feature",
+            "skillLike"
         ],
         "type": "skill",
-        "tech_level": "",
-        "specialization": "",
-        "encumbrance_penalty_multiplier": 0,
-        "defaults": [],
-        "defaulted_from": false
+        "keys": {
+            "type": "skill"
+        }
     }
 }

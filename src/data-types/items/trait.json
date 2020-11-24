@@ -1,23 +1,22 @@
 {
     "trait": {
         "templates": [
-            "notable",
-            "list item"
+            "feature"
         ],
-        "type": "advantage",
-        "name": "",
-        "physical": false,
-        "exotic": false,
-        "mental": false,
-        "supernatural": false,
-        "social": false,
-        "enabled": true,
-        "base_points": 0,
-        "points_per_level": 0,
-        "cr": "n/a",
-        "levels": 1,
-        "has_levels": false,
-        "has_half_level": false,
-        "round_down": false
+        "type": "trait",
+        "keys": {
+            "name": "",
+            "type": "trait",
+            "basePoints": 0,
+            "hasLevels": false,
+            "levels": null,
+            "pointsPerLevel": null,
+            "allowHalfLevels": false,
+            "hasHalfLevel": false,
+            "roundDown": false,
+            "controlRating": "n/a",
+            "types": [],
+            "modifiers": []
+        }
     }
 }

@@ -1,0 +1,19 @@
+{
+    "equipment": {
+        "templates": [
+            "feature"
+        ],
+        "type": "equipment",
+        "keys": {
+            "type": "equipment",
+            "quantity": 1,
+            "name": "",
+            "weight": 1,
+            "value": 1,
+            "storedLocation": "carried",
+            "uses": null,
+            "maxUses": null,
+            "ignoreForSkills": false
+        }
+    }
+}

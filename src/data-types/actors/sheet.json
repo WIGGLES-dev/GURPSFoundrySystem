@@ -1,0 +1,17 @@
+{
+    "sheet": {
+        "templates": [
+            "base",
+            "profile",
+            "config"
+        ],
+        "type": "sheet",
+        "keys": {
+            "pointTotal": 150,
+            "notes": [],
+            "hitLocationDamage": {},
+            "poolLevels": {},
+            "attributeLevels": {}
+        }
+    }
+}

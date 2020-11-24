@@ -1,25 +1,7 @@
 {
-    "awesomeTypescriptLoaderOptions": {
-        "forceIsolatedModules": true,
-        "reportFiles": [
-            "node_modules/**/*.{ts,tsx}"
-        ]
-    },
-    "include": [
-        "src/**/*",
-        "src/node_modules",
-        "types",
-    ],
-    "exclude": [
-        "node_modules/*",
-        "__sapper__/*",
-        "public/*",
-        "**/*.spec.ts",
-    ],
     "compilerOptions": {
         "skipLibCheck": true,
         "importsNotUsedAsValues": "preserve",
-        "module": "commonjs",
         "esModuleInterop": true,
         "removeComments": true,
         "preserveConstEnums": true,
@@ -29,17 +11,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "baseUrl": "./src",
-        "paths": {
-            "@modules/*": [
-                "modules/*"
-            ],
-            "@components/*": [
-                "svelte/*"
-            ],
-            "@GURPSFoundry/*": [
-                "foundry-GURPS/*"
-            ]
-        },
+        "paths": {},
         "lib": [
             "webworker",
             "scripthost",

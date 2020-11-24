@@ -9,9 +9,11 @@
     "author": "Ian Bell",
     "scripts": [],
     "esmodules": [
-        "main.js"
+        "valor.js"
     ],
-    "styles": [],
+    "styles": [
+        "foundryValor.css"
+    ],
     "packs": [],
     "languages": [
         {
@@ -20,7 +22,7 @@
             "path": "lang/en.json"
         }
     ],
-    "socket": false,
+    "socket": true,
     "initiative": "@initiative",
     "gridDistance": 1,
     "gridUnits": "yards",
